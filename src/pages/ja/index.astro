@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const psy = await getCollection('ja_psychology');
+const bio = await getCollection('ja_biology');
+const all = [...psy, ...bio].sort(
+  (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
+);
+---
+<BaseLayout title="PubMed Trivia (日本語)" lang="ja">
+  <h1>PubMed Trivia</h1>
+  <p>論文ベースの豆知識を毎日お届けします。</p>
+  <ul>
+    {all.map((post) => (
+      <li>
+        <a href={`/ja/${post.data.category}/${post.id}/`}>{post.data.title}</a>
+        <small>（{post.data.category}）</small>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

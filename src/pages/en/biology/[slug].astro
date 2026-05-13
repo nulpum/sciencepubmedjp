@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('en_biology');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<BaseLayout title={post.data.title} description={post.data.fact} lang="en">
+  <article>
+    <h1>{post.data.title}</h1>
+    <p><strong>{post.data.fact}</strong></p>
+    <Content />
+    <hr />
+    <p>
+      Source: <a href={post.data.source_url} rel="noopener" target="_blank">PMID {post.data.pmid}</a>
+      {post.data.journal && <span> ({post.data.journal}{post.data.year && `, ${post.data.year}`})</span>}
+    </p>
+    {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
+      <section>
+        <h2>Related books #PR</h2>
+        <ul>
+          {post.data.affiliate_links.map((l) => (
+            <li><a href={l.url} rel="sponsored noopener" target="_blank">{l.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>

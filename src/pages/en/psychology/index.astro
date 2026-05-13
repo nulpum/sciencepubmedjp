@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('en_psychology')).sort(
+  (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
+);
+---
+<BaseLayout title="Psychology Trivia | PubMed Trivia" lang="en">
+  <h1>Psychology Trivia</h1>
+  <ul>
+    {posts.map((post) => (
+      <li><a href={`/en/psychology/${post.id}/`}>{post.data.title}</a></li>
+    ))}
+  </ul>
+</BaseLayout>

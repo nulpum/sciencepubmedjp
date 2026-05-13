@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('ja_biology')).sort(
+  (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
+);
+---
+<BaseLayout title="生物学トリビア | PubMed Trivia" lang="ja">
+  <h1>生物学トリビア</h1>
+  <ul>
+    {posts.map((post) => (
+      <li><a href={`/ja/biology/${post.id}/`}>{post.data.title}</a></li>
+    ))}
+  </ul>
+</BaseLayout>
