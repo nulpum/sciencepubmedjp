@@ -7,15 +7,28 @@ const bio = await getCollection('ja_biology');
 const all = [...psy, ...bio].sort(
   (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
 );
+const catLabelJa: Record<string, string> = {
+  psychology: '心理学',
+  biology: '生物学',
+};
 ---
-<BaseLayout title="PubMed Trivia (日本語)" lang="ja">
+<BaseLayout
+  title="PubMed Trivia ｜ 論文ベースの豆知識"
+  description="心理学・睡眠・記憶・進化・行動など、PubMedの論文から1日数本の豆知識をお届け。"
+  lang="ja"
+>
   <h1>PubMed Trivia</h1>
-  <p>論文ベースの豆知識を毎日お届けします。</p>
-  <ul>
+  <p>論文ベースの豆知識を毎日お届け。出典は全て PubMed (NIH 公式論文DB)。</p>
+
+  <ul class="card-grid">
     {all.map((post) => (
-      <li>
+      <li class="card">
         <a href={`/ja/${post.data.category}/${post.id}/`}>{post.data.title}</a>
-        <small>（{post.data.category}）</small>
+        <p class="card__fact">{post.data.fact}</p>
+        <div class="card__meta">
+          <span class={`tag tag--${post.data.category}`}>{catLabelJa[post.data.category]}</span>
+          {post.data.journal && <span>{post.data.journal}{post.data.year && ` · ${post.data.year}`}</span>}
+        </div>
       </li>
     ))}
   </ul>

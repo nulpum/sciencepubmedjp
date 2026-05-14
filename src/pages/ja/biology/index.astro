@@ -6,11 +6,23 @@ const posts = (await getCollection('ja_biology')).sort(
   (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
 );
 ---
-<BaseLayout title="生物学トリビア | PubMed Trivia" lang="ja">
+<BaseLayout
+  title="生物学トリビア ｜ PubMed Trivia"
+  description="動物行動・進化・生態・人類学など、PubMed のレビュー論文から豆知識をお届け。"
+  lang="ja"
+>
   <h1>生物学トリビア</h1>
-  <ul>
+  <p>動物行動・進化・生態・人類学の領域から、PubMed の論文を基にした豆知識を紹介します。</p>
+  <ul class="card-grid">
     {posts.map((post) => (
-      <li><a href={`/ja/biology/${post.id}/`}>{post.data.title}</a></li>
+      <li class="card">
+        <a href={`/ja/biology/${post.id}/`}>{post.data.title}</a>
+        <p class="card__fact">{post.data.fact}</p>
+        <div class="card__meta">
+          <span class="tag tag--biology">生物学</span>
+          {post.data.journal && <span>{post.data.journal}{post.data.year && ` · ${post.data.year}`}</span>}
+        </div>
+      </li>
     ))}
   </ul>
 </BaseLayout>
