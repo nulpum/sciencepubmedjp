@@ -66,7 +66,18 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       <slot />
     </main>
     <footer class="site-footer">
-      <small>本サイトには広告 (#PR) を含みます。</small>
+      <nav class="site-footer__nav">
+        <a href={`/${lang}/about/`}>{lang === 'ja' ? 'このサイトについて' : 'About'}</a>
+        <span aria-hidden="true">·</span>
+        <a href={`/${lang}/privacy/`}>{lang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy'}</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
+      </nav>
+      <small>{lang === 'ja' ? '本サイトには広告 (#PR) を含みます。' : 'This site contains advertising and affiliate links (#PR).'}</small>
     </footer>
 
     <style is:global>
@@ -295,6 +306,17 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         color: var(--muted);
       }
       .site-footer small { font-size: 0.82rem; }
+      .site-footer__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 12px;
+        font-size: 0.88rem;
+      }
+      .site-footer__nav a { color: var(--muted); }
+      .site-footer__nav a:hover { color: var(--navy); }
+      .site-footer__nav span { color: var(--border); }
 
       /* === Responsive === */
       @media (max-width: 480px) {

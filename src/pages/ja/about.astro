@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="このサイトについて ｜ PubMed Trivia"
+  description="PubMed Trivia は、米国国立医学図書館の論文データベース PubMed から、心理学・生物学のレビュー論文を題材に豆知識を毎日お届けする情報サイトです。"
+  lang="ja"
+>
+  <article>
+    <h1>このサイトについて</h1>
+
+    <h2>運営方針</h2>
+    <p>
+      PubMed Trivia (サイエンス パブメド ジェイピー) は、米国国立医学図書館 (NIH) が運営する論文データベース
+      <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubMed</a>
+      に掲載された査読付き論文（特にレビュー論文・メタアナリシス）を題材に、心理学・生物学の領域の豆知識を一般読者向けに紹介するサイトです。
+    </p>
+
+    <h2>取り扱う情報</h2>
+    <ul>
+      <li>心理学・睡眠・記憶・学習・行動意思決定</li>
+      <li>動物行動・進化生物学・生態学・人類学</li>
+      <li>食事・運動・生活習慣と健康の関連（ただし医学的助言は行いません）</li>
+    </ul>
+
+    <h2>編集ポリシー</h2>
+    <ul>
+      <li>原則として <strong>レビュー論文・メタアナリシスのみ</strong> を題材とし、症例報告や撤回論文は扱いません。</li>
+      <li>論文中の <strong>「関連 (association)」を「因果 (causation)」と誤訳しない</strong> よう注意しています。</li>
+      <li>記事は元論文の英文 abstract から日本語・英語別個に翻案しています（重訳はしません）。</li>
+      <li>記事の制作には Anthropic 社の Claude API を補助的に利用しています。</li>
+      <li>各記事には PMID と原典 URL を付記し、読者が一次情報にアクセスできるようにしています。</li>
+    </ul>
+
+    <h2>免責事項</h2>
+    <p>
+      本サイトに掲載される情報は <strong>一般教養としての豆知識</strong> であり、医学的助言・診断・治療を目的とするものではありません。
+      健康に関する判断は医師等の有資格者にご相談ください。論文の解釈には注意を払っていますが、誤りを発見された場合は下記の連絡先までご一報ください。
+    </p>
+
+    <h2>広告とアフィリエイト</h2>
+    <p>
+      本サイトは <a href="/ja/privacy/">プライバシーポリシー</a> に記載のとおり、第三者配信の広告サービスおよび Amazon アソシエイト・プログラムに参加しています。詳細はプライバシーポリシーをご覧ください。
+    </p>
+
+    <h2>運営者情報・お問い合わせ</h2>
+    <ul>
+      <li>サイト名: PubMed Trivia</li>
+      <li>運営: PubMed Trivia 編集部</li>
+      <li>連絡先: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a></li>
+      <li>SNS:
+        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X</a> /
+        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a> /
+        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
+      </li>
+    </ul>
+  </article>
+</BaseLayout>
