@@ -49,7 +49,7 @@ export async function writeGeneratedArticle(
   await ensureDir(dir);
   const path = join(dir, `${slug}.md`);
 
-  const fm = [
+  const lines: (string | null)[] = [
     '---',
     `pmid: "${article.pmid}"`,
     `category: ${article.category}`,
@@ -60,13 +60,20 @@ export async function writeGeneratedArticle(
     article.journal ? `journal: ${JSON.stringify(article.journal)}` : null,
     article.year ? `year: ${article.year}` : null,
     `generated_at: ${JSON.stringify(article.generatedAt)}`,
-    '---',
-    '',
-    article.body.trim(),
-    '',
-  ]
-    .filter((l) => l !== null)
-    .join('\n');
+  ];
+
+  // Phase 2: PA-API で取得した関連書籍 (あれば)
+  if (article.affiliateLinks && article.affiliateLinks.length > 0) {
+    lines.push('affiliate_links:');
+    for (const link of article.affiliateLinks) {
+      lines.push(`  - title: ${JSON.stringify(link.title)}`);
+      lines.push(`    url: ${JSON.stringify(link.url)}`);
+    }
+  }
+
+  lines.push('---', '', article.body.trim(), '');
+
+  const fm = lines.filter((l) => l !== null).join('\n');
 
   await writeFile(path, fm, 'utf8');
   return path;

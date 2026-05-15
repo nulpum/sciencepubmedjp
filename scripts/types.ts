@@ -30,4 +30,6 @@ export interface GeneratedArticle {
   journal?: string;
   year?: number;
   generatedAt: string;   // ISO8601
+  // Phase 2: PA-API で関連書籍を自動選定し注入
+  affiliateLinks?: { title: string; url: string }[];
 }

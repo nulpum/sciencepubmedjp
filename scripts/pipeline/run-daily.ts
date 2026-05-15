@@ -13,6 +13,7 @@ import { writeRawArticle, writeGeneratedArticle } from '../lib/files.js';
 import { buildSlug } from '../lib/slug.js';
 import { fetchOneByCategory } from '../pubmed/fetch.js';
 import { generateBothLangs } from '../claude/generate.js';
+import { selectRelatedBooks } from '../amazon/select-books.js';
 import { ALL_CATEGORIES, type Category } from '../types.js';
 
 function parseCategoryArg(): Category[] {
@@ -34,6 +35,16 @@ async function runOne(category: Category): Promise<void> {
   Logger.info(`raw saved: ${rawPath}`);
 
   const { ja, en } = await generateBothLangs(raw, category);
+
+  // Phase 2: PA-API で関連書籍を選定し、両言語の記事に注入
+  // 失敗 (キーなし、throttle、書籍ヒットなし) してもパイプラインは止めない
+  const books = await selectRelatedBooks(raw, 2);
+  if (books.length > 0) {
+    ja.affiliateLinks = books;
+    en.affiliateLinks = books;
+    Logger.info(`affiliate_links: ${books.length} 冊を注入`);
+  }
+
   const slug = buildSlug(raw.pmid, raw.fetchedAt);
   const jaPath = await writeGeneratedArticle(ja, slug);
   const enPath = await writeGeneratedArticle(en, slug);

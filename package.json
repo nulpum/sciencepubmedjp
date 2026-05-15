@@ -11,6 +11,7 @@
     "check": "astro check",
     "gen:fetch": "tsx scripts/pubmed/run-fetch.ts",
     "gen:generate": "tsx scripts/claude/run-generate.ts",
+    "gen:fetch-books": "tsx scripts/amazon/run-fetch-books.ts",
     "pipeline:daily": "tsx scripts/pipeline/run-daily.ts"
   },
   "dependencies": {
