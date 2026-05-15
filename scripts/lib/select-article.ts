@@ -1,24 +1,29 @@
-// 投稿対象の記事を選定する
+// 投稿対象の記事を選定する (プラットフォーム横断で再利用可)
 //
-// 戦略:
 // 1. src/content/{lang}/{category}/ から全 .md を列挙
-// 2. posted.json で既投稿のものを除外
-// 3. ランダムに 1 件選ぶ (古い記事を「再発見」してもらう狙い)
-//    オプションで「新しい順」「古い順」も選べる
-//
-// 返すのは format-post.ts で使う ArticleMeta 形式。
+// 2. 指定プラットフォームで未投稿のものに絞る
+// 3. 戦略 (random/newest/oldest) に基づき 1 件返す
 
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Logger } from '../lib/logger.js';
-import { isPosted } from './posted-tracker.js';
-import type { ArticleMeta } from './format-post.js';
+import { Logger } from './logger.js';
+import { isPosted, type Platform } from './posted-tracker.js';
 import type { Category } from '../types.js';
 
 const CONTENT_DIR = join(process.cwd(), 'src', 'content');
 
-interface ParsedArticle extends ArticleMeta {
+export interface ArticleMeta {
+  pmid: string;
+  category: Category;
+  lang: 'ja' | 'en';
+  title: string;
+  fact: string;
+  bodyExcerpt: string;
+  journal?: string;
+  year?: number;
+  slug: string;
   generatedAt: string;
+  affiliateLinks?: { title: string; url: string }[];
 }
 
 function unquote(s: string): string {
@@ -33,7 +38,7 @@ function unquote(s: string): string {
   return t;
 }
 
-function parseArticle(filePath: string, content: string): ParsedArticle | null {
+function parseArticle(filePath: string, content: string): ArticleMeta | null {
   const m = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!m) return null;
   const fm = m[1];
@@ -53,10 +58,9 @@ function parseArticle(filePath: string, content: string): ParsedArticle | null {
   const generatedAt = get('generated_at');
   const journal = get('journal') ?? undefined;
   const yearStr = get('year');
-
   if (!pmid || !category || !lang || !title || !fact || !generatedAt) return null;
 
-  // affiliate_links 解析 (簡易)
+  // affiliate_links 解析
   const affRegex = /^affiliate_links:\s*$\n((?:  - title:.*\n    url:.*\n)+)/m;
   const affMatch = fm.match(affRegex);
   const affiliateLinks: { title: string; url: string }[] = [];
@@ -64,14 +68,10 @@ function parseArticle(filePath: string, content: string): ParsedArticle | null {
     const entryRe = /  - title:\s*(.*)\n    url:\s*(.*)/g;
     let mm: RegExpExecArray | null;
     while ((mm = entryRe.exec(affMatch[1])) !== null) {
-      affiliateLinks.push({
-        title: unquote(mm[1]),
-        url: unquote(mm[2]),
-      });
+      affiliateLinks.push({ title: unquote(mm[1]), url: unquote(mm[2]) });
     }
   }
 
-  // slug = ファイル名 (拡張子なし)
   const fileName = filePath.split(/[\\/]/).pop() ?? '';
   const slug = fileName.replace(/\.md$/, '');
 
@@ -85,8 +85,8 @@ function parseArticle(filePath: string, content: string): ParsedArticle | null {
     journal,
     year: yearStr ? Number(yearStr) : undefined,
     slug,
-    affiliateLinks,
     generatedAt,
+    affiliateLinks,
   };
 }
 
@@ -102,40 +102,39 @@ async function listMarkdown(dir: string): Promise<string[]> {
 }
 
 export interface SelectOptions {
-  lang?: 'ja' | 'en';        // 言語フィルタ
-  category?: Category;        // カテゴリフィルタ
+  platform: Platform;
+  lang?: 'ja' | 'en';
+  category?: Category;
   strategy?: 'random' | 'newest' | 'oldest';
 }
 
 export async function selectArticleForPost(
-  options: SelectOptions = {},
+  options: SelectOptions,
 ): Promise<ArticleMeta | null> {
-  const { lang, category, strategy = 'random' } = options;
+  const { platform, lang, category, strategy = 'random' } = options;
 
   const all = await listMarkdown(CONTENT_DIR);
-  const parsed: ParsedArticle[] = [];
+  const parsed: ArticleMeta[] = [];
   for (const f of all) {
     const content = await readFile(f, 'utf8');
-    const article = parseArticle(f, content);
-    if (article) parsed.push(article);
+    const a = parseArticle(f, content);
+    if (a) parsed.push(a);
   }
 
-  // 言語・カテゴリでフィルタ
   let candidates = parsed;
   if (lang) candidates = candidates.filter((a) => a.lang === lang);
   if (category) candidates = candidates.filter((a) => a.category === category);
 
-  // 既投稿を除外
-  const unposted: ParsedArticle[] = [];
+  const unposted: ArticleMeta[] = [];
   for (const a of candidates) {
-    if (!(await isPosted(a.slug, a.lang))) unposted.push(a);
+    if (!(await isPosted(a.slug, a.lang, platform))) unposted.push(a);
   }
 
-  Logger.info(`select-article: 候補 ${candidates.length} 件 → 未投稿 ${unposted.length} 件`);
-
+  Logger.info(
+    `select-article (${platform}): 候補 ${candidates.length} 件 → 未投稿 ${unposted.length} 件`,
+  );
   if (unposted.length === 0) return null;
 
-  // 戦略別に1件選ぶ
   if (strategy === 'random') {
     return unposted[Math.floor(Math.random() * unposted.length)];
   }

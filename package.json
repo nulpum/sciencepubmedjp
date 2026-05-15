@@ -14,7 +14,8 @@
     "gen:fetch-books": "tsx scripts/amazon/run-fetch-books.ts",
     "gen:backfill-affiliate": "tsx scripts/amazon/backfill-affiliate-links.ts",
     "pipeline:daily": "tsx scripts/pipeline/run-daily.ts",
-    "post:threads": "tsx scripts/threads/run-post.ts"
+    "post:threads": "tsx scripts/threads/run-post.ts",
+    "post:facebook": "tsx scripts/facebook/run-post.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",

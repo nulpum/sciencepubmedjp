@@ -11,19 +11,7 @@
 // 500字オーバー時は本文要約を短縮 → それでもオーバーなら関連書籍を1冊に減らす。
 
 import type { Category } from '../types.js';
-
-export interface ArticleMeta {
-  pmid: string;
-  category: Category;
-  lang: 'ja' | 'en';
-  title: string;
-  fact: string;
-  bodyExcerpt: string; // 本文の冒頭抜粋
-  journal?: string;
-  year?: number;
-  slug: string;        // ファイル名から拡張子取った部分
-  affiliateLinks?: { title: string; url: string }[];
-}
+import type { ArticleMeta } from '../lib/select-article.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
 const MAX_THREADS = 500;

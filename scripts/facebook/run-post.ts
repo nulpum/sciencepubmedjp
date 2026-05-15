@@ -1,19 +1,17 @@
-// CLI: 未投稿記事を 1 本選んで Threads に投稿
+// CLI: 未投稿記事を 1 本選んで Facebook Page に投稿
 //
 // 使い方:
-//   npm run post:threads                              # ランダム選定で投稿
-//   npm run post:threads -- --lang=ja --category=psychology
-//   npm run post:threads -- --strategy=oldest         # 一番古い未投稿
-//   npm run post:threads -- --dry-run                 # 実投稿せず内容のみ確認
-//
-// 失敗時は exit 1、成功時は exit 0。
+//   npm run post:facebook
+//   npm run post:facebook -- --lang=ja --category=psychology
+//   npm run post:facebook -- --strategy=oldest
+//   npm run post:facebook -- --dry-run
 
 import '../lib/env.js';
 import { Logger } from '../lib/logger.js';
 import { selectArticleForPost } from '../lib/select-article.js';
 import { recordPost } from '../lib/posted-tracker.js';
-import { formatThreadsPost } from './format-post.js';
-import { postToThreads, dryRunThreads } from './post.js';
+import { formatFacebookPost } from './format-post.js';
+import { postToFacebook, dryRunFacebook } from './post.js';
 import { ALL_CATEGORIES, type Category } from '../types.js';
 
 interface CliArgs {
@@ -41,51 +39,48 @@ function parseArgs(): CliArgs {
       ? stratStr
       : undefined;
 
-  return {
-    lang,
-    category,
-    strategy,
-    dryRun: args.includes('--dry-run'),
-  };
+  return { lang, category, strategy, dryRun: args.includes('--dry-run') };
 }
 
 async function main(): Promise<void> {
   const args = parseArgs();
-  Logger.info(`run-post: lang=${args.lang ?? 'any'} category=${args.category ?? 'any'} strategy=${args.strategy ?? 'random'} dry-run=${args.dryRun}`);
+  Logger.info(
+    `run-post (facebook): lang=${args.lang ?? 'any'} category=${args.category ?? 'any'} strategy=${args.strategy ?? 'random'} dry-run=${args.dryRun}`,
+  );
 
   const article = await selectArticleForPost({
-    platform: 'threads',
-    lang: args.lang ?? 'ja', // 既定は日本語
+    platform: 'facebook',
+    lang: args.lang ?? 'ja',
     category: args.category,
     strategy: args.strategy,
   });
-
   if (!article) {
     Logger.warn('未投稿の記事がありません');
     return;
   }
 
-  Logger.info(`選定: ${article.slug} (${article.lang}/${article.category}) "${article.title.slice(0, 40)}…"`);
+  Logger.info(
+    `選定: ${article.slug} (${article.lang}/${article.category}) "${article.title.slice(0, 40)}…"`,
+  );
 
-  const text = formatThreadsPost(article);
+  const post = formatFacebookPost(article);
 
   if (args.dryRun) {
-    dryRunThreads(text);
+    dryRunFacebook(post);
     return;
   }
 
-  // 実投稿
-  const { threadId } = await postToThreads(text);
+  const { postId } = await postToFacebook(post);
 
   await recordPost({
-    platform: 'threads',
+    platform: 'facebook',
     slug: article.slug,
     lang: article.lang,
     category: article.category,
     postedAt: new Date().toISOString(),
-    postId: threadId,
+    postId,
   });
-  Logger.info(`✅ 投稿完了 + 履歴に記録: thread_id=${threadId}`);
+  Logger.info(`✅ 投稿完了 + 履歴に記録: post_id=${postId}`);
 }
 
 main().catch((e) => {
