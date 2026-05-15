@@ -5,11 +5,18 @@ import '../lib/env.js';
 import { Logger } from '../lib/logger.js';
 import { readRawArticle } from '../lib/files.js';
 import { selectRelatedBooks, extractKeywords } from './select-books.js';
+import { ALL_CATEGORIES, type Category } from '../types.js';
 
 async function main(): Promise<void> {
   const pmidArg = process.argv.find((a) => a.startsWith('--pmid='));
   const pmid = pmidArg?.split('=')[1];
   if (!pmid) throw new Error('--pmid=XXXXXXXX を指定してください');
+
+  const catArg = process.argv.find((a) => a.startsWith('--category='));
+  const category = (catArg?.split('=')[1] as Category | undefined) ?? 'psychology';
+  if (!ALL_CATEGORIES.includes(category)) {
+    throw new Error(`--category は ${ALL_CATEGORIES.join('|')} のいずれか`);
+  }
 
   const raw = await readRawArticle(pmid);
   if (!raw) {
@@ -18,10 +25,10 @@ async function main(): Promise<void> {
     );
   }
 
-  Logger.info(`PMID=${pmid}: "${raw.title.slice(0, 80)}"`);
+  Logger.info(`PMID=${pmid} category=${category}: "${raw.title.slice(0, 80)}"`);
   Logger.info(`抽出キーワード: "${extractKeywords(raw)}"`);
 
-  const books = await selectRelatedBooks(raw, 2);
+  const books = await selectRelatedBooks(raw, category, 2);
 
   if (books.length === 0) {
     Logger.warn('該当書籍ゼロ (PA-API 失敗 or 全部 NG ガード)');

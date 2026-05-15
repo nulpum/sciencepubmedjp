@@ -36,14 +36,17 @@ async function runOne(category: Category): Promise<void> {
 
   const { ja, en } = await generateBothLangs(raw, category);
 
-  // Phase 2: PA-API で関連書籍を選定し、両言語の記事に注入
-  // 失敗 (キーなし、throttle、書籍ヒットなし) してもパイプラインは止めない
-  const books = await selectRelatedBooks(raw, 2);
-  if (books.length > 0) {
-    ja.affiliateLinks = books;
-    en.affiliateLinks = books;
-    Logger.info(`affiliate_links: ${books.length} 冊を注入`);
-  }
+  // Phase 2: Amazon 関連書籍を選定し、両言語の記事に注入
+  // - PA-API が使えればそれ経由 (実書籍)
+  // - 使えなければ検索 URL フォールバック (両方とも affiliate tag 付き)
+  // 言語別にラベルが異なるので個別に呼ぶ
+  const [jaBooks, enBooks] = await Promise.all([
+    selectRelatedBooks(raw, category, 2, 'ja'),
+    selectRelatedBooks(raw, category, 2, 'en'),
+  ]);
+  if (jaBooks.length > 0) ja.affiliateLinks = jaBooks;
+  if (enBooks.length > 0) en.affiliateLinks = enBooks;
+  Logger.info(`affiliate_links: ja=${jaBooks.length} en=${enBooks.length}`);
 
   const slug = buildSlug(raw.pmid, raw.fetchedAt);
   const jaPath = await writeGeneratedArticle(ja, slug);
