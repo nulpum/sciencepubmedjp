@@ -38,6 +38,33 @@ interface PublishResponse {
   id: string; // {page-id}_{post-id} 形式
 }
 
+// 2 段階方式:
+//   Step 1: 設定された token (User or Page どちらでも可) で /{page_id}?fields=access_token を叩き、
+//           「本物の Page Token」を都度取得する。
+//   Step 2: その Page Token で /{page_id}/feed に POST。
+//
+// 理由: .env に保存しているのが "Page-scoped User Token" だと FB が User と判定して #200 を返す。
+//       実行時に Page Token を再取得することで、入力トークンの種類に関係なく動く。
+async function fetchPageAccessToken(): Promise<string> {
+  const config = readConfig();
+  const url = new URL(`${API_BASE}/${config.pageId}`);
+  url.searchParams.set('fields', 'access_token');
+  url.searchParams.set('access_token', config.accessToken);
+
+  const res = await fetch(url.toString());
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(
+      `fetchPageAccessToken failed: ${res.status} ${errText.slice(0, 500)}`,
+    );
+  }
+  const json = (await res.json()) as { access_token?: string };
+  if (!json.access_token) {
+    throw new Error('Page Token がレスポンスに含まれていません');
+  }
+  return json.access_token;
+}
+
 // Page にテキスト + リンク投稿
 // link を指定すると Facebook がそのページの OGP を読んで自動でカードプレビュー化
 export async function postToFacebook(params: {
@@ -47,10 +74,15 @@ export async function postToFacebook(params: {
   const { message, link } = params;
   const config = readConfig();
 
+  // Step 1: 本物の Page Token を都度取得
+  const pageToken = await fetchPageAccessToken();
+  Logger.info(`Page Token 取得 OK (len=${pageToken.length})`);
+
+  // Step 2: Page Token で投稿
   const url = `${API_BASE}/${config.pageId}/feed`;
   const body = new URLSearchParams({
     message,
-    access_token: config.accessToken,
+    access_token: pageToken,
   });
   if (link) body.set('link', link);
 
