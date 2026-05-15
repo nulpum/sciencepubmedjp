@@ -82,15 +82,12 @@ async function processFile(filePath: string): Promise<'updated' | 'replaced' | '
   if (!parsed) return 'skipped-parse';
   if (parsed.hasAffiliateLinks) return 'skipped-has';
 
-  // 元の PubMed 英語タイトルが out/raw/{pmid}.json にあれば優先的に使う
-  // 理由: 日本語タイトルは助詞含みで Amazon 検索が機能しにくい
-  let titleForKeywords = parsed.title;
-  const rawJson = await readRawArticle(parsed.pmid);
-  if (rawJson?.title) titleForKeywords = rawJson.title;
-
+  // タイトル選択: ja の .md は日本語タイトル、en は英語タイトルが入ってる。
+  // extractKeywords は言語判定を内部で行うので、そのまま frontmatter の title を渡す。
+  // (これにより JA ページは日本語キーワードで Amazon 検索 → JP 書籍がヒットしやすい)
   const fakeArticle: PubmedArticle = {
     pmid: parsed.pmid,
-    title: titleForKeywords,
+    title: parsed.title,
     abstract: '',
     fetchedAt: new Date().toISOString(),
   };

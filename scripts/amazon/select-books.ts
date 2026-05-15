@@ -37,21 +37,49 @@ function isAllowedBookTitle(title: string): boolean {
 }
 
 // 論文タイトルから検索キーワードを抽出
-// 単純にタイトル中の名詞っぽい英単語を上位 N 個ピック。
-// PubMed のタイトルは英語だが、Amazon JP の検索でも英単語ヒットする (洋書 + 翻訳書)。
-export function extractKeywords(article: PubmedArticle): string {
-  const STOP = new Set([
-    'the', 'a', 'an', 'of', 'and', 'or', 'in', 'on', 'for', 'to', 'with',
-    'is', 'are', 'was', 'were', 'be', 'been', 'being',
-    'as', 'at', 'by', 'from', 'into', 'this', 'that', 'these', 'those',
-    'review', 'systematic', 'meta', 'analysis', 'study', 'studies',  // PubMed 頻出ノイズ
-  ]);
-  const words = article.title
+// 言語別に処理:
+//  - 日本語タイトル (ひらがな/カタカナ/漢字含む) → 助詞・記号で分割して名詞を取り出す
+//  - 英語タイトル → スペース分割 + ストップワード除外
+// JP 検索では英語キーワードだとサプリ広告が出やすいので、可能なら日本語を使う。
+const EN_STOP = new Set([
+  'the', 'a', 'an', 'of', 'and', 'or', 'in', 'on', 'for', 'to', 'with',
+  'is', 'are', 'was', 'were', 'be', 'been', 'being',
+  'as', 'at', 'by', 'from', 'into', 'this', 'that', 'these', 'those',
+  'review', 'systematic', 'meta', 'analysis', 'study', 'studies',
+]);
+const JA_STOP = new Set([
+  'する', 'ある', 'いる', 'なる', 'こと', 'もの', 'ため', 'よう',
+  'です', 'ます', 'まし', 'でし',
+]);
+
+// 日本語助詞・記号で分割
+function tokenizeJa(text: string): string[] {
+  return text
+    .replace(/[・、。「」『』()（）\[\]【】〜~,.;:!?！？\s]+/g, '|')
+    // 助詞の前後で分割 (1文字助詞)
+    .replace(/(の|が|を|に|は|で|と|や|も|から|まで|より|へ|か|ね|よ)/g, '|')
+    .split('|')
+    .map((s) => s.trim())
+    .filter((s) => s.length >= 2 && !JA_STOP.has(s));
+}
+
+function tokenizeEn(text: string): string[] {
+  return text
     .toLowerCase()
-    .replace(/[():,.;!?'"]/g, ' ')
+    .replace(/[():,.;!?'"\-]/g, ' ')
     .split(/\s+/)
-    .filter((w) => w.length >= 3 && !STOP.has(w));
-  return words.slice(0, 6).join(' ');
+    .filter((w) => w.length >= 3 && !EN_STOP.has(w));
+}
+
+function hasJapanese(text: string): boolean {
+  return /[぀-ゟ゠-ヿ一-鿿]/.test(text);
+}
+
+export function extractKeywords(article: PubmedArticle): string {
+  const tokens = hasJapanese(article.title)
+    ? tokenizeJa(article.title)
+    : tokenizeEn(article.title);
+  return tokens.slice(0, 6).join(' ');
 }
 
 export interface SelectedBook {
