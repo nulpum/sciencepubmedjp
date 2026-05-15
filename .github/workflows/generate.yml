@@ -1,0 +1,52 @@
+name: Daily article generation
+
+# 毎日 21:00 UTC = 翌 06:00 JST に記事生成 + affiliate_links 注入
+# 手動実行も可能 (workflow_dispatch)
+on:
+  schedule:
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 生成された .md を main に push するため
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run pipeline:daily (PubMed → Claude → MD × 2 categories)
+        run: npm run pipeline:daily -- --category=all
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: claude-sonnet-4-5
+          PUBMED_TOOL: pubmed-trivia
+          PUBMED_EMAIL: ${{ secrets.PUBMED_EMAIL }}
+          SITE_URL: https://sciencepubmed.net
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+
+      - name: Commit + push generated articles
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/
+          if git diff --staged --quiet; then
+            echo "No new articles to commit"
+            exit 0
+          fi
+          git commit -m "auto: daily article generation $(date -u +%Y-%m-%d)"
+          # 競合に備えて pull --rebase してから push
+          git pull --rebase origin main || true
+          git push

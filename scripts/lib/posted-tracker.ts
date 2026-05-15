@@ -16,7 +16,10 @@
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 
-const TRACKER_PATH = join(process.cwd(), 'out', 'posted.json');
+// data/ は git 管理対象 (GitHub Actions が commit して履歴永続化)
+// 旧 out/posted.json があれば後方互換で読み込む。
+const TRACKER_PATH = join(process.cwd(), 'data', 'posted.json');
+const LEGACY_PATH = join(process.cwd(), 'out', 'posted.json');
 
 export type Platform = 'threads' | 'facebook';
 
@@ -43,8 +46,12 @@ async function exists(p: string): Promise<boolean> {
 }
 
 async function load(): Promise<TrackerData> {
-  if (!(await exists(TRACKER_PATH))) return { posts: [] };
-  const text = await readFile(TRACKER_PATH, 'utf8');
+  // 新パス → 旧パスの順で探す
+  const path = (await exists(TRACKER_PATH))
+    ? TRACKER_PATH
+    : (await exists(LEGACY_PATH)) ? LEGACY_PATH : null;
+  if (!path) return { posts: [] };
+  const text = await readFile(path, 'utf8');
   const raw = JSON.parse(text) as Partial<TrackerData> & { threads?: PostedRecord[] };
   // 旧形式 ({threads:[...]}) からの自動移行
   if (raw.threads && !raw.posts) {

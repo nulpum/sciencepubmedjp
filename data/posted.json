@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "platform": "threads",
+      "slug": "20260512-39702328",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-05-15T13:33:12.884Z",
+      "postId": "18009063371717756"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260512-39702328",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-05-15T14:20:46.521Z",
+      "postId": "1103479166185406_122098381095321286"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260513-39940306",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-05-15T14:43:44.741Z",
+      "postId": "18082871696389362"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260513-39940306",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-05-15T14:43:54.176Z",
+      "postId": "1103479166185406_122098397145321286"
+    }
+  ]
+}

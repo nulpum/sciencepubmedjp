@@ -1,0 +1,62 @@
+name: Scheduled SNS posting
+
+# 朝/昼/夜の 3 回、Threads と Facebook に同じ記事を投稿
+# 22:00 UTC = 07:00 JST
+# 03:00 UTC = 12:00 JST
+# 12:00 UTC = 21:00 JST
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 07:00 JST
+    - cron: '0 3 * * *'    # 12:00 JST
+    - cron: '0 12 * * *'   # 21:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write   # data/posted.json を main に push するため
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Post to Threads
+        # 片方失敗してもジョブ全体は止めず、もう片方は試す
+        continue-on-error: true
+        run: npm run post:threads -- --lang=ja --strategy=oldest
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: me
+          SITE_URL: https://sciencepubmed.net
+
+      - name: Post to Facebook
+        continue-on-error: true
+        run: npm run post:facebook -- --lang=ja --strategy=oldest
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
+
+      - name: Commit + push posted.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/posted.json
+          if git diff --staged --quiet; then
+            echo "No post records to commit (both posts may have failed or all articles already posted)"
+            exit 0
+          fi
+          git commit -m "auto: posted record $(date -u +%FT%TZ)"
+          git pull --rebase origin main || true
+          git push
