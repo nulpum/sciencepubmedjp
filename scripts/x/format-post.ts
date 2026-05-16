@@ -1,23 +1,28 @@
-// X (Twitter) 投稿フォーマッタ
+// X (Twitter) Premium 想定の長文フォーマッタ
 //
-// X の文字数制限:
-//   - 280 weighted chars (無料 / Premium 加入前)
-//   - 日本語・漢字・ひらがな・カタカナ = 2 weighted
-//   - ASCII = 1 weighted
-//   - URL は t.co で短縮 → 23 weighted 固定
+// X Premium Basic 加入で 25,000 字まで投稿可能のため、Facebook と同様の
+// 詳細フォーマットを生成する。URL は省略せず full で。
 //
-// X Premium 加入後は 25,000 字まで投稿可能だが、本フォーマッタは
-// 「無料枠でも収まる」最大公約数で設計 (Premium でも見映え◎)。
+// 構造 (Facebook と並列):
+//   1. fact (フック句込みの結論)
+//   2. 本文要約 2-3 文
+//   3. 関連書籍 + アフィリエイト URL (#PR)
+//   4. サイト URL (auto-card 化される)
+//   5. 原典 PMID + URL
+//   6. ハッシュタグ
 
 import type { Category } from '../types.js';
 import type { ArticleMeta } from '../lib/select-article.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
-const X_LIMIT = 280;
 
 function siteUrlFor(meta: ArticleMeta): string {
   const base = SITE_URL.replace(/\/$/, '');
   return `${base}/${meta.lang}/${meta.category}/${meta.slug}/`;
+}
+
+function pubmedUrl(pmid: string): string {
+  return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 }
 
 function categoryTags(category: Category, lang: 'ja' | 'en'): string[] {
@@ -31,15 +36,19 @@ function categoryTags(category: Category, lang: 'ja' | 'en'): string[] {
     : ['#trivia', '#biology'];
 }
 
-// X (Twitter) の重み計算
+function excerpt(body: string, maxSentences: number): string {
+  const trimmed = body.trim().replace(/\*\*/g, '');
+  const sentences = trimmed.split(/(?<=[。\.\!\?])/).filter((s) => s.trim());
+  return sentences.slice(0, maxSentences).join('').trim();
+}
+
+// 参考: 重み計算 (X Premium でも overflow チェック用に残す)
 // docs: https://developer.x.com/en/docs/counting-characters
 export function xWeight(text: string): number {
-  // URL は t.co で 23 weighted 固定。簡易判定で http(s):// から空白までを URL とみなす
   const urlReplaced = text.replace(/https?:\/\/\S+/g, '_'.repeat(23));
   let weight = 0;
   for (const ch of urlReplaced) {
     const code = ch.codePointAt(0) ?? 0;
-    // X 公式の "Weighted code-point ranges" に基づく
     if (
       (code >= 0x0000 && code <= 0x10FF) ||
       (code >= 0x2000 && code <= 0x200D) ||
@@ -55,41 +64,40 @@ export function xWeight(text: string): number {
 }
 
 export function formatXPost(meta: ArticleMeta): string {
-  const url = siteUrlFor(meta);
+  const link = siteUrlFor(meta);
   const tags = categoryTags(meta.category, meta.lang);
 
-  // 第1案 (最も理想): fact + 1行スペース + URL + tags
-  const tryShape = (factText: string, includePmid: boolean): string => {
-    const lines = [factText];
-    if (includePmid) {
-      lines.push('', `PMID ${meta.pmid}`);
+  const lines: string[] = [];
+  // 1. fact (フック句)
+  lines.push(meta.fact);
+  // 2. 本文要約 (3文)
+  lines.push('');
+  lines.push(excerpt(meta.bodyExcerpt, 3));
+
+  // 3. 関連書籍 + アフィ URL
+  if (meta.affiliateLinks && meta.affiliateLinks.length > 0) {
+    lines.push('');
+    lines.push(meta.lang === 'ja' ? '📖 関連書籍 (#PR)' : '📖 Related books (#PR)');
+    for (const a of meta.affiliateLinks.slice(0, 2)) {
+      lines.push(`▶ ${a.title}`);
+      lines.push(`   ${a.url}`);
     }
-    lines.push('', `▶ ${url}`);
-    lines.push('', tags.join(' '));
-    return lines.join('\n');
-  };
-
-  // 段階的にコンテンツを削って 280 に収める
-  // (1) fact フル + PMID
-  // (2) fact フル (PMID 省略)
-  // (3) fact 切り詰め (PMID 省略)
-  const candidates: { factText: string; includePmid: boolean }[] = [
-    { factText: meta.fact, includePmid: true },
-    { factText: meta.fact, includePmid: false },
-  ];
-
-  // fact を 5 char ずつ削った候補も用意
-  let f = meta.fact;
-  while (f.length > 20) {
-    f = f.slice(0, -5);
-    candidates.push({ factText: f + '…', includePmid: false });
+    tags.push('#PR');
   }
 
-  for (const c of candidates) {
-    const text = tryShape(c.factText, c.includePmid);
-    if (xWeight(text) <= X_LIMIT) return text;
-  }
+  // 4. サイト URL (X が auto-card 化するはず)
+  lines.push('');
+  lines.push(meta.lang === 'ja' ? '🔗 詳しくは' : '🔗 Read more');
+  lines.push(link);
 
-  // ここまで来たら最低限 (URL + tags のみ)
-  return [`▶ ${url}`, '', tags.join(' ')].join('\n');
+  // 5. 原典 PMID + URL
+  lines.push('');
+  lines.push(`📄 ${meta.lang === 'ja' ? '原典' : 'Source'}: PMID ${meta.pmid}`);
+  lines.push(pubmedUrl(meta.pmid));
+
+  // 6. ハッシュタグ
+  lines.push('');
+  lines.push(tags.join(' '));
+
+  return lines.join('\n').trim();
 }

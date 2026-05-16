@@ -113,19 +113,23 @@ async function main(): Promise<void> {
   const article = await loadArticleBySlug(target.slug, target.lang, target.category);
   if (!article) throw new Error(`記事ファイルが見つかりません: ${target.slug}`);
 
-  // X 用テキスト整形
+  // X 用テキスト整形 (X Premium 想定の長文版)
   const xText = formatXPost(article);
   const weight = xWeight(xText);
-  Logger.info(`X 用テキスト: ${weight}/280 weighted chars`);
+  // X Premium Basic 加入で 25,000 weighted chars まで OK
+  // 無料枠は 280 weighted chars
+  const X_PREMIUM_LIMIT = 25000;
+  const overflow = weight > X_PREMIUM_LIMIT ? '⚠️ Premium 上限超過' : '';
+  Logger.info(`X 用テキスト: ${weight} weighted chars ${overflow}`);
 
   const subject = `[PubMed Trivia] X 用テンプレ: ${article.title.slice(0, 30)}`;
 
   const body = [
-    '# X (旧 Twitter) 用の投稿テンプレートです',
+    '# X (旧 Twitter) 用の投稿テンプレートです (X Premium 想定の長文版)',
     '',
     'スマホで Gmail 開いてこのメールの本文をコピー → X アプリに貼り付けて投稿してください。',
     '',
-    `=== ここからコピー (${weight}/280 weighted chars) ===`,
+    `=== ここからコピー (${weight} weighted chars / Premium 上限 25000) ===`,
     '',
     xText,
     '',
