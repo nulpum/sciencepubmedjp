@@ -9,10 +9,16 @@
 import nodemailer from 'nodemailer';
 import { Logger } from './logger.js';
 
+interface EmailAttachment {
+  filename: string;
+  path: string;   // ローカルファイルパス
+}
+
 interface SendEmailParams {
   subject: string;
   body: string;        // プレーンテキスト
   to?: string;          // 上書き先
+  attachments?: EmailAttachment[];
 }
 
 export async function sendEmail(params: SendEmailParams): Promise<void> {
@@ -30,12 +36,15 @@ export async function sendEmail(params: SendEmailParams): Promise<void> {
     auth: { user, pass },
   });
 
-  Logger.info(`メール送信: to=${to} subject="${params.subject}"`);
+  Logger.info(
+    `メール送信: to=${to} subject="${params.subject}" attachments=${params.attachments?.length ?? 0}`,
+  );
   await transporter.sendMail({
     from: user,
     to,
     subject: params.subject,
     text: params.body,
+    attachments: params.attachments,
   });
   Logger.info('✅ メール送信完了');
 }

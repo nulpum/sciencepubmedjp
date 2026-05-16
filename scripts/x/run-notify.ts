@@ -10,7 +10,7 @@
 //   npm run notify:x -- --dry-run       # メール送信せず内容のみ確認
 
 import '../lib/env.js';
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile, readdir, access } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Logger } from '../lib/logger.js';
 import { getAllPosted } from '../lib/posted-tracker.js';
@@ -18,6 +18,15 @@ import { sendEmail } from '../lib/notify.js';
 import { formatXPost, xWeight } from './format-post.js';
 import type { ArticleMeta } from '../lib/select-article.js';
 import type { Category } from '../types.js';
+
+async function existsLocal(p: string): Promise<boolean> {
+  try {
+    await access(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 const CONTENT_DIR = join(process.cwd(), 'src', 'content');
 
@@ -122,12 +131,23 @@ async function main(): Promise<void> {
   const overflow = weight > X_PREMIUM_LIMIT ? '⚠️ Premium 上限超過' : '';
   Logger.info(`X 用テキスト: ${weight} weighted chars ${overflow}`);
 
-  const subject = `[PubMed Trivia] X 用テンプレ: ${article.title.slice(0, 30)}`;
+  const subject = `[PubMed Trivia] 手動投稿テンプレ: ${article.title.slice(0, 30)}`;
+
+  // Instagram 用 1080x1080 画像があれば添付 (なければスキップ)
+  const squareImagePath = join(
+    process.cwd(),
+    'public',
+    'square',
+    article.lang,
+    `${article.slug}.png`,
+  );
+  const hasImage = await existsLocal(squareImagePath);
 
   const body = [
-    '# X (旧 Twitter) 用の投稿テンプレートです (X Premium 想定の長文版)',
+    '# 手動投稿用テンプレート (X / Instagram)',
     '',
-    'スマホで Gmail 開いてこのメールの本文をコピー → X アプリに貼り付けて投稿してください。',
+    '## 🐦 X (旧 Twitter) 用',
+    'Gmail でこのメールを開いてコピー → X アプリに貼り付けて投稿。',
     '',
     `=== ここからコピー (${weight} weighted chars / Premium 上限 25000) ===`,
     '',
@@ -135,7 +155,12 @@ async function main(): Promise<void> {
     '',
     '=== ここまでコピー ===',
     '',
-    `📊 参考: 同じ記事を既に Threads / Facebook に自動投稿済`,
+    '## 📷 Instagram 用',
+    hasImage
+      ? '添付の正方形画像 (1080×1080) を Instagram にアップ → 上のテキストをキャプションに貼り付け (適宜短縮)。'
+      : '画像未生成のため添付なし。`npm run generate:og -- --size=square` で生成可能。',
+    '',
+    `📊 同じ記事を自動投稿済:`,
     `   - 記事 URL: ${process.env.SITE_URL || 'https://sciencepubmed.net'}/${article.lang}/${article.category}/${article.slug}/`,
     `   - PMID: ${article.pmid}`,
     '',
@@ -145,10 +170,17 @@ async function main(): Promise<void> {
   if (args.dryRun) {
     Logger.info(`[dry-run] subject="${subject}"`);
     Logger.info(`[dry-run] body:\n${body}`);
+    Logger.info(`[dry-run] image attachment: ${hasImage ? squareImagePath : 'なし'}`);
     return;
   }
 
-  await sendEmail({ subject, body });
+  await sendEmail({
+    subject,
+    body,
+    attachments: hasImage
+      ? [{ filename: `${article.slug}.png`, path: squareImagePath }]
+      : undefined,
+  });
 }
 
 main().catch((e) => {

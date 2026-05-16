@@ -16,10 +16,12 @@
     "pipeline:daily": "tsx scripts/pipeline/run-daily.ts",
     "post:threads": "tsx scripts/threads/run-post.ts",
     "post:facebook": "tsx scripts/facebook/run-post.ts",
-    "notify:x": "tsx scripts/x/run-notify.ts"
+    "notify:x": "tsx scripts/x/run-notify.ts",
+    "generate:og": "tsx scripts/image/run-generate-og.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
+    "@resvg/resvg-js": "^2.6.2",
     "@types/nodemailer": "^8.0.0",
     "astro": "^5.0.0",
     "dotenv": "^16.4.5",

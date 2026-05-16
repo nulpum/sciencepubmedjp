@@ -37,16 +37,21 @@ jobs:
           SITE_URL: https://sciencepubmed.net
           AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
 
-      - name: Commit + push generated articles
+      - name: Generate OG images (1200x630) for new articles
+        run: npm run generate:og
+
+      - name: Generate Instagram square (1080x1080) for new articles
+        run: npm run generate:og -- --size=square
+
+      - name: Commit + push (articles + images)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/content/
+          git add src/content/ public/og/ public/square/
           if git diff --staged --quiet; then
-            echo "No new articles to commit"
+            echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "auto: daily article generation $(date -u +%Y-%m-%d)"
-          # 競合に備えて pull --rebase してから push
+          git commit -m "auto: daily generation $(date -u +%Y-%m-%d)"
           git pull --rebase origin main || true
           git push

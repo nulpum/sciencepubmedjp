@@ -4,12 +4,19 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('en_biology');
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post, all: posts } }));
 }
-const { post } = Astro.props;
+const { post, all } = Astro.props;
 const { Content } = await render(post);
+
+const related = (all as typeof post[])
+  .filter((p) => p.id !== post.id)
+  .sort((a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at))
+  .slice(0, 3);
+
+const ogImage = `/og/en/${post.id}.png`;
 ---
-<BaseLayout title={post.data.title} description={post.data.fact} lang="en" ogType="article">
+<BaseLayout title={post.data.title} description={post.data.fact} lang="en" ogType="article" ogImage={ogImage}>
   <article>
     <h1>{post.data.title}</h1>
     <p><strong>{post.data.fact}</strong></p>
@@ -30,4 +37,18 @@ const { Content } = await render(post);
       </section>
     )}
   </article>
+
+  {related.length > 0 && (
+    <section class="related-section">
+      <h2>More biology trivia</h2>
+      <ul class="card-grid">
+        {related.map((p) => (
+          <li class="card">
+            <a href={`/en/biology/${p.id}/`}>{p.data.title}</a>
+            <p class="card__fact">{p.data.fact}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </BaseLayout>

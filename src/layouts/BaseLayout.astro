@@ -181,6 +181,21 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         margin: 0 auto;
       }
 
+      /* 関連記事セクション (記事下) — カードグリッドのまま、最大幅を本文より広めに */
+      .site-main .related-section {
+        max-width: 960px;
+        margin: 48px auto 0;
+        background: transparent;
+        border: none;
+        padding: 0;
+      }
+      .site-main .related-section h2 {
+        font-size: 1rem;
+        color: var(--muted);
+        letter-spacing: 0.04em;
+        margin: 0 0 16px;
+      }
+
       /* article-level: fact (1 文目) を強調 */
       .site-main article > p:first-of-type strong,
       .site-main article > p strong:first-child {
