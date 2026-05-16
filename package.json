@@ -15,12 +15,15 @@
     "gen:backfill-affiliate": "tsx scripts/amazon/backfill-affiliate-links.ts",
     "pipeline:daily": "tsx scripts/pipeline/run-daily.ts",
     "post:threads": "tsx scripts/threads/run-post.ts",
-    "post:facebook": "tsx scripts/facebook/run-post.ts"
+    "post:facebook": "tsx scripts/facebook/run-post.ts",
+    "notify:x": "tsx scripts/x/run-notify.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
+    "@types/nodemailer": "^8.0.0",
     "astro": "^5.0.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "nodemailer": "^8.0.7"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",

@@ -48,6 +48,16 @@ jobs:
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
+      - name: Send X-version template to Gmail
+        # 最新投稿を X 用に整形して自分の Gmail に送信 (手動 X コピペ用)
+        continue-on-error: true
+        run: npm run notify:x
+        env:
+          SITE_URL: https://sciencepubmed.net
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+
       - name: Commit + push posted.json
         run: |
           git config user.name "github-actions[bot]"
