@@ -48,6 +48,14 @@ jobs:
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
+      - name: Post to Instagram
+        continue-on-error: true
+        run: npm run post:instagram -- --lang=ja --strategy=oldest
+        env:
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
+
       - name: Send X-version template to Gmail
         # 最新投稿を X 用に整形して自分の Gmail に送信 (手動 X コピペ用)
         continue-on-error: true

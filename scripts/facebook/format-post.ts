@@ -14,6 +14,7 @@
 
 import type { Category } from '../types.js';
 import type { ArticleMeta } from '../lib/select-article.js';
+import { buildHashtags } from '../lib/hashtags.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
 
@@ -26,15 +27,9 @@ function pubmedUrl(pmid: string): string {
   return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 }
 
-function categoryHashtags(category: Category, lang: 'ja' | 'en'): string[] {
-  if (lang === 'ja') {
-    return category === 'psychology'
-      ? ['#豆知識', '#心理学']
-      : ['#豆知識', '#生物学'];
-  }
-  return category === 'psychology'
-    ? ['#trivia', '#psychology']
-    : ['#trivia', '#biology'];
+// Facebook: 3-4 タグが無難 (多すぎるとリーチ落ちる)
+function categoryHashtags(category: Category, lang: 'ja' | 'en', hasAffiliate: boolean): string[] {
+  return buildHashtags({ lang, category, count: 4, includePR: hasAffiliate });
 }
 
 // 本文要約 (Markdown の最初の N 文)
@@ -51,7 +46,8 @@ export interface FacebookPost {
 
 export function formatFacebookPost(meta: ArticleMeta): FacebookPost {
   const link = siteUrlFor(meta);
-  const tags = categoryHashtags(meta.category, meta.lang);
+  const hasAff = !!meta.affiliateLinks && meta.affiliateLinks.length > 0;
+  const tags = categoryHashtags(meta.category, meta.lang, hasAff);
 
   const lines: string[] = [];
   lines.push(meta.fact);
@@ -65,7 +61,6 @@ export function formatFacebookPost(meta: ArticleMeta): FacebookPost {
       lines.push(`▶ ${a.title}`);
       lines.push(`   ${a.url}`);
     }
-    tags.push('#PR');
   }
 
   lines.push('');

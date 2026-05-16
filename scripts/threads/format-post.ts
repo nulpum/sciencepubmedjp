@@ -12,6 +12,7 @@
 
 import type { Category } from '../types.js';
 import type { ArticleMeta } from '../lib/select-article.js';
+import { buildHashtags } from '../lib/hashtags.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
 const MAX_THREADS = 500;
@@ -26,15 +27,9 @@ function pubmedUrl(pmid: string): string {
   return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 }
 
-function categoryHashtags(category: Category, lang: 'ja' | 'en'): string[] {
-  if (lang === 'ja') {
-    return category === 'psychology'
-      ? ['#豆知識', '#心理学']
-      : ['#豆知識', '#生物学'];
-  }
-  return category === 'psychology'
-    ? ['#trivia', '#psychology']
-    : ['#trivia', '#biology'];
+// Threads はタグ詰めすぎるとスパム判定気味 → 3 個まで
+function categoryHashtags(category: Category, lang: 'ja' | 'en', hasAffiliate: boolean): string[] {
+  return buildHashtags({ lang, category, count: 3, includePR: hasAffiliate });
 }
 
 // 本文要約 (Markdown の最初の文を 1 つ取る、簡易)
@@ -55,10 +50,8 @@ export function formatThreadsPost(
   options: FormatOptions = { includeAffiliate: true },
 ): string {
   const url = siteUrlFor(meta);
-  const tags = categoryHashtags(meta.category, meta.lang);
-  if (options.includeAffiliate && meta.affiliateLinks && meta.affiliateLinks.length > 0) {
-    tags.push('#PR');
-  }
+  const hasAff = options.includeAffiliate && !!meta.affiliateLinks && meta.affiliateLinks.length > 0;
+  const tags = categoryHashtags(meta.category, meta.lang, hasAff);
 
   // === 第1案: アフィ込み (最も理想的) ===
   const tryFull = (excerptMax: number, affCount: number): string => {

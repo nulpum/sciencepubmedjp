@@ -16,6 +16,7 @@
     "pipeline:daily": "tsx scripts/pipeline/run-daily.ts",
     "post:threads": "tsx scripts/threads/run-post.ts",
     "post:facebook": "tsx scripts/facebook/run-post.ts",
+    "post:instagram": "tsx scripts/instagram/run-post.ts",
     "notify:x": "tsx scripts/x/run-notify.ts",
     "generate:og": "tsx scripts/image/run-generate-og.ts"
   },

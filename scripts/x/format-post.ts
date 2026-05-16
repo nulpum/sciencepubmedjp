@@ -13,6 +13,7 @@
 
 import type { Category } from '../types.js';
 import type { ArticleMeta } from '../lib/select-article.js';
+import { buildHashtags } from '../lib/hashtags.js';
 
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
 
@@ -25,15 +26,9 @@ function pubmedUrl(pmid: string): string {
   return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 }
 
-function categoryTags(category: Category, lang: 'ja' | 'en'): string[] {
-  if (lang === 'ja') {
-    return category === 'psychology'
-      ? ['#豆知識', '#心理学']
-      : ['#豆知識', '#生物学'];
-  }
-  return category === 'psychology'
-    ? ['#trivia', '#psychology']
-    : ['#trivia', '#biology'];
+// X: 3-4 個程度 (#PR 必要なら自動で末尾に)
+function categoryTags(category: Category, lang: 'ja' | 'en', hasAffiliate: boolean): string[] {
+  return buildHashtags({ lang, category, count: 4, includePR: hasAffiliate });
 }
 
 function excerpt(body: string, maxSentences: number): string {
@@ -65,7 +60,8 @@ export function xWeight(text: string): number {
 
 export function formatXPost(meta: ArticleMeta): string {
   const link = siteUrlFor(meta);
-  const tags = categoryTags(meta.category, meta.lang);
+  const hasAff = !!meta.affiliateLinks && meta.affiliateLinks.length > 0;
+  const tags = categoryTags(meta.category, meta.lang, hasAff);
 
   const lines: string[] = [];
   // 1. fact (フック句)
@@ -82,7 +78,6 @@ export function formatXPost(meta: ArticleMeta): string {
       lines.push(`▶ ${a.title}`);
       lines.push(`   ${a.url}`);
     }
-    tags.push('#PR');
   }
 
   // 4. サイト URL (X が auto-card 化するはず)
