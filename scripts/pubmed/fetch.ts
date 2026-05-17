@@ -164,21 +164,55 @@ export function isUsable(a: PubmedArticle): boolean {
   return true;
 }
 
+// 既存記事 PMID を一括ロード (重複防止用)
+// src/content/{lang}/{category}/{YYYYMMDD}-{PMID}.md パターンから PMID 部分を抽出
+async function loadExistingPmids(category: Category): Promise<Set<string>> {
+  const { readdir } = await import('node:fs/promises');
+  const { join } = await import('node:path');
+  const root = join(process.cwd(), 'src', 'content');
+  const pmids = new Set<string>();
+  for (const lang of ['ja', 'en'] as const) {
+    const dir = join(root, lang, category);
+    try {
+      const files = await readdir(dir);
+      for (const f of files) {
+        // {YYYYMMDD}-{PMID}.md → PMID
+        const m = f.match(/^\d{8}-(\d+)\.md$/);
+        if (m) pmids.add(m[1]);
+      }
+    } catch {
+      // ディレクトリ無いだけ → 無視
+    }
+  }
+  return pmids;
+}
+
 // 高レベル: category → 1記事
+// - 同 PMID 重複防止: 既に生成済みの PMID は弾いて再抽選
+// - usable でない abstract は弾いて再抽選
 export async function fetchOneByCategory(category: Category): Promise<PubmedArticle> {
   const query = buildQuery(category);
   Logger.info(`category=${category} query length=${query.length}`);
 
+  const existing = await loadExistingPmids(category);
+  Logger.info(`既存 PMID 数 (category=${category}): ${existing.size}`);
+
   // usable な abstract に当たるまで最大 N 回リトライ
-  const MAX_TRIES = 5;
+  const MAX_TRIES = 8;  // 重複弾きで追加で外れる可能性があるので増量
   for (let i = 1; i <= MAX_TRIES; i++) {
     const pmid = await fetchRandomPmid(query);
     Logger.info(`try ${i}: PMID=${pmid}`);
+
+    if (existing.has(pmid)) {
+      Logger.warn(`PMID=${pmid} は既に生成済みのため再抽選`);
+      continue;
+    }
+
     const article = await fetchArticle(pmid);
     if (isUsable(article)) return article;
     Logger.warn(`PMID=${pmid} は usable でなかったため再抽選`);
   }
-  throw new Error(`category=${category} で ${MAX_TRIES} 回引いても usable な論文が出ませんでした`);
+  throw new Error(`category=${category} で ${MAX_TRIES} 回引いても usable & 未生成な論文が出ませんでした`);
 }
 
 export function pubmedUrl(pmid: string): string {
