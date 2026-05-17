@@ -136,6 +136,11 @@ async function main(): Promise<void> {
   const article = await loadArticleBySlug(target.slug, target.lang, target.category);
   if (!article) throw new Error(`記事ファイルが見つかりません: ${target.slug}`);
 
+  // 同 slug の反対言語版もロード (X はツリー投稿でアルゴリズムに乗せたいため
+  // ja を親ポスト + en をツリー返信で 1 セット送る運用)
+  const otherLang: 'ja' | 'en' = article.lang === 'ja' ? 'en' : 'ja';
+  const counterpart = await loadArticleBySlug(article.slug, otherLang, article.category);
+
   // X 用テキスト整形 (X Premium 想定の長文版)
   const xText = formatXPost(article);
   const weight = xWeight(xText);
@@ -143,7 +148,17 @@ async function main(): Promise<void> {
   // 無料枠は 280 weighted chars
   const X_PREMIUM_LIMIT = 25000;
   const overflow = weight > X_PREMIUM_LIMIT ? '⚠️ Premium 上限超過' : '';
-  Logger.info(`X 用テキスト: ${weight} weighted chars ${overflow}`);
+  Logger.info(`X 用テキスト (${article.lang}): ${weight} weighted chars ${overflow}`);
+
+  let counterpartText = '';
+  let counterpartWeight = 0;
+  if (counterpart) {
+    counterpartText = formatXPost(counterpart);
+    counterpartWeight = xWeight(counterpartText);
+    Logger.info(`X 用テキスト (${otherLang}, ツリー返信用): ${counterpartWeight} weighted chars`);
+  } else {
+    Logger.warn(`反対言語版 (${otherLang}) の記事ファイルが見つからない → ツリー返信なし`);
+  }
 
   const subject = `[PubMed Trivia] 手動投稿テンプレ: ${article.title.slice(0, 30)}`;
 
@@ -157,29 +172,65 @@ async function main(): Promise<void> {
   );
   const hasImage = await existsLocal(squareImagePath);
 
-  const body = [
+  // ja → en の順を保証 (親が ja, ツリー返信が en)
+  const isParentJa = article.lang === 'ja';
+  const parentLabel = isParentJa ? '🇯🇵 親ポスト (日本語)' : '🇺🇸 親ポスト (英語)';
+  const replyLabel = isParentJa ? '🇺🇸 ツリー返信 (英語)' : '🇯🇵 ツリー返信 (日本語)';
+
+  const bodyLines: string[] = [
     '# 手動投稿用テンプレート (X / Instagram)',
     '',
-    '## 🐦 X (旧 Twitter) 用',
-    'Gmail でこのメールを開いてコピー → X アプリに貼り付けて投稿。',
+    '## 🐦 X (旧 Twitter) — ツリー投稿で algorithm に乗せる',
     '',
-    `=== ここからコピー (${weight} weighted chars / Premium 上限 25000) ===`,
+    '【運用手順】',
+    '  1. 下の「親ポスト」を X に投稿',
+    '  2. 自分のその投稿に対して「ツリー返信」をリプライ',
+    '  3. 同じ記事の日英をスレッドで繋げると engagement ↑',
+    '',
+    '────────────────────────────────────',
+    `## ${parentLabel}`,
+    `=== ここからコピー (${weight} weighted chars / 上限 25000) ===`,
     '',
     xText,
     '',
     '=== ここまでコピー ===',
     '',
+  ];
+
+  if (counterpartText) {
+    bodyLines.push(
+      '────────────────────────────────────',
+      `## ${replyLabel}`,
+      '上の親ポストを投稿した後、その投稿に「返信」する形でツリー化',
+      `=== ここからコピー (${counterpartWeight} weighted chars / 上限 25000) ===`,
+      '',
+      counterpartText,
+      '',
+      '=== ここまでコピー ===',
+      '',
+    );
+  } else {
+    bodyLines.push(
+      '⚠️ 反対言語版が未生成のためツリー返信テンプレなし',
+      '',
+    );
+  }
+
+  bodyLines.push(
     '## 📷 Instagram 用',
     hasImage
-      ? '添付の正方形画像 (1080×1080) を Instagram にアップ → 上のテキストをキャプションに貼り付け (適宜短縮)。'
+      ? '添付の正方形画像 (1080×1080) を Instagram にアップ → 親ポストのテキストをキャプションに貼り付け (適宜短縮)。'
       : '画像未生成のため添付なし。`npm run generate:og -- --size=square` で生成可能。',
     '',
     `📊 同じ記事を自動投稿済:`,
-    `   - 記事 URL: ${process.env.SITE_URL || 'https://sciencepubmed.net'}/${article.lang}/${article.category}/${article.slug}/`,
+    `   - 記事 URL (ja): ${process.env.SITE_URL || 'https://sciencepubmed.net'}/ja/${article.category}/${article.slug}/`,
+    `   - 記事 URL (en): ${process.env.SITE_URL || 'https://sciencepubmed.net'}/en/${article.category}/${article.slug}/`,
     `   - PMID: ${article.pmid}`,
     '',
     '🤖 PubMed Trivia bot より自動送信',
-  ].join('\n');
+  );
+
+  const body = bodyLines.join('\n');
 
   if (args.dryRun) {
     Logger.info(`[dry-run] subject="${subject}"`);
