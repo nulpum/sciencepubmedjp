@@ -23,14 +23,21 @@ const JA_NG_PATTERNS: RegExp[] = [
 ];
 
 // 英語 NG 表現（薬機法相当の medical claim）
+// 単独動詞 (cures / treats / prevents / heals) は research 文脈で頻出するため、
+// "効能を断定する構文" に限定してマッチさせる。
+//   NG例: "Vitamin D cures depression" / "X prevents cancer"
+//   OK例: "cure rate was 65%" / "search for a cure" / "standard treatment for ..."
 const EN_NG_PATTERNS: RegExp[] = [
-  /\bcures?\b/i,
-  /\btreats?\b/i,
-  /\bprevents?\b/i,
-  /\bheals?\b/i,
-  /\bguarantee[ds]?\s+(weight|results)/i,
-  /\bmiracle\s+(cure|drug|effect)/i,
-  /\bclinically\s+proven\s+to\s+(cure|treat|prevent)/i,
+  // <動詞> + <疾患/症状名> の断定パターン
+  /\b(?:cures?|heals?|prevents?)\s+(?:cancer|diabetes|depression|anxiety|alzheimer'?s?|dementia|obesity|insomnia|disease|illness|disorders?|conditions?|symptoms?)\b/i,
+  // "will / can / definitely / completely + cure/prevent/heal"
+  /\b(?:will|can|definitely|completely|fully)\s+(?:cures?|prevents?|heals?)\b/i,
+  // 過度な保証表現
+  /\bguarantee[ds]?\s+(?:weight|results|cure)/i,
+  /\bmiracle\s+(?:cure|drug|effect|pill)/i,
+  /\bclinically\s+proven\s+to\s+(?:cure|treat|prevent|heal)/i,
+  // "100% effective" 系
+  /\b100\s*%\s+(?:effective|safe|guaranteed)/i,
 ];
 
 // association を causation で語っていないかの簡易チェック（補助的）
