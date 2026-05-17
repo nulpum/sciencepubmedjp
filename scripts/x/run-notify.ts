@@ -88,14 +88,21 @@ async function loadArticleBySlug(
 
 interface CliArgs {
   slug?: string;
+  lang?: 'ja' | 'en';
   dryRun: boolean;
 }
 
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
   const slugArg = args.find((a) => a.startsWith('--slug='));
+  const langArg = args.find((a) => a.startsWith('--lang='));
+  const lang = langArg?.split('=')[1];
+  if (lang && lang !== 'ja' && lang !== 'en') {
+    throw new Error('--lang は ja|en のみ');
+  }
   return {
     slug: slugArg?.split('=')[1],
+    lang: lang as 'ja' | 'en' | undefined,
     dryRun: args.includes('--dry-run'),
   };
 }
@@ -110,9 +117,16 @@ async function main(): Promise<void> {
     return;
   }
 
-  let target = all[all.length - 1]; // 既定: 最新
+  // --lang 指定があれば事前にフィルタ (X 通知を ja のみに固定したいケース)
+  const filtered = args.lang ? all.filter((r) => r.lang === args.lang) : all;
+  if (filtered.length === 0) {
+    Logger.warn(`lang=${args.lang} の投稿履歴がありません`);
+    return;
+  }
+
+  let target = filtered[filtered.length - 1]; // 既定: 最新
   if (args.slug) {
-    const m = all.reverse().find((r) => r.slug === args.slug);
+    const m = [...filtered].reverse().find((r) => r.slug === args.slug);
     if (!m) throw new Error(`slug=${args.slug} の投稿履歴が見つかりません`);
     target = m;
   }

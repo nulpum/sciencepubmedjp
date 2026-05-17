@@ -31,8 +31,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Post to Threads
-        # 片方失敗してもジョブ全体は止めず、もう片方は試す
+      # === 日本語 (ja) ===
+      - name: Post to Threads (ja)
+        # 1 step 失敗してもジョブ全体は止めず、他も試す
         continue-on-error: true
         run: npm run post:threads -- --lang=ja --strategy=oldest
         env:
@@ -40,7 +41,7 @@ jobs:
           THREADS_USER_ID: me
           SITE_URL: https://sciencepubmed.net
 
-      - name: Post to Facebook
+      - name: Post to Facebook (ja)
         continue-on-error: true
         run: npm run post:facebook -- --lang=ja --strategy=oldest
         env:
@@ -48,7 +49,7 @@ jobs:
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
-      - name: Post to Instagram
+      - name: Post to Instagram (ja)
         continue-on-error: true
         run: npm run post:instagram -- --lang=ja --strategy=oldest
         env:
@@ -56,10 +57,36 @@ jobs:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
+      # === 英語 (en) === 海外フォロワー向け
+      - name: Post to Threads (en)
+        continue-on-error: true
+        run: npm run post:threads -- --lang=en --strategy=oldest
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: me
+          SITE_URL: https://sciencepubmed.net
+
+      - name: Post to Facebook (en)
+        continue-on-error: true
+        run: npm run post:facebook -- --lang=en --strategy=oldest
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
+
+      - name: Post to Instagram (en)
+        continue-on-error: true
+        run: npm run post:instagram -- --lang=en --strategy=oldest
+        env:
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
+
       - name: Send X-version template to Gmail
         # 最新投稿を X 用に整形して自分の Gmail に送信 (手動 X コピペ用)
+        # --lang=ja で固定: X は日本語アカウント運用想定 (en 直近投稿を拾わない)
         continue-on-error: true
-        run: npm run notify:x
+        run: npm run notify:x -- --lang=ja
         env:
           SITE_URL: https://sciencepubmed.net
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
