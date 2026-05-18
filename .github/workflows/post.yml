@@ -83,13 +83,8 @@ jobs:
           THREADS_USER_ID: me
           SITE_URL: https://sciencepubmed.net
 
-      - name: Post to Facebook
-        continue-on-error: true
-        run: npm run post:facebook -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
-        env:
-          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
-          SITE_URL: https://sciencepubmed.net
+      # Facebook は 2026-05-18 に廃止 (Page が Profile に自動変換 + 過去投稿消失)
+      # post:facebook script 自体は残してあるが workflow からは外す
 
       - name: Post to Instagram
         continue-on-error: true
