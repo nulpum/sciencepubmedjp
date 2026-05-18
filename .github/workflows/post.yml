@@ -1,14 +1,16 @@
 name: Scheduled SNS posting
 
-# 朝/昼/夜の 3 回、Threads と Facebook に同じ記事を投稿
-# 22:00 UTC = 07:00 JST
-# 03:00 UTC = 12:00 JST
-# 12:00 UTC = 21:00 JST
+# 🚨 2026-05-18: Meta 開発者アカウント保留中のため schedule を一時停止
+#   Meta が「不審アクティビティ」検知で App をブロック → 3PF 全 token 死亡
+#   失敗 cron を繰り返すと Meta の spam スコアがさらに悪化するため一時停止
+#   復旧後 (token 再発行 + App 再有効化) に cron を再有効化する
+#
+# 通常時の cron (復旧後コピペで戻す):
+#   - cron: '0 22 * * *'   # 07:00 JST
+#   - cron: '0 3 * * *'    # 12:00 JST
+#   - cron: '0 12 * * *'   # 21:00 JST
 on:
-  schedule:
-    - cron: '0 22 * * *'   # 07:00 JST
-    - cron: '0 3 * * *'    # 12:00 JST
-    - cron: '0 12 * * *'   # 21:00 JST
+  # schedule: 一時停止中
   workflow_dispatch:
 
 permissions:
