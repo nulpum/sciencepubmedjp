@@ -1,16 +1,21 @@
 name: Scheduled SNS posting
 
 # 🚨 2026-05-18: Meta 開発者アカウント保留中のため schedule を一時停止
-#   Meta が「不審アクティビティ」検知で App をブロック → 3PF 全 token 死亡
+#   Meta が「不審アクティビティ」検知で App をブロック → Threads/IG/FB token 死亡
 #   失敗 cron を繰り返すと Meta の spam スコアがさらに悪化するため一時停止
-#   復旧後 (token 再発行 + App 再有効化) に cron を再有効化する
+#   復旧後は recover/low-frequency-post branch を main にマージして再有効化する。
 #
-# 通常時の cron (復旧後コピペで戻す):
+# 🚮 FB は 2026-05-18 に運用廃止:
+#   FB Page が Profile 形式に自動変換され過去投稿も消失、Threads/IG/X だけで
+#   運用継続する判断。復旧後の構成は Threads + Instagram + X (手動) のみ。
+#   このファイル下部の "Post to Facebook" ステップは復旧時に削除すること。
+#
+# 旧 cron (FB 含む 18投稿/日 構成、参考):
 #   - cron: '0 22 * * *'   # 07:00 JST
 #   - cron: '0 3 * * *'    # 12:00 JST
 #   - cron: '0 12 * * *'   # 21:00 JST
 on:
-  # schedule: 一時停止中
+  # schedule: 一時停止中 (Meta 復旧 + FB 削除版マージで再開)
   workflow_dispatch:
 
 permissions:
