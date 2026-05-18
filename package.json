@@ -18,6 +18,7 @@
     "post:facebook": "tsx scripts/facebook/run-post.ts",
     "post:instagram": "tsx scripts/instagram/run-post.ts",
     "notify:x": "tsx scripts/x/run-notify.ts",
+    "notify:x-daily": "tsx scripts/x/run-daily.ts",
     "generate:og": "tsx scripts/image/run-generate-og.ts"
   },
   "dependencies": {
