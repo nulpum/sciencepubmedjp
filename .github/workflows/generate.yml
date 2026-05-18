@@ -1,17 +1,13 @@
 name: Daily article generation
 
-# 1日2回記事生成 + affiliate_links 注入
-# - 21:00 UTC = 翌 06:00 JST (朝)
-# - 09:00 UTC =    18:00 JST (夕)
-# 生成: 2記事/run × 2lang = 4ファイル/run × 2run = 8ファイル/日
-# 消費: 3記事/日/lang/PF × 2lang = 6ファイル/日/PF
-# → +2ファイル/日/PF の余裕で在庫がじわじわ積み上がる
-#
-# 手動実行も可能 (workflow_dispatch)
+# 🔧 復旧版 (recover/low-frequency-post branch)
+# 投稿頻度を 3/日 → 2/日 に減らしたため生成も 2/日 → 1/日 に戻す。
+# 生成: 2記事/run × 2lang = 4ファイル/日
+# 消費: 2記事/日/lang/PF × 2lang = 4ファイル/日/PF
+# → 収支 ±0、在庫は現在の ~35 ペアを長期キープ
 on:
   schedule:
-    - cron: '0 21 * * *'   # 06:00 JST
-    - cron: '0 9 * * *'    # 18:00 JST
+    - cron: '37 21 * * *'   # 06:37 JST (毎時 0 分を避けて Bot 臭さ軽減)
   workflow_dispatch:
 
 permissions:
