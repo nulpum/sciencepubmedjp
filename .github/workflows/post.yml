@@ -1,22 +1,40 @@
 name: Scheduled SNS posting
 
-# 🚨 2026-05-18: Meta 開発者アカウント保留中のため schedule を一時停止
-#   Meta が「不審アクティビティ」検知で App をブロック → Threads/IG/FB token 死亡
-#   失敗 cron を繰り返すと Meta の spam スコアがさらに悪化するため一時停止
-#   復旧後は recover/low-frequency-post branch を main にマージして再有効化する。
+# 2026-05-20 復旧後の本番構成。
 #
-# 🚮 FB は 2026-05-18 に運用廃止:
-#   FB Page が Profile 形式に自動変換され過去投稿も消失、Threads/IG/X だけで
-#   運用継続する判断。復旧後の構成は Threads + Instagram + X (手動) のみ。
-#   このファイル下部の "Post to Facebook" ステップは復旧時に削除すること。
+# 経緯: 2026-05-17 に Meta Developer Console の認証フラグでトークン全死亡
+#       (3 PF とも API access blocked)。原因は「アカウントの認証が必要」
+#       状態と、App の「ビジネス連携」権限が OFF にされていたため。
+#       2026-05-20 に認証完了 + 権限再 ON でトークンそのまま復活。
 #
-# 旧 cron (FB 含む 18投稿/日 構成、参考):
-#   - cron: '0 22 * * *'   # 07:00 JST
-#   - cron: '0 3 * * *'    # 12:00 JST
-#   - cron: '0 12 * * *'   # 21:00 JST
+# 復旧後は Bot 検知圧を下げるため頻度・パターン両面で改修:
+#   - 投稿頻度を半減: 1日3 cron → 1日2 ja + 1 en (= 各 PF 1投稿/cron)
+#   - ja/en を別 cron に分離: 1 cron 内 6投稿 → 3投稿
+#   - cron 時刻を毎時 0 分ピッタリを避ける
+#   - jitter step を最初に追加 (cron 開始から 0〜10分の遅延)
+#   - FB は完全廃止 (Page が Profile に自動変換され不可逆)
+#
+# スケジュール (UTC → JST):
+#   ja: 22:23 UTC → 07:23 JST (朝)
+#   ja: 12:17 UTC → 21:17 JST (夜)
+#   en: 14:43 UTC → 23:43 JST (深夜=海外朝)
+#
+# = ja 2/日 + en 1/日 = 1PF あたり 3投稿/日
 on:
-  # schedule: 一時停止中 (Meta 復旧 + FB 削除版マージで再開)
+  schedule:
+    - cron: '23 22 * * *'   # 07:23 JST ja
+    - cron: '17 12 * * *'   # 21:17 JST ja
+    - cron: '43 14 * * *'   # 23:43 JST en (海外向け)
   workflow_dispatch:
+    inputs:
+      lang:
+        description: '手動実行時に使う言語'
+        required: false
+        default: 'ja'
+        type: choice
+        options:
+          - ja
+          - en
 
 permissions:
   contents: write   # data/posted.json を main に push するため
@@ -38,60 +56,52 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # === 日本語 (ja) ===
-      - name: Post to Threads (ja)
-        # 1 step 失敗してもジョブ全体は止めず、他も試す
+      # cron 開始から 0〜10 分のランダム遅延 (毎日同じ秒で発火する Bot 感を消す)
+      - name: Random jitter
+        run: |
+          DELAY=$((RANDOM % 600))
+          echo "sleeping ${DELAY}s for human-like jitter"
+          sleep "$DELAY"
+
+      # この cron が ja/en どちらを投稿するかを decide
+      - name: Decide lang for this run
+        id: lang
+        run: |
+          # cron スケジュールから lang を決定
+          # 22:* と 12:* は ja, 14:* は en (workflow_dispatch は input.lang)
+          HOUR=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            LANG="${{ inputs.lang }}"
+          elif [ "$HOUR" = "14" ]; then
+            LANG="en"
+          else
+            LANG="ja"
+          fi
+          echo "lang=$LANG" >> "$GITHUB_OUTPUT"
+          echo "→ this run posts lang=$LANG"
+
+      - name: Post to Threads
         continue-on-error: true
-        run: npm run post:threads -- --lang=ja --strategy=oldest
+        run: npm run post:threads -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: me
           SITE_URL: https://sciencepubmed.net
 
-      - name: Post to Facebook (ja)
-        continue-on-error: true
-        run: npm run post:facebook -- --lang=ja --strategy=oldest
-        env:
-          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
-          SITE_URL: https://sciencepubmed.net
+      # Facebook は 2026-05-18 に廃止 (Page が Profile に自動変換 + 過去投稿消失)
+      # post:facebook script 自体は残してあるが workflow からは外す
 
-      - name: Post to Instagram (ja)
+      - name: Post to Instagram
         continue-on-error: true
-        run: npm run post:instagram -- --lang=ja --strategy=oldest
+        run: npm run post:instagram -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
         env:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
-      # === 英語 (en) === 海外フォロワー向け
-      - name: Post to Threads (en)
-        continue-on-error: true
-        run: npm run post:threads -- --lang=en --strategy=oldest
-        env:
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: me
-          SITE_URL: https://sciencepubmed.net
-
-      - name: Post to Facebook (en)
-        continue-on-error: true
-        run: npm run post:facebook -- --lang=en --strategy=oldest
-        env:
-          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
-          SITE_URL: https://sciencepubmed.net
-
-      - name: Post to Instagram (en)
-        continue-on-error: true
-        run: npm run post:instagram -- --lang=en --strategy=oldest
-        env:
-          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          SITE_URL: https://sciencepubmed.net
-
+      # X 通知は ja の cron でのみ送る (X は ja アカウント運用想定)
       - name: Send X-version template to Gmail
-        # 最新投稿を X 用に整形して自分の Gmail に送信 (手動 X コピペ用)
-        # --lang=ja で固定: X は日本語アカウント運用想定 (en 直近投稿を拾わない)
+        if: steps.lang.outputs.lang == 'ja'
         continue-on-error: true
         run: npm run notify:x -- --lang=ja
         env:
@@ -106,7 +116,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/posted.json
           if git diff --staged --quiet; then
-            echo "No post records to commit (both posts may have failed or all articles already posted)"
+            echo "No post records to commit (posts may have failed or all articles already posted)"
             exit 0
           fi
           git commit -m "auto: posted record $(date -u +%FT%TZ)"
