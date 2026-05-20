@@ -12,14 +12,13 @@ name: Scheduled SNS posting
 #   - ja/en を別 cron に分離: 1 cron 内 6投稿 → 3投稿
 #   - cron 時刻を毎時 0 分ピッタリを避ける
 #   - jitter step を最初に追加 (cron 開始から 0〜10分の遅延)
-#   - FB は完全廃止 (Page が Profile に自動変換され不可逆)
-#
 # スケジュール (UTC → JST):
 #   ja: 22:23 UTC → 07:23 JST (朝)
 #   ja: 12:17 UTC → 21:17 JST (夜)
 #   en: 14:43 UTC → 23:43 JST (深夜=海外朝)
 #
-# = ja 2/日 + en 1/日 = 1PF あたり 3投稿/日
+# = ja 2/日 + en 1/日 = 各 PF あたり 3投稿/日 (Threads + FB + IG)
+# = 1日合計 9 投稿 (Meta 検知圧の許容範囲内)
 on:
   schedule:
     - cron: '23 22 * * *'   # 07:23 JST ja
@@ -88,8 +87,15 @@ jobs:
           THREADS_USER_ID: me
           SITE_URL: https://sciencepubmed.net
 
-      # Facebook は 2026-05-18 に廃止 (Page が Profile に自動変換 + 過去投稿消失)
-      # post:facebook script 自体は残してあるが workflow からは外す
+      - name: Post to Facebook
+        # 2026-05-20: FB Page (1103479166185406) は生きていた (旧誤判定を訂正)。
+        # Page token は never expire、ビジネス連携権限 ON 済 → 投稿可能。
+        continue-on-error: true
+        run: npm run post:facebook -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
 
       - name: Post to Instagram
         continue-on-error: true
