@@ -17,9 +17,25 @@ import { pubmedUrl } from '../pubmed/fetch.js';
 
 const MAX_NG_RETRIES = 2;
 
+let didLogKeyInfo = false;
 function getClient(): Anthropic {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('ANTHROPIC_API_KEY が未設定です');
+  const rawKey = process.env.ANTHROPIC_API_KEY;
+  if (!rawKey) throw new Error('ANTHROPIC_API_KEY が未設定です');
+  // CI 上で改行やスペースが混入していると HTTP ヘッダ生成で fetch が
+  // 即座に失敗し "Connection error" になる → 念のためトリム
+  const apiKey = rawKey.trim();
+  if (!didLogKeyInfo) {
+    const rawLen = rawKey.length;
+    const trimLen = apiKey.length;
+    const head = apiKey.slice(0, 12);
+    const tail = apiKey.slice(-4);
+    const hasWhitespace = rawLen !== trimLen;
+    Logger.info(
+      `Anthropic key: rawLen=${rawLen} trimLen=${trimLen} ` +
+      `prefix="${head}..." suffix="...${tail}" hasWhitespaceArtifact=${hasWhitespace}`,
+    );
+    didLogKeyInfo = true;
+  }
   return new Anthropic({ apiKey });
 }
 
