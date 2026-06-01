@@ -52,6 +52,19 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1702094040387118"
       crossorigin="anonymous"
     ></script>
+
+    {/* Google Analytics 4 (GA4) - 測定 ID: G-PNYCBNKVL9 */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNYCBNKVL9"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PNYCBNKVL9');
+    </script>
+
+    {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
+        HTML タグ認証なら content="..." の値を Search Console 側でコピペ確認用に埋める) */}
+    {/* <meta name="google-site-verification" content="ここに認証文字列を入れる" /> */}
   </head>
   <body>
     <header class="site-header">
