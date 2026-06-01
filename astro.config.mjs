@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // i18n: ja/en どちらも /ja/ /en/ サブパスで配信（prefixDefaultLocale: true）
 export default defineConfig({
@@ -13,4 +14,14 @@ export default defineConfig({
       redirectToDefaultLocale: true,
     },
   },
+  integrations: [
+    // /sitemap-index.xml と /sitemap-0.xml を build 時に自動生成
+    // i18n 対応: ja/en の両方が hreflang 付きで列挙される
+    sitemap({
+      i18n: {
+        defaultLocale: 'ja',
+        locales: { ja: 'ja-JP', en: 'en-US' },
+      },
+    }),
+  ],
 });

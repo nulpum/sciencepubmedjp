@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
+    "@astrojs/sitemap": "^3.7.3",
     "@resvg/resvg-js": "^2.6.2",
     "@types/nodemailer": "^8.0.0",
     "astro": "^5.0.0",

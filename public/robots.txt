@@ -1,0 +1,11 @@
+# PubMed Trivia - robots.txt
+# 全 bot に対して全コンテンツを公開、sitemap の場所を明示
+
+User-agent: *
+Allow: /
+
+# 重複コンテンツ回避: out/ や内部 API は public 配下にないが念のため
+Disallow: /out/
+
+# サイトマップ (Astro sitemap integration が自動生成)
+Sitemap: https://sciencepubmed.net/sitemap-index.xml
