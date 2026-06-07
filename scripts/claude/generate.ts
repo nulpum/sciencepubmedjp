@@ -69,7 +69,9 @@ async function callClaudeOnce(
   const client = getClient();
   const res = await client.messages.create({
     model: getModel(),
-    max_tokens: 1024,
+    // 5 セクション構成 (ja 800-1500字 / en 400-800 words) + title + fact + JSON 構造 のため
+    // 2026-05 改訂で 1024 → 3500 に増量。出力トークンの目安は ja で ~2500, en で ~1800。
+    max_tokens: 3500,
     system: buildSystemPrompt(lang),
     messages: [{ role: 'user', content: buildUserPrompt(article, lang) }],
   });

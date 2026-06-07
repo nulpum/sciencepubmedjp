@@ -88,6 +88,16 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         <a href={`/${lang}/about/`}>{lang === 'ja' ? 'このサイトについて' : 'About'}</a>
         <span aria-hidden="true">·</span>
         <a href={`/${lang}/privacy/`}>{lang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy'}</a>
+        {lang === 'ja' && (
+          <>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/guide/how-to-read-research/">論文の読み方</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/guide/glossary/">研究用語集</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/guide/faq/">FAQ</a>
+          </>
+        )}
         <span aria-hidden="true">·</span>
         <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X</a>
         <span aria-hidden="true">·</span>
