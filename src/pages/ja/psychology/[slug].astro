@@ -7,7 +7,7 @@ export async function getStaticPaths() {
   return posts.map((post) => ({ params: { slug: post.id }, props: { post, all: posts } }));
 }
 const { post, all } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 // 同カテゴリの他記事から最新 3 件 (current 除く)
 const related = (all as typeof post[])
@@ -16,20 +16,93 @@ const related = (all as typeof post[])
   .slice(0, 3);
 
 const ogImage = `/og/ja/${post.id}.png`;
+
+// 目次は body 内の H2 のみ
+const tocItems = headings.filter((h) => h.depth === 2);
+
+// 構造化データ (Schema.org Article) - Google の検索エンジン用
+const siteUrl = 'https://sciencepubmed.net';
+const articleUrl = `${siteUrl}/ja/psychology/${post.id}/`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': post.data.title,
+  'description': post.data.fact,
+  'datePublished': post.data.generated_at,
+  'dateModified': post.data.generated_at,
+  'author': {
+    '@type': 'Organization',
+    'name': 'PubMed Trivia 編集部',
+    'url': siteUrl,
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'PubMed Trivia',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${siteUrl}/profile.png`,
+    },
+  },
+  'image': `${siteUrl}${ogImage}`,
+  'mainEntityOfPage': articleUrl,
+  'citation': post.data.source_url,
+  'isAccessibleForFree': true,
+  'inLanguage': 'ja-JP',
+  'about': {
+    '@type': 'Thing',
+    'name': '心理学',
+  },
+};
 ---
 <BaseLayout title={post.data.title} description={post.data.fact} lang="ja" ogType="article" ogImage={ogImage}>
-  <article>
-    <h1>{post.data.title}</h1>
-    <p><strong>{post.data.fact}</strong></p>
-    <Content />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <article class="article">
+    <header class="article__header">
+      <p class="article__breadcrumb">
+        <a href="/ja/">ホーム</a> › <a href="/ja/psychology/">心理学</a>
+      </p>
+      <h1>{post.data.title}</h1>
+      <p class="article__fact"><strong>{post.data.fact}</strong></p>
+    </header>
+
+    {tocItems.length >= 2 && (
+      <nav class="article__toc" aria-label="目次">
+        <p class="article__toc-title">この記事の目次</p>
+        <ol>
+          {tocItems.map((h) => (
+            <li><a href={`#${h.slug}`}>{h.text}</a></li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    <div class="article__body">
+      <Content />
+    </div>
+
     <hr />
-    <p>
-      原典: <a href={post.data.source_url} rel="noopener" target="_blank">PMID {post.data.pmid}</a>
-      {post.data.journal && <span>（{post.data.journal}{post.data.year && `, ${post.data.year}`}）</span>}
-    </p>
+
+    <section class="article__source">
+      <h2>原典情報</h2>
+      <ul>
+        <li><strong>PMID</strong>: <a href={post.data.source_url} rel="noopener" target="_blank">{post.data.pmid}</a> (PubMed で原文を見る)</li>
+        {post.data.journal && <li><strong>掲載誌</strong>: {post.data.journal}{post.data.year && ` (${post.data.year}年)`}</li>}
+      </ul>
+      <p class="article__disclaimer">
+        本サイトの記事は元論文の abstract から翻案された一般教養としての豆知識です。
+        医療助言を目的とするものではありません。研究結果の解釈にあたっては
+        <a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a> もご参照ください。
+      </p>
+    </section>
+
     {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
-      <section>
-        <h2>関連書籍 #PR</h2>
+      <section class="article__books">
+        <h2>関連書籍 <small>#PR</small></h2>
+        <p class="article__books-note">
+          記事のテーマに関心を持たれた方向けに、Amazon の関連書籍検索リンクをご紹介します。
+          (本サイトは Amazon アソシエイト・プログラムに参加しています)
+        </p>
         <ul>
           {post.data.affiliate_links.map((l) => (
             <li><a href={l.url} rel="sponsored noopener" target="_blank">{l.title}</a></li>
@@ -52,4 +125,64 @@ const ogImage = `/og/ja/${post.id}.png`;
       </ul>
     </section>
   )}
+
+  <section class="guide-cta">
+    <h2>論文をもっと深く理解する</h2>
+    <ul>
+      <li><a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a> — 相関と因果、効果量、p 値などの基礎</li>
+      <li><a href="/ja/guide/glossary/">研究用語集</a> — メタアナリシス、RCT など主要用語</li>
+      <li><a href="/ja/guide/faq/">よくある質問</a> — サイトの編集方針と注意事項</li>
+    </ul>
+  </section>
+
+  <style>
+    .article { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
+    .article__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .article__breadcrumb a { color: var(--muted); }
+    .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }
+    .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }
+
+    .article__toc {
+      background: #f7f9fc;
+      border-left: 4px solid var(--navy);
+      padding: 14px 18px 14px 22px;
+      margin: 28px 0;
+      border-radius: 4px;
+    }
+    .article__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .article__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .article__toc a { color: var(--link); }
+    .article__toc a:hover { text-decoration: underline; }
+
+    .article__body :global(h2) {
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-top: 30px;
+      padding-left: 10px;
+      border-left: 4px solid var(--navy);
+      scroll-margin-top: 16px;
+    }
+    .article__body :global(p) { line-height: 1.9; margin: 14px 0; }
+    .article__body :global(ul), .article__body :global(ol) { line-height: 1.85; }
+
+    .article__source { background: #fafafa; padding: 16px 20px; border-radius: 8px; margin: 28px 0; }
+    .article__source h2 { font-size: 1.1rem; margin-top: 0; color: var(--navy); }
+    .article__source ul { margin: 8px 0; padding-left: 22px; }
+    .article__disclaimer { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
+
+    .article__books { margin: 28px 0; }
+    .article__books h2 { font-size: 1.1rem; color: var(--navy); }
+    .article__books h2 small { font-size: 0.7rem; color: var(--muted); font-weight: normal; }
+    .article__books-note { font-size: 0.85rem; color: var(--muted); margin: 8px 0 12px; }
+
+    .guide-cta {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 20px 24px;
+      background: #f0f4fa;
+      border-radius: 8px;
+    }
+    .guide-cta h2 { font-size: 1.1rem; color: var(--navy); margin-top: 0; }
+    .guide-cta ul { margin: 8px 0; padding-left: 22px; line-height: 1.9; }
+  </style>
 </BaseLayout>

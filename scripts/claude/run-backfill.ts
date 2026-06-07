@@ -11,9 +11,10 @@
 //   5. affiliate_links は select-books で再生成
 //
 // 使い方:
-//   npm run gen:backfill-prompt                    # 全件
-//   npm run gen:backfill-prompt -- --pmid=39523882 # 1件だけ
-//   npm run gen:backfill-prompt -- --dry-run       # 件数確認のみ
+//   npm run gen:backfill-prompt                          # 全件
+//   npm run gen:backfill-prompt -- --pmid=39523882       # 1件だけ
+//   npm run gen:backfill-prompt -- --only-missing-sections  # 5 ## セクションが揃ってない記事のみ
+//   npm run gen:backfill-prompt -- --dry-run             # 件数確認のみ
 
 import '../lib/env.js';
 import { readdir, readFile, access } from 'node:fs/promises';
@@ -82,6 +83,7 @@ async function loadOrFetchRaw(pmid: string): Promise<PubmedArticle> {
 
 interface CliArgs {
   pmid?: string;
+  onlyMissingSections: boolean;
   dryRun: boolean;
 }
 
@@ -90,8 +92,23 @@ function parseArgs(): CliArgs {
   const pmidArg = args.find((a) => a.startsWith('--pmid='));
   return {
     pmid: pmidArg?.split('=')[1],
+    onlyMissingSections: args.includes('--only-missing-sections'),
     dryRun: args.includes('--dry-run'),
   };
+}
+
+// 記事ファイルの body 内に "## " で始まる H2 見出しが何個あるかを数える
+async function countSections(slug: string, category: Category): Promise<number> {
+  const path = join(CONTENT_DIR, 'ja', category, `${slug}.md`);
+  try {
+    const text = await readFile(path, 'utf8');
+    const m = text.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n([\s\S]*)$/);
+    const body = m ? m[1] : text;
+    const headings = body.match(/^##\s/gm);
+    return headings ? headings.length : 0;
+  } catch {
+    return 0;
+  }
 }
 
 async function processOne(ref: ArticleRef): Promise<void> {
@@ -120,9 +137,23 @@ async function main(): Promise<void> {
   const all = await listExistingArticles();
   Logger.info(`既存記事 ${all.length} 件を検出`);
 
-  const targets = args.pmid ? all.filter((r) => r.pmid === args.pmid) : all;
-  if (args.pmid && targets.length === 0) {
-    throw new Error(`PMID=${args.pmid} に該当する記事が見つかりません`);
+  let targets: ArticleRef[];
+  if (args.pmid) {
+    targets = all.filter((r) => r.pmid === args.pmid);
+    if (targets.length === 0) {
+      throw new Error(`PMID=${args.pmid} に該当する記事が見つかりません`);
+    }
+  } else if (args.onlyMissingSections) {
+    // 新フォーマット (5 セクション) でない記事だけ対象に
+    const filtered: ArticleRef[] = [];
+    for (const r of all) {
+      const n = await countSections(r.slug, r.category);
+      if (n < 5) filtered.push(r);
+    }
+    targets = filtered;
+    Logger.info(`--only-missing-sections: 5 セクション未満の記事 ${targets.length} 件を対象に`);
+  } else {
+    targets = all;
   }
   Logger.info(`バックフィル対象: ${targets.length} 件`);
 
