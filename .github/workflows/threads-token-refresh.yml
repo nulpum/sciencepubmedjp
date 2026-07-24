@@ -1,0 +1,73 @@
+name: Threads token refresh
+
+# Threads long-lived token は 60 日で失効するため、45 日毎に自動リフレッシュ。
+# refresh_access_token endpoint で新トークンを取得 → Gmail 通知。
+# PAT_FOR_SECRETS が設定されていれば GH Secret も自動更新 (fully automated)。
+#
+# スケジュール: 毎月 15 日 07:33 JST に実行 (毎時 :00 を避ける + Threads token
+# の 45 日毎リフレッシュに近い頻度で走らせる)
+on:
+  schedule:
+    - cron: '33 22 15 * *'   # 15日 07:33 JST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh Threads token
+        id: refresh
+        run: |
+          # スクリプトを実行、stdout の "NEW_TOKEN=..." 行を GITHUB_OUTPUT に転記
+          OUTPUT=$(npm run refresh:threads-token 2>&1) || { echo "$OUTPUT"; exit 1; }
+          echo "$OUTPUT"
+          NEW=$(echo "$OUTPUT" | grep -oE 'NEW_TOKEN=\S+' | head -1 | cut -d= -f2-)
+          if [ -z "$NEW" ]; then
+            echo "::error::refresh script did not emit NEW_TOKEN"
+            exit 1
+          fi
+          # GITHUB_OUTPUT にはトークンをそのまま書かない (log に残るのを避ける)
+          # 代わりに長さだけ確認用に出す
+          echo "new_token_length=${#NEW}" >> "$GITHUB_OUTPUT"
+          # PAT があれば次 step で gh secret set に使うため env に一時保存
+          echo "NEW_TOKEN<<EOF" >> "$GITHUB_ENV"
+          echo "$NEW" >> "$GITHUB_ENV"
+          echo "EOF" >> "$GITHUB_ENV"
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+
+      - name: Update GH Secret (if PAT available)
+        if: env.NEW_TOKEN != ''
+        env:
+          # PAT_FOR_SECRETS は "repo" スコープを持つ Personal Access Token
+          # 未設定なら GH Secret 自動更新はスキップされ、Gmail 通知だけ有効
+          PAT: ${{ secrets.PAT_FOR_SECRETS }}
+        run: |
+          if [ -z "$PAT" ]; then
+            echo "PAT_FOR_SECRETS が未設定 → GH Secret 自動更新はスキップ"
+            echo "Gmail に届いた新 token を手動で GH Secret に貼り付けてください"
+            exit 0
+          fi
+          echo "PAT あり → gh secret set で THREADS_ACCESS_TOKEN を更新"
+          echo "$PAT" | gh auth login --with-token
+          echo -n "$NEW_TOKEN" | gh secret set THREADS_ACCESS_TOKEN --repo "${{ github.repository }}"
+          echo "✅ GH Secret 更新完了 (length=${#NEW_TOKEN})"

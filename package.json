@@ -20,6 +20,7 @@
     "post:instagram": "tsx scripts/instagram/run-post.ts",
     "notify:x": "tsx scripts/x/run-notify.ts",
     "notify:x-daily": "tsx scripts/x/run-daily.ts",
+    "refresh:threads-token": "tsx scripts/threads/refresh-token.ts",
     "generate:og": "tsx scripts/image/run-generate-og.ts"
   },
   "dependencies": {
