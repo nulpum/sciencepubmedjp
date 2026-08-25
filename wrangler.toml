@@ -1,7 +1,15 @@
 name = "sciencepubmedjp"
 compatibility_date = "2024-11-01"
+# nodejs_compat: @anthropic-ai/sdk が内部で node:crypto を使うため必要
+compatibility_flags = ["nodejs_compat"]
 
-# 静的サイト (Astro でビルドした dist/) をそのままサーブする設定
+# Astro Cloudflare adapter が生成する Worker スクリプト (SSR エンドポイント用)
+# 静的ページ (prerender=true) は下記 [assets] から配信、
+# /api/* と /ja/lab/* の SSR は _worker.js/index.js が処理する。
+main = "./dist/_worker.js/index.js"
+
+# 静的アセット (prerender された HTML + og 画像等)
 [assets]
 directory = "./dist"
+binding = "ASSETS"
 not_found_handling = "404-page"
