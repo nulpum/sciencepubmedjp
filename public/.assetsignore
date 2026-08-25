@@ -1,0 +1,4 @@
+# Cloudflare Workers Static Assets が SSR Worker script を静的アセットとして
+# アップロードしないための除外リスト
+# _worker.js は wrangler.toml の main= 経由で Worker として実行される
+_worker.js

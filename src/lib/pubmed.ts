@@ -31,6 +31,37 @@ function withCommonParams(p: URLSearchParams, cfg: PubmedConfig): URLSearchParam
   return p;
 }
 
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+/**
+ * 429 / 5xx / ネットワークエラー時に指数バックオフでリトライ
+ * PubMed E-utilities は API キー無しで 3 req/sec、あり で 10 req/sec の制限。
+ */
+async function fetchWithRetry(url: string, opts?: RequestInit, maxRetries: number = 3): Promise<Response> {
+  let lastErr: unknown;
+  for (let i = 0; i <= maxRetries; i++) {
+    try {
+      const res = await fetch(url, opts);
+      // 成功 or クライアントエラー (429 除く) はそのまま返す
+      if (res.ok || (res.status >= 400 && res.status < 500 && res.status !== 429)) {
+        return res;
+      }
+      // 429 or 5xx はリトライ対象
+      lastErr = new Error(`HTTP ${res.status}`);
+    } catch (e) {
+      lastErr = e;
+    }
+    if (i < maxRetries) {
+      // 429 対策で長めの待機 (指数バックオフ + jitter): 800ms, 2000ms, 4500ms
+      const backoff = 800 * Math.pow(2.2, i) + Math.random() * 500;
+      await sleep(backoff);
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));
+}
+
 /**
  * PubMed 検索: クエリに一致する PMID を最大 N 件取得
  */
@@ -49,7 +80,7 @@ export async function searchPmids(
     }),
     cfg,
   );
-  const res = await fetch(`${ESEARCH}?${params}`);
+  const res = await fetchWithRetry(`${ESEARCH}?${params}`);
   if (!res.ok) throw new Error(`esearch failed: ${res.status}`);
   const json = (await res.json()) as {
     esearchresult: { idlist: string[]; count: string };
@@ -77,7 +108,9 @@ export async function fetchArticles(
     }),
     cfg,
   );
-  const res = await fetch(`${EFETCH}?${params}`);
+  // esearch と efetch の間に少し間隔を空ける (rate limit 対策)
+  await sleep(cfg.apiKey ? 100 : 350);
+  const res = await fetchWithRetry(`${EFETCH}?${params}`);
   if (!res.ok) throw new Error(`efetch failed: ${res.status}`);
   const xml = await res.text();
   return parsePubmedXml(xml);
