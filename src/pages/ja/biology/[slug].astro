@@ -134,6 +134,16 @@ export const prerender = true;
     </section>
   )}
 
+  <section class="lab-widget">
+    <p class="lab-widget__label">🔬 このテーマの論文をさらに探す</p>
+    <p class="lab-widget__body">
+      PubMed Lab なら、日本語のキーワードで PubMed の関連論文を検索できます。
+    </p>
+    <a href={`/ja/lab/?q=${encodeURIComponent(post.data.title)}`} class="lab-widget__button">
+      🔍 「{post.data.title.slice(0, 24)}」で PubMed Lab を検索 →
+    </a>
+  </section>
+
   <section class="guide-cta">
     <h2>論文をもっと深く理解する</h2>
     <ul>
@@ -173,6 +183,12 @@ export const prerender = true;
     .article__cta-links a { display: inline-block; color: #a05e00; font-weight: 500; text-decoration: none; padding: 4px 0; border-bottom: 1px dashed #d4b168; }
     .article__cta-links a:hover { border-bottom-style: solid; }
     .article__cta-note { font-size: 0.75rem; color: #8a7448; margin: 8px 0 0; }
+    .lab-widget { max-width: 760px; margin: 32px auto 8px; padding: 20px 24px; background: linear-gradient(135deg, #1a365d 0%, #2a4a7d 100%); color: white; border-radius: 10px; text-align: center; }
+    .lab-widget__label { font-weight: 700; font-size: 1.05rem; margin: 0 0 6px; color: #fbbf24; }
+    .lab-widget__body { margin: 4px 0 14px; font-size: 0.92rem; color: rgba(255, 255, 255, 0.9); }
+    .lab-widget__button { display: inline-block; background: #fbbf24; color: #1a365d !important; padding: 10px 18px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 0.92rem; }
+    .lab-widget__button:hover { background: #f59e0b; }
+
     .guide-cta { max-width: 760px; margin: 40px auto; padding: 20px 24px; background: #f0f4fa; border-radius: 8px; }
     .guide-cta h2 { font-size: 1.1rem; color: var(--navy); margin-top: 0; }
     .guide-cta ul { margin: 8px 0; padding-left: 22px; line-height: 1.9; }

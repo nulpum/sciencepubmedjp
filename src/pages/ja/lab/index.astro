@@ -3,6 +3,7 @@
 // クエリパラメータ ?q=... で検索実行 → 結果表示
 // クエリなしの場合は検索窓 + サンプルクエリ表示
 
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { translateQueryToEnglish } from '../../../lib/query-translator';
 import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
@@ -37,6 +38,15 @@ let totalCount = 0;
 let elapsedMs = 0;
 let errorMessage = '';
 
+interface SiteMatch {
+  slug: string;
+  category: 'psychology' | 'biology';
+  title: string;
+  fact: string;
+  url: string;
+}
+let siteMatches: SiteMatch[] = [];
+
 if (q) {
   const startedAt = Date.now();
   try {
@@ -68,6 +78,38 @@ if (q) {
       }));
     }
     elapsedMs = Date.now() - startedAt;
+
+    // サイト内記事から関連するものを検索 (簡易 substring match)
+    try {
+      const psy = await getCollection('ja_psychology');
+      const bio = await getCollection('ja_biology');
+      const all = [...psy, ...bio];
+      // クエリを 2 文字以上のトークンに分割して部分一致
+      const tokens = q
+        .split(/[\s、,.。・]+/)
+        .filter((t) => t.length >= 2);
+      const scored = all
+        .map((p) => {
+          const haystack = (p.data.title + ' ' + p.data.fact).toLowerCase();
+          let score = 0;
+          for (const t of tokens) {
+            if (haystack.includes(t.toLowerCase())) score++;
+          }
+          return { post: p, score };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+      siteMatches = scored.map((x) => ({
+        slug: x.post.id,
+        category: x.post.data.category,
+        title: x.post.data.title,
+        fact: x.post.data.fact,
+        url: `/ja/${x.post.data.category}/${x.post.id}/`,
+      }));
+    } catch {
+      // 失敗しても検索結果は表示するので握りつぶし
+    }
   } catch (e) {
     errorMessage = (e as Error).message || String(e);
   }
@@ -178,8 +220,36 @@ const pageDesc = q
           )}
         </div>
 
+        {siteMatches.length > 0 && (
+          <section class="lab__site-matches">
+            <h2 class="lab__site-matches-title">
+              📖 このサイトの解説記事から (日本語で読める)
+            </h2>
+            <p class="lab__site-matches-note">
+              PubMed Trivia が過去に取り上げた論文を日本語で解説している記事です。
+            </p>
+            <ul class="lab__site-cards">
+              {siteMatches.map((m) => (
+                <li class="lab__site-card">
+                  <a href={m.url}>
+                    <span class={`tag tag--${m.category}`}>
+                      {m.category === 'psychology' ? '心理学' : '生物学'}
+                    </span>
+                    <strong>{m.title}</strong>
+                    <span class="lab__site-card-fact">{m.fact}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {results.length === 0 && (
           <p class="lab__no-results">該当する論文が見つかりませんでした。別のキーワードでお試しください。</p>
+        )}
+
+        {results.length > 0 && (
+          <h2 class="lab__results-title">🔍 PubMed の検索結果</h2>
         )}
 
         <ul class="lab__cards">
@@ -368,5 +438,68 @@ const pageDesc = q
 
     .lab__back { margin: 28px 0; text-align: center; }
     .lab__back a { color: var(--link); }
+
+    /* サイト内マッチ */
+    .lab__site-matches {
+      background: #f0f7ec;
+      border-left: 4px solid #4a8f31;
+      padding: 18px 22px;
+      border-radius: 8px;
+      margin: 24px 0 28px;
+    }
+    .lab__site-matches-title {
+      font-size: 1.1rem;
+      color: #2e6320;
+      margin: 0 0 6px;
+    }
+    .lab__site-matches-note {
+      font-size: 0.85rem;
+      color: #4a7040;
+      margin: 0 0 12px;
+    }
+    .lab__site-cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    @media (min-width: 640px) {
+      .lab__site-cards { grid-template-columns: 1fr 1fr; }
+    }
+    .lab__site-card a {
+      display: block;
+      background: white;
+      border: 1px solid #cfe0c3;
+      border-radius: 6px;
+      padding: 12px 14px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      transition: box-shadow 0.15s;
+    }
+    .lab__site-card a:hover {
+      box-shadow: 0 3px 8px rgba(46, 99, 32, 0.15);
+    }
+    .lab__site-card strong {
+      display: block;
+      color: var(--navy);
+      margin: 6px 0 4px;
+      font-size: 0.95rem;
+    }
+    .lab__site-card-fact {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .lab__results-title {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin: 28px 0 12px;
+      padding-left: 10px;
+      border-left: 4px solid var(--navy);
+    }
   </style>
 </BaseLayout>

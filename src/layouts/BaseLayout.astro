@@ -73,6 +73,9 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         <nav class="site-nav">
           <a href={`/${lang}/psychology/`}>Psychology</a>
           <a href={`/${lang}/biology/`}>Biology</a>
+          {lang === 'ja' && (
+            <a href="/ja/lab/" class="site-nav__cta">🔬 Lab</a>
+          )}
           <span class="site-nav__sep" aria-hidden="true">|</span>
           <a href="/ja/" class={lang === 'ja' ? 'is-active' : ''}>JA</a>
           <span class="site-nav__sep" aria-hidden="true">/</span>
@@ -180,6 +183,18 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       .site-nav a:hover { color: var(--navy); text-decoration: none; }
       .site-nav a.is-active { color: var(--navy); font-weight: 600; }
       .site-nav__sep { color: var(--border); }
+      /* Lab リンクは目立たせる (背景付きボタン風) */
+      .site-nav__cta {
+        background: var(--navy);
+        color: white !important;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+      }
+      .site-nav__cta:hover {
+        background: var(--navy-deep);
+        color: white !important;
+      }
 
       /* === Main === */
       .site-main {
