@@ -4,7 +4,13 @@
 //   - Instagram 用カード (1080x1080) ... フィード投稿時の画像
 //
 // 実装: SVG を組み立てて @resvg/resvg-js で PNG 化
-// フォント: fonts/NotoSansJP-Bold.ttf (Variable, 全 weight 込み)
+// フォント: fonts/NotoSansJP-Bold.ttf (静的、wght=700 の単一 instance)
+//   ⚠️ 可変フォント (variable font, fvar 付き) は resvg-js Linux 版で
+//       glyph 展開に失敗し、日本語が豆腐 (□) 化する。GH Actions cron で
+//       発生した経験があるため、必ず fontTools の instantiateVariableFont で
+//       静的化した TTF を使うこと。
+//       再生成コマンド:
+//         python -c "from fontTools.ttLib import TTFont; from fontTools.varLib.instancer import instantiateVariableFont; f=TTFont('<var>.ttf'); instantiateVariableFont(f,{'wght':700},inplace=False,updateFontNames=True).save('fonts/NotoSansJP-Bold.ttf')"
 
 import { Resvg } from '@resvg/resvg-js';
 import { readFile } from 'node:fs/promises';
