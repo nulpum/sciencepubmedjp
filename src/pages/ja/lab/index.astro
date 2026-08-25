@@ -1,0 +1,372 @@
+---
+// PubMed Lab トップ + 結果ページ (SSR)
+// クエリパラメータ ?q=... で検索実行 → 結果表示
+// クエリなしの場合は検索窓 + サンプルクエリ表示
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { translateQueryToEnglish } from '../../../lib/query-translator';
+import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
+
+// SSR (prerender しない、Cloudflare Pages Functions で動く)
+export const prerender = false;
+
+// Astro locals から env を取得 (CF Workers 対応)
+function getEnv(locals: any, key: string): string | undefined {
+  const cf = locals?.runtime?.env;
+  if (cf && key in cf) return cf[key];
+  return typeof process !== 'undefined' ? process.env[key] : undefined;
+}
+
+const url = new URL(Astro.request.url);
+const q = (url.searchParams.get('q') || '').trim();
+
+interface ResultItem {
+  pmid: string;
+  title: string;
+  authors: string[];
+  journal?: string;
+  year?: number;
+  abstract: string;
+  url: string;
+}
+
+let englishQuery = '';
+let translationNotes = '';
+let results: ResultItem[] = [];
+let totalCount = 0;
+let elapsedMs = 0;
+let errorMessage = '';
+
+if (q) {
+  const startedAt = Date.now();
+  try {
+    const apiKey = (getEnv(Astro.locals, 'ANTHROPIC_API_KEY') || '').trim();
+    if (!apiKey) throw new Error('サーバー設定エラー (API key 未設定)');
+    const pubmedCfg = {
+      tool: getEnv(Astro.locals, 'PUBMED_TOOL') || 'pubmed-trivia-lab',
+      email: getEnv(Astro.locals, 'PUBMED_EMAIL') || 'sciencepubmedjp@gmail.com',
+      apiKey: getEnv(Astro.locals, 'PUBMED_API_KEY') || undefined,
+    };
+
+    const translation = await translateQueryToEnglish(apiKey, q);
+    englishQuery = translation.englishQuery;
+    translationNotes = translation.notes || '';
+
+    const { pmids, total } = await searchPmids(pubmedCfg, englishQuery, 10);
+    totalCount = total;
+
+    if (pmids.length > 0) {
+      const articles = await fetchArticles(pubmedCfg, pmids);
+      results = articles.map((a) => ({
+        pmid: a.pmid,
+        title: a.title,
+        authors: a.authors.slice(0, 3),
+        journal: a.journal,
+        year: a.year,
+        abstract: a.abstract,
+        url: pubmedUrl(a.pmid),
+      }));
+    }
+    elapsedMs = Date.now() - startedAt;
+  } catch (e) {
+    errorMessage = (e as Error).message || String(e);
+  }
+}
+
+const sampleQueries = [
+  '大学生の睡眠不足と学業成績の関係',
+  'ADHD の子どもへの認知行動療法の効果',
+  '腸内細菌と精神的健康 (メタアナリシス)',
+  'HSP (Highly Sensitive Person) の科学的根拠',
+  'マインドフルネスと不安症のシステマティックレビュー',
+  '運動習慣と認知機能低下の予防',
+  '発達心理学 最近のホット領域',
+  '大学院進学のメリットと課題',
+];
+
+const pageTitle = q
+  ? `検索: ${q} ｜ PubMed Lab`
+  : 'PubMed Lab ｜ 日本語で論文を探せるリサーチアシスタント';
+const pageDesc = q
+  ? `「${q}」の PubMed 検索結果 (${totalCount} 件中 ${results.length} 件表示)`
+  : '日本語で入力するだけで、PubMed の英語論文を検索できるツール。卒論・研究テーマ探しに。';
+---
+<BaseLayout title={pageTitle} description={pageDesc} lang="ja">
+  <article class="lab">
+    <header class="lab__header">
+      <p class="lab__breadcrumb"><a href="/ja/">ホーム</a> › PubMed Lab</p>
+      <h1>🔬 PubMed Lab</h1>
+      <p class="lab__lede">
+        日本語で入力するだけで、PubMed の英語論文を検索できるリサーチアシスタントです。<br>
+        卒論・研究テーマ探し、興味のある論文を効率よく見つけられます。
+      </p>
+    </header>
+
+    <form method="GET" action="/ja/lab/" class="lab__form">
+      <input
+        type="text"
+        name="q"
+        value={q}
+        placeholder="例: 大学生の睡眠不足と学業成績"
+        class="lab__input"
+        autofocus={!q}
+        required
+      />
+      <button type="submit" class="lab__submit">検索する</button>
+    </form>
+
+    {!q && (
+      <section class="lab__samples">
+        <p class="lab__samples-title">💡 サンプル検索 (クリックで実行)</p>
+        <ul class="lab__samples-list">
+          {sampleQueries.map((sq) => (
+            <li><a href={`/ja/lab/?q=${encodeURIComponent(sq)}`}>{sq}</a></li>
+          ))}
+        </ul>
+
+        <section class="lab__howto">
+          <h2>使い方</h2>
+          <ol>
+            <li>気になるテーマ・質問を <strong>日本語で</strong> 入力</li>
+            <li>AI が英語の PubMed 検索クエリに変換</li>
+            <li>マッチする論文を最大 10 件、英語 abstract 付きで表示</li>
+          </ol>
+        </section>
+
+        <section class="lab__coming">
+          <h2>Coming Soon (有料機能)</h2>
+          <ul>
+            <li>📖 論文 abstract の <strong>日本語 3 行要約</strong></li>
+            <li>💬 論文と <strong>壁打ちチャット</strong> (この研究の要点は? / 反論は? / 卒論引用のコツ)</li>
+            <li>⭐ お気に入り論文の <strong>保存 + 検索履歴</strong></li>
+          </ul>
+          <p class="lab__coming-note">
+            登録者向け機能として順次リリース予定です。
+          </p>
+        </section>
+
+        <section class="lab__disclaimer">
+          <p>
+            ⚠️ 本ツールは一般教養目的で、医療助言ではありません。研究結果の解釈にあたっては
+            <a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a>
+            もご参照ください。
+          </p>
+        </section>
+      </section>
+    )}
+
+    {q && errorMessage && (
+      <section class="lab__error">
+        <p><strong>エラー:</strong> {errorMessage}</p>
+        <p>時間をおいてもう一度お試しください。</p>
+      </section>
+    )}
+
+    {q && !errorMessage && (
+      <section class="lab__results">
+        <div class="lab__meta">
+          <p><strong>「{q}」</strong>の検索結果</p>
+          <p class="lab__meta-detail">
+            {totalCount.toLocaleString()} 件中 {results.length} 件を表示 ({elapsedMs} ms)
+          </p>
+          {englishQuery && (
+            <details class="lab__query-detail">
+              <summary>AI が生成した英語クエリを見る</summary>
+              <pre>{englishQuery}</pre>
+              {translationNotes && <p class="lab__query-notes">💡 {translationNotes}</p>}
+            </details>
+          )}
+        </div>
+
+        {results.length === 0 && (
+          <p class="lab__no-results">該当する論文が見つかりませんでした。別のキーワードでお試しください。</p>
+        )}
+
+        <ul class="lab__cards">
+          {results.map((r) => (
+            <li class="lab__card">
+              <h2 class="lab__card-title">
+                <a href={r.url} rel="noopener" target="_blank">{r.title}</a>
+              </h2>
+              <p class="lab__card-meta">
+                {r.authors.length > 0 && <span>{r.authors.join(', ')}{r.authors.length >= 3 && ' 他'}</span>}
+                {r.journal && <span> · {r.journal}</span>}
+                {r.year && <span> · {r.year}</span>}
+              </p>
+              <p class="lab__card-abstract">
+                {r.abstract.length > 400 ? r.abstract.slice(0, 400) + '…' : r.abstract}
+              </p>
+              <p class="lab__card-actions">
+                <a href={r.url} rel="noopener" target="_blank" class="lab__card-link">
+                  📄 PubMed で読む (PMID: {r.pmid})
+                </a>
+                <span class="lab__card-coming">
+                  🔒 日本語要約・壁打ちチャットは Coming Soon
+                </span>
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <div class="lab__back">
+          <a href="/ja/lab/">← 別のキーワードで検索する</a>
+        </div>
+      </section>
+    )}
+  </article>
+
+  <style>
+    .lab { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
+    .lab__breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+    .lab__breadcrumb a { color: var(--muted); }
+    .lab__header h1 { font-size: 2.2rem; color: var(--navy); margin: 0 0 12px; }
+    .lab__lede { line-height: 1.75; color: var(--text); margin: 0 0 24px; }
+
+    .lab__form {
+      display: flex;
+      gap: 8px;
+      margin: 28px 0 24px;
+      background: #fff;
+      padding: 6px;
+      border: 2px solid var(--navy);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
+    }
+    .lab__input {
+      flex: 1;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text);
+    }
+    .lab__submit {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      background: var(--navy);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .lab__submit:hover { background: var(--navy-deep); }
+
+    .lab__samples-title { font-weight: 700; color: var(--navy); margin: 24px 0 12px; }
+    .lab__samples-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .lab__samples-list li a {
+      display: inline-block;
+      padding: 6px 12px;
+      background: #f0f4fa;
+      border: 1px solid #d5e0f0;
+      border-radius: 20px;
+      text-decoration: none;
+      color: var(--navy);
+      font-size: 0.9rem;
+    }
+    .lab__samples-list li a:hover {
+      background: var(--navy);
+      color: white;
+    }
+
+    .lab__howto, .lab__coming, .lab__disclaimer {
+      margin: 32px 0;
+      padding: 18px 22px;
+      border-radius: 8px;
+    }
+    .lab__howto { background: #f7f9fc; border-left: 4px solid var(--navy); }
+    .lab__coming { background: #fff8ea; border-left: 4px solid #d4a34a; }
+    .lab__disclaimer { background: #fafafa; font-size: 0.9rem; color: var(--muted); }
+    .lab__howto h2, .lab__coming h2 { font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
+    .lab__howto ol, .lab__coming ul { line-height: 1.85; }
+    .lab__coming-note { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+
+    .lab__error {
+      margin: 24px 0;
+      padding: 18px 22px;
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      border-radius: 8px;
+    }
+
+    .lab__meta { margin: 20px 0 16px; }
+    .lab__meta-detail { font-size: 0.85rem; color: var(--muted); }
+    .lab__query-detail {
+      margin: 12px 0;
+      padding: 10px 14px;
+      background: #f7f9fc;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    .lab__query-detail summary { cursor: pointer; color: var(--link); }
+    .lab__query-detail pre {
+      margin: 8px 0 4px;
+      padding: 10px;
+      background: #eef2f7;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 0.85rem;
+    }
+    .lab__query-notes { font-size: 0.85rem; color: var(--muted); margin: 4px 0 0; }
+
+    .lab__no-results {
+      padding: 24px;
+      text-align: center;
+      background: #f7f9fc;
+      border-radius: 8px;
+    }
+
+    .lab__cards { list-style: none; padding: 0; margin: 20px 0; }
+    .lab__card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin: 16px 0;
+      transition: box-shadow 0.15s;
+    }
+    .lab__card:hover { box-shadow: 0 4px 12px rgba(26, 54, 93, 0.1); }
+    .lab__card-title { font-size: 1.05rem; margin: 0 0 6px; }
+    .lab__card-title a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .lab__card-title a:hover { text-decoration: underline; }
+    .lab__card-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 4px 0 12px;
+    }
+    .lab__card-abstract {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: var(--text);
+      margin: 8px 0 12px;
+    }
+    .lab__card-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 0;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      font-size: 0.85rem;
+    }
+    .lab__card-link { color: var(--link); text-decoration: none; font-weight: 600; }
+    .lab__card-link:hover { text-decoration: underline; }
+    .lab__card-coming { color: var(--muted); font-size: 0.8rem; }
+
+    .lab__back { margin: 28px 0; text-align: center; }
+    .lab__back a { color: var(--link); }
+  </style>
+</BaseLayout>
