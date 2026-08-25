@@ -25,40 +25,121 @@
 
 ---
 
-## 2. スコープ (MVP)
+## 2. スコープ (MVP: Stage A + B)
 
-### 含む (Phase 1+2)
+MVP は **フリーミアム構成** で 2 段階に分ける。Stage A → B の順で実装するが両方同じスプリントで完成させる想定。
 
-1. **日本語入力 → PubMed 検索** (`/ja/search`)
-   - 日本語のフリーワード or 質問文で入力
-   - Claude が英語 PubMed クエリに変換
-   - PubMed E-utilities で検索実行
-   - 上位 10 件を取得
+### Stage A: 無料機能 (Claude API ほぼ使わない)
 
-2. **論文カード表示**
-   - タイトル (日本語意訳 + 原題)
-   - 著者・掲載誌・年
-   - Abstract の日本語 3 行要約
-   - PubMed 原典リンク
-   - 「この論文について壁打ち」ボタン
+- **日本語入力 → PubMed 検索** (`/ja/lab`)
+  - Claude で日本語 → 英語クエリ変換 (~$0.001/検索 = ほぼ無料)
+  - PubMed E-utilities で検索、上位 10 件取得
+- **論文カード表示** (英語 abstract そのまま、日本語要約は有料 gate)
+  - タイトル・著者・誌・年・英語 abstract
+  - PubMed 原典リンク
+- **サイト内記事検索** (`/ja/lab/site-search`) — 既存 sciencepubmed.net 記事から検索
+- **ゲスト利用可** (認証不要でも試せる、rate limit あり)
 
-3. **壁打ちチャット** (Phase 2)
-   - 特定の論文を context に入れた対話 UI
-   - Claude が対話ベースで質問に答える
-   - よくある質問テンプレ:
-     - この研究の要点は?
-     - 対象・方法・限界は?
-     - この論文と関連する他の研究は?
-     - この研究に反対 or 異なる結論の研究は?
-     - 卒論に使うなら、どの部分を引用できる?
+### Stage B: 有料機能 (Claude API 使用、認証 + 決済 gate)
+
+- **論文 abstract の日本語 3 行要約**
+- **論文壁打ちチャット**
+  - 特定論文の context を入れた対話 UI
+  - よくある質問テンプレ (要点/限界/類似/反論/卒論引用)
+- **検索履歴保存 + お気に入り論文**
+- **月間検索・チャット無制限**
 
 ### 含まない (Phase 3+ 送り)
 
-- ユーザー認証・履歴保存・お気に入り
 - 引用ネットワーク可視化
-- 有料化・決済
 - 論文比較機能
-- 論文 PDF 全文取得 (Full-text)
+- 論文 PDF 全文取得
+- 複数論文の統合レビュー生成 (メタ的な出力)
+
+---
+
+## 2b. フリーミアム設計
+
+### 料金プラン (初期案)
+
+| プラン | 料金 | 検索/月 | AI 要約 | 壁打ち | 履歴 |
+|---|---|---|---|---|---|
+| **ゲスト** | 無料 | 10 検索/日 (IP ベース) | ⛔ | ⛔ | ⛔ |
+| **登録無料** | 無料 (要 Google ログイン) | 30 検索/日 | 月 5 件まで試用 | 月 5 msg まで試用 | ✅ (30 日) |
+| **PubMed Lab+** | ¥500/月 (or ¥5000/年) | 無制限 | 無制限 | 無制限 | ✅ (永続) |
+
+### 認証
+
+- **Google OAuth** (Supabase Auth 経由) を採用
+   - 大学生・研究者は Google アカウント持ってる率 100% に近い
+   - Supabase Auth は無料枠が広く (50K MAU) 実装楽
+- ログイン不要でも Stage A は使える (rate limit: 10 検索/日/IP)
+
+### 決済
+
+- **Stripe** (定額サブスク、日本円対応)
+- 月額 ¥500 / 年額 ¥5000 (2ヶ月お得)
+- 学生証持ってれば学生割引 (¥300/月) を後付けで検討
+
+### DB (Supabase Postgres)
+
+```sql
+-- users テーブル (Supabase Auth と自動連携)
+--   auth.users.id を FK に使う
+
+profiles(
+  id uuid PK REFERENCES auth.users(id),
+  plan text CHECK (plan IN ('free', 'plus')) DEFAULT 'free',
+  stripe_customer_id text,
+  stripe_subscription_id text,
+  plan_started_at timestamptz,
+  plan_expires_at timestamptz,
+  created_at timestamptz DEFAULT now()
+)
+
+-- 検索履歴
+search_history(
+  id bigserial PK,
+  user_id uuid REFERENCES auth.users(id) ON DELETE CASCADE,
+  query_ja text,
+  query_en text,
+  result_count int,
+  created_at timestamptz DEFAULT now()
+)
+
+-- お気に入り論文
+favorites(
+  id bigserial PK,
+  user_id uuid REFERENCES auth.users(id) ON DELETE CASCADE,
+  pmid text NOT NULL,
+  title text,
+  saved_at timestamptz DEFAULT now(),
+  UNIQUE(user_id, pmid)
+)
+
+-- 使用量 (rate limit + kill switch 用)
+usage_log(
+  id bigserial PK,
+  user_id uuid,               -- null = guest
+  ip text,                    -- guest 判別用
+  action text,                -- 'search', 'summary', 'chat'
+  cost_estimate decimal(10,4), -- USD
+  created_at timestamptz DEFAULT now()
+)
+CREATE INDEX ON usage_log(user_id, created_at);
+CREATE INDEX ON usage_log(ip, created_at);
+```
+
+### コスト再計算 (フリーミアム前提)
+
+| ユーザー数 | 有料転換率 | 有料ユーザー | 月間 Claude コスト | 月間売上 | 粗利 |
+|---|---|---|---|---|---|
+| 100 | 3% | 3 | 3×$5 = $15 | ¥1,500 | ¥0 (トントン) |
+| 500 | 3% | 15 | $75 | ¥7,500 | ¥3,700 |
+| 2000 | 3% | 60 | $300 | ¥30,000 | ¥15,000 |
+| 10,000 | 3% | 300 | $1,500 | ¥150,000 | ¥75,000 |
+
+無料ユーザーのコストはほぼゼロ (PubMed API + 微小な Claude クエリ変換のみ) なので、ユーザー数が伸びるほどマージン改善。
 
 ---
 
@@ -388,11 +469,14 @@ MVP 段階で入れる保険:
 | Cloudflare Pages Functions のコールドスタート | 低 | 初回 1-2 秒遅延を許容、UI で loading 表示 |
 | 卒論代行的な使われ方 (倫理) | 中 | 「思考を支援するツール」と明示、丸パクリを助長しない設計 (要約は 3 行までなど) |
 
-### レオナさんに確認したい未決事項
+### 決定事項 (2026-08-25)
 
-- **命名**: `/ja/search` で良いか、もっとキャッチーな名前 (例: `/ja/lab`, `/ja/research`) か?
-- **キャラクター性**: サイト全体の「PubMed Trivia」ブランドの延長で行くか、サブブランド作るか?
-- **サンプル検索のテーマ**: 心理・生物メインか、他分野 (医療・薬学・栄養) も入れるか?
+- **命名**: **`/ja/lab`** (「PubMed Lab」として学生層に馴染ませる呼称)
+- **キャラクター性**: **PubMed Trivia 傘下** (既存のロゴ・配色を継承、サブブランド作らず)
+  - ページタイトル: 「PubMed Lab ｜ 論文リサーチアシスタント」
+  - サイト内リンク文言例: 「🔬 PubMed 検索ラボを試す」
+- **サンプル検索のテーマ**: **PubMed 全分野** (制限なし、36M+ 論文フル対象)
+  - サンプル質問は心理・生物寄りだが 医療・薬学・栄養・工学系も混ぜる
 
 ---
 

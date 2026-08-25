@@ -38,6 +38,8 @@ const jsonLd = {
   'inLanguage': 'en-US',
   'about': { '@type': 'Thing', 'name': 'Biology' },
 };
+
+export const prerender = true;
 ---
 <BaseLayout title={post.data.title} description={post.data.fact} lang="en" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

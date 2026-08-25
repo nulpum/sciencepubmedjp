@@ -53,6 +53,8 @@ const jsonLd = {
     'name': '心理学',
   },
 };
+
+export const prerender = true;
 ---
 <BaseLayout title={post.data.title} description={post.data.fact} lang="ja" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

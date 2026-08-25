@@ -5,6 +5,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 const posts = (await getCollection('en_psychology')).sort(
   (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
 );
+
+export const prerender = true;
 ---
 <BaseLayout
   title="Psychology Trivia ｜ PubMed Trivia"
