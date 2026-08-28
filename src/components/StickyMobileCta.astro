@@ -1,0 +1,177 @@
+---
+// モバイル画面下部の sticky アフィリエイト CTA バー
+//
+// - 画面幅 768px 未満で表示 (デスクトップは表示なし)
+// - × ボタンで閉じられる、閉じたら localStorage に記録して 7日間再表示なし
+// - スクロールで一定量下がってから表示 (即表示だと押し付け感が強い)
+
+interface Props {
+  links: { title: string; url: string }[];
+  lang?: 'ja' | 'en';
+}
+
+const { links, lang = 'ja' } = Astro.props as Props;
+
+const amazonLink = links.find((l) => l.url.includes('amazon.co.jp'));
+const rakutenLink = links.find((l) => l.url.includes('af.moshimo.com') || l.url.includes('rakuten.co.jp'));
+
+if (!amazonLink && !rakutenLink) {
+  // No affiliate links to promote → don't render
+}
+
+const t = {
+  ja: { label: '📚 関連書籍を探す', amazon: 'Amazon', rakuten: '楽天', close: '閉じる', pr: '#PR' },
+  en: { label: '📚 Related books', amazon: 'Amazon', rakuten: 'Rakuten', close: 'Close', pr: '#PR' },
+}[lang];
+---
+{(amazonLink || rakutenLink) && (
+  <div id="sticky-cta" class="sticky-cta" data-hidden hidden aria-hidden="true">
+    <div class="sticky-cta__inner">
+      <span class="sticky-cta__label">{t.label} <small>{t.pr}</small></span>
+      <div class="sticky-cta__actions">
+        {amazonLink && (
+          <a
+            href={amazonLink.url}
+            rel="sponsored noopener"
+            target="_blank"
+            class="sticky-cta__btn sticky-cta__btn--amazon"
+            data-affiliate="amazon"
+            data-variant="sticky"
+          >{t.amazon}</a>
+        )}
+        {rakutenLink && (
+          <a
+            href={rakutenLink.url}
+            rel="sponsored noopener"
+            target="_blank"
+            class="sticky-cta__btn sticky-cta__btn--rakuten"
+            data-affiliate="rakuten"
+            data-variant="sticky"
+          >{t.rakuten}</a>
+        )}
+        <button
+          type="button"
+          class="sticky-cta__close"
+          id="sticky-cta-close"
+          aria-label={t.close}
+        >×</button>
+      </div>
+    </div>
+  </div>
+)}
+
+<style>
+  .sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(26, 54, 93, 0.97);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0));
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(120%);
+    transition: transform 0.35s ease-out;
+  }
+  .sticky-cta:not([data-hidden]) {
+    transform: translateY(0);
+  }
+  /* デスクトップでは非表示 */
+  @media (min-width: 768px) {
+    .sticky-cta { display: none !important; }
+  }
+  .sticky-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .sticky-cta__label {
+    color: white;
+    font-size: 0.82rem;
+    font-weight: 700;
+    flex: 1;
+    line-height: 1.3;
+  }
+  .sticky-cta__label small {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+    margin-left: 4px;
+  }
+  .sticky-cta__actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .sticky-cta__btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white !important;
+    white-space: nowrap;
+  }
+  .sticky-cta__btn--amazon { background: #ff9900; }
+  .sticky-cta__btn--rakuten { background: #bf0000; }
+  .sticky-cta__close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .sticky-cta__close:hover { background: rgba(255, 255, 255, 0.1); }
+</style>
+
+<script is:inline>
+  (function () {
+    var el = document.getElementById('sticky-cta');
+    if (!el) return;
+    var STORAGE_KEY = 'sticky_cta_dismissed_at';
+    var HIDE_DAYS = 7;
+
+    // 閉じられて 7 日以内なら非表示
+    try {
+      var dismissedAt = Number(localStorage.getItem(STORAGE_KEY) || 0);
+      if (dismissedAt && Date.now() - dismissedAt < HIDE_DAYS * 86400000) {
+        return;
+      }
+    } catch (e) { /* localStorage 未対応 or private mode → 出すだけ */ }
+
+    // スクロール量が 400px を超えたら表示 (即出は押し付け感)
+    var shown = false;
+    function showIfScrolled() {
+      if (shown) return;
+      if (window.scrollY > 400) {
+        el.removeAttribute('data-hidden');
+        el.removeAttribute('hidden');
+        el.setAttribute('aria-hidden', 'false');
+        shown = true;
+        window.removeEventListener('scroll', showIfScrolled);
+      }
+    }
+    window.addEventListener('scroll', showIfScrolled, { passive: true });
+    showIfScrolled();
+
+    // × ボタンで閉じる
+    var closeBtn = document.getElementById('sticky-cta-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        el.setAttribute('data-hidden', '');
+        el.setAttribute('aria-hidden', 'true');
+        try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
+      });
+    }
+  })();
+</script>

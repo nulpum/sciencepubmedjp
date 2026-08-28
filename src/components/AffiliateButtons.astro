@@ -1,0 +1,166 @@
+---
+// アフィリエイトリンクを Amazon/楽天 ボタンで表示する共通コンポーネント
+//
+// 使い方 (article slug ページから):
+//   <AffiliateButtons links={post.data.affiliate_links} variant="top" lang="ja" />
+//
+// variant:
+//   top    - 記事冒頭 (優しめのトーン、簡潔な CTA)
+//   mid    - 記事中盤 (本文と原典の間、"読んでみたら次はこの本" 位置)
+//   bottom - 記事末尾 (フル開示付き、最も豊かな UI)
+//
+// links の Amazon/楽天 判別は URL ホストから自動:
+//   - amazon.co.jp → Amazon
+//   - af.moshimo.com → 楽天 (もしも経由)
+
+interface Props {
+  links: { title: string; url: string }[];
+  variant: 'top' | 'mid' | 'bottom';
+  lang?: 'ja' | 'en';
+}
+
+const { links, variant, lang = 'ja' } = Astro.props as Props;
+
+// Amazon / 楽天 でグルーピング (topic 用の最初の一本ずつを採用)
+const amazonLinks = links.filter((l) => l.url.includes('amazon.co.jp'));
+const rakutenLinks = links.filter((l) => l.url.includes('af.moshimo.com') || l.url.includes('rakuten.co.jp'));
+const primaryAmazon = amazonLinks[0];
+const primaryRakuten = rakutenLinks[0];
+
+// バリアントごとの見出し・トーン
+const labels = {
+  ja: {
+    top: { emoji: '📖', title: 'このテーマを本で深掘り', sub: '書籍で体系的に学ぶなら:' },
+    mid: { emoji: '📚', title: '関連書籍で深掘りする', sub: 'ここまで読んで気になったら:' },
+    bottom: { emoji: '🔍', title: 'この研究を掘り下げる', sub: 'より深く学びたい方向けに、関連分野の書籍をご紹介します:' },
+  },
+  en: {
+    top: { emoji: '📖', title: 'Dive deeper with a book', sub: 'For systematic study:' },
+    mid: { emoji: '📚', title: 'Explore related books', sub: 'If this interests you:' },
+    bottom: { emoji: '🔍', title: 'Explore this topic further', sub: 'Related books for deeper reading:' },
+  },
+};
+const t = labels[lang][variant];
+const amazonBtn = lang === 'ja' ? '🛒 Amazon で探す' : '🛒 Search on Amazon';
+const rakutenBtn = lang === 'ja' ? '📕 楽天で探す' : '📕 Search on Rakuten';
+const disclosureShort = lang === 'ja' ? '#PR / アフィリエイトリンク' : '#PR / affiliate links';
+const disclosureFull = lang === 'ja'
+  ? '#PR / 本サイトは Amazon アソシエイトおよび もしもアフィリエイト経由の楽天ブックスに参加しており、リンク経由の購入で紹介料を受け取ることがあります (ユーザーの購入金額は変わりません)'
+  : '#PR / This site participates in Amazon Associates and Rakuten Books (via Moshimo Affiliate). Purchases via these links may earn us a small commission at no extra cost to you.';
+---
+{(primaryAmazon || primaryRakuten) && (
+  <aside class={`aff-cta aff-cta--${variant}`}>
+    <p class="aff-cta__label">{t.emoji} {t.title}</p>
+    <p class="aff-cta__sub">{t.sub}</p>
+    <div class="aff-cta__buttons">
+      {primaryAmazon && (
+        <a
+          href={primaryAmazon.url}
+          rel="sponsored noopener"
+          target="_blank"
+          class="aff-cta__btn aff-cta__btn--amazon"
+          data-affiliate="amazon"
+          data-variant={variant}
+        >
+          <span class="aff-cta__btn-text">{amazonBtn}</span>
+          <span class="aff-cta__btn-arrow">→</span>
+        </a>
+      )}
+      {primaryRakuten && (
+        <a
+          href={primaryRakuten.url}
+          rel="sponsored noopener"
+          target="_blank"
+          class="aff-cta__btn aff-cta__btn--rakuten"
+          data-affiliate="rakuten"
+          data-variant={variant}
+        >
+          <span class="aff-cta__btn-text">{rakutenBtn}</span>
+          <span class="aff-cta__btn-arrow">→</span>
+        </a>
+      )}
+    </div>
+    <p class="aff-cta__note">{variant === 'bottom' ? disclosureFull : disclosureShort}</p>
+  </aside>
+)}
+
+<style>
+  .aff-cta {
+    margin: 24px 0;
+    padding: 18px 20px;
+    background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%);
+    border: 1px solid #f0d78a;
+    border-radius: 10px;
+  }
+  .aff-cta--top { margin: 20px 0 28px; }
+  .aff-cta--mid { margin: 30px 0; background: linear-gradient(180deg, #f0f7ec 0%, #e5f2df 100%); border-color: #b5d4a3; }
+  .aff-cta--bottom { margin: 32px 0 24px; }
+
+  .aff-cta__label {
+    font-weight: 700;
+    color: #7a5a1e;
+    margin: 0 0 4px;
+    font-size: 1rem;
+  }
+  .aff-cta--mid .aff-cta__label { color: #2e6320; }
+
+  .aff-cta__sub {
+    margin: 4px 0 12px;
+    color: #665038;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .aff-cta--mid .aff-cta__sub { color: #4a7040; }
+
+  .aff-cta__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0 10px;
+  }
+  @media (max-width: 480px) {
+    .aff-cta__buttons { grid-template-columns: 1fr; }
+  }
+
+  .aff-cta__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: white !important;
+    transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12);
+  }
+  .aff-cta__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
+    filter: brightness(1.05);
+  }
+  .aff-cta__btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  .aff-cta__btn-text { flex: 1; }
+  .aff-cta__btn-arrow { font-size: 1.15rem; margin-left: 6px; }
+
+  .aff-cta__btn--amazon {
+    background: linear-gradient(180deg, #ff9900 0%, #e88b00 100%);
+    border: 1px solid #cc7a00;
+  }
+  .aff-cta__btn--rakuten {
+    background: linear-gradient(180deg, #bf0000 0%, #a30000 100%);
+    border: 1px solid #8a0000;
+  }
+
+  .aff-cta__note {
+    font-size: 0.75rem;
+    color: #8a7448;
+    margin: 10px 0 0;
+    line-height: 1.5;
+  }
+  .aff-cta--mid .aff-cta__note { color: #6d8060; }
+</style>

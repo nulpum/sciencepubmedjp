@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AffiliateButtons from '../../../components/AffiliateButtons.astro';
+import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('ja_psychology');
@@ -79,44 +81,18 @@ export const prerender = true;
       </nav>
     )}
 
-    {/* 上部 CTA: 記事に入る前に読者を書籍検索に接続 (優しめのトーン) */}
+    {/* A: 上部 CTA (Amazon 橙・楽天 赤の並列ボタン) */}
     {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
-      <aside class="article__cta article__cta--top">
-        <p class="article__cta-label">📖 このテーマを本で深掘りしたい方へ</p>
-        <p class="article__cta-body">
-          記事の元となった研究テーマに関連する書籍を Amazon で探せます:
-          <a href={post.data.affiliate_links[0].url} rel="sponsored noopener" target="_blank">
-            {post.data.affiliate_links[0].title} →
-          </a>
-        </p>
-        <p class="article__cta-note">#PR / Amazon アソシエイト</p>
-      </aside>
+      <AffiliateButtons links={post.data.affiliate_links} variant="top" lang="ja" />
     )}
 
     <div class="article__body">
       <Content />
     </div>
 
-    {/* 記事末尾 CTA: 本文読み終わった直後の最高エンゲージメント地点 */}
+    {/* B: 記事中盤 CTA (本文読了 → 原典情報へ移る前の自然な pause 地点) */}
     {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
-      <aside class="article__cta article__cta--bottom">
-        <p class="article__cta-label">🔍 この研究を掘り下げる</p>
-        <p class="article__cta-body">
-          もっと体系的に学びたい方は、関連分野の書籍もチェックしてみてください。
-        </p>
-        <ul class="article__cta-links">
-          {post.data.affiliate_links.map((l) => (
-            <li>
-              <a href={l.url} rel="sponsored noopener" target="_blank">
-                📚 {l.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <p class="article__cta-note">
-          #PR / 本サイトは Amazon アソシエイト・プログラムに参加しており、リンク経由の購入で紹介料を受け取ることがあります (ユーザーの購入金額は変わりません)
-        </p>
-      </aside>
+      <AffiliateButtons links={post.data.affiliate_links} variant="mid" lang="ja" />
     )}
 
     <hr />
@@ -134,8 +110,16 @@ export const prerender = true;
       </p>
     </section>
 
-    {/* 既存の関連書籍セクションは重複するので削除。上下の CTA aside でカバー */}
+    {/* 記事末尾 CTA (原典・免責の後、記事コンテナ内の最下部) */}
+    {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
+      <AffiliateButtons links={post.data.affiliate_links} variant="bottom" lang="ja" />
+    )}
   </article>
+
+  {/* C: モバイル画面下部の sticky CTA (スクロール 400px+ で出現、× で 7日閉じる) */}
+  {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
+    <StickyMobileCta links={post.data.affiliate_links} lang="ja" />
+  )}
 
   {related.length > 0 && (
     <section class="related-section">
@@ -205,60 +189,7 @@ export const prerender = true;
     .article__source ul { margin: 8px 0; padding-left: 22px; }
     .article__disclaimer { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
 
-    /* === 記事内 affiliate CTA (上部・下部) === */
-    .article__cta {
-      margin: 24px 0;
-      padding: 16px 18px;
-      background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%);
-      border: 1px solid #f0d78a;
-      border-radius: 8px;
-    }
-    .article__cta--top { margin: 20px 0 28px; }
-    .article__cta--bottom { margin: 32px 0 24px; }
-    .article__cta-label {
-      font-weight: 700;
-      color: #7a5a1e;
-      margin: 0 0 6px;
-      font-size: 0.95rem;
-    }
-    .article__cta-body {
-      margin: 4px 0 8px;
-      line-height: 1.65;
-      color: var(--text);
-    }
-    .article__cta-body a {
-      color: #a05e00;
-      font-weight: 600;
-      text-decoration: none;
-      border-bottom: 2px solid #f0d78a;
-    }
-    .article__cta-body a:hover {
-      border-bottom-color: #a05e00;
-    }
-    .article__cta-links {
-      margin: 6px 0 8px;
-      padding-left: 4px;
-      list-style: none;
-    }
-    .article__cta-links li {
-      margin: 6px 0;
-    }
-    .article__cta-links a {
-      display: inline-block;
-      color: #a05e00;
-      font-weight: 500;
-      text-decoration: none;
-      padding: 4px 0;
-      border-bottom: 1px dashed #d4b168;
-    }
-    .article__cta-links a:hover {
-      border-bottom-style: solid;
-    }
-    .article__cta-note {
-      font-size: 0.75rem;
-      color: #8a7448;
-      margin: 8px 0 0;
-    }
+    /* Note: 旧 .article__cta 系の CSS は AffiliateButtons.astro に移した (component-scoped) */
 
     .lab-widget {
       max-width: 760px;
