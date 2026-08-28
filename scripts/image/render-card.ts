@@ -128,11 +128,17 @@ function buildSvg(data: CardData): string {
 export async function renderCardPng(data: CardData): Promise<Buffer> {
   const font = await loadFont();
   const svg = buildSvg(data);
+  // Linux resvg-js binary は同梱フォントの日本語グリフを豆腐化させる
+  // 既知バグがあるため、システムフォントも読み込む fallback 併用にする。
+  // GH Actions workflow で fonts-noto-cjk をインストール済 (generate.yml)。
+  // Windows ローカルでは fontBuffers 側が正しく機能するのでどちらも通る。
   const resvg = new Resvg(svg, {
     font: {
       fontBuffers: [font],
-      loadSystemFonts: false,
-      defaultFontFamily: 'Noto Sans JP',
+      loadSystemFonts: true,
+      defaultFontFamily: 'Noto Sans CJK JP',   // Linux では system Noto Sans CJK JP を拾う
+      sansSerifFamily: 'Noto Sans CJK JP',
+      serifFamily: 'Noto Serif CJK JP',
     },
     background: '#1a365d',
   });

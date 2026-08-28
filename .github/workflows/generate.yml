@@ -30,6 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # resvg-js Linux binary が同梱の可変フォント (or 変換した静的 fontools 出力)
+      # をうまく扱えず日本語グリフが豆腐化するため、システムに Noto CJK JP を
+      # インストールしておき、render-card.ts 側で loadSystemFonts:true で
+      # fallback として拾えるようにする。
+      - name: Install Japanese fonts (Noto CJK JP) for OG image rendering
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+
       - name: Run pipeline:daily (PubMed → Claude → MD × 2 categories)
         run: npm run pipeline:daily -- --category=all
         env:
