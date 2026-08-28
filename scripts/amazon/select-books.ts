@@ -16,6 +16,7 @@
 import type { Category, Lang, PubmedArticle } from '../types.js';
 import { searchItems, type PaApiItem } from './pa-api.js';
 import { Logger } from '../lib/logger.js';
+import { buildRakutenSearchLink } from '../lib/moshimo.js';
 
 // 書籍タイトルの NG パターン (薬機法・ジャンル制限)
 const BOOK_TITLE_NG_PATTERNS: RegExp[] = [
@@ -107,35 +108,46 @@ const CATEGORY_LABEL_JA: Record<Category, string> = {
   biology: '生物学',
 };
 
+// もしも a_id が設定されていれば楽天リンクも生成する
+function moshimoAId(): string | null {
+  const v = (process.env.MOSHIMO_A_ID || '').trim();
+  return v || null;
+}
+
 // PA-API が使えない / 失敗した時の URL ベースフォールバック
+// 現状の設計:
+//   - Amazon (直リンク、sciencepubmed-22 タグ) を必ず 2 本
+//   - MOSHIMO_A_ID があれば楽天 (もしも経由) を 1 本追加
+//   - 結果として ja=2〜3, en=2〜3 本のリンクが記事に載る
 function buildFallbackLinks(
   category: Category,
   keywords: string,
   lang: Lang,
 ): SelectedBook[] {
   const broad = CATEGORY_BROAD_KEYWORDS[category];
+  const aId = moshimoAId();
+
+  const links: SelectedBook[] = [];
   if (lang === 'ja') {
-    return [
-      {
-        title: `この記事のテーマに関連する書籍 (Amazon)`,
-        url: buildSearchUrl(keywords),
-      },
-      {
-        title: `${CATEGORY_LABEL_JA[category]}の関連書籍 (Amazon)`,
-        url: buildSearchUrl(broad),
-      },
-    ];
+    links.push({ title: 'この記事のテーマに関連する書籍 (Amazon)', url: buildSearchUrl(keywords) });
+    links.push({ title: `${CATEGORY_LABEL_JA[category]}の関連書籍 (Amazon)`, url: buildSearchUrl(broad) });
+    if (aId) {
+      links.push({
+        title: '楽天でも探す (楽天ブックス)',
+        url: buildRakutenSearchLink({ aId, keyword: keywords, category: 'books' }),
+      });
+    }
+  } else {
+    links.push({ title: 'Related books on this topic (Amazon JP)', url: buildSearchUrl(keywords) });
+    links.push({ title: `More ${category} books (Amazon JP)`, url: buildSearchUrl(broad) });
+    if (aId) {
+      links.push({
+        title: 'Search on Rakuten Books',
+        url: buildRakutenSearchLink({ aId, keyword: keywords, category: 'books' }),
+      });
+    }
   }
-  return [
-    {
-      title: `Related books on this topic (Amazon JP)`,
-      url: buildSearchUrl(keywords),
-    },
-    {
-      title: `More ${category} books (Amazon JP)`,
-      url: buildSearchUrl(broad),
-    },
-  ];
+  return links;
 }
 
 export async function selectRelatedBooks(
