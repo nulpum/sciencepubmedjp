@@ -12,6 +12,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { translateQueryToEnglish } from '../../../lib/query-translator';
 import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
+import { LAB_CONFIG, isWaitlistEnabled } from '../../../config/lab';
 
 export const prerender = false;
 
@@ -131,9 +132,12 @@ const pageTitle = q
 const pageDesc = q
   ? `「${q}」の PubMed 検索結果 (${totalCount} 件中 ${results.length} 件表示)`
   : '日本語で入力するだけで、PubMed の英語論文を検索できるツール。卒論・研究テーマ探しに。';
+
+// waitlist URL は client 側 JS からも参照するため data 属性で渡す
+const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
 ---
 <BaseLayout title={pageTitle} description={pageDesc} lang="ja">
-  <article class="lab">
+  <article class="lab" data-waitlist-url={waitlistUrl}>
     <header class="lab__header">
       <p class="lab__breadcrumb">
         <a href="/ja/">ホーム</a> › PubMed Lab
@@ -190,6 +194,31 @@ const pageDesc = q
             ⚠️ 壁打ちチャットは実験β。 abstract 情報のみを根拠にしているため、フルテキスト精読の代わりにはなりません。医療助言もしません。
           </p>
         </section>
+
+        {waitlistUrl && (
+          <section class="lab__waitlist-cta">
+            <div class="lab__waitlist-cta-body">
+              <h2 class="lab__waitlist-cta-title">🎓 卒論・修論でハードに使う予定の方へ</h2>
+              <p class="lab__waitlist-cta-desc">
+                無料版は 1 日 3 メッセージまで。もっとガッツリ使える <strong>有料版 (¥110〜、単発購入)</strong> を準備中です。 卒論シーズンに向けて事前登録受付中 (メールのみ 1 分)。
+              </p>
+              <ul class="lab__waitlist-cta-benefits">
+                <li>💳 月額サブスクなし、使う分だけ買い切り (¥110 / 5 回〜)</li>
+                <li>⏳ 購入から 1 年間有効、卒論ラストスパートに集中投下 OK</li>
+                <li>📚 卒論 1 本分パック ¥550 (40 回) が主力想定</li>
+              </ul>
+            </div>
+            <a
+              href={waitlistUrl}
+              class="lab__waitlist-cta-btn"
+              target="_blank"
+              rel="noopener"
+              data-ga-event="lab_waitlist_click_default"
+            >
+              📧 事前登録する →
+            </a>
+          </section>
+        )}
 
         <section class="lab__disclaimer">
           <p>
@@ -352,6 +381,26 @@ const pageDesc = q
         <div class="lab__back">
           <a href="/ja/lab/">← 別のキーワードで検索する</a>
         </div>
+
+        {waitlistUrl && (
+          <aside class="lab__waitlist-cta lab__waitlist-cta--compact">
+            <div class="lab__waitlist-cta-body">
+              <h2 class="lab__waitlist-cta-title">💡 もっとガッツリ壁打ちしたい方へ</h2>
+              <p class="lab__waitlist-cta-desc">
+                有料版 (¥110/5 回〜、月額なし・買い切り) を準備中。 卒論シーズン前に事前登録どうぞ。
+              </p>
+            </div>
+            <a
+              href={waitlistUrl}
+              class="lab__waitlist-cta-btn"
+              target="_blank"
+              rel="noopener"
+              data-ga-event="lab_waitlist_click_results"
+            >
+              📧 1 分で事前登録 →
+            </a>
+          </aside>
+        )}
       </section>
     )}
   </article>
@@ -472,6 +521,7 @@ const pageDesc = q
               if (remaining() <= 0) {
                 appendMessage(messagesEl, 'assistant',
                   '⚠️ 今日の壁打ち回数上限 (3 回) に達しました。日付が変わると再度使えます。');
+                appendWaitlistLink(messagesEl, 'lab_waitlist_click_chatlimit');
                 return;
               }
               const card = box.closest('.lab__card');
@@ -539,6 +589,26 @@ const pageDesc = q
           container.appendChild(el);
           el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
           return el;
+        }
+        function appendWaitlistLink(container, gaEventName) {
+          const wl = document.querySelector('.lab');
+          const url = wl && wl.getAttribute('data-waitlist-url');
+          if (!url) return;
+          const wrap = document.createElement('div');
+          wrap.className = 'chat-msg chat-msg--assistant chat-msg--waitlist';
+          wrap.appendChild(document.createTextNode('💡 卒論・修論でもっと使いたい方は: '));
+          const link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = '有料版 (¥110〜) の事前登録 →';
+          link.className = 'chat-msg__waitlist-link';
+          link.addEventListener('click', () => {
+            if (typeof gtag === 'function') gtag('event', gaEventName || 'lab_waitlist_click');
+          });
+          wrap.appendChild(link);
+          container.appendChild(wrap);
+          wrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }
         function updateQuotaDisplay(box) {
           const el = box.querySelector('.quota-count');
@@ -702,25 +772,45 @@ const pageDesc = q
           `;
         }
 
+        // ------------------ [data-ga-event] を click 時に発火 (waitlist 等) ------------------
+        function initGaEventLinks() {
+          document.querySelectorAll('[data-ga-event]').forEach((el) => {
+            el.addEventListener('click', () => {
+              if (typeof gtag === 'function') {
+                gtag('event', el.getAttribute('data-ga-event'));
+              }
+            });
+          });
+        }
+
         // init
         initSaveButtons();
         initChatButtons();
         initThemeSuggest();
+        initGaEventLinks();
       })();
     </script>
   )}
 
   {!q && (
     <script is:inline>
-      // 検索フォーム submit 時に GA イベントを送る (トップページ側)
+      // トップページ: 検索 submit + waitlist などの [data-ga-event] リンク
       (function() {
         const form = document.getElementById('lab-search-form');
-        if (!form) return;
-        form.addEventListener('submit', () => {
-          const q = form.querySelector('input[name="q"]').value.trim();
-          if (typeof gtag === 'function' && q) {
-            gtag('event', 'lab_search_submit', { query: q.slice(0, 100) });
-          }
+        if (form) {
+          form.addEventListener('submit', () => {
+            const q = form.querySelector('input[name="q"]').value.trim();
+            if (typeof gtag === 'function' && q) {
+              gtag('event', 'lab_search_submit', { query: q.slice(0, 100) });
+            }
+          });
+        }
+        document.querySelectorAll('[data-ga-event]').forEach((el) => {
+          el.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', el.getAttribute('data-ga-event'));
+            }
+          });
         });
       })();
     </script>
@@ -1248,5 +1338,84 @@ const pageDesc = q
       .theme-suggest__action { align-items: stretch; }
       .theme-suggest__btn { width: 100%; }
     }
+
+    /* ==== Waitlist CTA (Ｔｴｻﾞﾀｭ 有料版 事前登録) ==== */
+    .lab__waitlist-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      background: linear-gradient(180deg, #eef4ff 0%, #e2ecfc 100%);
+      border: 2px solid #7ea1de;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin: 24px 0;
+    }
+    .lab__waitlist-cta--compact {
+      margin: 28px 0 20px;
+      padding: 16px 20px;
+    }
+    .lab__waitlist-cta-body { flex: 1 1 320px; min-width: 0; }
+    .lab__waitlist-cta-title {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+    .lab__waitlist-cta-desc {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0 0 8px;
+    }
+    .lab__waitlist-cta-desc strong { color: var(--navy-deep); }
+    .lab__waitlist-cta-benefits {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0;
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+    .lab__waitlist-cta-benefits li {
+      padding: 3px 0;
+      line-height: 1.6;
+    }
+    .lab__waitlist-cta-btn {
+      display: inline-block;
+      background: var(--navy);
+      color: white !important;
+      padding: 14px 22px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: 0 3px 8px rgba(26, 54, 93, 0.2);
+      transition: transform 0.1s, box-shadow 0.15s;
+    }
+    .lab__waitlist-cta-btn:hover {
+      background: var(--navy-deep);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+      text-decoration: none;
+    }
+    @media (max-width: 560px) {
+      .lab__waitlist-cta { flex-direction: column; align-items: stretch; }
+      .lab__waitlist-cta-btn { text-align: center; }
+    }
+
+    /* Chat 内の waitlist リンク */
+    .chat-msg--waitlist {
+      font-size: 0.85rem;
+      background: #eef4ff;
+      border-color: #7ea1de;
+      color: var(--navy);
+    }
+    .chat-msg__waitlist-link {
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .chat-msg__waitlist-link:hover { color: var(--navy-deep); }
   </style>
 </BaseLayout>
