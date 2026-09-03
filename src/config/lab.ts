@@ -18,7 +18,7 @@ export const LAB_CONFIG = {
    * Google Form の共有 URL (short URL 形式推奨)。
    * 未設定なら waitlist CTA は表示されない。
    */
-  waitlistUrl: 'https://forms.gle/PLACEHOLDER',
+  waitlistUrl: 'https://forms.gle/FEZ2EQ2VG2ie3zEQA',
 } as const;
 
 export function isWaitlistEnabled(): boolean {
