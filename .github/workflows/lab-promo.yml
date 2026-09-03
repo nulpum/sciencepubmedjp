@@ -9,11 +9,11 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'dry-run で実際には投稿しない'
+        description: 'dry-run で実際には投稿しない (手動実行時のデフォルト true = 安全)'
         required: false
-        default: 'false'
+        default: 'true'
         type: choice
-        options: ['false', 'true']
+        options: ['true', 'false']
 
 permissions:
   contents: read
