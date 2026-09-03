@@ -226,6 +226,28 @@ const pageDesc = q
           )}
         </div>
 
+        {results.length > 0 && (
+          <section class="theme-suggest" data-user-query={q}>
+            <div class="theme-suggest__prompt">
+              <div class="theme-suggest__prompt-body">
+                <h2 class="theme-suggest__title">🎓 卒論・修論テーマを AI が提案</h2>
+                <p class="theme-suggest__desc">
+                  この {Math.min(results.length, 5)} 本の論文を俯瞰して、あなたが実際に卒論・修論で研究できるテーマを 3 つ提案します。
+                </p>
+              </div>
+              <div class="theme-suggest__action">
+                <button type="button" id="theme-suggest-btn" class="theme-suggest__btn">
+                  ✨ 提案してもらう
+                </button>
+                <span class="theme-suggest__quota">
+                  残り <span id="theme-quota-count">3</span> / 3 回 (今日)
+                </span>
+              </div>
+            </div>
+            <div id="theme-suggest-result" class="theme-suggest__result" hidden></div>
+          </section>
+        )}
+
         {siteMatches.length > 0 && (
           <section class="lab__site-matches">
             <h2 class="lab__site-matches-title">
@@ -271,7 +293,7 @@ const pageDesc = q
               url: r.url,
             });
             return (
-              <li class="lab__card" data-paper={paperJson}>
+              <li class="lab__card" id={`pmid-${r.pmid}`} data-paper={paperJson}>
                 <h2 class="lab__card-title">
                   <a href={r.url} rel="noopener" target="_blank">{r.title}</a>
                 </h2>
@@ -340,7 +362,9 @@ const pageDesc = q
       (function() {
         const SAVE_KEY = 'pubmedlab_saved_v1';
         const QUOTA_KEY = 'pubmedlab_chat_quota_v1';
+        const THEME_QUOTA_KEY = 'pubmedlab_theme_quota_v1';
         const DAILY_LIMIT = 3;
+        const THEME_DAILY_LIMIT = 3;
 
         // ------------------ localStorage helpers ------------------
         function loadSaved() {
@@ -535,9 +559,153 @@ const pageDesc = q
           }
         }
 
+        // ------------------ 卒論テーマ提案 ------------------
+        function readThemeQuota() {
+          try {
+            const raw = localStorage.getItem(THEME_QUOTA_KEY);
+            const obj = raw ? JSON.parse(raw) : {};
+            if (obj.date !== today()) return { date: today(), count: 0 };
+            return { date: obj.date, count: obj.count || 0 };
+          } catch { return { date: today(), count: 0 }; }
+        }
+        function bumpThemeQuota() {
+          const q = readThemeQuota();
+          q.count += 1;
+          try { localStorage.setItem(THEME_QUOTA_KEY, JSON.stringify(q)); } catch {}
+        }
+        function themeRemaining() {
+          return Math.max(0, THEME_DAILY_LIMIT - readThemeQuota().count);
+        }
+        function initThemeSuggest() {
+          const section = document.querySelector('.theme-suggest');
+          if (!section) return;
+          const btn = document.getElementById('theme-suggest-btn');
+          const quotaEl = document.getElementById('theme-quota-count');
+          const resultEl = document.getElementById('theme-suggest-result');
+          const userQuery = section.getAttribute('data-user-query') || '';
+          quotaEl.textContent = String(themeRemaining());
+
+          btn.addEventListener('click', async () => {
+            if (themeRemaining() <= 0) {
+              renderThemeError(resultEl,
+                '⚠️ 今日のテーマ提案の上限 (3 回) に達しました。日付が変わると再度使えます。');
+              return;
+            }
+            // 上位 5 件の paper データを DOM から抽出
+            const cards = document.querySelectorAll('.lab__card');
+            const papers = Array.from(cards).slice(0, 5).map((c) => {
+              try {
+                const p = JSON.parse(c.getAttribute('data-paper'));
+                return {
+                  pmid: p.pmid,
+                  title: p.title,
+                  authors: p.authors || [],
+                  journal: p.journal,
+                  year: p.year,
+                  abstract: p.abstract,
+                };
+              } catch { return null; }
+            }).filter(Boolean);
+            if (papers.length === 0) return;
+
+            btn.disabled = true;
+            btn.textContent = '⏳ AI が考え中… (10-20秒)';
+            resultEl.hidden = false;
+            resultEl.innerHTML = '<p class="theme-suggest__loading">🤖 検索結果の論文を俯瞰しています…</p>';
+            if (typeof gtag === 'function') {
+              gtag('event', 'lab_theme_suggest_click', {
+                query: userQuery.slice(0, 100),
+                paper_count: papers.length,
+              });
+            }
+
+            try {
+              const res = await fetch('/api/theme-suggest', {
+                method: 'POST',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify({ userQuery, papers }),
+              });
+              const data = await res.json().catch(() => ({}));
+              if (!res.ok) {
+                renderThemeError(resultEl,
+                  '⚠️ ' + (data.detail || data.error || `エラー (${res.status})`));
+                if (typeof gtag === 'function') {
+                  gtag('event', 'lab_theme_suggest_error', { error: data.error || 'http_' + res.status });
+                }
+                return;
+              }
+              renderThemeResult(resultEl, data);
+              bumpThemeQuota();
+              quotaEl.textContent = String(themeRemaining());
+              btn.textContent = themeRemaining() > 0
+                ? '🔄 別の角度で提案してもらう'
+                : '💡 明日また試せます';
+              btn.disabled = themeRemaining() <= 0;
+              if (typeof gtag === 'function') {
+                gtag('event', 'lab_theme_suggest_success', {
+                  query: userQuery.slice(0, 100),
+                });
+              }
+            } catch (err) {
+              renderThemeError(resultEl,
+                '⚠️ 通信エラー: ' + ((err && err.message) || err));
+            } finally {
+              if (!btn.disabled) btn.disabled = false;
+            }
+          });
+        }
+        function esc(s) {
+          return String(s || '').replace(/[&<>"']/g, (c) => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+          }[c]));
+        }
+        function renderThemeError(container, msg) {
+          container.innerHTML = '<div class="theme-suggest__error">' + esc(msg) + '</div>';
+        }
+        function renderThemeResult(container, data) {
+          const interests = (data.interests || []).map((k) =>
+            '<li>' + esc(k) + '</li>').join('');
+          const themes = (data.themes || []).map((t, i) => `
+            <li class="theme-item">
+              <div class="theme-item__num">${i + 1}</div>
+              <div class="theme-item__body">
+                <h4 class="theme-item__title">${esc(t.title)}</h4>
+                <p class="theme-item__why">${esc(t.why)}</p>
+                <a href="#pmid-${esc(t.basedOnPmid)}" class="theme-item__link"
+                   onclick="if(typeof gtag==='function')gtag('event','lab_theme_paper_jump',{pmid:'${esc(t.basedOnPmid)}'});">
+                  📄 元にした論文を見る (PMID:${esc(t.basedOnPmid)}) →
+                </a>
+              </div>
+            </li>
+          `).join('');
+          const entry = data.entryPaper || {};
+          container.innerHTML = `
+            <div class="theme-suggest__section">
+              <h3 class="theme-suggest__section-title">🎯 あなたの興味の焦点</h3>
+              <ul class="theme-suggest__tags">${interests}</ul>
+            </div>
+            <div class="theme-suggest__section">
+              <h3 class="theme-suggest__section-title">💡 派生研究テーマ 3 案</h3>
+              <ol class="theme-suggest__themes">${themes}</ol>
+            </div>
+            <div class="theme-suggest__section theme-suggest__entry">
+              <h3 class="theme-suggest__section-title">📌 最初に精読すべき論文</h3>
+              <p class="theme-suggest__entry-why">${esc(entry.why || '')}</p>
+              <a href="#pmid-${esc(entry.pmid || '')}" class="theme-suggest__entry-link"
+                 onclick="if(typeof gtag==='function')gtag('event','lab_theme_entry_jump',{pmid:'${esc(entry.pmid || '')}'});">
+                📄 この論文 (PMID:${esc(entry.pmid || '')}) にジャンプ →
+              </a>
+            </div>
+            <p class="theme-suggest__disclaimer">
+              ⚠️ 上記は AI (Claude) が abstract を元に提案したものです。指導教官の意見・研究倫理審査・実施可能性は必ず自分で確認してください。
+            </p>
+          `;
+        }
+
         // init
         initSaveButtons();
         initChatButtons();
+        initThemeSuggest();
       })();
     </script>
   )}
@@ -697,7 +865,13 @@ const pageDesc = q
       border-radius: 10px;
       padding: 20px 22px;
       margin: 16px 0;
-      transition: box-shadow 0.15s;
+      transition: box-shadow 0.15s, background 0.4s;
+      scroll-margin-top: 80px;  /* sticky header 分オフセット */
+    }
+    /* テーマ提案からジャンプしてきた時に一瞬ハイライト */
+    .lab__card:target {
+      background: #fffce8;
+      border-color: #d4a34a;
     }
     .lab__card:hover { box-shadow: 0 4px 12px rgba(26, 54, 93, 0.1); }
     .lab__card-title { font-size: 1.05rem; margin: 0 0 6px; }
@@ -898,5 +1072,181 @@ const pageDesc = q
     .paper-chat__submit:hover { background: var(--navy-deep); }
     .paper-chat__submit:disabled { background: #a0aec0; cursor: not-allowed; }
     .paper-chat__hint { font-size: 0.78rem; color: var(--muted); margin: 8px 0 0; }
+
+    /* ==== 卒論テーマ提案 ==== */
+    .theme-suggest {
+      background: linear-gradient(180deg, #fff8ea 0%, #fef3d5 100%);
+      border: 2px solid #e6cf90;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin: 20px 0 28px;
+      box-shadow: 0 3px 10px rgba(139, 105, 20, 0.08);
+    }
+    .theme-suggest__prompt {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .theme-suggest__prompt-body { flex: 1 1 260px; min-width: 0; }
+    .theme-suggest__title {
+      font-size: 1.15rem;
+      color: #6d4a0a;
+      margin: 0 0 6px;
+    }
+    .theme-suggest__desc {
+      font-size: 0.9rem;
+      color: #7a5a20;
+      margin: 0;
+      line-height: 1.65;
+    }
+    .theme-suggest__action {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    .theme-suggest__btn {
+      background: linear-gradient(180deg, #d4a34a 0%, #b8892e 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 22px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(139, 105, 20, 0.25);
+      transition: transform 0.1s, box-shadow 0.15s;
+    }
+    .theme-suggest__btn:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(139, 105, 20, 0.35);
+    }
+    .theme-suggest__btn:disabled {
+      background: #b8b8b8;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    .theme-suggest__quota { font-size: 0.78rem; color: #8a6712; }
+
+    .theme-suggest__result { margin-top: 18px; padding-top: 18px; border-top: 1px dashed #d4a34a; }
+    .theme-suggest__loading {
+      text-align: center;
+      padding: 24px;
+      color: #7a5a20;
+      font-style: italic;
+    }
+    .theme-suggest__error {
+      background: #fef2f2;
+      border: 1px solid #dc2626;
+      color: #7a1d1d;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .theme-suggest__section { margin: 16px 0; }
+    .theme-suggest__section-title {
+      font-size: 1rem;
+      color: #6d4a0a;
+      margin: 0 0 8px;
+      padding-left: 10px;
+      border-left: 3px solid #d4a34a;
+    }
+    .theme-suggest__tags {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .theme-suggest__tags li {
+      background: white;
+      border: 1px solid #e6cf90;
+      color: #6d4a0a;
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .theme-suggest__themes { list-style: none; padding: 0; margin: 0; }
+    .theme-item {
+      display: flex;
+      gap: 12px;
+      background: white;
+      border: 1px solid #e6cf90;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 8px 0;
+    }
+    .theme-item__num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #d4a34a;
+      color: white;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .theme-item__body { flex: 1; min-width: 0; }
+    .theme-item__title {
+      font-size: 1rem;
+      color: var(--navy);
+      margin: 0 0 6px;
+      line-height: 1.5;
+    }
+    .theme-item__why {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0 0 8px;
+    }
+    .theme-item__link {
+      font-size: 0.85rem;
+      color: #8a6712;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .theme-item__link:hover { text-decoration: underline; color: #6d4a0a; }
+
+    .theme-suggest__entry {
+      background: white;
+      border: 1px solid #e6cf90;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .theme-suggest__entry-why {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0 0 8px;
+    }
+    .theme-suggest__entry-link {
+      font-size: 0.9rem;
+      color: #8a6712;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .theme-suggest__entry-link:hover { text-decoration: underline; }
+
+    .theme-suggest__disclaimer {
+      font-size: 0.78rem;
+      color: #7a5a20;
+      margin: 14px 0 0;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 560px) {
+      .theme-suggest__prompt { flex-direction: column; align-items: stretch; }
+      .theme-suggest__action { align-items: stretch; }
+      .theme-suggest__btn { width: 100%; }
+    }
   </style>
 </BaseLayout>
