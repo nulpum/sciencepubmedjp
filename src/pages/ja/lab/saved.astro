@@ -1,0 +1,196 @@
+---
+// PubMed Lab: お気に入り論文一覧 (client-side、localStorage)
+//
+// - SSR は shell だけ返す (Cloudflare Workers 実行、静的に近い)
+// - localStorage.pubmedlab_saved から読んで描画
+// - この論文について質問 (壁打ち) は Lab index に統合されているため、
+//   ここでは削除 + 論文ページを開くに留める (シンプル化)
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+export const prerender = false;
+
+const pageTitle = '保存した論文 ｜ PubMed Lab';
+const pageDesc = 'PubMed Lab で保存した論文の一覧 (この端末のみに保存されます)';
+---
+<BaseLayout title={pageTitle} description={pageDesc} lang="ja">
+  <article class="saved">
+    <header class="saved__header">
+      <p class="saved__breadcrumb">
+        <a href="/ja/">ホーム</a> › <a href="/ja/lab/">PubMed Lab</a> › 保存した論文
+      </p>
+      <h1>⭐ 保存した論文</h1>
+      <p class="saved__lede">
+        この端末 (ブラウザ) に保存した論文の一覧です。<br>
+        <small>※ 端末をまたいだ同期はしていません。ブラウザのデータを消すと保存も消えます。</small>
+      </p>
+    </header>
+
+    <div id="saved-empty" class="saved__empty" hidden>
+      <p>まだ保存した論文はありません。</p>
+      <p><a href="/ja/lab/">🔬 PubMed Lab で論文を探す →</a></p>
+    </div>
+
+    <ul id="saved-list" class="saved__list"></ul>
+
+    <div class="saved__actions">
+      <a href="/ja/lab/">← 検索に戻る</a>
+      <button id="saved-clear" type="button" class="saved__clear" hidden>すべて削除</button>
+    </div>
+  </article>
+
+  <script is:inline>
+    (function() {
+      const KEY = 'pubmedlab_saved_v1';
+      const listEl = document.getElementById('saved-list');
+      const emptyEl = document.getElementById('saved-empty');
+      const clearBtn = document.getElementById('saved-clear');
+
+      function load() {
+        try {
+          const raw = localStorage.getItem(KEY);
+          if (!raw) return [];
+          const arr = JSON.parse(raw);
+          return Array.isArray(arr) ? arr : [];
+        } catch { return []; }
+      }
+      function save(arr) {
+        try { localStorage.setItem(KEY, JSON.stringify(arr)); } catch {}
+      }
+      function fmtMeta(p) {
+        const parts = [];
+        if (p.authors && p.authors.length) parts.push(p.authors.slice(0, 3).join(', ') + (p.authors.length > 3 ? ' 他' : ''));
+        if (p.journal) parts.push(p.journal);
+        if (p.year) parts.push(String(p.year));
+        return parts.join(' · ');
+      }
+      function fmtDate(iso) {
+        try {
+          const d = new Date(iso);
+          return d.toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' });
+        } catch { return ''; }
+      }
+      function esc(s) {
+        return String(s || '').replace(/[&<>"']/g, (c) => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+      }
+      function render() {
+        const arr = load().sort((a, b) => (b.savedAt || '').localeCompare(a.savedAt || ''));
+        if (arr.length === 0) {
+          emptyEl.hidden = false;
+          clearBtn.hidden = true;
+          listEl.innerHTML = '';
+          return;
+        }
+        emptyEl.hidden = true;
+        clearBtn.hidden = false;
+        listEl.innerHTML = arr.map((p) => `
+          <li class="saved__card" data-pmid="${esc(p.pmid)}">
+            <h2 class="saved__card-title">
+              <a href="${esc(p.url)}" rel="noopener" target="_blank">${esc(p.title)}</a>
+            </h2>
+            <p class="saved__card-meta">${esc(fmtMeta(p))}</p>
+            ${p.abstract ? `<p class="saved__card-abstract">${esc(p.abstract.slice(0, 200))}${p.abstract.length > 200 ? '…' : ''}</p>` : ''}
+            <div class="saved__card-actions">
+              <a href="${esc(p.url)}" rel="noopener" target="_blank">📄 PubMed で読む</a>
+              <span class="saved__card-date">保存: ${esc(fmtDate(p.savedAt))}</span>
+              <button type="button" class="saved__remove" data-pmid="${esc(p.pmid)}">🗑 削除</button>
+            </div>
+          </li>
+        `).join('');
+      }
+      listEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.saved__remove');
+        if (!btn) return;
+        const pmid = btn.getAttribute('data-pmid');
+        const arr = load().filter((p) => p.pmid !== pmid);
+        save(arr);
+        render();
+        if (typeof gtag === 'function') gtag('event', 'lab_remove_saved', { pmid });
+      });
+      clearBtn.addEventListener('click', () => {
+        if (!confirm('保存した論文を全部削除しますか?')) return;
+        save([]);
+        render();
+        if (typeof gtag === 'function') gtag('event', 'lab_clear_saved');
+      });
+      render();
+    })();
+  </script>
+
+  <style>
+    .saved { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
+    .saved__breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+    .saved__breadcrumb a { color: var(--muted); }
+    .saved__header h1 { font-size: 2rem; color: var(--navy); margin: 0 0 12px; }
+    .saved__lede { line-height: 1.75; color: var(--text); margin: 0 0 20px; }
+    .saved__lede small { color: var(--muted); font-size: 0.85rem; }
+
+    .saved__empty {
+      padding: 40px 20px;
+      text-align: center;
+      background: #f7f9fc;
+      border-radius: 8px;
+      color: var(--muted);
+    }
+    .saved__empty a { color: var(--link); font-weight: 600; }
+
+    .saved__list { list-style: none; padding: 0; margin: 20px 0; }
+    .saved__card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 12px 0;
+    }
+    .saved__card-title { font-size: 1.02rem; margin: 0 0 6px; }
+    .saved__card-title a { color: var(--navy); font-weight: 700; text-decoration: none; }
+    .saved__card-title a:hover { text-decoration: underline; }
+    .saved__card-meta { font-size: 0.85rem; color: var(--muted); margin: 4px 0 8px; }
+    .saved__card-abstract {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 8px 0 12px;
+    }
+    .saved__card-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+    .saved__card-actions a { color: var(--link); font-weight: 600; }
+    .saved__card-date { color: var(--muted); font-size: 0.8rem; margin-left: auto; }
+    .saved__remove {
+      background: transparent;
+      border: 1px solid #e0e0e0;
+      color: #c33;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    .saved__remove:hover { background: #fef2f2; border-color: #c33; }
+
+    .saved__actions {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .saved__actions a { color: var(--link); }
+    .saved__clear {
+      background: transparent;
+      border: 1px solid #c33;
+      color: #c33;
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    .saved__clear:hover { background: #fef2f2; }
+  </style>
+</BaseLayout>

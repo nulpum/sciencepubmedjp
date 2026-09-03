@@ -2,16 +2,19 @@
 // PubMed Lab トップ + 結果ページ (SSR)
 // クエリパラメータ ?q=... で検索実行 → 結果表示
 // クエリなしの場合は検索窓 + サンプルクエリ表示
+//
+// 2026-09 更新:
+// - 論文カードに ⭐ 保存 + 💬 壁打ちチャット を追加 (β)
+// - 保存は localStorage、壁打ちは Claude API 経由で /api/chat を叩く
+// - GA4 に lab_search / lab_save_paper / lab_chat_open / lab_chat_message などを送信
 
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { translateQueryToEnglish } from '../../../lib/query-translator';
 import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
 
-// SSR (prerender しない、Cloudflare Pages Functions で動く)
 export const prerender = false;
 
-// Astro locals から env を取得 (CF Workers 対応)
 function getEnv(locals: any, key: string): string | undefined {
   const cf = locals?.runtime?.env;
   if (cf && key in cf) return cf[key];
@@ -79,12 +82,10 @@ if (q) {
     }
     elapsedMs = Date.now() - startedAt;
 
-    // サイト内記事から関連するものを検索 (簡易 substring match)
     try {
       const psy = await getCollection('ja_psychology');
       const bio = await getCollection('ja_biology');
       const all = [...psy, ...bio];
-      // クエリを 2 文字以上のトークンに分割して部分一致
       const tokens = q
         .split(/[\s、,.。・]+/)
         .filter((t) => t.length >= 2);
@@ -107,9 +108,7 @@ if (q) {
         fact: x.post.data.fact,
         url: `/ja/${x.post.data.category}/${x.post.id}/`,
       }));
-    } catch {
-      // 失敗しても検索結果は表示するので握りつぶし
-    }
+    } catch { /* siteMatches は握りつぶし */ }
   } catch (e) {
     errorMessage = (e as Error).message || String(e);
   }
@@ -136,7 +135,10 @@ const pageDesc = q
 <BaseLayout title={pageTitle} description={pageDesc} lang="ja">
   <article class="lab">
     <header class="lab__header">
-      <p class="lab__breadcrumb"><a href="/ja/">ホーム</a> › PubMed Lab</p>
+      <p class="lab__breadcrumb">
+        <a href="/ja/">ホーム</a> › PubMed Lab
+        <a href="/ja/lab/saved/" class="lab__saved-link">⭐ 保存した論文</a>
+      </p>
       <h1>🔬 PubMed Lab</h1>
       <p class="lab__lede">
         日本語で入力するだけで、PubMed の英語論文を検索できるリサーチアシスタントです。<br>
@@ -144,7 +146,7 @@ const pageDesc = q
       </p>
     </header>
 
-    <form method="GET" action="/ja/lab/" class="lab__form">
+    <form method="GET" action="/ja/lab/" class="lab__form" id="lab-search-form">
       <input
         type="text"
         name="q"
@@ -172,18 +174,20 @@ const pageDesc = q
             <li>気になるテーマ・質問を <strong>日本語で</strong> 入力</li>
             <li>AI が英語の PubMed 検索クエリに変換</li>
             <li>マッチする論文を最大 10 件、英語 abstract 付きで表示</li>
+            <li>気になった論文は ⭐ で <strong>保存</strong>、💬 で <strong>壁打ちチャット</strong> (β)</li>
           </ol>
         </section>
 
-        <section class="lab__coming">
-          <h2>Coming Soon (有料機能)</h2>
+        <section class="lab__features">
+          <h2>使える機能 (すべて無料・登録不要)</h2>
           <ul>
-            <li>📖 論文 abstract の <strong>日本語 3 行要約</strong></li>
-            <li>💬 論文と <strong>壁打ちチャット</strong> (この研究の要点は? / 反論は? / 卒論引用のコツ)</li>
-            <li>⭐ お気に入り論文の <strong>保存 + 検索履歴</strong></li>
+            <li>🔍 <strong>日本語→英語クエリ変換</strong>: MeSH タームも AI が判断</li>
+            <li>⭐ <strong>お気に入り保存</strong>: この端末のブラウザに保存 (<a href="/ja/lab/saved/">一覧を見る</a>)</li>
+            <li>💬 <strong>論文と壁打ちチャット (β)</strong>: 各論文の abstract を元に AI と質疑応答。 <em>1 日 3 メッセージまで / このブラウザ単位</em></li>
+            <li>📖 <strong>サイト内解説マッチ</strong>: 関連する日本語解説記事も同時表示</li>
           </ul>
-          <p class="lab__coming-note">
-            登録者向け機能として順次リリース予定です。
+          <p class="lab__features-note">
+            ⚠️ 壁打ちチャットは実験β。 abstract 情報のみを根拠にしているため、フルテキスト精読の代わりにはなりません。医療助言もしません。
           </p>
         </section>
 
@@ -210,6 +214,8 @@ const pageDesc = q
           <p><strong>「{q}」</strong>の検索結果</p>
           <p class="lab__meta-detail">
             {totalCount.toLocaleString()} 件中 {results.length} 件を表示 ({elapsedMs} ms)
+            <span class="lab__meta-sep">·</span>
+            <a href="/ja/lab/saved/">⭐ 保存した論文</a>
           </p>
           {englishQuery && (
             <details class="lab__query-detail">
@@ -253,29 +259,72 @@ const pageDesc = q
         )}
 
         <ul class="lab__cards">
-          {results.map((r) => (
-            <li class="lab__card">
-              <h2 class="lab__card-title">
-                <a href={r.url} rel="noopener" target="_blank">{r.title}</a>
-              </h2>
-              <p class="lab__card-meta">
-                {r.authors.length > 0 && <span>{r.authors.join(', ')}{r.authors.length >= 3 && ' 他'}</span>}
-                {r.journal && <span> · {r.journal}</span>}
-                {r.year && <span> · {r.year}</span>}
-              </p>
-              <p class="lab__card-abstract">
-                {r.abstract.length > 400 ? r.abstract.slice(0, 400) + '…' : r.abstract}
-              </p>
-              <p class="lab__card-actions">
-                <a href={r.url} rel="noopener" target="_blank" class="lab__card-link">
-                  📄 PubMed で読む (PMID: {r.pmid})
-                </a>
-                <span class="lab__card-coming">
-                  🔒 日本語要約・壁打ちチャットは Coming Soon
-                </span>
-              </p>
-            </li>
-          ))}
+          {results.map((r) => {
+            // client 側 JS で使う JSON: PaperContext + 保存用データ
+            const paperJson = JSON.stringify({
+              pmid: r.pmid,
+              title: r.title,
+              authors: r.authors,
+              journal: r.journal,
+              year: r.year,
+              abstract: r.abstract,
+              url: r.url,
+            });
+            return (
+              <li class="lab__card" data-paper={paperJson}>
+                <h2 class="lab__card-title">
+                  <a href={r.url} rel="noopener" target="_blank">{r.title}</a>
+                </h2>
+                <p class="lab__card-meta">
+                  {r.authors.length > 0 && <span>{r.authors.join(', ')}{r.authors.length >= 3 && ' 他'}</span>}
+                  {r.journal && <span> · {r.journal}</span>}
+                  {r.year && <span> · {r.year}</span>}
+                </p>
+                <p class="lab__card-abstract">
+                  {r.abstract.length > 400 ? r.abstract.slice(0, 400) + '…' : r.abstract}
+                </p>
+                <div class="lab__card-actions">
+                  <a href={r.url} rel="noopener" target="_blank" class="lab__card-link">
+                    📄 PubMed で読む (PMID: {r.pmid})
+                  </a>
+                  <div class="lab__card-buttons">
+                    <button type="button" class="lab__btn lab__btn--save" data-pmid={r.pmid}>
+                      <span class="lab__btn-icon" aria-hidden="true">☆</span>
+                      <span class="lab__btn-label">保存</span>
+                    </button>
+                    <button type="button" class="lab__btn lab__btn--chat" data-pmid={r.pmid}>
+                      💬 <span class="lab__btn-label">この論文と壁打ち</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* 壁打ちチャット (デフォルト hidden) */}
+                <div class="paper-chat" data-pmid={r.pmid} hidden>
+                  <div class="paper-chat__head">
+                    <span class="paper-chat__title">💬 論文と壁打ち β</span>
+                    <span class="paper-chat__quota">残り <span class="quota-count">3</span> / 3 回 (今日)</span>
+                  </div>
+                  <div class="paper-chat__notice">
+                    Abstract の内容だけを根拠に答えます。医療助言はしません。abstract に無い事実は「記載なし」と返します。
+                  </div>
+                  <div class="paper-chat__messages"></div>
+                  <form class="paper-chat__form">
+                    <input
+                      type="text"
+                      class="paper-chat__input"
+                      placeholder="例: この研究の要点を3つ / 反対の結論の研究は? / 卒論引用向きの表現に"
+                      maxlength="500"
+                      required
+                    />
+                    <button type="submit" class="paper-chat__submit">送信</button>
+                  </form>
+                  <p class="paper-chat__hint">
+                    質問例: 「要点を3つ教えて」「結論の限界は?」「N数と統計手法は?」「反論できる可能性は?」
+                  </p>
+                </div>
+              </li>
+            );
+          })}
         </ul>
 
         <div class="lab__back">
@@ -285,10 +334,256 @@ const pageDesc = q
     )}
   </article>
 
+  {/* ==================== Client-side JS (inline, no bundling) ==================== */}
+  {q && !errorMessage && results.length > 0 && (
+    <script is:inline>
+      (function() {
+        const SAVE_KEY = 'pubmedlab_saved_v1';
+        const QUOTA_KEY = 'pubmedlab_chat_quota_v1';
+        const DAILY_LIMIT = 3;
+
+        // ------------------ localStorage helpers ------------------
+        function loadSaved() {
+          try {
+            const raw = localStorage.getItem(SAVE_KEY);
+            const arr = raw ? JSON.parse(raw) : [];
+            return Array.isArray(arr) ? arr : [];
+          } catch { return []; }
+        }
+        function saveSaved(arr) {
+          try { localStorage.setItem(SAVE_KEY, JSON.stringify(arr)); } catch {}
+        }
+        function isSaved(pmid) {
+          return loadSaved().some((p) => p.pmid === pmid);
+        }
+        function toggleSaved(paper) {
+          const arr = loadSaved();
+          const idx = arr.findIndex((p) => p.pmid === paper.pmid);
+          if (idx >= 0) {
+            arr.splice(idx, 1);
+            saveSaved(arr);
+            return false;
+          }
+          arr.push({ ...paper, savedAt: new Date().toISOString() });
+          saveSaved(arr);
+          return true;
+        }
+
+        // ------------------ Quota (chat rate limit) ------------------
+        function today() { return new Date().toISOString().slice(0, 10); }
+        function readQuota() {
+          try {
+            const raw = localStorage.getItem(QUOTA_KEY);
+            const obj = raw ? JSON.parse(raw) : {};
+            if (obj.date !== today()) return { date: today(), count: 0 };
+            return { date: obj.date, count: obj.count || 0 };
+          } catch { return { date: today(), count: 0 }; }
+        }
+        function bumpQuota() {
+          const q = readQuota();
+          q.count += 1;
+          try { localStorage.setItem(QUOTA_KEY, JSON.stringify(q)); } catch {}
+          return q;
+        }
+        function remaining() {
+          return Math.max(0, DAILY_LIMIT - readQuota().count);
+        }
+
+        // ------------------ 保存ボタン初期化 ------------------
+        function initSaveButtons() {
+          document.querySelectorAll('.lab__btn--save').forEach((btn) => {
+            const pmid = btn.getAttribute('data-pmid');
+            reflectSaveState(btn, isSaved(pmid));
+            btn.addEventListener('click', () => {
+              const card = btn.closest('.lab__card');
+              const paper = JSON.parse(card.getAttribute('data-paper'));
+              const nowSaved = toggleSaved(paper);
+              reflectSaveState(btn, nowSaved);
+              if (typeof gtag === 'function') {
+                gtag('event', nowSaved ? 'lab_save_paper' : 'lab_unsave_paper', {
+                  pmid: paper.pmid,
+                });
+              }
+            });
+          });
+        }
+        function reflectSaveState(btn, saved) {
+          btn.classList.toggle('is-saved', saved);
+          btn.querySelector('.lab__btn-icon').textContent = saved ? '★' : '☆';
+          btn.querySelector('.lab__btn-label').textContent = saved ? '保存済み' : '保存';
+        }
+
+        // ------------------ 壁打ちチャット初期化 ------------------
+        function initChatButtons() {
+          document.querySelectorAll('.lab__btn--chat').forEach((btn) => {
+            const pmid = btn.getAttribute('data-pmid');
+            btn.addEventListener('click', () => {
+              const card = btn.closest('.lab__card');
+              const chatBox = card.querySelector('.paper-chat');
+              const nowOpen = chatBox.hidden;
+              chatBox.hidden = !nowOpen;
+              btn.classList.toggle('is-active', nowOpen);
+              if (nowOpen) {
+                updateQuotaDisplay(chatBox);
+                if (typeof gtag === 'function') {
+                  gtag('event', 'lab_chat_open', { pmid });
+                }
+                const input = chatBox.querySelector('.paper-chat__input');
+                if (input) input.focus();
+              }
+            });
+          });
+
+          document.querySelectorAll('.paper-chat').forEach((box) => {
+            const form = box.querySelector('.paper-chat__form');
+            const input = box.querySelector('.paper-chat__input');
+            const messagesEl = box.querySelector('.paper-chat__messages');
+            const submitBtn = box.querySelector('.paper-chat__submit');
+            const history = []; // {role, content}[]  session-scoped, not persisted
+
+            form.addEventListener('submit', async (e) => {
+              e.preventDefault();
+              const question = input.value.trim();
+              if (!question) return;
+              if (remaining() <= 0) {
+                appendMessage(messagesEl, 'assistant',
+                  '⚠️ 今日の壁打ち回数上限 (3 回) に達しました。日付が変わると再度使えます。');
+                return;
+              }
+              const card = box.closest('.lab__card');
+              const paper = JSON.parse(card.getAttribute('data-paper'));
+
+              history.push({ role: 'user', content: question });
+              appendMessage(messagesEl, 'user', question);
+              input.value = '';
+              input.disabled = true;
+              submitBtn.disabled = true;
+              const loadingEl = appendMessage(messagesEl, 'assistant', '考え中…', 'is-loading');
+
+              try {
+                const res = await fetch('/api/chat', {
+                  method: 'POST',
+                  headers: { 'content-type': 'application/json' },
+                  body: JSON.stringify({
+                    paper: {
+                      pmid: paper.pmid,
+                      title: paper.title,
+                      authors: paper.authors || [],
+                      journal: paper.journal,
+                      year: paper.year,
+                      abstract: paper.abstract,
+                    },
+                    messages: history,
+                  }),
+                });
+                const data = await res.json().catch(() => ({}));
+                loadingEl.remove();
+                if (!res.ok) {
+                  const msg = data.detail || data.error || `エラー (${res.status})`;
+                  appendMessage(messagesEl, 'assistant', `⚠️ ${msg}`, 'is-error');
+                  if (typeof gtag === 'function') {
+                    gtag('event', 'lab_chat_error', { pmid: paper.pmid, error: data.error || 'http_' + res.status });
+                  }
+                  return;
+                }
+                history.push({ role: 'assistant', content: data.reply });
+                appendMessage(messagesEl, 'assistant', data.reply);
+                bumpQuota();
+                updateQuotaDisplay(box);
+                if (typeof gtag === 'function') {
+                  gtag('event', 'lab_chat_message', {
+                    pmid: paper.pmid,
+                    turn: history.filter((m) => m.role === 'user').length,
+                  });
+                }
+              } catch (err) {
+                loadingEl.remove();
+                appendMessage(messagesEl, 'assistant',
+                  `⚠️ 通信エラー: ${(err && err.message) || err}`, 'is-error');
+              } finally {
+                input.disabled = false;
+                submitBtn.disabled = false;
+                input.focus();
+              }
+            });
+          });
+        }
+        function appendMessage(container, role, text, extraClass) {
+          const el = document.createElement('div');
+          el.className = 'chat-msg chat-msg--' + role + (extraClass ? ' ' + extraClass : '');
+          el.textContent = text;
+          container.appendChild(el);
+          el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          return el;
+        }
+        function updateQuotaDisplay(box) {
+          const el = box.querySelector('.quota-count');
+          if (el) el.textContent = String(remaining());
+        }
+
+        // ------------------ GA4: 検索実行時 ------------------
+        // SSR で結果ページを返した時点で検索は既に完走している。ここではページビュー
+        // 相当の custom event を送るだけ。
+        if (typeof gtag === 'function') {
+          const params = new URLSearchParams(location.search);
+          const q = params.get('q') || '';
+          if (q) {
+            gtag('event', 'lab_search', {
+              query: q.slice(0, 100),
+              result_count: document.querySelectorAll('.lab__card').length,
+            });
+          }
+        }
+
+        // init
+        initSaveButtons();
+        initChatButtons();
+      })();
+    </script>
+  )}
+
+  {!q && (
+    <script is:inline>
+      // 検索フォーム submit 時に GA イベントを送る (トップページ側)
+      (function() {
+        const form = document.getElementById('lab-search-form');
+        if (!form) return;
+        form.addEventListener('submit', () => {
+          const q = form.querySelector('input[name="q"]').value.trim();
+          if (typeof gtag === 'function' && q) {
+            gtag('event', 'lab_search_submit', { query: q.slice(0, 100) });
+          }
+        });
+      })();
+    </script>
+  )}
+
   <style>
     .lab { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
-    .lab__breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+    .lab__breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
     .lab__breadcrumb a { color: var(--muted); }
+    .lab__saved-link {
+      background: #fff8ea;
+      border: 1px solid #e6cf90;
+      color: #8a6712 !important;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .lab__saved-link:hover {
+      background: #ffefc7;
+      text-decoration: none;
+    }
     .lab__header h1 { font-size: 2.2rem; color: var(--navy); margin: 0 0 12px; }
     .lab__lede { line-height: 1.75; color: var(--text); margin: 0 0 24px; }
 
@@ -346,17 +641,17 @@ const pageDesc = q
       color: white;
     }
 
-    .lab__howto, .lab__coming, .lab__disclaimer {
+    .lab__howto, .lab__features, .lab__disclaimer {
       margin: 32px 0;
       padding: 18px 22px;
       border-radius: 8px;
     }
     .lab__howto { background: #f7f9fc; border-left: 4px solid var(--navy); }
-    .lab__coming { background: #fff8ea; border-left: 4px solid #d4a34a; }
+    .lab__features { background: #f0f7ec; border-left: 4px solid #4a8f31; }
     .lab__disclaimer { background: #fafafa; font-size: 0.9rem; color: var(--muted); }
-    .lab__howto h2, .lab__coming h2 { font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
-    .lab__howto ol, .lab__coming ul { line-height: 1.85; }
-    .lab__coming-note { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+    .lab__howto h2, .lab__features h2 { font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
+    .lab__howto ol, .lab__features ul { line-height: 1.85; }
+    .lab__features-note { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
 
     .lab__error {
       margin: 24px 0;
@@ -368,6 +663,8 @@ const pageDesc = q
 
     .lab__meta { margin: 20px 0 16px; }
     .lab__meta-detail { font-size: 0.85rem; color: var(--muted); }
+    .lab__meta-detail a { color: var(--link); }
+    .lab__meta-sep { margin: 0 6px; color: var(--border); }
     .lab__query-detail {
       margin: 12px 0;
       padding: 10px 14px;
@@ -434,12 +731,39 @@ const pageDesc = q
     }
     .lab__card-link { color: var(--link); text-decoration: none; font-weight: 600; }
     .lab__card-link:hover { text-decoration: underline; }
-    .lab__card-coming { color: var(--muted); font-size: 0.8rem; }
+
+    .lab__card-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+    .lab__btn {
+      background: white;
+      border: 1px solid #d5e0f0;
+      color: var(--navy);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: background 0.1s, border-color 0.1s;
+    }
+    .lab__btn:hover { background: #f0f4fa; border-color: var(--navy); }
+    .lab__btn--save.is-saved {
+      background: #fff8ea;
+      border-color: #e6cf90;
+      color: #8a6712;
+    }
+    .lab__btn--chat.is-active {
+      background: var(--navy);
+      color: white;
+      border-color: var(--navy);
+    }
+    .lab__btn-icon { font-size: 1rem; line-height: 1; }
 
     .lab__back { margin: 28px 0; text-align: center; }
     .lab__back a { color: var(--link); }
 
-    /* サイト内マッチ */
+    /* Site matches */
     .lab__site-matches {
       background: #f0f7ec;
       border-left: 4px solid #4a8f31;
@@ -501,5 +825,78 @@ const pageDesc = q
       padding-left: 10px;
       border-left: 4px solid var(--navy);
     }
+
+    /* ==== Paper chat ==== */
+    .paper-chat {
+      margin: 16px -6px 0;
+      padding: 14px 16px;
+      background: #f7f9fc;
+      border: 1px solid #d5e0f0;
+      border-radius: 8px;
+    }
+    .paper-chat__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .paper-chat__title { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+    .paper-chat__quota { font-size: 0.8rem; color: var(--muted); }
+    .paper-chat__notice {
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: #eef2f7;
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin: 6px 0 10px;
+    }
+    .paper-chat__messages { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+    .chat-msg {
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      max-width: 92%;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .chat-msg--user {
+      background: var(--navy);
+      color: white;
+      align-self: flex-end;
+    }
+    .chat-msg--assistant {
+      background: white;
+      border: 1px solid #d5e0f0;
+      color: var(--text);
+      align-self: flex-start;
+    }
+    .chat-msg.is-loading { color: var(--muted); font-style: italic; }
+    .chat-msg.is-error { border-color: #dc2626; color: #7a1d1d; background: #fef2f2; }
+    .paper-chat__form { display: flex; gap: 6px; }
+    .paper-chat__input {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      border: 1px solid #cfd9e5;
+      border-radius: 6px;
+      outline: none;
+    }
+    .paper-chat__input:focus { border-color: var(--navy); }
+    .paper-chat__submit {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      background: var(--navy);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .paper-chat__submit:hover { background: var(--navy-deep); }
+    .paper-chat__submit:disabled { background: #a0aec0; cursor: not-allowed; }
+    .paper-chat__hint { font-size: 0.78rem; color: var(--muted); margin: 8px 0 0; }
   </style>
 </BaseLayout>
