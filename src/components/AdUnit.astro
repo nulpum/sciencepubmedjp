@@ -57,4 +57,13 @@ const enabled = isAdSlotEnabled(slot);
     min-height: 100px;
     max-width: 100%;
   }
+  /* AdSense 未配信 (審査中 / 広告在庫なし) の時はコンテナごと非表示にして
+     UX を守る (空の白箱 + 「広告 (Sponsored)」ラベルが出ないように) */
+  .ad-unit:has(ins[data-ad-status="unfilled"]) {
+    display: none;
+  }
+  /* :has() 非対応ブラウザ (古い版) の fallback: unfilled ins だけでも min-height を潰す */
+  .ad-unit ins[data-ad-status="unfilled"] {
+    display: none;
+  }
 </style>
