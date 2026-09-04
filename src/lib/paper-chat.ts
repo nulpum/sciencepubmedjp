@@ -66,8 +66,11 @@ export async function chatWithPaper(
   const trimmed = messages.slice(-MAX_HISTORY);
 
   const client = new Anthropic({ apiKey });
+  // Haiku 4.5 は Sonnet 4.5 の 1/3 のコスト (in $1/M vs $3/M, out $5/M vs $15/M)。
+  // 論文 abstract を根拠に日本語で答える壁打ちタスクは reasoning heavy ではない
+  // ので Haiku で十分。 100 UU/日 想定でコスト月 ~¥4500 → ~¥1500 に低減できる。
   const res = await client.messages.create({
-    model: 'claude-sonnet-4-5',
+    model: 'claude-haiku-4-5-20251001',
     max_tokens: MAX_TOKENS,
     system: buildSystem(paper),
     messages: trimmed.map((m) => ({

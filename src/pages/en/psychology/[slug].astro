@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
+import AdUnit from '../../../components/AdUnit.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('en_psychology');
@@ -104,6 +105,9 @@ export const prerender = true;
   {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
     <StickyMobileCta links={post.data.affiliate_links} lang="en" />
   )}
+
+  {/* Article footer AdSense (readers reaching end of article) */}
+  <AdUnit slot="articleFooter" />
 
   {related.length > 0 && (
     <section class="related-section">

@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
+import AdUnit from '../../../components/AdUnit.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('ja_biology');
@@ -103,6 +104,9 @@ export const prerender = true;
   {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
     <StickyMobileCta links={post.data.affiliate_links} lang="ja" />
   )}
+
+  {/* 記事フッター AdSense (読了ゾーンで表示) */}
+  <AdUnit slot="articleFooter" />
 
   {related.length > 0 && (
     <section class="related-section">

@@ -10,6 +10,7 @@
 
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AdUnit from '../../../components/AdUnit.astro';
 import { translateQueryToEnglish } from '../../../lib/query-translator';
 import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
 import { LAB_CONFIG, isWaitlistEnabled } from '../../../config/lab';
@@ -200,6 +201,9 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
           </p>
         </section>
 
+        {/* Lab トップページ AdSense (未検索状態の end-of-scroll ゾーン) */}
+        <AdUnit slot="labTop" />
+
         {waitlistUrl && (
           <section class="lab__waitlist-cta">
             <div class="lab__waitlist-cta-body">
@@ -386,6 +390,9 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
         <div class="lab__back">
           <a href="/ja/lab/">← 別のキーワードで検索する</a>
         </div>
+
+        {/* Lab 検索結果ページ AdSense (waitlist CTA の直上) */}
+        <AdUnit slot="labResults" />
 
         {waitlistUrl && (
           <aside class="lab__waitlist-cta lab__waitlist-cta--compact">

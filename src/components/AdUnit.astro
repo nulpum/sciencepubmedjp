@@ -1,0 +1,60 @@
+---
+// Google AdSense 広告ユニット (レスポンシブディスプレイ)
+//
+// slot が未設定 (空文字) の場合は何も出力しない (プレースホルダー扱い)。
+// AdSense ダッシュボードで広告ユニットを作成し、src/config/ads.ts に
+// slot ID を貼るとここが本番表示される。
+//
+// 使い方:
+//   <AdUnit slot="articleFooter" />
+//   <AdUnit slot="labResults" />
+
+import { AD_CONFIG, isAdSlotEnabled, type AdSlot } from '../config/ads';
+
+interface Props {
+  slot: AdSlot;
+  /** 「広告」ラベルを上に表示 (AdSense ポリシー準拠、任意) */
+  showLabel?: boolean;
+}
+
+const { slot, showLabel = true } = Astro.props;
+const slotId = AD_CONFIG.slots[slot];
+const enabled = isAdSlotEnabled(slot);
+---
+{enabled && (
+  <aside class="ad-unit" data-slot={slot} aria-label="広告">
+    {showLabel && <p class="ad-unit__label">広告 (Sponsored)</p>}
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={AD_CONFIG.client}
+      data-ad-slot={slotId}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script is:inline>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </aside>
+)}
+
+<style>
+  .ad-unit {
+    margin: 32px auto;
+    padding: 8px 0;
+    max-width: 100%;
+    text-align: center;
+  }
+  .ad-unit__label {
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+  }
+  .ad-unit ins {
+    display: block;
+    min-height: 100px;
+    max-width: 100%;
+  }
+</style>
