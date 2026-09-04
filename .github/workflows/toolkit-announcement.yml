@@ -31,7 +31,8 @@ permissions:
 jobs:
   announcement:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # Instagram の media container 処理が遅延するケースがあるため、余裕を持って 15 分
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v5
