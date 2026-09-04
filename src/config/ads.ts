@@ -22,7 +22,7 @@ export const AD_CONFIG = {
    */
   slots: {
     /** 記事ページ (ja/en, psychology/biology) の記事フッター */
-    articleFooter: '',
+    articleFooter: '6593095948',
     /** Lab 検索結果ページの末尾 (waitlist CTA の上) */
     labResults: '',
     /** Lab トップ (未検索状態) の feature セクション下 */
