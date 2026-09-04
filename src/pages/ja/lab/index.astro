@@ -141,7 +141,10 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
     <header class="lab__header">
       <p class="lab__breadcrumb">
         <a href="/ja/">ホーム</a> › PubMed Lab
-        <a href="/ja/lab/saved/" class="lab__saved-link">⭐ 保存した論文</a>
+        <span class="lab__breadcrumb-links">
+          <a href="/ja/lab/toolkit/" class="lab__toolkit-link">🤖 自分の AI で使う</a>
+          <a href="/ja/lab/saved/" class="lab__saved-link">⭐ 保存した論文</a>
+        </span>
       </p>
       <h1>🔬 PubMed Lab</h1>
       <p class="lab__lede">
@@ -188,6 +191,8 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
             <li>🔍 <strong>日本語→英語クエリ変換</strong>: MeSH タームも AI が判断</li>
             <li>⭐ <strong>お気に入り保存</strong>: この端末のブラウザに保存 (<a href="/ja/lab/saved/">一覧を見る</a>)</li>
             <li>💬 <strong>論文と壁打ちチャット (β)</strong>: 各論文の abstract を元に AI と質疑応答。 <em>1 日 3 メッセージまで / このブラウザ単位</em></li>
+            <li>🎓 <strong>卒論・修論テーマ提案</strong>: 検索結果を AI が俯瞰して研究テーマ 3 案を提案 <em>(1 日 3 回)</em></li>
+            <li>🤖 <strong>自分の ChatGPT / Claude / Gemini で使う</strong>: 論文専用プロンプトを無料配布 → 上限突破・完全無制限 (<a href="/ja/lab/toolkit/">プロンプトを取得 →</a>)</li>
             <li>📖 <strong>サイト内解説マッチ</strong>: 関連する日本語解説記事も同時表示</li>
           </ul>
           <p class="lab__features-note">
@@ -521,6 +526,7 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
               if (remaining() <= 0) {
                 appendMessage(messagesEl, 'assistant',
                   '⚠️ 今日の壁打ち回数上限 (3 回) に達しました。日付が変わると再度使えます。');
+                appendToolkitLink(messagesEl, 'lab_toolkit_click_chatlimit');
                 appendWaitlistLink(messagesEl, 'lab_waitlist_click_chatlimit');
                 return;
               }
@@ -605,6 +611,21 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
           link.className = 'chat-msg__waitlist-link';
           link.addEventListener('click', () => {
             if (typeof gtag === 'function') gtag('event', gaEventName || 'lab_waitlist_click');
+          });
+          wrap.appendChild(link);
+          container.appendChild(wrap);
+          wrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
+        function appendToolkitLink(container, gaEventName) {
+          const wrap = document.createElement('div');
+          wrap.className = 'chat-msg chat-msg--assistant chat-msg--waitlist';
+          wrap.appendChild(document.createTextNode('🤖 自分の ChatGPT / Claude で無制限に使いたい方は: '));
+          const link = document.createElement('a');
+          link.href = '/ja/lab/toolkit/';
+          link.textContent = '無料プロンプトを取得 →';
+          link.className = 'chat-msg__waitlist-link';
+          link.addEventListener('click', () => {
+            if (typeof gtag === 'function') gtag('event', gaEventName || 'lab_toolkit_click');
           });
           wrap.appendChild(link);
           container.appendChild(wrap);
@@ -829,6 +850,11 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
       gap: 8px;
     }
     .lab__breadcrumb a { color: var(--muted); }
+    .lab__breadcrumb-links {
+      display: inline-flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
     .lab__saved-link {
       background: #fff8ea;
       border: 1px solid #e6cf90;
@@ -840,6 +866,19 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
     }
     .lab__saved-link:hover {
       background: #ffefc7;
+      text-decoration: none;
+    }
+    .lab__toolkit-link {
+      background: #eef4ff;
+      border: 1px solid #7ea1de;
+      color: var(--navy) !important;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .lab__toolkit-link:hover {
+      background: #d9e5f7;
       text-decoration: none;
     }
     .lab__header h1 { font-size: 2.2rem; color: var(--navy); margin: 0 0 12px; }

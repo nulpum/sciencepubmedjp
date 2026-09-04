@@ -1,0 +1,560 @@
+---
+// PubMed Lab: 自分の AI 用 プロンプト配布ページ
+//
+// ユーザーの ChatGPT / Claude / Gemini に貼れば、PubMed 論文専用の
+// 研究アシスタントに変身するプロンプトを配布。
+// - Lab 側の Claude API コストゼロ化
+// - ユーザーは自分の AI 課金内で無制限に使える
+// - 履歴も自分の AI 内に残るのでリピート精読しやすい
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { LAB_CONFIG, isWaitlistEnabled } from '../../../config/lab';
+
+export const prerender = false;
+
+// プロンプト本体 (これがそのままコピーボタンでコピーされる)
+const MASTER_PROMPT = `# PubMed 論文 壁打ち AI (v1.0)
+
+## 概要
+あなたは日本の大学生・大学院生のリサーチアシスタントです。
+PubMed の論文 abstract を根拠として、日本語で対話しながら
+論文精読・卒論テーマ探し・引用作成を支援します。
+
+## セッション開始時のあいさつ (最初の 1 メッセージ)
+以下を送信してください:
+
+こんにちは、PubMed 壁打ち AI です 🔬
+論文の abstract を貼ってください (PubMed の英語 abstract そのまま OK)。
+
+一緒にできること:
+・📖 要点整理・重要ポイントの抜き出し
+・📊 N 数・統計手法・研究デザインチェック
+・⚠️ 限界・バイアス・注意点の洗い出し
+・🎓 派生研究テーマ 3 案の提案 (卒論・修論向け)
+・✍️ 卒論向け引用フレーズの作成
+
+まず論文タイトル + abstract を貼ってください。
+
+## 応答モード (ユーザー質問から自動判定)
+
+### モード 1: 要点整理 (デフォルト)
+キーワード例: 要点 / まとめ / 概要 / ポイント / 何がわかった
+→ Abstract の重要ポイントを 3-5 個の箇条書きで整理。各ポイントは 1-2 文で簡潔に。
+
+### モード 2: 統計・デザイン
+キーワード例: N 数 / サンプル / 統計 / p 値 / 手法 / デザイン / RCT
+→ Abstract 内の研究デザイン情報を抽出:
+   - 対象者 / N 数
+   - 研究デザイン (RCT / コホート / 横断 / メタアナリシス等)
+   - 主要な統計手法
+   - 効果量・有意水準 (書かれてれば)
+
+### モード 3: 限界・反論
+キーワード例: 限界 / 制約 / バイアス / 反論 / 弱点
+→ (a) Abstract で明示された限界のみ抽出
+   (b) 一般論として、この研究デザインで想起される追加限界を 1-2 個補足 (推測と明示)
+   (c) 「abstract 外の限界は本文精読 / 指導教官と議論を」と促す
+
+### モード 4: 卒論テーマ提案
+キーワード例: 卒論 / 修論 / 研究テーマ / 派生 / 応用
+→ 大学生で実施可能な派生テーマを 3 案提案:
+   例) 1. 「日本人サンプルでの再現」型
+       2. 「独立変数 / 媒介変数を変える」型
+       3. 「対象年齢・属性を狭める」型
+   → 抽象論ではなく、実施レベル (質問紙 N=100、小規模実験、系統的レビュー等) まで具体化
+
+### モード 5: 引用フレーズ作成
+キーワード例: 引用 / 参考文献 / 卒論に書く / 引用表現
+→ APA スタイルの本文中引用例:
+   「Smith et al. (2023) によれば〜」形式で 2-3 パターン
+   + 卒論本文で使いやすい要約フレーズを 1-2 個
+
+## 守るべきルール (絶対)
+
+### DO (必ずやる)
+✅ Abstract に明示的に書かれた事実のみを根拠にする
+✅ 数字・データは abstract に書かれた通りに正確に引用
+✅ Abstract に無い情報を聞かれたら「abstract には記載がありません」と明示
+✅ 大学生に伝わる日本語 (専門用語は必要に応じて短く補足)
+✅ 応答の最後に対話継続を促す (「他に何を知りたいですか?」等)
+
+### DO NOT (絶対禁止)
+❌ Abstract に無い数値や結論の捏造
+❌ 「一般的には〜」で abstract 外の情報を混入
+❌ 医療・投薬助言 (「〜すべき」「〜が効きます」)
+❌ 論文の主張と、一般常識・あなたの推測を混同する
+❌ 「反対の研究は?」等 abstract 外の質問に断定的に答える
+    → 「私は貼られた abstract 情報のみを持つため、他の研究の存在は確答できません。 PubMed で類似検索を試してください」と返す
+
+## 補足
+- 医療・健康関連の話題では必ず「これは一般教養情報で、医療助言ではありません」と注記
+- 論文全体の質評価 (「良い論文か」等) は abstract だけでは不可能な旨を伝える
+- 応答は 200-400 字前後、必要なら箇条書きや小見出しを使う
+
+---
+
+このプロンプトは PubMed Lab (https://sciencepubmed.net/ja/lab/) 配布版 v1.0 です。
+ご自分の AI (ChatGPT / Claude / Gemini 等) に貼ってお使いください。`;
+
+const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
+
+const pageTitle = '自分の AI で PubMed 論文と壁打ち ｜ PubMed Lab';
+const pageDesc = 'ChatGPT / Claude / Gemini に貼るだけで、PubMed 論文専用の研究アシスタントになるプロンプトを無料配布。 自分の AI 課金内で無制限に使えます。';
+---
+<BaseLayout title={pageTitle} description={pageDesc} lang="ja">
+  <article class="toolkit">
+    <header class="toolkit__header">
+      <p class="toolkit__breadcrumb">
+        <a href="/ja/">ホーム</a> › <a href="/ja/lab/">PubMed Lab</a> › AI プロンプト配布
+      </p>
+      <h1>🤖 自分の AI で PubMed 論文と壁打ち</h1>
+      <p class="toolkit__lede">
+        すでにお使いの <strong>ChatGPT / Claude / Gemini</strong> に、下のプロンプトを貼るだけ。
+        論文専用の研究アシスタントに変身します。
+      </p>
+      <ul class="toolkit__benefits">
+        <li>✅ 完全無料 (お使いの AI の課金内で回数無制限)</li>
+        <li>✅ 会話履歴が自分の AI に残るので後で見返せる</li>
+        <li>✅ PubMed Lab の 1 日 3 メッセージ制限を突破</li>
+        <li>✅ プロンプトは自由に改変・シェア OK</li>
+      </ul>
+    </header>
+
+    <section class="toolkit__steps">
+      <h2>使い方 3 ステップ</h2>
+      <ol>
+        <li><strong>下のプロンプトを [ コピー ] ボタンで丸ごとコピー</strong></li>
+        <li><strong>お使いの AI (ChatGPT / Claude / Gemini) に貼り付け、送信</strong></li>
+        <li><strong>あとは論文の abstract を貼って質問するだけ</strong> (英語 abstract を貼って日本語で質問 OK)</li>
+      </ol>
+    </section>
+
+    <section class="toolkit__prompt-section">
+      <div class="toolkit__prompt-head">
+        <h2>📋 プロンプト本体 (v1.0)</h2>
+        <button type="button" id="copy-prompt-btn" class="toolkit__copy-btn">
+          📋 プロンプトをコピー
+        </button>
+      </div>
+      <pre id="prompt-body" class="toolkit__prompt">{MASTER_PROMPT}</pre>
+      <p class="toolkit__prompt-note">
+        文字数: <span id="prompt-char-count">-</span> 字 (全 AI で問題なく通る長さ)
+      </p>
+    </section>
+
+    <section class="toolkit__ai-setup">
+      <h2>お使いの AI 別セットアップ</h2>
+
+      <div class="toolkit__ai-card">
+        <h3>💚 ChatGPT (無料 / Plus 両対応)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>無料プランの場合:</strong> 通常のチャット画面にプロンプトを貼って送信 → 次のメッセージから論文貼り付け OK</p>
+          <p><strong>Plus プランの場合 (推奨):</strong> 左サイド「マイ GPT を作成」→ Instructions フィールドにプロンプトを貼る → 名前を「PubMed 壁打ち」等に設定 → 保存すると **永続化** されます (毎回貼り直し不要)</p>
+          <a href="https://chatgpt.com/gpts/editor" target="_blank" rel="noopener" class="toolkit__ai-link" data-ga-event="toolkit_link_chatgpt_gpt_editor">
+            → マイ GPT 作成画面を開く
+          </a>
+        </div>
+      </div>
+
+      <div class="toolkit__ai-card">
+        <h3>🧡 Claude (無料 / Pro 両対応)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>無料プランの場合:</strong> 通常のチャット画面にプロンプトを貼って送信</p>
+          <p><strong>Pro プランの場合 (推奨):</strong> Projects → 「新規プロジェクト」→ プロジェクト名を「PubMed 壁打ち」等に → 「Set custom instructions」に貼り付け → 永続化 (このプロジェクト内なら毎回自動適用)</p>
+          <a href="https://claude.ai/projects/new" target="_blank" rel="noopener" class="toolkit__ai-link" data-ga-event="toolkit_link_claude_project">
+            → Claude Project 新規作成
+          </a>
+        </div>
+      </div>
+
+      <div class="toolkit__ai-card">
+        <h3>💙 Google Gemini (無料 / Advanced)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>両プラン共通:</strong> 通常のチャット画面にプロンプトを貼って送信</p>
+          <p><strong>Advanced プランの場合:</strong> Gems (カスタム Gemini) を作成して Instructions にプロンプトを貼れば永続化可能</p>
+          <a href="https://gemini.google.com/" target="_blank" rel="noopener" class="toolkit__ai-link" data-ga-event="toolkit_link_gemini">
+            → Gemini を開く
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit__examples">
+      <h2>使い方例</h2>
+
+      <details class="toolkit__example-detail" open>
+        <summary>例 1: 論文の要点を 3 つ教えて</summary>
+        <div class="toolkit__example-body">
+          <p><strong>あなたの入力:</strong></p>
+          <pre>タイトル: Effect of caffeine on cognitive performance in university students
+Abstract: A randomized controlled trial of 120 undergraduate students...
+[abstract 全文を貼る]
+
+要点を3つ教えて</pre>
+          <p><strong>AI の応答例 (このプロンプトを設定した AI から):</strong></p>
+          <p>この研究の要点を 3 つに整理します:</p>
+          <ul>
+            <li>大学生 120 名を対象とした RCT で、カフェイン 200mg 摂取群と プラセボ群を比較</li>
+            <li>摂取から 30 分後、注意課題 (Stroop テスト) の反応速度が有意に向上 (p&lt;0.01)</li>
+            <li>ただし複雑な意思決定課題では 群間差なし → 効果は 単純注意 に限定的</li>
+          </ul>
+          <p>他に何を知りたいですか? (統計手法、限界、卒論テーマ案など)</p>
+        </div>
+      </details>
+
+      <details class="toolkit__example-detail">
+        <summary>例 2: 卒論テーマに使うなら?</summary>
+        <div class="toolkit__example-body">
+          <p><strong>あなたの入力:</strong></p>
+          <pre>この研究をベースに卒論するなら?</pre>
+          <p><strong>AI の応答例:</strong></p>
+          <p>この abstract をベースにできる卒論テーマ 3 案:</p>
+          <ol>
+            <li>
+              <strong>日本人大学生 100 名の質問紙 + フィールド RCT</strong><br>
+              → 米国データが中心の元論文を、日本人大学生 (試験前カフェイン摂取行動が異なる可能性) で再現。 実施しやすさ ◎
+            </li>
+            <li>
+              <strong>試験前カフェイン摂取と GPA の相関 (横断調査)</strong><br>
+              → RCT ではなく、実際の学業成績 (GPA) との相関を大規模質問紙で。 データ入手ハードル低い
+            </li>
+            <li>
+              <strong>カフェイン × 睡眠時間 × 認知の 3 変数モデル (媒介変数追加)</strong><br>
+              → 元論文はカフェイン単変数。 睡眠不足者に効果が強まる仮説を検証
+            </li>
+          </ol>
+          <p>指導教官と要相談ですが、1 番が最も実施しやすく卒論規模に fit します。</p>
+        </div>
+      </details>
+
+      <details class="toolkit__example-detail">
+        <summary>例 3: 反対の結論の研究は?</summary>
+        <div class="toolkit__example-body">
+          <p><strong>あなたの入力:</strong></p>
+          <pre>これに反対の結論を出した研究はある?</pre>
+          <p><strong>AI の応答例 (誠実な失敗):</strong></p>
+          <p>私は今、貼っていただいた 1 本の abstract 情報のみを持っています。 他の研究についての情報は持たないため、反対結論の研究の存在を確答できません。</p>
+          <p>調べる方法:</p>
+          <ul>
+            <li>PubMed で "caffeine cognitive performance university" などのキーワードで再検索</li>
+            <li>PubMed Lab (<a href="/ja/lab/">https://sciencepubmed.net/ja/lab/</a>) で日本語入力から検索</li>
+            <li>Google Scholar で「引用文献」タブから連想論文を探す</li>
+          </ul>
+          <p><em>(この誠実な "わからない返答" が、abstract のみを根拠にしている証拠です)</em></p>
+        </div>
+      </details>
+    </section>
+
+    <section class="toolkit__faq">
+      <h2>よくある質問</h2>
+
+      <details class="toolkit__faq-item">
+        <summary>Q: なぜ PubMed Lab のチャットではなく自分の AI で?</summary>
+        <p>A: 3 つの理由 —</p>
+        <ul>
+          <li><strong>コスト</strong>: PubMed Lab の Claude API コストがゼロになるので、この配布を続けられる (無料のままいける)</li>
+          <li><strong>回数無制限</strong>: あなたの ChatGPT / Claude の課金枠内で回数の上限なし (PubMed Lab は 1 日 3 メッセージ)</li>
+          <li><strong>履歴保持</strong>: 会話履歴が自分の AI 側に残るので、後日「あの論文の話」を続けられる</li>
+        </ul>
+      </details>
+
+      <details class="toolkit__faq-item">
+        <summary>Q: どの AI がおすすめ?</summary>
+        <p>A: 精度重視なら Claude Sonnet か GPT-4o、速さ重視なら Claude Haiku か GPT-4o mini。 abstract を精読するタスクなら、体感差は小さいです。 むしろ「自分がすでに課金している方」を使うのが正解。</p>
+      </details>
+
+      <details class="toolkit__faq-item">
+        <summary>Q: プロンプトをアップデートしたい</summary>
+        <p>A: このページのプロンプトは今後改良していきます。 「新バージョン v1.1」等の掲載時は、貼り直せば良いだけです。 自分で改造して友達にシェアするのも自由です。</p>
+      </details>
+
+      <details class="toolkit__faq-item">
+        <summary>Q: PubMed Lab のサイト内チャット (💬) との使い分けは?</summary>
+        <p>A: 用途で使い分けを:</p>
+        <ul>
+          <li><strong>PubMed Lab の 💬 壁打ちチャット (無料 3/日)</strong>: 論文カードから直接ボタンで、その論文 abstract が自動注入される。 手軽・気軽・履歴なし。</li>
+          <li><strong>自分の AI (このページのプロンプト、無制限)</strong>: abstract を自分でコピペするひと手間があるが、無制限で履歴も残る。 卒論の下読みなど本気の精読に。</li>
+        </ul>
+      </details>
+
+      <details class="toolkit__faq-item">
+        <summary>Q: プロンプトが期待通りに動かない</summary>
+        <p>A: AI によっては、貼った直後だけ「システム扱い」してくれず単なるメモとして扱う場合があります。 その場合は「今からこのシステムプロンプトの役割で振る舞ってください」と一言添えると効きやすいです。 Claude Projects / ChatGPT マイ GPT のように永続化する仕組みだと、より確実に効きます。</p>
+      </details>
+    </section>
+
+    {waitlistUrl && (
+      <section class="toolkit__waitlist">
+        <h2>もっと integrated な体験がほしい方へ</h2>
+        <p>
+          「自分の AI にコピペするひと手間もない、完全 統合された壁打ち体験」を求める方には
+          <strong>PubMed Lab 有料版 (¥110〜、月額なし・買い切り)</strong> を準備中です。
+          論文カードから直接、履歴保存つき、テーマ提案とセットで使える設計。
+        </p>
+        <ul>
+          <li>💳 単発クレジット買い切り (月額サブスクなし、大学生財布に fit)</li>
+          <li>⏳ 購入日から 1 年有効、卒論・修論シーズンに集中投下 OK</li>
+          <li>📚 主力プラン ¥550 = 40 メッセージ (卒論 1 本分想定)</li>
+        </ul>
+        <a href={waitlistUrl} target="_blank" rel="noopener" class="toolkit__waitlist-btn" data-ga-event="toolkit_waitlist_click">
+          📧 有料版 事前登録する (1 分・メールのみ) →
+        </a>
+      </section>
+    )}
+
+    <div class="toolkit__back">
+      <a href="/ja/lab/">← PubMed Lab トップに戻る</a>
+    </div>
+  </article>
+
+  <script is:inline define:vars={{ promptText: MASTER_PROMPT }}>
+    (function() {
+      // 文字数表示
+      const charCountEl = document.getElementById('prompt-char-count');
+      if (charCountEl) charCountEl.textContent = promptText.length.toLocaleString();
+
+      // コピーボタン
+      const btn = document.getElementById('copy-prompt-btn');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(promptText);
+            const original = btn.textContent;
+            btn.textContent = '✅ コピーしました!';
+            btn.classList.add('is-copied');
+            if (typeof gtag === 'function') {
+              gtag('event', 'toolkit_prompt_copy', { char_count: promptText.length });
+            }
+            setTimeout(() => {
+              btn.textContent = original;
+              btn.classList.remove('is-copied');
+            }, 2500);
+          } catch (err) {
+            // clipboard API 失敗時 (古いブラウザ、権限拒否等) は選択に fallback
+            const pre = document.getElementById('prompt-body');
+            if (pre) {
+              const range = document.createRange();
+              range.selectNode(pre);
+              const sel = window.getSelection();
+              sel.removeAllRanges();
+              sel.addRange(range);
+              btn.textContent = '📋 手動で Ctrl+C してください';
+              setTimeout(() => { btn.textContent = '📋 プロンプトをコピー'; }, 3500);
+            }
+          }
+        });
+      }
+
+      // [data-ga-event] の click tracking
+      document.querySelectorAll('[data-ga-event]').forEach((el) => {
+        el.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', el.getAttribute('data-ga-event'));
+          }
+        });
+      });
+
+      // ページ到達イベント
+      if (typeof gtag === 'function') {
+        gtag('event', 'toolkit_page_view');
+      }
+    })();
+  </script>
+
+  <style>
+    .toolkit { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
+    .toolkit__breadcrumb { font-size: 0.85rem; color: var(--muted); margin: 0 0 12px; }
+    .toolkit__breadcrumb a { color: var(--muted); }
+    .toolkit__header h1 { font-size: 2rem; color: var(--navy); margin: 0 0 12px; }
+    .toolkit__lede { line-height: 1.75; color: var(--text); margin: 0 0 16px; }
+    .toolkit__benefits {
+      list-style: none;
+      padding: 12px 18px;
+      margin: 0 0 24px;
+      background: #f0f7ec;
+      border-left: 4px solid #4a8f31;
+      border-radius: 6px;
+    }
+    .toolkit__benefits li {
+      padding: 4px 0;
+      font-size: 0.92rem;
+      color: #2e6320;
+    }
+
+    .toolkit__steps {
+      background: #f7f9fc;
+      border-left: 4px solid var(--navy);
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin: 24px 0;
+    }
+    .toolkit__steps h2 { font-size: 1.15rem; color: var(--navy); margin: 0 0 10px; }
+    .toolkit__steps ol { line-height: 2; padding-left: 22px; margin: 0; }
+    .toolkit__steps strong { color: var(--navy); }
+
+    .toolkit__prompt-section {
+      margin: 32px 0;
+      padding: 20px 22px;
+      background: #fff8ea;
+      border: 2px solid #e6cf90;
+      border-radius: 10px;
+    }
+    .toolkit__prompt-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .toolkit__prompt-head h2 { font-size: 1.1rem; color: #6d4a0a; margin: 0; }
+    .toolkit__copy-btn {
+      background: linear-gradient(180deg, #d4a34a 0%, #b8892e 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(139, 105, 20, 0.25);
+      transition: transform 0.1s, box-shadow 0.15s;
+    }
+    .toolkit__copy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(139, 105, 20, 0.35);
+    }
+    .toolkit__copy-btn.is-copied {
+      background: #4a8f31;
+      box-shadow: 0 2px 6px rgba(74, 143, 49, 0.35);
+    }
+    .toolkit__prompt {
+      background: white;
+      padding: 16px 18px;
+      border-radius: 8px;
+      border: 1px solid #e6cf90;
+      max-height: 400px;
+      overflow-y: auto;
+      font-size: 0.82rem;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      color: var(--text);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    }
+    .toolkit__prompt-note {
+      font-size: 0.8rem;
+      color: #8a6712;
+      margin: 10px 0 0;
+      text-align: right;
+    }
+
+    .toolkit__ai-setup h2 { font-size: 1.3rem; color: var(--navy); margin: 40px 0 16px; }
+    .toolkit__ai-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 14px 0;
+    }
+    .toolkit__ai-card h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--navy); }
+    .toolkit__ai-body p { font-size: 0.9rem; line-height: 1.75; margin: 6px 0; }
+    .toolkit__ai-body strong { color: var(--navy-deep); }
+    .toolkit__ai-link {
+      display: inline-block;
+      margin-top: 6px;
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .toolkit__examples h2 { font-size: 1.3rem; color: var(--navy); margin: 40px 0 16px; }
+    .toolkit__example-detail {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 18px;
+      margin: 10px 0;
+    }
+    .toolkit__example-detail summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--navy);
+      padding: 4px 0;
+    }
+    .toolkit__example-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee; }
+    .toolkit__example-body p { font-size: 0.9rem; line-height: 1.75; margin: 8px 0; }
+    .toolkit__example-body pre {
+      background: #f7f9fc;
+      padding: 10px 12px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .toolkit__example-body ul, .toolkit__example-body ol {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      padding-left: 20px;
+    }
+
+    .toolkit__faq h2 { font-size: 1.3rem; color: var(--navy); margin: 40px 0 16px; }
+    .toolkit__faq-item {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 18px;
+      margin: 8px 0;
+    }
+    .toolkit__faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .toolkit__faq-item p, .toolkit__faq-item ul {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin: 8px 0;
+    }
+    .toolkit__faq-item ul { padding-left: 22px; }
+    .toolkit__faq-item strong { color: var(--navy-deep); }
+
+    .toolkit__waitlist {
+      margin: 40px 0;
+      padding: 22px 24px;
+      background: linear-gradient(180deg, #eef4ff 0%, #e2ecfc 100%);
+      border: 2px solid #7ea1de;
+      border-radius: 12px;
+    }
+    .toolkit__waitlist h2 { font-size: 1.15rem; color: var(--navy); margin: 0 0 12px; }
+    .toolkit__waitlist p { font-size: 0.92rem; line-height: 1.75; margin: 0 0 10px; }
+    .toolkit__waitlist ul { list-style: none; padding: 0; margin: 0 0 16px; font-size: 0.88rem; }
+    .toolkit__waitlist li { padding: 3px 0; }
+    .toolkit__waitlist-btn {
+      display: inline-block;
+      background: var(--navy);
+      color: white !important;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 3px 8px rgba(26, 54, 93, 0.2);
+    }
+    .toolkit__waitlist-btn:hover {
+      background: var(--navy-deep);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .toolkit__back { margin: 40px 0 20px; text-align: center; }
+    .toolkit__back a { color: var(--link); }
+
+    @media (max-width: 560px) {
+      .toolkit__prompt-head { flex-direction: column; align-items: stretch; }
+      .toolkit__copy-btn { width: 100%; }
+    }
+  </style>
+</BaseLayout>
