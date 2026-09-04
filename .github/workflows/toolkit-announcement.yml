@@ -1,0 +1,66 @@
+name: Toolkit (AI prompt distribution) announcement
+
+# 「自分の ChatGPT / Claude / Gemini で PubMed 論文と壁打ちできるプロンプト、
+# 無料配布中」告知を Threads / Facebook / Instagram に一斉配信する。
+#
+# 使い方:
+#   1. GitHub → Actions → "Toolkit (AI prompt distribution) announcement"
+#   2. 右上「Run workflow」ボタン
+#   3. dry_run=true でまず本文確認、その後 dry_run=false で本番配信
+#
+# X (Twitter) はこの workflow に含めない (手動投稿)。
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true=本文だけログ出力、false=実際に配信'
+        required: false
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+      skip:
+        description: 'スキップするPF (カンマ区切り、例 fb,ig)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  announcement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Post toolkit announcement
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ inputs.skip }}" ]; then
+            ARGS="$ARGS --skip=${{ inputs.skip }}"
+          fi
+          echo "Running: npm run promo:toolkit -- $ARGS"
+          npm run promo:toolkit -- $ARGS
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: me
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          SITE_URL: https://sciencepubmed.net
