@@ -1,16 +1,17 @@
-name: Lab UPDATE announcement (manual, one-off)
+name: Lab UPDATE announcement (recurring + manual)
 
 # PubMed Lab 大型アップデート告知 (3大機能 + waitlist) を
-# Threads / Facebook / Instagram に一斉配信する。
+# Threads / Facebook / Instagram に配信する。
 #
-# 使い方:
-#   1. GitHub → Actions → "Lab UPDATE announcement (manual, one-off)"
-#   2. 右上「Run workflow」ボタン
-#   3. dry_run=true でまず本文確認、その後 dry_run=false で本番配信
+# 自動: 4 日毎 (1, 5, 9, 13, 17, 21, 25, 29 日) の 12:00 JST に配信
+#       → toolkit-announcement.yml (3, 7, 11, ...) と交互 = 2 日毎に 1 投稿ローテ
+# 手動: workflow_dispatch で任意タイミング、dry_run=true でプレビュー可
 #
 # X (Twitter) はこの workflow に含めない (手動投稿でスレッド化)。
 
 on:
+  schedule:
+    - cron: '0 3 1-31/4 * *'   # 12:00 JST 4日毎 (奇数日側)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -45,6 +46,14 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # cron 開始から 0〜10 分の jitter (毎日同時刻ピッタリを避ける、Bot 臭さ軽減)
+      - name: Random jitter
+        if: github.event_name == 'schedule'
+        run: |
+          DELAY=$((RANDOM % 600))
+          echo "sleeping ${DELAY}s for anti-bot jitter"
+          sleep "$DELAY"
 
       - name: Post Lab update announcement
         run: |

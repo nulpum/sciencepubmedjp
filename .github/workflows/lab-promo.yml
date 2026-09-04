@@ -1,11 +1,17 @@
-name: Lab promo posting
+name: Lab promo posting (legacy, manual-only)
 
-# PubMed Lab の宣伝投稿を Threads / Facebook / Instagram に配信
-# 2 日に 1 回、12:00 JST (03:00 UTC)
-# 月末境界で 1 日ずれることがあるが許容
+# ⚠️ 旧: 固定文言の Lab 宣伝を 2 日毎に自動投稿
+# ⚠️ 現: 自動 cron 停止 (lab-update / toolkit の 2 系統 recurring に移行済み)
+#       manual dispatch のみ残す (何らかの理由で旧コピー流したくなった時用)
+#
+# 2 日毎ローテーションの現行体制:
+#   - lab-update-announcement.yml (1, 5, 9, 13, ...) = 3 大機能 + waitlist
+#   - toolkit-announcement.yml    (3, 7, 11, 15, ...) = 自分の AI で無料無制限
+
 on:
-  schedule:
-    - cron: '0 3 */2 * *'   # 12:00 JST 每2日
+  # schedule 停止済み。 再有効化したければ下記のコメント外す。
+  # schedule:
+  #   - cron: '0 3 */2 * *'
   workflow_dispatch:
     inputs:
       dry_run:

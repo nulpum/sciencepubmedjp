@@ -1,16 +1,17 @@
 name: Toolkit (AI prompt distribution) announcement
 
 # 「自分の ChatGPT / Claude / Gemini で PubMed 論文と壁打ちできるプロンプト、
-# 無料配布中」告知を Threads / Facebook / Instagram に一斉配信する。
+# 無料配布中」告知を Threads / Facebook / Instagram に配信する。
 #
-# 使い方:
-#   1. GitHub → Actions → "Toolkit (AI prompt distribution) announcement"
-#   2. 右上「Run workflow」ボタン
-#   3. dry_run=true でまず本文確認、その後 dry_run=false で本番配信
+# 自動: 4 日毎 (3, 7, 11, 15, 19, 23, 27, 31 日) の 12:00 JST に配信
+#       → lab-update-announcement.yml (1, 5, 9, ...) と交互 = 2 日毎に 1 投稿ローテ
+# 手動: workflow_dispatch で任意タイミング、dry_run=true でプレビュー可
 #
 # X (Twitter) はこの workflow に含めない (手動投稿)。
 
 on:
+  schedule:
+    - cron: '0 3 3-31/4 * *'   # 12:00 JST 4日毎 (lab-update から 2 日オフセット)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -45,6 +46,14 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # cron 開始から 0〜10 分の jitter (毎日同時刻ピッタリを避ける、Bot 臭さ軽減)
+      - name: Random jitter
+        if: github.event_name == 'schedule'
+        run: |
+          DELAY=$((RANDOM % 600))
+          echo "sleeping ${DELAY}s for anti-bot jitter"
+          sleep "$DELAY"
 
       - name: Post toolkit announcement
         run: |
