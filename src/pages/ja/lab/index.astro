@@ -207,14 +207,14 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
         {waitlistUrl && (
           <section class="lab__waitlist-cta">
             <div class="lab__waitlist-cta-body">
-              <h2 class="lab__waitlist-cta-title">🎓 卒論・修論でハードに使う予定の方へ</h2>
+              <h2 class="lab__waitlist-cta-title">📱 iOS / Android アプリ 準備中!</h2>
               <p class="lab__waitlist-cta-desc">
-                無料版は 1 日 3 メッセージまで。もっとガッツリ使える <strong>有料版 (¥110〜、単発購入)</strong> を準備中です。 卒論シーズンに向けて事前登録受付中 (メールのみ 1 分)。
+                PubMed Lab を <strong>スマホアプリ</strong> でもリリース予定です。 卒論シーズンに向けて、リリース時にメールでお知らせします (メールのみ 1 分)。
               </p>
               <ul class="lab__waitlist-cta-benefits">
-                <li>💳 月額サブスクなし、使う分だけ買い切り (¥110 / 5 回〜)</li>
-                <li>⏳ 購入から 1 年間有効、卒論ラストスパートに集中投下 OK</li>
-                <li>📚 卒論 1 本分パック ¥550 (40 回) が主力想定</li>
+                <li>📱 iOS / Android 両対応 (完全無料版・広告付き)</li>
+                <li>💬 移動中もサクッと論文検索・壁打ちができるように</li>
+                <li>⏰ 卒論シーズン (11-12月) リリース目標</li>
               </ul>
             </div>
             <a
@@ -224,7 +224,7 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
               rel="noopener"
               data-ga-event="lab_waitlist_click_default"
             >
-              📧 事前登録する →
+              📧 リリース通知を受け取る →
             </a>
           </section>
         )}
@@ -397,9 +397,9 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
         {waitlistUrl && (
           <aside class="lab__waitlist-cta lab__waitlist-cta--compact">
             <div class="lab__waitlist-cta-body">
-              <h2 class="lab__waitlist-cta-title">💡 もっとガッツリ壁打ちしたい方へ</h2>
+              <h2 class="lab__waitlist-cta-title">📱 スマホアプリ準備中</h2>
               <p class="lab__waitlist-cta-desc">
-                有料版 (¥110/5 回〜、月額なし・買い切り) を準備中。 卒論シーズン前に事前登録どうぞ。
+                iOS / Android アプリ (無料版・広告付き) を卒論シーズンに向けてリリース予定。 メールで通知受け取りませんか?
               </p>
             </div>
             <a
@@ -409,7 +409,7 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
               rel="noopener"
               data-ga-event="lab_waitlist_click_results"
             >
-              📧 1 分で事前登録 →
+              📧 1 分で通知登録 →
             </a>
           </aside>
         )}
@@ -609,12 +609,12 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
           if (!url) return;
           const wrap = document.createElement('div');
           wrap.className = 'chat-msg chat-msg--assistant chat-msg--waitlist';
-          wrap.appendChild(document.createTextNode('💡 卒論・修論でもっと使いたい方は: '));
+          wrap.appendChild(document.createTextNode('📱 スマホアプリ (無料・広告付き) 準備中: '));
           const link = document.createElement('a');
           link.href = url;
           link.target = '_blank';
           link.rel = 'noopener';
-          link.textContent = '有料版 (¥110〜) の事前登録 →';
+          link.textContent = 'リリース通知を受け取る →';
           link.className = 'chat-msg__waitlist-link';
           link.addEventListener('click', () => {
             if (typeof gtag === 'function') gtag('event', gaEventName || 'lab_waitlist_click');

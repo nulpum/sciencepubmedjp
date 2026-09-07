@@ -1,7 +1,13 @@
-// PubMed Lab β 有料版 waitlist 設定
+// PubMed Lab β "アプリ リリース通知" waitlist 設定
 //
-// レオナさんが作成する Google Form の URL をここに入れる。
-// 未設定 (PLACEHOLDER のまま) の場合、UI 側は waitlist CTA を非表示にする。
+// 元は「有料版事前登録」フォームだったが、無料 toolkit プロンプト配布で
+// 有料需要はほぼないと判明したため、「アプリ (無料・広告版) リリース通知」
+// リストに用途変更。 Form 側も同じくリブランド済み。
+//
+// 変数名 waitlistUrl / GA event 名 lab_waitlist_click_* は互換性維持で
+// そのまま (集計連続性のため)。 表示コピーだけ変更している。
+//
+// 未設定 (PLACEHOLDER のまま) の場合、UI 側は CTA を非表示にする。
 //
 // Form 作成手順:
 // 1. https://forms.google.com/ で新規フォーム作成
