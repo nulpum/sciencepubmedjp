@@ -20,7 +20,6 @@ import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
 
 const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
-const WAITLIST_URL = 'https://forms.gle/FEZ2EQ2VG2ie3zEQA';
 const PROMO_IMAGE_URL = 'https://sciencepubmed.net/promo/lab-promo.png';
 
 // ============================================================================
@@ -41,9 +40,6 @@ function buildThreadsText(): string {
     '',
     '例:「大学生の睡眠と学業成績」で検索してみてください。',
     LAB_URL,
-    '',
-    '有料版 (¥110〜、月額なし) 事前登録受付中:',
-    WAITLIST_URL,
   ].join('\n');
 }
 
@@ -72,9 +68,6 @@ function buildFacebookText(): string {
     '',
     '例:「大学生の睡眠不足と学業成績」で検索すると、睡眠介入 RCT、スマホ使用時間 × GPA、SNS 依存 × 学業影響 といった卒論テーマを出してくれます。',
     '',
-    '将来的には有料版 (¥110〜、月額なしの買い切り) も準備中です:',
-    WAITLIST_URL,
-    '',
     '#PubMed #卒論 #大学生',
   ].join('\n');
 }
@@ -101,8 +94,6 @@ function buildInstagramCaption(): string {
     '',
     'すべて無料・登録不要',
     '👉 プロフィール欄のリンクから',
-    '',
-    '有料版 (¥110〜、月額なし) 事前登録受付中 (プロフィールリンク)',
     '',
     '.',
     '.',
