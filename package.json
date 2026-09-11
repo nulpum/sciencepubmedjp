@@ -19,6 +19,7 @@
     "post:facebook": "tsx scripts/facebook/run-post.ts",
     "post:instagram": "tsx scripts/instagram/run-post.ts",
     "post:bluesky": "tsx scripts/bluesky/run-post.ts",
+    "verify:auth": "tsx scripts/verify-social-auth.ts",
     "notify:x": "tsx scripts/x/run-notify.ts",
     "notify:x-daily": "tsx scripts/x/run-daily.ts",
     "refresh:threads-token": "tsx scripts/threads/refresh-token.ts",
