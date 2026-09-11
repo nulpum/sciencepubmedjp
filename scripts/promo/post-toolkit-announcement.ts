@@ -17,6 +17,7 @@ import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
 import { notifyXPost } from '../x/notify-post.js';
 import { postToX, dryRunX } from '../x/post.js';
+import { postToBluesky, dryRunBluesky } from '../bluesky/post.js';
 
 const TOOLKIT_URL = 'https://sciencepubmed.net/ja/lab/toolkit/';
 const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
@@ -112,23 +113,40 @@ function buildInstagramCaption(): string {
 }
 
 // ============================================================================
+// Bluesky (~300 char)
+// ============================================================================
+function buildBlueskyText(): string {
+  return [
+    '🤖 PubMed 論文と壁打ちできるプロンプト、無料配布',
+    '',
+    'サブスク済み ChatGPT / Claude / Gemini に貼るだけで、論文専用アシスタントに変身。回数無制限。',
+    '',
+    '【機能】',
+    '📖 要点整理 / 📊 統計チェック / ⚠️ 限界 / 🎓 卒論テーマ / ✍️ 引用',
+    '',
+    TOOLKIT_URL,
+  ].join('\n');
+}
+
+// ============================================================================
 // CLI (post-lab-update-announcement.ts と同型)
 // ============================================================================
 interface CliArgs {
   dryRun: boolean;
-  skip: Set<'threads' | 'facebook' | 'instagram'>;
+  skip: Set<'threads' | 'facebook' | 'instagram' | 'bluesky'>;
 }
 
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
   const skipArg = args.find((a) => a.startsWith('--skip='));
-  const skip = new Set<'threads' | 'facebook' | 'instagram'>();
+  const skip = new Set<'threads' | 'facebook' | 'instagram' | 'bluesky'>();
   if (skipArg) {
     for (const p of skipArg.split('=')[1].split(',')) {
       const s = p.trim();
-      if (s === 'threads' || s === 'facebook' || s === 'instagram') skip.add(s);
+      if (s === 'threads' || s === 'facebook' || s === 'instagram' || s === 'bluesky') skip.add(s);
       if (s === 'fb') skip.add('facebook');
       if (s === 'ig') skip.add('instagram');
+      if (s === 'bsky') skip.add('bluesky');
     }
   }
   return { dryRun: args.includes('--dry-run'), skip };
@@ -191,6 +209,19 @@ async function main(): Promise<void> {
       } else {
         const { mediaId } = await postToInstagram({ imageUrl: PROMO_IMAGE_URL, caption });
         Logger.info(`✅ Instagram 投稿: media_id=${mediaId}`);
+      }
+    }, results);
+  }
+
+  if (!args.skip.has('bluesky')) {
+    const bskyText = buildBlueskyText();
+    await runOne('bluesky', async () => {
+      if (args.dryRun) {
+        dryRunBluesky(bskyText);
+        Logger.info('--- Bluesky 本文 ---\n' + bskyText);
+      } else {
+        const { url } = await postToBluesky(bskyText);
+        Logger.info(`✅ Bluesky 投稿: ${url}`);
       }
     }, results);
   }

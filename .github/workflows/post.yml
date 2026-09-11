@@ -105,6 +105,14 @@ jobs:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           SITE_URL: https://sciencepubmed.net
 
+      - name: Post to Bluesky
+        continue-on-error: true
+        run: npm run post:bluesky -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          SITE_URL: https://sciencepubmed.net
+
       # X 通知は ja の cron でのみ送る (X は ja アカウント運用想定)
       - name: Send X-version template to Gmail
         if: steps.lang.outputs.lang == 'ja'

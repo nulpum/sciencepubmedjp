@@ -21,7 +21,7 @@ import { dirname, join } from 'node:path';
 const TRACKER_PATH = join(process.cwd(), 'data', 'posted.json');
 const LEGACY_PATH = join(process.cwd(), 'out', 'posted.json');
 
-export type Platform = 'threads' | 'facebook' | 'instagram';
+export type Platform = 'threads' | 'facebook' | 'instagram' | 'bluesky';
 
 export interface PostedRecord {
   platform: Platform;
