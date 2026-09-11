@@ -22,3 +22,7 @@ Thumbs.db
 # logs
 *.log
 npm-debug.log*
+
+# Zenn/note 記事下書き (public repo に載せたくない下書きファイル、ローカル保持のみ)
+docs/zenn-article-draft.md
+docs/note-draft-*.md
