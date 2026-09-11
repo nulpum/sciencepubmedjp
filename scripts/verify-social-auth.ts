@@ -46,10 +46,8 @@ async function checkX(): Promise<boolean> {
 (async () => {
   const [bsky, x] = await Promise.all([checkBluesky(), checkX()]);
   if (!bsky || !x) {
-    console.log('
-⚠️ いずれかの auth が失敗しました → exit 1');
+    console.log('⚠️ いずれかの auth が失敗しました → exit 1');
     process.exit(1);
   }
-  console.log('
-🎉 全 auth OK');
+  console.log('🎉 全 auth OK');
 })();
