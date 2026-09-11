@@ -355,6 +355,16 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
                     <button type="button" class="lab__btn lab__btn--chat" data-pmid={r.pmid}>
                       💬 <span class="lab__btn-label">この論文と壁打ち</span>
                     </button>
+                    <a
+                      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`📖 ${r.title.slice(0, 120)} (via @science_pubmed)`)}&url=${encodeURIComponent(r.url)}&hashtags=PubMed,卒論`}
+                      target="_blank"
+                      rel="noopener"
+                      class="lab__btn lab__btn--share"
+                      data-ga-event="lab_share_x"
+                      data-pmid={r.pmid}
+                    >
+                      🐦 <span class="lab__btn-label">X</span>
+                    </a>
                   </div>
                 </div>
 
@@ -1067,6 +1077,18 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
       background: var(--navy);
       color: white;
       border-color: var(--navy);
+    }
+    .lab__btn--share {
+      background: white;
+      border-color: #1da1f2;
+      color: #1da1f2;
+      text-decoration: none;
+    }
+    .lab__btn--share:hover {
+      background: #1da1f2;
+      color: white;
+      border-color: #1da1f2;
+      text-decoration: none;
     }
     .lab__btn-icon { font-size: 1rem; line-height: 1; }
 

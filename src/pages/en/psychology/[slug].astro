@@ -4,6 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
+import ShareX from '../../../components/ShareX.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('en_psychology');
@@ -105,6 +106,11 @@ export const prerender = true;
   {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
     <StickyMobileCta links={post.data.affiliate_links} lang="en" />
   )}
+
+  {/* Share buttons (natural end-of-article moment) */}
+  <aside class="share-section">
+    <ShareX text={post.data.fact || post.data.title} url={articleUrl} hashtags="PubMed,Psychology" gaEvent="article_share_x" />
+  </aside>
 
   {/* Article footer AdSense (readers reaching end of article) */}
   <AdUnit slot="articleFooter" />

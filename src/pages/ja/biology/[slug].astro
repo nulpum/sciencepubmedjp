@@ -4,6 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
+import ShareX from '../../../components/ShareX.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('ja_biology');
@@ -104,6 +105,11 @@ export const prerender = true;
   {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
     <StickyMobileCta links={post.data.affiliate_links} lang="ja" />
   )}
+
+  {/* シェアボタン (読了後の自然発火点) */}
+  <aside class="share-section">
+    <ShareX text={post.data.fact || post.data.title} url={articleUrl} hashtags="PubMed,生物学" gaEvent="article_share_x" />
+  </aside>
 
   {/* 記事フッター AdSense (読了ゾーンで表示) */}
   <AdUnit slot="articleFooter" />

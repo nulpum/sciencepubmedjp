@@ -1,0 +1,75 @@
+---
+// X (Twitter) シェアボタン
+// 記事ページ / Lab 結果ページ で使う共通コンポーネント
+//
+// 使い方:
+//   <ShareX text="[title]" url="https://sciencepubmed.net/ja/..." hashtags="PubMed,卒論" />
+//
+// prefill:
+//   text: 本文 (URL 除く。 title や fact をそのまま渡す想定、末尾に自動で ' (via @science_pubmed)' 追加)
+//   url:  シェア URL (絶対 URL)
+//   hashtags: カンマ区切り (先頭 # なし)
+
+interface Props {
+  text: string;
+  url: string;
+  hashtags?: string;
+  gaEvent?: string; // 押下時に発火する GA イベント名 (data-ga-event 経由、レイアウト側の共通ハンドラで拾う)
+  compact?: boolean; // true = アイコンのみ (label 非表示)
+}
+
+const {
+  text,
+  url,
+  hashtags = 'PubMed,卒論',
+  gaEvent = 'article_share_x',
+  compact = false,
+} = Astro.props;
+
+// text は 120 chars 以内に切り詰め (X の 280 chars 制限 + URL/hashtags 分の余白)
+const trimmedText = text.length > 120 ? text.slice(0, 117) + '...' : text;
+const fullText = `📖 ${trimmedText} (via @science_pubmed)`;
+
+const params = new URLSearchParams({
+  text: fullText,
+  url,
+  hashtags,
+});
+const href = `https://twitter.com/intent/tweet?${params.toString()}`;
+---
+<a
+  href={href}
+  target="_blank"
+  rel="noopener"
+  class={`share-x ${compact ? 'share-x--compact' : ''}`}
+  data-ga-event={gaEvent}
+  aria-label="X (Twitter) でシェア"
+>
+  <span aria-hidden="true">🐦</span>
+  {!compact && <span class="share-x__label">X でシェア</span>}
+</a>
+
+<style>
+  .share-x {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .share-x:hover {
+    background: #1da1f2;
+    color: white;
+    text-decoration: none;
+  }
+  .share-x--compact {
+    padding: 6px 10px;
+  }
+</style>
