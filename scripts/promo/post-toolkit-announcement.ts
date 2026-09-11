@@ -15,6 +15,7 @@ import { Logger } from '../lib/logger.js';
 import { postToThreads, dryRunThreads } from '../threads/post.js';
 import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
+import { notifyXPost } from '../x/notify-post.js';
 
 const TOOLKIT_URL = 'https://sciencepubmed.net/ja/lab/toolkit/';
 const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
@@ -191,6 +192,25 @@ async function main(): Promise<void> {
         Logger.info(`✅ Instagram 投稿: media_id=${mediaId}`);
       }
     }, results);
+  }
+
+  // === X (Twitter) 手動投稿用メール通知 ===
+  if (!args.dryRun) {
+    const xText = [
+      '🤖 PubMed 論文と壁打ちできるプロンプト、無料配布',
+      '',
+      'サブスク済みの ChatGPT / Claude / Gemini に貼るだけで、論文専用アシスタントに。回数無制限。',
+      '',
+      '卒論・修論の下読みに 👇',
+      TOOLKIT_URL,
+      '',
+      '#卒論 #大学生',
+    ].join('\n');
+    await notifyXPost({
+      subject: '[X 投稿] PubMed Lab toolkit 告知',
+      xText,
+      contextNote: 'TOOLKIT announcement cron が発火しました。X (@science_pubmed) に以下を手動投稿してください。',
+    }).catch((e) => Logger.warn(`X notify 失敗: ${(e as Error).message}`));
   }
 
   const ok = results.filter((r) => r.ok).length;

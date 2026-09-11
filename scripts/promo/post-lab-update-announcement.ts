@@ -18,6 +18,7 @@ import { Logger } from '../lib/logger.js';
 import { postToThreads, dryRunThreads } from '../threads/post.js';
 import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
+import { notifyXPost } from '../x/notify-post.js';
 
 const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
 const PROMO_IMAGE_URL = 'https://sciencepubmed.net/promo/lab-promo.png';
@@ -185,6 +186,27 @@ async function main(): Promise<void> {
         Logger.info(`✅ Instagram 投稿: media_id=${mediaId}`);
       }
     }, results);
+  }
+
+  // === X (Twitter) 手動投稿用メール通知 ===
+  if (!args.dryRun) {
+    const xText = [
+      '🔬 PubMed Lab に3大機能追加 (無料)',
+      '',
+      '⭐ 論文お気に入り保存',
+      '💬 論文と壁打ちチャット (1日3回)',
+      '🎓 卒論テーマAI提案 (1日3回)',
+      '',
+      '登録不要',
+      LAB_URL,
+      '',
+      '#卒論 #大学生',
+    ].join('\n');
+    await notifyXPost({
+      subject: '[X 投稿] PubMed Lab 大型アップデート告知',
+      xText,
+      contextNote: 'LAB update announcement cron が発火しました。X (@science_pubmed) に以下を手動投稿してください。',
+    }).catch((e) => Logger.warn(`X notify 失敗: ${(e as Error).message}`));
   }
 
   const ok = results.filter((r) => r.ok).length;
