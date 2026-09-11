@@ -16,6 +16,7 @@ import { postToThreads, dryRunThreads } from '../threads/post.js';
 import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
 import { notifyXPost } from '../x/notify-post.js';
+import { postToX, dryRunX } from '../x/post.js';
 
 const TOOLKIT_URL = 'https://sciencepubmed.net/ja/lab/toolkit/';
 const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
@@ -194,8 +195,8 @@ async function main(): Promise<void> {
     }, results);
   }
 
-  // === X (Twitter) 手動投稿用メール通知 ===
-  if (!args.dryRun) {
+  // === X (Twitter) ハイブリッド投稿: API 試行 → 失敗時 メール fallback ===
+  {
     const xText = [
       '🤖 PubMed 論文と壁打ちできるプロンプト、無料配布',
       '',
@@ -206,11 +207,23 @@ async function main(): Promise<void> {
       '',
       '#卒論 #大学生',
     ].join('\n');
-    await notifyXPost({
-      subject: '[X 投稿] PubMed Lab toolkit 告知',
-      xText,
-      contextNote: 'TOOLKIT announcement cron が発火しました。X (@science_pubmed) に以下を手動投稿してください。',
-    }).catch((e) => Logger.warn(`X notify 失敗: ${(e as Error).message}`));
+    if (args.dryRun) {
+      dryRunX(xText);
+    } else {
+      try {
+        const result = await postToX(xText);
+        Logger.info(`✅ X 自動投稿成功: ${result.url}`);
+      } catch (e) {
+        const msg = (e as Error).message || String(e);
+        Logger.warn(`⚠️ X 自動投稿失敗 → メール fallback: ${msg}`);
+        await notifyXPost({
+          subject: '[X 投稿 fallback] PubMed Lab toolkit 告知',
+          xText,
+          contextNote: `TOOLKIT announcement cron 発火時に X 自動投稿を試みましたが失敗しました。手動で投稿してください。
+エラー: ${msg}`,
+        }).catch((e2) => Logger.warn(`X notify fallback も失敗: ${(e2 as Error).message}`));
+      }
+    }
   }
 
   const ok = results.filter((r) => r.ok).length;

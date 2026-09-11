@@ -36,7 +36,8 @@
     "@types/nodemailer": "^8.0.0",
     "astro": "^5.0.0",
     "dotenv": "^16.4.5",
-    "nodemailer": "^8.0.7"
+    "nodemailer": "^8.0.7",
+    "twitter-api-v2": "^1.29.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
