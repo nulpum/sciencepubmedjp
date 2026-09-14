@@ -46,6 +46,7 @@ jobs:
           PUBMED_EMAIL: ${{ secrets.PUBMED_EMAIL }}
           SITE_URL: https://sciencepubmed.net
           AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+          MOSHIMO_A_ID: ${{ secrets.MOSHIMO_A_ID }}
 
       - name: Generate OG images (1200x630) for new articles
         run: npm run generate:og
