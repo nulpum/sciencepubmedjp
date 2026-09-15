@@ -6,6 +6,7 @@ import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
 import ShareX from '../../../components/ShareX.astro';
 import RakutenMotionWidget from '../../../components/RakutenMotionWidget.astro';
+import MoshimoBanner from '../../../components/MoshimoBanner.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('ja_biology');
@@ -114,6 +115,9 @@ export const prerender = true;
 
   {/* 楽天ブックス モーションウィジェット (2026-09 導入) */}
   <RakutenMotionWidget />
+
+  {/* もしもアフィリエイト バナー広告 3種ローテ (2026-09 導入) */}
+  <MoshimoBanner />
 
   {/* 記事フッター AdSense (読了ゾーンで表示) */}
   <AdUnit slot="articleFooter" />
