@@ -1,0 +1,65 @@
+---
+// 楽天モーションウィジェット (300x250)
+//
+// 楽天アフィリエイト発行の JavaScript が client 側で商品カルーセルを生成する。
+// 商品は自動で 楽天ランキング / 関連商品 が更新される。
+//
+// クリック時 楽天サイトに遷移 → 24 時間以内の楽天購入で成果報酬発生。
+//
+// 配置想定:
+//   - JA 記事ページ (ja/psychology/[slug].astro, ja/biology/[slug].astro)
+//   - 記事末尾、AffiliateButtons bottom の下
+//
+// なぜ ja のみ:
+//   - 楽天は日本国内サービス、EN 読者に無意味
+//   - EN 記事は Amazon 洋書 で完結
+---
+<aside class="rakuten-motion-widget" aria-label="楽天ブックス おすすめ">
+  <p class="rakuten-motion-widget__label">📚 楽天ブックス のおすすめ</p>
+  <div class="rakuten-motion-widget__slot">
+    <script is:inline>
+      var rakuten_design="slide";
+      var rakuten_affiliateId="578b922e.072821fb.578b922f.080feb17";
+      var rakuten_items="ctsmatch";
+      var rakuten_genreId="0";
+      var rakuten_size="300x250";
+      var rakuten_target="_blank";
+      var rakuten_theme="gray";
+      var rakuten_border="off";
+      var rakuten_auto_mode="on";
+      var rakuten_genre_title="off";
+      var rakuten_recommend="on";
+      var rakuten_ts="1789441633146";
+    </script>
+    <script is:inline src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js?20230106"></script>
+  </div>
+  <p class="rakuten-motion-widget__note">#PR / 楽天アフィリエイト参加中</p>
+</aside>
+
+<style>
+  .rakuten-motion-widget {
+    max-width: 720px;
+    margin: 24px auto;
+    padding: 16px 18px;
+    background: #fafafa;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .rakuten-motion-widget__label {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0 0 10px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .rakuten-motion-widget__slot {
+    display: inline-block;
+    min-height: 250px;
+  }
+  .rakuten-motion-widget__note {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin: 10px 0 0;
+  }
+</style>

@@ -5,6 +5,7 @@ import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
 import ShareX from '../../../components/ShareX.astro';
+import RakutenMotionWidget from '../../../components/RakutenMotionWidget.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('ja_psychology');
@@ -127,6 +128,9 @@ export const prerender = true;
   <aside class="share-section">
     <ShareX text={post.data.fact || post.data.title} url={articleUrl} hashtags="PubMed,心理学" gaEvent="article_share_x" />
   </aside>
+
+  {/* 楽天ブックス モーションウィジェット (2026-09 導入) */}
+  <RakutenMotionWidget />
 
   {/* 記事フッター AdSense (読了ゾーンで表示) */}
   <AdUnit slot="articleFooter" />
