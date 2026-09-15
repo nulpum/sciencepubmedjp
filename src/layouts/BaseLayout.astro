@@ -1,4 +1,6 @@
 ---
+import MoshimoBanner from '../components/MoshimoBanner.astro';
+
 interface Props {
   title: string;
   description?: string;
@@ -83,9 +85,24 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         </nav>
       </div>
     </header>
-    <main class="site-main">
-      <slot />
-    </main>
+
+    {/* ヘッダー下のグローバルバナー (全ページ、JA のみ) */}
+    {lang === 'ja' && (
+      <div class="global-banner">
+        <MoshimoBanner />
+      </div>
+    )}
+
+    <div class="site-shell">
+      <main class="site-main">
+        <slot />
+      </main>
+      {lang === 'ja' && (
+        <aside class="site-sidebar" aria-label="スポンサー広告">
+          <MoshimoBanner />
+        </aside>
+      )}
+    </div>
     <footer class="site-footer">
       <nav class="site-footer__nav">
         <a href={`/${lang}/about/`}>{lang === 'ja' ? 'このサイトについて' : 'About'}</a>
@@ -194,6 +211,46 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       .site-nav__cta:hover {
         background: var(--navy-deep);
         color: white !important;
+      }
+
+      /* === Global banner (ヘッダー下、全ページ) === */
+      .global-banner {
+        max-width: 960px;
+        margin: 12px auto 0;
+        padding: 0 20px;
+      }
+
+      /* === Site shell (main + sidebar のラッパー) === */
+      .site-shell {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .site-sidebar {
+        display: none;
+      }
+
+      /* PC (≥ 1280px) で サイドバー 表示、grid レイアウト */
+      @media (min-width: 1280px) {
+        .site-shell {
+          max-width: 1280px;
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          gap: 32px;
+          padding: 0 20px;
+          align-items: start;
+        }
+        .site-shell .site-main {
+          max-width: none;
+          margin: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .site-sidebar {
+          display: block;
+          position: sticky;
+          top: 76px;
+          align-self: start;
+        }
       }
 
       /* === Main === */
