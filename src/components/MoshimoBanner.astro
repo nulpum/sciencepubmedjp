@@ -1,9 +1,18 @@
 ---
-// もしもアフィリエイト バナー広告 (3 種ランダム表示)
+// もしもアフィリエイト バナー広告 (config 駆動、N 種ランダム表示)
 //
-// ページ内に複数配置可能 (guard flag で script は 1 度だけ実行、
-// DOMContentLoaded で全 slot を fill、dataset.filled で二重実行防止)。
-// 各 slot が独立にランダムな banner を表示 → 同一ページ内で異なる広告が並ぶ。
+// バナーの追加は src/config/moshimo-banners.ts の MOSHIMO_BANNERS 配列に entry 追加のみ。
+//
+// multi-instance 対応:
+//   - guard flag で script は 1 度だけ実行
+//   - DOMContentLoaded で全 [data-moshimo-slot] を fill
+//   - dataset.filled で二重挿入防止
+//   - 各 slot が独立にランダムな banner を表示
+
+import { MOSHIMO_BANNERS } from '../config/moshimo-banners';
+
+// SSR 段階で JS 文字列として渡す (client 側で JSON.parse)
+const bannersJson = JSON.stringify(MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: b.html })));
 ---
 <aside class="moshimo-banner" aria-label="スポンサー広告">
   <p class="moshimo-banner__label">📖 スポンサー</p>
@@ -13,24 +22,22 @@
   <p class="moshimo-banner__note">#PR / もしもアフィリエイト経由</p>
 </aside>
 
-<script is:inline>
+<script is:inline set:html={`
   (function () {
     if (window.__moshimoBannerInit) return;
     window.__moshimoBannerInit = true;
-    var BANNERS = [
-      '<a href="//af.moshimo.com/af/c/click?a_id=5800909&p_id=5144&pc_id=13942&pl_id=67749" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4800/000000067749.jpg" width="1404" height="180" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800909&p_id=5144&pc_id=13942&pl_id=67749" width="1" height="1" style="border:none;" loading="lazy" alt="">',
-      '<a href="//af.moshimo.com/af/c/click?a_id=5800874&p_id=2826&pc_id=6435&pl_id=71612" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/2083/000000071612.png" width="550" height="152" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800874&p_id=2826&pc_id=6435&pl_id=71612" width="1" height="1" style="border:none;" loading="lazy" alt="">',
-      '<a href="//af.moshimo.com/af/c/click?a_id=5800868&p_id=1166&pc_id=1793&pl_id=17969" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/0408/000000017969.png" width="300" height="300" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800868&p_id=1166&pc_id=1793&pl_id=17969" width="1" height="1" style="border:none;" loading="lazy" alt="">'
-    ];
+    var BANNERS = ${bannersJson};
+    if (!Array.isArray(BANNERS) || BANNERS.length === 0) return;
     function fillSlots() {
       var slots = document.querySelectorAll('[data-moshimo-slot]');
       slots.forEach(function (slot) {
         if (slot.dataset.filled) return;
         slot.dataset.filled = '1';
         var idx = Math.floor(Math.random() * BANNERS.length);
-        slot.innerHTML = BANNERS[idx];
+        var b = BANNERS[idx];
+        slot.innerHTML = b.html;
         if (typeof gtag === 'function') {
-          gtag('event', 'moshimo_banner_impression', { banner_index: idx });
+          gtag('event', 'moshimo_banner_impression', { banner_id: b.id, banner_index: idx });
         }
       });
     }
@@ -40,7 +47,7 @@
       fillSlots();
     }
   })();
-</script>
+`} />
 
 <style>
   .moshimo-banner {
