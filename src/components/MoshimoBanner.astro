@@ -11,8 +11,21 @@
 
 import { MOSHIMO_BANNERS } from '../config/moshimo-banners';
 
+// impression pixel の loading="lazy" を除去する。
+// 1x1 px の tracking pixel は lazy loading だとブラウザが viewport 判定に迷って
+// 発火しない (特にモバイル)。結果、Moshimo 側で impression 大幅未カウント →
+// CTR 異常高く見える問題が起きる。tracking pixel は eager 前提で発火させる。
+function stripLazyFromImpression(html: string): string {
+  return html.replace(
+    /(<img[^>]*i\.moshimo\.com\/af\/i\/impression[^>]*?)\s+loading="lazy"/g,
+    '$1',
+  );
+}
+
 // SSR 段階で JS 文字列として渡す (client 側で JSON.parse)
-const bannersJson = JSON.stringify(MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: b.html })));
+const bannersJson = JSON.stringify(
+  MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: stripLazyFromImpression(b.html) })),
+);
 ---
 <aside class="moshimo-banner" aria-label="スポンサー広告">
   <p class="moshimo-banner__label">📖 スポンサー</p>
