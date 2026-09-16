@@ -52,6 +52,20 @@ const bannersJson = JSON.stringify(
         if (typeof gtag === 'function') {
           gtag('event', 'moshimo_banner_impression', { banner_id: b.id, banner_index: idx });
         }
+        // クリック計測: slot 内の a タグ (affiliate リンク) に発火 listener を付ける。
+        // target="_blank" なので現ページは残る → beacon で確実に送信できる。
+        var links = slot.querySelectorAll('a[href*="af.moshimo.com"]');
+        links.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+              gtag('event', 'moshimo_banner_click', {
+                banner_id: b.id,
+                banner_index: idx,
+                transport_type: 'beacon',
+              });
+            }
+          });
+        });
       });
     }
     if (document.readyState === 'loading') {
