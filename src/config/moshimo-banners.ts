@@ -227,4 +227,37 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     category: 'ai-tools',
     html: '<div style="max-width:300px;margin:0 auto;padding:20px 16px;background:linear-gradient(135deg,#f5f0ff 0%,#fdf4ff 100%);border:1px solid #d8b4fe;border-radius:10px;text-align:center;"><p style="margin:0 0 10px;font-size:0.75rem;color:#7c3aed;font-weight:700;letter-spacing:0.05em;">AI COACH</p><a href="//af.moshimo.com/af/c/click?a_id=5804427&p_id=7637&pc_id=22086&pl_id=95318" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display:block;color:#5b21b6;font-weight:700;text-decoration:none;font-size:0.95rem;line-height:1.5;">あなた専用に育つAIコーチ「Rin」<br><span style="font-size:0.82rem;font-weight:500;color:#6d28d9;">強み×毎日のジャーナルで内省が続く<br>(初回30日無料)</span></a></div><img src="//i.moshimo.com/af/i/impression?a_id=5804427&p_id=7637&pc_id=22086&pl_id=95318" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
+
+  // ==================== 追加 5 個 (2026-09-17、rotation 38 個化 — career 系厚み増強) ====================
+  // audience = 大学生 + 研究者 の 洞察に基づき type転職 / フリコン / 転職ナビ を投入
+  {
+    id: 'banner-type-tenshoku',
+    label: 'type転職エージェント (600x600) 成果 ¥11,000',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5804433&p_id=7540&pc_id=21772&pl_id=94548" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/6249/000000094548.jpg" width="600" height="600" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="type転職エージェント"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804433&p_id=7540&pc_id=21772&pl_id=94548" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-type-woman',
+    label: 'type女性の転職エージェント (600x600) 成果 ¥11,000',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5804434&p_id=7541&pc_id=21774&pl_id=94550" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/6249/000000094550.jpg" width="600" height="600" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="type女性の転職エージェント"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804434&p_id=7541&pc_id=21774&pl_id=94550" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-furicon',
+    label: 'フリコン フリーランスIT案件 (640x320) 成果 ¥30,000',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800933&p_id=3841&pc_id=9491&pl_id=57708" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/3294/000000057708.png" width="640" height="320" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="フリコン フリーランスIT案件"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800933&p_id=3841&pc_id=9491&pl_id=57708" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-tenshoku-agent-navi',
+    label: '転職エージェントナビ (1080x1080) 成果 ¥8,000',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800943&p_id=5537&pc_id=15176&pl_id=71461" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5218/000000071461.png" width="1080" height="1080" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="転職エージェントナビ"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800943&p_id=5537&pc_id=15176&pl_id=71461" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-hatena-blog-pro',
+    label: 'はてなブログ Pro (300x250) 成果 ¥300-1,200',
+    category: 'other',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800978&p_id=2017&pc_id=4094&pl_id=91504" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/1396/000000091504.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="はてなブログ Pro"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800978&p_id=2017&pc_id=4094&pl_id=91504" width="1" height="1" style="border:none;" alt="">',
+  },
 ];
