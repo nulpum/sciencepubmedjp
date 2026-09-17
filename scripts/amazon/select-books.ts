@@ -109,6 +109,58 @@ export function buildSearchUrl(keywords: string, bookLang: 'ja' | 'en' = 'ja'): 
   return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${category}`;
 }
 
+// 書籍以外の Amazon カテゴリ検索リンク (家電/オフィス/キッチン等)
+// 「読書の相棒」商品を紐付ける。薬機法回避のため サプリ・健康食品は除外。
+export function buildAmazonSearchUrlNonBook(keywords: string, indexParam: string): string {
+  const enc = encodeURIComponent(keywords);
+  return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${indexParam}`;
+}
+
+// 科学記事を読む読者に有用そうな "読書の相棒" 商品カテゴリ (JA)
+// - 薬機法引っかからない (サプリ・健康食品なし)
+// - 単価そこそこ (ノイキャン 5-30k, デスクライト 2-10k, 書見台 1-3k)
+// - 8% (electronics) や 3% (office) の commission
+interface ReaderCompanion {
+  label: string;
+  keyword: string;
+  indexParam: string; // amazon.co.jp の SearchIndex 相当
+}
+
+const READER_COMPANIONS_JA: ReaderCompanion[] = [
+  { label: 'ノイキャンイヤホン (集中読書に)', keyword: 'ノイズキャンセリング イヤホン', indexParam: 'electronics' },
+  { label: '書見台 (論文を開いたまま読める)', keyword: '書見台', indexParam: 'office-products' },
+  { label: 'デスクライト (目に優しい LED)', keyword: 'デスクライト LED 目に優しい', indexParam: 'office-products' },
+  { label: 'ポモドーロタイマー (集中法)', keyword: 'ポモドーロ タイマー 勉強', indexParam: 'office-products' },
+  { label: 'ブックスタンド (角度調整)', keyword: 'ブックスタンド 角度調整', indexParam: 'office-products' },
+  { label: 'ブックライト (夜の読書に)', keyword: 'ブックライト クリップ', indexParam: 'electronics' },
+];
+
+const READER_COMPANIONS_EN: ReaderCompanion[] = [
+  { label: 'Noise-cancelling earbuds (focus reading)', keyword: 'noise cancelling earbuds', indexParam: 'electronics' },
+  { label: 'Book stand for reading', keyword: 'book stand reading', indexParam: 'office-products' },
+  { label: 'LED desk lamp for reading', keyword: 'desk lamp led reading', indexParam: 'office-products' },
+  { label: 'Pomodoro timer (focus method)', keyword: 'pomodoro timer study', indexParam: 'office-products' },
+  { label: 'Clip-on book light', keyword: 'book light clip led', indexParam: 'electronics' },
+  { label: 'Reading pillow', keyword: 'reading pillow back support', indexParam: 'kitchen' },
+];
+
+// PMID を数値化して pick — 同じ記事は常に同じ商品 (UX 一貫性)、
+// 異なる記事同士では 分散する。
+function pickReaderCompanion(pmid: string, lang: Lang): ReaderCompanion {
+  const list = lang === 'ja' ? READER_COMPANIONS_JA : READER_COMPANIONS_EN;
+  let hash = 0;
+  for (let i = 0; i < pmid.length; i++) hash = (hash * 31 + pmid.charCodeAt(i)) >>> 0;
+  return list[hash % list.length];
+}
+
+export function buildReaderCompanionLink(pmid: string, lang: Lang): SelectedBook {
+  const pick = pickReaderCompanion(pmid, lang);
+  return {
+    title: pick.label,
+    url: buildAmazonSearchUrlNonBook(pick.keyword, pick.indexParam),
+  };
+}
+
 // カテゴリごとの広めキーワード (フォールバック 2 つ目のリンク用)
 // キーワード数を減らし (2〜3 語)、ヒット率を確保する
 const CATEGORY_BROAD_KEYWORDS_JA: Record<Category, string> = {
@@ -166,6 +218,8 @@ function buildFallbackLinks(
         url: buildRakutenSearchLink({ aId, keyword: topicKw, category: 'books' }),
       });
     }
+    // 読書の相棒 (家電/オフィス系、書籍と別軸で購入意欲を拾う)
+    links.push(buildReaderCompanionLink(article.pmid, 'ja'));
   } else {
     const topicKw = extractKeywords(article, 3);   // EN の 3 語
     const broadKw = CATEGORY_BROAD_KEYWORDS_EN[category];
@@ -180,6 +234,8 @@ function buildFallbackLinks(
       url: buildSearchUrl(broadKw, 'en'),
     });
     // EN 記事に楽天は付けない (楽天は洋書弱い、日本語読者向けに刺さらない)
+    // 読書の相棒 (英語圏読者にも高需要)
+    links.push(buildReaderCompanionLink(article.pmid, 'en'));
   }
   return links;
 }

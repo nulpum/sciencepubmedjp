@@ -8,6 +8,13 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/34385227/"
 journal: "BMJ open"
 year: 2021
 generated_at: "2026-09-16T04:34:01.120Z"
+affiliate_links:
+  - title: "Search Amazon JP (English books) for \"probiotics diarrhea what\""
+    url: "https://www.amazon.co.jp/s?k=probiotics%20diarrhea%20what&tag=sciencepubmed-22&i=english-books"
+  - title: "Browse biology books on Amazon JP (English books)"
+    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
+  - title: "Noise-cancelling earbuds (focus reading)"
+    url: "https://www.amazon.co.jp/s?k=noise%20cancelling%20earbuds&tag=sciencepubmed-22&i=electronics"
 ---
 
 ## What we're looking at
