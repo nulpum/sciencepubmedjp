@@ -21,11 +21,18 @@ interface Props {
 
 const { links, variant, lang = 'ja' } = Astro.props as Props;
 
-// Amazon / 楽天 でグルーピング (topic 用の最初の一本ずつを採用)
+// Amazon / 楽天 でグルーピング (topic 用の最初の一本ずつを primary CTA として採用)
 const amazonLinks = links.filter((l) => l.url.includes('amazon.co.jp'));
 const rakutenLinks = links.filter((l) => l.url.includes('af.moshimo.com') || l.url.includes('rakuten.co.jp'));
 const primaryAmazon = amazonLinks[0];
 const primaryRakuten = rakutenLinks[0];
+
+// 2 個目以降 = 補助リンク (broad category 検索 / 読書の相棒 商品)。
+// bottom variant のみで chip 表示 → top/mid の focused CTA は 汚さない。
+// 従来 これらは AffiliateButtons が [0] しか採用しなかったため 表示ゼロだった。
+const extraAmazon = amazonLinks.slice(1);
+const extraRakuten = rakutenLinks.slice(1);
+const extras = [...extraAmazon, ...extraRakuten];
 
 // バリアントごとの見出し・トーン
 const labels = {
@@ -80,6 +87,24 @@ const disclosureFull = lang === 'ja'
         </a>
       )}
     </div>
+    {variant === 'bottom' && extras.length > 0 && (
+      <div class="aff-cta__extras">
+        <p class="aff-cta__extras-label">{lang === 'ja' ? '↓ 他のおすすめリンク:' : '↓ Other related links:'}</p>
+        <div class="aff-cta__chips">
+          {extras.map((link) => (
+            <a
+              href={link.url}
+              rel="sponsored noopener"
+              target="_blank"
+              class={`aff-cta__chip ${link.url.includes('amazon.co.jp') ? 'aff-cta__chip--amazon' : 'aff-cta__chip--rakuten'}`}
+              data-affiliate={link.url.includes('amazon.co.jp') ? 'amazon-extra' : 'rakuten-extra'}
+            >
+              {link.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
     <p class="aff-cta__note">{variant === 'bottom' ? disclosureFull : disclosureShort}</p>
   </aside>
 )}
@@ -163,4 +188,54 @@ const disclosureFull = lang === 'ja'
     line-height: 1.5;
   }
   .aff-cta--mid .aff-cta__note { color: #6d8060; }
+
+  /* 補助リンク (bottom variant のみ) */
+  .aff-cta__extras {
+    margin: 14px 0 4px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(122, 90, 30, 0.25);
+  }
+  .aff-cta__extras-label {
+    font-size: 0.78rem;
+    color: #7a5a1e;
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  .aff-cta__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .aff-cta__chip {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.12s, filter 0.12s;
+    line-height: 1.3;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .aff-cta__chip:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    text-decoration: none;
+  }
+  .aff-cta__chip--amazon {
+    background: #fff2d8;
+    color: #a26a00 !important;
+    border: 1px solid #f0d78a;
+  }
+  .aff-cta__chip--rakuten {
+    background: #fde8e8;
+    color: #a30000 !important;
+    border: 1px solid #f0b8b8;
+  }
+  @media (max-width: 480px) {
+    .aff-cta__chip { font-size: 0.78rem; padding: 6px 10px; max-width: calc(100% - 10px); }
+  }
 </style>
