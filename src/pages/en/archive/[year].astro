@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const psy = await getCollection('en_psychology');
+  const bio = await getCollection('en_biology');
+  const all = [
+    ...psy.map((p) => ({ ...p, cat: 'psychology' as const })),
+    ...bio.map((p) => ({ ...p, cat: 'biology' as const })),
+  ];
+  const yearsSet = new Set<number>();
+  for (const p of all) {
+    if (typeof p.data.year === 'number') yearsSet.add(p.data.year);
+  }
+  return Array.from(yearsSet).map((year) => ({
+    params: { year: String(year) },
+    props: {
+      year,
+      articles: all
+        .filter((p) => p.data.year === year)
+        .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1)),
+    },
+  }));
+}
+
+const { year, articles } = Astro.props as {
+  year: number;
+  articles: Array<{
+    id: string;
+    cat: 'psychology' | 'biology';
+    data: { title: string; fact: string; journal?: string; generated_at: string };
+  }>;
+};
+
+export const prerender = true;
+---
+<BaseLayout
+  title={ `${year} — Archive (${articles.length} articles)` }
+  description={ `${articles.length} articles based on PubMed papers published in ${year}.` }
+  lang="en"
+>
+  <div class="archive-year">
+    <header class="archive-year__header">
+      <p class="archive-year__breadcrumb">
+        <a href="/en/">Home</a> ›
+        <a href="/en/archive/">Archive</a> ›
+        {year}
+      </p>
+      <h1>📅 {year} の 論文由来 記事 <span class="count">({articles.length})</span></h1>
+      <p class="archive-year__intro">Articles generated from PubMed papers published in this year.</p>
+    </header>
+
+    <ul class="article-list">
+      {articles.map((p) => (
+        <li class="article-item">
+          <a href={`/en/${p.cat}/${p.id}/`} class="article-item__link">
+            <div class="article-item__meta">
+              <span class={`badge badge--${p.cat}`}>{p.cat === 'psychology' ? 'Psychology' : 'Biology'}</span>
+              {p.data.journal && <span class="journal">{p.data.journal}</span>}
+            </div>
+            <h2 class="article-item__title">{p.data.title}</h2>
+            <p class="article-item__fact">{p.data.fact}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="archive-year__back"><a href="/en/archive/">← Browse other years</a></p>
+  </div>
+
+  <style>
+    .archive-year { max-width: 800px; margin: 0 auto; padding: 24px 20px 40px; }
+    .archive-year__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .archive-year__breadcrumb a { color: var(--muted); }
+    .archive-year__header h1 { font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; }
+    .archive-year__header .count { color: var(--muted); font-weight: 500; font-size: 1.1rem; }
+    .archive-year__intro { color: var(--muted); font-size: 0.92rem; margin: 0 0 24px; }
+
+    .article-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .article-item { border: 1px solid #e5e9f2; border-radius: 10px; background: white; transition: box-shadow 0.15s, border-color 0.15s; }
+    .article-item:hover { border-color: var(--navy); box-shadow: 0 4px 14px rgba(26, 54, 93, 0.08); }
+    .article-item__link { display: block; padding: 14px 18px; text-decoration: none; color: var(--navy); }
+    .article-item__meta { display: flex; gap: 10px; align-items: center; font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; color: white; }
+    .badge--psychology { background: #7c3aed; }
+    .badge--biology { background: #059669; }
+    .journal { font-style: italic; }
+    .article-item__title { font-size: 1rem; margin: 0 0 6px; line-height: 1.4; color: var(--navy); }
+    .article-item__fact { font-size: 0.86rem; margin: 0; color: #4a5568; line-height: 1.5; }
+    .archive-year__back { margin-top: 28px; font-size: 0.9rem; }
+    .archive-year__back a { color: var(--link); }
+  </style>
+</BaseLayout>

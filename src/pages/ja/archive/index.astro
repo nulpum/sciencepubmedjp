@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('ja_psychology');
+const bio = await getCollection('ja_biology');
+const all = [...psy, ...bio];
+
+const byYear = new Map<number | null, number>();
+for (const p of all) {
+  const y = p.data.year ?? null;
+  byYear.set(y, (byYear.get(y) ?? 0) + 1);
+}
+
+const years = Array.from(byYear.entries())
+  .sort((a, b) => {
+    if (a[0] === null) return 1;
+    if (b[0] === null) return -1;
+    return b[0] - a[0];
+  });
+
+const total = all.length;
+
+export const prerender = true;
+---
+<BaseLayout title={`論文出版年で アーカイブを 見る (全 ${total} 本)`} description="PubMed 掲載論文の出版年ごとに、記事をまとめて一覧できます。" lang="ja">
+  <div class="archive-index">
+    <header class="archive-index__header">
+      <p class="archive-index__breadcrumb"><a href="/ja/">ホーム</a> › アーカイブ</p>
+      <h1>📅 アーカイブ</h1>
+      <p class="archive-index__intro" set:html={`取り上げた PubMed 論文の <strong>出版年</strong> でグルーピングした一覧です。`} />
+    </header>
+
+    <ul class="year-grid">
+      {years.map(([year, count]) => (
+        <li class="year-tile">
+          {year !== null ? (
+            <a href={`/ja/archive/${year}/`}>
+              <span class="year-tile__year">{year}</span>
+              <span class="year-tile__count">{count} 本の記事</span>
+            </a>
+          ) : (
+            <div class="year-tile year-tile--muted">
+              <span class="year-tile__year">-</span>
+              <span class="year-tile__count">{count} 本の記事<br /><small>(年不明)</small></span>
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <style>
+    .archive-index { max-width: 800px; margin: 0 auto; padding: 24px 20px 40px; }
+    .archive-index__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .archive-index__breadcrumb a { color: var(--muted); }
+    .archive-index__header h1 { font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; }
+    .archive-index__intro { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+
+    .year-grid {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .year-tile a, .year-tile > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+      border: 1px solid #d5dceb;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--navy);
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      min-height: 90px;
+    }
+    .year-tile a:hover {
+      transform: translateY(-2px);
+      border-color: var(--navy);
+      box-shadow: 0 6px 18px rgba(26, 54, 93, 0.1);
+    }
+    .year-tile--muted { opacity: 0.6; }
+    .year-tile__year { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
+    .year-tile__count { font-size: 0.85rem; color: var(--muted); margin-top: 4px; text-align: center; }
+  </style>
+</BaseLayout>

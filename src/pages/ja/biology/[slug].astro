@@ -15,10 +15,29 @@ export async function getStaticPaths() {
 const { post, all } = Astro.props;
 const { Content, headings } = await render(post);
 
+// 同カテゴリの他記事から タイトル語彙の重複度で 上位 3 件 (current 除く、date でtiebreak)
+function tokenize(s: string): string[] {
+  return s
+    .toLowerCase()
+    .split(/[\s、。「」()（）,.:;!?\-_/\[\]【】]+/)
+    .filter((t) => t.length >= 2);
+}
+const currentTokens = new Set(tokenize(`${post.data.title} ${post.data.fact}`));
+function similarityScore(p: typeof post): number {
+  const t = tokenize(`${p.data.title} ${p.data.fact}`);
+  let overlap = 0;
+  for (const tok of t) if (currentTokens.has(tok)) overlap++;
+  return overlap;
+}
 const related = (all as typeof post[])
   .filter((p) => p.id !== post.id)
-  .sort((a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at))
-  .slice(0, 3);
+  .map((p) => ({ p, score: similarityScore(p) }))
+  .sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return Date.parse(b.p.data.generated_at) - Date.parse(a.p.data.generated_at);
+  })
+  .slice(0, 3)
+  .map((x) => x.p);
 
 const ogImage = `/og/ja/${post.id}.png`;
 const tocItems = headings.filter((h) => h.depth === 2);

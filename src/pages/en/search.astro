@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('en_psychology');
+const bio = await getCollection('en_biology');
+
+interface IndexEntry {
+  id: string;
+  title: string;
+  fact: string;
+  cat: 'psychology' | 'biology';
+  date: string;
+  year: number | null;
+  url: string;
+}
+
+const index: IndexEntry[] = [
+  ...psy.map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    fact: p.data.fact,
+    cat: 'psychology' as const,
+    date: p.data.generated_at.slice(0, 10),
+    year: p.data.year ?? null,
+    url: `/en/psychology/${p.id}/`,
+  })),
+  ...bio.map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    fact: p.data.fact,
+    cat: 'biology' as const,
+    date: p.data.generated_at.slice(0, 10),
+    year: p.data.year ?? null,
+    url: `/en/biology/${p.id}/`,
+  })),
+].sort((a, b) => (a.date < b.date ? 1 : -1));
+
+const total = index.length;
+
+export const prerender = true;
+---
+<BaseLayout
+  title={`Search all articles (${total} total)`}
+  description="Search all PubMed Trivia articles by keyword — psychology and biology research summaries."
+  lang="en"
+>
+  <div class="search-page">
+    <header class="search-page__header">
+      <p class="search-page__breadcrumb"><a href="/en/">Home</a> › Search</p>
+      <h1>🔍 Search articles</h1>
+      <p class="search-page__intro">Search across all <strong>{total}</strong> research trivia summaries by keyword.</p>
+    </header>
+
+    <div class="search-box">
+      <input
+        type="search"
+        id="search-input"
+        class="search-box__input"
+        placeholder="e.g. sleep, gut microbiome, stress, memory..."
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Search keywords"
+      />
+      <div class="search-box__filters">
+        <button type="button" class="chip is-active" data-cat="">All</button>
+        <button type="button" class="chip" data-cat="psychology">Psychology</button>
+        <button type="button" class="chip" data-cat="biology">Biology</button>
+      </div>
+      <p class="search-box__hint" id="search-hint">Showing all {total}</p>
+    </div>
+
+    <ul id="search-results" class="search-results" aria-live="polite"></ul>
+
+    <p id="search-empty" class="search-empty" hidden>
+      No articles matched. Try different keywords, or explore <a href="/en/">the homepage</a>.
+    </p>
+  </div>
+
+  <script type="application/json" id="search-index" set:html={JSON.stringify(index)} />
+
+  <script is:inline>
+    (function () {
+      var INDEX = JSON.parse(document.getElementById('search-index').textContent || '[]');
+      var input = document.getElementById('search-input');
+      var results = document.getElementById('search-results');
+      var hint = document.getElementById('search-hint');
+      var empty = document.getElementById('search-empty');
+      var chips = document.querySelectorAll('[data-cat]');
+      var currentCat = '';
+      var MAX = 60;
+
+      function tokens(q) {
+        return q.trim().toLowerCase().split(/\s+/).filter(function (t) { return t.length > 0; });
+      }
+
+      function score(entry, toks) {
+        if (toks.length === 0) return 1;
+        var t = (entry.title || '').toLowerCase();
+        var f = (entry.fact || '').toLowerCase();
+        var s = 0;
+        for (var i = 0; i < toks.length; i++) {
+          var tk = toks[i];
+          if (t.indexOf(tk) >= 0) s += 3;
+          else if (f.indexOf(tk) >= 0) s += 1;
+          else return 0;
+        }
+        return s;
+      }
+
+      function render() {
+        var q = input.value;
+        var toks = tokens(q);
+        var pool = currentCat ? INDEX.filter(function (e) { return e.cat === currentCat; }) : INDEX;
+        var matched;
+        if (toks.length === 0) {
+          matched = pool.slice(0, MAX).map(function (e) { return { e: e, s: 1 }; });
+        } else {
+          matched = pool
+            .map(function (e) { return { e: e, s: score(e, toks) }; })
+            .filter(function (x) { return x.s > 0; })
+            .sort(function (a, b) { return b.s - a.s; })
+            .slice(0, MAX);
+        }
+
+        results.innerHTML = '';
+        if (matched.length === 0) {
+          empty.hidden = false;
+          hint.textContent = '0 matches';
+          return;
+        }
+        empty.hidden = true;
+        var frag = document.createDocumentFragment();
+        matched.forEach(function (m) {
+          var e = m.e;
+          var li = document.createElement('li');
+          li.className = 'search-card';
+          var catLabel = e.cat === 'psychology' ? 'Psychology' : 'Biology';
+          li.innerHTML =
+            '<a href="' + e.url + '" class="search-card__link">' +
+            '<div class="search-card__meta"><span class="badge badge--' + e.cat + '">' + catLabel + '</span>' +
+            '<time>' + e.date + '</time>' + (e.year ? ' · <span class="paper-year">📄 paper ' + e.year + '</span>' : '') + '</div>' +
+            '<h2 class="search-card__title">' + e.title.replace(/</g, '&lt;') + '</h2>' +
+            '<p class="search-card__fact">' + e.fact.replace(/</g, '&lt;').slice(0, 140) + '</p>' +
+            '</a>';
+          frag.appendChild(li);
+        });
+        results.appendChild(frag);
+        var poolTotal = pool.length;
+        hint.textContent = toks.length === 0
+          ? 'Showing all ' + poolTotal + ' (first ' + Math.min(matched.length, MAX) + ')'
+          : matched.length + ' matches' + (matched.length === MAX ? ' (first ' + MAX + ')' : '');
+
+        if (toks.length > 0 && typeof gtag === 'function') {
+          gtag('event', 'search_query', {
+            search_term: q.trim().slice(0, 100),
+            search_results: matched.length,
+            search_category: currentCat || 'all',
+          });
+        }
+      }
+
+      var timer;
+      input.addEventListener('input', function () {
+        clearTimeout(timer);
+        timer = setTimeout(render, 150);
+      });
+      chips.forEach(function (c) {
+        c.addEventListener('click', function () {
+          chips.forEach(function (x) { x.classList.remove('is-active'); });
+          c.classList.add('is-active');
+          currentCat = c.getAttribute('data-cat') || '';
+          render();
+        });
+      });
+
+      var params = new URLSearchParams(location.search);
+      var q0 = params.get('q');
+      if (q0) input.value = q0;
+      input.focus();
+      render();
+
+      results.addEventListener('click', function (ev) {
+        var a = ev.target.closest ? ev.target.closest('a.search-card__link') : null;
+        if (!a || typeof gtag !== 'function') return;
+        gtag('event', 'search_result_click', {
+          search_term: input.value.trim().slice(0, 100),
+          link_url: a.getAttribute('href'),
+        });
+      });
+    })();
+  </script>
+
+  <style>
+    .search-page { max-width: 800px; margin: 0 auto; padding: 24px 20px 40px; }
+    .search-page__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .search-page__breadcrumb a { color: var(--muted); }
+    .search-page__header h1 { font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; }
+    .search-page__intro { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+    .search-box { margin: 20px 0 28px; }
+    .search-box__input {
+      width: 100%; padding: 14px 18px; border: 2px solid #d5dceb; border-radius: 12px;
+      font-size: 1.05rem; color: var(--navy); background: white; box-sizing: border-box;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-box__input:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(26,54,93,0.12); }
+    .search-box__filters { display: flex; gap: 8px; margin: 12px 0 8px; flex-wrap: wrap; }
+    .chip {
+      padding: 6px 14px; border-radius: 999px; border: 1px solid #d5dceb; background: white;
+      color: var(--muted); font-size: 0.85rem; cursor: pointer; font-weight: 600; transition: all 0.12s;
+    }
+    .chip:hover { border-color: var(--navy); color: var(--navy); }
+    .chip.is-active { background: var(--navy); color: white; border-color: var(--navy); }
+    .search-box__hint { font-size: 0.82rem; color: var(--muted); margin: 8px 0 0; }
+    .search-results { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .search-card { border: 1px solid #e5e9f2; border-radius: 10px; transition: box-shadow 0.15s, border-color 0.15s; background: white; }
+    .search-card:hover { border-color: var(--navy); box-shadow: 0 4px 14px rgba(26,54,93,0.08); }
+    .search-card__link { display: block; padding: 14px 18px; text-decoration: none; color: var(--navy); }
+    .search-card__meta { display: flex; gap: 10px; align-items: center; font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; color: white; }
+    .badge--psychology { background: #7c3aed; }
+    .badge--biology { background: #059669; }
+    .paper-year { color: #4a5568; font-weight: 500; }
+    .search-card__title { font-size: 1rem; margin: 0 0 6px; line-height: 1.4; color: var(--navy); }
+    .search-card__fact { font-size: 0.86rem; margin: 0; color: #4a5568; line-height: 1.5; }
+    .search-empty { text-align: center; color: var(--muted); padding: 40px 20px; background: #fafbfc; border-radius: 10px; line-height: 1.8; }
+    .search-empty a { color: var(--link); }
+  </style>
+</BaseLayout>
