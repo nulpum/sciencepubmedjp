@@ -57,7 +57,43 @@ export function buildSystemPrompt(lang: Lang): string {
       '',
       '【JSON 出力ルール】',
       '5. 出力は厳密な JSON で、{"title": string, "fact": string, "body": string} の3フィールドのみ。前後の説明は書かない。',
-      '   - title: 30字以内、論文の核心を表す見出し',
+      '   - title: 30〜40字、論文の核心を表す見出し。以下の【タイトル生成の重要指針】を厳守。
+
+【タイトル生成の重要指針】(2026-09 追加、SEO 実測に基づく)
+
+以下 2 条件を できる限り 満たす:
+
+(a) 検索需要のある 固有名詞 を 冒頭付近に 配置
+   abstract に 病名 / 症候群 / 理論 / 現象名 / ガイドライン名 が あれば、
+   それを 必ず title の 先頭付近に 入れる。読者の 検索行動と 直結する。
+   例: 女性アスリート三主徴、腸内フローラ、認知行動療法、ADHD、概日リズム、HSP、
+       ミトコンドリア、GLP-1、統合失調症、自閉スペクトラム症
+
+(b) 「何がどう変わったか」を 具体的に 明示
+   研究が示した 変化・新発見・上書き・改定 を 動詞で 示す。
+   使いやすい語彙: 大幅改定 / 上書き / 覆る / 見直し / 明らかに / 示唆 /
+                   再評価 / 判明 / 修正 / 解明 / 塗り替え / 常識覆す
+
+【推奨タイトル型】
+「[固有名詞]、[出来事・きっかけ] で [具体的変化]」
+「[固有名詞] の [常識・仮説]、[新研究/新エビデンス] で [覆る/上書き]」
+
+【良い例】
+- 「女性アスリート三主徴、最新ガイドラインで治療と競技復帰の基準を大幅改定」
+- 「認知行動療法、新エビデンスで不安障害への効果が再評価」
+- 「腸内フローラ、大規模メタ解析でうつ病との関連が示唆」
+- 「ADHD 大人の見落とし、新診断基準で 3 倍増の可能性」
+- 「概日リズム、深夜のブルーライトで最大 90 分後ろ倒しと判明」
+
+【避けるべき型】
+- 「〇〇とは」(定義説明型 — 検索需要が低く、化けない)
+- 「〇〇の関係」(抽象的で 何が分かったか 不明)
+- 「〇〇について」(曖昧)
+- 「〇〇の効果」(薬機法 抵触リスク)
+
+【 fallback: 固有名詞が abstract に無い場合 】
+   「[現象] の [数値/割合] が [驚きの事実]」型で フックを立てる。
+   例: 「短時間睡眠者の 死亡リスク、6 時間未満で 12% 高いと判明」',
       '   - fact: フック句で始まる1文 (例: 「【意外な事実】〇〇は△△と関連する」)。SNS 投稿でそのまま使う。',
       '   - body: 上記 5 セクション構成の Markdown 本文 (800-1500字)。fact の繰り返しは避ける。',
     ].join('\n');
@@ -93,7 +129,45 @@ export function buildSystemPrompt(lang: Lang): string {
     '',
     '[JSON output rules]',
     '5. Output STRICT JSON only with {"title": string, "fact": string, "body": string}. No prose before or after.',
-    '   - title: under 60 chars, captures the core finding',
+    '   - title: 45-70 chars, captures the core finding. Follow the [Title guidance] below.
+
+[Title guidance] (added 2026-09 based on SEO measurement)
+
+Try to satisfy BOTH:
+
+(a) Lead with a proper noun that people already search for
+    If the abstract mentions a condition name, syndrome, theory, phenomenon,
+    or guideline, put it near the START of the title. This connects reader
+    search behavior directly to the article.
+    Examples: female athlete triad, gut microbiome, cognitive behavioral therapy,
+              ADHD, circadian rhythm, HSP, mitochondria, GLP-1, schizophrenia,
+              autism spectrum disorder
+
+(b) Explicitly state what CHANGES or NEW finding the paper reports
+    Use action verbs that convey update: "revised", "overturns", "upends",
+    "rewrites", "reveals", "reframes", "reassessed", "flags", "linked to",
+    "sheds light on", "reclassifies"
+
+[Preferred title pattern]
+"[Proper noun]: [what changed/was found]"
+"[Proper noun] guideline overhaul: [new criterion]"
+"How [proper noun] [changes/rewrites/reframes] [existing understanding]"
+
+[Good examples]
+- "Female athlete triad guidelines overhauled: new criteria for treatment and return-to-play"
+- "Cognitive behavioral therapy for anxiety: new evidence prompts re-evaluation"
+- "Gut microbiome linked to depression in largest meta-analysis to date"
+- "Adult ADHD may be underdiagnosed 3x: new criteria uncover missed cases"
+
+[Avoid]
+- "What is X?" (definition-style — low search intent, doesn't rank)
+- "The relationship between X and Y" (too abstract)
+- "About X" (vague)
+- "The effect of X on Y" (efficacy claim risk)
+
+[Fallback if no established proper noun in abstract]
+Use "[Phenomenon] shows [surprising specific] in [population]" pattern.
+Example: "Short sleepers face 12% higher mortality risk in 6-hour cutoff study" ',
     '   - fact: one sentence starting with a hook (e.g. "Did you know? ...") — reusable as a social media post',
     '   - body: the 5-section Markdown body (400-800 words). Do not repeat the fact verbatim.',
   ].join('\n');
