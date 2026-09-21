@@ -57,7 +57,7 @@ export function buildSystemPrompt(lang: Lang): string {
       '',
       '【JSON 出力ルール】',
       '5. 出力は厳密な JSON で、{"title": string, "fact": string, "body": string} の3フィールドのみ。前後の説明は書かない。',
-      '   - title: 30〜40字、論文の核心を表す見出し。以下の【タイトル生成の重要指針】を厳守。
+      `   - title: 30〜40字、論文の核心を表す見出し。以下の【タイトル生成の重要指針】を厳守。
 
 【タイトル生成の重要指針】(2026-09 追加、SEO 実測に基づく)
 
@@ -93,7 +93,7 @@ export function buildSystemPrompt(lang: Lang): string {
 
 【 fallback: 固有名詞が abstract に無い場合 】
    「[現象] の [数値/割合] が [驚きの事実]」型で フックを立てる。
-   例: 「短時間睡眠者の 死亡リスク、6 時間未満で 12% 高いと判明」',
+   例: 「短時間睡眠者の 死亡リスク、6 時間未満で 12% 高いと判明」`,
       '   - fact: フック句で始まる1文 (例: 「【意外な事実】〇〇は△△と関連する」)。SNS 投稿でそのまま使う。',
       '   - body: 上記 5 セクション構成の Markdown 本文 (800-1500字)。fact の繰り返しは避ける。',
     ].join('\n');
@@ -129,7 +129,7 @@ export function buildSystemPrompt(lang: Lang): string {
     '',
     '[JSON output rules]',
     '5. Output STRICT JSON only with {"title": string, "fact": string, "body": string}. No prose before or after.',
-    '   - title: 45-70 chars, captures the core finding. Follow the [Title guidance] below.
+    `   - title: 45-70 chars, captures the core finding. Follow the [Title guidance] below.
 
 [Title guidance] (added 2026-09 based on SEO measurement)
 
@@ -167,7 +167,7 @@ Try to satisfy BOTH:
 
 [Fallback if no established proper noun in abstract]
 Use "[Phenomenon] shows [surprising specific] in [population]" pattern.
-Example: "Short sleepers face 12% higher mortality risk in 6-hour cutoff study" ',
+Example: "Short sleepers face 12% higher mortality risk in 6-hour cutoff study"`,
     '   - fact: one sentence starting with a hook (e.g. "Did you know? ...") — reusable as a social media post',
     '   - body: the 5-section Markdown body (400-800 words). Do not repeat the fact verbatim.',
   ].join('\n');
