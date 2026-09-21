@@ -185,7 +185,7 @@ async function generate(articles: PubmedArticle[], lang: 'ja' | 'en', titleHint:
   Logger.info(`Claude 呼び出し: model=${model}, lang=${lang}, articles=${articles.length}`);
   const res = await client.messages.create({
     model,
-    max_tokens: 8000,
+    max_tokens: 12000,
     system: buildSystemPrompt(lang),
     messages: [{ role: 'user', content: buildUserPrompt(articles, titleHint, query) }],
   });
