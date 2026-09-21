@@ -1,6 +1,24 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
+// FAQPage JSON-LD (Google Rich Result / Featured Snippet 対策)
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'このサイトの目的は何ですか?', acceptedAnswer: { '@type': 'Answer', text: '米国国立医学図書館 (NIH) が運営する PubMed に掲載された査読付き論文 (特にメタアナリシス・レビュー論文) を題材に、心理学・生物学領域の研究を一般読者にも分かりやすい形で紹介することが目的です。' } },
+    { '@type': 'Question', name: '記事はどう作られていますか?', acceptedAnswer: { '@type': 'Answer', text: 'PubMed のレビュー論文プールからランダムに 1 本を選び、その英文 abstract を題材に Anthropic 社の Claude API を用いて日本語と英語の解説記事を別個に生成しています。重訳ではなく、元 abstract から両言語独立に翻案しています。生成された記事は薬機法 NG 表現の自動フィルタを通してから公開しています。' } },
+    { '@type': 'Question', name: '記事の内容は信頼できますか?', acceptedAnswer: { '@type': 'Answer', text: '記事は元論文の abstract に基づいて作られており、本サイトが独自にデータを取得したり医学的助言を行ったりはしていません。また、生成された記事には必ず PMID と元論文の URL を付記しているため、読者は一次情報にいつでもアクセスして確認できます。' } },
+    { '@type': 'Question', name: '記事に間違いがあったらどうすればいいですか?', acceptedAnswer: { '@type': 'Answer', text: '誤訳・誤解釈・事実誤認を発見された場合は、sciencepubmedjp@gmail.com までご一報ください。PMID と該当箇所を添えていただけると確認がスムーズです。確認のうえ、必要に応じて記事の修正・削除を行います。' } },
+    { '@type': 'Question', name: 'AI 生成の記事だから信頼できない、と感じます。', acceptedAnswer: { '@type': 'Answer', text: '生成に AI を活用していること自体は明示しています。本サイトでは、生成プロンプトで「論文に書かれていない断定をしない」ことを明示し、薬機法 NG 表現の自動フィルタを通し、各記事に PMID と原典 URL を必ず付記しています。' } },
+    { '@type': 'Question', name: '健康相談に答えてもらえますか?', acceptedAnswer: { '@type': 'Answer', text: '本サイトは医療・診断・治療を目的としていません。一般教養としての豆知識の紹介のみを行っており、個別の健康相談にはお答えできません。健康に関するご相談は、必ず医師・薬剤師など有資格者にお問い合わせください。' } },
+    { '@type': 'Question', name: '「この食品で痩せる」「この習慣で病気が治る」と書いてほしい。', acceptedAnswer: { '@type': 'Answer', text: '薬機法 (旧薬事法) や景品表示法に抵触する効能効果の表現は、本サイトでは行いません。また、根拠の不十分な「奇跡の食品」「魔法の習慣」を紹介する方針もとっていません。' } },
+    { '@type': 'Question', name: '記事内の Amazon リンクは何ですか?', acceptedAnswer: { '@type': 'Answer', text: 'Amazon アソシエイト・プログラムに参加しており、記事のテーマに関連する書籍を紹介するリンクを掲載しています。リンクをクリックして Amazon で商品をご購入いただくと、本サイト運営者に少額の紹介料が入る仕組みです。この収益は本サイトの維持費用に充てています。' } },
+    { '@type': 'Question', name: '更新頻度は?', acceptedAnswer: { '@type': 'Answer', text: '原則として毎日 1〜2 本程度、新しい記事を公開しています。日本時間の朝 (06 時台) と夕方 (18 時台) を中心に自動生成しています。' } },
+    { '@type': 'Question', name: '記事を引用・転載してもいいですか?', acceptedAnswer: { '@type': 'Answer', text: '短い引用 (出典明示) は問題ありません。記事全文の転載や商用利用については、事前にお問い合わせください。元論文自体の引用ルールは PubMed の各論文のライセンス表記に従ってください。' } },
+  ],
+};
+
 export const prerender = true;
 ---
 <BaseLayout
@@ -8,6 +26,7 @@ export const prerender = true;
   description="PubMed Trivia へのよくある質問と回答。サイトの情報源、編集体制、健康相談への対応、広告とアフィリエイトの方針、誤りの報告方法など、読者からのお問い合わせをまとめました。"
   lang="ja"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
   <article class="guide">
     <h1>よくある質問 (FAQ)</h1>
     <p class="lede">

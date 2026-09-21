@@ -31,6 +31,15 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/png" href="/profile.png" />
+    {/* CWV 対策: 主要外部ホストへ preconnect / dns-prefetch (2026-09-21 追加) */}
+    <link rel="preconnect" href="https://image.moshimo.com" crossorigin />
+    <link rel="preconnect" href="https://af.moshimo.com" crossorigin />
+    <link rel="preconnect" href="https://i.moshimo.com" crossorigin />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://widget.rakuten.co.jp" />
+
     <title>{title}</title>
 
     {/* === Open Graph (Facebook / Threads / LINE 等) === */}
