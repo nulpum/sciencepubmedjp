@@ -64,6 +64,41 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       gtag('config', 'G-PNYCBNKVL9');
     </script>
 
+    {/* Global Moshimo click tracker (2026-09-21 追加)
+        目的: MoshimoBanner の slot-scoped tracker が捕捉できない
+        Rakuten CTA / モーションウィジェット / chip などの クリックも 拾い、
+        Moshimo dashboard の click 数と GA4 の 数字を 一致させる。
+        source 別に集計できるようにする。 */}
+    <script is:inline>
+      (function () {
+        if (window.__moshimoGlobalClickInit) return;
+        window.__moshimoGlobalClickInit = true;
+        function classify(link) {
+          if (link.closest('[data-moshimo-slot]')) return 'banner';
+          if (link.closest('.aff-cta__chip')) return 'chip';
+          if (link.classList && link.classList.contains('aff-cta__btn')) return 'cta_button';
+          if (link.closest('.rakuten-motion') || link.closest('[data-rakuten-widget]')) return 'motion_widget';
+          if (link.closest('.sticky-mobile-cta')) return 'sticky_mobile';
+          return 'other';
+        }
+        document.addEventListener('click', function (ev) {
+          var link = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+          if (!link) return;
+          var href = link.getAttribute('href') || '';
+          if (href.indexOf('af.moshimo.com') < 0 && href.indexOf('moshimo.com') < 0) return;
+          if (typeof gtag !== 'function') return;
+          try {
+            gtag('event', 'moshimo_link_click', {
+              source: classify(link),
+              link_url: href.slice(0, 200),
+              page_path: location.pathname,
+              transport_type: 'beacon',
+            });
+          } catch (e) {}
+        }, { capture: true, passive: true });
+      })();
+    </script>
+
     {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
         HTML タグ認証なら content="..." の値を Search Console 側でコピペ確認用に埋める) */}
     {/* <meta name="google-site-verification" content="ここに認証文字列を入れる" /> */}
