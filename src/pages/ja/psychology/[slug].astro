@@ -130,6 +130,11 @@ export const prerender = true;
         医療助言を目的とするものではありません。研究結果の解釈にあたっては
         <a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a> もご参照ください。
       </p>
+      <p class="eeat-notice">
+        📝 この記事は Claude AI により、上記 PubMed 論文の abstract から 翻案されたものです。
+        翻案プロセス・監修方針・免責は <a href="/ja/editorial-policy/">編集方針</a> に 詳細を掲載しています。
+        誤り・誤訳の 発見は <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> まで。
+      </p>
     </section>
 
     {/* 記事末尾 CTA (原典・免責の後、記事コンテナ内の最下部) */}
@@ -224,6 +229,8 @@ export const prerender = true;
     .article__source h2 { font-size: 1.1rem; margin-top: 0; color: var(--navy); }
     .article__source ul { margin: 8px 0; padding-left: 22px; }
     .article__disclaimer { font-size: 0.85rem; color: var(--muted); margin-top: 12px; }
+    .eeat-notice { font-size: 0.78rem; color: var(--muted); background: #f0f4fa; padding: 10px 14px; border-radius: 6px; margin: 14px 0 0; line-height: 1.7; border-left: 3px solid var(--navy); }
+    .eeat-notice a { color: var(--link); }
 
     /* Note: 旧 .article__cta 系の CSS は AffiliateButtons.astro に移した (component-scoped) */
 

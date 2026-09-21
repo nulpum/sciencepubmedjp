@@ -102,6 +102,25 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
     {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
         HTML タグ認証なら content="..." の値を Search Console 側でコピペ確認用に埋める) */}
     {/* <meta name="google-site-verification" content="ここに認証文字列を入れる" /> */}
+    {/* サイト全体の Organization JSON-LD (E-E-A-T 向け publisher 情報) */}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PubMed Trivia",
+      "url": "https://sciencepubmed.net",
+      "logo": "https://sciencepubmed.net/profile.png",
+      "description": lang === 'ja'
+        ? "PubMed の 査読付き論文を 一般読者向けに 翻案する 科学トリビアサイト。編集方針は https://sciencepubmed.net/ja/editorial-policy/ に開示。"
+        : "A science trivia site adapting peer-reviewed PubMed papers for general readers. Editorial policy: https://sciencepubmed.net/en/editorial-policy/",
+      "sameAs": [
+        "https://x.com/science_pubmed",
+        "https://www.threads.com/@science_pubmed",
+        "https://www.instagram.com/science_pubmed/",
+        "https://zenn.dev/sciencepubmed"
+      ],
+      "email": "sciencepubmedjp@gmail.com",
+      "foundingDate": "2026-05"
+    })} />
   </head>
   <body>
     <header class="site-header">
@@ -155,6 +174,8 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
             <a href="/ja/guide/glossary/">研究用語集</a>
             <span aria-hidden="true">·</span>
             <a href="/ja/guide/faq/">FAQ</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/editorial-policy/">📝 編集方針</a>
           </>
         )}
         <span aria-hidden="true">·</span>

@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="編集方針 ｜ PubMed Trivia"
+  description="PubMed Trivia の編集ポリシー、AI 活用の透明性、出典・免責の考え方、誤り訂正手順など、記事の品質を保つための編集方針をまとめています。"
+  lang="ja"
+>
+  <article class="policy">
+    <h1>編集方針 (Editorial Policy)</h1>
+    <p class="policy__updated">最終更新: 2026-09-21</p>
+
+    <p>
+      PubMed Trivia は、科学の一次情報を 一般読者に 正確に届けることを 目的とした サイトです。
+      本ページでは、当サイトの 記事制作プロセス・品質管理・AI 活用・免責の 考え方を 透明性を持って 開示します。
+    </p>
+
+    <h2>1. 記事の題材</h2>
+    <ul>
+      <li>米国国立医学図書館 (NIH) の 論文データベース <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubMed</a> に 掲載された <strong>査読付き論文</strong> のみを 題材とします。</li>
+      <li>優先度: <strong>系統的レビュー / メタアナリシス &gt; 総説 &gt; ランダム化比較試験 (RCT)</strong>。症例報告・意見記事は扱いません。</li>
+      <li><strong>撤回論文 (Retracted)</strong> は 検出次第 除外します。</li>
+      <li>公開日から 概ね 30 年以内 の 論文を優先します (古典論文の 深掘りは 別枠で 明示)。</li>
+    </ul>
+
+    <h2>2. 制作プロセス</h2>
+    <ol>
+      <li><strong>選定</strong>: PubMed の カテゴリ別クエリ で 該当論文の PMID を ランダム抽出。既生成済みは 除外。</li>
+      <li><strong>取得</strong>: NIH E-utilities API で abstract・雑誌・出版年 を 取得。</li>
+      <li><strong>翻案</strong>: Anthropic 社 <a href="https://www.anthropic.com/claude" rel="noopener" target="_blank">Claude</a> (Sonnet 4.5 / Haiku 4.5) を 用いて、abstract を 一般読者向けに 翻案。日英で 別個生成し、重訳は行いません。</li>
+      <li><strong>校閲</strong>: NG 語チェック (薬機法 抵触表現、断定的推奨、誤訳注意語 等) を プログラム的に 実施。ヒットしたら 再生成。</li>
+      <li><strong>公開</strong>: サイト・SNS・XML sitemap に 反映。</li>
+    </ol>
+
+    <h2>3. AI 活用の 透明性</h2>
+    <p>
+      本サイトの 記事は <strong>AI (Claude by Anthropic) を 補助として 翻案</strong> しています。
+      これは 従来型の 翻訳・要約作業を AI が代替することで、多量の論文を 効率的に紹介する ためです。
+    </p>
+    <ul>
+      <li>元論文の <strong>abstract の 事実関係を 逸脱しない</strong> よう、プロンプトで 明示的に 制約しています。</li>
+      <li><strong>「相関 (association)」を「因果 (causation)」と 訳さない</strong> ルールを 徹底しています。</li>
+      <li>薬機法・医療広告ガイドラインに 抵触する表現 (効く/治る/予防する 等) は NG 語として 弾いています。</li>
+      <li>AI の 誤りが 混入する可能性は ゼロではないため、<strong>各記事に PMID・原典 URL</strong> を 併記し、読者が 必ず 一次情報を 確認できる 状態を保っています。</li>
+    </ul>
+
+    <h2>4. 深掘りレビュー記事 について</h2>
+    <p>
+      通常の 単一論文由来の 記事とは 別に、特定テーマで <strong>10 本前後の 系統的レビュー / メタアナリシスを 統合</strong> した「エビデンスレビュー記事」を 月 1-2 本 公開しています。
+      これらは <a href="/ja/archive/">アーカイブ</a> や 検索から 見つけられます。
+    </p>
+
+    <h2>5. 免責事項 (医療情報)</h2>
+    <p>
+      本サイトの 情報は <strong>一般教養としての豆知識</strong> であり、医学的助言・診断・治療を 目的とするものではありません。
+    </p>
+    <ul>
+      <li>健康・医療に関する 判断は 必ず 医師・薬剤師 等の 有資格者に 相談してください。</li>
+      <li>研究結果の 解釈には <a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a> も 併せて 参照してください。</li>
+      <li>個別の 疾患名・薬剤名・治療法に 関する 効能効果は 記事内で 断定しません。</li>
+    </ul>
+
+    <h2>6. 誤り訂正のプロセス</h2>
+    <p>
+      記事に 事実誤認・誤訳・出典誤り が あれば、<a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> まで ご連絡ください。
+      確認後、記事本文に 訂正の 追記または 削除を行います。重大な誤りは 訂正日を 記事末尾に 明示します。
+    </p>
+
+    <h2>7. 広告・アフィリエイト</h2>
+    <p>
+      本サイトは Google AdSense・Amazon アソシエイト・もしもアフィリエイト を通じて 広告を 掲載しています。
+      詳細は <a href="/ja/privacy/">プライバシーポリシー</a> をご覧ください。<strong>広告リンクの 有無や 位置が 記事の 内容・結論に 影響することは ありません</strong>。
+    </p>
+
+    <h2>8. 運営者情報</h2>
+    <ul>
+      <li>サイト名: PubMed Trivia</li>
+      <li>運営: PubMed Trivia 編集部</li>
+      <li>連絡先: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a></li>
+      <li>SNS:
+        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X (@science_pubmed)</a> /
+        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a> /
+        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
+      </li>
+    </ul>
+  </article>
+
+  <style>
+    .policy { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+    .policy h1 { color: var(--navy); font-size: 1.8rem; margin-bottom: 8px; }
+    .policy__updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 24px; }
+    .policy h2 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin-top: 32px;
+      padding-left: 10px;
+      border-left: 4px solid var(--navy);
+    }
+    .policy p, .policy ul, .policy ol { line-height: 1.85; }
+    .policy ul, .policy ol { padding-left: 24px; }
+    .policy li { margin-bottom: 8px; }
+    .policy a { color: var(--link); }
+  </style>
+</BaseLayout>

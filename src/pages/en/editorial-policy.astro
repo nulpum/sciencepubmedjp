@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="Editorial Policy | PubMed Trivia"
+  description="Editorial policy for PubMed Trivia — how we select papers, our use of AI, transparency about sources, and our disclaimer and correction process."
+  lang="en"
+>
+  <article class="policy">
+    <h1>Editorial Policy</h1>
+    <p class="policy__updated">Last updated: 2026-09-21</p>
+
+    <p>
+      PubMed Trivia exists to deliver primary science literature to general readers, accurately.
+      This page discloses, transparently, our editorial process, quality controls, use of AI, and disclaimers.
+    </p>
+
+    <h2>1. Source material</h2>
+    <ul>
+      <li>Every article is based on <strong>peer-reviewed papers</strong> from the NIH database <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubMed</a>.</li>
+      <li>Priority: <strong>systematic reviews / meta-analyses &gt; narrative reviews &gt; RCTs</strong>. Case reports and opinion pieces are excluded.</li>
+      <li><strong>Retracted papers</strong> are excluded once flagged in metadata.</li>
+      <li>Preference is given to papers published within the last ~30 years (classic-paper deep dives are labeled explicitly).</li>
+    </ul>
+
+    <h2>2. Production pipeline</h2>
+    <ol>
+      <li><strong>Selection</strong>: PubMed E-utilities are queried per category, sampled at random, and de-duplicated against already-published articles.</li>
+      <li><strong>Fetch</strong>: Abstract, journal, publication year via NIH E-utilities.</li>
+      <li><strong>Adaptation</strong>: <a href="https://www.anthropic.com/claude" rel="noopener" target="_blank">Anthropic's Claude</a> (Sonnet 4.5 / Haiku 4.5) adapts the abstract for general readers. English and Japanese are generated independently — no re-translation.</li>
+      <li><strong>Post-check</strong>: NG-word screening (misleading efficacy claims, unqualified recommendations, causal overreach). Failures trigger regeneration.</li>
+      <li><strong>Publication</strong>: Site, SNS, and XML sitemap.</li>
+    </ol>
+
+    <h2>3. AI use — full disclosure</h2>
+    <p>
+      Articles on this site are <strong>adapted with AI (Claude by Anthropic) as an assistant</strong>. AI replaces conventional translation/summarization labor so a larger volume of papers can be surfaced efficiently.
+    </p>
+    <ul>
+      <li>Prompts explicitly constrain the model to <strong>facts within the source abstract</strong>.</li>
+      <li>The rule <strong>"do not translate association as causation"</strong> is enforced.</li>
+      <li>Efficacy claims (e.g. "cures", "prevents", "guaranteed") are blocked by NG-word filters.</li>
+      <li>AI errors are possible in principle, so <strong>every article carries the source PMID and PubMed URL</strong>, letting readers verify the primary source directly.</li>
+    </ul>
+
+    <h2>4. Deep-dive evidence reviews</h2>
+    <p>
+      In addition to single-paper articles, we publish 1-2 <strong>evidence-review articles</strong> per month that synthesize ~10 systematic reviews / meta-analyses on one theme. These can be found via <a href="/en/archive/">archive</a> or search.
+    </p>
+
+    <h2>5. Medical disclaimer</h2>
+    <p>
+      Content here is <strong>general-education trivia</strong>, not medical advice, diagnosis, or treatment.
+    </p>
+    <ul>
+      <li>For health decisions, consult a qualified professional (physician, pharmacist).</li>
+      <li>Statements about specific diseases, drugs, or interventions are hedged; efficacy is not asserted.</li>
+    </ul>
+
+    <h2>6. Corrections</h2>
+    <p>
+      For factual errors, mistranslations, or bad citations, email <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a>.
+      We will annotate or remove content after verification. Substantive corrections are dated at the bottom of the article.
+    </p>
+
+    <h2>7. Ads and affiliate links</h2>
+    <p>
+      This site displays ads via Google AdSense, Amazon Associates, and Moshimo Affiliate. See our <a href="/en/privacy/">privacy policy</a> for details.
+      <strong>The presence or placement of affiliate links has no influence on the content or conclusions of an article.</strong>
+    </p>
+
+    <h2>8. Publisher information</h2>
+    <ul>
+      <li>Site: PubMed Trivia</li>
+      <li>Publisher: PubMed Trivia Editorial Team</li>
+      <li>Contact: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a></li>
+      <li>Social:
+        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X (@science_pubmed)</a> /
+        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a> /
+        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
+      </li>
+    </ul>
+  </article>
+
+  <style>
+    .policy { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+    .policy h1 { color: var(--navy); font-size: 1.8rem; margin-bottom: 8px; }
+    .policy__updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 24px; }
+    .policy h2 { color: var(--navy); font-size: 1.2rem; margin-top: 32px; padding-left: 10px; border-left: 4px solid var(--navy); }
+    .policy p, .policy ul, .policy ol { line-height: 1.85; }
+    .policy ul, .policy ol { padding-left: 24px; }
+    .policy li { margin-bottom: 8px; }
+    .policy a { color: var(--link); }
+  </style>
+</BaseLayout>
