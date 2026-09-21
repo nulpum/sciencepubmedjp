@@ -17,6 +17,13 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E8%2585%25B8%25E5%2586%2585%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25A9%2B%25E3%2583%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2598%25E3%2583%25AB%25E3%2582%25B9%2B%25E3%2581%2586%25E3%2581%25A4%26f%3D1"
   - title: "ノイキャンイヤホン (集中読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubmed-22&i=electronics"
+tags:
+  - "depression"
+  - "anxiety"
+  - "stress"
+  - "brain"
+  - "gut-microbiome"
+  - "immunity"
 ---
 
 ## この記事で見ていくこと

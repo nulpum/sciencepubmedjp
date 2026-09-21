@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { TAGS, getTag } from '../../../config/tags';
+
+export async function getStaticPaths() {
+  const psy = await getCollection('en_psychology');
+  const bio = await getCollection('en_biology');
+  const all = [
+    ...psy.map((p) => ({ ...p, cat: 'psychology' as const })),
+    ...bio.map((p) => ({ ...p, cat: 'biology' as const })),
+  ];
+  return TAGS.map((tag) => ({
+    params: { slug: tag.id },
+    props: {
+      tag,
+      articles: all
+        .filter((p) => (p.data.tags ?? []).includes(tag.id))
+        .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1)),
+    },
+  }));
+}
+
+const { tag, articles } = Astro.props as {
+  tag: { id: string; labels: { ja: string; en: string }; description?: { ja?: string; en?: string } };
+  articles: Array<{ id: string; cat: 'psychology' | 'biology'; data: { title: string; fact: string; journal?: string; generated_at: string } }>;
+};
+
+const langCode = 'en';
+const displayLabel = tag.labels[langCode as 'ja' | 'en'];
+const description = tag.description?.[langCode as 'ja' | 'en'] ?? '';
+
+export const prerender = true;
+---
+<BaseLayout
+  title={`${displayLabel} — Tags (${articles.length} articles)`}
+  description={description || `${displayLabel} タグ が付いた 記事一覧`}
+  lang="en"
+>
+  <div class="tag-page">
+    <header class="tag-page__header">
+      <p class="tag-page__breadcrumb">
+        <a href="/en/">Home</a> ›
+        <a href="/en/tag/">Tags</a> ›
+        #{displayLabel}
+      </p>
+      <h1>#{displayLabel} <span class="count">({articles.length})</span></h1>
+      {description && <p class="tag-page__desc">{description}</p>}
+    </header>
+
+    {articles.length === 0 ? (
+      <p class="tag-page__empty">No articles for this tag yet.</p>
+    ) : (
+      <ul class="article-list">
+        {articles.map((p) => (
+          <li class="article-item">
+            <a href={`/en/${p.cat}/${p.id}/`} class="article-item__link">
+              <div class="article-item__meta">
+                <span class={`badge badge--${p.cat}`}>{p.cat === 'psychology' ? 'Psychology' : 'Biology'}</span>
+                {p.data.journal && <span class="journal">{p.data.journal}</span>}
+              </div>
+              <h2 class="article-item__title">{p.data.title}</h2>
+              <p class="article-item__fact">{p.data.fact}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    <p class="tag-page__back"><a href="/en/tag/">← Tags</a></p>
+  </div>
+
+  <style>
+    .tag-page { max-width: 800px; margin: 0 auto; padding: 24px 20px 40px; }
+    .tag-page__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .tag-page__breadcrumb a { color: var(--muted); }
+    .tag-page__header h1 { font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; }
+    .tag-page__header .count { color: var(--muted); font-weight: 500; font-size: 1.1rem; }
+    .tag-page__desc { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+    .tag-page__empty { text-align: center; color: var(--muted); padding: 40px 20px; background: #fafbfc; border-radius: 10px; }
+    .article-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .article-item { border: 1px solid #e5e9f2; border-radius: 10px; background: white; transition: box-shadow 0.15s, border-color 0.15s; }
+    .article-item:hover { border-color: var(--navy); box-shadow: 0 4px 14px rgba(26, 54, 93, 0.08); }
+    .article-item__link { display: block; padding: 14px 18px; text-decoration: none; color: var(--navy); }
+    .article-item__meta { display: flex; gap: 10px; align-items: center; font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; color: white; }
+    .badge--psychology { background: #7c3aed; }
+    .badge--biology { background: #059669; }
+    .journal { font-style: italic; }
+    .article-item__title { font-size: 1rem; margin: 0 0 6px; line-height: 1.4; color: var(--navy); }
+    .article-item__fact { font-size: 0.86rem; margin: 0; color: #4a5568; line-height: 1.5; }
+    .tag-page__back { margin-top: 28px; font-size: 0.9rem; }
+    .tag-page__back a { color: var(--link); }
+  </style>
+</BaseLayout>

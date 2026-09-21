@@ -17,6 +17,9 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3DHSP%2B%25E3%2583%258F%25E3%2582%25A4%25E3%2583%25AA%25E3%2583%25BC%2B%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2596%26f%3D1"
   - title: "書見台 (論文を開いたまま読める)"
     url: "https://www.amazon.co.jp/s?k=%E6%9B%B8%E8%A6%8B%E5%8F%B0&tag=sciencepubmed-22&i=office-products"
+tags:
+  - "hsp"
+  - "brain"
 ---
 
 ## この記事で見ていくこと

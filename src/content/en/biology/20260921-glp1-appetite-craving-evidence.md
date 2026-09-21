@@ -15,6 +15,11 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
   - title: "Clip-on book light"
     url: "https://www.amazon.co.jp/s?k=book%20light%20clip%20led&tag=sciencepubmed-22&i=electronics"
+tags:
+  - "brain"
+  - "dopamine"
+  - "obesity"
+  - "glp1"
 ---
 
 ## What we're looking at

@@ -139,6 +139,15 @@ export const prerender = true;
   {/* Article footer AdSense (readers reaching end of article) */}
   <AdUnit slot="articleFooter" />
 
+
+  {post.data.tags && post.data.tags.length > 0 && (
+    <div class="article__tags">
+      {post.data.tags.map((tid: string) => (
+        <a href={`/en/tag/${tid}/`} class="article__tag" data-tag={tid}>#{tid}</a>
+      ))}
+    </div>
+  )}
+
   {related.length > 0 && (
     <section class="related-section">
       <h2>More psychology trivia</h2>

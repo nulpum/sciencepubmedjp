@@ -17,6 +17,8 @@ const articleSchema = z.object({
   affiliate_links: z
     .array(z.object({ title: z.string(), url: z.string().url() }))
     .optional(),
+  // 2026-09: 自動タグ付け (src/config/tags.ts の TAGS ID を string で保持)
+  tags: z.array(z.string()).optional(),
 });
 
 const ja_psychology = defineCollection({

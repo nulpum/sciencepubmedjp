@@ -176,6 +176,15 @@ export const prerender = true;
     </section>
   )}
 
+
+  {post.data.tags && post.data.tags.length > 0 && (
+    <div class="article__tags">
+      {post.data.tags.map((tid: string) => (
+        <a href={`/ja/tag/${tid}/`} class="article__tag" data-tag={tid}>#{tid}</a>
+      ))}
+    </div>
+  )}
+
   <section class="lab-widget">
     <p class="lab-widget__label">🔬 このテーマの論文をさらに探す</p>
     <p class="lab-widget__body">
@@ -264,6 +273,10 @@ export const prerender = true;
       background: #f0f4fa;
       border-radius: 8px;
     }
+    
+    .article__tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 0; padding: 12px 0 0; border-top: 1px solid #e5e9f2; }
+    .article__tag { display: inline-block; padding: 4px 10px; background: #f0f4fa; color: var(--navy); border-radius: 999px; font-size: 0.78rem; text-decoration: none; font-weight: 600; transition: background 0.12s; }
+    .article__tag:hover { background: var(--navy); color: white; }
     .guide-cta h2 { font-size: 1.1rem; color: var(--navy); margin-top: 0; }
     .guide-cta ul { margin: 8px 0; padding-left: 22px; line-height: 1.9; }
   </style>

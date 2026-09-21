@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { TAGS } from '../../../config/tags';
+
+const psy = await getCollection('ja_psychology');
+const bio = await getCollection('ja_biology');
+const all = [...psy, ...bio];
+
+// tag ID → 記事数 の Map
+const counts = new Map<string, number>();
+for (const p of all) {
+  for (const t of p.data.tags ?? []) counts.set(t, (counts.get(t) ?? 0) + 1);
+}
+
+const displayed = TAGS
+  .map((t) => ({ tag: t, count: counts.get(t.id) ?? 0 }))
+  .filter((x) => x.count > 0)
+  .sort((a, b) => b.count - a.count);
+
+export const prerender = true;
+---
+<BaseLayout title="タグ一覧 ｜ PubMed Trivia" description="テーマ別に記事を探せます。各タグをクリックすると 該当記事の一覧が表示されます。" lang="ja">
+  <div class="tag-index">
+    <header class="tag-index__header">
+      <p class="tag-index__breadcrumb"><a href="/ja/">ホーム</a> › タグ一覧</p>
+      <h1>🏷️ タグ一覧</h1>
+      <p class="tag-index__intro">テーマ別に記事を探せます。各タグをクリックすると 該当記事の一覧が表示されます。</p>
+    </header>
+
+    <ul class="tag-cloud">
+      {displayed.map(({ tag, count }) => (
+        <li class="tag-cloud__item">
+          <a href={`/ja/tag/${tag.id}/`}>
+            <span class="tag-name">#{tag.labels['ja']}</span>
+            <span class="tag-count">{count}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <style>
+    .tag-index { max-width: 800px; margin: 0 auto; padding: 24px 20px 40px; }
+    .tag-index__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .tag-index__breadcrumb a { color: var(--muted); }
+    .tag-index__header h1 { font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; }
+    .tag-index__intro { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+
+    .tag-cloud { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag-cloud__item a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px 8px 16px;
+      background: white;
+      border: 1px solid #d5dceb;
+      border-radius: 999px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+    }
+    .tag-cloud__item a:hover {
+      transform: translateY(-1px);
+      border-color: var(--navy);
+      box-shadow: 0 4px 12px rgba(26,54,93,0.08);
+    }
+    .tag-name { font-size: 0.95rem; }
+    .tag-count {
+      background: var(--navy);
+      color: white;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+  </style>
+</BaseLayout>
