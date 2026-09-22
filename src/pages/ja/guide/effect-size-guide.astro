@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+export const prerender = true;
+---
+<BaseLayout
+  title="効果量ガイド — Cohen's d / OR / RR の 読み方 ｜ PubMed Trivia"
+  description="p 値だけでは分からない「効果の大きさ」を測る指標 Cohen's d、オッズ比 (OR)、リスク比 (RR)、NNT の実践ガイド。臨床論文を鵜呑みにしないため。"
+  lang="ja"
+>
+  <article class="guide">
+    <p class="guide__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › 効果量ガイド</p>
+    <h1>効果量ガイド — p 値の 次に 読むべき 指標</h1>
+    <p class="guide__lede">
+      「p&lt;0.05 で 統計的有意」と 論文で 見ても、それが <strong>実生活で 役立つ大きさ か</strong> は 別問題です。
+      本ガイドは、効果量 (effect size) の 主要指標 4 種を 実例付きで 解説します。
+    </p>
+
+    <nav class="guide__toc"><p class="guide__toc-title">目次</p>
+      <ol>
+        <li><a href="#why">なぜ 効果量が 必要か</a></li>
+        <li><a href="#cohens-d">Cohen's d (連続変数の 差)</a></li>
+        <li><a href="#or">オッズ比 (OR)</a></li>
+        <li><a href="#rr">リスク比 (RR) と ハザード比 (HR)</a></li>
+        <li><a href="#nnt">NNT (Number Needed to Treat)</a></li>
+        <li><a href="#practical">実際に 論文を 読む時の チェック</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="why">1. なぜ 効果量が 必要か</h2>
+    <p>
+      p 値は 「観察された差が 偶然で 起きた確率」を 示しますが、<strong>差の 大きさは 何も 教えてくれません</strong>。
+      サンプルサイズが 巨大なら 些細な差でも p&lt;0.001 になりますし、逆に 効果が 大きくても 小サンプルなら p 値が 大きくなります。
+    </p>
+    <p class="guide__callout">
+      💡 <strong>覚え方</strong>: 「p 値 = 差が ある/ない」「効果量 = 差が どれくらい」
+    </p>
+
+    <h2 id="cohens-d">2. Cohen's d (連続変数の 差)</h2>
+    <p>2 群の 平均差を 標準偏差で 割ったもの。心理学・教育・スポーツ科学 で 頻出。</p>
+    <table class="guide__table">
+      <thead><tr><th>Cohen's d</th><th>解釈</th><th>実例</th></tr></thead>
+      <tbody>
+        <tr><td>0.2</td><td>小 (small)</td><td>ちょっと違う。集団平均は 2 割程度 重なる差の 減少</td></tr>
+        <tr><td>0.5</td><td>中 (medium)</td><td>目で見て 分かる差</td></tr>
+        <tr><td>0.8</td><td>大 (large)</td><td>明らかな差、実用的にも 有用</td></tr>
+        <tr><td>1.2+</td><td>非常に大</td><td>薬物療法の 目安に 匹敵</td></tr>
+      </tbody>
+    </table>
+    <p><strong>例</strong>: 有酸素運動の うつ症状改善 → Cohen's d ≈ 0.5-0.7 (中~大)</p>
+
+    <h2 id="or">3. オッズ比 (OR)</h2>
+    <p>
+      2 群の 「イベント/非イベント の 比」の 比。ケースコントロール研究・ロジスティック回帰で 頻出。
+    </p>
+    <ul>
+      <li><strong>OR = 1</strong>: 差なし</li>
+      <li><strong>OR = 2</strong>: 曝露群で イベントが 2 倍起きやすい</li>
+      <li><strong>OR = 0.5</strong>: 曝露群で イベントが 半減</li>
+      <li><strong>95% CI が 1 を またぐ</strong>: 有意でない</li>
+    </ul>
+    <p class="guide__callout">
+      ⚠️ <strong>注意</strong>: イベント発生率が 高い場合 (10% 超)、OR は RR より 極端に 見える。
+      「OR 2.5」と「RR 2.5」は 数学的に 別物。混同されている 論文も 多い。
+    </p>
+
+    <h2 id="rr">4. リスク比 (RR) と ハザード比 (HR)</h2>
+    <p>
+      <strong>RR</strong>: 2 群の 発症率の 比 (コホート研究、RCT で 使う)。<br />
+      <strong>HR</strong>: 単位時間あたりの 発症リスクの 比 (生存分析で 使う)。
+    </p>
+    <ul>
+      <li><strong>RR = 1.5</strong>: 曝露群 は 1.5 倍 発症しやすい</li>
+      <li><strong>相対 vs 絶対</strong>: 「リスク 50% 増」でも、元が 1% なら 実質 0.5% 増</li>
+    </ul>
+
+    <h2 id="nnt">5. NNT (Number Needed to Treat)</h2>
+    <p>1 人の 有害イベント を 防ぐ ために、何人 治療すれば 良いか。</p>
+    <p><strong>例</strong>: スタチンの 心血管イベント予防 → NNT 約 100 (100 人 治療して 1 人 助かる)</p>
+    <p>NNT が 小さい = 効果的、大きい = 全員 治療する 意味が 薄い。</p>
+
+    <h2 id="practical">6. 実際に 論文を 読む時の チェック</h2>
+    <ul>
+      <li>p 値だけでなく <strong>効果量 + 95% CI</strong> を セットで 確認</li>
+      <li>相対リスク だけでなく <strong>絶対リスク</strong> を 見る (ベースが 分からないと 判断できない)</li>
+      <li>RCT なら <strong>NNT/NNH</strong> があると 実用性が わかる</li>
+      <li>効果量が 小さくても、集団全体では 意味ある場合あり (例: 血圧の 5mmHg 減 → 心血管イベント 10% 減)</li>
+    </ul>
+
+    <p style="margin-top: 24px;">
+      関連:
+      <a href="/ja/guide/paper-critique/">✔️ 論文を 批判的に 読む チェックリスト</a> ／
+      <a href="/ja/guide/how-to-read-research/">📖 論文の 読み方ガイド</a> ／
+      <a href="/ja/guide/glossary/">📚 研究用語集</a>
+    </p>
+
+    <p class="guide__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .guide { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide__breadcrumb a { color: var(--muted); }
+    .guide h1 { font-size: 1.85rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .guide__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .guide__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .guide__toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .guide__toc a { color: var(--link); }
+    .guide h2 { font-size: 1.25rem; color: var(--navy); margin: 32px 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .guide p, .guide ul, .guide ol { line-height: 1.85; }
+    .guide__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .guide__table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .guide__table th, .guide__table td { border: 1px solid #d5dceb; padding: 8px 12px; text-align: left; }
+    .guide__table th { background: #f0f4fa; color: var(--navy); }
+    .guide__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

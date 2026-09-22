@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('ja_psychology');
+const relatedTags = ['cbt', 'depression', 'anxiety', 'adhd', 'ptsd'];
+const related = psy
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="認知行動療法 (CBT) を エビデンスで 理解する ｜ PubMed Trivia"
+  description="CBT の 仕組み、うつ・不安・慢性痛・ADHD への 応用、効果量、限界を 系統的レビュー・メタ解析で 整理した ハブページ。"
+  lang="ja"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/hub/">ハブ</a> › 🧘 CBT ハブ</p>
+      <h1>🧘 認知行動療法 (CBT) を エビデンスで 理解する</h1>
+      <p class="hub__lede">
+        認知行動療法 (Cognitive Behavioral Therapy, CBT) は、うつ病・不安障害・慢性痛 など 幅広い 症状に
+        <strong>薬物療法と 同等 or 上回る 効果</strong> が 系統的レビューで 示されている 心理療法です。
+        本ハブでは、CBT の 仕組み、疾患別の エビデンス、限界を 整理しました。
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="目次">
+      <p class="hub__toc-title">目次</p>
+      <ol>
+        <li><a href="#what">CBT とは 何か</a></li>
+        <li><a href="#depression">うつ病への 効果</a></li>
+        <li><a href="#anxiety">不安障害への 効果</a></li>
+        <li><a href="#adhd-pain">ADHD・慢性痛への 応用</a></li>
+        <li><a href="#online">オンライン CBT (iCBT)</a></li>
+        <li><a href="#limits">限界と 適応外</a></li>
+        <li><a href="#learn-more">更に 学ぶには</a></li>
+      </ol>
+    </nav>
+
+    <section id="what">
+      <h2>1. CBT とは 何か</h2>
+      <p>
+        「認知 (考え方)」と 「行動」を 変えることで、感情・体調・生活の 質を 改善する 構造化された 心理療法です。
+        通常 <strong>週 1 回 × 12-20 回</strong> の セッションで、宿題 (行動実験・思考記録) が 特徴。
+      </p>
+      <p>技法の 例:</p>
+      <ul>
+        <li><strong>思考記録表</strong>: 自動思考を 書き出し、認知の 歪みに 気付く</li>
+        <li><strong>行動実験</strong>: 「〇〇したら 悪いことが 起きる」の 予想を 実際に 検証</li>
+        <li><strong>暴露療法</strong>: 恐怖対象に 段階的に 曝露 (不安障害・PTSD)</li>
+        <li><strong>行動活性化</strong>: 気分が 下がっても 意図的に 活動を 増やす (うつ病)</li>
+      </ul>
+    </section>
+
+    <section id="depression">
+      <h2>2. うつ病への 効果</h2>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー</p>
+        <h3><a href="/ja/psychology/20260922-cognitive-behavioral-therapy-evidence/">認知行動療法（CBT）、うつ・不安への効果を臨床エビデンスで読み解く</a></h3>
+        <p class="hub__feature-desc">
+          9 本の 系統的レビューを 統合。うつ病・不安障害・PTSD への 効果量、抗うつ薬との 比較、
+          再発予防効果、オンライン CBT の 台頭 まで。
+        </p>
+      </div>
+    </section>
+
+    <section id="anxiety">
+      <h2>3. 不安障害への 効果</h2>
+      <p>
+        パニック障害・社交不安障害・全般性不安障害・強迫症・PTSD の いずれにも CBT は 有効です。
+        特に <strong>曝露反応妨害 (ERP)</strong> は 強迫症の 第一選択治療。
+      </p>
+      <p>関連: <a href="/ja/psychology/20260922-anxiety-disorders-treatment-evidence/">不安障害治療 の 深掘り</a></p>
+    </section>
+
+    <section id="adhd-pain">
+      <h2>4. ADHD・慢性痛への 応用</h2>
+      <ul>
+        <li><strong>大人 ADHD</strong>: 薬物療法と 併用で 実行機能・時間管理を 改善。<a href="/ja/psychology/20260921-adult-adhd-evidence/">大人ADHD 深掘り →</a></li>
+        <li><strong>慢性痛</strong>: 痛みの 認知 (破局化) を 変え、活動性を 保つ。<a href="/ja/psychology/20260922-chronic-pain-psychology-evidence/">慢性痛×心理療法 深掘り →</a></li>
+      </ul>
+    </section>
+
+    <section id="online">
+      <h2>5. オンライン CBT (iCBT)</h2>
+      <p>
+        インターネット・アプリ経由の 自習型 CBT (iCBT) は、対面 CBT に 匹敵する 効果が 一部の 症状で 示されています。
+        <strong>導入コストが 低い</strong> のが 大きな 利点。
+      </p>
+    </section>
+
+    <section id="limits">
+      <h2>6. 限界と 適応外</h2>
+      <ul>
+        <li>重症の 精神病症状 (統合失調症の 陽性症状 等) には 単独では 不十分</li>
+        <li>治療関係の 構築が 前提。相性が 悪い セラピスト との CBT は 効果薄い</li>
+        <li>宿題を 実行する モチベーションが 必要 (実行機能が 大幅に 低下している 場合 難しい)</li>
+      </ul>
+    </section>
+
+    <p><strong>その他 の 関連記事 (最新順):</strong></p>
+    <ul class="hub__link-list">
+      {related.filter((p) => (p.data.tags ?? []).includes('cbt') && !p.id.includes('cognitive-behavioral-therapy-evidence')).slice(0, 10).map((p) => (
+        <li><a href={`/ja/psychology/${p.id}/`}>{p.data.title}</a></li>
+      ))}
+    </ul>
+
+    <section id="learn-more">
+      <h2>7. 更に 学ぶには</h2>
+      <ul>
+        <li><a href="/ja/hub/adhd/">🧠 ADHD ハブ</a></li>
+        <li><a href="/ja/guide/how-to-read-research/">📖 論文の 読み方ガイド</a></li>
+        <li><a href="/ja/guide/effect-size-guide/">📊 効果量ガイド</a></li>
+        <li><a href="/ja/tag/cbt/">🏷️ #cbt タグの 全記事</a></li>
+      </ul>
+    </section>
+
+    <p class="hub__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub h2 { font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .hub h3 { font-size: 1.05rem; color: var(--navy); margin: 20px 0 8px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul, .hub ol { line-height: 1.9; }
+    .hub__feature { background: linear-gradient(135deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+    .hub__feature-tag { font-size: 0.72rem; color: #a26a00; font-weight: 700; letter-spacing: 0.05em; margin: 0 0 6px; }
+    .hub__feature h3 { margin: 0 0 8px; }
+    .hub__feature h3 a { color: var(--navy); text-decoration: none; }
+    .hub__feature h3 a:hover { text-decoration: underline; }
+    .hub__feature-desc { font-size: 0.9rem; color: #4a5568; margin: 4px 0 0; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

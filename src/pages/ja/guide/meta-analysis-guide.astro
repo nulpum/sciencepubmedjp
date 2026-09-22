@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+export const prerender = true;
+---
+<BaseLayout
+  title="メタ解析ガイド — 仕組みと 読み方 ｜ PubMed Trivia"
+  description="複数の研究を統合するメタ解析 (meta-analysis) の 仕組み、forest plot の 読み方、異質性 I²、出版バイアス の 実践ガイド。エビデンス階層で 最も 強い研究の 見方。"
+  lang="ja"
+>
+  <article class="guide">
+    <p class="guide__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › メタ解析ガイド</p>
+    <h1>メタ解析ガイド — 「最強のエビデンス」の 見方</h1>
+    <p class="guide__lede">
+      メタ解析 (meta-analysis) は 複数の研究を 統計的に 統合する 手法で、EBM (根拠に基づく医療) の
+      エビデンス階層で <strong>最上位</strong> に 位置します。ただし メタ解析 なら 何でも 信頼できる わけではなく、
+      読み方に コツが あります。本ガイドは 実践的な 見方 を まとめました。
+    </p>
+
+    <nav class="guide__toc"><p class="guide__toc-title">目次</p>
+      <ol>
+        <li><a href="#what">メタ解析とは 何か</a></li>
+        <li><a href="#how">仕組み: 効果を 統合する</a></li>
+        <li><a href="#forest">Forest plot の 読み方</a></li>
+        <li><a href="#heterogeneity">異質性 (I²) の 読み方</a></li>
+        <li><a href="#publication-bias">出版バイアスの 検出</a></li>
+        <li><a href="#quality">メタ解析の 質を 評価する</a></li>
+        <li><a href="#limits">メタ解析の 限界</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="what">1. メタ解析とは 何か</h2>
+    <p>
+      同じ問い (例: 「運動は うつ症状を 改善するか?」) について、複数の 独立した研究を 統計的に 統合し、
+      <strong>1 つの 総合効果量</strong> を 算出する 研究手法です。系統的レビュー (systematic review) の
+      統計的部分と 考えると 分かりやすいでしょう。
+    </p>
+    <p><strong>メリット</strong>:</p>
+    <ul>
+      <li>個別研究の n が 少なくても、統合すれば 検出力が 増す</li>
+      <li>研究間の 結果の ばらつきを 定量化できる</li>
+      <li>効果の 大きさが 精度高く 推定できる</li>
+    </ul>
+
+    <h2 id="how">2. 仕組み: 効果を 統合する</h2>
+    <p>
+      各研究から 効果量 (Cohen's d, OR, RR 等) と その 標準誤差 を 抽出し、
+      <strong>研究の 精度で 重み付けした 加重平均</strong> を 計算します。
+      大きな試験 (n が 多い) や 精度が 高い試験 の 結果ほど 総合値に 強く影響します。
+    </p>
+    <p>統合モデルは 2 種類:</p>
+    <ul>
+      <li><strong>固定効果モデル (fixed effect)</strong>: 全研究が 同じ「真の効果」を 測っている前提</li>
+      <li><strong>ランダム効果モデル (random effect)</strong>: 研究ごとに 効果が 異なる可能性を 想定 (現実的)</li>
+    </ul>
+    <p class="guide__callout">
+      💡 現代の メタ解析は <strong>ランダム効果モデル が 標準</strong>。固定効果は 異質性 (次項) が 極めて 低い時のみ 推奨。
+    </p>
+
+    <h2 id="forest">3. Forest plot の 読み方</h2>
+    <p>
+      メタ解析の 結果を 視覚化する 標準的な 図。各研究が 1 行で、右端に 統合結果 (菱形マーカー) が 表示されます。
+    </p>
+    <ul>
+      <li><strong>横線</strong>: 各研究の 効果量 と 95% CI (信頼区間)</li>
+      <li><strong>四角</strong>: 効果量の 点推定 (四角の 大きさ = 研究の 重み)</li>
+      <li><strong>縦線</strong>: 「効果なし」の 位置 (通常 OR/RR = 1、Cohen's d = 0)</li>
+      <li><strong>菱形</strong>: 統合効果と その 95% CI (幅 = 精度)</li>
+    </ul>
+    <p><strong>読み方のコツ</strong>:</p>
+    <ul>
+      <li>個別研究の 横線が <em>「効果なし」の 縦線を またぐ</em> = その研究では 有意でない</li>
+      <li>菱形が 縦線から 完全に 離れている = 統合で 有意</li>
+      <li>個別研究の 位置が 大きく バラバラ = 異質性が 高い (次項)</li>
+    </ul>
+
+    <h2 id="heterogeneity">4. 異質性 (I²) の 読み方</h2>
+    <p>
+      研究間の 結果の ばらつきを 表す指標。0-100% で 表現され、以下の 目安:
+    </p>
+    <table class="guide__table">
+      <thead><tr><th>I²</th><th>解釈</th></tr></thead>
+      <tbody>
+        <tr><td>0-25%</td><td>異質性 低い (統合結果は 信頼できる)</td></tr>
+        <tr><td>25-50%</td><td>異質性 中程度</td></tr>
+        <tr><td>50-75%</td><td>異質性 高い (統合前に 原因検討)</td></tr>
+        <tr><td>75%+</td><td>異質性 極めて 高い (統合の 妥当性 疑問)</td></tr>
+      </tbody>
+    </table>
+    <p class="guide__callout">
+      ⚠️ <strong>要注意</strong>: I²&gt;50% の 場合、対象者・介入・アウトカム測定 の どこに ばらつきの 原因が
+      あるか 論文が サブグループ分析で 探っているか チェック。単純に 統合値を 読むのは 危険。
+    </p>
+
+    <h2 id="publication-bias">5. 出版バイアスの 検出</h2>
+    <p>
+      有意な結果が 出た試験ほど 出版されやすく、否定的な結果は お蔵入りする 傾向があります (=<strong>出版バイアス</strong>)。
+      これが 起きていると、メタ解析の 結果は 効果を 過大評価する 方向に 偏ります。
+    </p>
+    <p>検出方法:</p>
+    <ul>
+      <li><strong>Funnel plot</strong>: 効果量 vs 精度の 散布図。左右対称なら OK、非対称 なら 出版バイアス 疑い</li>
+      <li><strong>Egger's test / Begg's test</strong>: 統計的な 検定</li>
+      <li><strong>Trim-and-fill 法</strong>: 抜けている研究を 仮想的に 補って 再計算</li>
+    </ul>
+
+    <h2 id="quality">6. メタ解析の 質を 評価する</h2>
+    <p>質の 高い メタ解析は 以下を 満たします:</p>
+    <ul>
+      <li><strong>PRISMA 声明</strong> に準拠 (研究選定・除外の 透明性)</li>
+      <li><strong>事前登録</strong> (PROSPERO 等) — 事後の 都合の良い解析を 防ぐ</li>
+      <li><strong>2 人以上の 独立レビュアー</strong> が 論文選定・抽出</li>
+      <li><strong>個別研究の 質評価</strong> (Cochrane RoB 2, GRADE 等) を 実施</li>
+      <li>感度分析 (対象を 変えて 結果が 変わらないか 確認)</li>
+    </ul>
+
+    <h2 id="limits">7. メタ解析の 限界</h2>
+    <ul>
+      <li><strong>ゴミを 集めれば ゴミが 出る</strong>: 質の 低い RCT を 100 本 集めても 質の 高い 結論には ならない</li>
+      <li><strong>個別化医療</strong> には 向かない (「平均的な患者」の効果 のみ)</li>
+      <li>介入内容・対象者が 混在すると 「リンゴと オレンジを 足す」問題</li>
+      <li>ネットワークメタ解析は 間接比較で 更に 仮定が 増える</li>
+    </ul>
+
+    <p style="margin-top: 24px;">
+      関連:
+      <a href="/ja/guide/effect-size-guide/">📊 効果量ガイド</a> ／
+      <a href="/ja/guide/paper-critique/">✔️ 論文を 批判的に 読む チェックリスト</a> ／
+      <a href="/ja/guide/glossary/">📚 研究用語集</a>
+    </p>
+
+    <p class="guide__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .guide { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide__breadcrumb a { color: var(--muted); }
+    .guide h1 { font-size: 1.85rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .guide__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .guide__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .guide__toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .guide__toc a { color: var(--link); }
+    .guide h2 { font-size: 1.25rem; color: var(--navy); margin: 32px 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .guide p, .guide ul, .guide ol { line-height: 1.85; }
+    .guide__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .guide__table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .guide__table th, .guide__table td { border: 1px solid #d5dceb; padding: 8px 12px; text-align: left; }
+    .guide__table th { background: #f0f4fa; color: var(--navy); }
+    .guide__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>
