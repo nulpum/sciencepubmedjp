@@ -8,6 +8,8 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/30626975/"
 journal: "Nature reviews. Molecular cell biology"
 year: 2019
 generated_at: "2026-09-21T05:03:38.107Z"
+tags:
+  - "mitochondria"
 affiliate_links:
   - title: "Search Amazon JP (English books) for \"inner mitochondrial membrane\""
     url: "https://www.amazon.co.jp/s?k=inner%20mitochondrial%20membrane&tag=sciencepubmed-22&i=english-books"
@@ -15,8 +17,6 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
   - title: "LED desk lamp for reading"
     url: "https://www.amazon.co.jp/s?k=desk%20lamp%20led%20reading&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "mitochondria"
 ---
 
 ## What we're looking at

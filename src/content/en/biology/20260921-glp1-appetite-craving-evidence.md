@@ -8,6 +8,11 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36050763/"
 journal: "Cardiovascular diabetology"
 year: 2022
 generated_at: "2026-09-21T05:05:30.645Z"
+tags:
+  - "brain"
+  - "dopamine"
+  - "obesity"
+  - "glp1"
 affiliate_links:
   - title: "Search Amazon JP (English books) for \"glp appetite how\""
     url: "https://www.amazon.co.jp/s?k=glp%20appetite%20how&tag=sciencepubmed-22&i=english-books"
@@ -15,11 +20,6 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
   - title: "Clip-on book light"
     url: "https://www.amazon.co.jp/s?k=book%20light%20clip%20led&tag=sciencepubmed-22&i=electronics"
-tags:
-  - "brain"
-  - "dopamine"
-  - "obesity"
-  - "glp1"
 ---
 
 ## What we're looking at
