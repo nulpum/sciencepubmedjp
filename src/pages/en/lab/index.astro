@@ -1,0 +1,435 @@
+---
+// PubMed Lab (EN) — search PubMed + AI chat about individual papers.
+// Since EN users query PubMed in English, no translation is needed.
+// Chat feature reuses the same /api/chat endpoint used by JA Lab.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AdUnit from '../../../components/AdUnit.astro';
+import { searchPmids, fetchArticles, pubmedUrl } from '../../../lib/pubmed';
+import { getCollection } from 'astro:content';
+
+export const prerender = false;
+
+function getEnv(locals: any, key: string): string | undefined {
+  const cf = locals?.runtime?.env;
+  if (cf && key in cf) return cf[key];
+  return typeof process !== 'undefined' ? process.env[key] : undefined;
+}
+
+const url = new URL(Astro.request.url);
+const q = (url.searchParams.get('q') || '').trim();
+
+interface ResultItem {
+  pmid: string;
+  title: string;
+  authors: string[];
+  journal?: string;
+  year?: number;
+  abstract: string;
+  url: string;
+}
+
+let results: ResultItem[] = [];
+let siteMatches: { slug: string; category: string; title: string; fact: string; url: string }[] = [];
+let totalCount = 0;
+let elapsedMs = 0;
+let errorMessage = '';
+
+if (q) {
+  const startedAt = Date.now();
+  try {
+    const pubmedCfg = {
+      tool: getEnv(Astro.locals, 'PUBMED_TOOL') || 'pubmed-trivia-lab',
+      email: getEnv(Astro.locals, 'PUBMED_EMAIL') || 'sciencepubmedjp@gmail.com',
+      apiKey: getEnv(Astro.locals, 'PUBMED_API_KEY') || undefined,
+    };
+
+    // EN users query PubMed directly (no translation step)
+    const { pmids, total } = await searchPmids(pubmedCfg, q, 10);
+    totalCount = total;
+
+    if (pmids.length > 0) {
+      const articles = await fetchArticles(pubmedCfg, pmids);
+      results = articles.map((a) => ({
+        pmid: a.pmid,
+        title: a.title,
+        authors: a.authors.slice(0, 3),
+        journal: a.journal,
+        year: a.year,
+        abstract: a.abstract,
+        url: pubmedUrl(a.pmid),
+      }));
+    }
+    elapsedMs = Date.now() - startedAt;
+
+    // Find related site articles
+    try {
+      const psy = await getCollection('en_psychology');
+      const bio = await getCollection('en_biology');
+      const all = [...psy, ...bio];
+      const tokens = q.toLowerCase().split(/[\s,.]+/).filter((t) => t.length >= 3);
+      const scored = all
+        .map((p) => {
+          const haystack = (p.data.title + ' ' + p.data.fact).toLowerCase();
+          let score = 0;
+          for (const t of tokens) {
+            if (haystack.includes(t)) score++;
+          }
+          return { post: p, score };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+      siteMatches = scored.map((x) => ({
+        slug: x.post.id,
+        category: x.post.data.category,
+        title: x.post.data.title,
+        fact: x.post.data.fact,
+        url: `/en/${x.post.data.category}/${x.post.id}/`,
+      }));
+    } catch { /* ignore */ }
+  } catch (e) {
+    errorMessage = (e as Error).message || String(e);
+  }
+}
+
+const sampleQueries = [
+  'sleep deprivation and academic performance',
+  'cognitive behavioral therapy for ADHD in children',
+  'gut microbiome and depression meta-analysis',
+  'highly sensitive person neuroscience',
+  'mindfulness meditation systematic review anxiety',
+  'exercise and cognitive decline prevention',
+  'intermittent fasting metabolic health',
+  'GLP-1 receptor agonists brain reward',
+];
+---
+<BaseLayout
+  title="PubMed Lab — Search papers + AI chat｜PubMed Trivia"
+  description="Free AI-assisted PubMed search. Type a research question in plain English, get relevant papers, and chat with an AI about any paper's methods, findings, and limits."
+  lang="en"
+  ogType="website"
+>
+  <div class="lab">
+    <header class="lab__header">
+      <p class="lab__breadcrumb"><a href="/en/">Home</a> › 🔬 PubMed Lab</p>
+      <h1>🔬 PubMed Lab <span class="lab__badge">Free · No signup</span></h1>
+      <p class="lab__intro">
+        Search PubMed with a plain-English research question, then <strong>chat with an AI</strong> about any paper's
+        methods, findings, and limitations. Powered by Claude (Anthropic) + NIH PubMed E-utilities.
+      </p>
+    </header>
+
+    <form class="lab__form" action="/en/lab/" method="get">
+      <label for="lab-q" class="visually-hidden">Search query</label>
+      <input
+        id="lab-q"
+        type="search"
+        name="q"
+        value={q}
+        placeholder="e.g. gut microbiome depression meta-analysis"
+        autocomplete="off"
+        spellcheck="false"
+        class="lab__input"
+      />
+      <button type="submit" class="lab__submit">🔍 Search</button>
+    </form>
+
+    {!q && (
+      <section class="lab__samples" aria-label="Sample queries">
+        <p class="lab__samples-label">Try one of these to see it in action:</p>
+        <ul class="lab__samples-list">
+          {sampleQueries.map((s) => (
+            <li><a href={`/en/lab/?q=${encodeURIComponent(s)}`}>{s}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {q && errorMessage && (
+      <div class="lab__error">
+        <strong>Error:</strong> {errorMessage}
+      </div>
+    )}
+
+    {q && !errorMessage && results.length === 0 && (
+      <div class="lab__empty">
+        <p>No papers matched <strong>"{q}"</strong>. Try broadening your query or checking a different spelling.</p>
+      </div>
+    )}
+
+    {q && results.length > 0 && (
+      <section class="lab__results">
+        <p class="lab__meta">
+          <strong>{results.length}</strong> of ~<strong>{totalCount.toLocaleString()}</strong> matches ·
+          <span class="lab__timing"> {elapsedMs} ms</span>
+        </p>
+
+        {siteMatches.length > 0 && (
+          <aside class="lab__site-matches">
+            <p class="lab__site-matches-label">✨ Related articles on this site:</p>
+            <ul>
+              {siteMatches.map((m) => (
+                <li><a href={m.url}>{m.title}</a></li>
+              ))}
+            </ul>
+          </aside>
+        )}
+
+        <ol class="lab__result-list">
+          {results.map((r, i) => (
+            <li class="lab__result" data-pmid={r.pmid}>
+              <div class="lab__result-meta">
+                <span class="lab__result-num">#{i + 1}</span>
+                {r.journal && <span>{r.journal}</span>}
+                {r.year && <span>({r.year})</span>}
+              </div>
+              <h3 class="lab__result-title">
+                <a href={r.url} rel="noopener" target="_blank">{r.title}</a>
+              </h3>
+              {r.authors.length > 0 && (
+                <p class="lab__result-authors">{r.authors.join(', ')}{r.authors.length >= 3 ? ' et al.' : ''}</p>
+              )}
+              <p class="lab__result-abstract">
+                {r.abstract.slice(0, 400)}{r.abstract.length > 400 ? '…' : ''}
+              </p>
+              <div class="lab__result-actions">
+                <a href={r.url} class="lab__btn lab__btn--pubmed" rel="noopener" target="_blank">🔗 Open on PubMed</a>
+                <button
+                  type="button"
+                  class="lab__btn lab__btn--chat"
+                  data-chat-open
+                  data-pmid={r.pmid}
+                  data-title={r.title}
+                  data-abstract={r.abstract}
+                >💬 Chat with AI about this paper</button>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    <AdUnit slot="articleFooter" />
+
+    <section class="lab__faq">
+      <h2>❓ How it works</h2>
+      <details>
+        <summary><strong>What does this do?</strong></summary>
+        <p>You type a research question in English. We query the NIH PubMed database (~37 million biomedical papers) and show the top 10 most relevant. You can then chat with an AI (Claude by Anthropic) about any paper to understand its methods, findings, and limitations.</p>
+      </details>
+      <details>
+        <summary><strong>Is this free?</strong></summary>
+        <p>Yes, and no signup is required. This tool is provided as-is by PubMed Trivia (an independent science-trivia site) and funded by affiliate links + ads on the rest of the site.</p>
+      </details>
+      <details>
+        <summary><strong>How is this different from Elicit, Consensus, etc.?</strong></summary>
+        <p>Those are excellent purpose-built research tools. Ours is smaller and simpler: no synthesis, no citation graphs, no institutional pricing. Just search + a lightweight chat to explain one paper at a time. Good for casual reading or quick reference.</p>
+      </details>
+      <details>
+        <summary><strong>Do you store my queries?</strong></summary>
+        <p>Queries appear in server logs (retained ~14 days for abuse prevention) and are sent to Anthropic's Claude API for the chat feature (Anthropic's terms apply). We do not sell queries to third parties.</p>
+      </details>
+      <details>
+        <summary><strong>Any medical disclaimer?</strong></summary>
+        <p>Yes: the AI summaries are for general education, not medical advice. Consult a qualified professional for any health decision. See our <a href="/en/editorial-policy/">editorial policy</a>.</p>
+      </details>
+    </section>
+  </div>
+
+  {/* Chat modal (initially hidden; opened by data-chat-open buttons) */}
+  <div id="lab-chat-modal" class="lab-chat" hidden>
+    <div class="lab-chat__panel" role="dialog" aria-modal="true" aria-labelledby="lab-chat-title">
+      <header class="lab-chat__header">
+        <div>
+          <p class="lab-chat__tag">💬 Chatting about</p>
+          <h3 id="lab-chat-title" class="lab-chat__title">—</h3>
+        </div>
+        <button type="button" class="lab-chat__close" aria-label="Close" data-chat-close>×</button>
+      </header>
+      <div id="lab-chat-thread" class="lab-chat__thread" aria-live="polite"></div>
+      <form id="lab-chat-form" class="lab-chat__form">
+        <input id="lab-chat-input" type="text" placeholder="Ask about methods, sample, limits, applicability..." autocomplete="off" />
+        <button type="submit" class="lab-chat__send">Send</button>
+      </form>
+      <p class="lab-chat__disc">💡 Answers come from Claude AI based on the paper's abstract only. Not medical advice.</p>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var modal = document.getElementById('lab-chat-modal');
+      var titleEl = document.getElementById('lab-chat-title');
+      var thread = document.getElementById('lab-chat-thread');
+      var form = document.getElementById('lab-chat-form');
+      var input = document.getElementById('lab-chat-input');
+      var current = { pmid: '', title: '', abstract: '' };
+      var history = [];
+
+      function open(pmid, title, abstract) {
+        current = { pmid: pmid, title: title, abstract: abstract };
+        history = [];
+        titleEl.textContent = title;
+        thread.innerHTML = '<p class="lab-chat__msg lab-chat__msg--sys">Ask me anything about this paper — sample size, methods, effect size, limits, how to interpret. I only see the abstract.</p>';
+        modal.hidden = false;
+        setTimeout(function(){ input.focus(); }, 100);
+        if (typeof gtag === 'function') gtag('event', 'lab_chat_open', { pmid: pmid });
+      }
+      function close() {
+        modal.hidden = true;
+      }
+      function addMsg(role, text) {
+        var el = document.createElement('p');
+        el.className = 'lab-chat__msg lab-chat__msg--' + role;
+        el.textContent = text;
+        thread.appendChild(el);
+        thread.scrollTop = thread.scrollHeight;
+      }
+      function addLoading() {
+        var el = document.createElement('p');
+        el.className = 'lab-chat__msg lab-chat__msg--assistant lab-chat__msg--loading';
+        el.textContent = 'Thinking…';
+        el.id = 'lab-chat-loading';
+        thread.appendChild(el);
+        thread.scrollTop = thread.scrollHeight;
+      }
+      function removeLoading() {
+        var el = document.getElementById('lab-chat-loading');
+        if (el) el.remove();
+      }
+
+      document.addEventListener('click', function (ev) {
+        var t = ev.target;
+        var openBtn = t.closest && t.closest('[data-chat-open]');
+        if (openBtn) {
+          open(openBtn.dataset.pmid, openBtn.dataset.title, openBtn.dataset.abstract);
+          return;
+        }
+        if (t.closest && t.closest('[data-chat-close]')) {
+          close();
+          return;
+        }
+        if (t === modal) close();
+      });
+      document.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape' && !modal.hidden) close();
+      });
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var q = input.value.trim();
+        if (!q) return;
+        input.value = '';
+        addMsg('user', q);
+        history.push({ role: 'user', content: q });
+        addLoading();
+        if (typeof gtag === 'function') {
+          gtag('event', 'lab_chat_message', { pmid: current.pmid, message_len: q.length });
+        }
+        fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            pmid: current.pmid,
+            title: current.title,
+            abstract: current.abstract,
+            messages: history,
+            lang: 'en',
+          }),
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            removeLoading();
+            var reply = (data && data.reply) || '(No response)';
+            history.push({ role: 'assistant', content: reply });
+            addMsg('assistant', reply);
+          })
+          .catch(function (err) {
+            removeLoading();
+            addMsg('assistant', 'Error: ' + err.message);
+          });
+      });
+    })();
+  </script>
+
+  <style>
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    .lab { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .lab__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .lab__breadcrumb a { color: var(--muted); }
+    .lab__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 12px; }
+    .lab__badge { display: inline-block; background: #059669; color: white; font-size: 0.7rem; padding: 3px 10px; border-radius: 999px; vertical-align: middle; margin-left: 8px; font-weight: 600; }
+    .lab__intro { line-height: 1.85; color: #4a5568; }
+
+    .lab__form { display: flex; gap: 10px; margin: 24px 0 20px; }
+    .lab__input {
+      flex: 1; padding: 14px 18px; border: 2px solid #d5dceb; border-radius: 12px;
+      font-size: 1.05rem; color: var(--navy); background: white;
+    }
+    .lab__input:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(26,54,93,0.12); }
+    .lab__submit { padding: 14px 24px; background: var(--navy); color: white; border: 0; border-radius: 12px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+    .lab__submit:hover { background: var(--navy-deep); }
+
+    .lab__samples { background: #f7f9fc; padding: 16px 20px; border-radius: 10px; margin: 16px 0; }
+    .lab__samples-label { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; }
+    .lab__samples-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .lab__samples-list a { display: inline-block; padding: 6px 12px; background: white; border: 1px solid #d5dceb; border-radius: 999px; text-decoration: none; color: var(--navy); font-size: 0.85rem; }
+    .lab__samples-list a:hover { border-color: var(--navy); }
+
+    .lab__error, .lab__empty { padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
+    .lab__error { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+    .lab__empty { background: #fafbfc; color: var(--muted); }
+
+    .lab__meta { color: var(--muted); font-size: 0.9rem; margin: 8px 0 16px; }
+    .lab__timing { color: #6b7280; font-size: 0.8rem; }
+
+    .lab__site-matches { background: linear-gradient(180deg, #f0f7ec 0%, #e5f2df 100%); border: 1px solid #b5d4a3; padding: 12px 16px; border-radius: 8px; margin: 12px 0 20px; }
+    .lab__site-matches-label { font-weight: 700; color: #2e6320; margin: 0 0 6px; font-size: 0.95rem; }
+    .lab__site-matches ul { margin: 0; padding-left: 22px; }
+    .lab__site-matches a { color: #2e6320; }
+
+    .lab__result-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .lab__result { border: 1px solid #e5e9f2; background: white; border-radius: 10px; padding: 16px 18px; }
+    .lab__result-meta { font-size: 0.78rem; color: var(--muted); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .lab__result-num { background: #f0f4fa; color: var(--navy); padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+    .lab__result-title { font-size: 1.05rem; margin: 6px 0; line-height: 1.4; }
+    .lab__result-title a { color: var(--navy); text-decoration: none; }
+    .lab__result-title a:hover { text-decoration: underline; }
+    .lab__result-authors { color: var(--muted); font-size: 0.85rem; margin: 4px 0; font-style: italic; }
+    .lab__result-abstract { font-size: 0.9rem; line-height: 1.6; margin: 8px 0; color: #4a5568; }
+    .lab__result-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .lab__btn { padding: 8px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; text-decoration: none; border: 1px solid #d5dceb; background: white; color: var(--navy); cursor: pointer; }
+    .lab__btn:hover { border-color: var(--navy); }
+    .lab__btn--pubmed { background: #f0f4fa; }
+    .lab__btn--chat { background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%); color: white; border-color: #d97706; }
+    .lab__btn--chat:hover { filter: brightness(1.05); }
+
+    .lab__faq { margin-top: 40px; padding: 20px 24px; background: #f7f9fc; border-radius: 10px; }
+    .lab__faq h2 { font-size: 1.2rem; color: var(--navy); margin: 0 0 12px; }
+    .lab__faq details { margin: 8px 0; padding: 8px 12px; background: white; border: 1px solid #e5e9f2; border-radius: 8px; }
+    .lab__faq summary { cursor: pointer; padding: 4px 0; }
+    .lab__faq p { line-height: 1.7; margin: 8px 0; }
+
+    /* Chat modal */
+    .lab-chat { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 20px; }
+    .lab-chat__panel { background: white; border-radius: 12px; max-width: 640px; width: 100%; max-height: 90vh; display: flex; flex-direction: column; }
+    .lab-chat__header { display: flex; align-items: flex-start; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e5e9f2; }
+    .lab-chat__tag { font-size: 0.72rem; color: var(--muted); margin: 0 0 4px; letter-spacing: 0.05em; }
+    .lab-chat__title { font-size: 1rem; color: var(--navy); margin: 0; line-height: 1.4; }
+    .lab-chat__close { background: none; border: 0; font-size: 1.8rem; cursor: pointer; color: var(--muted); line-height: 1; padding: 0 4px; }
+    .lab-chat__close:hover { color: var(--navy); }
+    .lab-chat__thread { flex: 1; overflow-y: auto; padding: 16px 20px; }
+    .lab-chat__msg { padding: 10px 14px; border-radius: 8px; margin: 8px 0; line-height: 1.6; font-size: 0.92rem; }
+    .lab-chat__msg--sys { background: #fff8e1; color: #7a5a1e; font-size: 0.85rem; }
+    .lab-chat__msg--user { background: #f0f4fa; color: var(--navy); }
+    .lab-chat__msg--assistant { background: white; color: #1a202c; border: 1px solid #e5e9f2; }
+    .lab-chat__msg--loading { color: var(--muted); font-style: italic; }
+    .lab-chat__form { display: flex; gap: 8px; padding: 12px 20px; border-top: 1px solid #e5e9f2; }
+    .lab-chat__form input { flex: 1; padding: 10px 14px; border: 1px solid #d5dceb; border-radius: 8px; font-size: 0.95rem; }
+    .lab-chat__form input:focus { outline: none; border-color: var(--navy); }
+    .lab-chat__send { padding: 10px 20px; background: var(--navy); color: white; border: 0; border-radius: 8px; cursor: pointer; font-weight: 600; }
+    .lab-chat__send:hover { background: var(--navy-deep); }
+    .lab-chat__disc { padding: 8px 20px 14px; margin: 0; font-size: 0.72rem; color: var(--muted); text-align: center; }
+  </style>
+</BaseLayout>

@@ -141,12 +141,8 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
           <a href={`/${lang}/search/`}>🔍</a>
           <a href={`/${lang}/archive/`}>📅</a>
           <a href={`/${lang}/tag/`}>🏷️</a>
-          {lang === 'ja' && (
-            <>
-              <a href="/ja/hub/">📚</a>
-              <a href="/ja/lab/" class="site-nav__cta">🔬 Lab</a>
-            </>
-          )}
+          {lang === 'ja' && <a href="/ja/hub/">📚</a>}
+          <a href={`/${lang}/lab/`} class="site-nav__cta">🔬 Lab</a>
           <span class="site-nav__sep" aria-hidden="true">|</span>
           <a href="/ja/" class={lang === 'ja' ? 'is-active' : ''}>JA</a>
           <span class="site-nav__sep" aria-hidden="true">/</span>
@@ -177,6 +173,14 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         <a href={`/${lang}/about/`}>{lang === 'ja' ? 'このサイトについて' : 'About'}</a>
         <span aria-hidden="true">·</span>
         <a href={`/${lang}/privacy/`}>{lang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy'}</a>
+        {lang === 'en' && (
+          <>
+            <span aria-hidden="true">·</span>
+            <a href="/en/lab/">🔬 PubMed Lab</a>
+            <span aria-hidden="true">·</span>
+            <a href="/en/editorial-policy/">📝 Editorial Policy</a>
+          </>
+        )}
         {lang === 'ja' && (
           <>
             <span aria-hidden="true">·</span>
