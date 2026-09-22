@@ -4,34 +4,159 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const psy = await getCollection('en_psychology');
 const bio = await getCollection('en_biology');
-const all = [...psy, ...bio].sort(
-  (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
-);
-const catLabel: Record<string, string> = {
-  psychology: 'Psychology',
-  biology: 'Biology',
-};
+const all = [...psy, ...bio];
+const totalCount = all.length;
+
+const featuredSlugs = [
+  '20260916-probiotics-diarrhea-evidence',
+  '20260921-inner-mitochondrial-membrane-evidence',
+  '20260921-glp1-appetite-craving-evidence',
+];
+const featured = featuredSlugs
+  .map((slug) => all.find((p) => p.id === slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const recent = all
+  .filter((p) => !featuredSlugs.includes(p.id))
+  .sort((a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at))
+  .slice(0, 20);
+
+const catLabel: Record<string, string> = { psychology: 'Psychology', biology: 'Biology' };
 
 export const prerender = true;
 ---
 <BaseLayout
-  title="PubMed Trivia ｜ Research-backed daily trivia"
-  description="Daily science trivia drawn from PubMed reviews — psychology, sleep, memory, evolution, and more."
+  title="PubMed Trivia — Peer-reviewed research, made readable"
+  description="Systematic reviews and meta-analyses from PubMed, adapted for general readers. Deep-dive evidence articles on ADHD, gut microbiome, sleep, GLP-1. Free AI PubMed search tool."
   lang="en"
 >
-  <h1>PubMed Trivia</h1>
-  <p>Daily science trivia, each one drawn from PubMed reviews.</p>
+  <section class="hero">
+    <p class="hero__eyebrow">Science For Life</p>
+    <h1>Peer-reviewed research, made readable.</h1>
+    <p class="hero__body">
+      We adapt systematic reviews and meta-analyses from the NIH PubMed database for general readers.
+      <strong>{totalCount} articles</strong>, all free, all with citations.
+    </p>
+    <div class="hero__ctas">
+      <a href="/en/lab/" class="btn btn--primary">🔬 Try PubMed Lab</a>
+      <a href="/en/search/" class="btn btn--outline">🔍 Search articles</a>
+      <a href="/en/archive/" class="btn btn--outline">📅 Archive</a>
+    </div>
+  </section>
 
-  <ul class="card-grid">
-    {all.map((post) => (
-      <li class="card">
-        <a href={`/en/${post.data.category}/${post.id}/`}>{post.data.title}</a>
-        <p class="card__fact">{post.data.fact}</p>
-        <div class="card__meta">
-          <span class={`tag tag--${post.data.category}`}>{catLabel[post.data.category]}</span>
-          {post.data.journal && <span>{post.data.journal}{post.data.year && ` · ${post.data.year}`}</span>}
-        </div>
-      </li>
-    ))}
-  </ul>
+  <section class="section">
+    <div class="section__head">
+      <h2>🌟 Deep-dive evidence reviews</h2>
+      <p>Syntheses of ~10 systematic reviews or meta-analyses per topic.</p>
+    </div>
+    <ul class="feature-grid">
+      {featured.map((p) => (
+        <li class="feature">
+          <a href={`/en/${p.data.category}/${p.id}/`}>
+            <span class={`feature__badge feature__badge--${p.data.category}`}>{catLabel[p.data.category]}</span>
+            <h3>{p.data.title}</h3>
+            <p>{p.data.fact}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>🗂 Browse by category</h2>
+    </div>
+    <div class="cat-grid">
+      <a href="/en/psychology/" class="cat-card cat-card--psy">
+        <h3>Psychology <span class="cat-card__count">{psy.length} articles</span></h3>
+        <p>Cognition, behavior, emotion, development, clinical psychology, neuroscience</p>
+      </a>
+      <a href="/en/biology/" class="cat-card cat-card--bio">
+        <h3>Biology <span class="cat-card__count">{bio.length} articles</span></h3>
+        <p>Cells, genetics, evolution, microbiology, physiology, ecology</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>🆕 Latest articles</h2>
+    </div>
+    <ul class="card-grid">
+      {recent.map((post) => (
+        <li class="card">
+          <a href={`/en/${post.data.category}/${post.id}/`}>{post.data.title}</a>
+          <p class="card__fact">{post.data.fact}</p>
+          <div class="card__meta">
+            <span class={`tag tag--${post.data.category}`}>{catLabel[post.data.category]}</span>
+            {post.data.journal && <span>{post.data.journal}{post.data.year && ` · ${post.data.year}`}</span>}
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p class="section__more"><a href="/en/archive/">📅 Browse all articles →</a></p>
+  </section>
+
+  <section class="section section--editorial">
+    <div class="section__head">
+      <h2>📝 About this site</h2>
+    </div>
+    <p>
+      We adapt peer-reviewed papers from PubMed (systematic reviews and meta-analyses preferred) for general readers.
+      Every article cites its source PMID. AI (Claude by Anthropic) assists the adaptation, filtered for accuracy and safety.
+      See our <a href="/en/editorial-policy/">editorial policy</a> for full details.
+    </p>
+    <ul class="editorial-links">
+      <li><a href="/en/editorial-policy/">📝 Editorial policy</a></li>
+      <li><a href="/en/lab/">🔬 PubMed Lab</a></li>
+      <li><a href="/en/tag/">🏷️ Browse by tag</a></li>
+      <li><a href="/en/hub/gut-microbiome/">🦠 Gut Microbiome hub</a></li>
+    </ul>
+  </section>
+
+  <style>
+    .hero { text-align: center; padding: 32px 20px 24px; }
+    .hero__eyebrow { font-size: 0.78rem; color: #7c3aed; font-weight: 700; letter-spacing: 0.15em; margin: 0 0 8px; }
+    .hero h1 { font-size: 2.2rem; color: var(--navy); margin: 0 0 12px; letter-spacing: -0.01em; }
+    .hero__body { color: #4a5568; line-height: 1.85; max-width: 620px; margin: 0 auto 22px; }
+    .hero__ctas { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; padding: 12px 22px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: transform 0.15s, box-shadow 0.15s; }
+    .btn--primary { background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%); color: var(--navy) !important; border: 1px solid #d97706; box-shadow: 0 3px 0 rgba(0,0,0,0.08); }
+    .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(217, 119, 6, 0.3); }
+    .btn--outline { background: white; color: var(--navy) !important; border: 1px solid #d5dceb; }
+    .btn--outline:hover { border-color: var(--navy); }
+
+    .section { margin: 40px 0; }
+    .section__head { margin: 0 0 16px; }
+    .section__head h2 { font-size: 1.35rem; color: var(--navy); margin: 0 0 6px; padding-left: 12px; border-left: 5px solid var(--navy); }
+    .section__head p { color: var(--muted); font-size: 0.9rem; margin: 4px 0 0; }
+    .section__more { text-align: center; margin-top: 20px; }
+    .section__more a { color: var(--link); font-weight: 600; }
+
+    .feature-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .feature { background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; transition: transform 0.15s, box-shadow 0.15s; }
+    .feature:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(217, 119, 6, 0.15); }
+    .feature a { display: block; padding: 16px 18px; text-decoration: none; color: var(--navy); }
+    .feature__badge { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: white; letter-spacing: 0.05em; }
+    .feature__badge--psychology { background: #7c3aed; }
+    .feature__badge--biology { background: #059669; }
+    .feature h3 { font-size: 1rem; margin: 8px 0 6px; line-height: 1.4; color: var(--navy); }
+    .feature p { font-size: 0.86rem; color: #4a5568; line-height: 1.6; margin: 0; }
+
+    .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .cat-grid { grid-template-columns: 1fr; } }
+    .cat-card { display: block; padding: 18px 20px; border-radius: 10px; text-decoration: none; color: var(--navy); transition: transform 0.15s, box-shadow 0.15s; border: 1px solid transparent; }
+    .cat-card:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.08); }
+    .cat-card--psy { background: linear-gradient(180deg, #ede9fe 0%, #ddd6fe 100%); border-color: #a78bfa; }
+    .cat-card--bio { background: linear-gradient(180deg, #d1fae5 0%, #a7f3d0 100%); border-color: #34d399; }
+    .cat-card h3 { font-size: 1.15rem; margin: 0 0 6px; color: var(--navy); }
+    .cat-card__count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+    .cat-card p { margin: 0; font-size: 0.86rem; color: #4a5568; line-height: 1.5; }
+
+    .section--editorial { background: #f7f9fc; padding: 24px; border-radius: 12px; }
+    .section--editorial p { line-height: 1.85; color: #4a5568; }
+    .editorial-links { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .editorial-links a { display: inline-block; padding: 6px 12px; background: white; border: 1px solid #d5dceb; border-radius: 999px; font-size: 0.85rem; text-decoration: none; color: var(--navy); }
+    .editorial-links a:hover { border-color: var(--navy); }
+  </style>
 </BaseLayout>
