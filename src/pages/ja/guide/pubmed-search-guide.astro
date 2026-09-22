@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="PubMed を 日本語で 使いこなす — 実践ガイド ｜ PubMed Trivia"
+  description="PubMed の 効率的な 検索方法、フィルター活用、日本語検索の コツ、レビュー論文の 探し方 まで、日本語話者向けに 実践ガイドとして まとめました。"
+  lang="ja"
+>
+  <article class="guide">
+    <p class="guide__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › PubMed 検索ガイド</p>
+    <h1>PubMed を 日本語で 使いこなす — 実践ガイド</h1>
+    <p class="guide__lede">
+      PubMed は 世界最大の 生物医学文献データベース (約 3,700 万件、2024 年時点) で、無料で 誰でも 利用できます。
+      本ガイドは <strong>日本語話者が 効率的に PubMed で 論文を 探す</strong> ための 実践ノウハウを まとめたものです。
+    </p>
+
+    <nav class="guide__toc" aria-label="目次">
+      <p class="guide__toc-title">目次</p>
+      <ol>
+        <li><a href="#start">最初の 一歩: PubMed に アクセスする</a></li>
+        <li><a href="#basic-search">基本的な 検索</a></li>
+        <li><a href="#japanese">日本語 キーワードの 扱い</a></li>
+        <li><a href="#filters">フィルターを 使いこなす</a></li>
+        <li><a href="#mesh">MeSH タームで 精度を 上げる</a></li>
+        <li><a href="#operators">検索演算子 (AND / OR / NOT)</a></li>
+        <li><a href="#reviews">レビュー・メタ解析を 選び分ける</a></li>
+        <li><a href="#save">検索結果を 保存 / 通知設定</a></li>
+        <li><a href="#next">論文を 見つけた 後の 読み方</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="start">1. 最初の 一歩: PubMed に アクセスする</h2>
+    <p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">https://pubmed.ncbi.nlm.nih.gov/</a> が 公式サイトです。
+      アカウント登録は 不要ですが、<strong>NCBI アカウント</strong> を 作ると 検索履歴・保存機能が 使えます。
+      Google アカウント で 連携 ログイン可能。
+    </p>
+
+    <h2 id="basic-search">2. 基本的な 検索</h2>
+    <p>トップ画面 の 検索窓に キーワードを 入れて Enter するだけ。ただし、以下の コツで <strong>ノイズを 減らせます</strong>:</p>
+    <ul>
+      <li><strong>複数語は AND 検索</strong>: 「diabetes exercise」→ 両方含む論文のみ ヒット</li>
+      <li><strong>フレーズは "" で囲む</strong>: 「"cognitive behavioral therapy"」→ 3 語一致</li>
+      <li><strong>大文字小文字は 区別しない</strong>: 「PUBMED」も 「pubmed」も 同じ</li>
+    </ul>
+
+    <h2 id="japanese">3. 日本語 キーワードの 扱い</h2>
+    <p class="guide__callout">
+      ⚠️ <strong>重要</strong>: PubMed は 論文タイトル・abstract を 主に <strong>英語</strong> で 保持しているため、
+      <em>日本語で 検索すると ヒットしない</em> ことが 大半です。日本語のトピックを 英訳して 検索するのが基本。
+    </p>
+    <p>日本語で 論文検索したい場合の 選択肢:</p>
+    <ol>
+      <li><strong>英訳して PubMed</strong>: 「うつ病」→「depression」、「腸内フローラ」→「gut microbiome」</li>
+      <li><strong>J-STAGE</strong> (国立情報学研究所): 日本語論文 に 特化した データベース</li>
+      <li><strong>Google Scholar</strong>: 日本語 論文も インデックス、PubMed と 併用が便利</li>
+      <li><strong>当サイト の 🔬 Lab</strong>: 日本語で PubMed 検索できる 実験ツール</li>
+    </ol>
+    <p>
+      当サイトの <a href="/ja/lab/">🔬 PubMed Lab</a> は、日本語キーワードを AI で 英訳 → PubMed 検索する 実験機能です。
+    </p>
+
+    <h2 id="filters">4. フィルターを 使いこなす</h2>
+    <p>検索結果画面の 左サイドバー に フィルターが 並びます。特に よく使うもの:</p>
+    <table class="guide__table">
+      <thead>
+        <tr><th>フィルター</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Article Type</strong></td><td>Meta-Analysis / Systematic Review / RCT で 絞る</td></tr>
+        <tr><td><strong>Publication Date</strong></td><td>「1 year」「5 years」「10 years」等で 新しい研究に 絞る</td></tr>
+        <tr><td><strong>Species: Humans</strong></td><td>動物実験を 除外</td></tr>
+        <tr><td><strong>Language: English</strong></td><td>読める言語で 絞る</td></tr>
+        <tr><td><strong>Ages / Sex</strong></td><td>子ども限定・成人限定 等</td></tr>
+        <tr><td><strong>Free full text</strong></td><td>本文が 無料で 読める論文だけに 絞る</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="mesh">5. MeSH タームで 精度を 上げる</h2>
+    <p>
+      MeSH (Medical Subject Headings) は 米国国立医学図書館が 論文に 付与する <strong>統制語彙</strong> です。
+      同義語を 網羅して 検索できるため、<strong>キーワード検索より 精度が 高い</strong> のが 特徴です。
+    </p>
+    <p>使い方: PubMed 検索窓の下の 「MeSH Database」から MeSH タームを 探し、そのまま 検索に 追加。</p>
+    <p>例:</p>
+    <ul>
+      <li>「gut microbiome」→ MeSH: <code>Gastrointestinal Microbiome[Mesh]</code></li>
+      <li>「ADHD」→ MeSH: <code>Attention Deficit Disorder with Hyperactivity[Mesh]</code></li>
+    </ul>
+
+    <h2 id="operators">6. 検索演算子 (AND / OR / NOT)</h2>
+    <ul>
+      <li><code>AND</code>: 両方 含む (デフォルト、スペース区切りと 同じ)</li>
+      <li><code>OR</code>: どちらかを 含む (例: <code>ADHD OR autism</code>)</li>
+      <li><code>NOT</code>: 除外 (例: <code>diabetes NOT type 1</code>)</li>
+      <li><code>[]</code>: フィールド指定 (例: <code>2020[dp]</code> = 2020 年発表)</li>
+    </ul>
+    <p>複雑な 検索は <code>(A OR B) AND C</code> のように 括弧で 優先順を 明示できます。</p>
+
+    <h2 id="reviews">7. レビュー・メタ解析を 選び分ける</h2>
+    <p class="guide__callout">
+      💡 <strong>編集メモ</strong>: 単発の RCT より <strong>系統的レビュー / メタ解析</strong> の方が
+      エビデンスの 信頼度が 高いです。まず これらを 探す ことを 推奨。
+    </p>
+    <p>
+      左サイドバーで <strong>Article Type</strong> → <code>Systematic Review</code> や <code>Meta-Analysis</code> を選ぶだけ で、
+      該当論文のみ に 絞れます。または 検索式に <code>systematic[sb]</code> を 追加。
+    </p>
+
+    <h2 id="save">8. 検索結果を 保存 / 通知設定</h2>
+    <p>
+      NCBI アカウント で ログイン後:
+    </p>
+    <ul>
+      <li><strong>Save</strong>: 個別論文を コレクションに 保存</li>
+      <li><strong>Create alert</strong>: 検索式に 新しい論文が 追加されたら メール通知</li>
+    </ul>
+    <p>特定テーマを 継続的に フォローしたい 研究者・学生 に 有用。</p>
+
+    <h2 id="next">9. 論文を 見つけた 後の 読み方</h2>
+    <p>タイトル + abstract で 大枠を掴んだら、次のステップ:</p>
+    <ul>
+      <li>Full text へのリンクを 確認 (PMC は 無料、それ以外は 有料の場合あり)</li>
+      <li>批判的に 読む — 次の <a href="/ja/guide/paper-critique/">論文を 批判的に 読む チェックリスト</a> を 参照</li>
+      <li>統計用語で 迷ったら <a href="/ja/guide/glossary/">研究用語集</a> を 参照</li>
+    </ul>
+
+    <p class="guide__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .guide { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide__breadcrumb a { color: var(--muted); }
+    .guide h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .guide__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .guide__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .guide__toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .guide__toc a { color: var(--link); }
+    .guide h2 { font-size: 1.3rem; color: var(--navy); margin: 36px 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .guide p, .guide ul, .guide ol { line-height: 1.85; }
+    .guide code { background: #f0f4fa; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .guide__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .guide__table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .guide__table th, .guide__table td { border: 1px solid #d5dceb; padding: 8px 12px; text-align: left; }
+    .guide__table th { background: #f0f4fa; color: var(--navy); }
+    .guide__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

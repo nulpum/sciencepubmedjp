@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('ja_psychology');
+const relatedTags = ['adhd', 'autism', 'memory', 'learning', 'cbt', 'brain'];
+const related = psy
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="ADHD (注意欠如・多動症) をエビデンスで理解する｜PubMed Trivia"
+  description="ADHD の 診断・治療・支援・大人の見落とし・子どもの早期発見。系統的レビュー・メタアナリシスに 基づき、最新エビデンスを テーマ別に まとめた ハブページ。"
+  lang="ja"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › 🧠 ADHD ハブ</p>
+      <h1>🧠 ADHD (注意欠如・多動症) を エビデンスで理解する</h1>
+      <p class="hub__lede">
+        <strong>ADHD は 子どもの 5-7%、大人の 3-5%</strong> に見られる 神経発達特性で、
+        近年の 診断基準の 改訂と 大人 ADHD の 認知拡大により、日本国内でも 相談件数が 急増しています。
+        当サイトでは、PubMed 掲載の <strong>系統的レビュー・メタアナリシス</strong> を 基に、
+        ADHD の 診断・治療・生活支援に関する 記事を 継続的に 追加しています。
+      </p>
+      <p class="hub__lede">
+        このハブページでは、「大人の 見落とし」「子どもの 早期発見」「治療選択肢」「併存症」など
+        <strong>読者の 関心の 高い切り口</strong> ごとに、主要記事を 整理しました。
+        <em>「何から読むべきか」</em> の 道しるべ として ご活用ください。
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="目次">
+      <p class="hub__toc-title">このページの目次</p>
+      <ol>
+        <li><a href="#basics">ADHD とは 何か — 基礎知識</a></li>
+        <li><a href="#adult">大人 ADHD の 見落としと 診断</a></li>
+        <li><a href="#child">子ども ADHD の 早期発見・支援</a></li>
+        <li><a href="#treatment">治療選択肢 (薬物・非薬物)</a></li>
+        <li><a href="#related">併存する 症状と 関連特性</a></li>
+        <li><a href="#learn-more">更に 学ぶには</a></li>
+      </ol>
+    </nav>
+
+    <section id="basics">
+      <h2>1. ADHD とは 何か — 基礎知識</h2>
+      <p>
+        ADHD (Attention-Deficit / Hyperactivity Disorder) は、<strong>不注意・多動性・衝動性</strong> の
+        3 主症状で 特徴づけられる 神経発達特性です。DSM-5 (2013年) 以降、症状が 12 歳以前に 発現し、
+        複数の 環境で 6 か月以上 継続する ことが 診断の 基準です。
+      </p>
+      <p>
+        「病気」というより <strong>脳の 情報処理特性の 個人差</strong> として 理解されつつあり、
+        本人・家族・職場が どう <em>環境調整</em> するかが、生活の質を 大きく左右します。
+      </p>
+      <p class="hub__callout">
+        📌 <strong>編集メモ</strong>: ADHD は 「ある/ない」の 二分ではなく <em>グラデーション</em> です。
+        本人が 困っていない場合 診断名を 付ける必要はなく、逆に 診断が 付かなくても 支援は 可能です。
+      </p>
+    </section>
+
+    <section id="adult">
+      <h2>2. 大人 ADHD の 見落としと 診断</h2>
+      <p>
+        大人の ADHD は 長年 「子どもの障害」と 誤解されてきましたが、
+        欧州コンセンサス声明 (2018) 以降、<strong>生涯にわたる 特性</strong> と 認識されています。
+        日本では 就労後・出産後 に 顕在化する ケースが 多く、うつ病・不安障害 との 誤診も 課題です。
+      </p>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー</p>
+        <h3><a href="/ja/psychology/20260921-adult-adhd-evidence/">大人のADHD、最新エビデンスで診断・治療の常識が塗り替わる</a></h3>
+        <p class="hub__feature-desc">
+          10 本の 系統的レビュー・メタアナリシス を 統合。有病率、診断基準の 変遷、薬物療法 (メチルフェニデート/アトモキセチン)、
+          高齢者の 見逃し、双極性障害との 鑑別 まで 包括。
+        </p>
+      </div>
+
+      <p>その他の 関連記事:</p>
+      <ul class="hub__link-list">
+        {related.filter((p) => (p.data.tags ?? []).includes('adhd') && !p.id.includes('adult-adhd-evidence') && !p.id.includes('child-adhd-evidence')).slice(0, 8).map((p) => (
+          <li><a href={`/ja/psychology/${p.id}/`}>{p.data.title}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section id="child">
+      <h2>3. 子ども ADHD の 早期発見・支援</h2>
+      <p>
+        子どもの ADHD は <strong>就学前後 (5-8 歳頃)</strong> に 気付かれることが 多く、
+        学業・友人関係・自尊心 への 影響を 最小化するため、早期支援が 有効です。
+        近年は 薬物療法だけでなく、<strong>ペアレント・トレーニング</strong>、<strong>家庭環境調整</strong>、
+        <strong>運動介入</strong> の 有効性も エビデンスで 示されています。
+      </p>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー</p>
+        <h3><a href="/ja/psychology/20260922-child-adhd-evidence/">子どものADHD、最新エビデンスで診断・支援の実践が大きく変わる</a></h3>
+        <p class="hub__feature-desc">
+          10 本の レビューを 統合。診断・介入・薬物療法・非薬物療法・家庭環境調整・運動介入 を 包括的に 整理。
+        </p>
+      </div>
+    </section>
+
+    <section id="treatment">
+      <h2>4. 治療選択肢 (薬物・非薬物)</h2>
+      <p>ADHD の 治療は <strong>薬物療法</strong> と <strong>非薬物療法 (行動療法・CBT・環境調整)</strong> の 両輪 で 進めることが 標準です。</p>
+
+      <div class="hub__grid">
+        <div class="hub__card">
+          <h4>💊 薬物療法</h4>
+          <p>メチルフェニデート・アトモキセチン・グアンファシン 等。効果は 大きいが、副作用と 継続の 見極めが 重要。</p>
+        </div>
+        <div class="hub__card">
+          <h4>🧘 認知行動療法 (CBT)</h4>
+          <p>大人 ADHD で 特に エビデンス強い。ADHD に 特化した CBT プログラムが 開発され 効果検証中。</p>
+          <p><a href="/ja/psychology/20260922-cognitive-behavioral-therapy-evidence/">CBT の エビデンスを 深掘り →</a></p>
+        </div>
+        <div class="hub__card">
+          <h4>🏃 運動介入</h4>
+          <p>有酸素運動が 注意機能・実行機能に 改善効果。子ども ADHD で 補助療法として 推奨されはじめている。</p>
+          <p><a href="/ja/psychology/20260922-exercise-depression-evidence/">運動と メンタルの 深掘り →</a></p>
+        </div>
+        <div class="hub__card">
+          <h4>😴 睡眠改善</h4>
+          <p>ADHD と 睡眠障害の 併存率は 高い。睡眠を 整えるだけで 症状が 軽減する ケースも。</p>
+          <p><a href="/ja/biology/20260922-sleep-deprivation-health-evidence/">睡眠不足の 影響を 深掘り →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="related">
+      <h2>5. 併存する 症状と 関連特性</h2>
+      <p>
+        ADHD は 単独で 存在するより、他の 神経発達特性・気分障害 と <strong>併存</strong> するケースが 多いことが 分かっています:
+      </p>
+      <ul>
+        <li><strong>自閉スペクトラム症 (ASD)</strong>: <a href="/ja/psychology/20260922-autism-spectrum-disorder-evidence/">ASD の 深掘り記事</a></li>
+        <li><strong>不安障害</strong>: <a href="/ja/psychology/20260922-anxiety-disorders-treatment-evidence/">不安障害治療 の 深掘り</a></li>
+        <li><strong>うつ病</strong>: <a href="/ja/psychology/20260922-exercise-depression-evidence/">運動療法 の 深掘り</a></li>
+        <li><strong>HSP (繊細さん)</strong>: <a href="/ja/psychology/20260921-hsp-highly-sensitive-person/">HSP の 深掘り</a></li>
+      </ul>
+    </section>
+
+    <section id="learn-more">
+      <h2>6. 更に 学ぶには</h2>
+      <ul>
+        <li><a href="/ja/guide/how-to-read-research/">📖 論文の 読み方ガイド</a> — メタ解析、効果量、p 値の 読み方</li>
+        <li><a href="/ja/guide/pubmed-search-guide/">🔍 PubMed を 日本語で 使いこなす</a> — 自分で 論文を 検索する 実践ガイド</li>
+        <li><a href="/ja/guide/paper-critique/">✔️ 論文を 批判的に 読む チェックリスト</a> — 記事の 信頼性を 見極める</li>
+        <li><a href="/ja/guide/glossary/">📚 研究用語集</a></li>
+        <li><a href="/ja/tag/adhd/">🏷️ #adhd タグの 全記事</a></li>
+      </ul>
+    </section>
+
+    <p class="hub__updated">最終更新: 2026-09-22 ｜ 新しい 深掘りレビューが 追加され次第、順次 更新します。</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .hub__toc {
+      background: #f7f9fc; border-left: 4px solid var(--navy);
+      padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px;
+    }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub__toc a:hover { text-decoration: underline; }
+    .hub h2 {
+      font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px;
+      padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px;
+    }
+    .hub h3 { font-size: 1.05rem; color: var(--navy); margin: 20px 0 8px; }
+    .hub h4 { font-size: 1rem; color: var(--navy); margin: 0 0 6px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul, .hub ol { line-height: 1.9; }
+    .hub__feature {
+      background: linear-gradient(135deg, #fff8ea 0%, #fef4d8 100%);
+      border: 1px solid #f0d78a; border-radius: 10px;
+      padding: 16px 20px; margin: 20px 0;
+    }
+    .hub__feature-tag { font-size: 0.72rem; color: #a26a00; font-weight: 700; letter-spacing: 0.05em; margin: 0 0 6px; }
+    .hub__feature h3 { margin: 0 0 8px; }
+    .hub__feature h3 a { color: var(--navy); text-decoration: none; }
+    .hub__feature h3 a:hover { text-decoration: underline; }
+    .hub__feature-desc { font-size: 0.9rem; color: #4a5568; margin: 4px 0 0; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px; margin: 16px 0;
+    }
+    .hub__card {
+      background: white; border: 1px solid #e5e9f2; border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .hub__card p { margin: 4px 0; font-size: 0.9rem; }
+    .hub__card a { color: var(--link); font-weight: 600; font-size: 0.85rem; }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('ja_psychology');
+const bio = await getCollection('ja_biology');
+const all = [...psy.map((p) => ({...p, cat: 'psychology' as const})), ...bio.map((p) => ({...p, cat: 'biology' as const}))];
+const relatedTags = ['gut-microbiome', 'probiotics', 'immunity', 'diet-nutrition'];
+const related = all
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="腸内フローラ (腸内細菌叢) を科学で理解する｜PubMed Trivia"
+  description="腸内フローラと メンタルヘルス、免疫、代謝、プロバイオティクスの 効果を 系統的レビューで 整理した ハブページ。「腸活」ブームの 科学的根拠を 分野横断で。"
+  lang="ja"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › 🦠 腸内フローラ ハブ</p>
+      <h1>🦠 腸内フローラ を エビデンスで理解する</h1>
+      <p class="hub__lede">
+        「腸内フローラ (腸内細菌叢、gut microbiome) 」は、<strong>ヒト遺伝子の 100 倍以上</strong> の 遺伝子を持つ
+        「もう 1 つの臓器」として、この 15 年 で 医学の 主流テーマに 変わりました。
+        当サイトでは PubMed 掲載の 系統的レビュー を 基に、腸内フローラと <strong>メンタル・免疫・代謝・食事</strong> の
+        関係を 横断的に 整理した 記事を 継続的に 追加しています。
+      </p>
+      <p class="hub__lede">
+        このハブページでは、「うつ・不安との 関係」「プロバイオティクスの 効果」「食事との 関係」など
+        <strong>読者の 関心の 高い 切り口</strong> ごとに、主要記事を まとめました。
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="目次">
+      <p class="hub__toc-title">このページの目次</p>
+      <ol>
+        <li><a href="#basics">腸内フローラとは 何か</a></li>
+        <li><a href="#mental">メンタルヘルスとの 関係 (腸脳軸)</a></li>
+        <li><a href="#probiotics">プロバイオティクスの エビデンス</a></li>
+        <li><a href="#diet">食事・断食が 腸内フローラに 与える影響</a></li>
+        <li><a href="#immunity">免疫・炎症との 関係</a></li>
+        <li><a href="#learn-more">更に 学ぶには</a></li>
+      </ol>
+    </nav>
+
+    <section id="basics">
+      <h2>1. 腸内フローラとは 何か</h2>
+      <p>
+        腸内フローラは <strong>約 1,000 種類・100 兆個</strong> の 微生物が 腸内で 形成する 生態系です。
+        個人差が 極めて 大きく、生後 3 年で 概ね 骨格が 決まり、成人以降は <strong>食事・環境・薬剤</strong> で
+        変動しますが、大きな 変化には 長期の 介入が必要とされます。
+      </p>
+      <p>
+        「腸活」というと 特定の 食品や サプリが 話題になりがちですが、
+        エビデンス上 最も 影響が 大きいのは <strong>食物繊維の 総摂取量</strong> と <strong>抗生物質の 使用歴</strong> です。
+      </p>
+      <p class="hub__callout">
+        📌 <strong>編集メモ</strong>: 腸内フローラ 検査は 各社から 販売されていますが、
+        結果の 解釈と 介入指針は <em>まだ 標準化されていません</em>。個別化医療は 発展途上です。
+      </p>
+    </section>
+
+    <section id="mental">
+      <h2>2. メンタルヘルスとの 関係 (腸脳軸)</h2>
+      <p>
+        腸と 脳は <strong>迷走神経・血流・免疫系</strong> を介して 双方向に 情報を やり取りしています。
+        これを <strong>腸脳軸 (gut-brain axis)</strong> と 呼び、うつ病・不安障害・パーキンソン病 との 関連が 大規模研究で 示唆されています。
+      </p>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー</p>
+        <h3><a href="/ja/biology/20260921-gut-microbiome-mental-health/">腸内フローラとメンタルヘルス:うつ・不安との関連を大規模研究から読み解く</a></h3>
+        <p class="hub__feature-desc">
+          10 本の 系統的レビュー を 統合。腸脳軸の メカニズム、うつ病 患者と 健常者の フローラ差、
+          プロバイオティクス介入の RCT、食物繊維の 役割 まで 包括。
+        </p>
+      </div>
+    </section>
+
+    <section id="probiotics">
+      <h2>3. プロバイオティクスの エビデンス</h2>
+      <p>
+        「善玉菌を 摂れば 健康に なる」という イメージが 強いプロバイオティクスですが、
+        実際の エビデンスは <strong>菌株・用量・タイミング</strong> に 大きく依存します。
+        「効く場面」と 「効かない場面」を 区別することが 重要です。
+      </p>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー (英語)</p>
+        <h3><a href="/en/biology/20260916-probiotics-diarrhea-evidence/">Probiotics for Diarrhea: What Science Says About Efficacy and Use</a></h3>
+        <p class="hub__feature-desc">
+          10 論文を 統合し、抗生物質関連下痢・感染性下痢・慢性下痢 の 3 場面で エビデンスを 検証。
+          Lactobacillus rhamnosus GG と Saccharomyces boulardii の 効果を 数値で 提示。
+        </p>
+      </div>
+    </section>
+
+    <section id="diet">
+      <h2>4. 食事・断食が 腸内フローラに 与える影響</h2>
+      <p>
+        食物繊維 (特に 発酵性食物繊維) は <strong>短鎖脂肪酸</strong> を 産生し、腸粘膜と 全身炎症に 好影響を 与えます。
+        一方で、<strong>インターミッテント断食</strong> による 腸内フローラの 変化も 研究が 進行中です。
+      </p>
+
+      <div class="hub__feature">
+        <p class="hub__feature-tag">🌟 深掘りレビュー</p>
+        <h3><a href="/ja/biology/20260922-intermittent-fasting-evidence/">インターミッテント断食（IF）、代謝と体重への効果を大規模メタ解析で検証</a></h3>
+        <p class="hub__feature-desc">
+          断食が 腸内フローラ・インスリン感受性・体重・脳に 与える影響を 8 本の メタ解析で 整理。
+        </p>
+      </div>
+    </section>
+
+    <section id="immunity">
+      <h2>5. 免疫・炎症との 関係</h2>
+      <p>
+        腸には 体全体の 免疫細胞の 約 70% が 集中しており、腸内フローラの バランスは
+        <strong>免疫応答・アレルギー・自己免疫疾患</strong> に 影響します。
+      </p>
+      <p>その他の 関連記事 (最新順):</p>
+      <ul class="hub__link-list">
+        {related.filter((p) => (p.data.tags ?? []).some((t) => t === 'gut-microbiome' || t === 'probiotics' || t === 'immunity')).slice(0, 12).map((p) => (
+          <li><a href={`/ja/${p.cat}/${p.id}/`}>{p.data.title}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section id="learn-more">
+      <h2>6. 更に 学ぶには</h2>
+      <ul>
+        <li><a href="/ja/guide/how-to-read-research/">📖 論文の 読み方ガイド</a></li>
+        <li><a href="/ja/guide/pubmed-search-guide/">🔍 PubMed を 日本語で 使いこなす</a></li>
+        <li><a href="/ja/guide/paper-critique/">✔️ 論文を 批判的に 読む チェックリスト</a></li>
+        <li><a href="/ja/tag/gut-microbiome/">🏷️ #腸内フローラ タグの 全記事</a></li>
+        <li><a href="/ja/tag/probiotics/">🏷️ #プロバイオティクス タグの 全記事</a></li>
+      </ul>
+    </section>
+
+    <p class="hub__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .hub__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub h2 { font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .hub h3 { font-size: 1.05rem; color: var(--navy); margin: 20px 0 8px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul, .hub ol { line-height: 1.9; }
+    .hub__feature { background: linear-gradient(135deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+    .hub__feature-tag { font-size: 0.72rem; color: #a26a00; font-weight: 700; letter-spacing: 0.05em; margin: 0 0 6px; }
+    .hub__feature h3 { margin: 0 0 8px; }
+    .hub__feature h3 a { color: var(--navy); text-decoration: none; }
+    .hub__feature h3 a:hover { text-decoration: underline; }
+    .hub__feature-desc { font-size: 0.9rem; color: #4a5568; margin: 4px 0 0; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

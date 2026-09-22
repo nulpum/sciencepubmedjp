@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="論文を 批判的に 読む チェックリスト ｜ PubMed Trivia"
+  description="学術論文を 鵜呑みにせず、批判的に 読み解くための 実践的チェックリスト。研究デザイン、サンプル、統計、利益相反、再現性 まで 9 項目で 整理。"
+  lang="ja"
+>
+  <article class="guide">
+    <p class="guide__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › 論文を批判的に読む チェックリスト</p>
+    <h1>論文を 批判的に 読む チェックリスト</h1>
+    <p class="guide__lede">
+      「エビデンスがある」と 言われる研究でも、方法論の 限界や 利益相反 で 結果が 偏っている ことが あります。
+      本ガイドは、一般読者が 論文 (特に abstract) を <strong>批判的に 読む</strong> ための 9 項目の チェックリスト です。
+      医療・健康情報を SNS・ニュースで 見た際にも 役立ちます。
+    </p>
+
+    <nav class="guide__toc" aria-label="目次">
+      <p class="guide__toc-title">目次</p>
+      <ol>
+        <li><a href="#design">研究デザインは 何か?</a></li>
+        <li><a href="#sample">サンプルサイズと 対象集団</a></li>
+        <li><a href="#control">対照群は 適切か?</a></li>
+        <li><a href="#outcome">主要アウトカムは 明確か?</a></li>
+        <li><a href="#stats">統計と 効果量</a></li>
+        <li><a href="#bias">バイアスと 交絡</a></li>
+        <li><a href="#coi">利益相反 (COI)</a></li>
+        <li><a href="#reproducibility">再現性 と 事前登録</a></li>
+        <li><a href="#generalize">結果を 一般化してよいか?</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="design">✅ 1. 研究デザインは 何か?</h2>
+    <p>研究デザインで <strong>因果を 主張できる強度</strong> が 決まります。上ほど 因果推論が 強い:</p>
+    <table class="guide__table">
+      <thead><tr><th>デザイン</th><th>因果推論の 強度</th><th>備考</th></tr></thead>
+      <tbody>
+        <tr><td><strong>系統的レビュー / メタ解析</strong></td><td>★★★★★</td><td>複数の RCT を 統合。最も 強い</td></tr>
+        <tr><td><strong>ランダム化比較試験 (RCT)</strong></td><td>★★★★</td><td>ランダム化で 交絡を 均一化</td></tr>
+        <tr><td><strong>コホート研究</strong></td><td>★★★</td><td>時間軸あり。前向きが 望ましい</td></tr>
+        <tr><td><strong>症例対照研究</strong></td><td>★★</td><td>過去比較。想起バイアスの リスク</td></tr>
+        <tr><td><strong>横断研究</strong></td><td>★★</td><td>時点1つ、因果は 主張しにくい</td></tr>
+        <tr><td><strong>症例報告</strong></td><td>★</td><td>n=1、仮説生成のみ</td></tr>
+        <tr><td><strong>動物実験・in vitro</strong></td><td>★</td><td>ヒトへの 外挿は 慎重に</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="sample">✅ 2. サンプルサイズと 対象集団</h2>
+    <ul>
+      <li><strong>n が 少なすぎない か</strong>: 一般に n=100 以下 は 検出力不足。ただし デザインによる</li>
+      <li><strong>対象者の 特徴</strong>: 年齢層 / 性別 / 疾患重症度 / 地域は?</li>
+      <li><strong>脱落率</strong>: 20% を 超えたら 結果の 解釈に 注意</li>
+    </ul>
+
+    <h2 id="control">✅ 3. 対照群は 適切か?</h2>
+    <ul>
+      <li><strong>プラセボ (偽薬) 対照</strong> or <strong>標準治療 対照</strong>?</li>
+      <li>「介入群」と 「対照群」の <strong>ベースライン特性が 似ているか</strong> (Table 1 で 確認)</li>
+      <li>盲検化 (被験者・観察者・データ解析者) の 有無</li>
+    </ul>
+
+    <h2 id="outcome">✅ 4. 主要アウトカムは 明確か?</h2>
+    <p class="guide__callout">
+      ⚠️ <strong>要注意</strong>: 事前に 主要アウトカム を 決めておかず、後で 有意な指標を 拾う (p-hacking) は 悪質。
+      Trial registry (ClinicalTrials.gov 等) で 事前登録されているか 確認。
+    </p>
+    <ul>
+      <li>「主要アウトカム (primary outcome)」は 1 つ、事前指定 が 望ましい</li>
+      <li>副次アウトカム で 有意な結果が 出た場合、それは 探索的 と 解釈</li>
+      <li>代替指標 (例: HbA1c) と 真のアウトカム (例: 死亡率) を 混同しない</li>
+    </ul>
+
+    <h2 id="stats">✅ 5. 統計と 効果量</h2>
+    <ul>
+      <li><strong>p 値だけでなく 効果量を 見る</strong>: p&lt;0.05 でも 実効果が 小さい ことは 多い</li>
+      <li><strong>信頼区間 (95% CI)</strong>: 0 を またぐ なら 有意でない</li>
+      <li><strong>絶対リスク vs 相対リスク</strong>: 「リスク 50% 減」でも 元が 1% なら 実質 0.5% 減</li>
+      <li><strong>NNT (Number Needed to Treat)</strong>: 1 人 に 効果を 出すのに 何人 治療が 必要か</li>
+    </ul>
+
+    <h2 id="bias">✅ 6. バイアスと 交絡</h2>
+    <ul>
+      <li><strong>選択バイアス</strong>: 対象者の 選び方に 偏りは ないか</li>
+      <li><strong>測定バイアス</strong>: アウトカム測定に 主観が 入って いないか</li>
+      <li><strong>思い出しバイアス</strong>: 症例対照研究で 過去の 曝露を 思い出す時 の 偏り</li>
+      <li><strong>交絡因子</strong>: 年齢・喫煙・所得等、両群の 差の 原因が 実は 別変数</li>
+    </ul>
+
+    <h2 id="coi">✅ 7. 利益相反 (COI)</h2>
+    <p class="guide__callout">
+      💰 <strong>チェック</strong>: 論文末尾の <strong>Conflicts of Interest / Funding</strong> セクションを 必ず読む。
+      製薬会社・食品会社 が 資金提供している 場合、結果が 好意的に 傾く 傾向が 実証されています。
+    </p>
+    <ul>
+      <li>資金源: 公的機関 (NIH, JSPS) か 民間か</li>
+      <li>著者と 業界の 関係: 顧問料・株式・特許</li>
+      <li>試験の 設計・解析・公表 に 資金提供者が 関与したか</li>
+    </ul>
+
+    <h2 id="reproducibility">✅ 8. 再現性 と 事前登録</h2>
+    <ul>
+      <li><strong>Trial registry</strong>: RCT は ClinicalTrials.gov / UMIN-CTR に 事前登録が 標準</li>
+      <li><strong>データ・コード公開</strong>: Open Science Framework 等で 公開されているか</li>
+      <li><strong>再現研究の 有無</strong>: 単発研究より 複数チームで 追試された 知見の方が 信頼できる</li>
+      <li>心理学 (2015 年) や 医学 (2016 年) で <strong>再現性危機</strong> が 報告されており、単発研究の 過信は 危険</li>
+    </ul>
+
+    <h2 id="generalize">✅ 9. 結果を 一般化してよいか?</h2>
+    <p>次の 質問を 自分に:</p>
+    <ul>
+      <li>この 研究の 対象者は 自分 (or 説明したい 相手) と 似ているか?</li>
+      <li>試験環境と 実生活の 違いは?</li>
+      <li>短期の 効果か、長期の 効果か? (安全性は 長期試験でしか わからない ことも)</li>
+      <li>効果が あった 集団 と 効果が なかった 集団の 差は?</li>
+    </ul>
+
+    <p class="guide__callout" style="border-left-color: #2e7d32; background: #e8f5e9;">
+      🎯 <strong>実務での 使い方</strong>: SNS や ニュースで 「新研究で 判明!」と 見たら、
+      まず <strong>1 (デザイン)</strong> → <strong>2 (サンプル)</strong> → <strong>7 (COI)</strong> の 3 つ を チェック。
+      これだけで 8 割の ミスリードは 避けられます。
+    </p>
+
+    <p style="margin-top: 32px;">
+      関連ガイド:
+      <a href="/ja/guide/how-to-read-research/">📖 論文の 読み方ガイド (基礎編)</a> ／
+      <a href="/ja/guide/pubmed-search-guide/">🔍 PubMed 検索ガイド</a> ／
+      <a href="/ja/guide/glossary/">📚 研究用語集</a>
+    </p>
+
+    <p class="guide__updated">最終更新: 2026-09-22</p>
+  </article>
+
+  <style>
+    .guide { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide__breadcrumb a { color: var(--muted); }
+    .guide h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .guide__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .guide__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .guide__toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .guide__toc a { color: var(--link); }
+    .guide h2 { font-size: 1.25rem; color: var(--navy); margin: 34px 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .guide p, .guide ul, .guide ol { line-height: 1.85; }
+    .guide code { background: #f0f4fa; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .guide__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .guide__table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+    .guide__table th, .guide__table td { border: 1px solid #d5dceb; padding: 8px 12px; text-align: left; }
+    .guide__table th { background: #f0f4fa; color: var(--navy); }
+    .guide__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

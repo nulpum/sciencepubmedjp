@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="トピックハブ ｜ PubMed Trivia"
+  description="ADHD、腸内フローラ、睡眠 など、テーマ別に 主要記事と 編集的解説を まとめた ハブページの 一覧。"
+  lang="ja"
+>
+  <article class="hub-index">
+    <header class="hub-index__header">
+      <p class="hub-index__breadcrumb"><a href="/ja/">ホーム</a> › トピックハブ</p>
+      <h1>📚 トピックハブ</h1>
+      <p class="hub-index__intro">
+        テーマ別に 主要記事と 編集的解説を まとめた ハブページ の 一覧です。
+        「まずは 全体像を つかみたい」時の 入り口として お使いください。
+      </p>
+    </header>
+
+    <div class="hub-index__grid">
+      <a href="/ja/hub/adhd/" class="hub-tile">
+        <span class="hub-tile__emoji">🧠</span>
+        <h2>ADHD ハブ</h2>
+        <p>大人の 見落とし・子どもの 早期発見・治療選択肢・併存症 まで、系統的レビューで 整理。</p>
+      </a>
+      <a href="/ja/hub/gut-microbiome/" class="hub-tile">
+        <span class="hub-tile__emoji">🦠</span>
+        <h2>腸内フローラ ハブ</h2>
+        <p>メンタルヘルス・免疫・代謝・プロバイオティクスとの 関係を 横断的に。</p>
+      </a>
+      <a href="/ja/hub/sleep/" class="hub-tile">
+        <span class="hub-tile__emoji">😴</span>
+        <h2>睡眠 ハブ</h2>
+        <p>睡眠不足の 影響・概日リズム・記憶固定・実践的な 睡眠改善 まで。</p>
+      </a>
+    </div>
+
+    <p class="hub-index__note">今後、認知行動療法・運動・GLP-1・老化 などの ハブページを 追加予定です。</p>
+  </article>
+
+  <style>
+    .hub-index { max-width: 820px; margin: 0 auto; padding: 24px 20px 40px; }
+    .hub-index__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub-index__breadcrumb a { color: var(--muted); }
+    .hub-index__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; }
+    .hub-index__intro { line-height: 1.85; color: #4a5568; }
+
+    .hub-index__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 28px 0; }
+    .hub-tile {
+      display: block;
+      padding: 24px 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+      border: 1px solid #d5dceb;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--navy);
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    }
+    .hub-tile:hover { transform: translateY(-2px); border-color: var(--navy); box-shadow: 0 8px 20px rgba(26,54,93,0.1); }
+    .hub-tile__emoji { font-size: 2.4rem; display: block; margin-bottom: 8px; }
+    .hub-tile h2 { font-size: 1.2rem; margin: 6px 0 8px; color: var(--navy); }
+    .hub-tile p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
+    .hub-index__note { color: var(--muted); font-size: 0.85rem; text-align: center; margin-top: 40px; }
+  </style>
+</BaseLayout>

@@ -142,7 +142,10 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
           <a href={`/${lang}/archive/`}>📅</a>
           <a href={`/${lang}/tag/`}>🏷️</a>
           {lang === 'ja' && (
-            <a href="/ja/lab/" class="site-nav__cta">🔬 Lab</a>
+            <>
+              <a href="/ja/hub/">📚</a>
+              <a href="/ja/lab/" class="site-nav__cta">🔬 Lab</a>
+            </>
           )}
           <span class="site-nav__sep" aria-hidden="true">|</span>
           <a href="/ja/" class={lang === 'ja' ? 'is-active' : ''}>JA</a>
@@ -184,6 +187,12 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
             <a href="/ja/guide/glossary/">研究用語集</a>
             <span aria-hidden="true">·</span>
             <a href="/ja/guide/faq/">FAQ</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/guide/pubmed-search-guide/">🔍 PubMed 検索</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/guide/paper-critique/">✔️ 論文批判的読み方</a>
+            <span aria-hidden="true">·</span>
+            <a href="/ja/hub/">📚 ハブ</a>
             <span aria-hidden="true">·</span>
             <a href="/ja/editorial-policy/">📝 編集方針</a>
           </>
