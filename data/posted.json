@@ -7103,6 +7103,38 @@
       "category": "biology",
       "postedAt": "2026-09-23T00:42:03.700Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mw5j2byanl2c"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260827-42162885",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-23T17:11:03.001Z",
+      "postId": "17882724897513556"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260922-autism-spectrum-disorder-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-23T17:11:12.455Z",
+      "postId": "1103479166185406_122113305105321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260922-41269457",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-23T17:11:24.202Z",
+      "postId": "18152030026555864"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-39874887",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-23T17:11:26.497Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mw7adgptxn2m"
     }
   ]
 }
