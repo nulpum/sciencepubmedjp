@@ -7231,6 +7231,38 @@
       "category": "biology",
       "postedAt": "2026-09-24T17:23:57.264Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwbriq6auw23"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260829-41826267",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-24T18:43:30.831Z",
+      "postId": "18052754480589682"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260922-chronic-pain-psychology-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-24T18:43:39.565Z",
+      "postId": "1103479166185406_122113409217321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260922-mindfulness-meditation-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-24T18:43:51.547Z",
+      "postId": "18150091291554514"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-41115971",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-24T18:43:54.277Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwbvxoxtjk22"
     }
   ]
 }
