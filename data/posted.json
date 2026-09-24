@@ -7199,6 +7199,38 @@
       "category": "biology",
       "postedAt": "2026-09-24T00:41:52.496Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mw7ziupyc423"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260829-40643010",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-24T17:23:34.296Z",
+      "postId": "18115386061869121"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260922-cognitive-behavioral-therapy-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-24T17:23:43.038Z",
+      "postId": "1103479166185406_122113404003321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260922-exercise-depression-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-24T17:23:54.918Z",
+      "postId": "18052339484807187"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-41025860",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-24T17:23:57.264Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwbriq6auw23"
     }
   ]
 }
