@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('en_psychology');
+const relatedTags = ['cbt', 'depression', 'anxiety', 'ptsd'];
+const related = psy
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="Cognitive Behavioral Therapy (CBT): An Evidence Hub｜PubMed Trivia"
+  description="CBT for depression, anxiety, PTSD, chronic pain, and adult ADHD — synthesized from systematic reviews and meta-analyses."
+  lang="en"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/en/">Home</a> › <a href="/en/hub/">Hubs</a> › 🧘 CBT Hub</p>
+      <h1>🧘 Cognitive Behavioral Therapy: An Evidence Hub</h1>
+      <p class="hub__lede">
+        CBT is a structured, goal-oriented psychotherapy with the <strong>strongest evidence base of any psychological
+        treatment</strong> across depression, anxiety disorders, PTSD, chronic pain, insomnia, and adult ADHD.
+        This hub curates our systematic-review-based articles.
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="Contents">
+      <p class="hub__toc-title">Contents</p>
+      <ol>
+        <li><a href="#what">What CBT is</a></li>
+        <li><a href="#depression">CBT for depression</a></li>
+        <li><a href="#anxiety">CBT for anxiety disorders</a></li>
+        <li><a href="#other">Other applications (ADHD, pain)</a></li>
+        <li><a href="#online">Digital / online CBT (iCBT)</a></li>
+        <li><a href="#limits">Limits and caveats</a></li>
+      </ol>
+    </nav>
+
+    <section id="what">
+      <h2>1. What CBT is</h2>
+      <p>
+        CBT modifies <strong>thoughts (cognitions)</strong> and <strong>behaviors</strong> to change emotional and
+        physical outcomes. Standard course: 12-20 weekly sessions with structured homework
+        (thought records, behavioral experiments, exposure).
+      </p>
+      <ul>
+        <li><strong>Cognitive restructuring</strong> — challenge automatic thoughts</li>
+        <li><strong>Behavioral activation</strong> — increase engagement despite mood</li>
+        <li><strong>Exposure therapy</strong> — face feared stimuli gradually</li>
+        <li><strong>ERP (exposure &amp; response prevention)</strong> — first-line for OCD</li>
+      </ul>
+    </section>
+
+    <section id="depression">
+      <h2>2. CBT for depression</h2>
+      <p>
+        Meta-analyses consistently show CBT's effect size is comparable to antidepressant medication for
+        mild-to-moderate depression, with lower relapse rates. Combined therapy often outperforms either alone.
+      </p>
+    </section>
+
+    <section id="anxiety">
+      <h2>3. CBT for anxiety disorders</h2>
+      <p>
+        Panic disorder, social anxiety, generalized anxiety, OCD, and PTSD all respond to CBT. Trauma-focused CBT
+        and EMDR are recommended first-line for PTSD.
+      </p>
+    </section>
+
+    <section id="other">
+      <h2>4. Other applications</h2>
+      <ul>
+        <li><strong>Adult ADHD</strong> — CBT complements medication by targeting executive function and time management</li>
+        <li><strong>Chronic pain</strong> — CBT reduces pain catastrophizing and preserves function</li>
+        <li><strong>Insomnia</strong> — CBT-I is now first-line, preferred over long-term sleep medication</li>
+      </ul>
+    </section>
+
+    <section id="online">
+      <h2>5. Digital / online CBT (iCBT)</h2>
+      <p>
+        Self-guided or coach-supported iCBT has demonstrated efficacy comparable to face-to-face therapy for
+        several conditions, at a fraction of the cost. Deployment barriers include engagement and dropout.
+      </p>
+    </section>
+
+    <section id="limits">
+      <h2>6. Limits and caveats</h2>
+      <ul>
+        <li>Severe psychotic symptoms need medication first</li>
+        <li>Therapeutic alliance matters — a poor therapist-client fit undermines efficacy</li>
+        <li>Homework compliance is essential; low executive-function clients need scaffolding</li>
+      </ul>
+    </section>
+
+    <p><strong>Related articles (latest):</strong></p>
+    <ul class="hub__link-list">
+      {related.slice(0, 8).map((p) => (
+        <li><a href={`/en/psychology/${p.id}/`}>{p.data.title}</a></li>
+      ))}
+    </ul>
+
+    <p style="margin-top: 24px;">
+      Also see:
+      <a href="/en/hub/adhd/">🧠 ADHD Hub</a> ·
+      <a href="/en/hub/sleep/">😴 Sleep Hub</a> ·
+      <a href="/en/lab/">🔬 PubMed Lab</a>
+    </p>
+    <p class="hub__updated">Last updated: 2026-09-24</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub h2 { font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul { line-height: 1.9; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

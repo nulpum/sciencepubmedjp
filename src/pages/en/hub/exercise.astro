@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('en_psychology');
+const bio = await getCollection('en_biology');
+const all = [...psy.map((p) => ({...p, cat: 'psychology' as const})), ...bio.map((p) => ({...p, cat: 'biology' as const}))];
+const relatedTags = ['exercise', 'depression', 'brain', 'aging', 'sleep'];
+const related = all
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="Exercise Science: An Evidence Hub｜PubMed Trivia"
+  description="How exercise affects mood, cognition, sleep, chronic pain, and aging — a synthesis of systematic reviews and meta-analyses."
+  lang="en"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/en/">Home</a> › <a href="/en/hub/">Hubs</a> › 🏃 Exercise Hub</p>
+      <h1>🏃 Exercise Science: An Evidence Hub</h1>
+      <p class="hub__lede">
+        Exercise is one of the most studied — and most consistently effective — interventions across mental health,
+        cognition, metabolism, and aging. This hub curates our systematic-review-based articles.
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="Contents">
+      <p class="hub__toc-title">Contents</p>
+      <ol>
+        <li><a href="#types">Types of exercise</a></li>
+        <li><a href="#depression">Exercise for depression</a></li>
+        <li><a href="#brain">Cognition and brain health</a></li>
+        <li><a href="#sleep">Sleep effects</a></li>
+        <li><a href="#pain">Chronic pain</a></li>
+      </ol>
+    </nav>
+
+    <section id="types">
+      <h2>1. Types of exercise</h2>
+      <ul>
+        <li><strong>Aerobic</strong> — walking, running, cycling, swimming; cardiovascular and brain benefits</li>
+        <li><strong>Resistance</strong> — strength training; muscle mass, bone density, executive function</li>
+        <li><strong>HIIT</strong> — high-intensity intervals; time-efficient for cardiometabolic gains</li>
+        <li><strong>Mind-body</strong> — yoga, tai chi; stress reduction, flexibility</li>
+      </ul>
+    </section>
+
+    <section id="depression">
+      <h2>2. Exercise for depression</h2>
+      <p>
+        Large network meta-analyses show exercise effect sizes for depression rivaling those of antidepressant
+        medication and CBT, with additional physical health benefits. Dose-response evidence is strong.
+      </p>
+    </section>
+
+    <section id="brain">
+      <h2>3. Cognition and brain health</h2>
+      <p>
+        Exercise elevates <strong>BDNF (brain-derived neurotrophic factor)</strong>, preserves hippocampal volume,
+        and improves executive function. Effects on dementia prevention are especially well-documented in older adults.
+      </p>
+    </section>
+
+    <section id="sleep">
+      <h2>4. Sleep effects</h2>
+      <p>
+        Moderate aerobic exercise 3-5 times per week shortens sleep latency and increases deep sleep.
+        However, intense exercise within 2-3 hours of bedtime is counterproductive for most people.
+      </p>
+      <p>Related: <a href="/en/hub/sleep/">😴 Sleep Hub</a></p>
+    </section>
+
+    <section id="pain">
+      <h2>5. Chronic pain</h2>
+      <p>
+        Exercise therapy is a validated non-pharmacological option for chronic low back pain,
+        osteoarthritis, and fibromyalgia — often outperforming rest.
+      </p>
+    </section>
+
+    <p><strong>Related articles (latest):</strong></p>
+    <ul class="hub__link-list">
+      {related.slice(0, 8).map((p) => (
+        <li><a href={`/en/${p.cat}/${p.id}/`}>{p.data.title}</a></li>
+      ))}
+    </ul>
+
+    <p style="margin-top: 24px;">
+      Also see:
+      <a href="/en/hub/cbt/">🧘 CBT Hub</a> ·
+      <a href="/en/hub/sleep/">😴 Sleep Hub</a> ·
+      <a href="/en/lab/">🔬 PubMed Lab</a>
+    </p>
+    <p class="hub__updated">Last updated: 2026-09-24</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub h2 { font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul { line-height: 1.9; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

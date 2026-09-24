@@ -6,25 +6,84 @@ const posts = (await getCollection('en_psychology')).sort(
   (a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at),
 );
 
+// 深掘り記事 (slug に "evidence" or "sensitive-person" 含む) と 単一論文記事 に分離
+const deepDives = posts.filter((p) => /(-evidence|-highly-sensitive-person)$/.test(p.id));
+const recent = posts.filter((p) => !/(-evidence|-highly-sensitive-person)$/.test(p.id)).slice(0, 30);
+
 export const prerender = true;
 ---
-<BaseLayout
-  title="Psychology Trivia ｜ PubMed Trivia"
-  description="Trivia from psychology, sleep, memory, and decision-making research on PubMed."
-  lang="en"
->
-  <h1>Psychology Trivia</h1>
-  <p>Bite-sized trivia from psychology, sleep, memory, and behavioral research.</p>
-  <ul class="card-grid">
-    {posts.map((post) => (
-      <li class="card">
-        <a href={`/en/psychology/${post.id}/`}>{post.data.title}</a>
-        <p class="card__fact">{post.data.fact}</p>
-        <div class="card__meta">
-          <span class="tag tag--psychology">Psychology</span>
-          {post.data.journal && <span>{post.data.journal}{post.data.year && ` · ${post.data.year}`}</span>}
-        </div>
-      </li>
-    ))}
-  </ul>
+<BaseLayout title="Psychology — PubMed Trivia" description="Psychology articles based on PubMed systematic reviews and meta-analyses. Curated by topic." lang="en">
+  <div class="cat-page">
+    <header class="cat-page__header">
+      <p class="cat-page__breadcrumb"><a href="/en/">Home</a> › Psychology</p>
+      <h1>🧠 {'Psychology'} <span class="cat-page__count">({posts.length} articles)</span></h1>
+      <p class="cat-page__intro">Memory, sleep, learning, decision, clinical psychology</p>
+    </header>
+
+    <div class="cat-hubs">
+      <p class="cat-hubs__label">📚 Related hubs:</p>
+      <a href="/en/hub/adhd/">🧠 ADHD</a>
+      <a href="/en/hub/sleep/">😴 Sleep</a>
+      <a href="/en/hub/">→ All hubs</a>
+    </div>
+
+    {deepDives.length > 0 && (
+      <section class="cat-page__section">
+        <h2>🌟 Deep-dive reviews ({deepDives.length})</h2>
+        <ul class="feature-grid">
+          {deepDives.map((p) => (
+            <li class="feature">
+              <a href={`/en/psychology/${p.id}/`}>
+                <span class="feature__badge">{'Psychology'}</span>
+                <h3>{p.data.title}</h3>
+                <p>{p.data.fact}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section class="cat-page__section">
+      <h2>🆕 Latest articles</h2>
+      <ul class="card-grid">
+        {recent.map((p) => (
+          <li class="card">
+            <a href={`/en/psychology/${p.id}/`}>{p.data.title}</a>
+            <p class="card__fact">{p.data.fact}</p>
+            <div class="card__meta">
+              <span class="tag tag--psychology">{'Psychology'}</span>
+              {p.data.journal && <span>{p.data.journal}{p.data.year && ` · ${p.data.year}`}</span>}
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="cat-page__more"><a href="/en/archive/">📅 All Psychology articles (by year) →</a></p>
+    </section>
+  </div>
+
+  <style>
+    .cat-page { max-width: 820px; margin: 0 auto; padding: 24px 20px 40px; }
+    .cat-page__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .cat-page__breadcrumb a { color: var(--muted); }
+    .cat-page__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 8px; }
+    .cat-page__count { color: var(--muted); font-weight: 500; font-size: 1.05rem; }
+    .cat-page__intro { color: #4a5568; font-size: 0.95rem; }
+    .cat-hubs { background: #f0f4fa; padding: 12px 16px; border-radius: 8px; margin: 16px 0 28px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .cat-hubs__label { margin: 0; font-weight: 600; color: var(--navy); font-size: 0.88rem; }
+    .cat-hubs a { display: inline-block; padding: 4px 12px; background: white; border: 1px solid #d5dceb; border-radius: 999px; font-size: 0.85rem; text-decoration: none; color: var(--navy); }
+    .cat-hubs a:hover { border-color: var(--navy); }
+    .cat-page__section { margin: 32px 0; }
+    .cat-page__section h2 { font-size: 1.3rem; color: var(--navy); margin: 0 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); }
+    .cat-page__more { text-align: center; margin-top: 20px; }
+    .cat-page__more a { color: var(--link); font-weight: 600; }
+
+    .feature-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .feature { background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; transition: transform 0.15s; }
+    .feature:hover { transform: translateY(-2px); }
+    .feature a { display: block; padding: 16px 18px; text-decoration: none; color: var(--navy); }
+    .feature__badge { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: white; background: #7c3aed; }
+    .feature h3 { font-size: 1rem; margin: 8px 0 6px; line-height: 1.4; color: var(--navy); }
+    .feature p { font-size: 0.86rem; color: #4a5568; line-height: 1.6; margin: 0; }
+  </style>
 </BaseLayout>

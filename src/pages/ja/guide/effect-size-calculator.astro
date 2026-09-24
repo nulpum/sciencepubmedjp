@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+export const prerender = true;
+---
+<BaseLayout
+  title="効果量 計算機 (Cohen's d / OR / RR / NNT) — 論文の 「実効果」を すぐ 換算 ｜ PubMed Trivia"
+  description="論文で 出てくる 効果量 (Cohen's d、オッズ比、リスク比) を 直感的な 意味に 換算。無料の 実用ツール。臨床論文・メタ解析を 読む時 に。"
+  lang="ja"
+>
+  <article class="calc">
+    <p class="calc__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › 効果量計算機</p>
+    <h1>📊 効果量 計算機</h1>
+    <p class="calc__lede">
+      論文の「効果量」を 直感的な 意味に 換算する 実用ツール。数値を入れると、その 効果の 実用的意義 を 判定します。
+      詳しくは <a href="/ja/guide/effect-size-guide/">効果量ガイド</a> を ご覧ください。
+    </p>
+
+    {/* Cohen's d */}
+    <section class="calc__card">
+      <h2>1. Cohen's d</h2>
+      <p>2 群の 平均差を 標準偏差で 割った 値。心理学・教育・睡眠研究で 頻出。</p>
+      <div class="calc__form">
+        <label>Cohen's d</label>
+        <input type="number" id="cd" step="0.01" placeholder="例: 0.5" />
+      </div>
+      <div id="cd-out" class="calc__out"></div>
+    </section>
+
+    {/* OR to Cohen's d */}
+    <section class="calc__card">
+      <h2>2. オッズ比 (OR) → Cohen's d 換算</h2>
+      <p>OR を 連続変数の 効果量に 換算 (Chinn 2000 の 変換式)。</p>
+      <div class="calc__form">
+        <label>OR</label>
+        <input type="number" id="or" step="0.01" min="0" placeholder="例: 1.5" />
+      </div>
+      <div id="or-out" class="calc__out"></div>
+    </section>
+
+    {/* RR to NNT */}
+    <section class="calc__card">
+      <h2>3. リスク比 (RR) → NNT 計算</h2>
+      <p>RR と ベースラインリスク (対照群の 発生率) から NNT (何人 治療で 1 人 助かるか) を 計算。</p>
+      <div class="calc__form">
+        <label>対照群 リスク (%)</label>
+        <input type="number" id="rr-baseline" step="0.1" min="0" max="100" placeholder="例: 20" />
+      </div>
+      <div class="calc__form">
+        <label>RR</label>
+        <input type="number" id="rr-value" step="0.01" min="0" placeholder="例: 0.7" />
+      </div>
+      <div id="rr-out" class="calc__out"></div>
+    </section>
+
+    {/* Relative to Absolute */}
+    <section class="calc__card">
+      <h2>4. 相対リスク → 絶対リスク の 罠</h2>
+      <p>「リスク 50% 減」の 実質的な 意味を、ベースライン別に 表示。</p>
+      <div class="calc__form">
+        <label>元 リスク (%)</label>
+        <input type="number" id="ar-baseline" step="0.1" min="0" max="100" placeholder="例: 2" />
+      </div>
+      <div class="calc__form">
+        <label>相対変化 (%、正 = 減少)</label>
+        <input type="number" id="ar-reduction" step="1" min="-100" max="100" placeholder="例: 50" />
+      </div>
+      <div id="ar-out" class="calc__out"></div>
+    </section>
+
+    <script is:inline>
+      function fmt(n, d) { d = d || 2; return (Math.round(n * Math.pow(10, d)) / Math.pow(10, d)).toString(); }
+
+      // 1. Cohen's d
+      var cd = document.getElementById('cd');
+      var cdOut = document.getElementById('cd-out');
+      function updateCd() {
+        var v = parseFloat(cd.value);
+        if (isNaN(v)) { cdOut.textContent = ''; return; }
+        var absV = Math.abs(v);
+        var band = absV < 0.2 ? '極小 (negligible)' :
+                   absV < 0.5 ? '小 (small)' :
+                   absV < 0.8 ? '中 (medium)' :
+                   absV < 1.2 ? '大 (large)' : '非常に大 (very large)';
+        // 集団の 重なり率 (Cohen)
+        var overlap = Math.max(0, 100 - absV * 39);
+        cdOut.innerHTML = '<p><strong>解釈</strong>: ' + band + '</p>' +
+                          '<p><strong>集団の重なり</strong>: 約 ' + fmt(overlap, 0) + '% (両群の分布が 重なる 割合)</p>' +
+                          '<p><strong>実例</strong>: ' + (absV < 0.3 ? '肉眼では 差を感じにくい' :
+                            absV < 0.6 ? '注意深く 見れば 差が わかる' :
+                            absV < 1.0 ? '目で見て 明らかに違う' : '劇的な差、薬物療法級') + '</p>';
+      }
+      cd.addEventListener('input', updateCd);
+
+      // 2. OR to d (Chinn 2000: d ≈ ln(OR) × √3 / π)
+      var or = document.getElementById('or');
+      var orOut = document.getElementById('or-out');
+      function updateOr() {
+        var v = parseFloat(or.value);
+        if (isNaN(v) || v <= 0) { orOut.textContent = ''; return; }
+        var d = Math.log(v) * Math.sqrt(3) / Math.PI;
+        var absD = Math.abs(d);
+        var band = absD < 0.2 ? '極小' : absD < 0.5 ? '小' : absD < 0.8 ? '中' : '大';
+        orOut.innerHTML = '<p><strong>換算 Cohen\'s d</strong>: ' + fmt(d, 2) + '</p>' +
+                          '<p><strong>解釈</strong>: ' + band + '</p>';
+      }
+      or.addEventListener('input', updateOr);
+
+      // 3. RR → NNT
+      var rrB = document.getElementById('rr-baseline');
+      var rrV = document.getElementById('rr-value');
+      var rrOut = document.getElementById('rr-out');
+      function updateRr() {
+        var b = parseFloat(rrB.value);
+        var r = parseFloat(rrV.value);
+        if (isNaN(b) || isNaN(r) || b <= 0 || r < 0) { rrOut.textContent = ''; return; }
+        var pControl = b / 100;
+        var pTreat = pControl * r;
+        var arr = pControl - pTreat; // absolute risk reduction
+        if (Math.abs(arr) < 0.0001) { rrOut.innerHTML = '<p><strong>NNT</strong>: ∞ (差なし)</p>'; return; }
+        var nnt = 1 / Math.abs(arr);
+        rrOut.innerHTML = '<p><strong>絶対リスク差 (ARR)</strong>: ' + fmt(arr * 100, 2) + ' %ポイント</p>' +
+                          '<p><strong>NNT</strong>: 約 ' + fmt(nnt, 0) + ' 人</p>' +
+                          '<p><strong>意味</strong>: ' + fmt(nnt, 0) + ' 人 治療して 1 人 に 効果</p>';
+      }
+      rrB.addEventListener('input', updateRr);
+      rrV.addEventListener('input', updateRr);
+
+      // 4. Relative → Absolute
+      var arB = document.getElementById('ar-baseline');
+      var arR = document.getElementById('ar-reduction');
+      var arOut = document.getElementById('ar-out');
+      function updateAr() {
+        var b = parseFloat(arB.value);
+        var r = parseFloat(arR.value);
+        if (isNaN(b) || isNaN(r)) { arOut.textContent = ''; return; }
+        var newRisk = b * (1 - r / 100);
+        var absDiff = b - newRisk;
+        arOut.innerHTML = '<p><strong>相対 「' + r + '% 減」の 実質</strong>: ' +
+                          fmt(b, 1) + '% → ' + fmt(newRisk, 2) + '% (差 ' + fmt(absDiff, 2) + ' %ポイント)</p>' +
+                          '<p><strong>NNT 相当</strong>: 約 ' + fmt(100 / Math.max(0.0001, absDiff), 0) + ' 人</p>' +
+                          '<p class="calc__hint">💡 元リスクが 小さいと、「50% 減」も 実質は 小さい</p>';
+      }
+      arB.addEventListener('input', updateAr);
+      arR.addEventListener('input', updateAr);
+    </script>
+
+    <div class="calc__disclaimer">
+      <p>
+        ⚠️ このツールは <strong>教育目的の 簡易計算機</strong> です。臨床判断や 研究発表には 使用しないでください。
+        統計解析には R / SPSS / SAS 等 の 専用ソフトを 使用してください。
+      </p>
+    </div>
+
+    <p style="margin-top: 24px;">
+      関連:
+      <a href="/ja/guide/effect-size-guide/">📊 効果量ガイド (詳細)</a> ／
+      <a href="/ja/guide/meta-analysis-guide/">📊 メタ解析ガイド</a> ／
+      <a href="/ja/guide/paper-critique/">✔️ 論文批判的 チェックリスト</a>
+    </p>
+
+    <p class="calc__updated">最終更新: 2026-09-24</p>
+  </article>
+
+  <style>
+    .calc { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .calc__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .calc__breadcrumb a { color: var(--muted); }
+    .calc h1 { font-size: 1.85rem; color: var(--navy); margin: 8px 0 12px; }
+    .calc__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .calc__card {
+      background: white; border: 1px solid #e5e9f2; border-radius: 12px;
+      padding: 18px 22px; margin: 20px 0;
+    }
+    .calc__card h2 {
+      font-size: 1.2rem; color: var(--navy); margin: 0 0 8px;
+      padding-left: 10px; border-left: 4px solid var(--navy);
+    }
+    .calc__card p { line-height: 1.7; color: #4a5568; font-size: 0.92rem; }
+    .calc__form { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+    .calc__form label { min-width: 180px; font-weight: 600; color: var(--navy); }
+    .calc__form input {
+      flex: 1; max-width: 200px; padding: 8px 12px;
+      border: 1px solid #d5dceb; border-radius: 6px; font-size: 0.95rem;
+    }
+    .calc__form input:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 2px rgba(26,54,93,0.1); }
+    .calc__out {
+      background: #f0f4fa; padding: 12px 16px; border-radius: 8px; margin-top: 10px;
+      color: var(--navy); min-height: 20px; font-size: 0.92rem;
+    }
+    .calc__out p { margin: 6px 0; }
+    .calc__hint { color: #7a5a1e; font-size: 0.85rem; font-style: italic; }
+    .calc__disclaimer {
+      background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px;
+      border-radius: 6px; margin: 24px 0 12px; font-size: 0.88rem;
+    }
+    .calc__disclaimer p { margin: 0; line-height: 1.7; }
+    .calc__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+    @media (max-width: 480px) {
+      .calc__form { flex-direction: column; align-items: stretch; }
+      .calc__form label { min-width: unset; }
+      .calc__form input { max-width: unset; }
+    }
+  </style>
+</BaseLayout>
