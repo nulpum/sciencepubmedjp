@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35238171/"
 journal: "Autism research : official journal of the International Society for Autism Research"
 year: 2022
 generated_at: "2026-09-22T01:15:08.269Z"
+tags:
+  - "autism"
+  - "women-health"
 affiliate_links:
   - title: "「自閉スペクトラム症 ASD 早期発見」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E8%87%AA%E9%96%89%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E3%83%A9%E3%83%A0%E7%97%87%20ASD%20%E6%97%A9%E6%9C%9F%E7%99%BA%E8%A6%8B&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E8%2587%25AA%25E9%2596%2589%25E3%2582%25B9%25E3%2583%259A%25E3%2582%25AF%25E3%2583%2588%25E3%2583%25A9%25E3%2583%25A0%25E7%2597%2587%2BASD%2B%25E6%2597%25A9%25E6%259C%259F%25E7%2599%25BA%25E8%25A6%258B%26f%3D1"
   - title: "デスクライト (目に優しい LED)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "autism"
-  - "women-health"
 ---
 
 ## この記事で見ていくこと

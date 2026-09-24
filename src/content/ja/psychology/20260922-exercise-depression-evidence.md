@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/38355154/"
 journal: "BMJ (Clinical research ed.)"
 year: 2024
 generated_at: "2026-09-22T01:17:35.561Z"
+tags:
+  - "depression"
+  - "exercise"
 affiliate_links:
   - title: "「うつ病 運動療法 大規模メタ解析」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E3%81%86%E3%81%A4%E7%97%85%20%E9%81%8B%E5%8B%95%E7%99%82%E6%B3%95%20%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%83%A1%E3%82%BF%E8%A7%A3%E6%9E%90&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2581%2586%25E3%2581%25A4%25E7%2597%2585%2B%25E9%2581%258B%25E5%258B%2595%25E7%2599%2582%25E6%25B3%2595%2B%25E5%25A4%25A7%25E8%25A6%258F%25E6%25A8%25A1%25E3%2583%25A1%25E3%2582%25BF%25E8%25A7%25A3%25E6%259E%2590%26f%3D1"
   - title: "デスクライト (目に優しい LED)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "depression"
-  - "exercise"
 ---
 
 ## この記事で見ていくこと

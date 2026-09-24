@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36573969/"
 journal: "JAMA"
 year: 2022
 generated_at: "2026-09-22T01:28:01.713Z"
+tags:
+  - "anxiety"
+  - "cbt"
 affiliate_links:
   - title: "「不安障害 最新治療エビデンス SSRI」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E4%B8%8D%E5%AE%89%E9%9A%9C%E5%AE%B3%20%E6%9C%80%E6%96%B0%E6%B2%BB%E7%99%82%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9%20SSRI&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E4%25B8%258D%25E5%25AE%2589%25E9%259A%259C%25E5%25AE%25B3%2B%25E6%259C%2580%25E6%2596%25B0%25E6%25B2%25BB%25E7%2599%2582%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%2BSSRI%26f%3D1"
   - title: "ブックスタンド (角度調整)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "anxiety"
-  - "cbt"
 ---
 
 ## この記事で見ていくこと

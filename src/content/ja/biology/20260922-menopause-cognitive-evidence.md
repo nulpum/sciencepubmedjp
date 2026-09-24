@@ -8,6 +8,11 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/38336466/"
 journal: "BMJ sexual & reproductive health"
 year: 2024
 generated_at: "2026-09-22T01:38:04.293Z"
+tags:
+  - "memory"
+  - "brain"
+  - "hormones"
+  - "women-health"
 affiliate_links:
   - title: "「更年期 認知機能 エストロゲン変動」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E6%9B%B4%E5%B9%B4%E6%9C%9F%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD%20%E3%82%A8%E3%82%B9%E3%83%88%E3%83%AD%E3%82%B2%E3%83%B3%E5%A4%89%E5%8B%95&tag=sciencepubmed-22&i=stripbooks"
@@ -17,11 +22,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E6%259B%25B4%25E5%25B9%25B4%25E6%259C%259F%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%2B%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25AD%25E3%2582%25B2%25E3%2583%25B3%25E5%25A4%2589%25E5%258B%2595%26f%3D1"
   - title: "書見台 (論文を開いたまま読める)"
     url: "https://www.amazon.co.jp/s?k=%E6%9B%B8%E8%A6%8B%E5%8F%B0&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "memory"
-  - "brain"
-  - "hormones"
-  - "women-health"
 ---
 
 ## この記事で見ていくこと

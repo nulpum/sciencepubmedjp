@@ -8,6 +8,11 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/25783612/"
 journal: "Nature reviews. Neuroscience"
 year: 2015
 generated_at: "2026-09-22T01:20:06.462Z"
+tags:
+  - "depression"
+  - "stress"
+  - "meditation"
+  - "brain"
 affiliate_links:
   - title: "「マインドフルネス瞑想 科学的エビデンス 脳科学」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%95%E3%83%AB%E3%83%8D%E3%82%B9%E7%9E%91%E6%83%B3%20%E7%A7%91%E5%AD%A6%E7%9A%84%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9%20%E8%84%B3%E7%A7%91%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks"
@@ -17,11 +22,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2583%259E%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2589%25E3%2583%2595%25E3%2583%25AB%25E3%2583%258D%25E3%2582%25B9%25E7%259E%2591%25E6%2583%25B3%2B%25E7%25A7%2591%25E5%25AD%25A6%25E7%259A%2584%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%2B%25E8%2584%25B3%25E7%25A7%2591%25E5%25AD%25A6%26f%3D1"
   - title: "ノイキャンイヤホン (集中読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubmed-22&i=electronics"
-tags:
-  - "depression"
-  - "stress"
-  - "meditation"
-  - "brain"
 ---
 
 ## この記事で見ていくこと

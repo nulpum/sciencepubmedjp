@@ -8,6 +8,11 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36870101/"
 journal: "Sleep medicine reviews"
 year: 2023
 generated_at: "2026-09-22T01:35:48.747Z"
+tags:
+  - "sleep"
+  - "exercise"
+  - "diabetes"
+  - "obesity"
 affiliate_links:
   - title: "「睡眠不足 健康影響 認知機能」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%9D%A1%E7%9C%A0%E4%B8%8D%E8%B6%B3%20%E5%81%A5%E5%BA%B7%E5%BD%B1%E9%9F%BF%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD&tag=sciencepubmed-22&i=stripbooks"
@@ -17,11 +22,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E7%259D%25A1%25E7%259C%25A0%25E4%25B8%258D%25E8%25B6%25B3%2B%25E5%2581%25A5%25E5%25BA%25B7%25E5%25BD%25B1%25E9%259F%25BF%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%26f%3D1"
   - title: "ノイキャンイヤホン (集中読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubmed-22&i=electronics"
-tags:
-  - "sleep"
-  - "exercise"
-  - "diabetes"
-  - "obesity"
 ---
 
 ## この記事で見ていくこと

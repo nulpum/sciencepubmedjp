@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35438451/"
 journal: "Prevention science : the official journal of the Society for Prevention Research"
 year: 2024
 generated_at: "2026-09-22T01:12:00.467Z"
+tags:
+  - "adhd"
+  - "exercise"
 affiliate_links:
   - title: "「子ど ADHD 最新エビデンス」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%AD%90%E3%81%A9%20ADHD%20%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E5%25AD%2590%25E3%2581%25A9%2BADHD%2B%25E6%259C%2580%25E6%2596%25B0%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%26f%3D1"
   - title: "書見台 (論文を開いたまま読める)"
     url: "https://www.amazon.co.jp/s?k=%E6%9B%B8%E8%A6%8B%E5%8F%B0&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "adhd"
-  - "exercise"
 ---
 
 ## この記事で見ていくこと

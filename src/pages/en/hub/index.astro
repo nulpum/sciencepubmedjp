@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+export const prerender = true;
+---
+<BaseLayout
+  title="Topic Hubs ｜ PubMed Trivia"
+  description="Curated hubs on ADHD, Gut Microbiome, and Sleep — editorial framing plus systematic-review-based articles."
+  lang="en"
+>
+  <article class="hub-index">
+    <header class="hub-index__header">
+      <p class="hub-index__breadcrumb"><a href="/en/">Home</a> › Topic Hubs</p>
+      <h1>📚 Topic Hubs</h1>
+      <p class="hub-index__intro">
+        Editorial hubs that curate our systematic-review-based articles by theme. Start here for the big picture.
+      </p>
+    </header>
+
+    <div class="hub-index__grid">
+      <a href="/en/hub/adhd/" class="hub-tile">
+        <span class="hub-tile__emoji">🧠</span>
+        <h2>ADHD Hub</h2>
+        <p>Adult under-recognition · child early support · treatment options · comorbidities.</p>
+      </a>
+      <a href="/en/hub/gut-microbiome/" class="hub-tile">
+        <span class="hub-tile__emoji">🦠</span>
+        <h2>Gut Microbiome Hub</h2>
+        <p>Mental health · immunity · metabolism · probiotics evidence.</p>
+      </a>
+      <a href="/en/hub/sleep/" class="hub-tile">
+        <span class="hub-tile__emoji">😴</span>
+        <h2>Sleep Hub</h2>
+        <p>Deprivation effects · circadian rhythm · memory consolidation · practical steps.</p>
+      </a>
+    </div>
+  </article>
+
+  <style>
+    .hub-index { max-width: 820px; margin: 0 auto; padding: 24px 20px 40px; }
+    .hub-index__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub-index__breadcrumb a { color: var(--muted); }
+    .hub-index__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; }
+    .hub-index__intro { line-height: 1.85; color: #4a5568; }
+
+    .hub-index__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 28px 0; }
+    .hub-tile {
+      display: block; padding: 24px 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+      border: 1px solid #d5dceb; border-radius: 12px;
+      text-decoration: none; color: var(--navy);
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    }
+    .hub-tile:hover { transform: translateY(-2px); border-color: var(--navy); box-shadow: 0 8px 20px rgba(26,54,93,0.1); }
+    .hub-tile__emoji { font-size: 2.4rem; display: block; margin-bottom: 8px; }
+    .hub-tile h2 { font-size: 1.2rem; margin: 6px 0 8px; color: var(--navy); }
+    .hub-tile p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
+  </style>
+</BaseLayout>

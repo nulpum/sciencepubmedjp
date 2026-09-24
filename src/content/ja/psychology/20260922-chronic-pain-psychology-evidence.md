@@ -8,6 +8,8 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/38366560/"
 journal: "The Gerontologist"
 year: 2024
 generated_at: "2026-09-22T01:25:03.340Z"
+tags:
+  - "exercise"
 affiliate_links:
   - title: "「慢性痛 心理療法 頼らない選択肢」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E6%85%A2%E6%80%A7%E7%97%9B%20%E5%BF%83%E7%90%86%E7%99%82%E6%B3%95%20%E9%A0%BC%E3%82%89%E3%81%AA%E3%81%84%E9%81%B8%E6%8A%9E%E8%82%A2&tag=sciencepubmed-22&i=stripbooks"
@@ -17,8 +19,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E6%2585%25A2%25E6%2580%25A7%25E7%2597%259B%2B%25E5%25BF%2583%25E7%2590%2586%25E7%2599%2582%25E6%25B3%2595%2B%25E9%25A0%25BC%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E9%2581%25B8%25E6%258A%259E%25E8%2582%25A2%26f%3D1"
   - title: "ブックライト (夜の読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97&tag=sciencepubmed-22&i=electronics"
-tags:
-  - "exercise"
 ---
 
 ## この記事で見ていくこと

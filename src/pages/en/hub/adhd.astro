@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('en_psychology');
+const relatedTags = ['adhd', 'autism', 'memory', 'cbt', 'brain'];
+const related = psy
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
+
+export const prerender = true;
+---
+<BaseLayout
+  title="ADHD: An Evidence Hub — Diagnosis, Treatment, Adult vs Child｜PubMed Trivia"
+  description="ADHD in adults and children — diagnosis criteria, medications, CBT, non-drug interventions, and comorbidities. Synthesized from systematic reviews and meta-analyses on PubMed."
+  lang="en"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/en/">Home</a> › 🧠 ADHD Hub</p>
+      <h1>🧠 ADHD: An Evidence Hub</h1>
+      <p class="hub__lede">
+        Attention-Deficit / Hyperactivity Disorder (ADHD) affects roughly <strong>5-7% of children and 3-5% of adults</strong>.
+        Diagnostic criteria have evolved (DSM-5, 2013 onward), and adult-ADHD recognition has expanded rapidly since the
+        <strong>2018 European Consensus Statement</strong>. This hub curates our systematic-review-based articles on ADHD
+        diagnosis, treatment, and life-support strategies.
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="Contents">
+      <p class="hub__toc-title">Contents</p>
+      <ol>
+        <li><a href="#basics">What ADHD actually is</a></li>
+        <li><a href="#adult">Adult ADHD — underdiagnosis and criteria</a></li>
+        <li><a href="#child">Child ADHD — early recognition</a></li>
+        <li><a href="#treatment">Treatment options</a></li>
+        <li><a href="#comorbid">Comorbidities</a></li>
+        <li><a href="#learn-more">Learn more</a></li>
+      </ol>
+    </nav>
+
+    <section id="basics">
+      <h2>1. What ADHD actually is</h2>
+      <p>
+        ADHD is a neurodevelopmental profile defined by three core symptoms — <strong>inattention, hyperactivity, impulsivity</strong> —
+        with onset before age 12 and persistence for 6+ months across settings (DSM-5).
+        Modern framing treats ADHD as <em>a spectrum of information-processing differences</em>, not a binary illness.
+      </p>
+      <p class="hub__callout">
+        📌 <strong>Editorial note</strong>: ADHD is dimensional, not categorical. Diagnosis is warranted when symptoms
+        interfere with daily life; support is often possible without a formal label.
+      </p>
+    </section>
+
+    <section id="adult">
+      <h2>2. Adult ADHD — underdiagnosis and criteria</h2>
+      <p>
+        Adult ADHD is now recognized as a lifelong trait, not a "childhood disorder that fades." Recent meta-analyses estimate
+        a <strong>~3% global adult prevalence</strong>, with significant under-recognition especially in women and in cases
+        that surface post-partum or post-career-change.
+      </p>
+    </section>
+
+    <section id="child">
+      <h2>3. Child ADHD — early recognition</h2>
+      <p>
+        Children with ADHD are most often identified between ages 5-8, at the transition into structured schooling.
+        Early support — via <strong>parent training, environmental adjustments, and (in older kids) exercise interventions</strong> —
+        reduces cascading impacts on self-esteem, learning, and peer relationships.
+      </p>
+    </section>
+
+    <section id="treatment">
+      <h2>4. Treatment options</h2>
+      <div class="hub__grid">
+        <div class="hub__card">
+          <h4>💊 Medications</h4>
+          <p>Methylphenidate, atomoxetine, guanfacine. Effect sizes are among the largest in psychiatry, but continuation and side-effect trade-offs matter.</p>
+        </div>
+        <div class="hub__card">
+          <h4>🧘 Cognitive Behavioral Therapy</h4>
+          <p>ADHD-specific CBT programs have gained the strongest evidence for adults.</p>
+        </div>
+        <div class="hub__card">
+          <h4>🏃 Exercise interventions</h4>
+          <p>Aerobic exercise improves attention and executive function in children with ADHD (adjunct therapy).</p>
+        </div>
+        <div class="hub__card">
+          <h4>😴 Sleep optimization</h4>
+          <p>Sleep disorders are highly comorbid with ADHD. Fixing sleep alone can reduce symptom severity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comorbid">
+      <h2>5. Comorbidities</h2>
+      <p>ADHD rarely presents in isolation. Frequently comorbid conditions include:</p>
+      <ul>
+        <li>Autism spectrum disorder (ASD)</li>
+        <li>Anxiety disorders and depression</li>
+        <li>Sleep disorders</li>
+        <li>Substance-use tendencies</li>
+      </ul>
+    </section>
+
+    <p><strong>Related articles (latest first):</strong></p>
+    <ul class="hub__link-list">
+      {related.slice(0, 10).map((p) => (
+        <li><a href={`/en/psychology/${p.id}/`}>{p.data.title}</a></li>
+      ))}
+    </ul>
+
+    <section id="learn-more">
+      <h2>6. Learn more</h2>
+      <ul>
+        <li><a href="/en/lab/">🔬 PubMed Lab — search papers + chat with AI</a></li>
+        <li><a href="/en/editorial-policy/">📝 Editorial policy</a></li>
+        <li><a href="/en/tag/adhd/">🏷️ #adhd tag</a></li>
+        <li><a href="/en/hub/gut-microbiome/">🦠 Gut Microbiome hub</a></li>
+      </ul>
+    </section>
+
+    <p class="hub__updated">Last updated: 2026-09-24</p>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; line-height: 1.4; }
+    .hub__lede { line-height: 1.85; margin: 0 0 14px; }
+    .hub__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .hub__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .hub__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .hub__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
+    .hub__toc a { color: var(--link); }
+    .hub h2 { font-size: 1.35rem; color: var(--navy); margin: 40px 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .hub h3 { font-size: 1.05rem; color: var(--navy); margin: 20px 0 8px; }
+    .hub h4 { font-size: 1rem; color: var(--navy); margin: 0 0 6px; }
+    .hub p { line-height: 1.85; margin: 12px 0; }
+    .hub ul, .hub ol { line-height: 1.9; }
+    .hub__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+    .hub__card { background: white; border: 1px solid #e5e9f2; border-radius: 8px; padding: 14px 16px; }
+    .hub__card p { margin: 4px 0; font-size: 0.9rem; }
+    .hub__link-list { padding-left: 24px; }
+    .hub__link-list li { margin: 6px 0; }
+    .hub__link-list a { color: var(--link); }
+    .hub__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

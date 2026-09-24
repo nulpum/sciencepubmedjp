@@ -330,23 +330,31 @@ const sampleQueries = [
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            pmid: current.pmid,
-            title: current.title,
-            abstract: current.abstract,
+            paper: {
+              pmid: current.pmid,
+              title: current.title,
+              authors: [],
+              abstract: current.abstract,
+            },
             messages: history,
-            lang: 'en',
           }),
         })
-          .then(function (r) { return r.json(); })
-          .then(function (data) {
+          .then(function (r) { return r.json().then(function (data) { return { status: r.status, data: data }; }); })
+          .then(function (res) {
             removeLoading();
-            var reply = (data && data.reply) || '(No response)';
+            var data = res.data || {};
+            if (res.status >= 400 || data.error) {
+              var detail = data.detail || data.error || ('HTTP ' + res.status);
+              addMsg('assistant', 'Error: ' + detail);
+              return;
+            }
+            var reply = data.reply || '(Empty response)';
             history.push({ role: 'assistant', content: reply });
             addMsg('assistant', reply);
           })
           .catch(function (err) {
             removeLoading();
-            addMsg('assistant', 'Error: ' + err.message);
+            addMsg('assistant', 'Network error: ' + err.message);
           });
       });
     })();
