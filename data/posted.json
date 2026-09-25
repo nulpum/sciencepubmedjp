@@ -7295,6 +7295,38 @@
       "category": "biology",
       "postedAt": "2026-09-25T00:40:32.154Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwcjvflnxl2m"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260829-41654245",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-25T17:21:56.310Z",
+      "postId": "17895062421412713"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260922-intermittent-fasting-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-25T17:22:04.473Z",
+      "postId": "1103479166185406_122113502571321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260922-chronic-pain-psychology-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-25T17:22:15.844Z",
+      "postId": "18124471477907913"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-41277458",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-25T17:22:18.228Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwebup7n3y22"
     }
   ]
 }
