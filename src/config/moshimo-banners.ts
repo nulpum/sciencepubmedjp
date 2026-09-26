@@ -260,4 +260,36 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     category: 'other',
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800978&p_id=2017&pc_id=4094&pl_id=91504" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/1396/000000091504.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="はてなブログ Pro"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800978&p_id=2017&pc_id=4094&pl_id=91504" width="1" height="1" style="border:none;" alt="">',
   },
+
+  // ==================== 追加 5 個 (2026-09-26、rotation 43 個化 — 睡眠資格 + キャリア強化 + ブロガー層) ====================
+  {
+    id: 'banner-sleep-planner',
+    label: 'スリーププランナー (睡眠資格、300x250) 成果 ¥2,400',
+    category: 'other',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5804448&p_id=7407&pc_id=21345&pl_id=93165" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/2361/000000093165.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="スリーププランナー 睡眠資格"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804448&p_id=7407&pc_id=21345&pl_id=93165" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-digihari-3dcg',
+    label: 'デジタルハリウッド 3DCG制作 (300x250) 成果 ¥13,200',
+    category: 'education',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800894&p_id=7627&pc_id=22056&pl_id=95358" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4137/000000095358.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="デジタルハリウッド 3DCG制作"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800894&p_id=7627&pc_id=22056&pl_id=95358" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-mirakiari',
+    label: 'ミラキャリ 20代事務職転職 (640x480) 成果 ¥15,000',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800934&p_id=5676&pc_id=15670&pl_id=82716" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4889/000000082716.png" width="640" height="480" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="ミラキャリ 20代事務職転職"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800934&p_id=5676&pc_id=15670&pl_id=82716" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-moshimo-signup',
+    label: 'もしも無料会員登録 (300x250) 成果 ¥10,000 (広告主) / ¥500 (メディア)',
+    category: 'other',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5812489&p_id=1&pc_id=1&pl_id=19213" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/0001/000000019213.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="もしもアフィリエイト 無料会員登録"></a><img src="//i.moshimo.com/af/i/impression?a_id=5812489&p_id=1&pc_id=1&pl_id=19213" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-marketer-agent',
+    label: 'MarketerAgent クリエイティブ (フリーランス、300x250) 成果 ¥3,080',
+    category: 'career',
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5800951&p_id=5243&pc_id=14218&pl_id=69279" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/2722/000000069279.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="MarketerAgent クリエイティブ フリーランス"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800951&p_id=5243&pc_id=14218&pl_id=69279" width="1" height="1" style="border:none;" alt="">',
+  },
 ];
