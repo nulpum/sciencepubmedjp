@@ -7391,6 +7391,38 @@
       "category": "biology",
       "postedAt": "2026-09-26T00:42:24.586Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwf2ho7vik2t"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260901-40932590",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-26T16:35:14.452Z",
+      "postId": "18117923761760371"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260922-42298438",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-26T16:35:22.957Z",
+      "postId": "1103479166185406_122113604247321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260922-sleep-deprivation-health-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-26T16:35:34.409Z",
+      "postId": "18152412334525737"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-41994984",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-26T16:35:37.151Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwgpq5dgt22i"
     }
   ]
 }
