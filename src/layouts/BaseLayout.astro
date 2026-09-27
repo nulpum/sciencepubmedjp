@@ -73,6 +73,39 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       gtag('config', 'G-PNYCBNKVL9');
     </script>
 
+    {/* Global Amazon click tracker (2026-09-28 追加)
+        目的: Amazon dashboard の click 数 と 実 user click を GA4 で 突き合わせ。
+        Moshimo と同じパターンで、source 別に 集計。 */}
+    <script is:inline>
+      (function () {
+        if (window.__amazonGlobalClickInit) return;
+        window.__amazonGlobalClickInit = true;
+        function classify(link) {
+          if (link.classList && link.classList.contains('aff-cta__btn--amazon')) return 'cta_button';
+          if (link.classList && link.classList.contains('aff-cta__chip--amazon')) return 'chip';
+          if (link.closest('.sticky-mobile-cta')) return 'sticky_mobile';
+          if (link.closest('.search-card')) return 'search_result';
+          if (link.dataset && link.dataset.affiliate) return link.dataset.affiliate;
+          return 'other';
+        }
+        document.addEventListener('click', function (ev) {
+          var link = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+          if (!link) return;
+          var href = link.getAttribute('href') || '';
+          if (href.indexOf('amazon.co.jp') < 0 && href.indexOf('amazon.com') < 0) return;
+          if (typeof gtag !== 'function') return;
+          try {
+            gtag('event', 'amazon_link_click', {
+              source: classify(link),
+              link_url: href.slice(0, 200),
+              page_path: location.pathname,
+              transport_type: 'beacon',
+            });
+          } catch (e) {}
+        }, { capture: true, passive: true });
+      })();
+    </script>
+
     {/* Global Moshimo click tracker (2026-09-21 追加)
         目的: MoshimoBanner の slot-scoped tracker が捕捉できない
         Rakuten CTA / モーションウィジェット / chip などの クリックも 拾い、
