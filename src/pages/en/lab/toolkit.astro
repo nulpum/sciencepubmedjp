@@ -1,0 +1,351 @@
+---
+// PubMed Lab: AI prompt distribution (EN version)
+//
+// Free master prompt for English-speaking researchers, grad students, postdocs.
+// Paste into ChatGPT / Claude / Gemini → your own AI becomes a PubMed research assistant.
+
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = false;
+
+const MASTER_PROMPT = `# PubMed Paper Chat Assistant (v1.0 EN)
+
+## Role
+You are a research assistant for graduate students, postdocs, and independent researchers.
+Given the abstract of a PubMed paper, you help the user critically read the paper,
+extract methods and findings, evaluate limitations, and suggest follow-up work — always
+grounded strictly in what the abstract says.
+
+## Session opener (first message)
+Please send this as your first message:
+
+Hi — I'm your PubMed paper-chat assistant 🔬
+Paste an abstract from PubMed (the English abstract as-is is fine).
+
+Things we can do together:
+- 📖 Extract key findings and structure them
+- 📊 Check sample size, statistics, study design
+- ⚠️ Surface limitations, biases, caveats
+- 🎓 Suggest follow-up study ideas (thesis / grant / next paper)
+- ✍️ Draft citation phrasing for your own writing
+
+Just paste the paper title + abstract to start.
+
+## Response modes (auto-detect from user question)
+
+### Mode 1: Key findings (default)
+Trigger keywords: summary, key, main, findings, points, gist, what did they find
+→ Extract 3-5 key points from the abstract as bullets. Each 1-2 sentences.
+   Include specific numbers whenever the abstract states them.
+
+### Mode 2: Methods & statistics
+Trigger keywords: sample, N, statistic, p-value, method, design, RCT, cohort
+→ Extract from the abstract:
+   - Population / sample size (N)
+   - Study design (RCT / cohort / cross-sectional / meta-analysis, etc.)
+   - Primary statistical methods
+   - Effect size / significance level (if stated)
+
+### Mode 3: Limitations & counter-arguments
+Trigger keywords: limit, bias, weakness, counter, criticism
+→ (a) Extract limitations explicitly stated in the abstract
+   (b) Add 1-2 general limitations that this study design usually has, marked as inference
+   (c) Remind the user that limitations beyond the abstract require full-text reading /
+       discussion with advisors
+
+### Mode 4: Follow-up study ideas
+Trigger keywords: thesis, dissertation, follow-up, next study, extension, replication
+→ Suggest 3 concrete follow-up ideas at grad-student scale:
+   1. Direct replication in a different population
+   2. Modified independent / mediating variable
+   3. Narrowed scope (age, condition, region)
+   → Concrete (survey N=200, small experiment, systematic review, etc.), not abstract.
+
+### Mode 5: Citation phrasing
+Trigger keywords: cite, citation, quote, reference, in my paper
+→ Give 2-3 APA-style in-text citation examples:
+   "Smith et al. (2023) reported that..."
+   Plus 1-2 concise summary phrasings suitable for a lit review paragraph.
+
+## Rules (STRICT)
+
+### DO
+✅ Ground every claim in the abstract's stated facts
+✅ Quote numbers / percentages / effect sizes exactly as the abstract states them
+✅ When asked about anything NOT in the abstract, say "not stated in the abstract"
+✅ Use plain professional English (technical terms fine for researcher audience)
+✅ End replies with a follow-up prompt ("What would you like to explore next?")
+
+### DO NOT
+❌ Invent numbers or conclusions not in the abstract
+❌ Prefix with "In general..." to inject outside knowledge
+❌ Give medical or clinical advice
+❌ Confuse the paper's claims with your own inference or general knowledge
+❌ Answer definitively about other papers or the wider literature
+    → Instead: "Based only on this abstract, I can't verify claims about other studies. Try a PubMed search or Google Scholar for related work."
+
+## Additional guidelines
+- For health / medical topics, always note: "This is educational discussion of the abstract, not medical advice."
+- Full paper quality (methodological rigor, replication history) cannot be judged from an abstract — say so if asked.
+- Keep replies focused (roughly 150-350 words); use bullets and subheadings when helpful.
+
+---
+This prompt is v1.0 of the free PubMed Lab distribution (https://sciencepubmed.net/en/lab/).
+Paste into ChatGPT / Claude / Gemini and use with your own AI subscription.`;
+
+const pageTitle = 'Free AI prompt: Paste into ChatGPT / Claude / Gemini to chat with PubMed papers ｜ PubMed Lab';
+const pageDesc = 'Free ready-to-paste master prompt that turns your ChatGPT, Claude, or Gemini into a PubMed research assistant. Unlimited use within your own AI subscription — no signup, no cost.';
+---
+<BaseLayout title={pageTitle} description={pageDesc} lang="en">
+  <article class="toolkit">
+    <header class="toolkit__header">
+      <p class="toolkit__breadcrumb">
+        <a href="/en/">Home</a> › <a href="/en/lab/">PubMed Lab</a> › AI Prompt Toolkit
+      </p>
+      <h1>🤖 Chat with PubMed papers in your own AI</h1>
+      <p class="toolkit__lede">
+        Paste the prompt below into your <strong>ChatGPT, Claude, or Gemini</strong> —
+        your AI becomes a dedicated PubMed research assistant.
+      </p>
+      <ul class="toolkit__benefits">
+        <li>✅ Completely free (unlimited use within your AI subscription)</li>
+        <li>✅ Full conversation history stays in your AI account</li>
+        <li>✅ Bypasses PubMed Lab's 3-message daily limit</li>
+        <li>✅ You may edit and share the prompt freely (attribution appreciated)</li>
+      </ul>
+    </header>
+
+    <section class="toolkit__steps">
+      <h2>3-step usage</h2>
+      <ol>
+        <li><strong>Click [ Copy prompt ] below to grab the whole prompt</strong></li>
+        <li><strong>Paste it into your AI (ChatGPT / Claude / Gemini) and send</strong></li>
+        <li><strong>Paste a PubMed abstract in the next message and start asking</strong></li>
+      </ol>
+    </section>
+
+    <section class="toolkit__prompt-section">
+      <div class="toolkit__prompt-head">
+        <h2>📋 Master prompt (v1.0 EN)</h2>
+        <button type="button" id="copy-prompt-btn" class="toolkit__copy-btn">
+          📋 Copy prompt
+        </button>
+      </div>
+      <pre id="prompt-body" class="toolkit__prompt">{MASTER_PROMPT}</pre>
+      <p class="toolkit__prompt-note">
+        Length: <span id="prompt-char-count">-</span> chars (well within limits of all major AI chats)
+      </p>
+    </section>
+
+    <section class="toolkit__ai-setup">
+      <h2>Per-AI setup guide</h2>
+
+      <div class="toolkit__ai-card">
+        <h3>💚 ChatGPT (Free / Plus)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>Free plan:</strong> Paste the prompt into a normal chat and send. Then paste abstracts as follow-ups.</p>
+          <p><strong>Plus / Team / Enterprise (recommended):</strong> Sidebar → "Explore GPTs" → "Create" → paste the prompt as the Instructions → name it "PubMed Paper Chat" → save. Now it's <strong>persistent</strong> — no need to re-paste each session.</p>
+          <a href="https://chatgpt.com/gpts/editor" target="_blank" rel="noopener" class="toolkit__ai-link">
+            → Open My GPT editor
+          </a>
+        </div>
+      </div>
+
+      <div class="toolkit__ai-card">
+        <h3>🧡 Claude (Free / Pro / Team)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>Free plan:</strong> Paste the prompt into a normal conversation.</p>
+          <p><strong>Pro / Team (recommended):</strong> Projects → "New project" → name it "PubMed Paper Chat" → paste prompt as "Custom instructions" → <strong>persistent inside that project</strong> automatically.</p>
+          <a href="https://claude.ai/projects/new" target="_blank" rel="noopener" class="toolkit__ai-link">
+            → Create a new Claude Project
+          </a>
+        </div>
+      </div>
+
+      <div class="toolkit__ai-card">
+        <h3>💙 Google Gemini (Free / Advanced)</h3>
+        <div class="toolkit__ai-body">
+          <p><strong>Both plans:</strong> Paste the prompt in a normal chat and send.</p>
+          <p><strong>Advanced (recommended):</strong> Use Gems (custom Geminis) — paste prompt as Instructions → persistent going forward.</p>
+          <a href="https://gemini.google.com/" target="_blank" rel="noopener" class="toolkit__ai-link">
+            → Open Gemini
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit__examples">
+      <h2>Usage examples</h2>
+
+      <details class="toolkit__example-detail" open>
+        <summary>Example 1: "Give me the 3 main findings"</summary>
+        <div class="toolkit__example-body">
+          <p><strong>Your input:</strong></p>
+          <pre>Title: Effect of caffeine on cognitive performance in university students
+Abstract: A randomized controlled trial of 120 undergraduate students...
+[full abstract pasted here]
+
+Give me the 3 main findings.</pre>
+          <p><strong>Sample AI response:</strong></p>
+          <p>Three main findings from this abstract:</p>
+          <ul>
+            <li>RCT with 120 undergraduates comparing 200mg caffeine vs placebo</li>
+            <li>Reaction time on the Stroop attention task improved significantly (p&lt;0.01) at 30 min post-dose</li>
+            <li>No group difference on complex decision-making tasks — the effect is limited to simple attention</li>
+          </ul>
+          <p>What would you like to explore next? (statistical methods, limitations, follow-up ideas)</p>
+        </div>
+      </details>
+
+      <details class="toolkit__example-detail">
+        <summary>Example 2: "How would I extend this for my thesis?"</summary>
+        <div class="toolkit__example-body">
+          <p><strong>Your input:</strong></p>
+          <pre>How would I extend this for a thesis project?</pre>
+          <p><strong>Sample AI response:</strong></p>
+          <p>Three concrete follow-up ideas at thesis scale:</p>
+          <ol>
+            <li>
+              <strong>Cross-cultural replication</strong><br>
+              → Repeat in a non-US population (caffeine tolerance and pre-exam caffeine behavior vary by culture). Direct replication with N ~120 is feasible for a master's thesis.
+            </li>
+            <li>
+              <strong>Field survey: caffeine timing × real-world GPA</strong><br>
+              → Skip the RCT; measure actual caffeine consumption patterns vs GPA in a large cross-sectional survey (N ~500). Data acquisition barrier is low.
+            </li>
+            <li>
+              <strong>Three-variable model: caffeine × sleep debt × cognition</strong><br>
+              → Original paper is single-variable. Add sleep as a mediator/moderator — hypothesis: caffeine effect is amplified in sleep-deprived participants.
+            </li>
+          </ol>
+          <p>Discuss with your advisor. #1 is usually the most tractable for a thesis timeline.</p>
+        </div>
+      </details>
+
+      <details class="toolkit__example-detail">
+        <summary>Example 3: "What are the biggest limitations?"</summary>
+        <div class="toolkit__example-body">
+          <p><strong>Sample AI response:</strong></p>
+          <p><strong>Explicitly stated in the abstract:</strong></p>
+          <ul>
+            <li>Single-site sample (one US university) — generalization limits</li>
+            <li>Acute dose only — no data on chronic use effects</li>
+          </ul>
+          <p><strong>General limits of this design (inference):</strong></p>
+          <ul>
+            <li>Placebo blinding difficulty — participants often recognize caffeine bitterness</li>
+            <li>Individual metabolism variance (CYP1A2 polymorphism) not stratified</li>
+          </ul>
+          <p>Limits beyond the abstract require full-text review or discussion with advisors.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="toolkit__faq">
+      <h2>❓ FAQ</h2>
+      <details>
+        <summary><strong>Do I need a paid AI subscription?</strong></summary>
+        <p>No — the free plans of ChatGPT, Claude, and Gemini all work. Paid plans (ChatGPT Plus, Claude Pro, Gemini Advanced) let you save the prompt as a persistent custom-GPT / Project / Gem so you don't paste it every session.</p>
+      </details>
+      <details>
+        <summary><strong>Why give this away for free?</strong></summary>
+        <p>The on-site PubMed Lab chat costs us API money per message. This prompt lets you use your own AI subscription — unlimited messages, better history, no rate limits. Wins for both sides.</p>
+      </details>
+      <details>
+        <summary><strong>Can I edit the prompt?</strong></summary>
+        <p>Yes — modify freely for your research area, add domain-specific instructions, translate, etc. If you publish an improved version, a link back to <a href="/en/lab/">PubMed Lab</a> is appreciated but not required.</p>
+      </details>
+      <details>
+        <summary><strong>Is the AI's answer reliable?</strong></summary>
+        <p>The prompt strictly grounds answers in the pasted abstract. But AI can still misread nuance or numerics. Always verify critical claims against the full paper, and never use AI answers for medical decisions.</p>
+      </details>
+      <details>
+        <summary><strong>What about non-English abstracts?</strong></summary>
+        <p>The prompt is trained on English scientific writing. Non-English abstracts work but quality varies. For Japanese-first UX, see the <a href="/ja/lab/toolkit/">Japanese version</a>.</p>
+      </details>
+    </section>
+
+    <section class="toolkit__cta">
+      <h2>Also useful</h2>
+      <ul>
+        <li>🔬 <a href="/en/lab/">PubMed Lab</a> — hosted version (3 messages/day free, no setup)</li>
+        <li>📊 <a href="/en/hub/">Topic hubs</a> — curated deep-dive reviews on ADHD, gut microbiome, sleep, CBT, exercise</li>
+        <li>📝 <a href="/en/editorial-policy/">Editorial policy</a> — how our articles are made and reviewed</li>
+      </ul>
+    </section>
+  </article>
+
+  <script is:inline>
+    (function () {
+      var promptEl = document.getElementById('prompt-body');
+      var btn = document.getElementById('copy-prompt-btn');
+      var counter = document.getElementById('prompt-char-count');
+      if (promptEl && counter) counter.textContent = promptEl.textContent.length.toLocaleString();
+      if (!btn || !promptEl) return;
+      btn.addEventListener('click', function () {
+        var text = promptEl.textContent;
+        if (!text) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = '✅ Copied!';
+            setTimeout(function () { btn.textContent = orig; }, 2000);
+            if (typeof gtag === 'function') gtag('event', 'toolkit_copy_prompt', { lang: 'en' });
+          }).catch(function () {
+            btn.textContent = 'Copy failed — please select the text manually';
+          });
+        }
+      });
+    })();
+  </script>
+
+  <style>
+    .toolkit { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .toolkit__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .toolkit__breadcrumb a { color: var(--muted); }
+    .toolkit__header h1 { font-size: 1.95rem; color: var(--navy); margin: 8px 0 14px; line-height: 1.35; }
+    .toolkit__lede { font-size: 1.05rem; line-height: 1.7; color: #2d3748; margin: 0 0 14px; }
+    .toolkit__benefits { list-style: none; padding: 0; margin: 0; }
+    .toolkit__benefits li { padding: 4px 0; color: #2d3748; font-size: 0.95rem; }
+
+    .toolkit__steps { margin: 32px 0; padding: 20px 22px; background: #f0f4fa; border-radius: 10px; }
+    .toolkit__steps h2 { font-size: 1.15rem; color: var(--navy); margin: 0 0 10px; }
+    .toolkit__steps ol { margin: 0; padding-left: 22px; line-height: 1.85; }
+
+    .toolkit__prompt-section { margin: 32px 0; }
+    .toolkit__prompt-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+    .toolkit__prompt-head h2 { font-size: 1.2rem; color: var(--navy); margin: 0; }
+    .toolkit__copy-btn { padding: 10px 20px; background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%); color: var(--navy); border: 1px solid #d97706; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.95rem; box-shadow: 0 3px 0 rgba(0,0,0,0.1); }
+    .toolkit__copy-btn:hover { transform: translateY(-1px); box-shadow: 0 5px 8px rgba(217,119,6,0.3); }
+    .toolkit__prompt { background: #1a202c; color: #e2e8f0; padding: 20px 22px; border-radius: 10px; overflow-x: auto; font-size: 0.82rem; line-height: 1.55; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-wrap: break-word; }
+    .toolkit__prompt-note { font-size: 0.82rem; color: var(--muted); text-align: right; margin: 6px 4px 0; }
+
+    .toolkit__ai-setup { margin: 32px 0; }
+    .toolkit__ai-setup h2 { font-size: 1.25rem; color: var(--navy); margin: 0 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); }
+    .toolkit__ai-card { background: white; border: 1px solid #d5dceb; border-radius: 10px; padding: 16px 20px; margin: 12px 0; }
+    .toolkit__ai-card h3 { font-size: 1.05rem; color: var(--navy); margin: 0 0 8px; }
+    .toolkit__ai-body p { margin: 8px 0; font-size: 0.92rem; line-height: 1.65; color: #2d3748; }
+    .toolkit__ai-link { display: inline-block; margin-top: 6px; font-size: 0.9rem; color: var(--link); font-weight: 600; text-decoration: none; }
+    .toolkit__ai-link:hover { text-decoration: underline; }
+
+    .toolkit__examples { margin: 32px 0; }
+    .toolkit__examples h2 { font-size: 1.25rem; color: var(--navy); margin: 0 0 16px; padding-left: 12px; border-left: 5px solid var(--navy); }
+    .toolkit__example-detail { background: white; border: 1px solid #d5dceb; border-radius: 8px; padding: 12px 18px; margin: 10px 0; }
+    .toolkit__example-detail summary { font-weight: 600; color: var(--navy); cursor: pointer; padding: 4px 0; }
+    .toolkit__example-body { padding: 10px 0 4px; }
+    .toolkit__example-body p { margin: 8px 0; font-size: 0.9rem; line-height: 1.7; }
+    .toolkit__example-body pre { background: #f7f9fc; padding: 10px 14px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; white-space: pre-wrap; word-wrap: break-word; margin: 6px 0; }
+    .toolkit__example-body ul, .toolkit__example-body ol { padding-left: 22px; line-height: 1.75; font-size: 0.92rem; }
+
+    .toolkit__faq { margin: 32px 0; padding: 20px 24px; background: #f7f9fc; border-radius: 10px; }
+    .toolkit__faq h2 { font-size: 1.2rem; color: var(--navy); margin: 0 0 12px; }
+    .toolkit__faq details { margin: 8px 0; padding: 8px 12px; background: white; border: 1px solid #e5e9f2; border-radius: 6px; }
+    .toolkit__faq summary { cursor: pointer; padding: 4px 0; }
+    .toolkit__faq p { font-size: 0.9rem; line-height: 1.7; margin: 8px 0; }
+
+    .toolkit__cta { margin: 40px 0 16px; padding: 20px 24px; background: linear-gradient(135deg, #1a365d 0%, #2a4a7d 100%); color: white; border-radius: 10px; }
+    .toolkit__cta h2 { color: #fbbf24; font-size: 1.15rem; margin: 0 0 12px; }
+    .toolkit__cta ul { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .toolkit__cta a { color: #fbbf24; }
+  </style>
+</BaseLayout>
