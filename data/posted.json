@@ -7591,6 +7591,38 @@
       "category": "psychology",
       "postedAt": "2026-09-28T01:41:40.607Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwk6phqzmm2r"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260903-42456685",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-28T19:43:47.416Z",
+      "postId": "18188460097407163"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260924-alzheimer-prevention-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-28T19:43:53.964Z",
+      "postId": "1103479166185406_122113813383321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260924-ptsd-treatment-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-28T19:44:05.417Z",
+      "postId": "17864622231680363"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260524-41692247",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-28T19:44:07.403Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwm372kuye2k"
     }
   ]
 }
