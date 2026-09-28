@@ -26,6 +26,7 @@
     "refresh:threads-token": "tsx scripts/threads/refresh-token.ts",
     "generate:og": "tsx scripts/image/run-generate-og.ts",
     "promo:lab-image": "tsx scripts/promo/gen-lab-promo-image.ts",
+    "promo:lab-image-en": "tsx scripts/promo/gen-lab-promo-image-en.ts",
     "promo:lab-post": "tsx scripts/promo/post-lab-promo.ts",
     "promo:lab-update": "tsx scripts/promo/post-lab-update-announcement.ts",
     "promo:toolkit": "tsx scripts/promo/post-toolkit-announcement.ts",
