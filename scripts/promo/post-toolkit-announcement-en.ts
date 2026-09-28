@@ -197,7 +197,11 @@ async function main(): Promise<void> {
     }, results);
   }
 
-  if (!args.skip.has('instagram')) {
+  // Instagram: EN 用 promo 画像 が 未整備 (現在の lab-promo.png は 日本語で「PubMed の英語論文が探せる」/ja/lab/ を含む)
+  // → EN caption と image 内容 mismatch を 避けるため、EN promo は Instagram を default skip。
+  // 明示的に --include=instagram で 走らせる or EN 版 画像 を 作成後 に この skip を 外す。
+  const includeInstagram = process.argv.includes('--include=instagram');
+  if (includeInstagram && !args.skip.has('instagram')) {
     const caption = buildInstagramCaption();
     await runOne('instagram', async () => {
       if (args.dryRun) {
