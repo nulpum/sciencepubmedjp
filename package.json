@@ -29,6 +29,7 @@
     "promo:lab-post": "tsx scripts/promo/post-lab-promo.ts",
     "promo:lab-update": "tsx scripts/promo/post-lab-update-announcement.ts",
     "promo:toolkit": "tsx scripts/promo/post-toolkit-announcement.ts",
+    "promo:toolkit-en": "tsx scripts/promo/post-toolkit-announcement-en.ts",
     "promo:app-announce": "tsx scripts/promo/post-app-announcement.ts"
   },
   "dependencies": {

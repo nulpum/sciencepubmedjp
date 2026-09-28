@@ -1,0 +1,68 @@
+name: Toolkit EN (AI prompt distribution) announcement
+
+# 「Free AI prompt: paste into ChatGPT/Claude/Gemini → PubMed paper-chat assistant」の
+# EN 告知を Threads / Facebook / Instagram / Bluesky に配信 + X ハイブリッド。
+#
+# **手動 dispatch のみ** (cron なし)。EN 版は 初回テスト後に traction 見て 定期化検討。
+#
+# 使い方:
+#   1. Actions タブ → "Toolkit EN..." ワークフロー選択
+#   2. Run workflow → dry_run=true で 内容確認 → 問題なければ dry_run=false で 本番
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true=本文のみログ出力、false=実際に配信'
+        required: false
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+      skip:
+        description: 'スキップするPF (カンマ区切り、例 fb,ig)'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+
+      - name: Post EN toolkit announcement
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            DRY="--dry-run"
+          else
+            DRY=""
+          fi
+          SKIP_ARG=""
+          if [ -n "${{ inputs.skip }}" ]; then
+            SKIP_ARG="--skip=${{ inputs.skip }}"
+          fi
+          npm run promo:toolkit-en -- $DRY $SKIP_ARG
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: me
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+          SITE_URL: https://sciencepubmed.net
