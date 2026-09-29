@@ -7719,6 +7719,38 @@
       "category": "biology",
       "postedAt": "2026-09-29T18:13:41.944Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwogmbvlij2f"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260905-42470181",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-29T19:44:01.682Z",
+      "postId": "17927693886409545"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260924-vitamin-d-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-29T19:44:08.130Z",
+      "postId": "1103479166185406_122113902027321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260924-eating-disorders-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-29T19:44:24.034Z",
+      "postId": "18078848579713573"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260513-39940306",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-29T19:44:26.491Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwolok7s5e2r"
     }
   ]
 }
