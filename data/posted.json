@@ -7687,6 +7687,38 @@
       "category": "biology",
       "postedAt": "2026-09-29T02:04:57.772Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwmqi2ero223"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260905-42206888",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-29T18:13:17.379Z",
+      "postId": "18123349772313749"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260924-ocd-treatment-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-29T18:13:27.899Z",
+      "postId": "1103479166185406_122113895235321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260924-postpartum-depression-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-29T18:13:39.418Z",
+      "postId": "17909253951308742"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260527-40016086",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-29T18:13:41.944Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwogmbvlij2f"
     }
   ]
 }
