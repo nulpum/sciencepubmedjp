@@ -40,6 +40,26 @@ const related = (all as typeof post[])
 const ogImage = `/og/en/${post.id}.png`;
 const tocItems = headings.filter((h) => h.depth === 2);
 
+// SEO helpers (2026-09-29 追加)
+// meta description は SNS 用の「【意外な事実】」等 hook を 除去して SERP 訴求 UP
+function stripHookPrefix(s: string): string {
+  return s
+    .replace(/^【[^】]+】\s*/, '')
+    .replace(/^(Did you know\?|Surprising finding:|Quick fact:|Quick |Fact:)\s*/i, '')
+    .trim();
+}
+const metaDescription = stripHookPrefix(post.data.fact);
+
+// Reading time (JA: 500 chars/min、EN: 200 words/min)
+const bodyText = post.body ?? '';
+const readingMinutes = Math.max(1, Math.round(bodyText.trim().split(/\s+/).length / 200));
+const readingLabel = `📖 ${readingMinutes} min read`;
+
+// Word count (JSON-LD 用)
+const wordCount = false ? bodyText.length : bodyText.trim().split(/\s+/).length;
+const tagKeywords = post.data.tags ?? [];
+
+
 const siteUrl = 'https://sciencepubmed.net';
 const articleUrl = `${siteUrl}/en/psychology/${post.id}/`;
 const jsonLd = {
@@ -59,12 +79,14 @@ const jsonLd = {
   'citation': post.data.source_url,
   'isAccessibleForFree': true,
   'inLanguage': 'en-US',
+  'wordCount': wordCount,
+  ...(tagKeywords.length > 0 && { 'keywords': tagKeywords.join(', ') }),
   'about': { '@type': 'Thing', 'name': 'Psychology' },
 };
 
 export const prerender = true;
 ---
-<BaseLayout title={post.data.title} description={post.data.fact} lang="en" ogType="article" ogImage={ogImage}>
+<BaseLayout title={post.data.title} description={metaDescription} lang="en" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <article class="article">
@@ -72,6 +94,7 @@ export const prerender = true;
       <p class="article__breadcrumb">
         <a href="/en/">Home</a> › <a href="/en/psychology/">Psychology</a>
       </p>
+      <p class="article__reading-time">{readingLabel}</p>
       <h1>{post.data.title}</h1>
       <p class="article__fact"><strong>{post.data.fact}</strong></p>
     </header>
@@ -165,6 +188,7 @@ export const prerender = true;
   <style>
     .article { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
     .article__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .article__reading-time { font-size: 0.82rem; color: var(--muted); margin: 2px 0 8px; font-weight: 500; }
     .article__breadcrumb a { color: var(--muted); }
     .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }
     .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }
