@@ -7783,6 +7783,38 @@
       "category": "psychology",
       "postedAt": "2026-09-30T01:25:27.268Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwp6qd5idy2i"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260906-42266133",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-30T18:06:07.436Z",
+      "postId": "18129899185689727"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20260924-39690510",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-30T18:06:12.715Z",
+      "postId": "1103479166185406_122113987389321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20260924-vitamin-d-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-09-30T18:06:26.378Z",
+      "postId": "17988483752866658"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260514-41075672",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-09-30T18:06:28.240Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mwqwobqsvs23"
     }
   ]
 }
