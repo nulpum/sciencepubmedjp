@@ -151,6 +151,34 @@ For chronic diarrhea, probiotics offer a reasonable first-line approach but shou
 
 Future research needs to identify which patients benefit most from which strains, optimize dosing and duration, and elucidate mechanisms of action. Until then, stick with probiotics that have been rigorously tested in randomized controlled trials for your specific condition—and maintain realistic expectations about what these transient gut visitors can and cannot accomplish.
 
+## FAQ: probiotics for diarrhea — quick answers
+
+### Can probiotics help with diarrhea?
+
+Yes, but efficacy depends on strain, dose, and context. The strongest evidence applies to **antibiotic-associated diarrhea** (37-42% risk reduction across meta-analyses of >11,000 adults) and **acute infectious diarrhea in children** (one review called this "probably the strongest indication for probiotic use in medicine" [PMID 39060736]). For chronic diarrhea, probiotics are a reasonable first-line option but should not delay diagnosis of underlying conditions.
+
+### Which probiotic strains work best for diarrhea?
+
+Three strains have the strongest evidence:
+
+- **Saccharomyces boulardii** (a yeast) — 84% efficacy across 27 trials in 5,029 patients for preventing antibiotic-associated and traveler's diarrhea [PMID 20458757]
+- **Lactobacillus rhamnosus GG** — well-characterized for prevention and acute pediatric diarrhea [PMID 30741841]
+- **Specific documented Bifidobacterium strains** — effective at higher doses (≥10 billion CFU)
+
+Generic multi-strain blends without strain identification lack reliable evidence — a 2020 veterinary review found that most retail probiotic products don't even qualify as true probiotics [PMID 33187621].
+
+### Probiotics for antibiotic-associated diarrhea — what actually works?
+
+Start a documented strain (**Saccharomyces boulardii, Lactobacillus rhamnosus GG, or specific Bifidobacterium**) at **≥10 billion CFU, within 2 days** of starting antibiotics, and continue for the duration of antibiotic therapy. This approach is supported by a JAMA meta-analysis of 82 RCTs with 11,811 participants showing a **42% reduction** in diarrhea risk [PMID 22570464], and a separate meta-analysis of 4,691 elderly participants showing the 2-day start window matters even in older adults [PMID 35794520].
+
+### How long does it take probiotics to stop diarrhea?
+
+For **antibiotic-associated diarrhea prevention**, probiotics must be started within the first two days of antibiotics to be effective — later starts show substantially reduced benefit. For **acute diarrhea treatment**, benefits typically appear within 24-48 hours. Importantly, probiotics do not permanently colonize the gut — they act **transiently** by sharing metabolites, supporting resident microbiota, and interacting with epithelial and immune cells while being taken [PMID 32010640].
+
+### Probiotics for diarrhoea (UK spelling) — are the recommendations the same?
+
+Yes. "Diarrhoea" (UK) and "diarrhea" (US) refer to the same condition. The strain-specific recommendations above apply identically — the ESPGHAN (European Society for Paediatric Gastroenterology) position paper explicitly emphasizes that efficacy of one strain cannot be extrapolated to others, regardless of regional spelling conventions [PMID 36219218].
+
 ## Studies referenced
 
 - [PMID 34385227](https://pubmed.ncbi.nlm.nih.gov/34385227/) — Systematic review and meta-analysis of 42 RCTs (11,305 adults) showing probiotics reduce antibiotic-associated diarrhea risk by 37%, with higher doses and specific Lactobacillus/Bifidobacterium strains most effective.

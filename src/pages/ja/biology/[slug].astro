@@ -61,6 +61,41 @@ const readingLabel = `📖 約 ${readingMinutes} 分で読める`;
 const wordCount = true ? bodyText.length : bodyText.trim().split(/\s+/).length;
 const tagKeywords = post.data.tags ?? [];
 
+// FAQPage JSON-LD (2026-10-07 追加): body の `## FAQ:` セクション の H3 を 抽出
+function extractFaqs(body: string): Array<{ q: string; a: string }> {
+  const section = body.match(/^## FAQ[\s\S]*?(?=\n## |$)/m);
+  if (!section) return [];
+  const items: Array<{ q: string; a: string }> = [];
+  const re = /^### (.+?)\n+([\s\S]*?)(?=\n### |\n## |$)/gm;
+  let m;
+  while ((m = re.exec(section[0])) !== null) {
+    const q = m[1].trim();
+    const rawA = m[2].trim();
+    const a = rawA
+      .replace(/\[PMID\s*\d+\]/g, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/\*\*([^*]+)\*\*/g, '$1')
+      .replace(/\*([^*]+)\*/g, '$1')
+      .replace(/`([^`]+)`/g, '$1')
+      .replace(/^\s*[-*]\s+/gm, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (q && a) items.push({ q, a: a.slice(0, 800) });
+  }
+  return items;
+}
+const faqs = extractFaqs(bodyText);
+const faqJsonLd = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+} : null;
+
+
 
 const siteUrl = 'https://sciencepubmed.net';
 const articleUrl = `${siteUrl}/ja/biology/${post.id}/`;
@@ -90,6 +125,7 @@ export const prerender = true;
 ---
 <BaseLayout title={post.data.title} description={metaDescription} lang="ja" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
 
   <article class="article">
     <header class="article__header">

@@ -141,6 +141,28 @@ This synthesis has several constraints:
 
 **Heterogeneity**: Different GLP-1 RAs have varying receptor binding profiles, pharmacokinetics, and dosing regimens. Generalizations may not apply equally to all agents in the class.
 
+## FAQ: GLP-1 and appetite — common questions
+
+### How does GLP-1 affect appetite?
+
+GLP-1 (glucagon-like peptide-1) suppresses appetite through **both central and peripheral mechanisms**. Centrally, GLP-1 receptors are widely distributed in brain regions controlling hunger, energy expenditure, and reward [PMID 39892489]. Peripherally, GLP-1 RAs delay gastric emptying — prolonging feelings of fullness and reducing post-meal glucose spikes. These effects are distinct from blood sugar control, which is why GLP-1 drugs produce weight loss even in people without diabetes [PMID 36050763].
+
+### Does GLP-1 reduce food cravings?
+
+Yes. Beyond simple appetite suppression, GLP-1 has "implications for learning and memory, reward behavior, and palatability" [PMID 31767182]. Many patients report reduced cravings not only for food but also for **alcohol and other rewarding substances** — an unexpected finding that researchers are now studying systematically. The mechanism involves modulation of neurotransmitters and neuropeptides that regulate the brain's reward system.
+
+### GLP-1 vs appetite — what's the mechanism?
+
+GLP-1 is a 30-amino acid peptide hormone produced primarily in intestinal L-cells, released in response to food intake [PMID 17928588]. Natural GLP-1 has an extremely short half-life (degraded within minutes by the enzyme DPP-IV) [PMID 12675249] and likely acts via sensory neurons in the intestine and liver that signal the brain through neural rather than hormonal pathways. Pharmaceutical GLP-1 RAs (semaglutide, tirzepatide) circumvent this rapid degradation to reach GLP-1 receptors at therapeutic concentrations [PMID 31767182].
+
+### GLP-1 for cravings — how effective is it?
+
+Clinical evidence shows GLP-1 receptor agonists produce substantial weight loss by reducing appetite and cravings. **Tirzepatide** (dual GIP/GLP-1 agonist) at 5-15 mg weekly reduced body weight by 5.4 to 11.7 kg, with 20.7% to 68.4% of participants losing more than 10% of baseline weight [PMID 36050763]. **Semaglutide** 2.4 mg weekly shows comparable efficacy. Both produce "similar reductions in appetite" despite tirzepatide producing greater overall weight loss — suggesting mechanisms beyond simple appetite suppression contribute to the metabolic effects.
+
+### Do GLP-1 drugs stop working for appetite over time?
+
+Real-world evidence suggests effects may attenuate when patients are not fully adherent to escalated doses: 20-50% of patients stop GLP-1 RAs within the first year, often due to gastrointestinal side effects, cost, or inadequate insurance coverage, and many patients also use doses substantially lower than those evaluated in clinical trials [PMID 40196933]. Observed weight loss in clinical practice tends to be lower than in RCTs, though outcomes approach trial results among highly adherent patients.
+
 ## Studies referenced
 
 - [PMID 36050763](https://pubmed.ncbi.nlm.nih.gov/36050763/) — Review of tirzepatide (dual GIP/GLP-1 agonist) showing unprecedented HbA1c reduction (1.24-2.58%) and weight loss (5.4-11.7 kg) in SURPASS trials, with discussion of mechanistic questions regarding GIP contribution.

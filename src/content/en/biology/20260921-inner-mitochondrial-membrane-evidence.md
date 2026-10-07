@@ -101,6 +101,41 @@ Defects in IMM structure or function underlie numerous human diseases, from inhe
 
 As microscopy techniques continue advancing and proteomic approaches reveal ever-finer details of protein interactions, the next decade will likely bring mechanistic clarity to how metabolic signals are transduced into structural adaptations of the IMM and how these adaptations can be therapeutically manipulated to combat mitochondrial dysfunction in disease.
 
+## FAQ: inner mitochondrial membrane — common questions
+
+### What is the inner mitochondrial membrane?
+
+The **inner mitochondrial membrane (IMM)** is a highly folded, lipid-bilayer boundary inside each mitochondrion that separates the **intermembrane space** from the **matrix**. Unlike the smooth outer membrane that mostly acts as a barrier, the IMM folds into elaborate structures called **cristae** that dramatically increase surface area within the confined mitochondrial volume. The cristae house the electron transport chain and ATP synthase and are responsible for **roughly 90% of cellular ATP production** through oxidative phosphorylation [PMID 39178855].
+
+### What is the inner membrane space (intermembrane space)?
+
+The **intermembrane space (IMS)** is the compartment located **between the outer mitochondrial membrane and the inner mitochondrial membrane**. During oxidative phosphorylation, respiratory complexes embedded in the IMM pump protons from the mitochondrial matrix **into the IMS**, creating an electrochemical gradient (the proton-motive force) that drives ATP synthase. The MICOS complex regulates how the IMS is compartmentalized via cristae junctions — the narrow necks connecting cristae to the inner boundary membrane — and this compartmentalization affects local concentrations of proteins like cytochrome c, with downstream effects on both respiratory efficiency and apoptotic signaling [PMID 35804199].
+
+### How do cristae on the mitochondrial inner membrane work?
+
+Cristae are **not static architecture** but dynamic structures that adapt to cellular energy demand. Two complexes shape them:
+
+- **MICOS** (mitochondrial contact site and cristae organizing system) — maintains cristae junction geometry
+- **OPA1** (optic atrophy 1), a dynamin-like GTPase — controls cristae width and junction diameter via a balance between membrane-anchored and soluble forms [PMID 33092941]
+
+More extensively folded cristae provide greater surface area for OXPHOS complexes, correlating directly with respiratory capacity. OPA1 also mediates **inner-membrane fusion** during mitochondrial fusion events, working after outer-membrane fusion joins the IMMs of merging mitochondria.
+
+### What proteins live on the mitochondrial inner membrane?
+
+The IMM houses several categories of essential proteins:
+
+- **Respiratory chain complexes I, III, and IV** — pump protons from matrix to IMS as electrons move through the chain
+- **ATP synthase (Complex V)** — harnesses the proton gradient to produce ATP
+- **TIM23 and TIM22 translocases** — import proteins across the IMM; TIM23 handles matrix-destined and some IMM-insertion proteins, TIM22 handles polytopic (multi-pass) IMM proteins [PMID 28301740]
+- **MICOS complex and OPA1** — shape cristae architecture [PMID 35804199]
+- **Mitofusins and OPA1** — mediate membrane fusion
+
+With over 1,000 different proteins required for mitochondrial function but only 13 encoded by mitochondrial DNA, the vast majority must be synthesized in the cytosol and imported via these specialized machineries.
+
+### What is cardiolipin and why does the inner mitochondrial membrane need it?
+
+**Cardiolipin** is a unique four-acyl-chain phospholipid found **almost exclusively in the IMM**, comprising approximately **15-20% of its lipid content** [PMID 24007978]. Mitochondria autonomously synthesize it (along with phosphatidylglycerol), while other IMM lipids like phosphatidylcholine must be imported. Cardiolipin stabilizes individual respiratory complexes and enables the assembly of **respiratory supercomplexes** — higher-order assemblies of Complexes I, III, and IV that may enhance electron transfer efficiency and reduce reactive oxygen species production. Mutations in cardiolipin biosynthesis enzymes cause **Barth syndrome** in humans, providing clinical validation of its essential role.
+
 ## Studies referenced
 
 - [PMID 30626975](https://pubmed.ncbi.nlm.nih.gov/30626975/) — Comprehensive review of mitochondrial protein organization revealing dynamic networks connecting protein import machinery with respiration, membrane architecture, and organelle contact sites.
