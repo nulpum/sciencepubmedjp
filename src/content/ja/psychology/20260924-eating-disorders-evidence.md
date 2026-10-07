@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36084848/"
 journal: "Neuroscience and biobehavioral reviews"
 year: 2022
 generated_at: "2026-09-24T06:02:02.448Z"
+tags:
+  - "cbt"
+  - "glp1"
 affiliate_links:
   - title: "「摂食障害 拒食症 過食症」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E6%91%82%E9%A3%9F%E9%9A%9C%E5%AE%B3%20%E6%8B%92%E9%A3%9F%E7%97%87%20%E9%81%8E%E9%A3%9F%E7%97%87&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E6%2591%2582%25E9%25A3%259F%25E9%259A%259C%25E5%25AE%25B3%2B%25E6%258B%2592%25E9%25A3%259F%25E7%2597%2587%2B%25E9%2581%258E%25E9%25A3%259F%25E7%2597%2587%26f%3D1"
   - title: "ポモドーロタイマー (集中法)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%9D%E3%83%A2%E3%83%89%E3%83%BC%E3%83%AD%20%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%20%E5%8B%89%E5%BC%B7&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "cbt"
-  - "glp1"
 ---
 
 ## この記事で見ていくこと

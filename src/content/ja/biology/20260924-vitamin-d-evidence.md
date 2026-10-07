@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35267975/"
 journal: "Nutrients"
 year: 2022
 generated_at: "2026-09-24T06:08:33.433Z"
+tags:
+  - "depression"
+  - "immunity"
 affiliate_links:
   - title: "「ビタミンD 免疫 メンタルヘルス効果」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E3%83%93%E3%82%BF%E3%83%9F%E3%83%B3D%20%E5%85%8D%E7%96%AB%20%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9%E5%8A%B9%E6%9E%9C&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2583%2593%25E3%2582%25BF%25E3%2583%259F%25E3%2583%25B3D%2B%25E5%2585%258D%25E7%2596%25AB%2B%25E3%2583%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2598%25E3%2583%25AB%25E3%2582%25B9%25E5%258A%25B9%25E6%259E%259C%26f%3D1"
   - title: "ブックスタンド (角度調整)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "depression"
-  - "immunity"
 ---
 
 ## この記事で見ていくこと

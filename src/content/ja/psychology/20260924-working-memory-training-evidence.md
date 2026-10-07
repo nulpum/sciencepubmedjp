@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/38937842/"
 journal: "Alzheimer's research & therapy"
 year: 2024
 generated_at: "2026-09-24T06:11:12.949Z"
+tags:
+  - "memory"
+  - "brain"
 affiliate_links:
   - title: "「ワーキングメモリ訓練 認知機能 本当」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%A1%E3%83%A2%E3%83%AA%E8%A8%93%E7%B7%B4%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD%20%E6%9C%AC%E5%BD%93&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E8%25A8%2593%25E7%25B7%25B4%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%2B%25E6%259C%25AC%25E5%25BD%2593%26f%3D1"
   - title: "ノイキャンイヤホン (集中読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubmed-22&i=electronics"
-tags:
-  - "memory"
-  - "brain"
 ---
 
 ## この記事で見ていくこと

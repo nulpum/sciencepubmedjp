@@ -8,6 +8,9 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36155943/"
 journal: "Child abuse & neglect"
 year: 2022
 generated_at: "2026-09-24T05:50:02.122Z"
+tags:
+  - "ptsd"
+  - "stress"
 affiliate_links:
   - title: "「PTSD治療 最前線 EMDR」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=PTSD%E6%B2%BB%E7%99%82%20%E6%9C%80%E5%89%8D%E7%B7%9A%20EMDR&tag=sciencepubmed-22&i=stripbooks"
@@ -17,9 +20,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3DPTSD%25E6%25B2%25BB%25E7%2599%2582%2B%25E6%259C%2580%25E5%2589%258D%25E7%25B7%259A%2BEMDR%26f%3D1"
   - title: "ブックスタンド (角度調整)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubmed-22&i=office-products"
-tags:
-  - "ptsd"
-  - "stress"
 ---
 
 ## この記事で見ていくこと

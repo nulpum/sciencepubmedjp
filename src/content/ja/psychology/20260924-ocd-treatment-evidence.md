@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/33618297/"
 journal: "Comprehensive psychiatry"
 year: 2021
 generated_at: "2026-09-24T06:05:12.516Z"
+tags: []
 affiliate_links:
   - title: "「強迫症 OCD 治療」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BC%B7%E8%BF%AB%E7%97%87%20OCD%20%E6%B2%BB%E7%99%82&tag=sciencepubmed-22&i=stripbooks"
@@ -17,7 +18,6 @@ affiliate_links:
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E5%25BC%25B7%25E8%25BF%25AB%25E7%2597%2587%2BOCD%2B%25E6%25B2%25BB%25E7%2599%2582%26f%3D1"
   - title: "ブックライト (夜の読書に)"
     url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97&tag=sciencepubmed-22&i=electronics"
-tags: []
 ---
 
 ## この記事で見ていくこと
