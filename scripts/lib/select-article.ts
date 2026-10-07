@@ -7,7 +7,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Logger } from './logger.js';
-import { isPosted, type Platform } from './posted-tracker.js';
+import { isPosted, getRecentlyPostedSlugs, type Platform } from './posted-tracker.js';
 import type { Category } from '../types.js';
 
 const CONTENT_DIR = join(process.cwd(), 'src', 'content');
@@ -106,6 +106,11 @@ export interface SelectOptions {
   lang?: 'ja' | 'en';
   category?: Category;
   strategy?: 'random' | 'newest' | 'oldest';
+  /**
+   * 他 PF で直近 N 時間以内に投稿された (slug, lang) を除外する。
+   * SNS 跨ぎの「かぶり」を防ぐ。既定: 無効 (0)。
+   */
+  crossPlatformCooldownHours?: number;
 }
 
 export async function selectArticleForPost(
@@ -133,12 +138,30 @@ export async function selectArticleForPost(
   Logger.info(
     `select-article (${platform}): 候補 ${candidates.length} 件 → 未投稿 ${unposted.length} 件`,
   );
-  if (unposted.length === 0) return null;
+
+  // Cross-platform cooldown: 他 PF で直近に投稿した記事を除外 (SNS 跨ぎのかぶり対策)
+  let filtered = unposted;
+  if (options.crossPlatformCooldownHours && options.crossPlatformCooldownHours > 0) {
+    const recentCross = await getRecentlyPostedSlugs(
+      options.crossPlatformCooldownHours,
+      platform,
+    );
+    filtered = unposted.filter((a) => !recentCross.has(`${a.slug}|${a.lang}`));
+    Logger.info(
+      `cross-platform cooldown (${options.crossPlatformCooldownHours}h): ${unposted.length} → ${filtered.length} 件`,
+    );
+    // Fallback: 全部ブロックされたら cooldown 無視して unposted 全体から選ぶ
+    if (filtered.length === 0 && unposted.length > 0) {
+      Logger.warn('cross-platform cooldown で候補 0 → cooldown 無視でフォールバック');
+      filtered = unposted;
+    }
+  }
+  if (filtered.length === 0) return null;
 
   if (strategy === 'random') {
-    return unposted[Math.floor(Math.random() * unposted.length)];
+    return filtered[Math.floor(Math.random() * filtered.length)];
   }
-  const sorted = [...unposted].sort((a, b) =>
+  const sorted = [...filtered].sort((a, b) =>
     strategy === 'newest'
       ? Date.parse(b.generatedAt) - Date.parse(a.generatedAt)
       : Date.parse(a.generatedAt) - Date.parse(b.generatedAt),

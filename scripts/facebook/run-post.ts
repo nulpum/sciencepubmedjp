@@ -18,6 +18,7 @@ interface CliArgs {
   lang?: 'ja' | 'en';
   category?: Category;
   strategy?: 'random' | 'newest' | 'oldest';
+  cooldownHours?: number;
   dryRun: boolean;
 }
 
@@ -39,7 +40,11 @@ function parseArgs(): CliArgs {
       ? stratStr
       : undefined;
 
-  return { lang, category, strategy, dryRun: args.includes('--dry-run') };
+  const cooldownStr = find('--cooldown-hours=');
+  const cooldownHours =
+    cooldownStr && !Number.isNaN(Number(cooldownStr)) ? Number(cooldownStr) : undefined;
+
+  return { lang, category, strategy, cooldownHours, dryRun: args.includes('--dry-run') };
 }
 
 async function main(): Promise<void> {
@@ -50,6 +55,7 @@ async function main(): Promise<void> {
 
   const article = await selectArticleForPost({
     platform: 'facebook',
+    crossPlatformCooldownHours: args.cooldownHours,
     lang: args.lang ?? 'ja',
     category: args.category,
     strategy: args.strategy,

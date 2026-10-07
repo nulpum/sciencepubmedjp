@@ -87,3 +87,22 @@ export async function getAllPosted(platform?: Platform): Promise<PostedRecord[]>
   const data = await load();
   return platform ? data.posts.filter((p) => p.platform === platform) : data.posts;
 }
+
+// Cross-platform cooldown: 他 PF で直近 hoursAgo 以内に投稿した (slug, lang) を列挙
+// excludePlatform で指定された PF の記録は無視する
+export async function getRecentlyPostedSlugs(
+  hoursAgo: number,
+  excludePlatform?: Platform,
+): Promise<Set<string>> {
+  const data = await load();
+  const cutoffMs = Date.now() - hoursAgo * 3600 * 1000;
+  const set = new Set<string>();
+  for (const r of data.posts) {
+    if (excludePlatform && r.platform === excludePlatform) continue;
+    const t = Date.parse(r.postedAt);
+    if (!Number.isNaN(t) && t >= cutoffMs) {
+      set.add(`${r.slug}|${r.lang}`);
+    }
+  }
+  return set;
+}

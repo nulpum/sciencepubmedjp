@@ -79,9 +79,13 @@ jobs:
           echo "lang=$LANG" >> "$GITHUB_OUTPUT"
           echo "→ this run posts lang=$LANG"
 
+      # 2026-10-07: SNS 跨ぎのかぶり対策
+      # --cooldown-hours=72: 他 PF で直近 72h 以内に投稿した記事を除外
+      # strategy 多様化: 全 PF 同じ oldest だと時系列順で同じ記事を選ぶため、
+      #   Threads=oldest, FB=random, IG=random, Bluesky=newest で分散
       - name: Post to Threads
         continue-on-error: true
-        run: npm run post:threads -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        run: npm run post:threads -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest --cooldown-hours=72
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: me
@@ -91,7 +95,7 @@ jobs:
         # 2026-05-20: FB Page (1103479166185406) は生きていた (旧誤判定を訂正)。
         # Page token は never expire、ビジネス連携権限 ON 済 → 投稿可能。
         continue-on-error: true
-        run: npm run post:facebook -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        run: npm run post:facebook -- --lang=${{ steps.lang.outputs.lang }} --strategy=random --cooldown-hours=72
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
@@ -99,7 +103,7 @@ jobs:
 
       - name: Post to Instagram
         continue-on-error: true
-        run: npm run post:instagram -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        run: npm run post:instagram -- --lang=${{ steps.lang.outputs.lang }} --strategy=random --cooldown-hours=72
         env:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
@@ -107,7 +111,7 @@ jobs:
 
       - name: Post to Bluesky
         continue-on-error: true
-        run: npm run post:bluesky -- --lang=${{ steps.lang.outputs.lang }} --strategy=oldest
+        run: npm run post:bluesky -- --lang=${{ steps.lang.outputs.lang }} --strategy=newest --cooldown-hours=72
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
