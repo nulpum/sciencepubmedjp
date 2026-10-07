@@ -8423,6 +8423,30 @@
       "category": "biology",
       "postedAt": "2026-10-07T19:03:44.811Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxcn55e2af27"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260918-41985221",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-07T20:16:01.369Z",
+      "postId": "18398495587207956"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261007-40140733",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-07T20:16:11.014Z",
+      "postId": "1103479166185406_122114662803321286"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261007-migraine-treatment-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-07T20:16:16.246Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxcr6t7fs72i"
     }
   ]
 }
