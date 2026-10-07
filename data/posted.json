@@ -8391,6 +8391,38 @@
       "category": "biology",
       "postedAt": "2026-10-07T01:41:43.511Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxasvufmlo2i"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260918-40684516",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-07T19:03:21.267Z",
+      "postId": "17906726895576811"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261006-39919521",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-07T19:03:28.836Z",
+      "postId": "1103479166185406_122114657211321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261006-42732124",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-07T19:03:42.263Z",
+      "postId": "18156511711509563"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261007-ibs-treatment-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-07T19:03:44.811Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxcn55e2af27"
     }
   ]
 }
