@@ -8447,6 +8447,38 @@
       "category": "biology",
       "postedAt": "2026-10-07T20:16:16.246Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxcr6t7fs72i"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260919-40216510",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-08T18:58:19.501Z",
+      "postId": "17952228975271292"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261007-caffeine-cognition-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-08T18:58:32.133Z",
+      "postId": "1103479166185406_122114754057321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261005-40869288",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-08T18:58:44.700Z",
+      "postId": "18039092423647260"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261008-42413478",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-08T18:58:47.115Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxf5d6vh4i24"
     }
   ]
 }
