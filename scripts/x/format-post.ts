@@ -18,8 +18,9 @@ import { buildHashtags } from '../lib/hashtags.js';
 const SITE_URL = process.env.SITE_URL || 'https://sciencepubmed.net';
 
 function siteUrlFor(meta: ArticleMeta): string {
+  // SITE_URL の末尾スラッシュ揃え + UTM 付与 (GA4 で SNS 流入内訳が 把握できるように)
   const base = SITE_URL.replace(/\/$/, '');
-  return `${base}/${meta.lang}/${meta.category}/${meta.slug}/`;
+  return `${base}/${meta.lang}/${meta.category}/${meta.slug}/?utm_source=x&utm_medium=social&utm_campaign=article_post`;
 }
 
 function pubmedUrl(pmid: string): string {
