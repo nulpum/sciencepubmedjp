@@ -117,16 +117,8 @@ jobs:
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           SITE_URL: https://sciencepubmed.net
 
-      # X 通知は ja の cron でのみ送る (X は ja アカウント運用想定)
-      - name: Send X-version template to Gmail
-        if: steps.lang.outputs.lang == 'ja'
-        continue-on-error: true
-        run: npm run notify:x -- --lang=ja
-        env:
-          SITE_URL: https://sciencepubmed.net
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+      # 2026-10-08: X 用 Gmail は x-daily.yml (1 日 1 通 07:43 JST) に 集約。
+      # post.yml の 2 回 × ja + x-daily = 計 3 通 だった為、ここから notify:x を 削除。
 
       - name: Commit + push posted.json
         run: |

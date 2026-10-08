@@ -3,13 +3,17 @@ name: Toolkit EN (AI prompt distribution) announcement
 # 「Free AI prompt: paste into ChatGPT/Claude/Gemini → PubMed paper-chat assistant」の
 # EN 告知を Threads / Facebook / Instagram / Bluesky に配信 + X ハイブリッド。
 #
-# **手動 dispatch のみ** (cron なし)。EN 版は 初回テスト後に traction 見て 定期化検討。
+# 2026-10-08 以降: 週 1 cron 自動配信 (日曜 23:30 JST) + 手動 dispatch も可。
 #
 # 使い方:
 #   1. Actions タブ → "Toolkit EN..." ワークフロー選択
 #   2. Run workflow → dry_run=true で 内容確認 → 問題なければ dry_run=false で 本番
 
 on:
+  # 2026-10-08: 週 1 で 定期配信を 追加 (日曜 14:30 UTC = 23:30 JST = 日曜朝 09:30 EST)
+  # 米国/EU の 日曜夜〜月曜朝 の 時間帯を 狙う。
+  schedule:
+    - cron: '30 14 * * 0'   # 毎週日曜 14:30 UTC
   workflow_dispatch:
     inputs:
       dry_run:
@@ -39,6 +43,8 @@ jobs:
 
       - name: Post EN toolkit announcement
         run: |
+          # scheduled run だと inputs.dry_run は 空 → 本番送信扱い
+          # workflow_dispatch で 明示的に true を 指定した場合のみ dry-run
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             DRY="--dry-run"
           else

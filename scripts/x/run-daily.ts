@@ -193,14 +193,9 @@ async function main(): Promise<void> {
   const hasImage = await existsLocal(squareImagePath);
 
   const bodyLines: string[] = [
-    '# 今日の X (旧 Twitter) 投稿テンプレ',
+    '# 手動投稿用テンプレート (X / Instagram)',
     '',
-    '## ⚠️ 現在 SNS 自動投稿は停止中',
-    'Meta 開発者アカウントの認証 UI バグにより、Threads/FB/IG への自動投稿は',
-    '一時停止しています (Meta 復旧待ち)。',
-    'X 手動投稿だけは継続するため、毎日このテンプレが届きます。',
-    '',
-    '## 🐦 X — ツリー投稿で algorithm に乗せる',
+    '## 🐦 X (旧 Twitter) — ツリー投稿で algorithm に乗せる',
     '',
     '【運用手順】',
     '  1. 下の「親ポスト」を X に投稿',
@@ -229,22 +224,27 @@ async function main(): Promise<void> {
       '=== ここまでコピー ===',
       '',
     );
+  } else {
+    bodyLines.push(
+      '⚠️ 反対言語版が未生成のためツリー返信テンプレなし',
+      '',
+    );
   }
 
   bodyLines.push(
-    '## 📷 Instagram 用 (Meta 復旧後に手動でも可)',
+    '## 📷 Instagram 用',
     hasImage
-      ? '添付の正方形画像 (1080×1080) を Instagram にアップ → 親ポストのテキストをキャプションに貼り付け。'
-      : '画像未生成。`npm run generate:og -- --size=square` で生成可能。',
+      ? '添付の正方形画像 (1080×1080) を Instagram にアップ → 親ポストのテキストをキャプションに貼り付け (適宜短縮)。'
+      : '画像未生成のため添付なし。`npm run generate:og -- --size=square` で生成可能。',
     '',
     `📊 記事 URL:`,
     `   - ja: ${process.env.SITE_URL || 'https://sciencepubmed.net'}/ja/${article.category}/${article.slug}/`,
     `   - en: ${process.env.SITE_URL || 'https://sciencepubmed.net'}/en/${article.category}/${article.slug}/`,
     `   - PMID: ${article.pmid}`,
     '',
-    `📅 残り未送信ストック: ${candidates.length - 1} 件 (今日の分を引いた数)`,
+    `📅 残り未送信ストック: ${candidates.length - 1} 件`,
     '',
-    '🤖 PubMed Trivia bot — X 用 daily 配信 (Meta 無関係)',
+    '🤖 PubMed Trivia bot より自動送信',
   );
 
   const body = bodyLines.join('\n');
