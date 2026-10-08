@@ -102,18 +102,23 @@ function partnerTag(): string {
  * @param bookLang 和書 (stripbooks) or 洋書 (english-books) を指定。
  *   JA 記事 → stripbooks: 日本語キーワード × 和書 = ヒット率◎
  *   EN 記事 → english-books: 英語キーワード × 洋書 = amazon.co.jp 内でも豊富にヒット
+ *
+ * 2026-10-08: `s=review-rank` を 追加。
+ * デフォルトの featured (関連順) は 迷う商品が 混ざって CVR 0% だった為、
+ * レビュー数 順 (= 定番商品が 上) に 並び替えて 選定時間を 短縮する。
  */
 export function buildSearchUrl(keywords: string, bookLang: 'ja' | 'en' = 'ja'): string {
   const enc = encodeURIComponent(keywords);
   const category = bookLang === 'en' ? 'english-books' : 'stripbooks';
-  return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${category}`;
+  return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${category}&s=review-rank`;
 }
 
 // 書籍以外の Amazon カテゴリ検索リンク (家電/オフィス/キッチン等)
 // 「読書の相棒」商品を紐付ける。薬機法回避のため サプリ・健康食品は除外。
+// 2026-10-08: review-rank 並び替えで 定番商品を 上に。
 export function buildAmazonSearchUrlNonBook(keywords: string, indexParam: string): string {
   const enc = encodeURIComponent(keywords);
-  return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${indexParam}`;
+  return `https://www.amazon.co.jp/s?k=${enc}&tag=${partnerTag()}&i=${indexParam}&s=review-rank`;
 }
 
 // 科学記事を読む読者に有用そうな "読書の相棒" 商品カテゴリ (JA)

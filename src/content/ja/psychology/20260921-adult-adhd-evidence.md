@@ -12,13 +12,13 @@ tags:
   - "adhd"
 affiliate_links:
   - title: "「大人 ADHD 最新エビデンス」で Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E5%A4%A7%E4%BA%BA%20ADHD%20%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E5%A4%A7%E4%BA%BA%20ADHD%20%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "「大人 ADHD 最新エビデンス」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E5%25A4%25A7%25E4%25BA%25BA%2BADHD%2B%25E6%259C%2580%25E6%2596%25B0%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%26f%3D1"
   - title: "ポモドーロタイマー (集中法)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%9D%E3%83%A2%E3%83%89%E3%83%BC%E3%83%AD%20%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%20%E5%8B%89%E5%BC%B7&tag=sciencepubmed-22&i=office-products"
+    url: "https://www.amazon.co.jp/s?k=%E3%83%9D%E3%83%A2%E3%83%89%E3%83%BC%E3%83%AD%20%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%20%E5%8B%89%E5%BC%B7&tag=sciencepubmed-22&i=office-products&s=review-rank"
 ---
 
 ## この記事で見ていくこと

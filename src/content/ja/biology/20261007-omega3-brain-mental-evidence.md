@@ -10,13 +10,13 @@ year: 2019
 generated_at: "2026-10-07T02:03:08.845Z"
 affiliate_links:
   - title: "「オメガ3 EPA/DHA メンタル」で Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E3%82%AA%E3%83%A1%E3%82%AC3%20EPA%2FDHA%20%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E3%82%AA%E3%83%A1%E3%82%AC3%20EPA%2FDHA%20%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "「オメガ3 EPA/DHA メンタル」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2582%25AA%25E3%2583%25A1%25E3%2582%25AC3%2BEPA%252FDHA%2B%25E3%2583%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%26f%3D1"
   - title: "デスクライト (目に優しい LED)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products"
+    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products&s=review-rank"
 tags:
   - "adhd"
   - "depression"

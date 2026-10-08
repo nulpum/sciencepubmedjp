@@ -15,11 +15,11 @@ tags:
   - "glp1"
 affiliate_links:
   - title: "Search Amazon JP (English books) for \"glp appetite how\""
-    url: "https://www.amazon.co.jp/s?k=glp%20appetite%20how&tag=sciencepubmed-22&i=english-books"
+    url: "https://www.amazon.co.jp/s?k=glp%20appetite%20how&tag=sciencepubmed-22&i=english-books&s=review-rank"
   - title: "Browse biology books on Amazon JP (English books)"
-    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
+    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books&s=review-rank"
   - title: "Clip-on book light"
-    url: "https://www.amazon.co.jp/s?k=book%20light%20clip%20led&tag=sciencepubmed-22&i=electronics"
+    url: "https://www.amazon.co.jp/s?k=book%20light%20clip%20led&tag=sciencepubmed-22&i=electronics&s=review-rank"
 ---
 
 ## What we're looking at

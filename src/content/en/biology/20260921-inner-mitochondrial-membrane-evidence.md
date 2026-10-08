@@ -12,11 +12,11 @@ tags:
   - "mitochondria"
 affiliate_links:
   - title: "Search Amazon JP (English books) for \"inner mitochondrial membrane\""
-    url: "https://www.amazon.co.jp/s?k=inner%20mitochondrial%20membrane&tag=sciencepubmed-22&i=english-books"
+    url: "https://www.amazon.co.jp/s?k=inner%20mitochondrial%20membrane&tag=sciencepubmed-22&i=english-books&s=review-rank"
   - title: "Browse biology books on Amazon JP (English books)"
-    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books"
+    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books&s=review-rank"
   - title: "LED desk lamp for reading"
-    url: "https://www.amazon.co.jp/s?k=desk%20lamp%20led%20reading&tag=sciencepubmed-22&i=office-products"
+    url: "https://www.amazon.co.jp/s?k=desk%20lamp%20led%20reading&tag=sciencepubmed-22&i=office-products&s=review-rank"
 ---
 
 ## What we're looking at

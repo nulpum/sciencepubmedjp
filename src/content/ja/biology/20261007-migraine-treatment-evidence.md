@@ -10,13 +10,13 @@ year: 2023
 generated_at: "2026-10-07T02:10:24.963Z"
 affiliate_links:
   - title: "「片頭痛 最新治療 トリプタン」で Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E7%89%87%E9%A0%AD%E7%97%9B%20%E6%9C%80%E6%96%B0%E6%B2%BB%E7%99%82%20%E3%83%88%E3%83%AA%E3%83%97%E3%82%BF%E3%83%B3&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E7%89%87%E9%A0%AD%E7%97%9B%20%E6%9C%80%E6%96%B0%E6%B2%BB%E7%99%82%20%E3%83%88%E3%83%AA%E3%83%97%E3%82%BF%E3%83%B3&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "「片頭痛 最新治療 トリプタン」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E7%2589%2587%25E9%25A0%25AD%25E7%2597%259B%2B%25E6%259C%2580%25E6%2596%25B0%25E6%25B2%25BB%25E7%2599%2582%2B%25E3%2583%2588%25E3%2583%25AA%25E3%2583%2597%25E3%2582%25BF%25E3%2583%25B3%26f%3D1"
   - title: "デスクライト (目に優しい LED)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products"
+    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products&s=review-rank"
 tags: []
 ---
 

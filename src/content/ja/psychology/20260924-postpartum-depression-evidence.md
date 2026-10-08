@@ -14,13 +14,13 @@ tags:
   - "women-health"
 affiliate_links:
   - title: "「産後うつ リスク要因 治療法」で Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E7%94%A3%E5%BE%8C%E3%81%86%E3%81%A4%20%E3%83%AA%E3%82%B9%E3%82%AF%E8%A6%81%E5%9B%A0%20%E6%B2%BB%E7%99%82%E6%B3%95&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E7%94%A3%E5%BE%8C%E3%81%86%E3%81%A4%20%E3%83%AA%E3%82%B9%E3%82%AF%E8%A6%81%E5%9B%A0%20%E6%B2%BB%E7%99%82%E6%B3%95&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks"
+    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
   - title: "「産後うつ リスク要因 治療法」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E7%2594%25A3%25E5%25BE%258C%25E3%2581%2586%25E3%2581%25A4%2B%25E3%2583%25AA%25E3%2582%25B9%25E3%2582%25AF%25E8%25A6%2581%25E5%259B%25A0%2B%25E6%25B2%25BB%25E7%2599%2582%25E6%25B3%2595%26f%3D1"
   - title: "ブックスタンド (角度調整)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubmed-22&i=office-products"
+    url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubmed-22&i=office-products&s=review-rank"
 ---
 
 ## この記事で見ていくこと
