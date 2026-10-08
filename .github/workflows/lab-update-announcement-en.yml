@@ -1,0 +1,79 @@
+name: Lab UPDATE EN announcement (recurring + manual)
+
+# PubMed Lab 大型アップデートの 英語版告知 (3大機能 + waitlist) を
+# Threads / Facebook / Instagram / Bluesky に 配信。 X は ハイブリッド (API → fallback)。
+#
+# 自動: 2 日毎 (2, 6, 10, 14, 18, 22, 26, 30 日) の 23:00 JST (14 UTC) に 配信
+#       → Lab JA (1,5,9,...) → Toolkit EN (日曜) → Lab EN (2,6,10,...) → Toolkit JA (3,7,11,...)
+#         の 4 系統 ローテで 1 日 1 告知 以内に 収まる 想定。
+# 手動: workflow_dispatch で 任意 タイミング、dry_run=true で プレビュー。
+#
+# 時刻 23:00 JST = 09:00 EST = 06:00 PST → 米国 月曜朝 の 時間帯に 届く設計。
+
+on:
+  schedule:
+    - cron: '0 14 2-30/4 * *'   # 23:00 JST 4日毎 (偶数日側)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true=本文だけログ出力、false=実際に配信'
+        required: false
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+      skip:
+        description: 'スキップするPF (カンマ区切り、例 fb,ig)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  announcement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+
+      - name: Random jitter
+        if: github.event_name == 'schedule'
+        run: |
+          DELAY=$((RANDOM % 600))
+          echo "sleeping ${DELAY}s for anti-bot jitter"
+          sleep "$DELAY"
+
+      - name: Post Lab UPDATE EN announcement
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ inputs.skip }}" ]; then
+            ARGS="$ARGS --skip=${{ inputs.skip }}"
+          fi
+          echo "Running: npm run promo:lab-update-en -- $ARGS"
+          npm run promo:lab-update-en -- $ARGS
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: me
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          SITE_URL: https://sciencepubmed.net
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}

@@ -4,10 +4,18 @@ name: Daily X template email
 #
 # post.yml が止まっていても (Meta 復旧待ち中でも) X 手動投稿を継続できるよう、
 # 毎朝 1 通の X 用テンプレを Gmail に送信する。
-# 22:43 UTC = 07:43 JST (毎時 0 分を避けて Bot 臭さ軽減)
+# 1 日 4 回 配信 (毎時 0 分を避けて Bot 臭さ軽減):
+#   07:43 JST (22:43 UTC) — 朝
+#   12:17 JST (03:17 UTC) — 昼
+#   17:33 JST (08:33 UTC) — 夕方
+#   21:51 JST (12:51 UTC) — 夜
+# 1 日 4 本の 異なる記事 の X テンプレが Gmail に届く (x-emailed.json で 重複除外)
 on:
   schedule:
     - cron: '43 22 * * *'   # 07:43 JST
+    - cron: '17 3 * * *'    # 12:17 JST
+    - cron: '33 8 * * *'    # 17:33 JST
+    - cron: '51 12 * * *'   # 21:51 JST
   workflow_dispatch:
 
 permissions:
