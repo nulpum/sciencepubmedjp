@@ -8543,6 +8543,38 @@
       "category": "biology",
       "postedAt": "2026-10-09T02:17:37.118Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxfvtv5afh26"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260921-gut-microbiome-mental-health",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-09T18:29:28.031Z",
+      "postId": "18051845915807383"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261007-40597563",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-09T18:29:36.305Z",
+      "postId": "1103479166185406_122114848911321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261008-39653604",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-09T18:29:48.995Z",
+      "postId": "18091268054480510"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261001-41690420",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-09T18:29:51.573Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxhm6f7qz424"
     }
   ]
 }
