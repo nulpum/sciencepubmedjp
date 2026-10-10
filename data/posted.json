@@ -8639,6 +8639,30 @@
       "category": "biology",
       "postedAt": "2026-10-10T01:55:54.450Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxif3ybuzt25"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261007-ibs-treatment-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-10T17:30:36.934Z",
+      "postId": "1103479166185406_122114937621321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261007-ibs-treatment-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-10T17:30:46.861Z",
+      "postId": "18097070036391763"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261003-38852382",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-10T17:30:48.299Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxjzdpl32y2w"
     }
   ]
 }
