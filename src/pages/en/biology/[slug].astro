@@ -99,12 +99,15 @@ const siteUrl = 'https://sciencepubmed.net';
 const articleUrl = `${siteUrl}/en/biology/${post.id}/`;
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'MedicalScholarlyArticle',
   'headline': post.data.title,
   'description': post.data.fact,
   'datePublished': post.data.generated_at,
   'dateModified': post.data.generated_at,
-  'author': { '@type': 'Organization', 'name': 'PubMed Trivia Editorial', 'url': siteUrl },
+  'author': [
+    { '@type': 'Organization', 'name': 'PubMed Trivia Editorial', 'url': siteUrl },
+    { '@type': 'Person', 'name': 'PubMed Trivia Editorial Team', 'url': `${siteUrl}/en/about/`, 'knowsAbout': ['Peer-reviewed research', 'PubMed', 'Meta-analysis', 'Systematic review'] },
+  ],
   'publisher': {
     '@type': 'Organization', 'name': 'PubMed Trivia',
     'logo': { '@type': 'ImageObject', 'url': `${siteUrl}/profile.png` },
@@ -119,10 +122,22 @@ const jsonLd = {
   'about': { '@type': 'Thing', 'name': 'Biology' },
 };
 
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+    { '@type': 'ListItem', position: 2, name: 'Biology', item: `${siteUrl}/en/biology/` },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: articleUrl },
+  ],
+};
+
 export const prerender = true;
 ---
 <BaseLayout title={post.data.title} description={metaDescription} lang="en" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
 
   <article class="article">

@@ -1,0 +1,172 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const psy = await getCollection('en_psychology');
+const bio = await getCollection('en_biology');
+const all = [...psy.map((p) => ({...p, cat: 'psychology' as const})), ...bio.map((p) => ({...p, cat: 'biology' as const}))];
+const relatedTags = ['depression', 'anxiety', 'ptsd', 'mental-health', 'psychiatry', 'mood', 'stress'];
+const related = all
+  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1))
+  .slice(0, 20);
+
+export const prerender = true;
+---
+<BaseLayout
+  title="Mental Health Evidence Hub: Depression, Anxiety, PTSD, Treatment Research｜PubMed Trivia"
+  description="Peer-reviewed systematic reviews on mental health: depression and anxiety biology, PTSD treatment efficacy, stress response, and evidence-based psychotherapy and pharmacotherapy."
+  lang="en"
+>
+  <article class="hub">
+    <header class="hub__header">
+      <p class="hub__breadcrumb"><a href="/en/">Home</a> › 🧠 Mental Health Hub</p>
+      <h1>🧠 Mental Health Research: An Evidence Hub</h1>
+      <p class="hub__lede">
+        Mental health research has advanced substantially — from a time when depression and anxiety were
+        poorly understood to today, when we have <strong>robust meta-analytic evidence</strong> on biological
+        mechanisms, treatment efficacy, and recovery trajectories. This hub curates systematic reviews on
+        the most studied mental health conditions.
+      </p>
+    </header>
+
+    <nav class="hub__toc" aria-label="Contents">
+      <p class="hub__toc-title">Contents</p>
+      <ol>
+        <li><a href="#burden">Global mental health burden</a></li>
+        <li><a href="#depression">Depression: biology and treatment</a></li>
+        <li><a href="#anxiety">Anxiety disorders</a></li>
+        <li><a href="#ptsd">PTSD and trauma</a></li>
+        <li><a href="#stress">Stress response biology</a></li>
+        <li><a href="#treatment">What works: evidence-based treatments</a></li>
+        <li><a href="#articles">All mental health articles</a></li>
+      </ol>
+    </nav>
+
+    <section id="burden">
+      <h2>1. Global mental health burden</h2>
+      <p>
+        Mental health conditions affect approximately <strong>one in four people globally</strong> at some
+        point in their lifetime, according to WHO estimates. Depression is the leading cause of disability
+        worldwide, while anxiety disorders are the most prevalent mental health conditions in high-income
+        countries.
+      </p>
+      <p>
+        The economic and social burden is substantial: lost productivity, healthcare costs, and reduced
+        quality of life. However, mental health conditions are also <strong>highly treatable</strong> —
+        evidence-based interventions produce response rates of 50-70% for most common conditions.
+      </p>
+    </section>
+
+    <section id="depression">
+      <h2>2. Depression: biology and treatment</h2>
+      <p>
+        Depression is a <strong>heterogeneous condition</strong> rather than a single disease. Current
+        research identifies multiple biological subtypes based on inflammation markers, HPA-axis function,
+        neuroimaging patterns, and genetic variants. This heterogeneity explains why single treatments
+        don't work for everyone.
+      </p>
+      <p>
+        Evidence-based treatments include <strong>SSRIs/SNRIs</strong> (effective for moderate-severe cases,
+        modest effect sizes), <strong>cognitive behavioral therapy</strong> (comparable efficacy to
+        medication for mild-moderate cases), <strong>interpersonal therapy</strong>, and <strong>regular
+        physical exercise</strong> (meta-analytic effect sizes similar to psychotherapy for mild depression).
+      </p>
+    </section>
+
+    <section id="anxiety">
+      <h2>3. Anxiety disorders</h2>
+      <p>
+        Anxiety disorders include <strong>generalized anxiety, panic disorder, social anxiety, and specific
+        phobias</strong>. Though distinct, they share underlying features: hyperactive threat detection,
+        avoidance behaviors, and dysregulated autonomic nervous system responses.
+      </p>
+      <p>
+        First-line treatments are <strong>cognitive behavioral therapy (particularly exposure-based)</strong>
+        and <strong>SSRIs</strong>. For acute anxiety, benzodiazepines provide rapid relief but risk
+        dependence with long-term use — guidelines consistently recommend time-limited use.
+      </p>
+    </section>
+
+    <section id="ptsd">
+      <h2>4. PTSD and trauma</h2>
+      <p>
+        Post-traumatic stress disorder develops in approximately <strong>10-20% of trauma-exposed individuals</strong>,
+        with higher rates after interpersonal violence or combat exposure. PTSD affects memory consolidation,
+        threat processing, and emotion regulation at measurable biological levels.
+      </p>
+      <p>
+        Treatments with strong evidence include <strong>trauma-focused CBT</strong>, <strong>Eye Movement
+        Desensitization and Reprocessing (EMDR)</strong>, and <strong>prolonged exposure therapy</strong>.
+        Pharmacological options (SSRIs, prazosin for nightmares) provide adjunctive benefit but are less
+        effective as monotherapy. See our deep-dive on <a href="/en/psychology/">PTSD treatment evidence</a>.
+      </p>
+    </section>
+
+    <section id="stress">
+      <h2>5. Stress response biology</h2>
+      <p>
+        The acute stress response involves rapid <strong>sympathetic nervous system activation</strong>
+        (fight-or-flight) and slower <strong>HPA-axis cortisol release</strong>. These responses are adaptive
+        for short-term challenges but become maladaptive when chronic.
+      </p>
+      <p>
+        Chronic stress contributes to cardiovascular disease, immune dysregulation, cognitive decline, and
+        multiple mental health conditions. Evidence-based stress-reduction interventions include regular
+        exercise, mindfulness meditation (particularly MBSR), adequate sleep, and social support.
+      </p>
+    </section>
+
+    <section id="treatment">
+      <h2>6. What works: evidence-based treatments</h2>
+      <p>
+        For most common mental health conditions, <strong>combined psychotherapy + medication</strong>
+        produces better outcomes than either alone — particularly for moderate to severe presentations.
+        For mild cases, psychotherapy or exercise alone often suffices.
+      </p>
+      <p>
+        Treatment matching matters: the strongest predictor of outcome is often <strong>therapist-patient
+        alliance</strong> rather than specific technique. Multiple evidence-based options exist for most
+        conditions; finding a provider the person can engage with productively is as important as the
+        specific modality.
+      </p>
+    </section>
+
+    <section id="articles">
+      <h2>7. All mental-health-related articles ({related.length})</h2>
+      <ul class="hub__articles">
+        {related.map((p) => (
+          <li>
+            <a href={`/en/${p.cat}/${p.id}/`}>
+              <strong>{p.data.title}</strong>
+              <p>{p.data.fact}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="hub__cta"><a href="/en/psychology/">→ All Psychology articles</a> | <a href="/en/hub/">→ All Hubs</a></p>
+    </section>
+  </article>
+
+  <style>
+    .hub { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+    .hub__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .hub__breadcrumb a { color: var(--muted); }
+    .hub__header h1 { font-size: 2rem; color: var(--navy); margin: 8px 0 12px; }
+    .hub__lede { color: #2d3748; font-size: 1rem; line-height: 1.8; }
+    .hub__toc { background: #f0f4fa; border-left: 4px solid var(--navy); padding: 14px 20px; margin: 24px 0; border-radius: 4px; }
+    .hub__toc-title { margin: 0 0 6px; font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+    .hub__toc ol { margin: 0; padding-left: 22px; line-height: 1.9; font-size: 0.92rem; }
+    section { margin: 36px 0; scroll-margin-top: 20px; }
+    section h2 { font-size: 1.3rem; color: var(--navy); margin: 0 0 12px; border-left: 5px solid var(--navy); padding-left: 12px; }
+    section p { line-height: 1.9; color: #2d3748; margin: 0 0 14px; }
+    section ul { line-height: 1.9; color: #2d3748; padding-left: 22px; }
+    section a { color: var(--link); font-weight: 500; }
+    .hub__articles { list-style: none; padding: 0; margin: 16px 0; }
+    .hub__articles li { margin: 12px 0; padding: 12px 14px; background: #f7fafc; border-radius: 6px; border: 1px solid #e2e8f0; }
+    .hub__articles a { text-decoration: none; display: block; }
+    .hub__articles strong { color: var(--navy); font-size: 1rem; display: block; margin-bottom: 4px; }
+    .hub__articles p { font-size: 0.88rem; color: #4a5568; margin: 0; line-height: 1.6; }
+    .hub__cta { text-align: center; margin-top: 24px; font-weight: 600; }
+  </style>
+</BaseLayout>

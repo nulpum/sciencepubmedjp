@@ -109,11 +109,10 @@ const jsonLd = {
   'description': post.data.fact,
   'datePublished': post.data.generated_at,
   'dateModified': post.data.generated_at,
-  'author': {
-    '@type': 'Organization',
-    'name': 'PubMed Trivia 編集部',
-    'url': siteUrl,
-  },
+  'author': [
+    { '@type': 'Organization', 'name': 'PubMed Trivia 編集部', 'url': siteUrl },
+    { '@type': 'Person', 'name': 'PubMed Trivia 編集チーム', 'url': `${siteUrl}/ja/about/`, 'knowsAbout': ['科学論文', 'PubMed', 'メタアナリシス', 'システマティックレビュー'] },
+  ],
   'publisher': {
     '@type': 'Organization',
     'name': 'PubMed Trivia',
@@ -135,10 +134,22 @@ const jsonLd = {
   },
 };
 
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteUrl}/ja/` },
+    { '@type': 'ListItem', position: 2, name: '心理学', item: `${siteUrl}/ja/psychology/` },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: articleUrl },
+  ],
+};
+
 export const prerender = true;
 ---
 <BaseLayout title={post.data.title} description={metaDescription} lang="ja" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
 
   <article class="article">

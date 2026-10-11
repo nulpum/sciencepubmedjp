@@ -138,6 +138,9 @@ const READER_COMPANIONS_JA: ReaderCompanion[] = [
   { label: 'ポモドーロタイマー (集中法)', keyword: 'ポモドーロ タイマー 勉強', indexParam: 'office-products' },
   { label: 'ブックスタンド (角度調整)', keyword: 'ブックスタンド 角度調整', indexParam: 'office-products' },
   { label: 'ブックライト (夜の読書に)', keyword: 'ブックライト クリップ', indexParam: 'electronics' },
+  // 2026-10-11 追加: Kindle Unlimited / Audible (読書習慣化、月額課金 → 継続報酬)
+  { label: 'Kindle Unlimited 読み放題 (研究者におすすめ)', keyword: 'kindle unlimited', indexParam: 'digital-text' },
+  { label: 'Audible 聴き放題 (通勤中に論文解説を)', keyword: 'audible 聴き放題', indexParam: 'audible' },
 ];
 
 const READER_COMPANIONS_EN: ReaderCompanion[] = [
@@ -147,6 +150,9 @@ const READER_COMPANIONS_EN: ReaderCompanion[] = [
   { label: 'Pomodoro timer (focus method)', keyword: 'pomodoro timer study', indexParam: 'office-products' },
   { label: 'Clip-on book light', keyword: 'book light clip led', indexParam: 'electronics' },
   { label: 'Reading pillow', keyword: 'reading pillow back support', indexParam: 'kitchen' },
+  // 2026-10-11 added: Kindle Unlimited / Audible for English readers
+  { label: 'Kindle Unlimited (unlimited reading subscription)', keyword: 'kindle unlimited', indexParam: 'digital-text' },
+  { label: 'Audible (audiobooks for commutes)', keyword: 'audible', indexParam: 'audible' },
 ];
 
 // PMID を数値化して pick — 同じ記事は常に同じ商品 (UX 一貫性)、

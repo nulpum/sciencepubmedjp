@@ -144,6 +144,23 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
     {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
         HTML タグ認証なら content="..." の値を Search Console 側でコピペ確認用に埋める) */}
     {/* <meta name="google-site-verification" content="ここに認証文字列を入れる" /> */}
+    {/* サイト全体の WebSite + SearchAction JSON-LD (2026-10-11 追加)
+        → Google SERP の サイトリンク 検索ボックス 対応 */}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://sciencepubmed.net/",
+      "name": "PubMed Trivia",
+      "alternateName": "サイエンスパブメドトリビア",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://sciencepubmed.net/ja/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    })} />
     {/* サイト全体の Organization JSON-LD (E-E-A-T 向け publisher 情報) */}
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
