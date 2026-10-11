@@ -34,6 +34,7 @@ interface Args {
   max: number;
   dryRun: boolean;
   threshold: number;
+  concurrency: number;
 }
 
 function parseArgs(): Args {
@@ -43,6 +44,7 @@ function parseArgs(): Args {
     max: Number(get('max') || '10000'),
     dryRun: argv.includes('--dry-run'),
     threshold: Number(get('threshold') || '1500'),
+    concurrency: Math.max(1, Number(get('concurrency') || '1')),
   };
 }
 
@@ -273,28 +275,39 @@ async function main(): Promise<void> {
   Logger.info(`今回 処理: ${toProcess.length} 本`);
 
   let ok = 0, ng = 0;
-  for (let i = 0; i < toProcess.length; i++) {
-    const t = toProcess[i];
+  const total = toProcess.length;
+  let doneCount = 0;
+
+  async function processOne(t: Target, idx: number): Promise<void> {
     const rel = t.path.replace(process.cwd() + '\\', '').replace(process.cwd() + '/', '');
-    Logger.info(`[${i+1}/${toProcess.length}] ${rel} (${t.bodyChars} chars)`);
     try {
       const augmentation = await augment(t);
       const newBody = insertAugmentation(t, augmentation);
       const newFm = updateFrontmatter(t.frontmatter);
       const newContent = `---\n${newFm}\n---\n\n${newBody.trimStart()}`;
       if (args.dryRun) {
-        Logger.info(`  [dry-run] body ${t.bodyChars} -> ${newBody.length} chars, +${augmentation.length} chars 追加`);
+        doneCount++;
+        Logger.info(`[${doneCount}/${total}] ${rel} ${t.bodyChars} -> ${newBody.length} chars (dry-run)`);
       } else {
         await writeFile(t.path, newContent, 'utf8');
-        Logger.info(`  OK body ${t.bodyChars} -> ${newBody.length} chars`);
+        doneCount++;
+        Logger.info(`[${doneCount}/${total}] OK ${rel} ${t.bodyChars} -> ${newBody.length} chars`);
       }
       ok++;
     } catch (e) {
-      Logger.error(`  失敗: ${(e as Error).message}`);
+      doneCount++;
+      Logger.error(`[${doneCount}/${total}] 失敗 ${rel}: ${(e as Error).message}`);
       ng++;
     }
-    // レート制限 回避の ため 2 秒 待機
-    if (i < toProcess.length - 1) await new Promise((r) => setTimeout(r, 2000));
+  }
+
+  // chunked parallel execution (concurrency 単位 で 並列、chunk 間は 全て 完了 まで 待機)
+  Logger.info(`並列実行: concurrency=${args.concurrency}`);
+  for (let i = 0; i < toProcess.length; i += args.concurrency) {
+    const chunk = toProcess.slice(i, i + args.concurrency);
+    await Promise.all(chunk.map((t, j) => processOne(t, i + j)));
+    // chunk 間は 1 秒 待機 (API quota 保護)
+    if (i + args.concurrency < toProcess.length) await new Promise((r) => setTimeout(r, 1000));
   }
 
   Logger.info(`=== 完了: 成功 ${ok} / 失敗 ${ng} / 残り ${targets.length - toProcess.length} ===`);
