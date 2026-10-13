@@ -8823,6 +8823,38 @@
       "category": "biology",
       "postedAt": "2026-10-12T22:19:51.516Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxpkggbrzi24"
+    },
+    {
+      "platform": "threads",
+      "slug": "20260922-cognitive-behavioral-therapy-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-13T03:10:06.773Z",
+      "postId": "17927482482422792"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261013-41579315",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-13T03:10:15.537Z",
+      "postId": "1103479166185406_122115196965321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261010-39028034",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-13T03:10:29.864Z",
+      "postId": "18133239217662674"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261013-40957778",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-10-13T03:10:32.679Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mxq2o7hrdq25"
     }
   ]
 }
