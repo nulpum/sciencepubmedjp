@@ -61,14 +61,27 @@ const tagKeywords = post.data.tags ?? [];
 
 // FAQPage JSON-LD (2026-10-07 追加): body の `## FAQ:` セクション の H3 を 抽出
 function extractFaqs(body: string): Array<{ q: string; a: string }> {
-  const section = body.match(/^## FAQ[\s\S]*?(?=\n## |$)/m);
-  if (!section) return [];
+  // 2026-10-13 修正: 以前の regex は /m フラグで $ が 行末に マッチして
+  // FAQ セクション を 1 行目のみ 切り出していた バグ あり。 文字列 split で 代替。
+  const startIdx = body.search(/(^|\n)## FAQ/);
+  if (startIdx < 0) return [];
+  // skip the leading newline if present
+  const sectionStart = body[startIdx] === '\n' ? startIdx + 1 : startIdx;
+  // Find next H2 (## ) AFTER the FAQ section's own H2 line
+  // Skip past the FAQ H2 line first
+  const headEnd = body.indexOf('\n', sectionStart);
+  if (headEnd < 0) return [];
+  const nextH2Rel = body.slice(headEnd).search(/\n## [^#]/);
+  const sectionEnd = nextH2Rel < 0 ? body.length : headEnd + nextH2Rel;
+  const section = body.slice(sectionStart, sectionEnd);
+  // Split by \n### to extract Q&A items (skip anything before first ###)
+  const parts = section.split(/\n### /).slice(1);
   const items: Array<{ q: string; a: string }> = [];
-  const re = /^### (.+?)\n+([\s\S]*?)(?=\n### |\n## |$)/gm;
-  let m;
-  while ((m = re.exec(section[0])) !== null) {
-    const q = m[1].trim();
-    const rawA = m[2].trim();
+  for (const part of parts) {
+    const nlIdx = part.indexOf('\n');
+    if (nlIdx < 0) continue;
+    const q = part.slice(0, nlIdx).trim();
+    const rawA = part.slice(nlIdx + 1).trim();
     const a = rawA
       .replace(/\[PMID\s*\d+\]/g, '')
       .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
