@@ -5,56 +5,76 @@ export const prerender = true;
 ---
 <BaseLayout
   title="このサイトについて ｜ PubMed Trivia"
-  description="PubMed Trivia は、米国国立医学図書館の論文データベース PubMed から、心理学・生物学のレビュー論文を題材に豆知識を毎日お届けする情報サイトです。"
+  description="PubMed Trivia は、米国国立医学図書館の論文データベース PubMed から、心理学・生物学のレビュー論文を題材に豆知識を毎日お届けする情報サイトです。編集責任者・編集プロセスを 公開しています。"
   lang="ja"
 >
-  <article>
+  <article class="about-page">
     <h1>このサイトについて</h1>
 
-    <h2>運営方針</h2>
+    <h2>サイト概要</h2>
     <p>
-      PubMed Trivia (サイエンス パブメド ジェイピー) は、米国国立医学図書館 (NIH) が運営する論文データベース
+      <strong>PubMed Trivia</strong> (サイエンス パブメド ジェイピー) は、米国国立医学図書館 (NIH) が運営する論文データベース
       <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener" target="_blank">PubMed</a>
-      に掲載された査読付き論文（特にレビュー論文・メタアナリシス）を題材に、心理学・生物学の領域の豆知識を一般読者向けに紹介するサイトです。
+      に掲載された <strong>査読付き論文</strong> (特にレビュー論文・メタアナリシス) を題材に、心理学・生物学 領域の 豆知識 を 一般読者向けに 紹介するサイトです。
     </p>
+    <p>
+      2026 年 5 月 に 開設、2026 年 10 月時点で <strong>700 本以上 の 記事</strong> を 日本語・英語で 公開しています。
+    </p>
+
+    <h2>運営方針</h2>
+    <ul>
+      <li><strong>事実重視</strong>: 元論文の abstract に 書かれている ことだけを 翻案。 独自推測・医学的助言は 行いません。</li>
+      <li><strong>一次情報 への 誘導</strong>: 全記事に PMID と 原典 URL を 必ず付記、読者が いつでも 元論文を 検証できる 状態を 維持。</li>
+      <li><strong>相関 ≠ 因果 の 徹底</strong>: 翻案時に 「関連 (association)」を 「因果 (causation)」に 格上げしない よう プロンプトで 制約。</li>
+      <li><strong>継続的 品質向上</strong>: 公開済み記事も 編集品質 向上の 対象。 詳細は <a href="/ja/editorial-policy/">編集方針 → 更新履歴</a>。</li>
+    </ul>
 
     <h2>取り扱う情報</h2>
     <ul>
       <li>心理学・睡眠・記憶・学習・行動意思決定</li>
-      <li>動物行動・進化生物学・生態学・人類学</li>
-      <li>食事・運動・生活習慣と健康の関連（ただし医学的助言は行いません）</li>
+      <li>動物行動・進化生物学・生態学・人類学・微生物学</li>
+      <li>食事・運動・生活習慣と健康の 関連 (ただし 医学的助言は 行いません)</li>
     </ul>
 
-    <h2>編集ポリシー</h2>
+    <h2>編集責任者 ・ 連絡先</h2>
     <ul>
-      <li>原則として <strong>レビュー論文・メタアナリシスのみ</strong> を題材とし、症例報告や撤回論文は扱いません。</li>
-      <li>論文中の <strong>「関連 (association)」を「因果 (causation)」と誤訳しない</strong> よう注意しています。</li>
-      <li>記事は元論文の英文 abstract から日本語・英語別個に翻案しています（重訳はしません）。</li>
-      <li>記事の制作には Anthropic 社の Claude API を補助的に利用しています。</li>
-      <li>各記事には PMID と原典 URL を付記し、読者が一次情報にアクセスできるようにしています。</li>
+      <li><strong>サイト名</strong>: PubMed Trivia (サイエンス パブメド ジェイピー)</li>
+      <li><strong>運営・編集責任</strong>: PubMed Trivia 編集チーム</li>
+      <li><strong>編集方針</strong>: <a href="/ja/editorial-policy/">編集方針 (Editorial Policy)</a></li>
+      <li><strong>編集チーム 詳細</strong>: <a href="/ja/editor/">編集チーム について</a></li>
+      <li><strong>連絡先</strong>: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a>
+        (誤り指摘は 48 時間以内に 対応、土日祝 除く)</li>
+      <li><strong>SNS</strong>:
+        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X</a> /
+        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a> /
+        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a> /
+        <a href="https://bsky.app/profile/sciencepubmed.bsky.social" rel="me noopener" target="_blank">Bluesky</a></li>
     </ul>
 
     <h2>免責事項</h2>
     <p>
-      本サイトに掲載される情報は <strong>一般教養としての豆知識</strong> であり、医学的助言・診断・治療を目的とするものではありません。
-      健康に関する判断は医師等の有資格者にご相談ください。論文の解釈には注意を払っていますが、誤りを発見された場合は下記の連絡先までご一報ください。
+      本サイトに 掲載される 情報は <strong>一般教養としての 豆知識</strong> であり、
+      <strong>医学的助言・診断・治療 を 目的とするものではありません</strong>。
+      健康に関する 判断は 必ず 医師等の 有資格者に ご相談ください。
     </p>
-
-    <h2>広告とアフィリエイト</h2>
     <p>
-      本サイトは <a href="/ja/privacy/">プライバシーポリシー</a> に記載のとおり、第三者配信の広告サービスおよび Amazon アソシエイト・プログラムに参加しています。詳細はプライバシーポリシーをご覧ください。
+      論文の 解釈には 細心の 注意を 払っていますが、誤りを 発見された 場合は 速やかに 修正いたしますので ご連絡ください。
+      詳細な 修正ワークフローは <a href="/ja/editorial-policy/">編集方針</a> を ご覧ください。
     </p>
 
-    <h2>運営者情報・お問い合わせ</h2>
-    <ul>
-      <li>サイト名: PubMed Trivia</li>
-      <li>運営: PubMed Trivia 編集部</li>
-      <li>連絡先: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a></li>
-      <li>SNS:
-        <a href="https://x.com/science_pubmed" rel="me noopener" target="_blank">X</a> /
-        <a href="https://www.threads.com/@science_pubmed" rel="me noopener" target="_blank">Threads</a> /
-        <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
-      </li>
-    </ul>
+    <h2>広告・アフィリエイト</h2>
+    <p>
+      本サイトは Amazon アソシエイト・プログラム、もしもアフィリエイト、Google AdSense に 参加しています。
+      詳細は <a href="/ja/privacy/">プライバシーポリシー</a> を ご覧ください。
+    </p>
   </article>
+
+  <style>
+    .about-page { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; }
+    .about-page h1 { font-size: 1.9rem; color: var(--navy); margin: 0 0 16px; }
+    .about-page h2 { font-size: 1.2rem; color: var(--navy); margin: 28px 0 10px; padding-left: 12px; border-left: 5px solid var(--navy); }
+    .about-page p { line-height: 1.9; color: #2d3748; margin: 0 0 14px; }
+    .about-page ul { line-height: 1.9; color: #2d3748; padding-left: 24px; }
+    .about-page a { color: var(--link); font-weight: 500; }
+  </style>
 </BaseLayout>

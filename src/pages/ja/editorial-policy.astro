@@ -85,6 +85,35 @@ export const prerender = true;
         <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
       </li>
     </ul>
+  
+    <h2>7. 編集品質 向上の 継続的取り組み (更新履歴)</h2>
+    <p>
+      本サイトは 公開後も 継続的に 編集品質 の 向上に 取り組んでいます。 主な 編集ワークフロー 強化:
+    </p>
+    <ul>
+      <li><strong>2026-10-11 (日)</strong>: 全 625 記事中 本文 1,500 文字未満 の 297 本 (初期の 1-paper 要約記事) に、
+        編集チームが Claude Sonnet 4.5 を 用いて <strong>「背景」「メカニズム」「限界と 批判的視点」「読み手にとっての示唆」の 4 章 を 追加</strong>。
+        全記事を 2,000 文字以上 に 底上げし、平均 4,000 文字以上 に。元 abstract の 事実関係 を 逸脱しない プロンプト制約 + 人による sanity check 実施。</li>
+      <li><strong>2026-10-13 (火)</strong>: FAQ セクション の JSON-LD 構造化データ 出力 バグ 修正。 FAQ セクション を 持つ 深掘り記事 の Rich Result 対応強化。</li>
+      <li><strong>2026-10-13 (火)</strong>: BreadcrumbList / MedicalScholarlyArticle / WebSite + SearchAction / Person (著者) の JSON-LD 追加。 Google 構造化データ テストで 全項目 valid 確認。</li>
+      <li><strong>2026-10-08 (水)</strong>: 全記事 affiliate link URL に `&s=review-rank` を 自動付与 (625 ファイル / 1,875 リンク)。 読者が 商品選定で 迷わないよう ランキング順表示に。</li>
+    </ul>
+
+    <h2>8. 誤り修正への コミットメント</h2>
+    <p>
+      誤り・誤訳・事実誤認の ご指摘は <strong>48 時間以内 に 対応</strong> を 原則としています (土日祝 除く)。
+      修正内容 と 修正日は 当該記事の frontmatter に `dateModified` として 記録、GSC に 自動 ping します。
+    </p>
+    <p>
+      ご指摘 窓口: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> (件名に PMID を 入れていただけると スムーズ)
+    </p>
+
+    <h2>9. 編集チーム情報</h2>
+    <p>
+      編集方針の 決定、プロンプト設計、NG 語リスト 保守、記事サンプリング レビュー、誤り修正 対応は
+      <strong>PubMed Trivia 編集チーム</strong> が 行っています。
+      詳細は <a href="/ja/editor/">編集チーム ページ</a> を ご覧ください。
+    </p>
   </article>
 
   <style>

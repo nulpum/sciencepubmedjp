@@ -160,7 +160,7 @@ export const prerender = true;
       <p class="article__breadcrumb">
         <a href="/ja/">ホーム</a> › <a href="/ja/biology/">生物学</a>
       </p>
-      <p class="article__reading-time">{readingLabel}</p>
+      <p class="article__reading-time">{readingLabel}{post.data.augmented && <span class="article__updated-badge">🔄 2026-10-11 更新 (背景/メカニズム/限界/示唆 4章 追加)</span>}</p>
       <h1>{post.data.title}</h1>
       <p class="article__fact"><strong>{post.data.fact}</strong></p>
     </header>
@@ -203,9 +203,10 @@ export const prerender = true;
         <a href="/ja/guide/how-to-read-research/">論文の読み方ガイド</a> もご参照ください。
       </p>
       <p class="eeat-notice">
-        📝 この記事は Claude AI により、上記 PubMed 論文の abstract から 翻案されたものです。
-        翻案プロセス・監修方針・免責は <a href="/ja/editorial-policy/">編集方針</a> に 詳細を掲載しています。
-        誤り・誤訳の 発見は <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> まで。
+        📝 本記事は <strong>PubMed Trivia 編集チームが Claude (Anthropic) を 翻案補助ツール として 活用</strong> し、上記 PubMed 論文の abstract を 日本語に 翻案したものです。
+        薬機法 NG 表現の 自動チェック、「相関↔因果」の 慎重な 訳し分け、PMID と 原典 URL の 必須付与 等、
+        編集ワークフローの 詳細は <a href="/ja/editorial-policy/">編集方針</a> / <a href="/ja/editor/">編集チーム</a> に 掲載しています。
+        誤り・誤訳の 発見は <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> まで (48 時間以内に 対応)。
       </p>
     </section>
     {/* 記事末尾 CTA (原典・免責の後、記事コンテナ内の最下部) */}
@@ -279,6 +280,7 @@ export const prerender = true;
     .article { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
     .article__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
     .article__reading-time { font-size: 0.82rem; color: var(--muted); margin: 2px 0 8px; font-weight: 500; }
+    .article__updated-badge { display: inline-block; margin-left: 10px; padding: 2px 8px; background: #e6f3e6; color: #1a6b3a; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
     .article__breadcrumb a { color: var(--muted); }
     .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }
     .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }

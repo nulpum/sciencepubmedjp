@@ -82,6 +82,37 @@ export const prerender = true;
         <a href="https://www.instagram.com/science_pubmed/" rel="me noopener" target="_blank">Instagram</a>
       </li>
     </ul>
+  
+    <h2>7. Ongoing Editorial Quality Improvements (Update Log)</h2>
+    <p>
+      We continuously work to improve editorial quality after publication. Key workflow enhancements:
+    </p>
+    <ul>
+      <li><strong>2026-10-11 (Sat)</strong>: Of 625 total articles, the editorial team used Claude Sonnet 4.5 to add
+        <strong>four analytical sections (Background, Mechanism, Limitations and critical perspective, Implications for readers)</strong>
+        to 297 articles whose body text was under 1,500 characters (early 1-paper summary articles). All articles now exceed 2,000 characters,
+        with average length now over 4,000 characters. Prompts strictly constrain the model not to deviate from the original abstract's facts;
+        a human sanity check follows each batch.</li>
+      <li><strong>2026-10-13 (Mon)</strong>: Fixed a bug in the FAQ-section JSON-LD structured data output. Rich Result support for deep-dive articles with FAQ sections is now improved.</li>
+      <li><strong>2026-10-13 (Mon)</strong>: Added BreadcrumbList / MedicalScholarlyArticle / WebSite + SearchAction / Person (author) JSON-LD schemas. Verified all items valid via Google's structured-data test.</li>
+      <li><strong>2026-10-08 (Wed)</strong>: Appended `&s=review-rank` to all affiliate-link URLs across 625 files / 1,875 links so readers see highly-reviewed items first, reducing decision friction.</li>
+    </ul>
+
+    <h2>8. Commitment to Error Correction</h2>
+    <p>
+      We commit to <strong>responding to error reports within 48 hours</strong> (excluding weekends and holidays).
+      Corrections are recorded in the article's frontmatter as `dateModified` and auto-pinged to Google Search Console.
+    </p>
+    <p>
+      Please report errors to: <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> (include the PMID in the subject line for faster handling)
+    </p>
+
+    <h2>9. Editorial Team</h2>
+    <p>
+      The <strong>PubMed Trivia editorial team</strong> is responsible for policy decisions, prompt design,
+      NG-term list maintenance, article sampling review, and error-correction response.
+      See the <a href="/en/editor/">editor page</a> for details.
+    </p>
   </article>
 
   <style>

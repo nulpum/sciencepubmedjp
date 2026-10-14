@@ -158,7 +158,7 @@ export const prerender = true;
       <p class="article__breadcrumb">
         <a href="/en/">Home</a> › <a href="/en/biology/">Biology</a>
       </p>
-      <p class="article__reading-time">{readingLabel}</p>
+      <p class="article__reading-time">{readingLabel}{post.data.augmented && <span class="article__updated-badge">🔄 Updated 2026-10-11 (Background / Mechanism / Limitations / Reader implications added)</span>}</p>
       <h1>{post.data.title}</h1>
       <p class="article__fact"><strong>{post.data.fact}</strong></p>
     </header>
@@ -200,9 +200,11 @@ export const prerender = true;
         They are not intended as medical advice.
       </p>
       <p class="eeat-notice">
-        📝 This article was adapted by Claude AI from the PubMed abstract cited above.
-        See our <a href="/en/editorial-policy/">editorial policy</a> for the full adaptation pipeline and disclaimers.
-        Please report errors or bad translations to <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a>.
+        📝 This article was adapted by the <strong>PubMed Trivia editorial team using Claude (Anthropic) as an adaptation assistant</strong>, based on the PubMed abstract cited above.
+        Our editorial workflow includes automated NG-term checks (medical-claims law), careful "correlation vs causation" distinction,
+        and mandatory PMID + source URL disclosure. See the full pipeline on our
+        <a href="/en/editorial-policy/">editorial policy</a> and <a href="/en/editor/">editor</a> pages.
+        Please report errors to <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> (we respond within 48 hours).
       </p>
     </section>
 
@@ -253,6 +255,7 @@ export const prerender = true;
     .article { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
     .article__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
     .article__reading-time { font-size: 0.82rem; color: var(--muted); margin: 2px 0 8px; font-weight: 500; }
+    .article__updated-badge { display: inline-block; margin-left: 10px; padding: 2px 8px; background: #e6f3e6; color: #1a6b3a; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
     .article__breadcrumb a { color: var(--muted); }
     .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }
     .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }

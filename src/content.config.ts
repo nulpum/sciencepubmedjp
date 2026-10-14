@@ -19,6 +19,8 @@ const articleSchema = z.object({
     .optional(),
   // 2026-09: 自動タグ付け (src/config/tags.ts の TAGS ID を string で保持)
   tags: z.array(z.string()).optional(),
+    augmented: z.boolean().optional(),
+    augmented_at: z.string().optional(),
 });
 
 const ja_psychology = defineCollection({
