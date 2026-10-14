@@ -161,6 +161,12 @@ export const prerender = true;
       <p class="article__reading-time">{readingLabel}{post.data.augmented && <span class="article__updated-badge">🔄 Updated 2026-10-11 (Background / Mechanism / Limitations / Reader implications added)</span>}</p>
       <h1>{post.data.title}</h1>
       <p class="article__fact"><strong>{post.data.fact}</strong></p>
+      {post.data.editor_note && (
+        <aside class="article__editor-note" aria-label="Editor's note">
+          <p class="article__editor-note-head">📝 Editor's note</p>
+          <p>{post.data.editor_note}</p>
+        </aside>
+      )}
     </header>
 
     {tocItems.length >= 2 && (
@@ -258,7 +264,10 @@ export const prerender = true;
     .article__updated-badge { display: inline-block; margin-left: 10px; padding: 2px 8px; background: #e6f3e6; color: #1a6b3a; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
     .article__breadcrumb a { color: var(--muted); }
     .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }
-    .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }
+        .article__fact { background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; line-height: 1.6; }
+    .article__editor-note { background: #fffbe6; border-left: 4px solid #d97706; padding: 12px 16px; margin: 14px 0 0; border-radius: 4px; }
+    .article__editor-note-head { font-size: 0.82rem; font-weight: 700; color: #92400e; margin: 0 0 4px; }
+    .article__editor-note p:last-child { margin: 0; font-size: 0.92rem; line-height: 1.75; color: #4a3a1a; }
     .article__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
     .article__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
     .article__toc ol { margin: 0; padding-left: 20px; line-height: 1.85; }
