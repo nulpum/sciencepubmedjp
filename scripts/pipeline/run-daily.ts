@@ -14,6 +14,7 @@ import { buildSlug } from '../lib/slug.js';
 import { fetchOneByCategory } from '../pubmed/fetch.js';
 import { generateBothLangs } from '../claude/generate.js';
 import { selectRelatedBooks } from '../amazon/select-books.js';
+import { generateEditorNote } from '../claude/generate-editor-note.js';
 import { ALL_CATEGORIES, type Category } from '../types.js';
 
 function parseCategoryArg(): Category[] {
@@ -47,6 +48,15 @@ async function runOne(category: Category): Promise<void> {
   if (jaBooks.length > 0) ja.affiliateLinks = jaBooks;
   if (enBooks.length > 0) en.affiliateLinks = enBooks;
   Logger.info(`affiliate_links: ja=${jaBooks.length} en=${enBooks.length}`);
+
+  // Phase 3 (2026-10-15 追加): 編集ノート を 自動生成 (best-effort、失敗しても記事は保存)
+  const [jaNote, enNote] = await Promise.all([
+    generateEditorNote(ja),
+    generateEditorNote(en),
+  ]);
+  if (jaNote) ja.editorNote = jaNote;
+  if (enNote) en.editorNote = enNote;
+  Logger.info(`editor_note: ja=${jaNote ? jaNote.length : 0} chars, en=${enNote ? enNote.length : 0} chars`);
 
   const slug = buildSlug(raw.pmid, raw.fetchedAt);
   const jaPath = await writeGeneratedArticle(ja, slug);

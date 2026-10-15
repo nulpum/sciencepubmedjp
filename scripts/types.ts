@@ -32,4 +32,6 @@ export interface GeneratedArticle {
   generatedAt: string;   // ISO8601
   // Phase 2: PA-API で関連書籍を自動選定し注入
   affiliateLinks?: { title: string; url: string }[];
+  // Phase 3: 編集ノート (2026-10-15 追加、E-E-A-T 強化、Claude 自動生成)
+  editorNote?: string;
 }

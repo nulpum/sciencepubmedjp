@@ -60,6 +60,7 @@ export async function writeGeneratedArticle(
     article.journal ? `journal: ${JSON.stringify(article.journal)}` : null,
     article.year ? `year: ${article.year}` : null,
     `generated_at: ${JSON.stringify(article.generatedAt)}`,
+    article.editorNote ? `editor_note: ${JSON.stringify(article.editorNote)}` : null,
   ];
 
   // Phase 2: PA-API で取得した関連書籍 (あれば)
