@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35438451/"
 journal: "Prevention science : the official journal of the Society for Prevention Research"
 year: 2024
 generated_at: "2026-09-22T01:12:00.467Z"
+editor_note: "**編集ノート**\n\n本稿は複数のメタ解析を横断的に整理した\"アンブレラ形式\"の記事である。こうした構成は全体像の把握には有用だが、個別研究の質的評価や出版バイアスの影響が見えにくくなる点に留意したい。特に非薬物療法の効果量は評価者(親・教師・盲検化された観察者)によって大きく変動することが知られており、数値の解釈には慎重さが求められる。診断・治療の実践を考える上で、エビデンスの\"強さ\"だけでなく\"限界\"も意識しながら読み進めることを推奨する。"
 tags:
   - "adhd"
   - "exercise"

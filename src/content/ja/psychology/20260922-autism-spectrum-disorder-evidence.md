@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35238171/"
 journal: "Autism research : official journal of the International Society for Autism Research"
 year: 2022
 generated_at: "2026-09-22T01:15:08.269Z"
+editor_note: "男女比「4:1」が実は診断バイアスを含む可能性、有病率の地域差が診断体制の違いを映す可能性——ASD研究は「増えている」という表面的事実の背後に、測定の仕方そのものが問われる段階に入っています。本記事は10本のメタ解析から、疫学数値の解釈に潜む落とし穴と、早期介入エビデンスの手法依存性を整理します。臨床・教育・支援に関わる方は、数字の一人歩きを防ぐ視点として活用できるでしょう。"
 tags:
   - "autism"
   - "women-health"

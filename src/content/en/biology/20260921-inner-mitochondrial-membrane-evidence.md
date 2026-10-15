@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/30626975/"
 journal: "Nature reviews. Molecular cell biology"
 year: 2019
 generated_at: "2026-09-21T05:03:38.107Z"
+editor_note: "**Editor's Note**: While textbooks often depict mitochondrial cristae as fixed architectural features—akin to static shelves maximizing surface area—emerging evidence reveals these membrane folds function more like responsive sensors that actively reshape themselves within minutes based on metabo…"
 tags:
   - "mitochondria"
 affiliate_links:

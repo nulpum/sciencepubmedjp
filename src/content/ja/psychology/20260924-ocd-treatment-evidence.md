@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/33618297/"
 journal: "Comprehensive psychiatry"
 year: 2021
 generated_at: "2026-09-24T06:05:12.516Z"
+editor_note: "ERPの「大きな効果」は比較対象が心理学的プラセボか適切用量の薬物療法かで様変わりし、研究者allegiance biasの影響も無視できない。本レビューは8本のメタ解析を横断的に読み解くことで、個別研究では見えにくい治療選択の実像——初回治療の現実的な差、併用療法の是非、治療抵抗例での増強戦略の優先順位——を浮き彫りにする。「ガイドラインで推奨」の一歩先にある、エビデンスの濃淡を知るための統合的視点を提供している。"
 tags: []
 affiliate_links:
   - title: "「強迫症 OCD 治療」で Amazon 検索"

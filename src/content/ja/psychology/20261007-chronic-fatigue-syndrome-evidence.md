@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/33024295/"
 journal: "Nature reviews. Rheumatology"
 year: 2020
 generated_at: "2026-10-07T02:06:29.485Z"
+editor_note: "診断基準の違いが治療効果の解釈を左右する点は、CFS/ME研究の最大の落とし穴である。本記事が扱う8件のレビューは、Oxford基準・CDC基準・国際合意基準など異なる枠組みで集められた患者群を横断しており、「どの介入が有効か」以前に「どの患者に有効か」が未解決のまま残る。運動療法の中等度改善も、ペーシングの限定的効果も、診断の厳密さ次第で結論が逆転しうる—そうした不確実性を前提に、現時点で読み取れる最善の糸口を整理した。"
 affiliate_links:
   - title: "「慢性疲労症候群 CFS/ME 最新治療エビデンス」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E6%85%A2%E6%80%A7%E7%96%B2%E5%8A%B4%E7%97%87%E5%80%99%E7%BE%A4%20CFS%2FME%20%E6%9C%80%E6%96%B0%E6%B2%BB%E7%99%82%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9&tag=sciencepubmed-22&i=stripbooks&s=review-rank"

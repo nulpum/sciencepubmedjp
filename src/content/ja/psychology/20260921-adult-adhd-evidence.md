@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/35397064/"
 journal: "Current topics in behavioral neurosciences"
 year: 2022
 generated_at: "2026-09-21T03:08:21.868Z"
+editor_note: "成人ADHD有病率が「1.6%」から「6.76%」まで4倍も揺れる原因は、診断基準や調査手法のわずかな違いです。本稿は10件のメタ解析が示す「限界」を丁寧に可視化し、薬物療法のエビデンスが高バイアスリスク研究に支えられている実態や、双極性障害との鑑別が曖昧なまま処方が進む臨床現場のリスクを淡々と整理しています。数字の一人歩きを防ぎたい医療者・研究者にこそ有用な一本です。"
 tags:
   - "adhd"
 affiliate_links:

@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36084848/"
 journal: "Neuroscience and biobehavioral reviews"
 year: 2022
 generated_at: "2026-09-24T06:02:02.448Z"
+editor_note: "**編集ノート**\n\n「摂食障害には認知行動療法」という定説は、患者の年齢を考慮していない点で不完全だ。本レビューが示すのは、思春期患者では家族療法が、成人では認知行動療法が、それぞれ最も強いエビデンスを持つという年齢層別の治療原則である。192件のメタ解析という規模は、治療選択の根拠を「臨床経験」から「層別化されたエビデンス」へと移行させる転換点となる。"
 tags:
   - "cbt"
   - "glp1"

@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/34385227/"
 journal: "BMJ open"
 year: 2021
 generated_at: "2026-09-16T04:34:01.120Z"
+editor_note: "**Editor's note:** Most clinicians assume \"probiotics work for diarrhea\" is settled science, yet the evidence reveals stark strain-specific effects that make blanket recommendations premature. While Lactobacillus rhamnosus GG and Saccharomyces boulardii show reproducible benefits for antibiotic-a…"
 tags:
   - "probiotics"
 affiliate_links:

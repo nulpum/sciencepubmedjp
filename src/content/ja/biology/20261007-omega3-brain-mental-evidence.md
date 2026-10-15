@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/31383846/"
 journal: "Translational psychiatry"
 year: 2019
 generated_at: "2026-10-07T02:03:08.845Z"
+editor_note: "## 編集ノート\n\n「魚は体に良い」という常識を、用量・比率・対象疾患ごとに解きほぐした点に本記事の価値がある。うつ病ではEPA 60%以上・1g/日が有効だが2g超では効果消失、ADHDでは血中濃度の欠乏が先行する――こうした**条件依存性**を見落とすと「効かなかった」体験が生まれる。サプリ選択時に成分表示を確認する習慣が、エビデンス活用の第一歩となる。"
 affiliate_links:
   - title: "「オメガ3 EPA/DHA メンタル」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E3%82%AA%E3%83%A1%E3%82%AC3%20EPA%2FDHA%20%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB&tag=sciencepubmed-22&i=stripbooks&s=review-rank"

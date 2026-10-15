@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/9248053/"
 journal: "Journal of personality and social psychology"
 year: 1997
 generated_at: "2026-09-21T03:57:04.464Z"
+editor_note: "## 編集ノート\n\nHSPという呼称は一般に広まったものの、学術的には「感覚処理感受性(SPS)」という測定可能な特性として研究が進められている。本稿では脳画像研究を中心に10本の論文を統合しているが、fMRIによる活動領域の同定と因果関係の区別、自己報告尺度の文化差、そして「繊細さ」という日常語と神経科学的構成概念との間の概念的ギャップなど、方法論上の課題にも注意を払いながら読むと理解が深まる。"
 tags:
   - "hsp"
   - "brain"

@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/40533200/"
 journal: "BMJ (Clinical research ed.)"
 year: 2025
 generated_at: "2026-09-22T01:32:56.982Z"
+editor_note: "本記事は8本のメタ解析を横断統合する構成のため、個別研究の限界(追跡期間の短さ、脱落率、出版バイアス)が相殺されず累積する点に注意が必要です。特に隔日断食の優位性は短期データに偏っており、12か月以上の大規模RCTは依然不足しています。流行に乗る前に、エビデンスの「時間軸」と「対象集団の偏り」を冷静に見極める視点が求められます。"
 tags:
   - "obesity"
 affiliate_links:

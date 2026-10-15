@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/34376515/"
 journal: "Gut"
 year: 2022
 generated_at: "2026-10-07T02:13:37.774Z"
+editor_note: "低FODMAP食のエビデンスは膨大だが、「第1位」の解釈には注意が必要だ。ネットワークメタ解析では試験数の多さがランクに影響し、少数試験の介入が上位に来ることもある。本記事は複数のメタ解析を横断比較することで、単一研究では見えにくい「エビデンスの厚み」と「効果の一貫性」を浮かび上がらせている。IBS治療を検討する読者には、数字の背後にある研究デザインの違いまで読み解く視点を提供する一本だ。"
 affiliate_links:
   - title: "「過敏性腸症候群 IBS 治療最前線：低FODMAP食」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E9%81%8E%E6%95%8F%E6%80%A7%E8%85%B8%E7%97%87%E5%80%99%E7%BE%A4%20IBS%20%E6%B2%BB%E7%99%82%E6%9C%80%E5%89%8D%E7%B7%9A%EF%BC%9A%E4%BD%8EFODMAP%E9%A3%9F&tag=sciencepubmed-22&i=stripbooks&s=review-rank"

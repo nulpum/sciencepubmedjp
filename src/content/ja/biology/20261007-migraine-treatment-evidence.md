@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/37208596/"
 journal: "The journal of headache and pain"
 year: 2023
 generated_at: "2026-10-07T02:10:24.963Z"
+editor_note: "「新薬ほど効く」という期待に反し、急性期治療では確立されたエレトリプタンやスマトリプタンが最新薬を上回る効果を示しました。一方、予防療法ではCGRP抗体という新機序が明確な優位性を発揮しています。本レビューは137試験・約9万名のデータから、治療ステージごとに最適薬が異なる現実を数値で示した点に価値があります。"
 affiliate_links:
   - title: "「片頭痛 最新治療 トリプタン」で Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%89%87%E9%A0%AD%E7%97%9B%20%E6%9C%80%E6%96%B0%E6%B2%BB%E7%99%82%20%E3%83%88%E3%83%AA%E3%83%97%E3%82%BF%E3%83%B3&tag=sciencepubmed-22&i=stripbooks&s=review-rank"

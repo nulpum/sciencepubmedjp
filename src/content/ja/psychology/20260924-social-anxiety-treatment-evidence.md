@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/37851421/"
 journal: "JAMA psychiatry"
 year: 2024
 generated_at: "2026-09-24T05:52:51.899Z"
+editor_note: "本記事は複数のメタアナリシスを横断的に整理した点に価値がある。特に2025年のベイジアン解析は6種の心理療法を同時比較し、Clark & WellsプロトコルとインターネットCBTの効果量を明示した。治療選択では「どちらが効くか」だけでなく、プロトコルの違い・投与量・長期効果の3軸で判断する必要があり、臨床現場での意思決定に直結する知見といえる。"
 tags:
   - "anxiety"
   - "cbt"

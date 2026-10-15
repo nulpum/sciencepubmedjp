@@ -8,6 +8,7 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/36050763/"
 journal: "Cardiovascular diabetology"
 year: 2022
 generated_at: "2026-09-21T05:05:30.645Z"
+editor_note: "**Editor's note**: This review stands out for its synthesis of clinical trial architecture—the authors compare GLP-1 and dual-agonist studies head-to-head, making transparent how dose escalation, patient selection criteria, and trial duration shaped the headline weight-loss figures. Readers inter…"
 tags:
   - "brain"
   - "dopamine"
