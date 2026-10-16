@@ -67,6 +67,45 @@ export const prerender = true;
       <li>Science-interested general readers (who want to verify the primary source behind "latest research" news items)</li>
     </ul>
 
+    
+    <h2>Article Review Process</h2>
+    <p>
+      Articles on this site are not "publish and forget." We run the following continuous review cycle:
+    </p>
+    <ol>
+      <li><strong>Sampling review (monthly)</strong>:
+        Each month, 10-20 articles are randomly selected and read carefully by the editorial team.
+        We check for divergence from the original abstract, grey-area medical claims, imprecise correlation-vs-causation handling,
+        and translation awkwardness. Problems are fixed on the spot, and if a pattern applies to other articles we audit them in a batch.</li>
+      <li><strong>Reader error reports (ad hoc)</strong>:
+        Emails to <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> are verified within 48 hours.
+        If a correction is needed, we rewrite the article body, update <code>dateModified</code> in frontmatter,
+        and ping the sitemap so Google re-crawls promptly.</li>
+      <li><strong>Quality uplift batches (as needed)</strong>:
+        We detect older articles with thin content (below a character threshold) and run a bulk pass where the editorial team's
+        system prompt asks Claude Sonnet 4.5 to add four sections (Background, Mechanism, Limitations, Reader implications).
+        Executed on 297 articles on 2026-10-11 (all articles now exceed 2,000 characters).</li>
+      <li><strong>Structured-data review (quarterly)</strong>:
+        We validate all schemas (Article / MedicalScholarlyArticle / BreadcrumbList / FAQPage / Organization / Person / WebSite+SearchAction)
+        via schema.org Validator and Google Rich Results Test. All items confirmed valid on 2026-10-13.</li>
+      <li><strong>Automatic retraction handling</strong>:
+        We periodically reference PubMed's RetractionWatch data; if a PMID we cover becomes retracted,
+        we promptly withdraw the article or add a prominent "This article is based on a retracted paper" notice.</li>
+    </ol>
+
+    <h2>Our stance on expert review</h2>
+    <p>
+      This site is not an official medical institution's position, nor a specialty-society review.
+      Accordingly, we do <strong>not</strong> claim "doctor-reviewed" or "society-endorsed." Instead:
+    </p>
+    <ul>
+      <li>Every article <strong>includes the source paper's PMID and DOI/URL</strong>, so readers can verify primary information directly</li>
+      <li>Adaptation prompts strictly enforce <strong>"do not deviate from the original abstract's facts"</strong>,
+        with prompt design plus sampling review as a double safeguard against the model fabricating new numbers or claims (hallucination)</li>
+      <li>For statements that touch on medical judgment, we <strong>add a "consult a physician" line</strong>
+        so that articles are not read as medical advice</li>
+    </ul>
+
     <h2>Related Pages</h2>
     <ul>
       <li><a href="/en/editorial-policy/">Editorial Policy</a></li>

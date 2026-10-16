@@ -59,6 +59,12 @@ const readingLabel = `📖 ${readingMinutes} min read`;
 const wordCount = false ? bodyText.length : bodyText.trim().split(/\s+/).length;
 const tagKeywords = post.data.tags ?? [];
 
+// 2026-10-16 追加: Last updated 表示 (E-E-A-T の 鮮度 signal)
+// augmented_at (後から 付与された場合) を 優先、無ければ generated_at
+const lastUpdatedIso = post.data.augmented_at ?? post.data.generated_at;
+const lastUpdatedDate = new Date(lastUpdatedIso).toISOString().slice(0, 10);
+const lastUpdatedLabel = `Last updated: ${lastUpdatedDate}`;
+
 // FAQPage JSON-LD (2026-10-07 追加): body の `## FAQ:` セクション の H3 を 抽出
 function extractFaqs(body: string): Array<{ q: string; a: string }> {
   // 2026-10-13 修正: 以前の regex は /m フラグで $ が 行末に マッチして
@@ -158,6 +164,7 @@ export const prerender = true;
       <p class="article__breadcrumb">
         <a href="/en/">Home</a> › <a href="/en/psychology/">Psychology</a>
       </p>
+      <p class="article__last-updated"><time datetime={lastUpdatedIso}>{lastUpdatedLabel}</time></p>
       <p class="article__reading-time">{readingLabel}{post.data.augmented && <span class="article__updated-badge">🔄 Updated 2026-10-11 (Background / Mechanism / Limitations / Reader implications added)</span>}</p>
       <h1>{post.data.title}</h1>
       <p class="article__fact"><strong>{post.data.fact}</strong></p>
@@ -261,6 +268,8 @@ export const prerender = true;
     .article { max-width: 760px; margin: 0 auto; padding: 24px 20px; }
     .article__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
     .article__reading-time { font-size: 0.82rem; color: var(--muted); margin: 2px 0 8px; font-weight: 500; }
+    .article__last-updated { font-size: 0.78rem; color: var(--muted); margin: 2px 0 2px; font-weight: 500; opacity: 0.85; }
+    .article__last-updated time { font-variant-numeric: tabular-nums; }
     .article__updated-badge { display: inline-block; margin-left: 10px; padding: 2px 8px; background: #e6f3e6; color: #1a6b3a; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
     .article__breadcrumb a { color: var(--muted); }
     .article__header h1 { font-size: 1.8rem; line-height: 1.4; margin: 8px 0 16px; color: var(--navy); }

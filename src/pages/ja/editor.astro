@@ -65,6 +65,46 @@ export const prerender = true;
       <li>科学に 関心ある 一般読者 (ニュースで 流れる 「最新研究」の 元ソース を 自分で 確認したい人)</li>
     </ul>
 
+    
+    <h2>記事の レビュー プロセス</h2>
+    <p>
+      本サイトの 記事は、「公開して 終わり」では なく、以下 の 継続的 な レビュー サイクル を 回しています:
+    </p>
+    <ol>
+      <li><strong>サンプリング レビュー (月次)</strong>:
+        毎月 ランダムに 選んだ 10-20 本を 編集チーム が 精読。
+        元 abstract との 齟齬、薬機法 グレー表現、「相関↔因果」の 書き分けの 甘さ、
+        訳文 の 不自然さ を チェック。 問題があれば その 場で 修正、必要なら 類似パターンに 当てはまる 他記事も 一括見直し。</li>
+      <li><strong>読者 からの 誤り指摘 対応 (随時)</strong>:
+        <a href="mailto:sciencepubmedjp@gmail.com">sciencepubmedjp@gmail.com</a> への メール を 48 時間以内に 検証。
+        修正が 必要なら 該当記事の 本文 を 書き換え、frontmatter の <code>dateModified</code> を 更新、
+        次の Google クロール で 反映される よう sitemap に ping。</li>
+      <li><strong>品質 底上げ バッチ (必要時)</strong>:
+        過去記事 の 薄い内容 (特定 字数以下) を 一斉 検出し、編集チームの プロンプト設計の もと で
+        Claude Sonnet 4.5 に 「背景」「メカニズム」「限界」「読み手への 示唆」4 章 追加 を 走らせる。
+        2026-10-11 に 297 本 を 対象に 実施済み (全記事 2,000+ 文字 達成)。</li>
+      <li><strong>構造化 データ レビュー (四半期)</strong>:
+        schema.org validator と Google Rich Results Test で 全 schema (Article / MedicalScholarlyArticle /
+        BreadcrumbList / FAQPage / Organization / Person / WebSite+SearchAction) の 妥当性 を チェック。
+        2026-10-13 に 全項目 valid 確認済み。</li>
+      <li><strong>撤回論文 (Retracted) の 自動除外</strong>:
+        PubMed の RetractionWatch データ を 定期 参照し、取り扱い中の PMID が 撤回されていたら
+        該当記事 を 速やかに 取り下げ or 「撤回論文に 基づく 記事」の 注記 を 追加。</li>
+    </ol>
+
+    <h2>監修 の 考え方</h2>
+    <p>
+      本サイト は 医療機関 の 公式見解でも、専門学会の レビュー でも ありません。 従って
+      「医師監修」や 「学会認証」を 掲げる ことは しません。 その 代わり:
+    </p>
+    <ul>
+      <li>元論文 の <strong>PMID と DOI/URL を 必ず 記事に 明記</strong>、読者が 一次情報 を 直接確認できる 状態 を 保つ</li>
+      <li>翻案 プロンプトで <strong>「元 abstract の 事実関係を 逸脱しない」制約</strong> を 徹底、
+        AI が 新規数値 や 新規主張 を 「捏造」(ハルシネーション) しないよう プロンプト設計 と サンプリング レビュー で 二重 ガード</li>
+      <li>医療 的な 判断 を 要する ような 記述 には <strong>「医師に 相談を」の 文言 を 付記</strong> し、
+        記事が 医学的助言 として 読まれない よう 誘導</li>
+    </ul>
+
     <h2>関連ページ</h2>
     <ul>
       <li><a href="/ja/editorial-policy/">編集方針 (Editorial Policy)</a></li>
