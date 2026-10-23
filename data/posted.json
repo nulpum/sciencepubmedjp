@@ -9727,6 +9727,30 @@
       "category": "psychology",
       "postedAt": "2026-10-23T17:16:01.182Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mykolajk3p2h"
+    },
+    {
+      "platform": "threads",
+      "slug": "20261001-41690420",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-23T18:48:50.884Z",
+      "postId": "18027893777914431"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261023-41995603",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-23T18:49:06.133Z",
+      "postId": "17877581472633971"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261020-41429290",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-10-23T18:49:08.653Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3myktrr5yk22h"
     }
   ]
 }
