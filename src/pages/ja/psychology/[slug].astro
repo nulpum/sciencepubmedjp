@@ -166,7 +166,7 @@ const breadcrumbJsonLd = {
 
 export const prerender = true;
 ---
-<BaseLayout title={post.data.title} description={metaDescription} lang="ja" ogType="article" ogImage={ogImage}>
+<BaseLayout title={post.data.title} description={metaDescription} noindex={post.data.noindex} lang="ja" ogType="article" ogImage={ogImage}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}

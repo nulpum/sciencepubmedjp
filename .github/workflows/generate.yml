@@ -5,9 +5,11 @@ name: Daily article generation
 # 生成: 2記事/run × 2lang = 4ファイル/日
 # 消費: 2記事/日/lang/PF × 2lang = 4ファイル/日/PF
 # → 収支 ±0、在庫は現在の ~35 ペアを長期キープ
+# 2026-10-26 PAUSED FOR ADSENSE (11/2 再申請 準備中、「mass-produced AI」footprint 削減)
+# 審査通過 まで schedule 停止、workflow_dispatch 手動のみ (必要なら GH Actions UI から 実行)
 on:
-  schedule:
-    - cron: '37 21 * * *'   # 06:37 JST (毎時 0 分を避けて Bot 臭さ軽減)
+  # schedule: 一時停止 (審査中は daily 生成しない)
+  #   - cron: '37 21 * * *'   # 06:37 JST
   workflow_dispatch:
 
 permissions:

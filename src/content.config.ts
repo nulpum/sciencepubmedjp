@@ -21,6 +21,7 @@ const articleSchema = z.object({
   tags: z.array(z.string()).optional(),
     augmented: z.boolean().optional(),
     editor_note: z.string().optional(),
+    noindex: z.boolean().optional(),
     augmented_at: z.string().optional(),
 });
 
