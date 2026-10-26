@@ -155,6 +155,82 @@ const READER_COMPANIONS_EN: ReaderCompanion[] = [
   { label: 'Audible (audiobooks for commutes)', keyword: 'audible', indexParam: 'audible' },
 ];
 
+
+// 2026-10-26 追加 (C1): Amazon 固定 ASIN pool
+// 定番 の 著名書籍 で、PA-API 不使用時 の 検索 URL フォールバックに 加えて
+// 具体的 な商品ページ への 導線を 提供。 CVR 改善 期待。
+// ASIN が 絶版/変更 で 404 になっても 検索 URL は 残る ので 完全停止 しない。
+interface FeaturedBook {
+  title: string;
+  asin: string;
+  blurb: string;  // 2-3 行の 魅力訴求
+}
+
+const FEATURED_PSYCHOLOGY_JA: FeaturedBook[] = [
+  { title: 'ファスト&スロー 上 (ダニエル・カーネマン)', asin: 'B009TKR346',
+    blurb: '行動経済学 ノーベル賞 の 原点、2 つの 思考システム の 見取り図' },
+  { title: '予想どおりに不合理 (ダン・アリエリー)', asin: 'B00AVDR66S',
+    blurb: '人は 合理的に 選べない — 行動経済学の 入門定番' },
+  { title: '嫌われる勇気 (岸見一郎・古賀史健)', asin: '4478025819',
+    blurb: 'アドラー心理学 の 対話本、累計 200 万部 の 定番' },
+  { title: 'サピエンス全史 上 (ユヴァル・ノア・ハラリ)', asin: 'B01JTYMH1S',
+    blurb: '認知革命 と ホモ・サピエンス の 進化史、心理の 起源' },
+  { title: 'スイッチ! (チップ&ダン・ハース)', asin: 'B00AU7AWS6',
+    blurb: '行動変容の 心理メカニズム、象 と 象使い の 比喩' },
+];
+
+const FEATURED_BIOLOGY_JA: FeaturedBook[] = [
+  { title: '利己的な遺伝子 (リチャード・ドーキンス、40周年記念版)', asin: 'B01N00RE9P',
+    blurb: '遺伝子中心視点 の 進化論、現代生物学 の 必読書' },
+  { title: '生物と無生物のあいだ (福岡伸一)', asin: 'B003TU14IQ',
+    blurb: '動的平衡 の 生命観、サントリー学芸賞 受賞 の 名著' },
+  { title: 'サピエンス全史 上 (ハラリ)', asin: 'B01JTYMH1S',
+    blurb: 'ホモ・サピエンス の 進化史、生物学と 歴史の 架橋' },
+  { title: 'カラー図解 生物学の基礎', asin: '4062919796',
+    blurb: '大学 1 年生 向け の 定番 入門、研究の 前提知識 を 一気に' },
+];
+
+const FEATURED_PSYCHOLOGY_EN: FeaturedBook[] = [
+  { title: 'Thinking, Fast and Slow (Daniel Kahneman)', asin: '0141033576',
+    blurb: 'Nobel-winning overview of two thinking systems' },
+  { title: 'Sapiens (Yuval Noah Harari)', asin: '0062316117',
+    blurb: 'Human evolutionary and cognitive history' },
+  { title: 'The Molecule of More (Lieberman & Long)', asin: '1948836580',
+    blurb: 'Dopamine, desire, and the brain in modern life' },
+];
+
+const FEATURED_BIOLOGY_EN: FeaturedBook[] = [
+  { title: 'The Selfish Gene (Richard Dawkins)', asin: '0192860925',
+    blurb: 'Gene-centric view of evolution, modern biology classic' },
+  { title: 'Sapiens (Yuval Noah Harari)', asin: '0062316117',
+    blurb: 'Human evolutionary history' },
+];
+
+function pickFeaturedBook(pmid: string, category: Category, lang: Lang): FeaturedBook | null {
+  const list = lang === 'ja'
+    ? (category === 'psychology' ? FEATURED_PSYCHOLOGY_JA : FEATURED_BIOLOGY_JA)
+    : (category === 'psychology' ? FEATURED_PSYCHOLOGY_EN : FEATURED_BIOLOGY_EN);
+  if (list.length === 0) return null;
+  let hash = 0;
+  for (let i = 0; i < pmid.length; i++) hash = (hash * 31 + pmid.charCodeAt(i)) >>> 0;
+  return list[hash % list.length];
+}
+
+function buildFeaturedBookLink(book: FeaturedBook): SelectedBook {
+  const url = `https://www.amazon.co.jp/dp/${book.asin}/?tag=${partnerTag()}`;
+  return {
+    title: `📚 ${book.title}: ${book.blurb}`,
+    url,
+  };
+}
+
+export function buildFeaturedBookLinkForArticle(article: PubmedArticle, category: Category, lang: Lang): SelectedBook | null {
+  const book = pickFeaturedBook(article.pmid, category, lang);
+  return book ? buildFeaturedBookLink(book) : null;
+}
+
+
+
 // PMID を数値化して pick — 同じ記事は常に同じ商品 (UX 一貫性)、
 // 異なる記事同士では 分散する。
 function pickReaderCompanion(pmid: string, lang: Lang): ReaderCompanion {
@@ -213,6 +289,9 @@ function buildFallbackLinks(
   if (lang === 'ja') {
     const topicKw = extractKeywords(article, 3);   // 上位 3 トークン
     const broadKw = CATEGORY_BROAD_KEYWORDS_JA[category];
+    // 2026-10-26: 固定 ASIN の 定番書籍 を 第一候補として挿入 (CVR 改善)
+    const featured = pickFeaturedBook(article.pmid, category, 'ja');
+    if (featured) links.push(buildFeaturedBookLink(featured));
     if (topicKw) {
       links.push({
         title: `「${topicKw}」で Amazon 検索`,
@@ -234,6 +313,9 @@ function buildFallbackLinks(
   } else {
     const topicKw = extractKeywords(article, 3);   // EN の 3 語
     const broadKw = CATEGORY_BROAD_KEYWORDS_EN[category];
+    // 2026-10-26: Featured ASIN first (CVR improvement)
+    const featured = pickFeaturedBook(article.pmid, category, 'en');
+    if (featured) links.push(buildFeaturedBookLink(featured));
     if (topicKw) {
       links.push({
         title: `Search Amazon JP (English books) for "${topicKw}"`,

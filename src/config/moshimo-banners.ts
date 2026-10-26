@@ -19,6 +19,8 @@ export interface MoshimoBanner {
   label: string;
   category: 'education' | 'career' | 'dev' | 'ai-tools' | 'other';
   html: string;
+  /** 2026-10-26 追加: 重み付きランダム 用。 default 1、高価値案件は 3-5。 */
+  weight?: number;
 }
 
 export const MOSHIMO_BANNERS: MoshimoBanner[] = [
@@ -183,6 +185,7 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     id: 'banner-mba-laundering',
     label: 'MBAロンダリング (300x250) 成果 ¥20,000',
     category: 'career',
+    weight: 4,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804478&p_id=7079&pc_id=20253&pl_id=89536" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/6861/000000089536.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="MBAロンダリング"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804478&p_id=7079&pc_id=20253&pl_id=89536" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
@@ -252,6 +255,7 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     id: 'banner-tenshoku-agent-navi',
     label: '転職エージェントナビ (1080x1080) 成果 ¥8,000',
     category: 'career',
+    weight: 2,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800943&p_id=5537&pc_id=15176&pl_id=71461" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5218/000000071461.png" width="1080" height="1080" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="転職エージェントナビ"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800943&p_id=5537&pc_id=15176&pl_id=71461" width="1" height="1" style="border:none;" alt="">',
   },
   {
@@ -297,90 +301,105 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     id: 'banner-coobase',
     label: 'CooBase (AI 組織成長プラットフォーム、300x250) 成果 ¥1,500-¥162,800',
     category: 'ai-tools',
+    weight: 5,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804413&p_id=7735&pc_id=22406&pl_id=96558" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/3171/000000096558.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804413&p_id=7735&pc_id=22406&pl_id=96558" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-sellbridge-academy',
     label: 'SellBridge Academy (越境EC スクール、300x300) 成果 ¥30,000',
     category: 'education',
+    weight: 4,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804425&p_id=7614&pc_id=22002&pl_id=95334" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/7353/000000095334.png" width="300" height="300" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804425&p_id=7614&pc_id=22002&pl_id=95334" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-furikon',
     label: 'フリコン (フリーランス案件紹介、640x320) 成果 ¥30,000',
     category: 'career',
+    weight: 4,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800933&p_id=3841&pc_id=9491&pl_id=57708" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/3294/000000057708.png" width="640" height="320" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800933&p_id=3841&pc_id=9491&pl_id=57708" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-data-science-bootcamp',
     label: 'データサイエンスブートキャンプ (468x60) 成果 ¥1,000+承認 ¥50,000',
     category: 'education',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800946&p_id=5289&pc_id=14386&pl_id=70389" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4919/000000070389.jpg" width="468" height="60" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800946&p_id=5289&pc_id=14386&pl_id=70389" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-chatgene',
     label: 'chatGENE (遺伝子検査キット、300x250) 成果 15% — 生物学直撃',
     category: 'other',
+    weight: 5,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5803429&p_id=5769&pc_id=15966&pl_id=84667" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5461/000000084667.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5803429&p_id=5769&pc_id=15966&pl_id=84667" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-aiblog-gold',
     label: 'AIブログくんGOLD (AI 自動ブログ、300x250) 成果 ¥1,980-¥198,000',
     category: 'ai-tools',
+    weight: 4,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804429&p_id=7624&pc_id=22031&pl_id=95169" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5289/000000095169.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804429&p_id=7624&pc_id=22031&pl_id=95169" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-type-career',
     label: 'type転職エージェント (面談、600x600) 成果 ¥11,000',
     category: 'career',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804433&p_id=7540&pc_id=21772&pl_id=94548" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/6249/000000094548.jpg" width="600" height="600" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804433&p_id=7540&pc_id=21772&pl_id=94548" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-type-women',
     label: 'type女性転職 (面談、600x600) 成果 ¥11,000',
     category: 'career',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804434&p_id=7541&pc_id=21774&pl_id=94550" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/6249/000000094550.jpg" width="600" height="600" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804434&p_id=7541&pc_id=21774&pl_id=94550" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-miracareer',
     label: 'ミラキャリ (20代事務職転職、640x480) 成果 ¥15,000',
     category: 'career',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800934&p_id=5676&pc_id=15670&pl_id=82716" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4889/000000082716.png" width="640" height="480" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800934&p_id=5676&pc_id=15670&pl_id=82716" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-beshine',
     label: 'ビーシャイン (20代就職転職、300x250) 成果 ¥10,000',
     category: 'career',
+    weight: 2,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5804453&p_id=7309&pc_id=21003&pl_id=92173" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5160/000000092173.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804453&p_id=7309&pc_id=21003&pl_id=92173" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-digihari-online',
     label: 'デジハリ・オンラインスクール (Web/CG/映像、300x250) 成果 ¥5,000-¥10,000',
     category: 'dev',
+    weight: 2,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800969&p_id=3193&pc_id=7476&pl_id=76824" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/2262/000000076824.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800969&p_id=3193&pc_id=7476&pl_id=76824" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-wannabe-academy',
     label: 'ワナビーアカデミー (動画×Web、300x250) 成果 ¥9,000',
     category: 'education',
+    weight: 2,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800957&p_id=5118&pc_id=13860&pl_id=67253" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/3870/000000067253.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800957&p_id=5118&pc_id=13860&pl_id=67253" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-shift-teras-campus',
     label: 'SHIFT TERAS CAMPUS (旧DMM WEBCAMP、300x250) 成果 ¥1,000-¥25,000',
     category: 'dev',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800981&p_id=1363&pc_id=2297&pl_id=20505" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/0323/000000020505.png" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800981&p_id=1363&pc_id=2297&pl_id=20505" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-cryptech-academia',
     label: 'クリプテックアカデミア (プログラミング、468x120) 成果 ¥8,000',
     category: 'dev',
+    weight: 2,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800905&p_id=1870&pc_id=3646&pl_id=26007" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/1221/000000026007.jpg" width="468" height="120" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800905&p_id=1870&pc_id=3646&pl_id=26007" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {
     id: 'banner-digihari-3dcg-v2',
     label: 'デジタルハリウッド 3DCG制作 (300x250) 成果 ¥13,200',
     category: 'education',
+    weight: 3,
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800894&p_id=7627&pc_id=22056&pl_id=95358" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/4137/000000095358.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800894&p_id=7627&pc_id=22056&pl_id=95358" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
   {

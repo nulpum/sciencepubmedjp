@@ -24,7 +24,7 @@ function stripLazyFromImpression(html: string): string {
 
 // SSR 段階で JS 文字列として渡す (client 側で JSON.parse)
 const bannersJson = JSON.stringify(
-  MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: stripLazyFromImpression(b.html) })),
+  MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: stripLazyFromImpression(b.html), weight: b.weight ?? 1 })),
 );
 ---
 <aside class="moshimo-banner" aria-label="スポンサー広告">
@@ -46,7 +46,16 @@ const bannersJson = JSON.stringify(
       slots.forEach(function (slot) {
         if (slot.dataset.filled) return;
         slot.dataset.filled = '1';
-        var idx = Math.floor(Math.random() * BANNERS.length);
+        // 2026-10-26: weight 付き ランダム (高価値案件 を 重点配信)
+        var totalW = 0;
+        for (var k = 0; k < BANNERS.length; k++) totalW += (BANNERS[k].weight || 1);
+        var r = Math.random() * totalW;
+        var acc = 0;
+        var idx = 0;
+        for (var k2 = 0; k2 < BANNERS.length; k2++) {
+          acc += (BANNERS[k2].weight || 1);
+          if (r < acc) { idx = k2; break; }
+        }
         var b = BANNERS[idx];
         slot.innerHTML = b.html;
         if (typeof gtag === 'function') {
