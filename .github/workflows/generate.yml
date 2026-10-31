@@ -5,11 +5,17 @@ name: Daily article generation
 # 生成: 2記事/run × 2lang = 4ファイル/日
 # 消費: 2記事/日/lang/PF × 2lang = 4ファイル/日/PF
 # → 収支 ±0、在庫は現在の ~35 ペアを長期キープ
-# 2026-10-26 PAUSED FOR ADSENSE (11/2 再申請 準備中、「mass-produced AI」footprint 削減)
-# 審査通過 まで schedule 停止、workflow_dispatch 手動のみ (必要なら GH Actions UI から 実行)
+# 2026-11-01 更新: 週 2 回 (月・木) ペース に 再開
+# 2026-10-26 に 一時停止 (AdSense 再申請 準備で mass-production footprint 削減) → 月 60 本 (毎日)
+# 2026-11-02 以降 は 週 2 本 (月・木 06:37 JST) = 月 8 本 ペース で 再開:
+#   - 「人間編集 の ペース」signal
+#   - 審査中 でも 新コンテンツ 継続公開
+#   - AdSense 審査結果 (想定 11/16-12/2) 来たら 再調整:
+#     * 通過 → daily (元ペース) に 戻す
+#     * 再却下 → さらに ペース 落とす or 深掘り記事 中心に 転換
 on:
-  # schedule: 一時停止 (審査中は daily 生成しない)
-  #   - cron: '37 21 * * *'   # 06:37 JST
+  schedule:
+    - cron: '37 21 * * 1,4'   # 月・木 06:37 JST (UTC 21:37 日・水)
   workflow_dispatch:
 
 permissions:
