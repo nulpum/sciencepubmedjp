@@ -10295,6 +10295,38 @@
       "category": "biology",
       "postedAt": "2026-11-02T23:01:36.976Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mzegkgduju2l"
+    },
+    {
+      "platform": "threads",
+      "slug": "20261011-41240407",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-03T03:32:06.052Z",
+      "postId": "18179600581453841"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261103-41527262",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-11-03T03:32:14.326Z",
+      "postId": "1103479166185406_122116877229321286"
+    },
+    {
+      "platform": "instagram",
+      "slug": "20261103-41527262",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-11-03T03:32:26.677Z",
+      "postId": "17943109434388511"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260924-social-anxiety-treatment-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-11-03T03:32:28.788Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3mzevorbilo2n"
     }
   ]
 }
