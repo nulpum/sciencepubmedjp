@@ -408,4 +408,19 @@ export const MOSHIMO_BANNERS: MoshimoBanner[] = [
     category: 'ai-tools',
     html: '<a href="//af.moshimo.com/af/c/click?a_id=5800879&p_id=5432&pc_id=14858&pl_id=70498" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/2131/000000070498.jpg" width="300" height="250" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5800879&p_id=5432&pc_id=14858&pl_id=70498" width="1" height="1" style="border:none;" loading="lazy" alt="">',
   },
+  // ==================== 2026-11-07 追加 (碧推薦学院 + Workful) ====================
+  {
+    id: 'banner-aoi-suisen-gakuin',
+    label: '碧推薦学院 (総合型選抜・推薦入試 塾、テキストリンク) 成果 ¥8,000',
+    category: 'education',
+    weight: 3,
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5804415&p_id=7730&pc_id=22384&pl_id=96342" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank" style="display:inline-block;padding:10px 16px;background:#1a365d;color:white;border-radius:6px;text-decoration:none;font-weight:600;">🎓 碧推薦学院 の 無料受験相談 を 予約する</a><img src="//i.moshimo.com/af/i/impression?a_id=5804415&p_id=7730&pc_id=22384&pl_id=96342" width="1" height="1" style="border:none;" alt="">',
+  },
+  {
+    id: 'banner-workful',
+    label: 'Workful (外国人採用プラットフォーム、120x60) 成果 ¥10,000',
+    category: 'career',
+    weight: 3,
+    html: '<a href="//af.moshimo.com/af/c/click?a_id=5804439&p_id=7502&pc_id=21669&pl_id=94199" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="//image.moshimo.com/af-img/5781/000000094199.png" width="120" height="60" style="border:none;max-width:100%;height:auto;display:block;margin:0 auto;" alt="広告"></a><img src="//i.moshimo.com/af/i/impression?a_id=5804439&p_id=7502&pc_id=21669&pl_id=94199" width="1" height="1" style="border:none;" alt="">',
+  },
 ];
