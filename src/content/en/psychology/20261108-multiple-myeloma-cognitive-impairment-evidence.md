@@ -89,6 +89,28 @@ Physical function impairment, frailty, depression, and lower educational attainm
 
 Future research needs randomized controlled trials using standardized objective cognitive assessments across multiple domains, comparisons to healthy controls, longer follow-up periods, and investigation of potential interventions. Until better evidence emerges, clinicians should screen for cognitive problems during intensive treatment phases, address modifiable contributing factors, and validate patients' experiences while avoiding overly pessimistic or optimistic predictions about individual cognitive trajectories.
 
+## FAQ: Multiple Myeloma Treatment and Cognitive Function
+
+### What percentage of multiple myeloma patients experience cognitive problems during treatment?
+
+Up to 30% of multiple myeloma patients report cognitive decline during the first six months of treatment, according to recent research. A 2025 meta-analysis of 3,602 patients found statistically significant cognitive decline during this early treatment period (PMID 40684516), with a moderate-to-large effect size. However, it's important to note that most evidence comes from patient self-reports rather than objective neuropsychological testing, and the percentage varies depending on how cognitive function is measured. The actual prevalence may differ from what patients subjectively experience.
+
+### How do multiple myeloma treatments affect memory and thinking abilities?
+
+Multiple myeloma treatments appear to cause measurable cognitive changes during the intensive first six months, which typically includes induction therapy and possibly stem cell transplantation. The 2025 systematic review found cognitive decline across all treatment pathways studied, suggesting the problem isn't limited to one specific drug (PMID 40684516). Patients commonly report difficulties with memory, concentration, and mental sharpness that can interfere with daily activities and work. The biological mechanisms aren't fully understood, but may involve inflammation, treatment-related toxicity to brain tissue, or indirect effects from the cancer itself.
+
+### Is cognitive decline from myeloma treatment permanent or temporary?
+
+Current research hasn't definitively answered whether cognitive changes are permanent or reversible. The most comprehensive evidence focuses on the first six months of treatment, when decline is most pronounced (PMID 40684516). Some patients may experience improvement after completing intensive therapy, while others may have persistent difficulties. A 2022 longitudinal study tracked cognitive function over six months but didn't extend beyond that timeframe (PMID 36085276). More long-term studies are needed to understand whether cognitive function recovers, stabilizes, or continues declining as patients transition to maintenance therapy or treatment-free periods.
+
+### Who is most at risk for cognitive problems during myeloma treatment?
+
+The research hasn't yet clearly identified which myeloma patients are most vulnerable to cognitive decline. The 2025 systematic review called for future studies to determine predictive factors (PMID 40684516). Potential risk factors being investigated include older age, baseline cognitive status before treatment, specific treatment regimens, genetic factors, and comorbid conditions. The 2022 study included diverse participants (30% Black patients, mean age 67) but didn't analyze subgroup differences in cognitive outcomes (PMID 36085276). Understanding who faces highest risk would help clinicians provide targeted monitoring and interventions.
+
+### How is cognitive function measured in multiple myeloma patients?
+
+Cognitive function in myeloma patients is measured through two main approaches: patient-reported questionnaires and objective neuropsychological tests. Most studies have used self-report tools like the cognitive function subscale of the EORTC QLQ-C30 questionnaire, where patients rate their own memory and concentration. Objective measures include standardized tests like the Montreal Cognitive Assessment (MoCA), which directly evaluates memory, attention, language, and other cognitive domains. The 2025 review noted that patient perceptions don't always align with test performance (PMID 40684516), highlighting the importance of using both measurement types to get a complete picture of cognitive changes during treatment.
+
 ## Studies referenced
 
 - [PMID 40684516](https://pubmed.ncbi.nlm.nih.gov/40684516/) — Systematic review and meta-analysis of 18 studies (5,843 patients) finding significant cognitive decline during the first six months of multiple myeloma treatment, though most evidence comes from self-reported rather than objective measures.
@@ -98,3 +120,4 @@ Future research needs randomized controlled trials using standardized objective 
 - [PMID 40571970](https://pubmed.ncbi.nlm.nih.gov/40571970/) — European expert consensus on outpatient administration of bispecific antibodies teclistamab and talquetamab, identifying cognitive status as a key consideration for determining patient eligibility for outpatient treatment.
 
 - [PMID 35619188](https://pubmed.ncbi.nlm.nih.gov/35619188/) — Randomized controlled trial in breast cancer patients showing six-month exercise intervention improved self-reported cognitive function, fitness, fatigue, quality of life, and depression, though not objective cognitive testing except in highly fatigued subgroup.
+

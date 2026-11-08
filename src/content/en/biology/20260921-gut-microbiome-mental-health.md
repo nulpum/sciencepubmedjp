@@ -87,6 +87,28 @@ Diet, lifestyle, and early-life factors profoundly shape the microbiome, offerin
 
 For now, supporting gut health through a balanced, fiber-rich diet, fermented foods, and possibly targeted probiotics represents a low-risk strategy that may complement conventional mental health care. The ancient wisdom linking gut and mind is being validated by modern science—one microbe at a time.
 
+## FAQ: Gut Microbiome and Mental Health
+
+### What is the gut-brain axis and how does it connect bacteria to mood?
+
+The gut-brain axis is a bidirectional communication highway linking the gastrointestinal tract to the brain through multiple pathways. Gut bacteria produce neurotransmitters and metabolites—particularly short-chain fatty acids like butyrate—that can signal the nervous system, modulate immune responses, and influence brain chemistry. This connection explains how the trillions of microorganisms in your digestive tract may affect mental health, transforming what was once considered a fringe idea into a mainstream research frontier supported by molecular evidence.
+
+### Why do some gut bacteria worsen anxiety and depression while others help?
+
+Research shows that people with depression or anxiety often have higher levels of proinflammatory bacterial species such as Enterobacteriaceae and Desulfovibrio, alongside lower abundance of beneficial bacteria like Faecalibacterium that produce short-chain fatty acids (SCFAs) [PMID 33271426]. Proinflammatory bacteria may trigger immune activation that affects brain function, while SCFA-producing bacteria generate metabolites that fuel colon cells, calm immune responses, and support healthy brain signaling. This imbalance—not just the presence or absence of any single species—appears to influence mental health outcomes.
+
+### Do probiotics actually improve anxiety and depression symptoms?
+
+Some clinical trials show promise, though results vary by strain and population. One randomized trial in 60 anxious college students found that Lactobacillus plantarum JYLP-326 improved anxiety symptoms, demonstrating that specific probiotic strains may offer benefit in defined contexts. However, a 2021 systematic review of 26 studies found inconsistent results across different bacterial groups and mental health measures [PMID 33271426]. The evidence suggests certain probiotic strains may help specific individuals, but we cannot yet claim probiotics are a reliable treatment for everyone with mood disorders.
+
+### How do gut bacteria produce neurotransmitters that affect the brain?
+
+Gut microbes synthesize or influence production of several neurotransmitters including serotonin, GABA, and dopamine—the same chemical messengers that psychiatric medications target. These microbial metabolites can signal the brain through the vagus nerve, enter circulation to reach the central nervous system, or modulate local immune cells that communicate with neural pathways. While most neurotransmitters produced in the gut don't directly cross the blood-brain barrier, they influence the gut-brain axis through indirect mechanisms that researchers are still working to fully map.
+
+### What are the biggest gaps in gut microbiome mental health research?
+
+Despite growing interest, major questions remain unanswered. Studies show inconsistent findings on overall microbial diversity in anxiety and depression, with some reporting higher diversity in patients, others lower, and some no difference [PMID 33271426]. We still don't know which specific bacterial changes are causes versus consequences of mental health disorders, what the optimal "healthy" microbiome looks like for mental wellness, or which interventions work best for which individuals. Most research has been observational rather than interventional, and we lack large-scale randomized trials needed to establish whether microbiome manipulation can reliably prevent or treat mood disorders in diverse populations.
+
 ## Studies referenced
 
 - [PMID 39273008](https://pubmed.ncbi.nlm.nih.gov/39273008/) — A 2024 review discussing the bidirectional gut-brain axis, emphasizing the role of microbiome, metabolites, hormones, and stress in mental health, with a focus on anxiety and depression.
@@ -97,3 +119,4 @@ For now, supporting gut health through a balanced, fiber-rich diet, fermented fo
 - [PMID 39713871](https://pubmed.ncbi.nlm.nih.gov/39713871/) — A 2025 review detailing how dysbiosis disrupts the gut-brain axis, the role of microbial metabolites like SCFAs, and epigenetic mechanisms linking microbiota to depression.
 - [PMID 37033942](https://pubmed.ncbi.nlm.nih.gov/37033942/) — A 2023 randomized trial showing that Lactobacillus plantarum JYLP-326 reduced anxiety, depression, and insomnia in test-anxious college students by modulating gut microbiota and fecal metabolites.
 - [PMID 34205336](https://pubmed.ncbi.nlm.nih.gov/34205336/) — A 2021 review on how gut microbiota regulate neurotransmitter production and functioning, with implications for cognition and neurodegenerative diseases like Alzheimer's and Parkinson's.
+
