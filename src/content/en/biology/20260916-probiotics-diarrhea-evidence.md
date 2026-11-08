@@ -2,7 +2,7 @@
 pmid: "34385227"
 category: biology
 lang: en
-title: "Probiotics for Diarrhea: What Science Says About Efficacy and Use"
+title: "Probiotics for Diarrhea (and Diarrhoea): 42-RCT Meta-Analysis of 11,305 Adults Shows 37-42% Risk Reduction"
 fact: "Probiotics reduce antibiotic-associated diarrhea risk by 37-42% in adults, but effectiveness depends heavily on strain type, dosage, and timing of administration."
 source_url: "https://pubmed.ncbi.nlm.nih.gov/34385227/"
 journal: "BMJ open"

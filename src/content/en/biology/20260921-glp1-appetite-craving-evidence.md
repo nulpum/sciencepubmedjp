@@ -2,7 +2,7 @@
 pmid: "36050763"
 category: biology
 lang: en
-title: "GLP-1 and Appetite: How Weight-Loss Drugs Rewire the Brain"
+title: "GLP-1 and Appetite Suppression: How Semaglutide & Tirzepatide Reduce Food Cravings — SURPASS Trial Evidence Review"
 fact: "GLP-1 drugs suppress appetite through brain pathways that control reward and satiety—effects extending beyond blood sugar to food cravings, gastric emptying, and even addictive behaviors."
 source_url: "https://pubmed.ncbi.nlm.nih.gov/36050763/"
 journal: "Cardiovascular diabetology"

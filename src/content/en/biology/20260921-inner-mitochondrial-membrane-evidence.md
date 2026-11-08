@@ -2,7 +2,7 @@
 pmid: "30626975"
 category: biology
 lang: en
-title: "Inner Mitochondrial Membrane: How Cristae Power the Cell's Energy"
+title: "Inner Mitochondrial Membrane and Cristae: Structure, Function, and Cardiolipin — 10-Review Evidence Synthesis"
 fact: "The inner mitochondrial membrane folds into cristae—dynamic structures that house up to 90% of cellular energy production machinery and adapt their shape to meet metabolic demands."
 source_url: "https://pubmed.ncbi.nlm.nih.gov/30626975/"
 journal: "Nature reviews. Molecular cell biology"
