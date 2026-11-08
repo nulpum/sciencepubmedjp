@@ -32,6 +32,7 @@
     "promo:lab-update-en": "tsx scripts/promo/post-lab-update-announcement-en.ts",
     "augment:thin": "tsx scripts/pipeline/augment-thin.ts",
     "add:editor-notes": "tsx scripts/pipeline/add-editor-notes.ts",
+    "add:faq": "tsx scripts/pipeline/add-faq.ts",
     "promo:toolkit": "tsx scripts/promo/post-toolkit-announcement.ts",
     "promo:toolkit-en": "tsx scripts/promo/post-toolkit-announcement-en.ts",
     "promo:app-announce": "tsx scripts/promo/post-app-announcement.ts"
