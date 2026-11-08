@@ -8,6 +8,13 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/40684516/"
 journal: "Journal of geriatric oncology"
 year: 2025
 generated_at: "2026-11-08T16:49:39.660Z"
+tags:
+  - "cancer"
+  - "cognitive-impairment"
+  - "chemobrain"
+  - "mental-health"
+  - "memory"
+  - "brain"
 ---
 
 ## What we're looking at

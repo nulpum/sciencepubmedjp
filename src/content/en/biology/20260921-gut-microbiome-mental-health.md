@@ -8,6 +8,13 @@ source_url: "https://pubmed.ncbi.nlm.nih.gov/39273008/"
 journal: "Cells"
 year: 2024
 generated_at: "2026-11-08T16:42:30.553Z"
+tags:
+  - "gut-microbiome"
+  - "mental-health"
+  - "depression"
+  - "anxiety"
+  - "brain"
+  - "probiotics"
 ---
 
 ## What we're looking at
