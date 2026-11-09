@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleHubLink from '../../../components/ArticleHubLink.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
@@ -155,7 +156,10 @@ const breadcrumbJsonLd = {
 
 export const prerender = true;
 ---
-<BaseLayout title={post.data.title} description={metaDescription} noindex={post.data.noindex} lang="en" ogType="article" ogImage={ogImage}>
+<BaseLayout title={post.data.title} description={metaDescription} noindex={post.data.noindex} lang="en" ogType="article" ogImage={ogImage}
+  articlePublishedTime={post.data.generated_at}
+  articleModifiedTime={(post.data as any).updated_at || post.data.generated_at}
+  articleTags={post.data.tags ?? []}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
   {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
@@ -168,6 +172,7 @@ export const prerender = true;
       <p class="article__last-updated"><time datetime={lastUpdatedIso}>{lastUpdatedLabel}</time></p>
       <p class="article__reading-time">{readingLabel}{post.data.augmented && <span class="article__updated-badge">🔄 Updated 2026-10-11 (Background / Mechanism / Limitations / Reader implications added)</span>}</p>
       <h1>{post.data.title}</h1>
+      <ArticleHubLink lang="en" tags={post.data.tags ?? []} />
       <aside class="article__quick-answer" aria-label="💡 Quick Answer">
         <p class="article__quick-answer-head">💡 Quick Answer (The short version)</p>
         <p class="article__fact"><strong>{post.data.fact}</strong></p>

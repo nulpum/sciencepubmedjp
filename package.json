@@ -42,6 +42,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
     "@astrojs/cloudflare": "^12.6.13",
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@atproto/api": "^0.20.44",
     "@resvg/resvg-js": "^2.6.2",

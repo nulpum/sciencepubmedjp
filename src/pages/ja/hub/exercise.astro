@@ -17,6 +17,27 @@ export const prerender = true;
   description="運動が うつ・認知機能・睡眠・慢性痛・老化 に 与える 影響を、系統的レビュー・メタ解析で 統合したハブページ。"
   lang="ja"
 >
+  {/* CollectionPage + ItemList schema (Rich Result 用, 2026-11-09) */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': '運動 と 健康 を 科学で 理解する ハブ ｜ PubMed Trivia',
+    'description': '運動が うつ・認知機能・睡眠・慢性痛・老化 に 与える 影響を、系統的レビュー・メタ解析で 統合したハブページ。',
+    'url': 'https://sciencepubmed.net/ja/hub/exercise/',
+    'inLanguage': 'ja-JP',
+    'isPartOf': { '@type': 'WebSite', 'name': 'PubMed Trivia', 'url': 'https://sciencepubmed.net' },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': related.slice(0, 20).length,
+      'itemListElement': related.slice(0, 20).map((p, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': `${import.meta.env.SITE || "https://sciencepubmed.net"}/ja/${p.cat}/${p.id}/`,
+        'name': p.data.title,
+      })),
+    },
+  })} />
+
   <article class="hub">
     <header class="hub__header">
       <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/hub/">ハブ</a> › 🏃 運動 ハブ</p>

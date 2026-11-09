@@ -17,6 +17,27 @@ export const prerender = true;
   description="睡眠不足の 健康影響、概日リズム、記憶と 睡眠、不眠の 対処。系統的レビュー・メタアナリシスに 基づき、テーマ別に 整理した ハブページ。"
   lang="ja"
 >
+  {/* CollectionPage + ItemList schema (Rich Result 用, 2026-11-09) */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': '睡眠 の 科学 を エビデンスで理解する｜PubMed Trivia',
+    'description': '睡眠不足の 健康影響、概日リズム、記憶と 睡眠、不眠の 対処。系統的レビュー・メタアナリシスに 基づき、テーマ別に 整理した ハブページ。',
+    'url': 'https://sciencepubmed.net/ja/hub/sleep/',
+    'inLanguage': 'ja-JP',
+    'isPartOf': { '@type': 'WebSite', 'name': 'PubMed Trivia', 'url': 'https://sciencepubmed.net' },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': related.slice(0, 20).length,
+      'itemListElement': related.slice(0, 20).map((p, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': `${import.meta.env.SITE || "https://sciencepubmed.net"}/ja/${p.cat}/${p.id}/`,
+        'name': p.data.title,
+      })),
+    },
+  })} />
+
   <article class="hub">
     <header class="hub__header">
       <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › 😴 睡眠 ハブ</p>

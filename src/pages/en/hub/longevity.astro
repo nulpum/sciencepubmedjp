@@ -18,6 +18,27 @@ export const prerender = true;
   description="Curated evidence on human longevity — telomere biology, mitochondrial function, cellular senescence, autophagy, and lifestyle factors associated with extended healthspan. Based on peer-reviewed systematic reviews."
   lang="en"
 >
+  {/* CollectionPage + ItemList schema (Rich Result 用, 2026-11-09) */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': 'Longevity Research Hub: Aging Biology, Telomeres, Mitochondria｜PubMed Trivia',
+    'description': 'Curated evidence on human longevity — telomere biology, mitochondrial function, cellular senescence, autophagy, and lifestyle factors associated with extended healthspan. Based on peer-reviewed systematic reviews.',
+    'url': 'https://sciencepubmed.net/en/hub/longevity/',
+    'inLanguage': 'en-US',
+    'isPartOf': { '@type': 'WebSite', 'name': 'PubMed Trivia', 'url': 'https://sciencepubmed.net' },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': related.slice(0, 20).length,
+      'itemListElement': related.slice(0, 20).map((p, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': `${import.meta.env.SITE || "https://sciencepubmed.net"}/en/${p.cat}/${p.id}/`,
+        'name': p.data.title,
+      })),
+    },
+  })} />
+
   <article class="hub">
     <header class="hub__header">
       <p class="hub__breadcrumb"><a href="/en/">Home</a> › 🧬 Longevity Hub</p>

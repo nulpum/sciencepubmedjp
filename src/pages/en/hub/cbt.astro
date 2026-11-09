@@ -15,6 +15,27 @@ export const prerender = true;
   description="CBT for depression, anxiety, PTSD, chronic pain, and adult ADHD — synthesized from systematic reviews and meta-analyses."
   lang="en"
 >
+  {/* CollectionPage + ItemList schema (Rich Result 用, 2026-11-09) */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': 'Cognitive Behavioral Therapy (CBT): An Evidence Hub｜PubMed Trivia',
+    'description': 'CBT for depression, anxiety, PTSD, chronic pain, and adult ADHD — synthesized from systematic reviews and meta-analyses.',
+    'url': 'https://sciencepubmed.net/en/hub/cbt/',
+    'inLanguage': 'en-US',
+    'isPartOf': { '@type': 'WebSite', 'name': 'PubMed Trivia', 'url': 'https://sciencepubmed.net' },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': related.slice(0, 20).length,
+      'itemListElement': related.slice(0, 20).map((p, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': `${import.meta.env.SITE || "https://sciencepubmed.net"}/en/psychology/${p.id}/`,
+        'name': p.data.title,
+      })),
+    },
+  })} />
+
   <article class="hub">
     <header class="hub__header">
       <p class="hub__breadcrumb"><a href="/en/">Home</a> › <a href="/en/hub/">Hubs</a> › 🧘 CBT Hub</p>

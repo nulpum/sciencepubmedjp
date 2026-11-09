@@ -15,6 +15,27 @@ export const prerender = true;
   description="CBT の 仕組み、うつ・不安・慢性痛・ADHD への 応用、効果量、限界を 系統的レビュー・メタ解析で 整理した ハブページ。"
   lang="ja"
 >
+  {/* CollectionPage + ItemList schema (Rich Result 用, 2026-11-09) */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    'name': '認知行動療法 (CBT) を エビデンスで 理解する ｜ PubMed Trivia',
+    'description': 'CBT の 仕組み、うつ・不安・慢性痛・ADHD への 応用、効果量、限界を 系統的レビュー・メタ解析で 整理した ハブページ。',
+    'url': 'https://sciencepubmed.net/ja/hub/cbt/',
+    'inLanguage': 'ja-JP',
+    'isPartOf': { '@type': 'WebSite', 'name': 'PubMed Trivia', 'url': 'https://sciencepubmed.net' },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': related.slice(0, 20).length,
+      'itemListElement': related.slice(0, 20).map((p, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': `${import.meta.env.SITE || "https://sciencepubmed.net"}/ja/psychology/${p.id}/`,
+        'name': p.data.title,
+      })),
+    },
+  })} />
+
   <article class="hub">
     <header class="hub__header">
       <p class="hub__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/hub/">ハブ</a> › 🧘 CBT ハブ</p>

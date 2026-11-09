@@ -1,0 +1,78 @@
+---
+// 記事 → Hub 逆リンク バッジ (2026-11-09 追加)
+//
+// 記事 の tag から 関連 hub を 推測して、 記事 ヘッダー 直下 に
+// 「📚 [X] ハブ で 関連記事 を まとめて 読む」 の バッジ を 表示。
+//
+// これ により:
+//   - hub ⇔ 記事 の 相互 内部リンク (SEO: PageRank 循環)
+//   - 読者 の sibling 記事 発見 導線
+//   - 「関連 トピック を 系統的に 扱っている」 シグナル
+
+interface Props {
+  lang: 'ja' | 'en';
+  tags?: string[];
+}
+const { lang, tags = [] } = Astro.props;
+
+// tag → (hub slug, hub 利用可能 言語 set, 日本語ラベル, 英語ラベル)
+const TAG_TO_HUB: Array<{ tags: string[]; slug: string; langs: Array<'ja' | 'en'>; jaLabel: string; enLabel: string; icon: string }> = [
+  { tags: ['gut-microbiome', 'probiotics', 'microbiome', 'immunity'], slug: 'gut-microbiome', langs: ['ja', 'en'], jaLabel: '腸内フローラ ハブ', enLabel: 'Gut Microbiome Hub', icon: '🦠' },
+  { tags: ['adhd', 'attention-deficit'], slug: 'adhd', langs: ['ja', 'en'], jaLabel: 'ADHD ハブ', enLabel: 'ADHD Hub', icon: '🧠' },
+  { tags: ['cbt', 'cognitive-behavioral-therapy', 'therapy'], slug: 'cbt', langs: ['ja', 'en'], jaLabel: 'CBT ハブ', enLabel: 'CBT Hub', icon: '🛋️' },
+  { tags: ['exercise', 'physical-activity', 'workout'], slug: 'exercise', langs: ['ja', 'en'], jaLabel: '運動 ハブ', enLabel: 'Exercise Hub', icon: '🏃' },
+  { tags: ['sleep', 'insomnia', 'circadian'], slug: 'sleep', langs: ['ja', 'en'], jaLabel: '睡眠 ハブ', enLabel: 'Sleep Hub', icon: '😴' },
+  { tags: ['longevity', 'aging', 'lifespan'], slug: 'longevity', langs: ['en'], jaLabel: '長寿 ハブ', enLabel: 'Longevity Hub', icon: '⏳' },
+  { tags: ['mental-health', 'depression', 'anxiety', 'mood'], slug: 'mental-health', langs: ['en'], jaLabel: 'メンタルヘルス ハブ', enLabel: 'Mental Health Hub', icon: '💭' },
+];
+
+const tagSet = new Set(tags);
+const matchedHubs = TAG_TO_HUB
+  .filter((h) => h.langs.includes(lang))
+  .filter((h) => h.tags.some((t) => tagSet.has(t)))
+  .slice(0, 2); // 最大 2 hub
+---
+
+{matchedHubs.length > 0 && (
+  <nav class="hub-backlinks" aria-label={lang === 'ja' ? '関連 ハブ' : 'Related hubs'}>
+    {matchedHubs.map((h) => (
+      <a href={`/${lang}/hub/${h.slug}/`} class="hub-backlink">
+        <span class="hub-backlink__icon">{h.icon}</span>
+        <span class="hub-backlink__label">
+          {lang === 'ja' ? `${h.jaLabel} で 関連記事 を 読む` : `Read more in the ${h.enLabel}`}
+        </span>
+        <span class="hub-backlink__arrow" aria-hidden="true">→</span>
+      </a>
+    ))}
+  </nav>
+)}
+
+<style>
+  .hub-backlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 12px 0 16px;
+  }
+  .hub-backlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #eef5ff 0%, #e0ecff 100%);
+    border: 1px solid #c4d7f3;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.86rem;
+    color: #1e3a8a;
+    transition: background 0.15s ease, transform 0.1s ease;
+    max-width: fit-content;
+  }
+  .hub-backlink:hover {
+    background: linear-gradient(135deg, #e0ecff 0%, #c7dcff 100%);
+    transform: translateX(2px);
+  }
+  .hub-backlink__icon { font-size: 1rem; }
+  .hub-backlink__label { font-weight: 600; }
+  .hub-backlink__arrow { color: #3b5db3; font-weight: 700; }
+</style>
