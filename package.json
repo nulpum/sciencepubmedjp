@@ -37,7 +37,8 @@
     "promo:toolkit-en": "tsx scripts/promo/post-toolkit-announcement-en.ts",
     "promo:app-announce": "tsx scripts/promo/post-app-announcement.ts",
     "emit:banners": "tsx scripts/build/emit-moshimo-banners.ts",
-    "prebuild": "npm run emit:banners"
+    "prebuild": "npm run emit:banners",
+    "analytics:gsc": "python scripts/analytics/gsc_analyze.py"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",

@@ -156,6 +156,30 @@ const jsonLd = {
 };
 
 
+
+// F-1 TOC schema (2026-11-09): 深掘り記事 の H2 を WebPageElement として 列挙。
+// Google が sitelinks / rich result で 使う 可能性 + 文書構造 の 強い シグナル。
+const isDeepDive = /-evidence$|-mental-health$|-hsp-/.test(post.id);
+function slugifyH2(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-');
+}
+const h2Matches = (isDeepDive && typeof post.body === 'string')
+  ? [...post.body.matchAll(/^## (.+)$/gm)]
+  : [];
+const hasPartList = h2Matches.slice(0, 15).map((m, i) => ({
+  '@type': 'WebPageElement',
+  'position': i + 1,
+  'name': m[1].trim(),
+  'url': `${articleUrl}#${slugifyH2(m[1].trim())}`,
+}));
+if (hasPartList.length > 0) {
+  (jsonLd as any).hasPart = hasPartList;
+}
+
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
