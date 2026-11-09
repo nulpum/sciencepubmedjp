@@ -1,68 +1,68 @@
 ---
-// もしもアフィリエイト バナー広告 (config 駆動、N 種ランダム表示)
+// もしもアフィリエイト バナー広告 (lazy-fetch 版 / 2026-11-09 CWV 対策)
 //
-// バナーの追加は src/config/moshimo-banners.ts の MOSHIMO_BANNERS 配列に entry 追加のみ。
+// 従来 は SSR 時 に MOSHIMO_BANNERS 全 61 件 を JSON.stringify して 各ページ に インライン していた
+// (HTML 161 KB / img 360 個 / LCP 悪化 主因)。
+//
+// 本 バージョン は:
+//   1. public/moshimo-banners.json に 事前 emit (npm run emit:banners、prebuild hook)
+//   2. client 側で IntersectionObserver で slot が viewport に 近付いたら fetch
+//   3. fetch 結果 は モジュール内 cache (同一ページ の 複数 slot で 1 回 だけ)
 //
 // multi-instance 対応:
-//   - guard flag で script は 1 度だけ実行
-//   - DOMContentLoaded で全 [data-moshimo-slot] を fill
-//   - dataset.filled で二重挿入防止
-//   - 各 slot が独立にランダムな banner を表示
-
-import { MOSHIMO_BANNERS } from '../config/moshimo-banners';
-
-// impression pixel の loading="lazy" を除去する。
-// 1x1 px の tracking pixel は lazy loading だとブラウザが viewport 判定に迷って
-// 発火しない (特にモバイル)。結果、Moshimo 側で impression 大幅未カウント →
-// CTR 異常高く見える問題が起きる。tracking pixel は eager 前提で発火させる。
-function stripLazyFromImpression(html: string): string {
-  return html.replace(
-    /(<img[^>]*i\.moshimo\.com\/af\/i\/impression[^>]*?)\s+loading="lazy"/g,
-    '$1',
-  );
-}
-
-// SSR 段階で JS 文字列として渡す (client 側で JSON.parse)
-const bannersJson = JSON.stringify(
-  MOSHIMO_BANNERS.map((b) => ({ id: b.id, html: stripLazyFromImpression(b.html), weight: b.weight ?? 1 })),
-);
+//   - guard flag で init 処理 は 1 度だけ
+//   - 各 slot は dataset.filled で 二重挿入防止
+//   - 各 slot が 独立 に 重み付き ランダム banner を 表示
 ---
 <aside class="moshimo-banner" aria-label="スポンサー広告">
   <p class="moshimo-banner__label">📖 スポンサー</p>
   <div class="moshimo-banner__slot" data-moshimo-slot>
-    <!-- client-side で banner を挿入 -->
+    <!-- lazy-fetched banner が ここに 挿入 -->
   </div>
   <p class="moshimo-banner__note">#PR / もしもアフィリエイト経由</p>
 </aside>
 
-<script is:inline set:html={`
+<script is:inline>
   (function () {
     if (window.__moshimoBannerInit) return;
     window.__moshimoBannerInit = true;
-    var BANNERS = ${bannersJson};
-    if (!Array.isArray(BANNERS) || BANNERS.length === 0) return;
-    function fillSlots() {
-      var slots = document.querySelectorAll('[data-moshimo-slot]');
-      slots.forEach(function (slot) {
+
+    var BANNERS_URL = '/moshimo-banners.json';
+    var cachedBanners = null;
+    var inflightFetch = null;
+
+    function loadBanners() {
+      if (cachedBanners) return Promise.resolve(cachedBanners);
+      if (inflightFetch) return inflightFetch;
+      inflightFetch = fetch(BANNERS_URL, { credentials: 'omit' })
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (data) { cachedBanners = Array.isArray(data) ? data : []; return cachedBanners; })
+        .catch(function () { cachedBanners = []; return cachedBanners; });
+      return inflightFetch;
+    }
+
+    function fillSlot(slot) {
+      if (slot.dataset.filled) return;
+      loadBanners().then(function (banners) {
         if (slot.dataset.filled) return;
+        if (!banners || banners.length === 0) return;
         slot.dataset.filled = '1';
-        // 2026-10-26: weight 付き ランダム (高価値案件 を 重点配信)
+        // 重み付き ランダム (高価値案件 を 重点配信)
         var totalW = 0;
-        for (var k = 0; k < BANNERS.length; k++) totalW += (BANNERS[k].weight || 1);
+        for (var k = 0; k < banners.length; k++) totalW += (banners[k].weight || 1);
         var r = Math.random() * totalW;
         var acc = 0;
         var idx = 0;
-        for (var k2 = 0; k2 < BANNERS.length; k2++) {
-          acc += (BANNERS[k2].weight || 1);
+        for (var k2 = 0; k2 < banners.length; k2++) {
+          acc += (banners[k2].weight || 1);
           if (r < acc) { idx = k2; break; }
         }
-        var b = BANNERS[idx];
+        var b = banners[idx];
         slot.innerHTML = b.html;
         if (typeof gtag === 'function') {
           gtag('event', 'moshimo_banner_impression', { banner_id: b.id, banner_index: idx });
         }
-        // クリック計測: slot 内の a タグ (affiliate リンク) に発火 listener を付ける。
-        // target="_blank" なので現ページは残る → beacon で確実に送信できる。
+        // クリック計測 (slot 内 affiliate link に 発火 listener)
         var links = slot.querySelectorAll('a[href*="af.moshimo.com"]');
         links.forEach(function (link) {
           link.addEventListener('click', function () {
@@ -77,13 +77,32 @@ const bannersJson = JSON.stringify(
         });
       });
     }
+
+    function observeSlots() {
+      var slots = document.querySelectorAll('[data-moshimo-slot]');
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: 全 slot を 即時 fill (古いブラウザ)
+        slots.forEach(fillSlot);
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            fillSlot(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '400px 0px' }); // 400px 手前 で 発火 (near-viewport)
+      slots.forEach(function (slot) { io.observe(slot); });
+    }
+
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fillSlots);
+      document.addEventListener('DOMContentLoaded', observeSlots);
     } else {
-      fillSlots();
+      observeSlots();
     }
   })();
-`} />
+</script>
 
 <style>
   .moshimo-banner {

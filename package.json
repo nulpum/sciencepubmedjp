@@ -35,7 +35,9 @@
     "add:faq": "tsx scripts/pipeline/add-faq.ts",
     "promo:toolkit": "tsx scripts/promo/post-toolkit-announcement.ts",
     "promo:toolkit-en": "tsx scripts/promo/post-toolkit-announcement-en.ts",
-    "promo:app-announce": "tsx scripts/promo/post-app-announcement.ts"
+    "promo:app-announce": "tsx scripts/promo/post-app-announcement.ts",
+    "emit:banners": "tsx scripts/build/emit-moshimo-banners.ts",
+    "prebuild": "npm run emit:banners"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",
