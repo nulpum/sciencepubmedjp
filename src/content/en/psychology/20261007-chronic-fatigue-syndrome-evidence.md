@@ -72,6 +72,28 @@ Biomarker studies face methodological inconsistencies in sample collection, assa
 
 Cognitive behavioral therapy tailored for ME/CFS produces statistically significant and clinically meaningful reductions in fatigue (22–33%) and functional impairment, with face-to-face delivery preferred for patients with depression or severe symptoms. Younger, less severely affected patients, and those with higher baseline self-efficacy benefit most. Exercise therapy shows modest average benefit but requires careful individualization and monitoring for post-exertional worsening—gentler modalities like Qigong may be safer than conventional aerobic programs. Oxaloacetate supplementation shows preliminary promise but needs placebo-controlled validation before recommendations. Despite decades of research, no biomarker reliably diagnoses ME/CFS or predicts treatment response, reflecting likely patient heterogeneity. The illness affects roughly 1% of populations in Korea and Japan [PMID 34361987] and likely similar proportions globally, yet no pharmaceutical treatment has proven efficacy. Current best evidence supports trying CBT with realistic expectations, extreme caution with exercise, and continued participation in rigorous clinical trials testing novel interventions. Critically, treatment response varies widely by patient characteristics—personalization based on age, symptom severity, depression, and activity patterns should guide clinical decisions.
 
+## FAQ: Chronic Fatigue Syndrome Treatment Effectiveness
+
+### What is the most proven treatment for chronic fatigue syndrome?
+
+Cognitive behavioral therapy (CBT) is currently the most extensively studied and evidence-supported intervention for ME/CFS. A 2024 meta-analysis of eight randomized controlled trials involving 1,298 patients found CBT significantly reduced fatigue severity, improved physical functioning, and decreased functional impairment, with all improvements statistically significant at p < 0.001 [PMID 37927223]. However, CBT doesn't cure ME/CFS—it helps patients manage symptoms and improve coping strategies, with effectiveness varying considerably between individuals.
+
+### Does exercise therapy help or harm people with chronic fatigue syndrome?
+
+The evidence shows exercise can reduce fatigue symptoms when properly designed, but remains controversial due to the risk of post-exertional malaise. A 2025 meta-analysis of 13 studies with 1,305 patients found exercise therapy significantly improved fatigue scores [PMID 41356241]. The critical factor is exercise type and intensity—conventional aerobic exercise showed better outcomes for overall fatigue reduction than other forms. However, because ME/CFS patients often experience severe symptom worsening after exertion, any exercise program must be carefully individualized and monitored to avoid triggering crashes.
+
+### Why does online CBT work less well for some ME/CFS patients?
+
+Research reveals that ME/CFS patients with comorbid depression respond significantly worse to internet-based CBT compared to those without depression. A 2024 study found depressed patients receiving online CBT were more likely to remain severely fatigued after treatment, whereas this differential effect disappeared with face-to-face CBT delivery [PMID 38970879]. The personal interaction in face-to-face sessions appears to compensate for depression's dampening effect on treatment response, suggesting that delivery format matters as much as the therapeutic content itself for certain patient subgroups.
+
+### How much improvement can ME/CFS patients realistically expect from CBT?
+
+When measured objectively, CBT typically reduces fatigue by 22.5% to 27.9% from baseline levels after six weeks—substantially better than the 5.9% improvement seen with placebo [PMID 38970879]. In practical terms, a meta-analysis found fatigue severity dropped by approximately 11 points on standardized scales, and physical functioning improved by about 10 points [PMID 37927223]. These are meaningful but modest improvements; most patients remain symptomatic after treatment, though many experience better quality of life and functional capacity. The wide variability means some patients benefit considerably while others show minimal response.
+
+### Are there any FDA-approved medications specifically for chronic fatigue syndrome?
+
+No, there are currently no FDA-approved pharmaceutical treatments specifically for ME/CFS. Despite affecting approximately 1% of the global population, the condition remains without targeted drug therapy [PMID 34361987]. This absence of approved medications is why systematic reviews focus primarily on non-pharmacological interventions like CBT and carefully designed exercise programs. The lack of pharmaceutical options reflects both the incomplete understanding of ME/CFS's underlying mechanisms and the challenges of conducting adequately powered clinical trials in this heterogeneous patient population.
+
 ## Studies referenced
 
 - [PMID 38970879](https://pubmed.ncbi.nlm.nih.gov/38970879/) — Meta-analysis of six RCTs (n=1,084) showing CBT effectiveness varies by delivery format; patients with depression benefit less from internet-based CBT than face-to-face formats.
@@ -89,3 +111,4 @@ Cognitive behavioral therapy tailored for ME/CFS produces statistically signific
 - [PMID 41356241](https://pubmed.ncbi.nlm.nih.gov/41356241/) — Meta-analysis of 13 exercise therapy studies (n=1,305); found modest improvements in fatigue with conventional aerobic exercise outperforming Qigong for overall fatigue, but Qigong superior for mental fatigue; safety data insufficient.
 
 - [PMID 31465778](https://pubmed.ncbi.nlm.nih.gov/31465778/) — Meta-analysis of 42 studies showing elevated inflammatory proteins (TNF, IL-2, IL-4, TGF-β, CRP) in ME/CFS patients but with 12 proteins unchanged; concluded inflammation unlikely primary feature in all patients.
+

@@ -114,6 +114,28 @@ The evidence is weaker for long-term maintenance of benefits beyond one year, fo
 
 Given the relatively low risk, the evidence favors offering psychological interventions as part of multidisciplinary chronic pain management, with realistic expectations: moderate symptom improvement, enhanced function, and better coping rather than complete pain elimination. The challenge moving forward is understanding which patients benefit most from which psychological approaches, and how to sustain the initial benefits over the long term.
 
+## FAQ: Psychological Therapy for Chronic Pain
+
+### What types of psychological therapy are most effective for chronic pain?
+
+Cognitive behavioral therapy (CBT) shows the strongest evidence base, particularly when combined with physical interventions like physiotherapy or exercise. For chronic low back pain, CBT plus physiotherapy produced clinically important improvements with effect sizes around 0.92-1.01 immediately post-treatment (PMID 35354560). Acceptance and commitment therapy (ACT) demonstrates medium-to-large effects on pain acceptance and psychological flexibility, though it doesn't significantly reduce pain intensity itself (PMID 27479642). Mindfulness-based stress reduction also shows benefits. The most effective approach often depends on individual patient characteristics and pain conditions.
+
+### How much can psychological interventions actually reduce chronic pain intensity?
+
+Psychological therapies typically reduce chronic pain intensity by approximately 40% in the short term, though this varies by intervention type and condition. High-intensity CBT showed moderate effect sizes (SMD 0.54) for pain reduction in medically unexplained symptoms (PMID 32975190). When exercise programs were combined with behavioral-cognitive therapies for chronic low back pain, patients experienced a 38% relative benefit over standard treatments (PMID 35914641). However, it's important to understand that these improvements often diminish at long-term follow-up, and some therapies like ACT focus more on improving function and acceptance rather than eliminating pain.
+
+### Why do psychological treatments work for chronic pain if the pain is physically real?
+
+Psychological interventions don't treat pain as imaginary—they target how the brain processes and responds to genuine pain signals. Research shows these therapies work by modifying psychological processes like cognitive fusion, which is the tendency to become entangled with pain-related thoughts. One 2024 review found psychological interventions decreased cognitive fusion with medium effect sizes (g = -0.55) at long-term follow-up (PMID 39213942). These therapies help patients change catastrophic thinking patterns, improve pain acceptance, increase psychological flexibility, and maintain valued activities despite ongoing pain sensations, ultimately reducing disability and emotional distress even when the physical sensation persists.
+
+### How long do the benefits of psychological therapy for chronic pain last?
+
+The durability of benefits varies considerably, with many studies showing effects fade over time. While CBT combined with physiotherapy produces clinically meaningful improvements immediately post-treatment for conditions like chronic low back pain (PMID 35354560), long-term follow-up often shows diminished effects. The 2020 review of CBT for medically unexplained symptoms found that while high-intensity CBT reduced pain, anxiety, and depression at treatment end, these effects weakened at long-term follow-up (PMID 32975190). This pattern suggests many patients may benefit from booster sessions or ongoing practice of learned techniques to maintain improvements.
+
+### Is psychological therapy better than medication or physical therapy for chronic pain?
+
+Rather than viewing psychological therapy as superior or inferior to other treatments, evidence suggests combination approaches work best. CBT alone shows modest effects, but when combined with physiotherapy or structured exercise, it produces substantially larger benefits (PMID 35354560). A 2022 meta-analysis found combining exercise with behavioral-cognitive therapies yielded 38% greater benefit than standard active treatments alone for chronic low back pain (PMID 35914641). Psychological interventions address different pain dimensions than medications or physical therapies—targeting emotional distress, disability, and pain-related behaviors rather than just sensation intensity—making them complementary rather than competing treatment options.
+
 ## Studies referenced
 
 - [PMID 35354560](https://pubmed.ncbi.nlm.nih.gov/35354560/) — Network meta-analysis of 97 RCTs (13,136 participants) examining psychological interventions for chronic low back pain; found CBT and pain education combined with physiotherapy produced clinically important improvements in function and pain.
@@ -131,3 +153,4 @@ Given the relatively low risk, the evidence favors offering psychological interv
 - [PMID 39213942](https://pubmed.ncbi.nlm.nih.gov/39213942/) — Systematic review and meta-analysis of 18 articles (24 studies) examining whether psychological interventions decrease cognitive fusion in chronic pain patients; found small-to-medium effects at post-test (g = -0.39) and medium effects at long-term follow-up (g = -0.55).
 
 - [PMID 32975190](https://pubmed.ncbi.nlm.nih.gov/32975190/) — Comprehensive systematic review and economic evaluation of behavioral interventions for medically unexplained symptoms in primary care; found high-intensity CBT showed beneficial effects for pain, anxiety, and depression at treatment end, but few effects remained at long-term follow-up and cost-effectiveness varied widely.
+

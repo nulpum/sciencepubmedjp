@@ -103,6 +103,28 @@ Despite these gaps, the converging findings across multiple independent meta-ana
 
 Intermittent fasting is an effective weight-loss strategy that performs about as well as traditional calorie restriction over 3–6 months. It may offer small advantages in fat loss and insulin sensitivity, particularly for people with prediabetes or type 2 diabetes, but these benefits are incremental rather than transformative. IF does not magically suppress appetite, and we lack long-term data on cardiovascular outcomes and mortality. For individuals who find time-restricted eating or alternate-day fasting easier to maintain than daily calorie counting, IF is a reasonable, evidence-backed choice. For others, continuous calorie restriction works just as well. The "best" approach is the one that fits your lifestyle, preferences, and medical context—ideally supported by adequate protein, resistance exercise, and realistic expectations. As always, consult a healthcare provider before starting any significant dietary change, especially if you have diabetes or take medications that affect blood sugar.
 
+## FAQ: Intermittent Fasting and Weight Loss
+
+### What is the actual difference in weight loss between intermittent fasting and regular calorie restriction?
+
+The difference is smaller than many people expect. Meta-analyses show that intermittent fasting produces roughly 0.2 to 1 kg more weight loss than continuous calorie restriction over similar time periods, with both approaches typically resulting in 5.5 to 6.5 kg of weight loss at six months [PMID 39458528, PMID 35565749]. While this difference is statistically significant in some studies, it's clinically minor—less than the weight of a bag of flour. The take-home message: intermittent fasting works for weight loss, but it's not dramatically superior to traditional daily calorie counting.
+
+### How does intermittent fasting affect body fat compared to muscle loss?
+
+Intermittent fasting may offer a modest advantage in preserving lean muscle while losing fat, though the evidence is mixed. One 2022 meta-analysis found IF led to slightly greater reductions in body fat percentage and fat mass compared to continuous calorie restriction [PMID 39458528]. However, the absolute differences are small, and factors like protein intake and resistance training likely play bigger roles in body composition than meal timing alone. If you're concerned about maintaining muscle during weight loss, focus on adequate protein and strength training regardless of which eating pattern you choose.
+
+### Why do some people find intermittent fasting easier to follow than counting calories every day?
+
+Many people report that intermittent fasting simplifies decision-making by removing the need to track every meal's calories. Instead of monitoring portion sizes throughout the day, you simply watch the clock and eat within your designated time window or fasting days. The psychological appeal is that you can eat more freely during "eating windows" without meticulous counting. However, adherence varies widely between individuals—what feels liberating to one person may feel restrictive to another. No meta-analysis has definitively proven IF has better long-term adherence than continuous calorie restriction.
+
+### Does intermittent fasting improve insulin sensitivity and blood sugar control?
+
+The evidence suggests intermittent fasting may offer modest short-term benefits for insulin sensitivity beyond simple weight loss. Some studies included in meta-analyses show improvements in fasting insulin levels and insulin resistance markers [PMID 39458528], which could theoretically benefit people at risk for type 2 diabetes. However, when weight loss is matched between intermittent fasting and continuous calorie restriction, the metabolic advantages often diminish or disappear. This means much of the benefit comes from losing weight itself, rather than the fasting pattern uniquely "unlocking" metabolic pathways. Always consult your doctor before using IF to manage blood sugar.
+
+### Which type of intermittent fasting is most effective for weight loss?
+
+A 2023 network meta-analysis comparing different IF approaches found that alternate-day fasting (ADF)—eating little or nothing every other day—ranked highest for weight loss among the IF variants studied [PMID 36349432]. Time-restricted eating (limiting meals to an 8-10 hour daily window) and the 5:2 diet also produced weight loss, but with slightly smaller effects. However, the "best" method depends heavily on what you can actually stick with long-term. The most extreme fasting schedule won't help if you can't maintain it for months. The analysis concluded all IF regimens were ultimately "comparable" to continuous calorie restriction, with no clear winner.
+
 ## Studies referenced
 
 - [PMID 38956175](https://pubmed.ncbi.nlm.nih.gov/38956175/) — Meta-analysis of 14 RCTs (1101 adults with prediabetes/T2D) showing IF reduces body weight, HbA1c, fasting glucose, total cholesterol, and triglycerides compared to control diets; similar weight loss to continuous calorie restriction.
@@ -116,3 +138,4 @@ Intermittent fasting is an effective weight-loss strategy that performs about as
 - [PMID 39458528](https://pubmed.ncbi.nlm.nih.gov/39458528/) — Meta-analysis of 10 RCTs (623 participants) reporting fasting-based strategies produce slightly greater short-term reductions in body weight (-0.94 kg) and fat mass (-1.08 kg) than continuous calorie restriction, with improved insulin sensitivity.
 
 - [PMID 37299567](https://pubmed.ncbi.nlm.nih.gov/37299567/) — Systematic review and meta-analysis of 17 RCTs (1111 participants) finding no evidence that intermittent fasting reduces hunger, fullness, desire to eat, or prospective food consumption compared to continuous energy restriction.
+

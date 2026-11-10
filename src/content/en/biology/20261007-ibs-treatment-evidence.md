@@ -122,6 +122,28 @@ The promising finding that combining low-FODMAP approaches with probiotics may e
 
 For patients struggling with IBS, the current evidence supports a stepped approach: start with basic healthy eating and lifestyle modifications, progress to low-FODMAP diet with professional guidance if needed, consider evidence-based probiotics as monotherapy or combination therapy, and maintain realistic expectations about the degree of improvement likely. While we now have better evidence than ever before, IBS management remains an individualized process requiring patience, professional guidance, and often some trial-and-error to find what works for each person.
 
+## FAQ: IBS Dietary Treatments
+
+### What is a low-FODMAP diet and how does it help IBS?
+
+A low-FODMAP diet restricts fermentable oligosaccharides, disaccharides, monosaccharides, and polyols—short-chain carbohydrates that are poorly absorbed in the small intestine. In susceptible individuals with IBS, these carbohydrates can trigger bloating, pain, and altered bowel habits. According to a 2025 umbrella review of 175 randomized controlled trials, patients following a low-FODMAP diet were approximately 48% more likely to experience symptom improvement compared to control diets (PMID 39110917). The diet is recommended as a second-line treatment by the British Dietetic Association and should be implemented under supervision of a specialized dietitian (PMID 27272325).
+
+### How effective are probiotics for treating IBS symptoms?
+
+Probiotics show moderate-quality evidence for improving IBS symptoms, particularly abdominal pain, with some studies showing a relative risk of 4.04 for pain relief (PMID 39110917). However, effectiveness is highly strain-specific—not all probiotic products work equally. A network meta-analysis found that combining a low-FODMAP diet with probiotics ranked as the most effective intervention for symptom relief (PMID 39862384). This means that while certain probiotic strains can be beneficial, patients shouldn't expect the same results from every over-the-counter probiotic supplement, and clinical guidance is valuable for selecting appropriate strains.
+
+### Why is the low-FODMAP diet only recommended as second-line treatment?
+
+Despite strong evidence for effectiveness, the low-FODMAP diet is recommended as second-line treatment because it requires proper clinical supervision and should not be the first approach tried. The British Dietetic Association recommends starting with first-line healthy eating advice before progressing to the more restrictive low-FODMAP protocol (PMID 27272325). This is because the diet is complex to implement correctly, requires elimination and reintroduction phases, and needs monitoring by specialized dietitians to ensure nutritional adequacy and proper execution. Starting with simpler interventions also follows a stepped-care approach that reserves more intensive treatments for those who don't respond to basic dietary modifications.
+
+### What does "moderate-quality evidence" mean for IBS dietary treatments?
+
+Moderate-quality evidence means that while multiple well-designed studies support the intervention's effectiveness, some limitations exist that prevent the evidence from being rated as "high quality." For IBS dietary interventions like low-FODMAP diets and probiotics, these limitations often include variability between studies, difficulty with blinding (patients know which diet they're eating), and heterogeneity in how outcomes are measured. The 2025 umbrella review specifically identified moderate-quality evidence for both low-FODMAP diets and probiotics (PMID 39110917), which means clinicians can recommend these interventions with reasonable confidence, but researchers acknowledge the findings could change as more rigorous studies emerge.
+
+### How do low-FODMAP diets compare to other popular IBS diets?
+
+According to a network meta-analysis comparing various dietary interventions across 44 studies, the low-FODMAP diet significantly outperformed sham diets with a relative risk of 3.22 for symptom relief (PMID 39862384). When ranking interventions by IBS symptom severity scores, the low-FODMAP diet achieved a SUCRA score of 90.5%, making it the most effective single intervention—superior to probiotics alone, gluten-free diets, and other dietary approaches. Only the combination of low-FODMAP diet plus probiotics ranked higher overall. This data-driven comparison helps explain why low-FODMAP has become the most recommended dietary intervention for IBS, despite the popularity of other elimination diets that lack comparable evidence.
+
 ## Studies referenced
 
 - [PMID 41081513](https://pubmed.ncbi.nlm.nih.gov/41081513/) — British Dietetic Association systematic review generating 59 evidence-based dietary recommendations for chronic constipation from 75 RCTs, using GRADE methodology and Delphi consensus; most recommendations carried low to very low evidence quality.
@@ -139,3 +161,4 @@ For patients struggling with IBS, the current evidence supports a stepped approa
 - [PMID 30935559](https://pubmed.ncbi.nlm.nih.gov/30935559/) — 2019 narrative review of 11 systematic reviews and meta-analyses concluding probiotics are safe and can improve IBS symptoms but with conflicting findings on specific strains; low-FODMAP diet effective but with questionable evidence quality and potential for negative health impacts if used inappropriately; no evidence supporting prebiotics for IBS.
 
 - [PMID 39110917](https://pubmed.ncbi.nlm.nih.gov/39110917/) — 2025 umbrella review examining 175 trials across 58 meta-analyses, finding moderate-quality evidence that probiotics improve abdominal pain (RR 4.04) and low-FODMAP diets improve IBS symptoms (RR 1.48); most other nutritional interventions showed small effects with low to very low evidence certainty.
+

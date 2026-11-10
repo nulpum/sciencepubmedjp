@@ -88,6 +88,28 @@ For families facing ADHD treatment decisions, this means carefully weighing pote
 
 The urgent need for higher-quality, longer-term research highlighted in these reviews [PMID 28700715, PMID 41342306] remains unfulfilled. Future studies should use better methods to maintain blinding, follow children for years rather than weeks, examine which subgroups benefit most from which treatments, and measure outcomes that matter to children and families, not just clinicians.
 
+## FAQ: ADHD Treatment in Children
+
+### What is the most effective medication for childhood ADHD?
+
+Methylphenidate and amphetamine are the most effective medications for reducing ADHD symptoms in children, showing significantly greater improvement than placebo and non-stimulant medications like atomoxetine and guanfacine [PMID 28700715]. Methylphenidate may improve teacher-rated ADHD symptoms by about 10.6 points on a 72-point scale, exceeding the threshold considered clinically meaningful [PMID 41342306]. However, most evidence comes from short-term studies lasting only weeks, and individual responses to medication vary considerably, so what works best must be determined on a case-by-case basis under medical supervision.
+
+### How does behavioral therapy compare to medication for ADHD?
+
+Both behavioral therapy and medication show benefits for childhood ADHD, but they work differently and may address different aspects of the condition. The strongest evidence suggests that combining behavioral therapy with stimulant medication produces superior outcomes compared to either treatment alone [PMID 28700715]. Cognitive-behavioral therapy shows moderate effects on ADHD symptoms themselves (effect size of -0.343) but demonstrates stronger benefits for related problems like oppositional behavior, parenting skills, and parental stress [PMID 26575979]. Behavioral interventions may be particularly valuable for families seeking non-medication approaches or wanting to address the broader family and social impacts of ADHD.
+
+### What are the common side effects of ADHD medications in children?
+
+The most commonly reported side effects of methylphenidate include decreased appetite and sleep problems, which appear more frequently than with placebo treatment [PMID 41342306]. However, the comprehensive analysis of 190 trials found that evidence on adverse events was generally of very low quality, making it difficult to fully characterize the safety profile [PMID 28700715]. Most medication trials lasted only weeks, not months or years, creating uncertainty about long-term side effects. This limitation in safety data represents a significant gap in our understanding, particularly for medications children may take for extended periods during critical developmental years.
+
+### How long do ADHD treatments need to continue to be effective?
+
+This remains one of the most significant unanswered questions in ADHD treatment. Most medication trials lasted only weeks, creating substantial uncertainty about whether benefits persist with long-term use or what happens when treatment stops [PMID 28700715, 41342306]. The short duration of most studies means we have limited evidence about whether children need continuous treatment, whether benefits are maintained after discontinuation, or how treatment needs might change as children develop. This gap in long-term evidence makes it challenging for families and clinicians to make fully informed decisions about sustained treatment strategies.
+
+### Why is ADHD so common, and does genetics play a role?
+
+ADHD affects approximately 5% of children worldwide, making it one of the most commonly diagnosed psychiatric conditions in pediatric populations [PMID 28700715]. The disorder has a strong genetic component, with common genetic variants contributing substantially to susceptibility [PMID 30478444]. This genetic basis helps explain why ADHD often runs in families, though environmental factors also play important roles. The high prevalence reflects both genuine biological variation in attention and impulse control systems and the significant impairment these differences can cause in modern educational and social environments that demand sustained attention and behavioral regulation.
+
 ## Studies referenced
 
 - [PMID 28700715](https://pubmed.ncbi.nlm.nih.gov/28700715/) — Network meta-analysis of 190 randomized trials comparing pharmacological, psychological, and complementary interventions for ADHD in children and adolescents, finding stimulants and behavioral therapy most effective.
@@ -105,3 +127,4 @@ The urgent need for higher-quality, longer-term research highlighted in these re
 - [PMID 29744873](https://pubmed.ncbi.nlm.nih.gov/29744873/) — Systematic review of adverse events from methylphenidate in non-randomized studies, finding common non-serious side effects and possible associations with rare serious events.
 
 - [PMID 25501355](https://pubmed.ncbi.nlm.nih.gov/25501355/) — Meta-analysis of seven long-term studies (12+ weeks) of methylphenidate immediate-release showing sustained efficacy for ADHD symptoms in children.
+

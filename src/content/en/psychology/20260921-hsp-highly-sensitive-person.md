@@ -94,6 +94,28 @@ For individuals who identify as highly sensitive, the research validates that se
 
 The science of sensory processing sensitivity is evolving, with increasingly rigorous measurement tools and growing attention to mechanisms. But we're still in relatively early stages of understanding how sensory sensitivity operates, what predicts it, and how best to support individuals who experience the world with heightened intensity.
 
+## FAQ: Highly Sensitive Person Science
+
+### What does it mean to be a highly sensitive person?
+
+A highly sensitive person (HSP) is someone who scores high in sensory processing sensitivity (SPS)—a temperament trait characterized by heightened awareness of environmental stimuli, deeper cognitive processing, emotional reactivity, and becoming overstimulated in intense environments. Research suggests approximately 30% of people may have this trait, experiencing sensory information with greater intensity than less-sensitive individuals. However, the scientific definition remains complex, as SPS overlaps with other personality features and sensory processing differences studied across various fields including autism research and vision science.
+
+### How do scientists actually measure sensory processing sensitivity?
+
+A 2025 systematic review identified 29 validated questionnaires and scales designed to measure sensory processing sensitivity and related constructs (PMID 41649871). These instruments assess 78 different variables grouped into categories including psychological factors and physical responses. In autism research specifically, scientists have identified eleven distinct types of sensory processing differences, including hypersensitivity, hyposensitivity, and sensation seeking. The measurement tools vary considerably, reflecting ongoing scientific debate about whether sensory sensitivity represents a single unified trait or a collection of separate but related characteristics.
+
+### Is being highly sensitive linked to mental health problems?
+
+Research shows complex associations between sensory processing differences and mental health outcomes, though most evidence comes from autism studies rather than HSP-specific research. A 2024 meta-analysis of 63 studies involving 11,659 autistic participants found that hypersensitivity correlated with both anxiety/depression (internalizing problems) and aggression/rule-breaking (externalizing problems) (PMID 39515075). Visual, auditory, and tactile sensitivities showed particularly strong associations with mental health challenges. However, different sensory subtypes showed different patterns—sensation seeking linked strongly with externalizing but weakly with internalizing problems—suggesting sensory processing operates through multiple distinct pathways rather than uniformly affecting mental health.
+
+### Why does the science behind highly sensitive people remain contested?
+
+The scientific understanding of sensory processing sensitivity faces several challenges. Research exists across disconnected fields—autism studies, vision science, pain research—with surprisingly little direct investigation of the HSP construct itself. Scientists debate whether sensory sensitivity represents a distinct, measurable trait with clear biological underpinnings or simply reflects overlapping personality features already captured by existing frameworks. The 29 different assessment tools measuring 78 variables demonstrate lack of consensus about what exactly should be measured (PMID 41649871). This fragmentation makes it difficult to draw unified conclusions about the biological basis, prevalence, or clinical significance of high sensitivity.
+
+### What's the difference between sensory sensitivity in highly sensitive people versus autism?
+
+While both involve differences in sensory processing, the relationship between HSP traits and autism remains an active research question. Autism research has rigorously documented eleven distinct types of sensory processing differences with clear associations to mental health outcomes (PMID 39515075), whereas HSP research has developed separately with less empirical validation. Some sensory features overlap between the two populations, but autism involves additional characteristics beyond sensory processing. Current evidence doesn't support equating high sensory sensitivity with autism, though some individuals may share certain sensory processing patterns. More research directly comparing these populations is needed to clarify their relationship.
+
 ## Studies referenced
 
 - [PMID 39515075](https://pubmed.ncbi.nlm.nih.gov/39515075/) — Systematic review and meta-analysis of 63 studies (11,659 autistic participants) examining relationships between eleven types of sensory processing differences and mental health outcomes, finding strongest associations for hypersensitivity, visual, auditory, and tactile sensitivities.
@@ -111,3 +133,4 @@ The science of sensory processing sensitivity is evolving, with increasingly rig
 - [PMID 33610832](https://pubmed.ncbi.nlm.nih.gov/33610832/) — Study developing deep learning algorithms to detect myopic maculopathy lesions in fundus images with high sensitivity and specificity, achieving 87.53% correct prediction rate for categorizing myopic maculopathy.
 
 - [PMID 27123863](https://pubmed.ncbi.nlm.nih.gov/27123863/) — Meta-analysis examining whether visual threats are prioritized without awareness across three experimental paradigms, finding weak evidence for unconscious threat processing with only fearful faces robustly prioritized across all paradigms.
+

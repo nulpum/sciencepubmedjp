@@ -104,6 +104,28 @@ Critically, population-level implementation lags behind individual knowledge. Ef
 
 For individuals, the evidence suggests that investing in modifiable lifestyle factors—particularly dietary quality, physical activity, sleep, and vascular health—represents a reasonable strategy for potentially reducing dementia risk while certainly improving overall health. But maintain realistic expectations: lifestyle intervention offers risk reduction, not risk elimination, and individual results vary substantially.
 
+## FAQ: Lifestyle Changes and Alzheimer's Prevention
+
+### Can the Mediterranean diet actually prevent Alzheimer's disease?
+
+The Mediterranean diet shows consistent protective associations with lower Alzheimer's risk across multiple meta-analyses [PMID 33435977]. However, it's crucial to understand that these studies demonstrate correlation, not proven causation. The diet pattern—emphasizing vegetables, fruits, whole grains, fish, and olive oil—correlates with reduced dementia, cognitive impairment, and Alzheimer's disease incidence in observational studies. While this represents some of the strongest lifestyle evidence available, we cannot definitively say it "prevents" Alzheimer's since randomized controlled trials spanning decades would be needed for causal proof.
+
+### How much does physical activity reduce dementia risk?
+
+Physical activity demonstrates protective associations particularly for Alzheimer's disease, dementia, and Parkinson's disease in meta-analytical reviews [PMID 33435977]. The umbrella review examining 203 meta-analyses identified physical activity as one of the most consistent modifiable protective factors. Additionally, low physical activity contributed to an 11% increase in stroke-related disability between 1990 and 2021 [PMID 39304265], and stroke itself is a major contributor to vascular dementia. While exact risk reduction percentages vary across studies, the evidence consistently suggests regular exercise offers meaningful cognitive protection.
+
+### Why does smoking lower Parkinson's risk but increase dementia risk?
+
+This paradoxical finding from meta-analyses [PMID 33435977] illustrates that biological systems don't follow simple rules. While smoking correlates with elevated dementia and multiple sclerosis risk as expected, it shows a protective association with Parkinson's disease. Scientists hypothesize this may relate to nicotine's effects on dopamine pathways or selection bias (people genetically predisposed to Parkinson's may find smoking unpleasant). Critically, this does NOT mean smoking is recommended—its harms vastly outweigh any potential Parkinson's benefit, and it increases dementia risk, the more common condition.
+
+### What lifestyle factors show the strongest evidence for brain health?
+
+Based on a meta-umbrella review analyzing 203 meta-analyses [PMID 33435977], Mediterranean diet and physical activity demonstrate the most consistent protective associations across multiple cognitive outcomes. Mediterranean diet correlated with lower risk of dementia, Alzheimer's disease, cognitive impairment, and stroke. Physical activity showed protective effects for Alzheimer's, dementia, and Parkinson's disease. These factors stand out because they appeared protective across multiple independent meta-analyses and diverse study populations, representing higher-tier epidemiological evidence than single studies or even single meta-analyses.
+
+### How does sleep quality affect Alzheimer's risk?
+
+Sleep disturbances represent an emerging research focus in Alzheimer's prevention, with chronic insomnia recognized as a growing concern in the scientific literature. While the umbrella review methodology [PMID 33435977] examined multiple lifestyle factors, sleep's relationship with dementia represents a complex bidirectional association—poor sleep may contribute to cognitive decline, but early neurodegeneration can also disrupt sleep patterns. This makes establishing causation particularly challenging. Current evidence suggests sleep quality matters for brain health, but researchers are still determining whether improving sleep can prevent dementia or primarily reflects underlying disease processes.
+
 ## Studies referenced
 
 - [PMID 39304265](https://pubmed.ncbi.nlm.nih.gov/39304265/) — Global Burden of Disease Study analysis of stroke burden 1990-2021, showing increasing disability from metabolic and lifestyle risk factors including high BMI, physical inactivity, and hypertension, emphasizing need for prevention targeting blood pressure and lifestyle factors.
@@ -111,3 +133,4 @@ For individuals, the evidence suggests that investing in modifiable lifestyle fa
 - [PMID 33435977](https://pubmed.ncbi.nlm.nih.gov/33435977/) — Meta-umbrella systematic review of 14 umbrella reviews covering 203 meta-analyses identifying 115 non-genetic risk and protective factors for neurological diseases, finding Mediterranean diet, physical activity, and coffee consumption protective for dementia/Alzheimer's while late-life depression and various metabolic factors increased risk.
 
 - [PMID 33091586](https://pubmed.ncbi.nlm.nih.gov/33091586/) — Protocol for randomized pilot trial examining cognitive behavioral therapy for insomnia (CBT-I) as potential intervention to improve cognitive function and reduce amyloid-beta accumulation in older adults, based on evidence that sleep disruption contributes to AD pathology and that approximately 15% of AD may be preventable through sleep interventions.
+

@@ -120,6 +120,28 @@ Mindfulness is not a miracle cure—effect sizes are moderate, not large, and su
 
 As with any mental health intervention, individuals experiencing depression or anxiety should consult qualified healthcare providers to determine the most appropriate treatment approach for their specific situation.
 
+## FAQ: Mindfulness Meditation for Depression
+
+### What is the evidence that mindfulness meditation actually works for depression?
+
+Multiple meta-analyses analyzing thousands of participants have found that mindfulness-based interventions produce medium-to-large effect sizes for reducing depression symptoms. A comprehensive analysis of 209 studies involving 12,145 participants found mindfulness therapy showed moderate effectiveness (effect size = 0.55), performing comparably to established treatments like cognitive behavioral therapy and antidepressant medications [PMID 23796855]. When examining only patients with diagnosed mood disorders, effect sizes increased to 0.95, indicating particularly strong benefits for clinical depression [PMID 20350028].
+
+### How does mindfulness meditation compare to antidepressant medication?
+
+Research suggests mindfulness-based interventions perform similarly to pharmacological treatments for depression. Meta-analyses have found no significant difference in effectiveness between mindfulness therapy and antidepressant medications (effect size difference = 0.13) [PMID 23796855]. This means mindfulness offers comparable symptom reduction to medication, though it works through different mechanisms—teaching psychological skills rather than altering brain chemistry directly. However, mindfulness should not replace prescribed medications without consulting a healthcare provider, and the two approaches can often be used together.
+
+### Why does mindfulness meditation help with depression and anxiety?
+
+While the exact mechanisms are still being studied, mindfulness appears to work by training people to observe thoughts and emotions without immediately reacting to or being overwhelmed by them. This "nonjudgmental awareness" helps break the cycle of rumination—repetitive negative thinking patterns strongly associated with depression. Structured programs like Mindfulness-Based Cognitive Therapy (MBCT) specifically teach participants to recognize early warning signs of depressive relapse and respond with adaptive coping strategies. The consistency of effects across multiple studies suggests these psychological skills translate into meaningful symptom improvement.
+
+### How long do the benefits of mindfulness meditation last?
+
+The evidence suggests mindfulness benefits extend beyond the active treatment period. Meta-analyses examining follow-up assessments found that improvements in mood and anxiety symptoms remained stable after mindfulness programs concluded [PMID 20350028]. However, most studies tracked participants for weeks to months rather than years, so long-term durability requires further research. Many mindfulness programs are designed to teach skills that participants continue practicing independently, which may help maintain benefits—though real-world adherence to ongoing practice varies considerably.
+
+### What is a "medium-to-large effect size" and what does it mean for someone with depression?
+
+Effect size is a standardized measure researchers use to quantify how much an intervention helps, regardless of the specific scale used to measure symptoms. By convention, effect sizes around 0.2 are considered small, 0.5 medium, and 0.8 large. The medium-to-large effects (0.5-0.95) found for mindfulness-based interventions indicate clinically meaningful improvement—not just statistically significant changes, but differences that matter in daily life. For context, these effect sizes are comparable to those seen with established depression treatments like cognitive behavioral therapy, suggesting mindfulness can produce substantial symptom reduction for many people.
+
 ## Studies referenced
 
 - [PMID 35834503](https://pubmed.ncbi.nlm.nih.gov/35834503/) — Meta-analysis of 36 studies showing mindfulness-based interventions reduce depression, anxiety, and cancer-related fatigue in oncology patients, with medium effect sizes maintained at three-month follow-up.
@@ -133,3 +155,4 @@ As with any mental health intervention, individuals experiencing depression or a
 - [PMID 25818837](https://pubmed.ncbi.nlm.nih.gov/25818837/) — Meta-analysis of 29 studies with 2,668 healthy adults demonstrating MBSR produces moderate effects on stress, anxiety, depression, and quality of life, with benefits maintained at 19-week follow-up and evidence that mindfulness skill development mediates outcomes.
 
 - [PMID 20350028](https://pubmed.ncbi.nlm.nih.gov/20350028/) — Meta-analysis of 39 studies with 1,140 participants showing mindfulness-based therapy produces moderate effects for anxiety and mood symptoms overall, with large effect sizes (0.95–0.97) specifically in patients with diagnosed anxiety and mood disorders, sustained at follow-up.
+

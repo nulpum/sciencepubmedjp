@@ -91,6 +91,28 @@ Several factors limit the conclusions we can draw from this synthesis:
 
 **Individual differences**: Most meta-analyses report average effects, but some individuals may respond better than others to training. Predictors of individual response (baseline working memory capacity, motivation, genetics) remain poorly understood.
 
+## FAQ: Working Memory Training Effectiveness
+
+### Does working memory training actually improve your memory?
+
+Working memory training produces modest, short-term improvements on the specific memory tasks you practice—what researchers call "near transfer." Meta-analyses show people typically achieve moderate gains (around 0.5 standardized mean difference) on trained tasks immediately after completing programs [PMID 22612437]. However, these improvements usually disappear at follow-up assessments weeks or months later. More importantly, getting better at the training exercises doesn't mean your overall memory capacity has fundamentally increased; you've essentially just gotten better at those particular tasks through practice.
+
+### Why doesn't brain training transfer to real-world skills?
+
+The scientific evidence consistently shows that improving performance on working memory exercises doesn't translate into better performance on everyday cognitive tasks like reading comprehension, math problem-solving, or general intelligence. A comprehensive 2016 meta-analysis of 87 publications found zero convincing evidence of "far transfer" to real-world skills when compared to active control groups [PMID 27474138]. The reason appears to be that our brains become skilled at the specific strategies needed for training tasks rather than expanding underlying cognitive capacity. Essentially, you learn to excel at the game without improving the fundamental mental abilities the game claims to target.
+
+### What about working memory training for ADHD—does it help?
+
+The evidence for working memory training in ADHD is mixed and controversial. While some studies show improvements on trained working memory tasks, the critical question is whether this helps with actual ADHD symptoms like inattention, impulsivity, or academic performance in daily life. Meta-analyses reveal that when studies use active control groups and blinded assessments—the gold standard for avoiding placebo effects—the benefits on real-world ADHD symptoms largely disappear. Any observed improvements may reflect expectation effects from parents and teachers who know the child received training rather than genuine symptom reduction.
+
+### How long do the benefits of working memory training last?
+
+One of the most disappointing findings from rigorous research is that gains from working memory training fade quickly. The 2013 meta-analysis found that improvements measured immediately after training vanished at follow-up assessments [PMID 22612437]. Even for the modest benefits observed on trained tasks, there's little evidence of durable long-term enhancement. This temporal pattern is inconsistent with the idea that training produces lasting structural changes in cognitive capacity and instead suggests temporary practice effects. If benefits don't persist beyond the training period, the practical value for real-world cognitive function becomes questionable.
+
+### Are commercial brain training programs worth the money?
+
+Based on current scientific evidence, most researchers would say no. While commercial programs like Cogmed and Lumosity are professionally designed and may provide some mental stimulation, rigorous meta-analyses show they don't deliver on their core promise of improving general cognitive abilities or real-world functioning [PMID 27474138, PMID 40581145]. The improvements you see are typically limited to getting better at the specific games you practice, with minimal transfer to everyday tasks. For the cost of these programs—often hundreds of dollars—you could invest in activities with stronger evidence bases for cognitive health, such as physical exercise, social engagement, learning new complex skills, or quality education.
+
 ## Studies referenced
 
 - [PMID 38937842](https://pubmed.ncbi.nlm.nih.gov/38937842/) — Systematic review and meta-analysis (15 studies, 685 patients) finding that non-invasive brain stimulation combined with cognitive training improved global cognition in Alzheimer's disease and mild cognitive impairment, with effects maintained at follow-up for rTMS combinations.
@@ -108,3 +130,4 @@ Several factors limit the conclusions we can draw from this synthesis:
 - [PMID 37004840](https://pubmed.ncbi.nlm.nih.gov/37004840/) — Systematic review and meta-analysis of 8 trials (336 participants) showing repetitive transcranial magnetic stimulation combined with cognitive training produced large effects on global cognition, executive function, and working memory in post-stroke cognitive impairment patients.
 
 - [PMID 40581145](https://pubmed.ncbi.nlm.nih.gov/40581145/) — Systematic review and meta-analysis of 11 randomized controlled trials evaluating Cogmed Working Memory Training in adults, finding small significant improvements in verbal and visuospatial working memory immediately after training but limited evidence for sustained benefits beyond 2-6 months.
+

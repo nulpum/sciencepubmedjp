@@ -94,6 +94,28 @@ However, recent high-quality placebo-controlled trials reveal smaller effects th
 
 CBT remains a valuable tool, but it is not a panacea. Patients and clinicians should approach it with realistic expectations, prioritize treatment completion, consider exposure-based components, and remain open to alternative or augmented approaches when CBT alone falls short. The evidence supports CBT as one effective option among several, rather than a uniquely superior intervention for all presentations of anxiety and depression.
 
+## FAQ: Cognitive Behavioral Therapy for Anxiety and Depression
+
+### What is the actual effect size of CBT for anxiety disorders?
+
+Recent placebo-controlled meta-analyses show moderate effects. A 2018 review [PMID 29451967] of 41 trials found CBT produced an effect size of g = 0.56 on primary anxiety symptoms compared to placebo. Effects varied by diagnosis: obsessive-compulsive disorder, generalized anxiety disorder, and acute stress disorder showed large effects, while PTSD, social anxiety, and panic disorder demonstrated smaller benefits. Secondary outcomes including depression (g = 0.31) and quality of life (g = 0.30) showed even more modest improvements.
+
+### Why do newer CBT studies show smaller effects than older research?
+
+Earlier meta-analyses often compared CBT to waitlist controls rather than active placebos, which can inflate apparent benefits. The 2006 review [PMID 16199119] reported large effect sizes using these designs. As methodology improved with placebo-controlled trials that account for nonspecific therapeutic factors—therapist attention, treatment expectations, structured scheduling—the measured advantage of CBT's specific techniques decreased. This doesn't mean CBT is ineffective; rather, it highlights how much benefit comes from common therapy factors versus CBT-specific mechanisms like cognitive restructuring.
+
+### How effective is CBT compared to antidepressant medication for depression?
+
+The 2006 comprehensive review [PMID 16199119] found CBT somewhat superior to antidepressants for adult unipolar depression, though the comparison methodology matters greatly. Direct head-to-head trials are limited, and effect sizes depend on whether studies use active placebas, treatment-as-usual controls, or waitlist comparisons. Both interventions show moderate benefits, and combination therapy often performs better than either alone. Individual patient factors—previous treatment response, preference, symptom severity, and side-effect tolerance—typically guide clinical decisions more than group-level effect sizes.
+
+### Does CBT work equally well for all anxiety disorders?
+
+No, effect sizes vary substantially across diagnoses. The 2018 placebo-controlled meta-analysis [PMID 29451967] demonstrated large effects for OCD, GAD, and acute stress disorder, but only small to moderate effects for PTSD, social anxiety disorder, and panic disorder. The 2008 review [PMID 18363421] similarly found weakest effects in panic disorder despite CBT being a recommended first-line treatment. These differences may reflect disorder-specific mechanisms, measurement sensitivity, or the particular CBT protocols tested. Exposure-based interventions trended toward larger effects than purely cognitive approaches across disorders.
+
+### What percentage of patients drop out of CBT treatment?
+
+Dropout rates vary by disorder and comparison condition. The 2008 anxiety meta-analysis [PMID 18363421] found no significant difference in attrition between CBT and placebo groups overall. However, the 2018 review [PMID 29451967] revealed substantially higher dropout in CBT for PTSD specifically—29.0% versus 17.2% in placebo arms—likely reflecting the emotional difficulty of trauma-focused exposure work. Other anxiety disorders showed comparable retention across treatment arms. These patterns suggest that while CBT is generally tolerable, certain protocols for certain conditions pose greater burden, warranting careful patient preparation and support.
+
 ## Studies referenced
 
 - [PMID 36534317](https://pubmed.ncbi.nlm.nih.gov/36534317/) — Meta-analysis of recent (2017–present) placebo-controlled CBT trials for anxiety disorders, finding small effects (g = 0.24) and even smaller effects for PTSD (g = 0.14).
@@ -111,3 +133,4 @@ CBT remains a valuable tool, but it is not a panacea. Patients and clinicians sh
 - [PMID 25547522](https://pubmed.ncbi.nlm.nih.gov/25547522/) — Meta-analysis of 39 RCTs (N = 1,821) finding ACT outperforms waitlist, placebo, and treatment-as-usual (g = 0.57 overall) but does not differ significantly from CBT.
 
 - [PMID 27687212](https://pubmed.ncbi.nlm.nih.gov/27687212/) — Meta-analysis of 14 trials (N = 985) demonstrating CBT superiority over waitlist/treatment-as-usual for older adults with GAD, but only small, nonsignificant advantage over active controls.
+

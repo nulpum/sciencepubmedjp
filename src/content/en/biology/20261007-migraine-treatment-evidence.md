@@ -119,6 +119,28 @@ The evidence base for both classes is robust from a short-term efficacy standpoi
 
 Key gaps remain: we need head-to-head comparative trials, longer-term safety data, better understanding of why some patients don't respond, and cost-effectiveness analyses to guide resource allocation. For now, treatment selection depends on migraine frequency, previous treatment responses, comorbidities, patient preferences, and access to medications—a multifactorial decision best made collaboratively between patients and headache specialists.
 
+## FAQ: Migraine Medications – Triptans vs. CGRP Antibodies
+
+### What is the main difference between triptans and CGRP antibodies for migraine?
+
+Triptans are acute treatments designed to stop a migraine attack once it has started, typically taken as pills, nasal sprays, or injections during an attack. CGRP antibodies, on the other hand, are preventive medications administered as injections every month or three months to reduce how often migraine attacks occur. Research shows triptans like sumatriptan remain highly effective for stopping active attacks, with patients 4.6 times more likely to experience pain relief within 2 hours compared to placebo (PMID 39227797). Meanwhile, CGRP antibodies like erenumab and galcanezumab demonstrate superior effectiveness in reducing monthly migraine days for prevention (PMID 39227797, PMID 35162776). Most patients use these medications for different purposes rather than choosing one over the other.
+
+### How do CGRP antibodies actually prevent migraines?
+
+CGRP antibodies work by targeting calcitonin gene-related peptide (CGRP), a signaling molecule that becomes elevated during migraine attacks and contributes to the activation of the trigeminovascular system—the network of nerves and blood vessels surrounding the brain involved in migraine pathophysiology (PMID 34635045). These monoclonal antibodies either block CGRP from binding to its receptor (like erenumab) or bind directly to CGRP itself (like eptinezumab, fremanezumab, and galcanezumab), preventing it from triggering migraine-related inflammatory responses (PMID 35162776). This represents the culmination of 40 years of research into migraine mechanisms, offering the first preventive treatments specifically designed based on migraine biology rather than repurposed medications.
+
+### Are triptans still recommended now that CGRP antibodies are available?
+
+Yes, triptans remain the first-line treatment for acute migraine attacks and are not being replaced by CGRP antibodies. These medication classes serve complementary rather than competing roles: triptans address active attacks while CGRP antibodies reduce attack frequency. Evidence from 2024 confirms that triptans like sumatriptan continue to provide superior pain relief for stopping migraine attacks, including particularly severe menstrual migraines affecting about 25% of women with migraine (PMID 39227797). Many patients benefit from using both types of medications—CGRP antibodies to reduce how often attacks occur, and triptans to treat breakthrough attacks that do happen. The choice depends on individual patient characteristics, attack frequency, and treatment goals.
+
+### Which medication works better for menstrual migraine specifically?
+
+For acute treatment of menstrual migraine attacks, sumatriptan and similar medications demonstrate strong effectiveness, with odds ratios of 4.62 for 2-hour pain relief and 4.81 for 24-hour relief compared to placebo (PMID 39227797). For prevention of menstrual migraine, CGRP antibodies like erenumab and galcanezumab show significantly greater benefits in reducing monthly headache days compared to triptans used preventively (PMID 39227797). Frovatriptan, a longer-acting triptan, has shown effectiveness in preventing headache recurrence during menstrual periods specifically. The optimal approach often involves CGRP antibodies for overall prevention combined with triptans available for acute treatment during menstrual periods when attacks may still occur despite preventive therapy.
+
+### How quickly do CGRP antibodies start working compared to triptans?
+
+Triptans work rapidly for acute attacks, with most patients experiencing pain relief within 2 hours of taking the medication (PMID 39227797), making them suitable for stopping attacks in progress. CGRP antibodies, being preventive medications, work on a different timeline—they are administered monthly or quarterly and typically require several weeks to months to demonstrate their full preventive effect by gradually reducing attack frequency. This fundamental difference reflects their distinct mechanisms: triptans constrict blood vessels and block pain pathways during active attacks, while CGRP antibodies modulate the underlying biology that triggers attacks. Patients beginning CGRP antibody therapy should maintain acute treatments like triptans available during the initial months while preventive effects develop.
+
 ## Studies referenced
 
 - [PMID 39227797](https://pubmed.ncbi.nlm.nih.gov/39227797/) — Meta-analysis of 26 RCTs comparing acute and preventive treatments for menstrual migraine, finding sumatriptan/lasmiditan superior for acute treatment and CGRP antibodies superior for prevention.
@@ -130,3 +152,4 @@ Key gaps remain: we need head-to-head comparative trials, longer-term safety dat
 - [PMID 38564060](https://pubmed.ncbi.nlm.nih.gov/38564060/) — Meta-analysis of phase 3 RCTs examining whether CGRP antibodies help patients transition from medication overuse to normal use, finding significant benefit overall (RR 1.44) and particularly for triptan overuse (RR 1.71).
 
 - [PMID 34635045](https://pubmed.ncbi.nlm.nih.gov/34635045/) — Review of 40 years of CGRP research in migraine pathophysiology and treatment development, summarizing the work of the 2021 Brain Prize winners who established the trigeminovascular theory of migraine.
+

@@ -108,6 +108,28 @@ This synthesis draws on meta-analyses rather than individual RCTs, inheriting an
 
 Exercise is an effective treatment for depression, with benefits comparable to first-line antidepressants and psychotherapy. Both aerobic and resistance exercise work, and adding exercise to standard treatments enhances outcomes, particularly in patients with more severe symptoms. The biological mechanisms are plausible and well-supported—exercise modulates neurotransmitters, reduces inflammation, normalizes stress hormones, and promotes brain plasticity. While questions remain about optimal dose, long-term adherence, and which patients benefit most, the evidence is strong enough to warrant routine consideration in clinical practice. For many patients, exercise isn't just an adjunct—it's a first-line option that deserves the same serious consideration as medication or therapy.
 
+## FAQ: Exercise and Depression Treatment
+
+### Does exercise work as well as antidepressant medication for depression?
+
+Based on limited direct comparisons, exercise appears to perform similarly to antidepressants. Meta-analyses show the difference between exercise and medication is statistically nonsignificant (effect size -0.08, PMID 27253219). When exercise is compared to no treatment, it shows large effects (effect size -1.24), comparable to what antidepressants demonstrate in their own trials. However, head-to-head studies remain rare, so while current evidence suggests equivalence for many patients, more direct comparisons are needed before definitive claims can be made.
+
+### How much exercise is needed to reduce depressive symptoms?
+
+The evidence doesn't yet identify a precise minimum dose, but meta-analyses consistently show moderate-to-large effects across various exercise protocols. Studies have tested resistance training, aerobic exercise, and combination programs with positive results across different durations and intensities. What matters most appears to be adherence—completing a structured program consistently—rather than a specific type or intensity threshold. Both vigorous and moderate-intensity exercise have shown benefits, suggesting flexibility in prescription to match individual preferences and capabilities.
+
+### Can exercise help depression if I'm already taking antidepressants?
+
+Yes. Exercise as add-on therapy provides additional benefit beyond standard treatment alone. A 2021 systematic review of 22 studies found moderate pooled effects when exercise was combined with usual care, which typically included medication or psychotherapy. This suggests exercise complements rather than simply duplicates the mechanisms of antidepressants, potentially addressing different pathways in depression. Combining treatments may be particularly valuable for patients with partial response to medication alone.
+
+### What type of exercise works best for depression—cardio or strength training?
+
+Both aerobic exercise and resistance training show comparable effectiveness. Meta-analyses demonstrate moderate-to-large effects for resistance training, aerobic work, and combination programs alike. This equivalence is clinically valuable because it allows personalization: patients can choose activities they enjoy and will sustain long-term. The consistency of benefits across exercise types suggests that movement itself—whether running, cycling, lifting weights, or mixed routines—drives antidepressant effects, rather than any single modality being uniquely therapeutic.
+
+### Does exercise work for depression in older adults and people with other health conditions?
+
+Evidence confirms exercise benefits extend across diverse populations. Meta-analyses have demonstrated effectiveness in older adults with mild depressive symptoms, stroke survivors with post-stroke depression, and people with dementia. These findings are particularly significant because older adults and those with comorbid medical conditions often face medication contraindications or side effects. Exercise offers a lower-risk intervention option for vulnerable populations, though programs should be adapted to physical capabilities and supervised appropriately for safety.
+
 ## Studies referenced
 
 - [PMID 27253219](https://pubmed.ncbi.nlm.nih.gov/27253219/) — Meta-analysis of 23 RCTs (977 participants) showing moderate-to-large effects of exercise on depression compared to control conditions, with smaller nonsignificant effects when compared to antidepressants or psychotherapy.
@@ -118,3 +140,4 @@ Exercise is an effective treatment for depression, with benefits comparable to f
 - [PMID 42812080](https://pubmed.ncbi.nlm.nih.gov/42812080/) — Network meta-analysis of exercise interventions for post-stroke depression, finding that resistance training was the most effective single modality and that shorter, more frequent sessions yielded the greatest symptom improvement.
 - [PMID 26707338](https://pubmed.ncbi.nlm.nih.gov/26707338/) — Systematic review and meta-analysis of control group responses in 41 exercise RCTs (1122 participants), revealing large placebo-like improvements (effect size -0.92) that exercise interventions must overcome to demonstrate efficacy.
 - [PMID 35797521](https://pubmed.ncbi.nlm.nih.gov/35797521/) — Meta-analysis of 13 antidepressant pharmacotherapy trials in cardiac patients (2207 participants), finding only small effects (effect size 0.17) of antidepressants versus placebo, smaller than typical exercise effects in similar populations.
+

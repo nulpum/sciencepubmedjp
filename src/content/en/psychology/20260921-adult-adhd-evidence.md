@@ -114,6 +114,28 @@ However, major knowledge gaps remain. Long-term medication effects are understud
 
 For adults with ADHD, medication represents the most evidence-based intervention available, though realistic expectations about benefits and monitoring for side effects are essential. The field needs more long-term studies, better understanding of how to personalize treatment selection, and interventions that more effectively address functional outcomes beyond symptom checklists. The 208 evidence-based consensus statements represent important progress in establishing what we know, but they also highlight how much remains to be discovered [PMID 33549739].
 
+## FAQ: Adult ADHD Diagnosis and Treatment
+
+### What is adult ADHD and how common is it?
+
+Adult ADHD (attention-deficit/hyperactivity disorder) is a neurobiological condition characterized by persistent inattention, hyperactivity, impulsivity, and difficulties with social and occupational functioning that continues from childhood or is diagnosed in adulthood. Research shows that approximately 2.5% of adults worldwide meet diagnostic criteria for ADHD (PMID 30478444). Contrary to outdated beliefs that ADHD is exclusively a childhood disorder, evidence demonstrates it persists into adulthood in a substantial portion of cases, affecting millions of people globally.
+
+### How effective are stimulant medications for treating adult ADHD?
+
+Stimulant medications like methylphenidate and amphetamines are among the most effective treatments for adult ADHD based on comprehensive evidence. A network meta-analysis of 113 randomized controlled trials involving nearly 15,000 participants found that stimulants reduced core ADHD symptoms with standardized mean differences of approximately -0.39 on self-reported scales and -0.61 on clinician-reported scales compared to placebo—representing moderate to large clinical effects (PMID 39701638). Importantly, stimulants showed acceptability similar to placebo, meaning patients were no more likely to discontinue treatment due to side effects, making them both effective and well-tolerated for most adults.
+
+### What non-stimulant medication options exist for adult ADHD?
+
+Atomoxetine is the leading non-stimulant medication for adult ADHD, working on norepinephrine systems rather than dopamine pathways like stimulants. The same comprehensive meta-analysis showed atomoxetine produces similar symptom reduction to stimulants, with standardized mean differences of -0.38 on self-reports and -0.51 on clinician reports (PMID 39701638). However, atomoxetine has a notable drawback: significantly lower acceptability, with patients 1.43 times more likely to discontinue treatment compared to placebo, presumably due to side effects. Guanfacine is another non-stimulant option, but shows even worse tolerability with 3.70 times higher discontinuation rates.
+
+### Do ADHD medications actually improve quality of life or just reduce symptoms?
+
+This is a critical gap in the evidence. While medications effectively reduce core ADHD symptoms like inattention and hyperactivity, their impact on overall quality of life shows mixed and limited results. The evidence base for quality-of-life improvements remains insufficient, meaning we cannot confidently say whether symptom reduction translates to meaningful improvements in patients' day-to-day functioning, relationships, or life satisfaction. This represents an important area where more research is needed, as reducing symptoms on a rating scale doesn't automatically guarantee patients feel their lives have improved in practical, meaningful ways.
+
+### How strong is the scientific evidence supporting adult ADHD as a real condition?
+
+The scientific evidence for adult ADHD as a legitimate neurobiological condition is robust and internationally recognized. An international consensus statement involving 80 authors from 27 countries identified 208 evidence-based conclusions about ADHD, all supported by large studies or meta-analyses (PMID 33549739). This consensus specifically aims to challenge stigma and misconceptions by grounding understanding in rigorous data. Additionally, genome-wide association studies have begun identifying specific genetic risk factors, further establishing the biological basis of the condition. The evidence clearly demonstrates that adult ADHD is a real, measurable condition affecting millions worldwide, not a manufactured diagnosis or excuse for poor behavior.
+
 ## Studies referenced
 
 - [PMID 33549739](https://pubmed.ncbi.nlm.nih.gov/33549739/) — International consensus statement synthesizing 208 evidence-based conclusions about ADHD from large studies and meta-analyses across 27 countries.
@@ -131,3 +153,4 @@ For adults with ADHD, medication represents the most evidence-based intervention
 - [PMID 39661381](https://pubmed.ncbi.nlm.nih.gov/39661381/) — Meta-analysis of 38 neurofeedback RCTs finding no significant benefit on probably-blinded ADHD symptom measures and minimal neuropsychological improvements.
 
 - [PMID 26315982](https://pubmed.ncbi.nlm.nih.gov/26315982/) — Meta-analysis of 42 studies with 728,136 individuals showing ADHD significantly associated with obesity in both children and adults, with ADHD medications not increasing obesity risk.
+

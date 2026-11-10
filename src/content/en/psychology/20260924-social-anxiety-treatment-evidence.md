@@ -138,6 +138,28 @@ The choice between medication and psychotherapy should incorporate patient prefe
 
 What remains clear is that effective treatments exist for social anxiety disorder. The evidence base, while imperfect, supports multiple pathways to symptom reduction and improved functioning. The question is less about whether treatment works and more about matching individuals to the treatment approach most likely to benefit them while minimizing burden and maximizing the durability of gains.
 
+## FAQ: Social Anxiety Treatment Options
+
+### What is the difference between SSRIs and SNRIs for treating social anxiety?
+
+Both SSRIs (selective serotonin reuptake inhibitors) and SNRIs (serotonin-norepinephrine reuptake inhibitors) effectively treat social anxiety disorder, with research showing comparable benefits. SSRIs increased response rates by 62% compared to placebo and reduced social anxiety severity scores by an average of 9.65 points [PMID 35848723]. SNRIs showed a similar 57% increase in response rates and an even larger 11.72-point reduction in severity scores [PMID 35848723]. The main difference is that SNRIs affect both serotonin and norepinephrine systems, while SSRIs primarily target serotonin, though for most patients this distinction doesn't translate into meaningfully different outcomes.
+
+### How effective is cognitive behavioral therapy compared to medication for social anxiety?
+
+Cognitive behavioral therapy (CBT) demonstrates effectiveness comparable to medication for social anxiety disorder. While SSRIs and SNRIs show effect sizes around 2.09-2.25 in pre-post treatment comparisons [PMID 25932596], both approaches increase treatment response rates significantly over placebo. The key difference lies in advantages rather than overall effectiveness: medications work more quickly and don't require weekly appointments, while therapy may offer more durable benefits and teaches specific skills patients can apply independently. Research suggests each approach offers distinct benefits suited to different patient needs and preferences.
+
+### Why aren't benzodiazepines recommended as first-line treatment despite being effective?
+
+Benzodiazepines demonstrate strong effectiveness for social anxiety, with effect sizes of 2.15 in research studies [PMID 25932596], placing them among the most consistently effective treatments tested [PMID 11386495]. However, they're not typically recommended as first-line treatment due to significant safety concerns rather than lack of efficacy. The primary issues are potential for physical dependence with regular use and withdrawal symptoms when stopping, which can include rebound anxiety. These risks make benzodiazepines less suitable for long-term management of a chronic condition like social anxiety disorder, even though they effectively reduce symptoms.
+
+### How long does it take for social anxiety treatments to start working?
+
+The timeline for improvement varies significantly between treatment types. Medications like SSRIs and SNRIs typically require 4-6 weeks of consistent use before patients notice meaningful symptom reduction, with full benefits often emerging over 8-12 weeks. Benzodiazepines work much more quickly—often within hours—but carry dependency risks that limit their long-term use. Cognitive behavioral therapy follows a different trajectory, with patients typically attending weekly sessions over 12-16 weeks and experiencing gradual improvement as they learn and practice specific techniques. Some patients notice early benefits from therapy within the first few sessions, while the full impact accumulates over the complete treatment course.
+
+### Can you stop treatment once social anxiety symptoms improve?
+
+The answer depends on the treatment type and individual circumstances. For medications, social anxiety disorder is often a chronic condition, and discontinuing SSRIs or SNRIs frequently leads to symptom return. Research from multiple systematic reviews [PMID 35848723, PMID 25932596] indicates that medication benefits typically persist only while taking the medication. In contrast, cognitive behavioral therapy may offer more enduring benefits since patients learn specific skills and coping strategies they can continue applying independently. However, individual responses vary considerably—some people maintain improvements after stopping treatment while others benefit from ongoing or intermittent intervention. Treatment decisions should involve discussion with healthcare providers about personal goals, symptom patterns, and preferences.
+
 ## Studies referenced
 
 - [PMID 25932596](https://pubmed.ncbi.nlm.nih.gov/25932596/) — Meta-analysis of 234 RCTs (37,333 patients) comparing pharmacological, psychological, and combined treatments across three anxiety disorders; found medications showed larger pre-post effect sizes than psychotherapies, with individual CBT outperforming other psychological approaches.
@@ -155,3 +177,4 @@ What remains clear is that effective treatments exist for social anxiety disorde
 - [PMID 22665997](https://pubmed.ncbi.nlm.nih.gov/22665997/) — Systematic review and meta-analysis proposing treatment recommendations for generalized social phobia; suggested optimal regimen includes combination of medication (SSRIs or SNRIs as first-line) and psychotherapy, with CBT showing more enduring effects than pharmacotherapy.
 
 - [PMID 11386495](https://pubmed.ncbi.nlm.nih.gov/11386495/) — Meta-analysis of 108 treatment-outcome trials comparing psychological and pharmacological treatments; found benzodiazepines and SSRIs most consistently effective with similar dropout rates, though pharmacotherapy follow-up data insufficient to assess durability of gains.
+

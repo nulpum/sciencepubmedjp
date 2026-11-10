@@ -146,6 +146,28 @@ For intervention, modest evidence supports atypical antipsychotic medications fo
 
 The path forward requires earlier identification, comprehensive assessment of co-occurring conditions, individualized treatment planning that addresses both core features and comorbidities, and urgent attention to the evidence gap in adult autism. While substantial progress has occurred in understanding autism epidemiology and phenomenology, major questions about optimal intervention remain only partially answered.
 
+## FAQ: Autism Diagnosis, Prevalence, and Treatment
+
+### What percentage of people worldwide have autism spectrum disorder?
+
+According to a comprehensive 2022 systematic review analyzing over 30 million participants across five continents (PMID 35804408), the global prevalence of autism spectrum disorder is approximately 0.6%. However, this figure varies significantly by region: Asia shows 0.4% prevalence, Europe 0.5%, the Americas 1.0%, Africa 1.0%, and Australia the highest at 1.7%. These geographic differences likely reflect both genuine variation in autism rates and disparities in diagnostic infrastructure, clinical awareness, and screening practices across different countries and healthcare systems.
+
+### At what age is autism typically diagnosed?
+
+A 2021 meta-analysis covering 56 studies from 40 countries (PMID 33213190) found that the current mean age at autism diagnosis is approximately 60 months—just over five years old. When analyzing only studies of children aged 10 and under, the mean diagnosis age dropped to 43 months (about 3.6 years). While this represents modest progress compared to earlier decades, it still falls considerably short of the developmental screening goal of diagnosing autism by age two, which is when early intervention can be most effective.
+
+### Why does early diagnosis of autism matter for treatment outcomes?
+
+Early diagnosis enables early intervention, which research consistently shows can dramatically improve developmental outcomes for children with autism. The critical window for brain plasticity—when neural pathways are most adaptable—occurs in the first few years of life. Behavioral interventions started during this period can significantly enhance communication skills, social interaction, and adaptive behaviors. Despite current guidelines recommending diagnosis by age two, the global average diagnosis age remains around five years, meaning many children miss the optimal intervention window during their most formative developmental period.
+
+### What other conditions commonly occur alongside autism?
+
+Meta-analytic evidence from 96 studies (PMID 31447415) reveals remarkably high rates of co-occurring conditions in autism populations. Attention-deficit hyperactivity disorder (ADHD) affects approximately 28% of individuals with autism, anxiety disorders 20%, sleep-wake disorders 13%, disruptive and impulse-control disorders 12%, and depressive disorders 11%. Additional comorbidities include obsessive-compulsive disorder (9%), bipolar disorders (5%), and schizophrenia spectrum disorders (4%). These rates substantially exceed what's observed in the general population, highlighting the complex clinical picture many individuals with autism experience and the importance of comprehensive assessment beyond autism symptoms alone.
+
+### How do autism prevalence rates differ between boys and girls?
+
+Research consistently demonstrates that autism is diagnosed more frequently in males than females, though the exact ratio varies by study methodology and population. The geographic variation in overall prevalence (ranging from 0.4% to 1.7% across different continents) partly reflects diagnostic practices that may overlook autism in girls, who often present with different symptom profiles than boys. Girls with autism may exhibit better social camouflaging, less obvious repetitive behaviors, and different special interest patterns, potentially leading to underdiagnosis or later diagnosis. This sex difference in diagnosis rates represents an important area where diagnostic criteria and clinical awareness continue to evolve.
+
 ## Studies referenced
 
 - [PMID 38401510](https://pubmed.ncbi.nlm.nih.gov/38401510/) — Meta-analysis of 55 studies examining emotion regulation and dysregulation in children/adolescents with autism, finding significant challenges and evidence that non-pharmacological interventions can improve emotion regulation skills.
@@ -163,3 +185,4 @@ The path forward requires earlier identification, comprehensive assessment of co
 - [PMID 31447415](https://pubmed.ncbi.nlm.nih.gov/31447415/) — Systematic review of 96 studies examining mental health comorbidities in autism, finding elevated rates of ADHD (28%), anxiety disorders (20%), depression (11%), and other psychiatric conditions compared to general population.
 
 - [PMID 40396498](https://pubmed.ncbi.nlm.nih.gov/40396498/) — Cochrane review of 17 randomized controlled trials examining atypical antipsychotic medications in autism, finding risperidone and aripiprazole reduce irritability modestly in children but with concerning side effects including weight gain and movement problems.
+

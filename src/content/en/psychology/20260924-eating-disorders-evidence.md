@@ -130,6 +130,28 @@ This synthesis relies on published meta-analyses, which aggregate randomized con
 
 Finally, none of the included reviews addressed disparities in access to care, cost-effectiveness, or patient preferences—critical factors for implementing evidence in practice.
 
+## FAQ: Eating Disorders Treatment Evidence
+
+### What is the most effective treatment for anorexia nervosa in teenagers?
+
+Family-based therapy (FBT) shows the strongest evidence for treating adolescent anorexia nervosa, according to multiple meta-analyses [PMID 36084848]. In this approach, parents take an active role in restoring their child's weight and interrupting eating disorder behaviors, rather than the therapist working solely with the patient. FBT consistently outperformed other active treatments in adolescents with anorexia and has also demonstrated efficacy for bulimia nervosa in younger patients.
+
+### How effective is cognitive-behavioral therapy for eating disorders in adults?
+
+Cognitive-behavioral therapy adapted specifically for eating disorders (CBT-ED) demonstrates the largest effect sizes for adult bulimia nervosa compared to active control treatments [PMID 36084848]. CBT-ED targets the distorted thoughts and rigid rules about food, weight, and body shape that maintain binge-purge cycles. The evidence base extends beyond bulimia—CBT-ED also shows efficacy for binge eating disorder and other specified feeding or eating disorders (OSFED), with robust replication across multiple studies [PMID 38214616].
+
+### Do medications help treat anorexia nervosa?
+
+Medications play only a modest, supportive role in anorexia nervosa treatment. The atypical antipsychotic olanzapine shows small but measurable benefits in increasing body mass index (BMI) compared to placebo (effect size = 0.283), while the antidepressant fluoxetine does not significantly improve weight [PMID 37393954]. Interestingly, pharmacological treatment in anorexia was associated with lower recovery rates in one large review, possibly because medications are often prescribed for more severe or treatment-resistant cases rather than causing worse outcomes [PMID 38214616].
+
+### Why are eating disorder rates rising after COVID-19?
+
+Eating disorder rates have risen sharply following the COVID-19 pandemic [PMID 42083839], though the exact mechanisms are still being studied. Potential contributing factors include increased social isolation, disruption of normal eating routines, reduced access to treatment and support services, heightened anxiety and depression during lockdowns, and increased social media exposure. These disorders are serious psychiatric illnesses—not lifestyle choices or temporary phases—with medical, psychological, and social consequences that require professional treatment.
+
+### How long does it take to recover from an eating disorder?
+
+Recovery timelines vary considerably, but evidence suggests patience is essential. One meta-analysis found that nearly half of patients achieved recovery at four or more years of follow-up, regardless of their specific eating disorder diagnosis. This highlights that eating disorders are chronic conditions for many individuals, and initial treatment response does not predict final outcome. Recovery rates improve substantially with longer follow-up periods, emphasizing the importance of sustained treatment and support rather than expecting rapid resolution within weeks or months.
+
 ## Studies referenced
 
 - [PMID 36084848](https://pubmed.ncbi.nlm.nih.gov/36084848/) — Umbrella review of meta-analyses on ED treatment; found family-based therapy effective in adolescent AN/BN, CBT-ED best for adult BN, medications modest but helpful in BED.
@@ -140,3 +162,4 @@ Finally, none of the included reviews addressed disparities in access to care, c
 - [PMID 27859581](https://pubmed.ncbi.nlm.nih.gov/27859581/) — Meta-analysis showing ADHD increases ED risk ~4-fold and vice versa, with especially high overlap in binge-eating presentations.
 - [PMID 35041154](https://pubmed.ncbi.nlm.nih.gov/35041154/) — Systematic review disentangling food addiction from BED; food addiction most prevalent in BED and BN but also present in obesity and general population.
 - [PMID 42083839](https://pubmed.ncbi.nlm.nih.gov/42083839/) — French-language review on ED diagnosis and treatment; emphasizes rising rates post-COVID-19 and importance of early, multidisciplinary care.
+

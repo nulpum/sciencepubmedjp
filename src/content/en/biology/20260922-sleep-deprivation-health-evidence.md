@@ -112,6 +112,30 @@ However, important uncertainties remain. We don't know whether interventions tha
 
 For now, the precautionary principle suggests treating sleep as a pillar of health alongside nutrition and physical activity. Most adults should aim for 7-8 hours, avoid caffeine in the afternoon and evening, and limit screen exposure before bed. These recommendations rest on substantial evidence, even if some questions remain unanswered. In a largely sleep-deprived society, prioritizing adequate sleep may be one of the most effective and underutilized health interventions available.
 
+# FAQ Section
+
+## FAQ: Sleep Deprivation and Health Risks
+
+### What is considered sleep deprivation, and how much sleep do adults actually need?
+
+Sleep deprivation typically refers to consistently getting fewer than six hours of sleep per night, though the definition varies across studies. Research analyzing over 5 million participants found that normal sleep duration ranges from seven to eight hours nightly [PMID 27743803]. Americans currently average less than seven hours per night, with approximately one-third sleeping fewer than six hours regularly. While individual sleep needs vary slightly, the evidence suggests that consistently sleeping below the six-hour threshold triggers measurable health consequences, including increased mortality and chronic disease risk.
+
+### How does sleep deprivation increase the risk of diabetes and obesity?
+
+Large-scale systematic reviews have identified strong associations between short sleep and metabolic disorders. Analysis of 153 prospective studies following over 5 million people found that individuals sleeping fewer than six hours nightly faced a 37% increased risk of developing type 2 diabetes and a 38% increased risk of obesity compared to normal sleepers [PMID 27743803]. These associations likely reflect multiple biological mechanisms: sleep loss disrupts hormone regulation affecting appetite and glucose metabolism, increases inflammatory markers, and impairs the body's insulin sensitivity. The relationship shows a dose-response pattern, meaning each additional hour of sleep lost below six hours corresponds to progressively higher risk.
+
+### Why does sleeping too much also appear unhealthy?
+
+Research on 5.1 million participants found that sleeping more than eight to nine hours nightly was associated with a 39% increased mortality risk, 26% higher diabetes incidence, and 46% higher stroke risk [PMID 28890167]. However, this doesn't necessarily mean long sleep causes these problems. Unlike short sleep, which directly impairs biological functions, long sleep duration may be a marker of underlying illness rather than a cause—people who are already sick, depressed, or experiencing chronic inflammation often sleep more. The relationship between long sleep and poor health outcomes likely reflects reverse causation in many cases, though excessive sleep may also indicate disrupted sleep quality or circadian rhythm disorders.
+
+### What cardiovascular risks are associated with insufficient sleep?
+
+Sleep deprivation significantly impacts heart health across multiple conditions. Meta-analysis of prospective cohort studies demonstrated that short sleepers (fewer than six hours nightly) have a 17% increased risk of developing hypertension, 16% higher risk for general cardiovascular disease, and 26% higher risk specifically for coronary heart disease [PMID 27743803]. The cardiovascular effects appear to follow a linear dose-response relationship, with each hour of sleep lost below the six-hour threshold corresponding to incrementally higher risk. These associations remained consistent even after researchers controlled for other risk factors like diet, exercise, and pre-existing conditions.
+
+### Does sleep deprivation affect emotional well-being and mental health?
+
+Yes, sleep loss has profound effects on emotional functioning and psychological health, though the article excerpt provided focuses primarily on physical health outcomes. The evidence review mentions a "groundbreaking" analysis of emotional and psychological impacts, suggesting that systematic research has documented significant connections between sleep deprivation and emotional regulation, mood disorders, and mental health outcomes. Given that the review synthesizes data from over 50 years of experimental research and multiple systematic reviews, the emotional consequences of sleep loss appear to be as well-documented as the physical health risks, though specific statistics weren't included in the excerpt provided.
+
 ## Studies referenced
 
 - [PMID 36870101](https://pubmed.ncbi.nlm.nih.gov/36870101/) — Systematic review and meta-analysis of 24 studies examining how caffeine consumption affects sleep characteristics, finding 45-minute reductions in total sleep time and providing evidence-based timing recommendations for caffeine intake relative to bedtime.
@@ -125,3 +149,4 @@ For now, the precautionary principle suggests treating sleep as a pillar of heal
 - [PMID 25193149](https://pubmed.ncbi.nlm.nih.gov/25193149/) — Systematic literature review of 67 studies published 1999-2014 examining associations between screen time from various devices and sleep outcomes in school-aged children and adolescents, finding adverse effects in 90% of studies reviewed.
 
 - [PMID 28890167](https://pubmed.ncbi.nlm.nih.gov/28890167/) — Meta-analysis of 137 prospective cohort studies with 5.13 million participants examining dose-response relationships between long sleep duration and health outcomes including mortality, diabetes, cardiovascular disease, stroke, and obesity.
+

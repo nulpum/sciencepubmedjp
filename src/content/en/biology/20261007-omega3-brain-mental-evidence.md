@@ -88,6 +88,28 @@ Finally, most trials examined omega-3s as add-on treatments to standard care, ma
 
 Omega-3 fatty acid supplementation, particularly EPA-rich formulations at 1-2 grams daily, shows modest but meaningful benefits for adults with depression when used alongside standard treatments. The evidence is strongest for postpartum depression and for EPA-dominant supplements. Effects during pregnancy appear minimal, and pediatric evidence remains insufficient for firm recommendations. While omega-3s aren't a replacement for established depression treatments, they represent a generally safe, evidence-supported adjunctive option for many adults with depression. The key is getting the formulation and dose right: EPA-rich (≥60% EPA), 1-2 grams daily, used as an add-on to—not a substitute for—standard care. For specific populations like children or pregnant women, current evidence doesn't support routine supplementation for depression treatment, though maintaining adequate dietary omega-3 intake remains important for overall health. Anyone considering omega-3 supplementation for depression should discuss it with their healthcare provider, especially if taking other medications or managing other health conditions.
 
+## FAQ: Omega-3 Supplements and Depression
+
+### What type of omega-3 is most effective for depression?
+
+EPA-rich formulations show the strongest evidence for depression relief. Studies found that omega-3 supplements containing 60% or more EPA (relative to total EPA plus DHA) produced meaningful benefits, while DHA-only supplements showed no significant effects [PMID 31383846]. Pure EPA and EPA-dominant formulations demonstrated standardized mean differences of -0.50 to -1.03 in depression symptom reduction, suggesting EPA is the active component for mood support rather than DHA.
+
+### How much EPA should I take for depression symptoms?
+
+Research indicates an optimal "sweet spot" of 1-2 grams of EPA daily. Meta-analyses found the strongest antidepressant effects at EPA doses between 1 and 2 grams per day (SMD of -0.43), while doses at or above 2 grams paradoxically showed weaker effects (SMD of -0.20) [PMID 37028202]. EPA-rich formulations at 1 gram per day or less also demonstrated significant benefits (SMD of -0.50 for pure EPA) [PMID 31383846]. This suggests more is not necessarily better, and moderate doses appear most effective.
+
+### Can omega-3 supplements help with postpartum depression?
+
+The evidence for postpartum depression specifically is mixed and less convincing than for general depression. While a meta-analysis of perinatal depression studies showed a small overall benefit (SMD of -0.236), the effects varied considerably across populations [PMID 37028202]. Omega-3s appear more effective as a preventive measure during pregnancy rather than as treatment after depression develops. Women should discuss omega-3 supplementation with their healthcare provider as part of a comprehensive perinatal mental health strategy rather than relying on it as a standalone postpartum treatment.
+
+### Why do omega-3 supplements help some people with depression but not others?
+
+The effectiveness of omega-3s depends on several factors including EPA-to-DHA ratio, dosage, baseline omega-3 status, and depression severity. EPA-rich formulations work better than DHA-dominant ones, and certain populations respond more favorably [PMID 31383846]. People with lower baseline omega-3 levels or those with inflammatory depression may benefit most, while those already consuming adequate omega-3s from diet may see little additional benefit. Individual variation in metabolism, genetics, and the underlying causes of depression also influence response, explaining why omega-3s help some individuals but not all.
+
+### Are omega-3 supplements safe to use alongside antidepressant medications?
+
+Current evidence suggests omega-3 supplements can be safely combined with conventional antidepressants, though medical supervision is advisable. Meta-analyses examining omega-3s as adjunctive (add-on) therapy found they may enhance the effects of standard antidepressant medications without significant safety concerns [PMID 31383846, PMID 37028202]. However, high-dose omega-3s can have blood-thinning effects, so individuals taking anticoagulant medications should consult their healthcare provider before supplementing. Omega-3s should complement, not replace, established depression treatments unless specifically recommended by a qualified healthcare professional.
+
 ## Studies referenced
 
 - [PMID 31383846](https://pubmed.ncbi.nlm.nih.gov/31383846/) — Meta-analysis of 26 trials (2,160 participants) showing overall benefit of omega-3 PUFAs for depression, with EPA-rich formulations at ≤1g/day demonstrating strongest effects while DHA-dominant formulations showed no benefit.
@@ -101,3 +123,4 @@ Omega-3 fatty acid supplementation, particularly EPA-rich formulations at 1-2 gr
 - [PMID 35311615](https://pubmed.ncbi.nlm.nih.gov/35311615/) — International clinical practice guidelines from WFSBP and CANMAT taskforce giving omega-3 fatty acids highest recommendation level as adjunctive treatment for unipolar depression in adults, while not recommending monotherapy.
 
 - [PMID 39564892](https://pubmed.ncbi.nlm.nih.gov/39564892/) — Cochrane systematic review of 5 trials (228 participants) examining omega-3 supplementation for depression in children and adolescents, finding very uncertain evidence of benefit with no serious adverse effects but insufficient data for firm recommendations.
+

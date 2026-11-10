@@ -141,6 +141,28 @@ Yet substantial barriers prevent many women from receiving help. Cultural expect
 
 The research makes clear that postpartum depression is neither inevitable nor untreatable. With appropriate screening, targeted prevention efforts for high-risk women, and evidence-based interventions delivered in formats women find acceptable, we could substantially reduce the burden of this common and consequential condition.
 
+## FAQ: Postpartum Depression Risk and Treatment
+
+### What is the difference between postpartum depression and the baby blues?
+
+The baby blues affect up to 80% of new mothers and typically occur within the first week or two after delivery, involving mild mood swings, tearfulness, and anxiety that resolve on their own. Postpartum depression (PPD) is a more serious clinical condition affecting about 14% of mothers, characterized by persistent low mood, loss of interest in activities, sleep disturbances, and sometimes intrusive thoughts about self-harm or harming the baby. PPD typically emerges within the first three months postpartum but can develop any time during the first year and requires professional treatment.
+
+### How common is postpartum depression worldwide?
+
+A 2022 meta-analysis of over 133,000 women found that approximately 14% of new mothers globally experience postpartum depression (PMID 34750904). However, this rate varies dramatically by geography and population, ranging from as low as 5% in some regions to over 26% in others. Developing countries, particularly China, show substantially higher prevalence rates. These variations reflect differences in cultural factors, healthcare access, screening practices, and exposure to risk factors.
+
+### Why does having a history of depression increase postpartum depression risk so much?
+
+Previous depression is one of the strongest predictors of postpartum depression. Women with a history of depression at any point in their lives have triple the odds of developing PPD compared to those without such history (OR 3.09, PMID 34750904). Even more striking, women who experienced depression during a previous pregnancy face nearly five times the risk in subsequent pregnancies (OR 4.82). This pattern suggests both biological vulnerability and psychological factors that persist across pregnancies, making prior depression one of the most important risk factors clinicians should screen for.
+
+### Does gestational diabetes affect postpartum depression risk?
+
+Yes, significantly. Women with gestational diabetes mellitus (GDM) face 2.7 times higher odds of developing postpartum depression compared to women without GDM (PMID 34750904). This connection likely involves multiple pathways: the physiological stress of managing blood sugar during pregnancy, concerns about baby's health, lifestyle restrictions, and potential hormonal mechanisms linking glucose metabolism and mood regulation. Women with gestational diabetes should be considered at elevated risk and monitored more closely for depressive symptoms after delivery.
+
+### Why does postpartum depression matter beyond the mother's suffering?
+
+While maternal suffering alone justifies intervention, postpartum depression has ripple effects throughout the family system. PPD can impair mother-infant bonding during a critical developmental window, potentially affecting the child's emotional and cognitive development long-term. It also negatively impacts breastfeeding outcomes, making successful nursing more difficult. The condition doesn't occur in isolation—it affects the entire family unit, including partners and older siblings, making early detection and treatment crucial not just for mothers but for optimal child development and family wellbeing.
+
 ## Studies referenced
 
 - [PMID 34750904](https://pubmed.ncbi.nlm.nih.gov/34750904/) — Meta-analysis of 27 studies (133,313 women) finding 14% global PPD prevalence and identifying gestational diabetes, depression during pregnancy, prior depression history, and family psychiatric history as key risk factors.
@@ -158,3 +180,4 @@ The research makes clear that postpartum depression is neither inevitable nor un
 - [PMID 39963955](https://pubmed.ncbi.nlm.nih.gov/39963955/) — Cochrane review of 10 RCTs (1,573 women) finding low-certainty evidence that psychosocial breastfeeding interventions may prevent PPD in short term and increase breastfeeding duration, though effects on depressive symptoms were inconsistent.
 
 - [PMID 30000411](https://pubmed.ncbi.nlm.nih.gov/30000411/) — Drug review summarizing evidence that metoclopramide, despite increasing prolactin, shows no benefit as galactogogue across multiple meta-analyses and carries concerning side effects including depression risk, particularly problematic for postpartum mothers.
+

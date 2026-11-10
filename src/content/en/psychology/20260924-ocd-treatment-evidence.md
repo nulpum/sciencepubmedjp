@@ -90,6 +90,28 @@ Critically, significant methodological concerns—particularly researcher allegi
 
 For now, patients and clinicians should view ERP-based CBT and SSRIs as evidence-supported first-line options, while maintaining realistic expectations given methodological limitations. Treatment selection should consider patient preferences, treatment availability, comorbidities, and previous treatment responses, with readiness to try alternatives if initial approaches prove insufficient.
 
+## FAQ: OCD Treatment Evidence
+
+### What is the most effective treatment for OCD according to research?
+
+Exposure and response prevention (ERP) therapy shows the strongest evidence for treating OCD, with large effect sizes of 0.74 across 36 randomized trials involving 2,020 patients [PMID 33618297]. However, this intervention performs best when compared against placebo or no treatment. When compared to other active therapies or adequate medication doses, the advantage narrows considerably (effect size 0.32), suggesting multiple evidence-based approaches can effectively treat OCD rather than one clearly superior option.
+
+### How does CBT for OCD compare to antidepressant medication?
+
+Meta-analyses show CBT with exposure and response prevention outperforms antidepressant medication alone with a moderate effect size of 0.55 [PMID 26117062]. However, combining CBT with medication produces only modest additional benefit over CBT plus placebo (effect size 0.25), suggesting the synergistic effects of combination treatment may be smaller than commonly believed. Both approaches remain evidence-based first-line treatments, with the choice often depending on patient preference, availability, and previous treatment response.
+
+### Does online or telehealth therapy work as well as in-person treatment for OCD?
+
+Yes, remotely delivered exposure and response prevention proves as effective as in-person treatment for children and adolescents with OCD. A 2024 network meta-analysis found remote ERP reduced symptoms by 9.4 points on the CY-BOCS scale compared to waitlist, nearly identical to the 10.5-point reduction seen with in-person therapy [PMID 39639456]. This equivalence offers important access advantages for families in underserved areas or those facing logistical barriers to weekly in-person appointments.
+
+### Why do OCD treatment studies show inflated results?
+
+Researcher allegiance bias—where investigators favor treatments they've developed or champion—significantly inflates reported benefits in OCD trials. Studies show researcher bias creates effect size differences of 0.50 to 0.83 [PMID 33618297], accounting for substantial portions of reported treatment superiority. This means the true clinical advantage of any given intervention is likely smaller than published meta-analyses suggest. This bias affects both medication and psychotherapy trials, highlighting the importance of examining who conducted studies when interpreting their findings.
+
+### What percentage of OCD patients actually respond to exposure therapy?
+
+While effect sizes appear large in controlled trials, practical response rates tell a more complex story. The correlation between researcher allegiance and reported outcomes suggests published success rates may overestimate real-world effectiveness. Additionally, when ERP is compared against other active psychological treatments rather than placebo, the effect size drops to nearly zero (g = -0.05) [PMID 33618297], indicating similar response rates across different evidence-based psychotherapies. Individual response varies considerably based on symptom severity, treatment adherence, and whether patients receive adequate treatment duration.
+
 ## Studies referenced
 
 - [PMID 33618297](https://pubmed.ncbi.nlm.nih.gov/33618297/) — Systematic review and meta-analysis of 36 randomized trials of CBT with ERP in OCD, identifying large effect sizes but substantial concerns about researcher allegiance and methodological quality.
@@ -103,3 +125,4 @@ For now, patients and clinicians should view ERP-based CBT and SSRIs as evidence
 - [PMID 26117062](https://pubmed.ncbi.nlm.nih.gov/26117062/) — Meta-analysis of 37 randomized controlled trials of CBT for OCD published 1993–2014, reporting very large effect sizes versus waitlist and placebo, with CBT superior to medications but minimal additional benefit from combination treatment.
 
 - [PMID 28384832](https://pubmed.ncbi.nlm.nih.gov/28384832/) — Clinical review of advances in OCD diagnosis and treatment, synthesizing evidence for cognitive behavioral therapy, SSRIs, and emerging interventions including online-based therapy dissemination and neuromodulatory approaches for treatment-resistant cases.
+

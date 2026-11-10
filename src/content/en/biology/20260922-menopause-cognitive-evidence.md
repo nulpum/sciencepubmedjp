@@ -94,6 +94,28 @@ Current clinical guidance appropriately recommends that hormone therapy decision
 
 The search for interventions to preserve cognitive function during aging continues. Hormone therapy, despite early promise, has not proven to be that intervention for most women. Future research may identify specific subgroups, formulations, or treatment windows that offer benefit, but until such evidence emerges, expectations should remain modest.
 
+## FAQ: Menopause Hormone Therapy and Brain Health
+
+### Does hormone therapy prevent dementia in menopausal women?
+
+No, current evidence shows that menopause hormone therapy (MHT) does not prevent dementia. A comprehensive 2025 meta-analysis of over one million women found no significant association between MHT use and reduced risk of mild cognitive impairment or dementia [PMID 41448220]. Multiple randomized controlled trials also failed to demonstrate cognitive protection after four to five years of treatment [PMID 18254016]. While earlier observational studies from 1998 suggested potential benefits, these findings have not been confirmed by higher-quality evidence from controlled trials.
+
+### Why did early studies suggest hormone therapy protected memory when newer studies show no benefit?
+
+Early observational studies from the 1990s suggested a 29% decreased dementia risk among estrogen users [PMID 9496988], but these studies had methodological limitations. Observational research cannot prove causation—women who chose to use hormones may have been healthier or better educated to begin with. When researchers conducted randomized controlled trials (the gold standard), where women were randomly assigned to receive hormones or placebo, the protective effect disappeared. This discrepancy illustrates why correlation doesn't equal causation and highlights the importance of rigorous trial design in medical research.
+
+### Can hormone therapy actually harm cognitive function?
+
+Evidence suggests that hormone therapy may adversely affect cognition under certain circumstances. A 2008 Cochrane review of 24 trials found that cognitive decline appeared after one year of estrogen-only therapy and after three to four years of combined estrogen-plus-progestagen therapy [PMID 18254016]. The risks appear particularly relevant for women starting MHT later in life or continuing treatment long-term. However, these effects were observed in studies, not definitively proven as universal outcomes, and individual responses may vary based on timing and formulation.
+
+### What is the "critical window" or "timing hypothesis" for hormone therapy and the brain?
+
+The timing hypothesis suggests that hormone therapy might help cognition only if started during a narrow window around menopause, but not if initiated years later. Some researchers theorize that estrogen protects healthy neurons but may harm already-damaged aging brain cells. A 2002 Cochrane review found that small studies in younger surgically menopausal women (average age 47) showed some cognitive improvements with high-dose estradiol [PMID 12137675], while trials in older women showed no benefit or potential harm. However, even this timing theory remains unproven by large, rigorous trials specifically designed to test it.
+
+### Should I take hormone therapy specifically to protect my memory?
+
+No, hormone therapy should not be used solely for cognitive protection or dementia prevention. The accumulated evidence from systematic reviews and meta-analyses shows no cognitive benefit and potential risks [PMID 41448220, PMID 18254016]. If you're considering MHT for other menopausal symptoms like hot flashes or night sweats, discuss the full range of risks and benefits with your healthcare provider. Decisions should be individualized based on symptom severity, personal health history, and preference—but brain protection should not be an expected benefit of treatment.
+
 ## Studies referenced
 
 - [PMID 41448220](https://pubmed.ncbi.nlm.nih.gov/41448220/) — 2025 systematic review and meta-analysis of 10 studies with over 1 million participants finding no significant association between menopause hormone therapy and risk of mild cognitive impairment or dementia, with moderate to very low certainty of evidence.
@@ -111,3 +133,4 @@ The search for interventions to preserve cognitive function during aging continu
 - [PMID 24942013](https://pubmed.ncbi.nlm.nih.gov/24942013/) — 2014 Minerva Endocrinologica review of premature ovarian insufficiency and neurological function, finding increased risk of cognitive dysfunction with premature or surgical menopause, with mixed evidence on benefits of hormone therapy.
 
 - [PMID 20202765](https://pubmed.ncbi.nlm.nih.gov/20202765/) — 2010 Maturitas meta-analysis of 36 randomized trials finding that treatment duration significantly affected cognitive outcomes, with more negative effects in longer studies and positive effects mainly in short-term studies under four months.
+

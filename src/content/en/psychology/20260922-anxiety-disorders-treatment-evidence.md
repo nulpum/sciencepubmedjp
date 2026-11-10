@@ -90,6 +90,28 @@ Publication bias likely affects this literature, as trials showing no difference
 
 Finally, this review examines efficacy—outcomes in research settings with selected patients, trained therapists, and monitored adherence. Effectiveness in real-world clinical practice may differ substantially, with less experienced therapists, more complex patients with multiple comorbidities, and variable treatment fidelity.
 
+# FAQ: CBT vs SSRIs for Treating Anxiety Disorders
+
+### What is the most effective first-line treatment for anxiety disorders?
+
+Both cognitive behavioral therapy (CBT) and selective serotonin reuptake inhibitors (SSRIs) are effective first-line treatments for anxiety disorders, with neither showing clear superiority in head-to-head comparisons for most patients. Meta-analyses involving 7,719 patients found SSRIs doubled remission rates compared to placebo (PMID 28859190), while CBT significantly outperformed wait-list and attention controls across 81 randomized trials (PMID 31738631). The choice between CBT and SSRIs often depends on patient preference, treatment availability, severity of symptoms, and tolerance for potential side effects. For severe anxiety, combination therapy appears strongest, though CBT alone carries fewer adverse effects.
+
+### Can online or remote CBT work as well as in-person therapy for anxiety?
+
+Yes, remote-based CBT delivered via computer or internet platforms has demonstrated effectiveness beyond attention controls and wait-list conditions in meta-analyses of pediatric anxiety treatment (PMID 31738631). This format particularly benefits patients with limited access to specialized therapists due to geography or scheduling constraints. However, the successful remote CBT programs studied typically maintained some level of therapist involvement rather than being purely self-guided. While remote CBT shows promise for expanding treatment access, individual CBT and family-based formats showed effectiveness across the broadest range of comparison conditions in research studies.
+
+### Why do some guidelines recommend CBT while others suggest SSRIs for anxiety?
+
+Treatment guidelines offer conflicting recommendations because research shows both CBT and SSRIs work effectively, but with different trade-offs that guideline authors weigh differently. Some guidelines prioritize CBT's lower adverse effect profile—patients receiving CBT show significantly lower risk of treatment-related adverse events compared to those on SSRIs (PMID 28859190). Others emphasize flexibility and patient choice, noting that access to qualified CBT therapists remains limited in many areas. Recent guidelines increasingly acknowledge this equipoise by allowing clinicians to choose between CBT, SSRIs, or combined treatment as initial approaches based on individual patient factors including severity, preferences, prior treatment history, and resource availability (PMID 35325671).
+
+### How common are side effects from SSRIs when treating anxiety disorders?
+
+SSRIs carry a significantly higher risk of treatment-related adverse events compared to CBT for anxiety disorders. Meta-analysis data shows patients receiving SSRIs experience notably more adverse effects than those in placebo groups (PMID 28859190). However, the specific rates and types of side effects vary by medication and individual patient factors. The evidence review emphasizes this adverse effect differential as a crucial consideration when choosing between treatment modalities—while SSRIs effectively reduce anxiety symptoms and double remission rates versus placebo, the trade-off involves accepting higher risk of medication-related side effects that CBT avoids. This risk-benefit profile becomes particularly important in pediatric populations and patients concerned about medication effects.
+
+### Is combination therapy with both CBT and SSRIs better than either treatment alone?
+
+For severe anxiety cases, combination therapy using both CBT and SSRIs appears to produce the strongest outcomes, though the evidence base has important limitations. Meta-analyses suggest combined treatment may offer advantages over monotherapy, particularly when initial symptom severity is high. However, combination approaches also combine the adverse effect profiles of both treatments—patients receive the therapeutic benefits of both modalities but also face the medication-related side effects that CBT monotherapy avoids. The decision to pursue combination therapy typically depends on severity of impairment, response to initial monotherapy, and whether benefits of potentially enhanced efficacy outweigh the increased complexity and side effect burden of dual treatment.
+
 ## Studies referenced
 
 - [PMID 31738631](https://pubmed.ncbi.nlm.nih.gov/31738631/) — Meta-analysis of 81 trials (5,913 participants) examining CBT modalities for pediatric anxiety disorders across different delivery formats and comparison conditions.
@@ -107,3 +129,4 @@ Finally, this review examines efficacy—outcomes in research settings with sele
 - [PMID 26130211](https://pubmed.ncbi.nlm.nih.gov/26130211/) — Meta-analysis of 20 trials (1,296 participants) comparing CBT and serotonin reuptake inhibitors for pediatric OCD, including treatment moderator analysis.
 
 - [PMID 31589909](https://pubmed.ncbi.nlm.nih.gov/31589909/) — Systematic review and meta-analysis of 9 trials (645 participants) evaluating CBT versus no intervention and versus SSRIs for pediatric OCD with GRADE evidence assessment.
+

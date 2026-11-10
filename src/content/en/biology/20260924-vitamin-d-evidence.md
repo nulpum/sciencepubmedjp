@@ -115,6 +115,28 @@ For the general population in regions with limited winter sunlight, modest suppl
 
 As with any health decision, discussing vitamin D testing and supplementation with a healthcare provider—particularly for those with medical conditions or taking medications—remains advisable.
 
+## FAQ: Vitamin D Supplementation and Health Benefits
+
+### What conditions does vitamin D supplementation actually help prevent?
+
+The strongest evidence supports vitamin D's role in preventing acute respiratory tract infections, with meta-analyses showing a 12% overall reduction in infection risk across all participants (PMID 28202713). For individuals with severe vitamin D deficiency (blood levels below 25 nmol/L), the protective effect increases dramatically to approximately 70%. Vitamin D combined with calcium also reduces hip fracture risk by 13.6% in postmenopausal women (PMID 33237064). However, these benefits appear most pronounced in people with existing deficiencies rather than those with adequate vitamin D levels.
+
+### How much vitamin D should I take, and does the dosing schedule matter?
+
+Research indicates that daily or weekly dosing is significantly more effective than large, infrequent bolus doses. The meta-analysis by Martineau and colleagues found that people taking vitamin D daily or weekly experienced a 19% reduction in respiratory infections, while those receiving monthly or less frequent large doses showed no significant benefit (PMID 28202713). Most studies showing positive effects used doses ranging from 400 to 2000 IU daily, though optimal dosing depends on your baseline vitamin D status, which should ideally be measured through blood testing before supplementation.
+
+### Does vitamin D help with muscle strength and physical function in older adults?
+
+Vitamin D appears to enhance muscle-related outcomes primarily when combined with protein supplementation, not when taken alone. A 2023 meta-analysis found that whey protein plus vitamin D significantly improved lean muscle mass, muscle strength, and physical function in older adults, with effect sizes ranging from 0.993 to 3.038 (PMID 37196876). Interestingly, these benefits were most apparent in individuals with existing vitamin D deficiency. Taking vitamin D alone without adequate protein intake may not produce substantial improvements in muscle function, suggesting that addressing multiple nutritional factors simultaneously yields better results for sarcopenia prevention.
+
+### Can vitamin D supplementation improve sleep quality?
+
+Yes, particularly for people with sleep disorders or vitamin D deficiency. Meta-analyses examining vitamin D's effects on sleep found improvements in Pittsburgh Sleep Quality Index scores, with effect sizes of -1.54 in the general population and -2.53 specifically in people with diagnosed sleep disorders. Vitamin D supplementation also increased total sleep duration and improved overall sleep quality ratings. The mechanism likely involves vitamin D's role in regulating neurotransmitters and circadian rhythm, though the exact pathways remain under investigation. These findings suggest vitamin D deficiency correction may be a useful adjunct intervention for sleep problems.
+
+### Is it better to get vitamin D from fortified foods or supplements?
+
+Evidence suggests fortified dairy products may offer advantages over supplement pills alone. A meta-analysis of bone health outcomes found that fortified dairy products containing both calcium and vitamin D produced stronger improvements in total bone mineral density (SMD 0.784) and lumbar spine density (SMD 0.320) compared to supplements (PMID 33237064). This "food matrix effect" may enhance nutrient absorption and utilization. However, for individuals with lactose intolerance, limited sun exposure, or diagnosed deficiency, high-quality supplements remain an effective option. Combining supplementation with dietary sources and sensible sun exposure typically provides the most comprehensive approach to maintaining adequate vitamin D status.
+
 ## Studies referenced
 
 - [PMID 28202713](https://pubmed.ncbi.nlm.nih.gov/28202713/) — Individual participant data meta-analysis of 25 RCTs (10,933 participants) showing vitamin D3 supplementation reduces acute respiratory infection risk by 12% overall, with stronger protection (70%) in severely deficient individuals taking daily/weekly doses.
@@ -128,3 +150,4 @@ As with any health decision, discussing vitamin D testing and supplementation wi
 - [PMID 22552031](https://pubmed.ncbi.nlm.nih.gov/22552031/) — Systematic review and meta-analysis of head-to-head trials demonstrating vitamin D3 is significantly more effective than vitamin D2 at raising serum 25-hydroxyvitamin D concentrations, particularly when given as bolus doses.
 
 - [PMID 35268051](https://pubmed.ncbi.nlm.nih.gov/35268051/) — Systematic review and meta-analysis of 19 intervention studies showing vitamin D supplementation significantly improves sleep quality (Pittsburgh Sleep Quality Index decrease of 2.33 points), with moderate certainty of evidence.
+

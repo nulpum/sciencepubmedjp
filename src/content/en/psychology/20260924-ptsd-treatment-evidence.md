@@ -154,6 +154,28 @@ Critical evidence gaps remain, particularly regarding long-term outcomes, compar
 
 Despite these limitations, the overall message is encouraging: effective treatments for PTSD exist, they produce substantial benefits for many patients, and the evidence base continues to grow and improve.
 
+## FAQ: PTSD Treatment Evidence and Effectiveness
+
+### What is the most effective therapy for PTSD according to current research?
+
+Multiple evidence-based therapies show strong effectiveness for PTSD, with no single "best" option. A 2023 network meta-analysis (PMID 36628572) comparing 98 trials found that Cognitive Processing Therapy (CPT), Eye Movement Desensitization and Reprocessing (EMDR), and Cognitive Therapy (CT) all produce large symptom reductions, with effect sizes ranging from -1.53 to -0.75. Prolonged Exposure (PE) therapy also demonstrates robust effects across multiple studies. The choice often depends on individual patient factors, trauma type, and treatment availability rather than one approach being universally superior to others.
+
+### How does EMDR compare to traditional cognitive behavioral therapy for trauma?
+
+EMDR and trauma-focused cognitive behavioral therapy (CBT-T) both show strong evidence for PTSD treatment, with slightly different outcome patterns. According to the 2020 systematic review of 114 trials (PMID 32284821), both approaches produce clinically important effects with numbers needed to treat under 4 patients. The 2023 network meta-analysis (PMID 36628572) found that EMDR showed particularly large effects in short-term follow-up (effect size 1.02), while CBT-based approaches like CPT demonstrated sustained long-term benefits (effect size 0.85). Both are considered first-line treatments, with comparable overall effectiveness.
+
+### Why do PTSD treatments focus on exposure to traumatic memories?
+
+Exposure therapy works by helping patients systematically confront trauma-related memories, situations, and feelings they've been avoiding, which is believed to reduce the power these memories hold over time. The 2022 meta-analysis of exposure therapy (PMID 34954460) analyzing 65 trials with 4,929 patients found large effects that remained stable at follow-up, supporting this approach. The theoretical mechanism involves extinction learning—repeatedly facing trauma reminders in safe contexts weakens the fear response. However, not all effective PTSD treatments use direct exposure; therapies like Cognitive Processing Therapy emphasize changing unhelpful trauma-related beliefs rather than prolonged exposure to memories.
+
+### How many therapy sessions does it typically take to see improvement in PTSD symptoms?
+
+Most evidence-based PTSD therapies are designed as time-limited treatments, typically ranging from 8 to 16 sessions delivered weekly. The specific manualized approaches studied in meta-analyses—including Prolonged Exposure, Cognitive Processing Therapy, and EMDR—generally follow these structured protocols. The 2020 review (PMID 32284821) found that these treatments produced numbers needed to treat under 4, meaning clinically significant benefits emerge relatively quickly for many patients. However, individual response varies considerably, and some patients require longer treatment courses or additional interventions, while the evidence on optimal treatment duration remains an area where more research is needed.
+
+### Are medications effective for treating PTSD, and how do they compare to therapy?
+
+The article indicates that medication shows more modest benefits compared to psychological therapies for PTSD. While specific pharmacological effect sizes aren't detailed in the provided excerpt, the emphasis across all major meta-analyses is on psychological interventions—particularly trauma-focused CBT and EMDR—as the primary evidence-based treatments. Medications may play a supportive role, especially for comorbid conditions like depression, but the strongest evidence base supports psychological therapies as first-line treatment. The research consistently shows that approaches directly addressing trauma memories and beliefs produce the largest and most sustained symptom reductions.
+
 ## Studies referenced
 
 - [PMID 34954460](https://pubmed.ncbi.nlm.nih.gov/34954460/) — Meta-analysis of 65 RCTs (N=4,929) examining exposure therapy for PTSD, finding large effects versus waitlist/usual care and stable benefits at follow-up, with larger effects in civilian versus military samples.
@@ -171,3 +193,4 @@ Despite these limitations, the overall message is encouraging: effective treatme
 - [PMID 36628572](https://pubmed.ncbi.nlm.nih.gov/36628572/) — Network meta-analysis of 98 RCTs (N=5,567) directly comparing multiple psychotherapies, ranking CPT highest followed by EMDR and CT, with EMDR showing large short-term effects and CPT demonstrating sustained long-term benefits.
 
 - [PMID 27726123](https://pubmed.ncbi.nlm.nih.gov/27726123/) — Cochrane review of 51 trials (N=6,201) examining psychological therapies for traumatized children and adolescents, finding short-term benefits but noting very low overall evidence quality and lack of long-term effects.
+
