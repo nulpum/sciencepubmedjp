@@ -103,7 +103,7 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         function classify(link) {
           if (link.classList && link.classList.contains('aff-cta__btn--amazon')) return 'cta_button';
           if (link.classList && link.classList.contains('aff-cta__chip--amazon')) return 'chip';
-          if (link.closest('.sticky-mobile-cta')) return 'sticky_mobile';
+          if (link.closest('#sticky-cta')) return 'sticky_mobile';
           if (link.closest('.search-card')) return 'search_result';
           if (link.dataset && link.dataset.affiliate) return link.dataset.affiliate;
           return 'other';
@@ -140,7 +140,7 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
           if (link.closest('.aff-cta__chip')) return 'chip';
           if (link.classList && link.classList.contains('aff-cta__btn')) return 'cta_button';
           if (link.closest('.rakuten-motion') || link.closest('[data-rakuten-widget]')) return 'motion_widget';
-          if (link.closest('.sticky-mobile-cta')) return 'sticky_mobile';
+          if (link.closest('#sticky-cta')) return 'sticky_mobile';
           return 'other';
         }
         document.addEventListener('click', function (ev) {
