@@ -402,10 +402,12 @@ export const prerender = true;
       display: none;
       align-items: center;
       justify-content: center;
+      /* opacity:0 だけ だと hit area 残って 下方 の tap を 吸収 する */
+      pointer-events: none;
     }
     .mobile-toc-fab { right: 20px; background: linear-gradient(180deg, #1a365d 0%, #142a4a 100%); }
     .mobile-scroll-top { right: 82px; background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%); color: #1a365d; font-weight: 900; }
-    .mobile-toc-fab--visible, .mobile-scroll-top--visible { opacity: 1; transform: translateY(0); }
+    .mobile-toc-fab--visible, .mobile-scroll-top--visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
     @media (max-width: 768px) {
       .mobile-toc-fab, .mobile-scroll-top { display: flex; }
     }
