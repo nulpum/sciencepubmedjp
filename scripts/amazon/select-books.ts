@@ -94,7 +94,7 @@ export interface SelectedBook {
 }
 
 function partnerTag(): string {
-  return process.env.AMAZON_PARTNER_TAG || 'sciencepubmed-22';
+  return process.env.AMAZON_PARTNER_TAG || 'sciencepubm06-22';
 }
 
 /**

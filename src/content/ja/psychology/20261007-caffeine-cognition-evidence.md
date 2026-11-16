@@ -11,13 +11,13 @@ generated_at: "2026-10-07T01:49:12.269Z"
 editor_note: "カフェインの認知効果は「朝のコーヒー1杯で集中力アップ」という実感と科学的エビデンスが交差する領域だが、本記事が示すのは\"効く\"という結論よりも「どの認知機能に、どの程度、誰に効くのか」という問いの複雑さである。効果量は小〜中程度にとどまり、習慣的摂取者では耐性、非摂取者では離脱症状の改善が効果と誤認される可能性もある。L-テアニン併用や用量設計の最適化、個人差の生物学的背景など、未解明の要素が多く残されており、「万人に効く認知強化法」として扱うには慎重さが求められる現状を理解する助けとなるだろう。"
 affiliate_links:
   - title: "「カフェイン 認知機能 大規模メタ解析」で Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%83%B3%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD%20%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%83%A1%E3%82%BF%E8%A7%A3%E6%9E%90&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%83%B3%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD%20%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%83%A1%E3%82%BF%E8%A7%A3%E6%9E%90&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
-    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubmed-22&i=stripbooks&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「カフェイン 認知機能 大規模メタ解析」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2582%25AB%25E3%2583%2595%25E3%2582%25A7%25E3%2582%25A4%25E3%2583%25B3%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%2B%25E5%25A4%25A7%25E8%25A6%258F%25E6%25A8%25A1%25E3%2583%25A1%25E3%2582%25BF%25E8%25A7%25A3%25E6%259E%2590%26f%3D1"
   - title: "デスクライト (目に優しい LED)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubmed-22&i=office-products&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20LED%20%E7%9B%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84&tag=sciencepubm06-22&i=office-products&s=review-rank"
 tags:
   - "memory"
 ---

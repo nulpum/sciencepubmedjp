@@ -24,7 +24,7 @@ interface PaApiConfig {
 function getConfig(): PaApiConfig {
   const accessKey = process.env.AMAZON_ACCESS_KEY;
   const secretKey = process.env.AMAZON_SECRET_KEY;
-  const partnerTag = process.env.AMAZON_PARTNER_TAG || 'sciencepubmed-22';
+  const partnerTag = process.env.AMAZON_PARTNER_TAG || 'sciencepubm06-22';
   if (!accessKey || !secretKey) {
     throw new Error('AMAZON_ACCESS_KEY / AMAZON_SECRET_KEY が未設定です (.env を確認)');
   }

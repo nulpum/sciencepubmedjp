@@ -13,11 +13,11 @@ tags:
   - "probiotics"
 affiliate_links:
   - title: "Search Amazon JP (English books) for \"probiotics diarrhea what\""
-    url: "https://www.amazon.co.jp/s?k=probiotics%20diarrhea%20what&tag=sciencepubmed-22&i=english-books&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=probiotics%20diarrhea%20what&tag=sciencepubm06-22&i=english-books&s=review-rank"
   - title: "Browse biology books on Amazon JP (English books)"
-    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubmed-22&i=english-books&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubm06-22&i=english-books&s=review-rank"
   - title: "Noise-cancelling earbuds (focus reading)"
-    url: "https://www.amazon.co.jp/s?k=noise%20cancelling%20earbuds&tag=sciencepubmed-22&i=electronics&s=review-rank"
+    url: "https://www.amazon.co.jp/s?k=noise%20cancelling%20earbuds&tag=sciencepubm06-22&i=electronics&s=review-rank"
 ---
 
 ## What we're looking at
