@@ -377,6 +377,12 @@ export const prerender = true;
       display: flex;
       align-items: flex-end;
     }
+    /* [hidden] attribute needs higher specificity to win over the .mobile-toc-drawer rule.
+       Without this, the drawer stays visible forever because `display: flex` overrides the
+       UA stylesheet rule `[hidden] { display: none }`. */
+    .mobile-toc-drawer[hidden] {
+      display: none;
+    }
     .mobile-toc-drawer__inner {
       width: 100%;
       max-height: 70vh;
