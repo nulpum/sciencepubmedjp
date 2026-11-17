@@ -8,7 +8,7 @@ const posts = (await getCollection('ja_psychology')).sort(
 
 // 深掘り記事 (slug に "evidence" or "sensitive-person" 含む) と 単一論文記事 に分離
 const deepDives = posts.filter((p) => /(-evidence|-highly-sensitive-person)$/.test(p.id));
-const recent = posts.filter((p) => !/(-evidence|-highly-sensitive-person)$/.test(p.id)).slice(0, 30);
+const recent = posts.filter((p) => !/(-evidence|-highly-sensitive-person)$/.test(p.id) && !p.data.noindex).slice(0, 30);
 
 export const prerender = true;
 ---

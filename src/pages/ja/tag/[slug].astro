@@ -15,7 +15,7 @@ export async function getStaticPaths() {
     props: {
       tag,
       articles: all
-        .filter((p) => (p.data.tags ?? []).includes(tag.id))
+        .filter((p) => !p.data.noindex && (p.data.tags ?? []).includes(tag.id))
         .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1)),
     },
   }));

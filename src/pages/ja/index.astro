@@ -24,7 +24,7 @@ const featured = featuredSlugs
 
 // 最新 20 記事 (深掘り記事 除外して、単一論文 記事のみ)
 const recent = all
-  .filter((p) => !featuredSlugs.includes(p.id))
+  .filter((p) => !featuredSlugs.includes(p.id) && !p.data.noindex)
   .sort((a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at))
   .slice(0, 20);
 

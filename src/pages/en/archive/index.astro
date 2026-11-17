@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 
 const psy = await getCollection('en_psychology');
 const bio = await getCollection('en_biology');
-const all = [...psy, ...bio];
+const all = [...psy, ...bio].filter((p) => !p.data.noindex);
 
 const byYear = new Map<number | null, number>();
 for (const p of all) {

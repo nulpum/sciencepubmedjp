@@ -14,8 +14,11 @@ name: Daily article generation
 #     * 通過 → daily (元ペース) に 戻す
 #     * 再却下 → さらに ペース 落とす or 深掘り記事 中心に 転換
 on:
-  schedule:
-    - cron: '37 21 * * 1,4'   # 月・木 06:37 JST (UTC 21:37 日・水)
+  # 2026-11-17 一時停止: AdSense 再却下 (「有用性 の 低い コンテンツ」) 対策。
+  # 再申請 (11-18 以降) + 審査結果 来る まで daily 生成 を 止める。
+  # 復旧 する 時 は 下 の schedule を 元 の cron に 戻す。
+  # schedule:
+  #   - cron: '37 21 * * 1,4'   # 月・木 06:37 JST (UTC 21:37 日・水)
   workflow_dispatch:
 
 permissions:

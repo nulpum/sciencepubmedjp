@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 const psy = await getCollection('en_psychology');
 const relatedTags = ['adhd', 'autism', 'memory', 'cbt', 'brain'];
 const related = psy
-  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .filter((p) => !p.data.noindex && (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
   .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1));
 
 export const prerender = true;

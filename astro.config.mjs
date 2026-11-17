@@ -1,6 +1,33 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+// Build a Set of noindex URL paths at config load time so sitemap can exclude them.
+// Astro sitemap integration doesn't know about frontmatter — it only sees URLs.
+function buildNoindexSet() {
+  const set = new Set();
+  const root = './src/content';
+  for (const lang of ['en', 'ja']) {
+    for (const cat of ['biology', 'psychology']) {
+      const dir = join(root, lang, cat);
+      let files;
+      try { files = readdirSync(dir); } catch { continue; }
+      for (const f of files) {
+        if (!f.endsWith('.md')) continue;
+        const text = readFileSync(join(dir, f), 'utf-8');
+        if (text.includes('noindex: true')) {
+          const slug = f.replace(/\.md$/, '');
+          set.add(`/${lang}/${cat}/${slug}/`);
+        }
+      }
+    }
+  }
+  return set;
+}
+const NOINDEX_PATHS = buildNoindexSet();
+console.log(`[sitemap] Excluding ${NOINDEX_PATHS.size} noindex pages`);
 
 // i18n: ja/en どちらも /ja/ /en/ サブパスで配信（prefixDefaultLocale: true）
 //
@@ -32,6 +59,13 @@ export default defineConfig({
       i18n: {
         defaultLocale: 'ja',
         locales: { ja: 'ja-JP', en: 'en-US' },
+      },
+      // Exclude noindex pages (AdSense re-review: don't advertise thin content in sitemap)
+      filter(page) {
+        try {
+          const path = new URL(page).pathname;
+          return !NOINDEX_PATHS.has(path);
+        } catch { return true; }
       },
       // 2026-11-09 追加: ページ種別ごとに priority/changefreq を 最適化
       // - トップ: 1.0 (日次更新)

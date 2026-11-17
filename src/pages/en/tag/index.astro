@@ -5,7 +5,7 @@ import { TAGS } from '../../../config/tags';
 
 const psy = await getCollection('en_psychology');
 const bio = await getCollection('en_biology');
-const all = [...psy, ...bio];
+const all = [...psy, ...bio].filter((p) => !p.data.noindex);
 
 // tag ID → 記事数 の Map
 const counts = new Map<string, number>();

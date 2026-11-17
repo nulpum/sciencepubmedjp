@@ -7,7 +7,7 @@ const bio = await getCollection('en_biology');
 const all = [...psy.map((p) => ({...p, cat: 'psychology' as const})), ...bio.map((p) => ({...p, cat: 'biology' as const}))];
 const relatedTags = ['depression', 'anxiety', 'ptsd', 'mental-health', 'psychiatry', 'mood', 'stress'];
 const related = all
-  .filter((p) => (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
+  .filter((p) => !p.data.noindex && (p.data.tags ?? []).some((t) => relatedTags.includes(t)))
   .sort((a, b) => (a.data.generated_at < b.data.generated_at ? 1 : -1))
   .slice(0, 20);
 
