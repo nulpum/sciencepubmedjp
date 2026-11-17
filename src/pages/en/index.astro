@@ -5,7 +5,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const psy = await getCollection('en_psychology');
 const bio = await getCollection('en_biology');
 const all = [...psy, ...bio];
-const totalCount = all.length;
+// 2026-11-17: AdSense 対策 で noindex 除外 の 可視 本数 を 表示 (thin content 印象 回避)
+const visiblePsy = psy.filter((p) => !p.data.noindex);
+const visibleBio = bio.filter((p) => !p.data.noindex);
+const totalCount = visiblePsy.length + visibleBio.length;
 
 const featuredSlugs = [
   '20260916-probiotics-diarrhea-evidence',
@@ -68,11 +71,11 @@ export const prerender = true;
     </div>
     <div class="cat-grid">
       <a href="/en/psychology/" class="cat-card cat-card--psy">
-        <h3>Psychology <span class="cat-card__count">{psy.length} articles</span></h3>
+        <h3>Psychology <span class="cat-card__count">{visiblePsy.length} articles</span></h3>
         <p>Cognition, behavior, emotion, development, clinical psychology, neuroscience</p>
       </a>
       <a href="/en/biology/" class="cat-card cat-card--bio">
-        <h3>Biology <span class="cat-card__count">{bio.length} articles</span></h3>
+        <h3>Biology <span class="cat-card__count">{visibleBio.length} articles</span></h3>
         <p>Cells, genetics, evolution, microbiology, physiology, ecology</p>
       </a>
     </div>

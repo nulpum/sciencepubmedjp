@@ -16,7 +16,7 @@ export const prerender = true;
   <div class="cat-page">
     <header class="cat-page__header">
       <p class="cat-page__breadcrumb"><a href="/ja/">ホーム</a> › 生物学</p>
-      <h1>🦠 {'生物学'} <span class="cat-page__count">({posts.length} 本)</span></h1>
+      <h1>🦠 {'生物学'} <span class="cat-page__count">({posts.filter(p => !p.data.noindex).length} 本)</span></h1>
       <p class="cat-page__intro">腸内フローラ・免疫・遺伝子・老化・進化</p>
     </header>
 

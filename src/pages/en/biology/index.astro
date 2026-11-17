@@ -16,7 +16,7 @@ export const prerender = true;
   <div class="cat-page">
     <header class="cat-page__header">
       <p class="cat-page__breadcrumb"><a href="/en/">Home</a> › Biology</p>
-      <h1>🦠 {'Biology'} <span class="cat-page__count">({posts.length} articles)</span></h1>
+      <h1>🦠 {'Biology'} <span class="cat-page__count">({posts.filter(p => !p.data.noindex).length} articles)</span></h1>
       <p class="cat-page__intro">Gut microbiome, immunity, genetics, aging, evolution</p>
     </header>
 

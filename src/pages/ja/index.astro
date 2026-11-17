@@ -5,7 +5,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const psy = await getCollection('ja_psychology');
 const bio = await getCollection('ja_biology');
 const all = [...psy, ...bio];
-const totalCount = all.length;
+// 2026-11-17: AdSense 対策、 可視 本数 (noindex 除外)
+const visiblePsy = psy.filter((p) => !p.data.noindex);
+const visibleBio = bio.filter((p) => !p.data.noindex);
+const totalCount = visiblePsy.length + visibleBio.length;
 
 // Featured deep-dive slugs (最重要記事、手動 キュレーション)
 const featuredSlugs = [
@@ -97,11 +100,11 @@ export const prerender = true;
     </div>
     <div class="cat-grid">
       <a href="/ja/psychology/" class="cat-card cat-card--psy">
-        <h3>心理学 <span class="cat-card__count">{psy.length} 本</span></h3>
+        <h3>心理学 <span class="cat-card__count">{visiblePsy.length} 本</span></h3>
         <p>認知・行動・感情・発達・臨床心理・神経科学</p>
       </a>
       <a href="/ja/biology/" class="cat-card cat-card--bio">
-        <h3>生物学 <span class="cat-card__count">{bio.length} 本</span></h3>
+        <h3>生物学 <span class="cat-card__count">{visibleBio.length} 本</span></h3>
         <p>細胞・遺伝子・進化・微生物・生理学・生態学</p>
       </a>
     </div>

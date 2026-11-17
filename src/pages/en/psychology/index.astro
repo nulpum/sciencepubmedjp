@@ -16,7 +16,7 @@ export const prerender = true;
   <div class="cat-page">
     <header class="cat-page__header">
       <p class="cat-page__breadcrumb"><a href="/en/">Home</a> › Psychology</p>
-      <h1>🧠 {'Psychology'} <span class="cat-page__count">({posts.length} articles)</span></h1>
+      <h1>🧠 {'Psychology'} <span class="cat-page__count">({posts.filter(p => !p.data.noindex).length} articles)</span></h1>
       <p class="cat-page__intro">Memory, sleep, learning, decision, clinical psychology</p>
     </header>
 
