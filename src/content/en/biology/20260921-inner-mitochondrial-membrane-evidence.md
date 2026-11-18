@@ -16,8 +16,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=inner%20mitochondrial%20membrane&tag=sciencepubm06-22&i=english-books&s=review-rank"
   - title: "Browse biology books on Amazon JP (English books)"
     url: "https://www.amazon.co.jp/s?k=biology&tag=sciencepubm06-22&i=english-books&s=review-rank"
-  - title: "LED desk lamp for reading"
-    url: "https://www.amazon.co.jp/s?k=desk%20lamp%20led%20reading&tag=sciencepubm06-22&i=office-products&s=review-rank"
+  - title: "Kindle Unlimited: unlimited reading (biology)"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20science&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
 
 ## What we're looking at

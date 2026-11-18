@@ -1,5 +1,6 @@
 ---
 import MoshimoBanner from '../components/MoshimoBanner.astro';
+import { AMAZON_GEO } from '../config/amazon-geo';
 
 interface Props {
   noindex?: boolean;
@@ -91,6 +92,56 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-PNYCBNKVL9');
+    </script>
+
+    {/* Amazon geo-routing (2026-11-18 追加)
+        目的: EN 読者 で US からの アクセス を amazon.com に 動的 回し、
+        海外 読者 の CV 率 を 回収 する。 us.tag が 未設定 の 間 は no-op。 */}
+    <script is:inline define:vars={{ US_TAG: AMAZON_GEO.us.tag, JP_HOST: AMAZON_GEO.jp.host, US_HOST: AMAZON_GEO.us.host }}>
+      (function () {
+        if (!US_TAG) return;                      // US tag 未設定 → 何もしない
+        if (window.__amazonGeoInit) return;
+        window.__amazonGeoInit = true;
+        var lang = (navigator.language || '').toLowerCase();
+        var isUS = lang === 'en-us' || lang.indexOf('en-us') === 0;
+        if (!isUS) return;
+        function rewrite(a) {
+          var href = a.getAttribute('href') || '';
+          if (href.indexOf(JP_HOST) < 0) return;
+          if (a.dataset.geoRouted) return;
+          // amazon.co.jp → amazon.com, tag 置換、i= カテゴリ 除去
+          var newHref = href.replace(JP_HOST, US_HOST)
+                            .replace(/([?&])tag=[^&]*/, '$1tag=' + encodeURIComponent(US_TAG))
+                            .replace(/&i=[^&]*/g, '');
+          a.setAttribute('href', newHref);
+          a.setAttribute('data-geo-routed', 'us');
+        }
+        function scan() {
+          var links = document.querySelectorAll('a[href*="' + JP_HOST + '"]');
+          for (var i = 0; i < links.length; i++) rewrite(links[i]);
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', scan);
+        } else {
+          scan();
+        }
+        // SPA / 遅延 挿入 される 広告 banner (MoshimoBanner 等) にも 対応
+        var observer = new MutationObserver(function (muts) {
+          for (var i = 0; i < muts.length; i++) {
+            var m = muts[i];
+            for (var j = 0; j < m.addedNodes.length; j++) {
+              var n = m.addedNodes[j];
+              if (n.nodeType !== 1) continue;
+              if (n.tagName === 'A') rewrite(n);
+              else if (n.querySelectorAll) {
+                var sub = n.querySelectorAll('a[href*="' + JP_HOST + '"]');
+                for (var k = 0; k < sub.length; k++) rewrite(sub[k]);
+              }
+            }
+          }
+        });
+        observer.observe(document.body || document.documentElement, { childList: true, subtree: true });
+      })();
     </script>
 
     {/* Global Amazon click tracker (2026-09-28 追加)
