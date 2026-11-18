@@ -360,7 +360,11 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
         border-bottom: 1px solid var(--border);
         position: sticky;
         top: 0;
-        z-index: 10;
+        /* z-index raised from 10 → 500:
+           - must outrank .article__toc (50) so the mobile sticky side TOC
+             does not visually overlap the site header on scroll
+           - stays below .mobile-toc-fab (900) and .mobile-toc-drawer (1000). */
+        z-index: 500;
       }
       .site-header__inner {
         max-width: 960px;

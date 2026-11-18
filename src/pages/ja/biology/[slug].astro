@@ -381,12 +381,14 @@ export const prerender = true;
       .article__body :global(p) { font-size: 1rem; line-height: 1.95; }
       .article__body :global(h2) { font-size: 1.2rem; scroll-margin-top: 24px; }
       .article__body :global(ul), .article__body :global(ol) { line-height: 1.95; }
-      .article__toc { position: sticky; top: 8px; z-index: 10; max-height: 40vh; overflow-y: auto; }
+      .article__toc { position: sticky; top: 8px; z-index: 50; max-height: 40vh; overflow-y: auto; }
     }
     /* Floating TOC / scroll-top buttons (mobile) */
     .mobile-toc-fab, .mobile-scroll-top {
       position: fixed;
-      bottom: 20px;
+      /* bottom:88px — clears the sticky-cta mobile bar (height ~60-70px incl. safe-area)
+         so the FAB hit-area is not swallowed when both overlap after scroll>400px. */
+      bottom: 88px;
       width: 52px;
       height: 52px;
       border-radius: 50%;
