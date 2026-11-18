@@ -23,7 +23,9 @@ const total = all.length;
 
 export const prerender = true;
 ---
-<BaseLayout title={`論文出版年で アーカイブを 見る (全 ${total} 本)`} description="PubMed 掲載論文の出版年ごとに、記事をまとめて一覧できます。" lang="ja">
+<BaseLayout title={`論文出版年で アーカイブを 見る (全 ${total} 本)`} description="PubMed 掲載論文の出版年ごとに、記事をまとめて一覧できます。" lang="ja"
+  noindex={true}
+>
   <div class="archive-index">
     <header class="archive-index__header">
       <p class="archive-index__breadcrumb"><a href="/ja/">ホーム</a> › アーカイブ</p>

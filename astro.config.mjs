@@ -60,11 +60,15 @@ export default defineConfig({
         defaultLocale: 'ja',
         locales: { ja: 'ja-JP', en: 'en-US' },
       },
-      // Exclude noindex pages (AdSense re-review: don't advertise thin content in sitemap)
+      // Exclude noindex pages + tag/archive listings (AdSense re-review:
+      // don't advertise thin content listings in sitemap)
       filter(page) {
         try {
           const path = new URL(page).pathname;
-          return !NOINDEX_PATHS.has(path);
+          if (NOINDEX_PATHS.has(path)) return false;
+          // tag + archive 一覧 (本体 は noindex 設定 + sitemap 除外)
+          if (/^\/(ja|en)\/(tag|archive)(\/|$)/.test(path)) return false;
+          return true;
         } catch { return true; }
       },
       // 2026-11-09 追加: ページ種別ごとに priority/changefreq を 最適化

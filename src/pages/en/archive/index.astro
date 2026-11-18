@@ -23,7 +23,9 @@ const total = all.length;
 
 export const prerender = true;
 ---
-<BaseLayout title={`Browse archive by publication year (全 ${total} 本)`} description="Browse all articles grouped by the year the source paper was published on PubMed." lang="en">
+<BaseLayout title={`Browse archive by publication year (全 ${total} 本)`} description="Browse all articles grouped by the year the source paper was published on PubMed." lang="en"
+  noindex={true}
+>
   <div class="archive-index">
     <header class="archive-index__header">
       <p class="archive-index__breadcrumb"><a href="/en/">Home</a> › Archive</p>

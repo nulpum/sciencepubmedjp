@@ -20,7 +20,9 @@ const displayed = TAGS
 
 export const prerender = true;
 ---
-<BaseLayout title="Tags ｜ PubMed Trivia" description="Browse by topic. Click a tag to see all articles under it." lang="en">
+<BaseLayout title="Tags ｜ PubMed Trivia" description="Browse by topic. Click a tag to see all articles under it." lang="en"
+  noindex={true}
+>
   <div class="tag-index">
     <header class="tag-index__header">
       <p class="tag-index__breadcrumb"><a href="/en/">Home</a> › Tags</p>

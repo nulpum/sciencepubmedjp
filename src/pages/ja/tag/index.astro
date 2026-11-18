@@ -20,7 +20,9 @@ const displayed = TAGS
 
 export const prerender = true;
 ---
-<BaseLayout title="タグ一覧 ｜ PubMed Trivia" description="テーマ別に記事を探せます。各タグをクリックすると 該当記事の一覧が表示されます。" lang="ja">
+<BaseLayout title="タグ一覧 ｜ PubMed Trivia" description="テーマ別に記事を探せます。各タグをクリックすると 該当記事の一覧が表示されます。" lang="ja"
+  noindex={true}
+>
   <div class="tag-index">
     <header class="tag-index__header">
       <p class="tag-index__breadcrumb"><a href="/ja/">ホーム</a> › タグ一覧</p>
