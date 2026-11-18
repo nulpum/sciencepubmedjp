@@ -268,7 +268,13 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       <nav class="site-footer__nav">
         <a href={`/${lang}/about/`}>{lang === 'ja' ? 'このサイトについて' : 'About'}</a>
         <span aria-hidden="true">·</span>
+        <a href={`/${lang}/contact/`}>{lang === 'ja' ? 'お問い合わせ' : 'Contact'}</a>
+        <span aria-hidden="true">·</span>
         <a href={`/${lang}/privacy/`}>{lang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy'}</a>
+        <span aria-hidden="true">·</span>
+        <a href={`/${lang}/disclosure/`}>{lang === 'ja' ? '広告・アフィリエイト 開示' : 'Advertising & Affiliate Disclosure'}</a>
+        <span aria-hidden="true">·</span>
+        <a href={`/${lang}/terms/`}>{lang === 'ja' ? '利用規約' : 'Terms of Use'}</a>
         {lang === 'en' && (
           <>
             <span aria-hidden="true">·</span>
