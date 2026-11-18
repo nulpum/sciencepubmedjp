@@ -24,9 +24,8 @@ export const AMAZON_GEO = {
   },
   us: {
     host: 'amazon.com',
-    // TODO: Amazon.com Associates に 登録 後、 発行 された tag を 貼る
-    //   形式 例: 'yoursite-20'
-    tag: '',
+    // Amazon.com Associates tag (2026-11-18 発行、180日 以内 に 3 CV 必要)
+    tag: 'sciencepubmed-20',
   },
 };
 
