@@ -4,6 +4,9 @@
 // 各 ページ に インライン していた → HTML 161 KB / img 360 個 / LCP 悪化 の 主因。
 //
 // 本 スクリプト が emit した JSON を client が IntersectionObserver で 遅延 fetch する。
+//
+// 2026-11-19: 読者 層 (大学生+研究者) に 不 適合 な banner を weight 0 で 配信 停止 する
+// 仕組み を 追加。 weight === 0 の 項目 は JSON に 含めない (bandwidth + CTR 品質 向上)。
 
 import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -17,7 +20,9 @@ function stripLazyFromImpression(html: string): string {
 }
 
 async function main(): Promise<void> {
-  const payload = MOSHIMO_BANNERS.map((b) => ({
+  const active = MOSHIMO_BANNERS.filter((b) => (b.weight ?? 1) > 0);
+  const dropped = MOSHIMO_BANNERS.length - active.length;
+  const payload = active.map((b) => ({
     id: b.id,
     html: stripLazyFromImpression(b.html),
     weight: b.weight ?? 1,
@@ -25,7 +30,9 @@ async function main(): Promise<void> {
   const outPath = join(process.cwd(), "public", "moshimo-banners.json");
   const json = JSON.stringify(payload);
   await writeFile(outPath, json, "utf8");
-  console.log(`emit-moshimo-banners: ${payload.length} banners → ${outPath} (${json.length} bytes)`);
+  console.log(
+    `emit-moshimo-banners: ${payload.length} active banners (${dropped} dropped, weight=0) → ${outPath} (${json.length} bytes)`,
+  );
 }
 
 main().catch((e) => {
