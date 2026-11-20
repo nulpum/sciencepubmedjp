@@ -1,0 +1,94 @@
+{
+  "slug": "bdnf",
+  "ja": "脳由来神経栄養因子",
+  "yomi": "のうゆらいしんけいえいよういんし",
+  "en": "brain-derived neurotrophic factor",
+  "abbr": "BDNF",
+  "category": "biology",
+  "meshHeading": "Brain-Derived Neurotrophic Factor",
+  "meshUi": "68019208",
+  "description": {
+    "ja": "脳由来神経栄養因子(BDNF)は、神経細胞の生存や成長、シナプスの可塑性を支える重要なタンパク質です。脳内で広く発現し、学習・記憶・気分調節などに関与することが知られています。運動や環境刺激によって発現が変動するため、神経保護や認知機能との関連が研究されています。",
+    "en": "Brain-derived neurotrophic factor (BDNF) is a crucial protein that supports neuronal survival, growth, and synaptic plasticity. It is widely expressed in the brain and is known to be involved in learning, memory, and mood regulation. BDNF expression can be modulated by exercise and environmental stimuli, making it a key focus in research on neuroprotection and cognitive function."
+  },
+  "usage": {
+    "ja": "論文では血清・血漿中のBDNF濃度をELISA法で測定したり、脳組織でのmRNA発現量をRT-PCRで定量したりします。神経変性疾患、うつ病、認知機能との関連を調べる疫学研究や、運動介入・栄養介入によるBDNF変動を追跡する臨床試験でよく用いられます。",
+    "en": "In research papers, BDNF levels are typically measured in serum or plasma using ELISA, or mRNA expression is quantified in brain tissue by RT-PCR. It is frequently used in epidemiological studies examining associations with neurodegenerative diseases, depression, and cognitive function, as well as in clinical trials tracking BDNF changes following exercise or nutritional interventions."
+  },
+  "synonyms": {
+    "ja": "神経栄養因子ファミリーにはNGF(神経成長因子)、NT-3、NT-4などがありますが、BDNFは特に中枢神経系での発現と機能が顕著です。文献では単に「BDNF」と略記されることが多く、前駆体を指す「proBDNF」と成熟型「mature BDNF」を区別する場合もあります。",
+    "en": "The neurotrophin family includes NGF (nerve growth factor), NT-3, and NT-4, but BDNF is particularly notable for its expression and function in the central nervous system. It is commonly abbreviated simply as 'BDNF' in literature, with distinctions sometimes made between the precursor form 'proBDNF' and 'mature BDNF'."
+  },
+  "pubmedCount": 32955,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1806
+    },
+    {
+      "year": 2018,
+      "count": 1861
+    },
+    {
+      "year": 2019,
+      "count": 1891
+    },
+    {
+      "year": 2020,
+      "count": 1977
+    },
+    {
+      "year": 2021,
+      "count": 1940
+    },
+    {
+      "year": 2022,
+      "count": 1991
+    },
+    {
+      "year": 2023,
+      "count": 1840
+    },
+    {
+      "year": 2024,
+      "count": 1873
+    },
+    {
+      "year": 2025,
+      "count": 2006
+    },
+    {
+      "year": 2026,
+      "count": 1799
+    }
+  ],
+  "searchQuery": "(\"Brain-Derived Neurotrophic Factor\"[MeSH Terms]) OR (\"brain-derived neurotrophic factor\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42898573",
+      "title": "Reprogramming pathological secretory phenotype of chondrocytes inhibits neurovascular invasion for osteoarthritis treatment.",
+      "year": 2027
+    },
+    {
+      "pmid": "42805352",
+      "title": "Shenghui decoction improves sleep-deprivation-induced cognitive impairment in mice by modulating neuroinflammation, NRG1/ErbB4 signaling, and purine metabolism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772618",
+      "title": "Huanglian Wendan Decoction ameliorates insomnia-like phenotypes in a composite mouse model with phlegm-heat-related features: Insights from the brain-gut axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772616",
+      "title": "Rapid antidepressant-like effects of Chaihu Shugan San in female restraint-stressed mice: involvement of hippocampal TC2N and ERβ-eNOS-CaMKII-BDNF signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42697499",
+      "title": "Synaptic remodeling and functional recovery: Huan Le Ning decoction mitigates perimenopausal anxiety and depression symptoms via hippocampal reorganization.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:28:23.684Z"
+}

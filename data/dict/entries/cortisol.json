@@ -1,0 +1,96 @@
+{
+  "slug": "cortisol",
+  "ja": "コルチゾール",
+  "yomi": "こるちぞーる",
+  "en": "cortisol",
+  "category": "biology",
+  "aliases": [
+    "ハイドロコーチゾン"
+  ],
+  "meshHeading": "Hydrocortisone",
+  "meshUi": "68006854",
+  "description": {
+    "ja": "コルチゾールは副腎皮質から分泌されるステロイドホルモンで、ストレス応答や代謝調節に重要な役割を果たします。血糖値の維持、免疫応答の調節、抗炎症作用などに関与し、体内の恒常性維持に不可欠な物質です。ストレスホルモンとも呼ばれ、心身のストレス状態を評価する指標として広く研究されています。",
+    "en": "Cortisol is a steroid hormone secreted by the adrenal cortex, playing a crucial role in stress response and metabolic regulation. It is involved in maintaining blood glucose levels, modulating immune responses, and exerting anti-inflammatory effects, making it essential for homeostasis. Also known as a stress hormone, it is widely studied as an indicator of physical and psychological stress."
+  },
+  "usage": {
+    "ja": "論文では唾液、血清、尿中のコルチゾール濃度を測定し、ストレス負荷、概日リズム、内分泌機能、精神疾患との関連などが調べられます。ELISA法や免疫測定法が用いられ、朝と夜の変動パターンや急性ストレス後の変化が解析対象となります。",
+    "en": "In research papers, cortisol levels are measured in saliva, serum, or urine to investigate stress load, circadian rhythms, endocrine function, and associations with mental disorders. ELISA and immunoassay methods are commonly used, with analyses focusing on morning-evening variation patterns and changes following acute stress."
+  },
+  "synonyms": {
+    "ja": "ハイドロコーチゾン(hydrocortisone)は同一物質の別名で、医薬品名としても使われます。コルチコステロイド、糖質コルチコイドは上位概念です。検索では「cortisol levels」「salivary cortisol」「cortisol awakening response」などが有用です。",
+    "en": "Hydrocortisone is an alternative name for the same substance, also used as a pharmaceutical name. Corticosteroid and glucocorticoid are broader category terms. Useful search phrases include 'cortisol levels,' 'salivary cortisol,' and 'cortisol awakening response.'"
+  },
+  "pubmedCount": 115219,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3121
+    },
+    {
+      "year": 2018,
+      "count": 3052
+    },
+    {
+      "year": 2019,
+      "count": 3194
+    },
+    {
+      "year": 2020,
+      "count": 3461
+    },
+    {
+      "year": 2021,
+      "count": 3607
+    },
+    {
+      "year": 2022,
+      "count": 3436
+    },
+    {
+      "year": 2023,
+      "count": 3250
+    },
+    {
+      "year": 2024,
+      "count": 3316
+    },
+    {
+      "year": 2025,
+      "count": 3787
+    },
+    {
+      "year": 2026,
+      "count": 3610
+    }
+  ],
+  "searchQuery": "(\"Hydrocortisone\"[MeSH Terms]) OR (\"cortisol\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914816",
+      "title": "Flexible SERS sensor with piezoelectric enrichment based on PVDF/AgNWs for cortisol detection in sweat.",
+      "year": 2027
+    },
+    {
+      "pmid": "42716193",
+      "title": "Integrating spatial phytochemistry and metabolomics reveals the spatial chemical organization of Gymnadenia conopsea and its pharmacological effects in kidney-yang deficiency syndrome.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045240",
+      "title": "Endocrine Disorders in Older Adults: Adrenal Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42623825",
+      "title": "Development and validation of a cost-effective and reliable HPLC-FLD method for cortisol determination in human hair.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:26:29.161Z"
+}

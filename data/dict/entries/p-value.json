@@ -1,0 +1,95 @@
+{
+  "slug": "p-value",
+  "ja": "P値",
+  "yomi": "ぴーち",
+  "en": "p-value",
+  "category": "research",
+  "aliases": [
+    "ピー値",
+    "p値"
+  ],
+  "description": {
+    "ja": "統計的仮説検定において、観測されたデータまたはそれより極端な結果が偶然に生じる確率を示す指標です。一般に0.05未満の場合に「統計的に有意」とされますが、これは結果が偶然ではない可能性が高いことを意味し、効果の大きさや臨床的重要性を直接示すものではありません。",
+    "en": "A statistical measure indicating the probability of obtaining the observed data, or more extreme results, by chance alone under the null hypothesis. Values below 0.05 are typically considered 'statistically significant,' suggesting the results are unlikely due to chance, though this does not directly indicate effect size or clinical importance."
+  },
+  "usage": {
+    "ja": "医学論文では「p < 0.05」「p = 0.032」などの形で報告され、2群間の比較や相関分析の結果が統計的に意味があるかを判断する際に用いられます。近年は信頼区間や効果量との併記が推奨されています。",
+    "en": "Reported in medical papers as 'p < 0.05' or 'p = 0.032' to assess whether differences between groups or correlations are statistically meaningful. Modern practice recommends reporting p-values alongside confidence intervals and effect sizes."
+  },
+  "synonyms": {
+    "ja": "「有意確率」とも呼ばれます。「p値が小さい=効果が大きい」ではない点に注意が必要で、サンプルサイズが大きいと臨床的に意味のない小さな差でも有意になることがあります。",
+    "en": "Also called 'significance probability.' Note that a small p-value does not mean a large effect; with large sample sizes, even clinically trivial differences can be statistically significant."
+  },
+  "pubmedCount": 103474,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4449
+    },
+    {
+      "year": 2018,
+      "count": 5053
+    },
+    {
+      "year": 2019,
+      "count": 6005
+    },
+    {
+      "year": 2020,
+      "count": 8212
+    },
+    {
+      "year": 2021,
+      "count": 10258
+    },
+    {
+      "year": 2022,
+      "count": 11378
+    },
+    {
+      "year": 2023,
+      "count": 11306
+    },
+    {
+      "year": 2024,
+      "count": 12079
+    },
+    {
+      "year": 2025,
+      "count": 11028
+    },
+    {
+      "year": 2026,
+      "count": 6140
+    }
+  ],
+  "searchQuery": "\"p-value\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42861727",
+      "title": "Comparative efficacy of topical garlic extract and 20% podophyllin solution in the treatment of female genital warts: a triple-blind randomized clinical trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42966515",
+      "title": "Yiqi Jiedu formula suppresses nasopharyngeal carcinoma growth in association with glycerophospholipid metabolism remodeling: An integrated metabolomics and lipidomics study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42641229",
+      "title": "What is the current state of evidence on passive exoskeletons designed to support the lumbar region? A systematic review and meta-analysis of physiological, biomechanical, and user-related outcomes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901429",
+      "title": "Temporal trends and outcomes of intravascular imaging in chronic total occlusion interventions: insights from the PROGRESS-CTO registry.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772423",
+      "title": "Exploring the practical application of nanopore sequencing for plant virus and viroid detection: Choice of input material, comparison with illumina sequencing, and relative sensitivity trials.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:23:38.191Z"
+}

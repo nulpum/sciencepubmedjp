@@ -1,0 +1,96 @@
+{
+  "slug": "cross-sectional-study",
+  "ja": "横断研究",
+  "yomi": "おうだんけんきゅう",
+  "en": "cross-sectional study",
+  "category": "research",
+  "aliases": [
+    "断面研究"
+  ],
+  "meshHeading": "Cross-Sectional Studies",
+  "meshUi": "68003430",
+  "description": {
+    "ja": "横断研究とは、ある特定の時点で複数の対象者を同時に調査し、疾患や健康状態と関連要因の関係を観察する研究デザインです。スナップショット写真のように一時点のデータを収集するため、因果関係の判定には限界がありますが、有病率の推定や関連性の探索に広く用いられます。",
+    "en": "A cross-sectional study is a research design that examines multiple subjects at a single point in time to observe associations between diseases, health conditions, and related factors. Like a snapshot photograph, it collects data at one moment, which limits causal inference but is widely used for estimating prevalence and exploring associations."
+  },
+  "usage": {
+    "ja": "論文では「横断調査により喫煙と血圧の関連を評価した」のように、ある時点での曝露と結果の関連を調べる際に用いられます。質問票調査、身体測定、血液検査などを同時に実施し、統計解析で関連性を検討する方法が典型的です。",
+    "en": "In papers, it appears as 'a cross-sectional survey evaluated the association between smoking and blood pressure,' examining exposure-outcome relationships at one time point. Typical methods include simultaneous questionnaires, physical measurements, and laboratory tests, with statistical analyses to explore associations."
+  },
+  "synonyms": {
+    "ja": "断面研究、横断的研究とも呼ばれます。前向き研究(prospective study)や後ろ向き研究(retrospective study)と異なり時間経過を追わない点、コホート研究のように因果関係を明確にできない点に注意が必要です。",
+    "en": "Also called prevalence study or transversal study. Unlike prospective or retrospective studies, it does not follow subjects over time; note that it cannot establish causality as clearly as cohort studies can."
+  },
+  "pubmedCount": 740603,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 36025
+    },
+    {
+      "year": 2018,
+      "count": 39917
+    },
+    {
+      "year": 2019,
+      "count": 42934
+    },
+    {
+      "year": 2020,
+      "count": 51130
+    },
+    {
+      "year": 2021,
+      "count": 59544
+    },
+    {
+      "year": 2022,
+      "count": 58893
+    },
+    {
+      "year": 2023,
+      "count": 54053
+    },
+    {
+      "year": 2024,
+      "count": 58105
+    },
+    {
+      "year": 2025,
+      "count": 68367
+    },
+    {
+      "year": 2026,
+      "count": 66021
+    }
+  ],
+  "searchQuery": "(\"Cross-Sectional Studies\"[MeSH Terms]) OR (\"cross-sectional study\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42853895",
+      "title": "Influence of perineal tears and body image disturbance on postpartum sexual quality of life: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43049101",
+      "title": "Aortic stiffness and brain perfusion: a population-based study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834000",
+      "title": "Physicians' perspectives of palliative care quality in nursing homes: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42632440",
+      "title": "Thirty-three years of X-linked adrenoleukodystrophy diagnosis at a Brazilian reference center: diagnostic patterns and key findings.",
+      "year": 2027
+    },
+    {
+      "pmid": "42532312",
+      "title": "Application-related patterns of diluted urine specimens in routine urine drug testing: A retrospective specimen-record-level study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:22:18.926Z"
+}

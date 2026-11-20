@@ -1,0 +1,93 @@
+{
+  "slug": "serotonin",
+  "ja": "セロトニン",
+  "yomi": "せろとにん",
+  "en": "serotonin",
+  "category": "biology",
+  "meshHeading": "Serotonin",
+  "meshUi": "68012701",
+  "description": {
+    "ja": "セロトニン (5-HT) は、脳や腸などで働く神経伝達物質の一つです。気分、睡眠、食欲、消化機能などさまざまな生理機能に関わっており、脳内だけでなく体内のセロトニンの約90%は腸に存在します。トリプトファンというアミノ酸から合成され、受容体を介して細胞間の情報伝達を行います。",
+    "en": "Serotonin (5-HT) is a neurotransmitter that functions in the brain, gut, and other tissues. It is involved in various physiological functions including mood, sleep, appetite, and digestive processes, with approximately 90% of the body's serotonin found in the intestines. Serotonin is synthesized from the amino acid tryptophan and transmits signals between cells through receptors."
+  },
+  "usage": {
+    "ja": "論文では、脳内セロトニン濃度の測定 (HPLC法など)、セロトニン受容体 (5-HT1A、5-HT2Aなど) の発現解析、セロトニントランスポーター (SERT) の機能研究などが行われます。うつ病、不安障害、過敏性腸症候群などの病態メカニズム研究で頻繁に登場します。",
+    "en": "In research papers, studies include measurement of brain serotonin levels (e.g., HPLC methods), expression analysis of serotonin receptors (5-HT1A, 5-HT2A, etc.), and functional studies of the serotonin transporter (SERT). It frequently appears in research on disease mechanisms such as depression, anxiety disorders, and irritable bowel syndrome."
+  },
+  "synonyms": {
+    "ja": "5-HT (5-hydroxytryptamine) と略されることが多く、論文検索では両方の用語を使うと網羅的です。セロトニントランスポーター (SERT, 5-HTT)、セロトニン作動性ニューロン (serotonergic neuron) など関連用語も重要です。受容体のサブタイプは14種以上あり、研究対象により使い分けられます。",
+    "en": "Often abbreviated as 5-HT (5-hydroxytryptamine); using both terms in literature searches provides comprehensive results. Related terms include serotonin transporter (SERT, 5-HTT) and serotonergic neurons. There are over 14 receptor subtypes, which are differentiated depending on the research focus."
+  },
+  "pubmedCount": 141165,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3238
+    },
+    {
+      "year": 2018,
+      "count": 3173
+    },
+    {
+      "year": 2019,
+      "count": 3239
+    },
+    {
+      "year": 2020,
+      "count": 3285
+    },
+    {
+      "year": 2021,
+      "count": 3435
+    },
+    {
+      "year": 2022,
+      "count": 3265
+    },
+    {
+      "year": 2023,
+      "count": 3315
+    },
+    {
+      "year": 2024,
+      "count": 3248
+    },
+    {
+      "year": 2025,
+      "count": 3688
+    },
+    {
+      "year": 2026,
+      "count": 3392
+    }
+  ],
+  "searchQuery": "(\"Serotonin\"[MeSH Terms]) OR (\"serotonin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42662800",
+      "title": "Genome-integrated engineering of Escherichia coli Nissle 1917 enables sustained gut-local biosynthesis of 5-hydroxytryptophan.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901648",
+      "title": "Light-induced adaptive laboratory evolution enhances bioactive aromatic amino acid-derived compound profile in a wine strain of Saccharomyces cerevisiae.",
+      "year": 2027
+    },
+    {
+      "pmid": "42697499",
+      "title": "Synaptic remodeling and functional recovery: Huan Le Ning decoction mitigates perimenopausal anxiety and depression symptoms via hippocampal reorganization.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892467",
+      "title": "Maternal piromelatine treatment is associated with attenuated behavioral alterations and sex-specific changes in hippocampal pCREB/BDNF signaling in adult offspring following prenatal constant-light exposure.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849538",
+      "title": "Magnoflorine alleviates depression-like behaviors via modulation of serotonergic signaling and neurotrophic pathways.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:29:01.229Z"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "gaba",
+  "ja": "ギャバ",
+  "yomi": "ぎゃば",
+  "en": "gamma-aminobutyric acid",
+  "abbr": "GABA",
+  "category": "biology",
+  "aliases": [
+    "γ-アミノ酪酸"
+  ],
+  "meshHeading": "gamma-Aminobutyric Acid",
+  "meshUi": "68005680",
+  "description": {
+    "ja": "GABA(ギャバ、γ-アミノ酪酸)は、脳や中枢神経系で働く主要な抑制性神経伝達物質です。神経細胞の興奮を抑える働きがあり、リラックス状態や睡眠、筋肉の緊張調整などに関与しています。栄養学の研究では、発芽玄米やチョコレートなどの食品に含まれる成分としても調べられています。",
+    "en": "GABA (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter in the brain and central nervous system. It reduces neuronal excitability and is involved in relaxation, sleep, and muscle tone regulation. In nutritional research, GABA is also studied as a component found in foods such as germinated brown rice and chocolate."
+  },
+  "usage": {
+    "ja": "神経科学の論文では、GABA受容体の機能やGABA作動性ニューロンの活動を測定する研究が多く見られます。測定には脳脊髄液の分析、PETスキャン、電気生理学的記録などが用いられ、不安、てんかん、睡眠障害などの研究で重要な指標となっています。",
+    "en": "In neuroscience papers, researchers frequently measure GABA receptor function and GABAergic neuronal activity using cerebrospinal fluid analysis, PET scans, and electrophysiological recordings. GABA serves as a key indicator in studies examining anxiety, epilepsy, and sleep disorders."
+  },
+  "synonyms": {
+    "ja": "γ-アミノ酪酸、4-アミノ酪酸とも呼ばれます。「GABA作動性」「GABAergic」は、GABAを神経伝達物質として使用する神経系を指す形容詞です。受容体にはGABA-A型とGABA-B型があり、それぞれ異なる作用機序を持つため、論文では区別して記載されます。",
+    "en": "Also called γ-aminobutyric acid or 4-aminobutyric acid. 'GABAergic' is an adjective referring to neural systems using GABA as a neurotransmitter. GABA-A and GABA-B receptors have distinct mechanisms of action and are differentiated in research papers."
+  },
+  "pubmedCount": 68163,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1891
+    },
+    {
+      "year": 2018,
+      "count": 1879
+    },
+    {
+      "year": 2019,
+      "count": 1748
+    },
+    {
+      "year": 2020,
+      "count": 1891
+    },
+    {
+      "year": 2021,
+      "count": 1866
+    },
+    {
+      "year": 2022,
+      "count": 2096
+    },
+    {
+      "year": 2023,
+      "count": 1931
+    },
+    {
+      "year": 2024,
+      "count": 1896
+    },
+    {
+      "year": 2025,
+      "count": 2012
+    },
+    {
+      "year": 2026,
+      "count": 1765
+    }
+  ],
+  "searchQuery": "(\"gamma-Aminobutyric Acid\"[MeSH Terms]) OR (\"gamma-aminobutyric acid\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42925680",
+      "title": "Effervescent-tablet-integrated derivatization and salting-out extraction for LC-FLD determination of neuropathic pain drugs in human plasma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901665",
+      "title": "Interpreting metabolite associations and proposed biosynthetic routes in Lactiplantibacillus plantarum-fermented Porphyra haitanensis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901657",
+      "title": "Biosynthetic mechanisms and application of bioactive compounds associated with in vitro lipid-lowering-related activities produced by Lactiplantibacillus plantarum fermentation of Porphyra haitanensis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946180",
+      "title": "Total polyphenols from Hemerocallis citrina Baroni leaves improve sleep quality in mice with perimenopausal insomnia and are associated with altered expression of 5-HT(1A)R, ADCY5, PKA, and GABRA2.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772618",
+      "title": "Huanglian Wendan Decoction ameliorates insomnia-like phenotypes in a composite mouse model with phlegm-heat-related features: Insights from the brain-gut axis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:29:21.238Z"
+}

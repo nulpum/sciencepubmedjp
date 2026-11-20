@@ -1,0 +1,96 @@
+{
+  "slug": "neuroplasticity",
+  "ja": "神経可塑性",
+  "yomi": "しんけいかそせい",
+  "en": "neuroplasticity",
+  "category": "biology",
+  "aliases": [
+    "脳可塑性"
+  ],
+  "meshHeading": "Neuronal Plasticity",
+  "meshUi": "68009473",
+  "description": {
+    "ja": "神経可塑性とは、脳や神経系が経験や学習、損傷などに応じて構造や機能を変化させる能力のことです。シナプス結合の強化・弱化、神経細胞の新生、神経回路の再編成などが含まれます。リハビリテーションや学習のメカニズム解明において重要な概念です。",
+    "en": "Neuroplasticity refers to the ability of the brain and nervous system to change their structure and function in response to experience, learning, or injury. It includes strengthening or weakening of synaptic connections, neurogenesis, and reorganization of neural circuits, and is a key concept in understanding rehabilitation and learning mechanisms."
+  },
+  "usage": {
+    "ja": "論文では脳卒中後の機能回復、学習による神経回路の変化、感覚遮断後の皮質再編成などを調べる際に用いられます。シナプス可塑性の指標(LTP/LTD)、脳画像解析、電気生理学的測定などで評価されます。",
+    "en": "In research papers, it is used when examining functional recovery after stroke, learning-induced changes in neural circuits, or cortical reorganization following sensory deprivation. It is assessed through synaptic plasticity markers (LTP/LTD), brain imaging analysis, and electrophysiological measurements."
+  },
+  "synonyms": {
+    "ja": "「脳可塑性」「neural plasticity」とも呼ばれます。「シナプス可塑性(synaptic plasticity)」は神経可塑性の一形態で、特にシナプスレベルの変化を指す場合に使い分けられます。発達期の可塑性と成人期の可塑性では特性が異なる点に注意が必要です。",
+    "en": "Also called \"brain plasticity\" or \"neural plasticity.\" \"Synaptic plasticity\" is a form of neuroplasticity specifically referring to changes at the synaptic level. Note that plasticity during development differs in characteristics from adult plasticity."
+  },
+  "pubmedCount": 61553,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2891
+    },
+    {
+      "year": 2018,
+      "count": 2668
+    },
+    {
+      "year": 2019,
+      "count": 2706
+    },
+    {
+      "year": 2020,
+      "count": 2596
+    },
+    {
+      "year": 2021,
+      "count": 2701
+    },
+    {
+      "year": 2022,
+      "count": 1972
+    },
+    {
+      "year": 2023,
+      "count": 1778
+    },
+    {
+      "year": 2024,
+      "count": 2313
+    },
+    {
+      "year": 2025,
+      "count": 3361
+    },
+    {
+      "year": 2026,
+      "count": 3301
+    }
+  ],
+  "searchQuery": "(\"Neuronal Plasticity\"[MeSH Terms]) OR (\"neuroplasticity\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42879336",
+      "title": "Sleep EEG oscillations and synaptic plasticity in memory consolidation across NREM and REM sleep.",
+      "year": 2027
+    },
+    {
+      "pmid": "42456845",
+      "title": "Plasma nerve growth factor level is associated with functional outcome after ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "42893747",
+      "title": "Ginsenoside compound K inhibits complement C1qA/C3-CR3-mediated microglial synaptic pruning and neuronal pyroptosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863728",
+      "title": "Si-shen-san attenuates Alzheimer's disease pathology and cognitive deficits through multi-target regulation of astrocyte function and synaptic plasticity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42697499",
+      "title": "Synaptic remodeling and functional recovery: Huan Le Ning decoction mitigates perimenopausal anxiety and depression symptoms via hippocampal reorganization.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:28:05.460Z"
+}

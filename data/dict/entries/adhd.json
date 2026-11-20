@@ -1,0 +1,96 @@
+{
+  "slug": "adhd",
+  "ja": "注意欠如・多動症",
+  "yomi": "ちゅういけつじょたどうしょう",
+  "en": "attention-deficit/hyperactivity disorder",
+  "abbr": "ADHD",
+  "category": "psychology",
+  "aliases": [
+    "注意欠陥多動性障害",
+    "注意欠如多動症"
+  ],
+  "description": {
+    "ja": "注意欠如・多動症(ADHD)は、不注意、多動性、衝動性を主な特徴とする神経発達症です。DSM-5などの診断基準に基づき評価され、小児期から成人期にわたって日常生活や学業・社会活動に影響を及ぼす可能性があります。脳内の神経伝達物質や前頭葉機能との関連が研究されています。",
+    "en": "Attention-deficit/hyperactivity disorder (ADHD) is a neurodevelopmental disorder characterized by inattention, hyperactivity, and impulsivity. It is diagnosed based on criteria such as DSM-5 and may affect daily functioning, academic performance, and social activities from childhood through adulthood. Research explores its links to neurotransmitters and frontal lobe function."
+  },
+  "usage": {
+    "ja": "論文では、DSM-5やICD-11の診断基準を用いた症例の特定、評価尺度(Conners評価スケール、ADHD-RSなど)による症状測定、認知機能検査や脳画像研究(fMRI、PETなど)による神経学的メカニズムの解明が行われます。疫学研究では有病率や併存症の調査も頻繁に報告されます。",
+    "en": "In research papers, ADHD is identified using DSM-5 or ICD-11 diagnostic criteria, with symptom severity measured by rating scales such as Conners scales or ADHD-RS. Studies also employ cognitive tests and neuroimaging (fMRI, PET) to investigate underlying mechanisms, while epidemiological studies report prevalence and comorbidities."
+  },
+  "synonyms": {
+    "ja": "かつては「注意欠陥多動性障害」と呼ばれましたが、現在は「注意欠如・多動症」が標準的な表記です。英語では「ADHD」が最も一般的で、論文検索では「hyperkinetic disorder」も関連用語として扱われることがあります。不注意優勢型、多動・衝動性優勢型、混合型のサブタイプが区別される場合もあります。",
+    "en": "Previously known as \"attention deficit disorder (ADD)\" or \"attention deficit hyperactivity disorder,\" the term ADHD is now standard. In literature searches, \"hyperkinetic disorder\" may appear as a related term, particularly in ICD classifications. Subtypes include predominantly inattentive, predominantly hyperactive-impulsive, and combined presentations."
+  },
+  "pubmedCount": 40057,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2018
+    },
+    {
+      "year": 2018,
+      "count": 2027
+    },
+    {
+      "year": 2019,
+      "count": 2113
+    },
+    {
+      "year": 2020,
+      "count": 2351
+    },
+    {
+      "year": 2021,
+      "count": 2603
+    },
+    {
+      "year": 2022,
+      "count": 2653
+    },
+    {
+      "year": 2023,
+      "count": 2600
+    },
+    {
+      "year": 2024,
+      "count": 2747
+    },
+    {
+      "year": 2025,
+      "count": 3115
+    },
+    {
+      "year": 2026,
+      "count": 3234
+    }
+  ],
+  "searchQuery": "\"attention-deficit/hyperactivity disorder\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42849536",
+      "title": "Maternal diet and offspring ASD and ADHD: A critical narrative review of dietary patterns, choline, and polyphenol-related exposures.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901396",
+      "title": "The effects of an online mindfulness-based intervention for parents of children with attention deficit/hyperactivity disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863796",
+      "title": "Differential changes in frontolimbic functional connectivity following 12-week psychostimulant monotherapy in ADHD youth with and without familial risk for bipolar I disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "43051731",
+      "title": "Disruptive Mood Dysregulation Disorder and Atypical Antipsychotics.",
+      "year": 2027
+    },
+    {
+      "pmid": "43051728",
+      "title": "Attention Deficit Hyperactivity Disorder and Disruptive Behavior Disorders.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:31:38.998Z"
+}

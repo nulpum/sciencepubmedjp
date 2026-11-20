@@ -1,0 +1,91 @@
+{
+  "slug": "attachment-theory",
+  "ja": "愛着理論",
+  "yomi": "あいちゃくりろん",
+  "en": "attachment theory",
+  "category": "psychology",
+  "description": {
+    "ja": "乳幼児期に主な養育者との間に形成される情緒的な結びつき(愛着)が、その後の対人関係や心理発達に影響を与えるという理論です。John Bowlbyが提唱し、Mary Ainsworthが実証研究を発展させました。安定型・不安定型などの愛着スタイルが、成人期の人間関係やメンタルヘルスと関連すると考えられています。",
+    "en": "A theory proposing that emotional bonds (attachment) formed between infants and primary caregivers influence later interpersonal relationships and psychological development. Originally developed by John Bowlby and empirically expanded by Mary Ainsworth, it identifies attachment styles (secure, insecure) that may relate to adult relationships and mental health outcomes."
+  },
+  "usage": {
+    "ja": "心理学・精神医学の論文では、幼少期の養育環境と成人後の不安・うつ・対人関係パターンとの関連を調べる際に用いられます。Adult Attachment Interview(AAI)やストレンジ・シチュエーション法などの測定法で愛着スタイルを評価し、臨床群と対照群を比較する研究が典型的です。",
+    "en": "In psychology and psychiatry research, attachment theory is used to examine associations between early caregiving environments and adult outcomes such as anxiety, depression, and interpersonal patterns. Studies typically assess attachment styles using tools like the Adult Attachment Interview (AAI) or Strange Situation Procedure, comparing clinical and control groups."
+  },
+  "synonyms": {
+    "ja": "「愛着様式」「愛着スタイル」は愛着理論に基づく個人差の分類を指します。「アタッチメント理論」とも呼ばれます。発達心理学では「母子関係」という用語が使われることもありますが、現代では主養育者全般を対象とする広い概念として理解されています。",
+    "en": "Terms like 'attachment style' or 'attachment pattern' refer to individual differences classified within attachment theory. It is sometimes called 'Bowlby's attachment theory.' While older literature may use 'mother-child bonding,' contemporary usage encompasses all primary caregivers, not limited to biological mothers."
+  },
+  "pubmedCount": 2056,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 116
+    },
+    {
+      "year": 2018,
+      "count": 112
+    },
+    {
+      "year": 2019,
+      "count": 123
+    },
+    {
+      "year": 2020,
+      "count": 116
+    },
+    {
+      "year": 2021,
+      "count": 122
+    },
+    {
+      "year": 2022,
+      "count": 144
+    },
+    {
+      "year": 2023,
+      "count": 91
+    },
+    {
+      "year": 2024,
+      "count": 105
+    },
+    {
+      "year": 2025,
+      "count": 153
+    },
+    {
+      "year": 2026,
+      "count": 161
+    }
+  ],
+  "searchQuery": "\"attachment theory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43010146",
+      "title": "Understanding rural fit: a qualitative study of how medical students develop rural career intentions in a socially accountable medical program.",
+      "year": 2026
+    },
+    {
+      "pmid": "41860061",
+      "title": "Parents' experiences with the Circle of Security Parenting (COSP) intervention - a scoping review of qualitative studies.",
+      "year": 2026
+    },
+    {
+      "pmid": "42991960",
+      "title": "Exploring Sibling Dynamics in the Context of Parentification: A Scoping Review of Relational and Developmental Impacts.",
+      "year": 2026
+    },
+    {
+      "pmid": "42700730",
+      "title": "Adult attachment styles and psychological birth trauma symptoms: A cross-sectional survey of postpartum women in Australia.",
+      "year": 2026
+    },
+    {
+      "pmid": "42124470",
+      "title": "The psychosocial matters: a call for attachment theory in kidney health research.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:33:13.557Z"
+}

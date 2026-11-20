@@ -1,0 +1,97 @@
+{
+  "slug": "autism-spectrum-disorder",
+  "ja": "自閉スペクトラム症",
+  "yomi": "じへいすぺくとらむしょう",
+  "en": "autism spectrum disorder",
+  "abbr": "ASD",
+  "category": "psychology",
+  "aliases": [
+    "自閉症スペクトラム障害"
+  ],
+  "meshHeading": "Autism Spectrum Disorder",
+  "meshUi": "2009775",
+  "description": {
+    "ja": "社会的コミュニケーションや対人関係の困難さ、限定的で反復的な行動パターンを特徴とする神経発達の多様性を示す概念です。従来の自閉症、アスペルガー症候群などを連続体（スペクトラム）として捉えるようになり、個人差が大きいことが認識されています。研究では脳機能、遺伝的要因、環境要因などが調べられています。",
+    "en": "A neurodevelopmental condition characterized by differences in social communication, interpersonal interactions, and restricted or repetitive behavioral patterns. The term reflects a spectrum concept that encompasses what were previously separate diagnoses such as autism and Asperger syndrome, recognizing wide individual variability. Research investigates brain function, genetic factors, and environmental influences."
+  },
+  "usage": {
+    "ja": "診断基準としてDSM-5やICD-11が用いられ、論文では行動観察、質問紙評価（ADOS、ADI-Rなど）、脳画像研究、遺伝子解析などで調査されます。有病率、早期発見マーカー、支援方法の有効性などが研究テーマとなります。",
+    "en": "Diagnosed using DSM-5 or ICD-11 criteria, studies employ behavioral observations, questionnaire assessments (such as ADOS, ADI-R), neuroimaging, and genetic analyses. Research topics include prevalence rates, early detection markers, and effectiveness of support interventions."
+  },
+  "synonyms": {
+    "ja": "「自閉症スペクトラム障害」とも呼ばれ、英語では「autism spectrum condition (ASC)」と表記されることもあります。古い文献では「広汎性発達障害 (PDD)」という用語が使われていましたが、現在の診断基準では統合されています。",
+    "en": "Also referred to as 'autism spectrum condition (ASC)' in some literature. Older papers may use 'pervasive developmental disorder (PDD),' which has been integrated into the current diagnostic framework."
+  },
+  "pubmedCount": 70520,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3731
+    },
+    {
+      "year": 2018,
+      "count": 4036
+    },
+    {
+      "year": 2019,
+      "count": 4456
+    },
+    {
+      "year": 2020,
+      "count": 4965
+    },
+    {
+      "year": 2021,
+      "count": 5959
+    },
+    {
+      "year": 2022,
+      "count": 5966
+    },
+    {
+      "year": 2023,
+      "count": 5585
+    },
+    {
+      "year": 2024,
+      "count": 6047
+    },
+    {
+      "year": 2025,
+      "count": 6511
+    },
+    {
+      "year": 2026,
+      "count": 6154
+    }
+  ],
+  "searchQuery": "(\"Autism Spectrum Disorder\"[MeSH Terms]) OR (\"autism spectrum disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42874787",
+      "title": "Atypical early-life ultrasonic vocalizations disrupt the pup-dam communication dyad in the BTBR model of autism spectrum disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849536",
+      "title": "Maternal diet and offspring ASD and ADHD: A critical narrative review of dietary patterns, choline, and polyphenol-related exposures.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810524",
+      "title": "Integrative genetic analyses of circadian chronotype and autism highlight regional co-association at 17q21.31.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800538",
+      "title": "Differential frontostriatal ΔFosB dynamics and behavioral flexibility in autism like VPA-exposed mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025916",
+      "title": "Mental Health and Vocational Benefits of Soft Skills Training in Autistic Young Adults.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:31:57.962Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "short-chain-fatty-acids",
+  "ja": "短鎖脂肪酸",
+  "yomi": "たんさしぼうさん",
+  "en": "short-chain fatty acids",
+  "abbr": "SCFA",
+  "category": "biology",
+  "meshHeading": "Fatty Acids, Volatile",
+  "meshUi": "68005232",
+  "description": {
+    "ja": "短鎖脂肪酸(SCFA)は、炭素数が6個以下の脂肪酸の総称で、主に酢酸、プロピオン酸、酪酸が含まれます。腸内細菌が食物繊維などを発酵分解することで産生され、腸管のエネルギー源や免疫調節に関わる代謝産物として注目されています。",
+    "en": "Short-chain fatty acids (SCFA) are fatty acids with six or fewer carbon atoms, primarily including acetate, propionate, and butyrate. They are produced when gut bacteria ferment dietary fiber and other substrates, and are recognized as metabolites that serve as energy sources for the intestinal epithelium and play roles in immune regulation."
+  },
+  "usage": {
+    "ja": "論文では腸内環境や微生物叢の研究で頻繁に登場し、糞便や血液サンプルからガスクロマトグラフィーなどで測定されます。プレバイオティクスや食物繊維の摂取が腸内SCFA濃度に与える影響を調べる介入研究でよく用いられる指標です。",
+    "en": "In research papers, SCFAs frequently appear in studies of gut environment and microbiome, measured in fecal or blood samples using gas chromatography and other analytical methods. They are commonly used as endpoints in intervention studies examining how prebiotic or dietary fiber intake affects intestinal SCFA concentrations."
+  },
+  "synonyms": {
+    "ja": "「揮発性脂肪酸(VFA)」とほぼ同義ですが、VFAは反芻動物の研究でよく使われます。個別の成分を指す場合は「酢酸(acetate)」「プロピオン酸(propionate)」「酪酸(butyrate)」と記載され、それぞれ異なる生理作用が研究されています。",
+    "en": "Nearly synonymous with 'volatile fatty acids (VFA),' though VFA is more commonly used in ruminant research. Individual components are referred to as acetate, propionate, and butyrate, each being studied for distinct physiological effects."
+  },
+  "pubmedCount": 139351,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3648
+    },
+    {
+      "year": 2018,
+      "count": 3784
+    },
+    {
+      "year": 2019,
+      "count": 4171
+    },
+    {
+      "year": 2020,
+      "count": 4508
+    },
+    {
+      "year": 2021,
+      "count": 4568
+    },
+    {
+      "year": 2022,
+      "count": 5150
+    },
+    {
+      "year": 2023,
+      "count": 5341
+    },
+    {
+      "year": 2024,
+      "count": 5602
+    },
+    {
+      "year": 2025,
+      "count": 6043
+    },
+    {
+      "year": 2026,
+      "count": 5799
+    }
+  ],
+  "searchQuery": "(\"Fatty Acids, Volatile\"[MeSH Terms]) OR (\"short-chain fatty acids\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42901665",
+      "title": "Interpreting metabolite associations and proposed biosynthetic routes in Lactiplantibacillus plantarum-fermented Porphyra haitanensis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874363",
+      "title": "Development of a high-throughput proteome sample preparation workflow based on efficient protein extraction to empower rational design of yeast cell factories.",
+      "year": 2027
+    },
+    {
+      "pmid": "42697497",
+      "title": "Si-Si-Gu-Ben granules alleviate diarrhea-predominant irritable bowel syndrome by modulating gut microbiota and suppressing the TLR4/NF-κB pathway: A combined clinical and animal study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42674160",
+      "title": "Chemical characterization by HPLC-ESI-Q-TOF-MS/MS and evaluation of the gastroprotective and antinociceptive activities of the ethanolic extract of Rhynchospora nervosa (Vahl) Boeckeler (Cyperaceae).",
+      "year": 2027
+    },
+    {
+      "pmid": "42800538",
+      "title": "Differential frontostriatal ΔFosB dynamics and behavioral flexibility in autism like VPA-exposed mice.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:25:51.225Z"
+}

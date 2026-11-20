@@ -1,0 +1,94 @@
+{
+  "slug": "ptsd",
+  "ja": "心的外傷後ストレス障害",
+  "yomi": "しんてきがいしょうごすとれすしょうがい",
+  "en": "post-traumatic stress disorder",
+  "abbr": "PTSD",
+  "category": "psychology",
+  "meshHeading": "Stress Disorders, Post-Traumatic",
+  "meshUi": "68013313",
+  "description": {
+    "ja": "心的外傷後ストレス障害(PTSD)は、命に関わる出来事や深刻なトラウマ体験の後に生じる心理的反応を指す診断名です。再体験症状(フラッシュバック)、回避行動、過覚醒状態などが主な特徴で、日常生活に大きな影響を及ぼします。災害、事故、暴力被害などの後に発症することがあり、心理学・精神医学分野で広く研究されています。",
+    "en": "Post-traumatic stress disorder (PTSD) is a diagnostic term for psychological reactions that occur after life-threatening events or serious traumatic experiences. Main features include re-experiencing symptoms (flashbacks), avoidance behaviors, and hyperarousal states, significantly impacting daily life. It may develop after disasters, accidents, violence, and is widely studied in psychology and psychiatry fields."
+  },
+  "usage": {
+    "ja": "論文では診断基準(DSM-5やICD-11)に基づいた評価尺度を用いて測定されます。CAPS(Clinician-Administered PTSD Scale)やPCL(PTSD Checklist)などの標準化された質問票で症状の重症度を数値化し、介入研究や疫学調査で用いられます。",
+    "en": "In research papers, PTSD is measured using assessment scales based on diagnostic criteria (DSM-5 or ICD-11). Standardized questionnaires such as CAPS (Clinician-Administered PTSD Scale) and PCL (PTSD Checklist) quantify symptom severity and are used in intervention studies and epidemiological surveys."
+  },
+  "synonyms": {
+    "ja": "かつては「外傷後ストレス障害」とも呼ばれ、古い文献では「PTSS(Post-Traumatic Stress Syndrome)」という用語が使われることもあります。急性ストレス障害(ASD)は類似の症状が4週間未満続く場合の診断名で、PTSDと区別されます。",
+    "en": "Previously referred to as \"traumatic stress disorder,\" older literature sometimes uses \"PTSS (Post-Traumatic Stress Syndrome).\" Acute Stress Disorder (ASD) is a distinct diagnosis for similar symptoms lasting less than 4 weeks, differentiated from PTSD."
+  },
+  "pubmedCount": 59890,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2933
+    },
+    {
+      "year": 2018,
+      "count": 3094
+    },
+    {
+      "year": 2019,
+      "count": 3176
+    },
+    {
+      "year": 2020,
+      "count": 3644
+    },
+    {
+      "year": 2021,
+      "count": 4230
+    },
+    {
+      "year": 2022,
+      "count": 4230
+    },
+    {
+      "year": 2023,
+      "count": 3803
+    },
+    {
+      "year": 2024,
+      "count": 3936
+    },
+    {
+      "year": 2025,
+      "count": 4340
+    },
+    {
+      "year": 2026,
+      "count": 3629
+    }
+  ],
+  "searchQuery": "(\"Stress Disorders, Post-Traumatic\"[MeSH Terms]) OR (\"post-traumatic stress disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42685938",
+      "title": "Modulating bile acid isomerization and brain distribution by multiflorin A mitigates neuroendocrine stress and ameliorates anxiety-like behavioral alterations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858929",
+      "title": "The regulatory roles of the medial septum and hippocampus in spatial memory impairment of PTSD mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025918",
+      "title": "Posttraumatic Stress Disorder and Trauma-Focused Evidence-Based Psychotherapy Among Patients Receiving Rehabilitation Services.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025917",
+      "title": "Traumatic Brain Injury in Veterans Experiencing Criminal-Legal Involvement: A Scoping Review and Evidence-Based Recommendations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869173",
+      "title": "Early prediction of childbirth-related posttraumatic stress disorder symptoms.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:32:55.256Z"
+}

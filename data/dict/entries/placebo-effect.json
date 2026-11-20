@@ -1,0 +1,96 @@
+{
+  "slug": "placebo-effect",
+  "ja": "プラセボ効果",
+  "yomi": "ぷらせぼこうか",
+  "en": "placebo effect",
+  "category": "research",
+  "aliases": [
+    "偽薬効果"
+  ],
+  "meshHeading": "Placebo Effect",
+  "meshUi": "68015990",
+  "description": {
+    "ja": "プラセボ効果とは、薬理作用のない偽薬(プラセボ)を投与された際に、患者の症状が改善したり生理的変化が起こる現象です。心理的な期待や暗示、条件付けなどが関与し、臨床試験では新薬の真の効果を測定するために対照群として用いられます。",
+    "en": "The placebo effect refers to the phenomenon where patients experience symptom improvement or physiological changes after receiving an inert substance (placebo) with no active pharmacological properties. It involves psychological factors such as expectation, suggestion, and conditioning, and is used as a control in clinical trials to measure the true efficacy of new treatments."
+  },
+  "usage": {
+    "ja": "ランダム化比較試験(RCT)において、実薬群とプラセボ群を比較することで薬剤の真の効果を評価します。痛み、うつ症状、消化器症状などの主観的指標で特に顕著に観察され、患者報告アウトカム(PRO)やバイオマーカーの変化として測定されます。",
+    "en": "In randomized controlled trials (RCTs), the true effect of a drug is evaluated by comparing the active treatment group with the placebo group. It is particularly prominent in subjective measures such as pain, depressive symptoms, and gastrointestinal symptoms, and is measured through patient-reported outcomes (PROs) and changes in biomarkers."
+  },
+  "synonyms": {
+    "ja": "偽薬効果とも呼ばれます。類似概念として、患者と医療者の相互作用による効果を含む「非特異的効果」、逆に症状が悪化する「ノセボ効果」があります。プラセボ反応(placebo response)は効果全体を、プラセボ効果は心理的要因による成分を指す場合があります。",
+    "en": "Also called 'giyaku kouka' (fake drug effect) in Japanese. Related concepts include 'non-specific effects' which encompass patient-provider interactions, and the 'nocebo effect' where symptoms worsen. The term 'placebo response' may refer to the overall effect, while 'placebo effect' specifically indicates the component due to psychological factors."
+  },
+  "pubmedCount": 8788,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 417
+    },
+    {
+      "year": 2018,
+      "count": 491
+    },
+    {
+      "year": 2019,
+      "count": 434
+    },
+    {
+      "year": 2020,
+      "count": 420
+    },
+    {
+      "year": 2021,
+      "count": 347
+    },
+    {
+      "year": 2022,
+      "count": 321
+    },
+    {
+      "year": 2023,
+      "count": 272
+    },
+    {
+      "year": 2024,
+      "count": 297
+    },
+    {
+      "year": 2025,
+      "count": 315
+    },
+    {
+      "year": 2026,
+      "count": 238
+    }
+  ],
+  "searchQuery": "(\"Placebo Effect\"[MeSH Terms]) OR (\"placebo effect\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42897966",
+      "title": "Placebo effects of caffeine on sport performance: a systematic review and meta-analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42696273",
+      "title": "Common questions and misconceptions of sodium bicarbonate as an ergogenic aid: what does the science really show?",
+      "year": 2026
+    },
+    {
+      "pmid": "43015125",
+      "title": "Time course of the placebo response and associated factors in clinical trials of biologic agents for ankylosing spondylitis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42978238",
+      "title": "Learning from many: Nocebo effects following exposure to multiple social models.",
+      "year": 2026
+    },
+    {
+      "pmid": "42841092",
+      "title": "A meta-analysis of pain intensity changes after placebo interventions in facial pain.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:24:35.332Z"
+}

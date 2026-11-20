@@ -1,0 +1,94 @@
+{
+  "slug": "relative-risk",
+  "ja": "相対リスク",
+  "yomi": "そうたいりすく",
+  "en": "relative risk",
+  "abbr": "RR",
+  "category": "research",
+  "meshHeading": "Risk",
+  "meshUi": "68012306",
+  "description": {
+    "ja": "相対リスク (RR) は、ある要因に曝露された群と曝露されていない群を比較したときに、特定の結果 (疾患の発症など) が何倍起こりやすいかを示す指標です。RRが1より大きければリスクが高く、1より小さければリスクが低いことを意味します。コホート研究などの前向き研究で主に用いられ、因果関係の強さを評価する際の重要な統計量です。",
+    "en": "Relative risk (RR) is a measure that compares the probability of an outcome (such as disease occurrence) between an exposed group and an unexposed group. An RR greater than 1 indicates increased risk, while an RR less than 1 indicates decreased risk. It is primarily used in prospective studies such as cohort studies and serves as a key statistical measure for evaluating the strength of causal relationships."
+  },
+  "usage": {
+    "ja": "疫学研究において「喫煙者の肺疾患発症リスクは非喫煙者の2.5倍 (RR=2.5)」のように報告されます。95%信頼区間とともに示され、信頼区間が1を含まない場合は統計的に有意な関連があると解釈されます。",
+    "en": "In epidemiological studies, it is reported as 'smokers have 2.5 times the risk of developing lung disease compared to non-smokers (RR=2.5).' RR is typically presented with 95% confidence intervals, and when the interval does not include 1, the association is considered statistically significant."
+  },
+  "synonyms": {
+    "ja": "リスク比とも呼ばれます。オッズ比 (OR) と混同されやすいですが、ORは症例対照研究で用いられ計算方法が異なります。ハザード比 (HR) は生存時間分析で用いられる類似の概念です。",
+    "en": "Also called risk ratio. It is often confused with odds ratio (OR), but OR is used in case-control studies and calculated differently. Hazard ratio (HR) is a similar concept used in survival time analysis."
+  },
+  "pubmedCount": 1623574,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 80427
+    },
+    {
+      "year": 2018,
+      "count": 79648
+    },
+    {
+      "year": 2019,
+      "count": 77529
+    },
+    {
+      "year": 2020,
+      "count": 77281
+    },
+    {
+      "year": 2021,
+      "count": 66207
+    },
+    {
+      "year": 2022,
+      "count": 48342
+    },
+    {
+      "year": 2023,
+      "count": 46460
+    },
+    {
+      "year": 2024,
+      "count": 65506
+    },
+    {
+      "year": 2025,
+      "count": 75883
+    },
+    {
+      "year": 2026,
+      "count": 59511
+    }
+  ],
+  "searchQuery": "(\"Risk\"[MeSH Terms]) OR (\"relative risk\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43049101",
+      "title": "Aortic stiffness and brain perfusion: a population-based study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42924917",
+      "title": "Pressure-guided pneumatic radial compression and radial artery occlusion after transradial coronary procedures: a retrospective historical cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42862737",
+      "title": "Beyond stroke: atrial fibrillation and the broader burden of thromboembolic events in the population-based EpiHealth study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:37:05.652Z"
+}

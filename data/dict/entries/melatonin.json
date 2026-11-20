@@ -1,0 +1,93 @@
+{
+  "slug": "melatonin",
+  "ja": "メラトニン",
+  "yomi": "めらとにん",
+  "en": "melatonin",
+  "category": "biology",
+  "meshHeading": "Melatonin",
+  "meshUi": "68008550",
+  "description": {
+    "ja": "松果体から主に夜間に分泌されるホルモンで、概日リズム(体内時計)の調節に関わる内因性物質です。光刺激によって分泌が抑制され、暗闇で分泌が促進されることから、睡眠・覚醒サイクルの調整指標として研究されています。抗酸化作用や免疫調節機能も報告されており、時差ぼけや睡眠障害に関する基礎研究で広く調べられています。",
+    "en": "Melatonin is an endogenous hormone primarily secreted by the pineal gland during nighttime, playing a key role in regulating circadian rhythms (biological clock). Its secretion is suppressed by light and enhanced in darkness, making it a research target for sleep-wake cycle regulation. Antioxidant and immunomodulatory functions have also been reported, and it is widely studied in basic research on jet lag and sleep disorders."
+  },
+  "usage": {
+    "ja": "論文では血中や唾液中のメラトニン濃度を測定し、概日リズムの位相や睡眠の質との関連を調べます。ELISA法や液体クロマトグラフィー質量分析法(LC-MS)が用いられ、夜間分泌ピークやDLMO(dim light melatonin onset)などの指標が報告されます。",
+    "en": "In research papers, melatonin levels in blood or saliva are measured to examine relationships with circadian phase and sleep quality. ELISA or liquid chromatography-mass spectrometry (LC-MS) is commonly used, with indices such as nocturnal secretion peaks and DLMO (dim light melatonin onset) reported."
+  },
+  "synonyms": {
+    "ja": "N-アセチル-5-メトキシトリプタミン(化学名)とも呼ばれます。「睡眠ホルモン」と通称されることもありますが、学術的にはメラトニン受容体作動薬や外因性メラトニン投与と区別して、内因性メラトニンと明記する場合があります。",
+    "en": "Also known chemically as N-acetyl-5-methoxytryptamine. Sometimes colloquially called the 'sleep hormone,' but in academic contexts it is often distinguished as endogenous melatonin versus melatonin receptor agonists or exogenous melatonin administration."
+  },
+  "pubmedCount": 37934,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1306
+    },
+    {
+      "year": 2018,
+      "count": 1387
+    },
+    {
+      "year": 2019,
+      "count": 1553
+    },
+    {
+      "year": 2020,
+      "count": 1821
+    },
+    {
+      "year": 2021,
+      "count": 1935
+    },
+    {
+      "year": 2022,
+      "count": 2063
+    },
+    {
+      "year": 2023,
+      "count": 1934
+    },
+    {
+      "year": 2024,
+      "count": 1967
+    },
+    {
+      "year": 2025,
+      "count": 2174
+    },
+    {
+      "year": 2026,
+      "count": 2099
+    }
+  ],
+  "searchQuery": "(\"Melatonin\"[MeSH Terms]) OR (\"melatonin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43041618",
+      "title": "Constructing functionalized cartilage organoids by preserving mitochondrial homeostasis to accelerate cartilage repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901648",
+      "title": "Light-induced adaptive laboratory evolution enhances bioactive aromatic amino acid-derived compound profile in a wine strain of Saccharomyces cerevisiae.",
+      "year": 2027
+    },
+    {
+      "pmid": "42805352",
+      "title": "Shenghui decoction improves sleep-deprivation-induced cognitive impairment in mice by modulating neuroinflammation, NRG1/ErbB4 signaling, and purine metabolism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892467",
+      "title": "Maternal piromelatine treatment is associated with attenuated behavioral alterations and sex-specific changes in hippocampal pCREB/BDNF signaling in adult offspring following prenatal constant-light exposure.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045440",
+      "title": "Circadian Rhythm Disruptions: Causes, Consequences, and Treatment Approaches.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:26:48.268Z"
+}

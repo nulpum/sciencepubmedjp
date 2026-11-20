@@ -1,0 +1,93 @@
+{
+  "slug": "cognitive-dissonance",
+  "ja": "認知的不協和",
+  "yomi": "にんちてきふきょうわ",
+  "en": "cognitive dissonance",
+  "category": "psychology",
+  "meshHeading": "Cognitive Dissonance",
+  "meshUi": "68003073",
+  "description": {
+    "ja": "自分の信念や態度と矛盾する行動をとったときや、相反する情報に直面したときに生じる心理的不快感のこと。人はこの不快感を軽減するために、態度を変えたり、矛盾を正当化したりする傾向があります。心理学者レオン・フェスティンガーが1957年に提唱した概念です。",
+    "en": "Psychological discomfort that arises when a person holds contradictory beliefs, attitudes, or behaviors, or when faced with conflicting information. People tend to reduce this discomfort by changing attitudes or justifying inconsistencies. The concept was proposed by psychologist Leon Festinger in 1957."
+  },
+  "usage": {
+    "ja": "心理学研究では、被験者に自分の信念と矛盾する行動をさせた後の態度変化を測定したり、質問紙で認知的不協和の程度を評価したりします。健康行動研究では、喫煙者が健康リスクを知りながら喫煙を続ける心理的メカニズムの説明などに用いられます。",
+    "en": "In psychological research, cognitive dissonance is measured by assessing attitude changes after participants engage in counter-attitudinal behaviors, or through questionnaires evaluating the degree of psychological discomfort. In health behavior studies, it is used to explain mechanisms such as smokers continuing to smoke despite knowing health risks."
+  },
+  "synonyms": {
+    "ja": "「認知的葛藤」「心理的不協和」とも呼ばれます。類似概念に「自己知覚理論」「バランス理論」がありますが、認知的不協和理論は特に矛盾による不快感とその解消プロセスに焦点を当てる点で区別されます。",
+    "en": "Also referred to as 'cognitive conflict' or 'psychological inconsistency.' Related concepts include 'self-perception theory' and 'balance theory,' but cognitive dissonance theory is distinguished by its specific focus on discomfort from inconsistency and the process of resolving it."
+  },
+  "pubmedCount": 1619,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 64
+    },
+    {
+      "year": 2018,
+      "count": 60
+    },
+    {
+      "year": 2019,
+      "count": 64
+    },
+    {
+      "year": 2020,
+      "count": 63
+    },
+    {
+      "year": 2021,
+      "count": 88
+    },
+    {
+      "year": 2022,
+      "count": 94
+    },
+    {
+      "year": 2023,
+      "count": 78
+    },
+    {
+      "year": 2024,
+      "count": 63
+    },
+    {
+      "year": 2025,
+      "count": 101
+    },
+    {
+      "year": 2026,
+      "count": 118
+    }
+  ],
+  "searchQuery": "(\"Cognitive Dissonance\"[MeSH Terms]) OR (\"cognitive dissonance\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42014953",
+      "title": "Normalising vulnerability, humanising learning: A qualitative exploration of dissonance and growth in clinical learning environments.",
+      "year": 2026
+    },
+    {
+      "pmid": "41482605",
+      "title": "Seeing the World Through a Dark Lens: The Dark Core of Personality and Its Relation to Primal World Beliefs.",
+      "year": 2026
+    },
+    {
+      "pmid": "43038709",
+      "title": "The battle for screen time: Assessing social media self-regulation and digital wellbeing through the reflective-impulsive model.",
+      "year": 2026
+    },
+    {
+      "pmid": "43037971",
+      "title": "What Arrives First.",
+      "year": 2026
+    },
+    {
+      "pmid": "42968403",
+      "title": "Feasibility, Acceptability, and Preliminary Efficacy of a Peer-Delivered Group Intervention to Mitigate Risk of Disordered Eating Among Pregnant Individuals: A Pilot Randomized Controlled Trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:34:11.681Z"
+}

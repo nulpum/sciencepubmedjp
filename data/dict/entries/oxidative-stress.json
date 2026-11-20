@@ -1,0 +1,93 @@
+{
+  "slug": "oxidative-stress",
+  "ja": "酸化ストレス",
+  "yomi": "さんかすとれす",
+  "en": "oxidative stress",
+  "category": "biology",
+  "meshHeading": "Oxidative Stress",
+  "meshUi": "68018384",
+  "description": {
+    "ja": "体内で活性酸素などの酸化物質が過剰に生成されるか、抗酸化防御機構が不十分で、細胞やタンパク質、DNAが酸化による損傷を受けやすい状態を指します。加齢、炎症、代謝異常など様々な生理・病理現象に関連する指標として研究されています。",
+    "en": "A condition where reactive oxygen species (ROS) and other oxidants are excessively produced or antioxidant defense mechanisms are insufficient, making cells, proteins, and DNA vulnerable to oxidative damage. It is studied as an indicator associated with various physiological and pathological phenomena including aging, inflammation, and metabolic disorders."
+  },
+  "usage": {
+    "ja": "論文では酸化ストレスマーカー(マロンジアルデヒド、8-OHdG、過酸化脂質など)の測定、抗酸化酵素活性の評価、細胞培養での活性酸素種の検出などを通じて評価されます。疾患モデルや介入研究で酸化と抗酸化のバランスを調べる際に用いられます。",
+    "en": "In research papers, it is assessed through measurement of oxidative stress markers (malondialdehyde, 8-OHdG, lipid peroxides, etc.), evaluation of antioxidant enzyme activity, and detection of ROS in cell culture. It is commonly examined in disease models and intervention studies to investigate the balance between oxidation and antioxidant capacity."
+  },
+  "synonyms": {
+    "ja": "「酸化的ストレス」とも表記され、関連用語に「活性酸素種(ROS)」「フリーラジカル」「抗酸化能」があります。単に酸化物質の存在ではなく、防御機構とのバランスが崩れた状態を指す点に注意が必要です。",
+    "en": "Also written as 'oxidative stress', related terms include 'reactive oxygen species (ROS)', 'free radicals', and 'antioxidant capacity'. Note that it refers not simply to the presence of oxidants but to an imbalance between oxidants and defense mechanisms."
+  },
+  "pubmedCount": 410090,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 19251
+    },
+    {
+      "year": 2018,
+      "count": 20402
+    },
+    {
+      "year": 2019,
+      "count": 21931
+    },
+    {
+      "year": 2020,
+      "count": 25151
+    },
+    {
+      "year": 2021,
+      "count": 27247
+    },
+    {
+      "year": 2022,
+      "count": 28012
+    },
+    {
+      "year": 2023,
+      "count": 27122
+    },
+    {
+      "year": 2024,
+      "count": 29810
+    },
+    {
+      "year": 2025,
+      "count": 38601
+    },
+    {
+      "year": 2026,
+      "count": 40792
+    }
+  ],
+  "searchQuery": "(\"Oxidative Stress\"[MeSH Terms]) OR (\"oxidative stress\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "43041721",
+      "title": "Atomically dispersed nanoactivators drive innate mitochondrial biogenesis for active neuroprotection in ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041618",
+      "title": "Constructing functionalized cartilage organoids by preserving mitochondrial homeostasis to accelerate cartilage repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42787492",
+      "title": "A 6His-2Flag dual-tag strategy enables high-yield production of antimicrobial peptide N6 in Pichia pastoris to combat multidrug-resistant Klebsiella pneumonia.",
+      "year": 2027
+    },
+    {
+      "pmid": "42662827",
+      "title": "Combinatorial metabolic engineering of Mycobacterium neoaurum LY-2 for efficient androstenedione production from phytosterols.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:30:00.411Z"
+}

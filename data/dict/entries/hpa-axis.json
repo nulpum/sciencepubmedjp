@@ -1,0 +1,95 @@
+{
+  "slug": "hpa-axis",
+  "ja": "HPA軸",
+  "yomi": "えいちぴーえいじく",
+  "en": "hypothalamic-pituitary-adrenal axis",
+  "abbr": "HPA axis",
+  "category": "biology",
+  "aliases": [
+    "視床下部-下垂体-副腎軸"
+  ],
+  "description": {
+    "ja": "視床下部、下垂体、副腎という3つの内分泌器官が連携してストレス応答やホルモン分泌を調節する神経内分泌系のシステムです。視床下部から放出されるCRH(副腎皮質刺激ホルモン放出ホルモン)が下垂体を刺激してACTH(副腎皮質刺激ホルモン)を分泌させ、それが副腎皮質に作用してコルチゾールなどの糖質コルチコイドを産生します。このフィードバック機構は生体のストレス適応や概日リズム、免疫機能、代謝調節に重要な役割を果たしています。",
+    "en": "The hypothalamic-pituitary-adrenal axis is a neuroendocrine system involving three organs that coordinate stress responses and hormone secretion. The hypothalamus releases CRH (corticotropin-releasing hormone), which stimulates the pituitary to secrete ACTH (adrenocorticotropic hormone), leading to cortisol and other glucocorticoid production in the adrenal cortex. This feedback mechanism plays a crucial role in stress adaptation, circadian rhythms, immune function, and metabolic regulation."
+  },
+  "usage": {
+    "ja": "ストレス研究、精神疾患(うつ病、不安障害、PTSD)、内分泌疾患、睡眠障害などの論文で頻繁に登場します。測定方法としては血中や唾液中のコルチゾール濃度、ACTH値、デキサメタゾン抑制試験、CRH刺激試験などが用いられ、HPA軸の活性度や調節異常を評価します。",
+    "en": "This term frequently appears in research on stress, psychiatric disorders (depression, anxiety, PTSD), endocrine diseases, and sleep disorders. Measurement methods include blood or salivary cortisol levels, ACTH concentrations, dexamethasone suppression tests, and CRH stimulation tests to assess HPA axis activity and dysregulation."
+  },
+  "synonyms": {
+    "ja": "視床下部-下垂体-副腎系、HPA系とも呼ばれます。類似概念として視床下部-下垂体-甲状腺軸(HPT軸)、視床下部-下垂体-性腺軸(HPG軸)などがあり、これらはまとめて視床下部-下垂体系と総称されることもあります。HPA軸の機能異常は「HPA軸亢進」「HPA軸抑制」「HPA軸調節不全」などと表現されます。",
+    "en": "Also referred to as the HPA system or hypothalamic-pituitary-adrenocortical axis. Related concepts include the hypothalamic-pituitary-thyroid axis (HPT axis) and hypothalamic-pituitary-gonadal axis (HPG axis), collectively termed the hypothalamic-pituitary system. Dysfunction is described as HPA axis hyperactivity, hypoactivity, or dysregulation."
+  },
+  "pubmedCount": 9872,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 428
+    },
+    {
+      "year": 2018,
+      "count": 420
+    },
+    {
+      "year": 2019,
+      "count": 400
+    },
+    {
+      "year": 2020,
+      "count": 459
+    },
+    {
+      "year": 2021,
+      "count": 469
+    },
+    {
+      "year": 2022,
+      "count": 440
+    },
+    {
+      "year": 2023,
+      "count": 397
+    },
+    {
+      "year": 2024,
+      "count": 429
+    },
+    {
+      "year": 2025,
+      "count": 468
+    },
+    {
+      "year": 2026,
+      "count": 637
+    }
+  ],
+  "searchQuery": "\"hypothalamic-pituitary-adrenal axis\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42880599",
+      "title": "Neuroendocrine and circuit remodeling under chronic social stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045240",
+      "title": "Endocrine Disorders in Older Adults: Adrenal Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42716131",
+      "title": "Neurocognitive effects of stress in higher education: Mechanisms, challenges, and opportunities.",
+      "year": 2027
+    },
+    {
+      "pmid": "42998616",
+      "title": "Beyond adversity: Dispositional mindfulness as a potential link between positive childhood experiences and lower hair cortisol concentration in adulthood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42962655",
+      "title": "Prospective associations between childhood stress characteristics and prenatal cortisol response to stress.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:29:41.499Z"
+}

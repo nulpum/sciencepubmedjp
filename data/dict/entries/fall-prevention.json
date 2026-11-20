@@ -1,0 +1,95 @@
+{
+  "slug": "fall-prevention",
+  "ja": "転倒予防",
+  "yomi": "てんとうよぼう",
+  "en": "fall prevention",
+  "category": "nursing-pharma",
+  "aliases": [
+    "転倒",
+    "転倒防止"
+  ],
+  "description": {
+    "ja": "高齢者や疾患を持つ患者における転倒事故を未然に防ぐための介入や取り組みを指します。運動療法、環境調整、服薬管理、多職種連携など、様々なアプローチが研究されており、骨折や入院リスクの低減を目的とします。",
+    "en": "Fall prevention refers to interventions and strategies aimed at reducing fall incidents in elderly or medically vulnerable populations. Various approaches including exercise programs, environmental modifications, medication management, and multidisciplinary collaboration are studied to reduce fracture and hospitalization risks."
+  },
+  "usage": {
+    "ja": "論文では「fall prevention program」「fall prevention intervention」として、運動介入やバランストレーニング、住環境評価、多因子介入の効果を評価します。アウトカムとして転倒発生率(fall incidence)、転倒リスクスコア、QOL指標などが測定されます。",
+    "en": "In research, terms like 'fall prevention program' or 'fall prevention intervention' are used to evaluate effectiveness of exercise, balance training, home assessments, or multifactorial interventions. Outcomes include fall incidence, fall risk scores, and quality of life measures."
+  },
+  "synonyms": {
+    "ja": "「転倒」は事象そのもの、「転倒防止」「転倒予防」は介入を指す点で使い分けられます。関連語として「fall risk assessment(転倒リスク評価)」「fall-related injury(転倒関連損傷)」があり、検索時は「fall*」でまとめて探すと効率的です。",
+    "en": "'Fall' refers to the event itself, while 'fall prevention' or 'fall reduction' describe interventions. Related terms include 'fall risk assessment' and 'fall-related injury.' Using 'fall*' as a search term can capture various related concepts efficiently."
+  },
+  "pubmedCount": 5420,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 250
+    },
+    {
+      "year": 2018,
+      "count": 268
+    },
+    {
+      "year": 2019,
+      "count": 326
+    },
+    {
+      "year": 2020,
+      "count": 343
+    },
+    {
+      "year": 2021,
+      "count": 394
+    },
+    {
+      "year": 2022,
+      "count": 377
+    },
+    {
+      "year": 2023,
+      "count": 352
+    },
+    {
+      "year": 2024,
+      "count": 443
+    },
+    {
+      "year": 2025,
+      "count": 682
+    },
+    {
+      "year": 2026,
+      "count": 705
+    }
+  ],
+  "searchQuery": "\"fall prevention\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42696957",
+      "title": "Reduced trailing limb angle is associated with near-falls during walking in stroke survivors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42982597",
+      "title": "Alignment of health organisation policies and procedures with the World Falls Guidelines: a gap analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42774894",
+      "title": "From information to action- a phase-based analysis of patient engagement in inpatient fall prevention: A scoping review.",
+      "year": 2026
+    },
+    {
+      "pmid": "42702895",
+      "title": "Emergencies in Amyotrophic Lateral Sclerosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42617524",
+      "title": "Patterns of fall-risk perception and response among nursing home residents: A qualitative study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:35:46.187Z"
+}

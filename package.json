@@ -39,7 +39,9 @@
     "emit:banners": "tsx scripts/build/emit-moshimo-banners.ts",
     "prebuild": "npm run emit:banners",
     "analytics:gsc": "python scripts/analytics/gsc_analyze.py",
-    "gen:dict": "tsx scripts/dict/run-generate.ts"
+    "gen:dict": "tsx scripts/dict/run-generate.ts",
+    "generate:dict-og": "tsx scripts/image/run-generate-dict-og.ts",
+    "post:dict": "tsx scripts/dict/run-post-sns.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",

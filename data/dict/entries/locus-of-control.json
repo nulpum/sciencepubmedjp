@@ -1,0 +1,96 @@
+{
+  "slug": "locus-of-control",
+  "ja": "統制の所在",
+  "yomi": "とうせいのしょざい",
+  "en": "locus of control",
+  "category": "psychology",
+  "aliases": [
+    "ローカス・オブ・コントロール"
+  ],
+  "meshHeading": "Internal-External Control",
+  "meshUi": "68007389",
+  "description": {
+    "ja": "自分の人生や出来事の原因を、自分自身の行動や努力によるもの(内的統制)と捉えるか、運や他者など外部要因(外的統制)と捉えるかという心理的傾向を示す概念です。Julian Rotterが1950年代に提唱した社会学習理論の中核概念で、個人の動機づけや行動パターンを理解する指標として用いられます。",
+    "en": "A psychological concept referring to the degree to which individuals believe they can control events affecting them, distinguishing between internal locus (attributing outcomes to one's own actions) and external locus (attributing outcomes to external factors like luck or others). Proposed by Julian Rotter in the 1950s as part of social learning theory, it serves as an indicator for understanding individual motivation and behavioral patterns."
+  },
+  "usage": {
+    "ja": "心理学研究では質問紙法で測定され、Rotter's Internal-External Locus of Control Scaleなどの尺度が用いられます。ストレス対処、学業成績、健康行動、職場適応などとの関連を調べる研究で頻繁に登場し、メンタルヘルスや行動変容の予測因子として分析されます。",
+    "en": "Measured in psychological research using questionnaires such as Rotter's Internal-External Locus of Control Scale. Frequently appears in studies examining relationships with stress coping, academic performance, health behaviors, and workplace adaptation, analyzed as a predictor of mental health outcomes and behavioral change."
+  },
+  "synonyms": {
+    "ja": "「統制の位置」「統制の所在感」とも訳されます。内的統制(internal locus)は「内的コントロール感」、外的統制(external locus)は「外的コントロール感」とも表現され、自己効力感(self-efficacy)と関連しますが、自己効力感は特定課題への自信を指すのに対し、統制の所在はより一般的な信念傾向を指す点で区別されます。",
+    "en": "Also referred to as 'control orientation' or 'locus of control orientation.' Internal locus may be called 'internal control beliefs' and external locus 'external control beliefs.' Related to but distinct from self-efficacy: self-efficacy refers to confidence in specific tasks, while locus of control represents a more generalized belief tendency about causality."
+  },
+  "pubmedCount": 21245,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 417
+    },
+    {
+      "year": 2018,
+      "count": 394
+    },
+    {
+      "year": 2019,
+      "count": 353
+    },
+    {
+      "year": 2020,
+      "count": 371
+    },
+    {
+      "year": 2021,
+      "count": 301
+    },
+    {
+      "year": 2022,
+      "count": 266
+    },
+    {
+      "year": 2023,
+      "count": 218
+    },
+    {
+      "year": 2024,
+      "count": 249
+    },
+    {
+      "year": 2025,
+      "count": 239
+    },
+    {
+      "year": 2026,
+      "count": 235
+    }
+  ],
+  "searchQuery": "(\"Internal-External Control\"[MeSH Terms]) OR (\"locus of control\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42854792",
+      "title": "Modeling internalizing symptoms and substance use comorbidity using causal network methodology.",
+      "year": 2027
+    },
+    {
+      "pmid": "42748515",
+      "title": "Social feedback informs generalisation of control beliefs.",
+      "year": 2027
+    },
+    {
+      "pmid": "42870336",
+      "title": "Positive youth development and youth peacebuilding in Colombia.",
+      "year": 2026
+    },
+    {
+      "pmid": "42710467",
+      "title": "Associations between religiosity and sleep: A systematic review of observational studies in the adult population.",
+      "year": 2026
+    },
+    {
+      "pmid": "42637149",
+      "title": "Childhood trauma and suicide ideation and attempts: Examining the mediating role of psychosocial, personality, lifestyle and biological factors.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:33:54.802Z"
+}

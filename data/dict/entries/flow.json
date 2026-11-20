@@ -1,0 +1,94 @@
+{
+  "slug": "flow",
+  "ja": "フロー",
+  "yomi": "ふろー",
+  "en": "flow",
+  "category": "psychology",
+  "aliases": [
+    "フロー状態"
+  ],
+  "description": {
+    "ja": "心理学者Csikszentmihalyiが提唱した、活動に完全に没入し時間感覚を忘れるほど集中している最適な心理状態を指します。スポーツ、芸術、仕事などで技能と課題の難易度が適切に釣り合ったときに生じやすいとされます。",
+    "en": "A psychological concept proposed by Csikszentmihalyi, referring to an optimal state of complete immersion and concentration in an activity where one loses track of time. It is most likely to occur when skill level and task difficulty are appropriately balanced, commonly observed in sports, arts, and work settings."
+  },
+  "usage": {
+    "ja": "心理学研究では質問紙法やEMA(生態学的瞬間評価法)を用いて測定され、集中度、自己意識の消失、時間感覚の歪みなどの要素が評価されます。パフォーマンス、幸福感、創造性との関連が調べられています。",
+    "en": "In psychological research, flow is measured using questionnaires or EMA (Ecological Momentary Assessment), evaluating elements such as concentration depth, loss of self-consciousness, and distorted time perception. Studies examine its relationship with performance, well-being, and creativity."
+  },
+  "synonyms": {
+    "ja": "「フロー状態」「フロー体験」「最適経験」とも呼ばれます。類似概念に「没入」(immersion)や「ゾーン」(in the zone)がありますが、フローは技能と挑戦のバランスが理論的に定義されている点で区別されます。",
+    "en": "Also called 'flow state,' 'flow experience,' or 'optimal experience.' Similar concepts include 'immersion' and being 'in the zone,' but flow is distinguished by its theoretical definition emphasizing the balance between skill and challenge."
+  },
+  "pubmedCount": 976778,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 35667
+    },
+    {
+      "year": 2018,
+      "count": 38409
+    },
+    {
+      "year": 2019,
+      "count": 40176
+    },
+    {
+      "year": 2020,
+      "count": 45330
+    },
+    {
+      "year": 2021,
+      "count": 48662
+    },
+    {
+      "year": 2022,
+      "count": 48093
+    },
+    {
+      "year": 2023,
+      "count": 45378
+    },
+    {
+      "year": 2024,
+      "count": 46364
+    },
+    {
+      "year": 2025,
+      "count": 50729
+    },
+    {
+      "year": 2026,
+      "count": 47680
+    }
+  ],
+  "searchQuery": "\"flow\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43019776",
+      "title": "Micro-flow LC- drift tube IMS-MS with high-resolution demultiplexing for enhanced lipidome coverage of volume-limited biological samples.",
+      "year": 2027
+    },
+    {
+      "pmid": "42981745",
+      "title": "Quantitative screening of Legionella pneumophila in preconcentrated water samples using a portable SERS lateral-flow immunoassay.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976425",
+      "title": "A novel, cost-efficient and sinusoidal voltage-based amperometric biosensor integrated into a 3D-printed microfluidic system for glucose determination in untreated blood and serum plasma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971082",
+      "title": "Cascade fluorescence-to-thermal photothermal lateral flow immunoassay with simplified sample preparation for procymidone detection in vegetables.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967391",
+      "title": "Review of advancement in nanozyme-enhanced lateral flow immunoassay: catalytic mechanisms, design strategies, applications and future perspectives.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:34:29.703Z"
+}

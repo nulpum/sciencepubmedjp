@@ -464,5 +464,2057 @@
     "aliases": [
       "副作用"
     ]
+  },
+  {
+    "slug": "relative-risk",
+    "ja": "相対リスク",
+    "yomi": "そうたいりすく",
+    "en": "relative risk",
+    "abbr": "RR",
+    "category": "research"
+  },
+  {
+    "slug": "absolute-risk",
+    "ja": "絶対リスク",
+    "yomi": "ぜったいりすく",
+    "en": "absolute risk",
+    "abbr": "AR",
+    "category": "research"
+  },
+  {
+    "slug": "number-needed-to-treat",
+    "ja": "治療必要数",
+    "yomi": "ちりょうひつようすう",
+    "en": "number needed to treat",
+    "abbr": "NNT",
+    "category": "research"
+  },
+  {
+    "slug": "sensitivity",
+    "ja": "感度",
+    "yomi": "かんど",
+    "en": "sensitivity",
+    "category": "research",
+    "aliases": [
+      "真陽性率"
+    ]
+  },
+  {
+    "slug": "specificity",
+    "ja": "特異度",
+    "yomi": "とくいど",
+    "en": "specificity",
+    "category": "research",
+    "aliases": [
+      "真陰性率"
+    ]
+  },
+  {
+    "slug": "receiver-operating-characteristic",
+    "ja": "ROC曲線",
+    "yomi": "あーるおーしーきょくせん",
+    "en": "receiver operating characteristic",
+    "abbr": "ROC",
+    "category": "research"
+  },
+  {
+    "slug": "area-under-curve",
+    "ja": "曲線下面積",
+    "yomi": "きょくせんかめんせき",
+    "en": "area under the curve",
+    "abbr": "AUC",
+    "category": "research"
+  },
+  {
+    "slug": "regression-analysis",
+    "ja": "回帰分析",
+    "yomi": "かいきぶんせき",
+    "en": "regression analysis",
+    "category": "research"
+  },
+  {
+    "slug": "logistic-regression",
+    "ja": "ロジスティック回帰",
+    "yomi": "ろじすてぃっくかいき",
+    "en": "logistic regression",
+    "category": "research"
+  },
+  {
+    "slug": "linear-regression",
+    "ja": "線形回帰",
+    "yomi": "せんけいかいき",
+    "en": "linear regression",
+    "category": "research"
+  },
+  {
+    "slug": "kaplan-meier",
+    "ja": "カプランマイヤー法",
+    "yomi": "かぷらんまいやーほう",
+    "en": "Kaplan-Meier estimator",
+    "category": "research",
+    "aliases": [
+      "生存曲線"
+    ]
+  },
+  {
+    "slug": "cox-regression",
+    "ja": "Cox回帰",
+    "yomi": "こっくすかいき",
+    "en": "Cox proportional hazards regression",
+    "category": "research",
+    "aliases": [
+      "比例ハザードモデル"
+    ]
+  },
+  {
+    "slug": "forest-plot",
+    "ja": "フォレストプロット",
+    "yomi": "ふぉれすとぷろっと",
+    "en": "forest plot",
+    "category": "research"
+  },
+  {
+    "slug": "funnel-plot",
+    "ja": "ファンネルプロット",
+    "yomi": "ふぁんねるぷろっと",
+    "en": "funnel plot",
+    "category": "research",
+    "aliases": [
+      "漏斗プロット"
+    ]
+  },
+  {
+    "slug": "heterogeneity",
+    "ja": "異質性",
+    "yomi": "いしつせい",
+    "en": "heterogeneity",
+    "category": "research",
+    "aliases": [
+      "ヘテロジェナイティ"
+    ]
+  },
+  {
+    "slug": "i-squared",
+    "ja": "I二乗統計量",
+    "yomi": "あいじじょうとうけいりょう",
+    "en": "I² statistic",
+    "category": "research",
+    "aliases": [
+      "I2"
+    ]
+  },
+  {
+    "slug": "grade-evidence",
+    "ja": "GRADE",
+    "yomi": "ぐれーど",
+    "en": "GRADE approach",
+    "category": "research",
+    "aliases": [
+      "エビデンスの質評価"
+    ]
+  },
+  {
+    "slug": "prisma",
+    "ja": "PRISMA",
+    "yomi": "ぷりずま",
+    "en": "PRISMA",
+    "category": "research",
+    "aliases": [
+      "システマティックレビュー報告基準"
+    ]
+  },
+  {
+    "slug": "consort",
+    "ja": "CONSORT",
+    "yomi": "こんそーと",
+    "en": "CONSORT",
+    "category": "research",
+    "aliases": [
+      "RCT報告基準"
+    ]
+  },
+  {
+    "slug": "strobe",
+    "ja": "STROBE",
+    "yomi": "すとろーぶ",
+    "en": "STROBE",
+    "category": "research",
+    "aliases": [
+      "観察研究報告基準"
+    ]
+  },
+  {
+    "slug": "stard",
+    "ja": "STARD",
+    "yomi": "すたーど",
+    "en": "STARD",
+    "category": "research",
+    "aliases": [
+      "診断精度研究報告基準"
+    ]
+  },
+  {
+    "slug": "blinding",
+    "ja": "盲検化",
+    "yomi": "もうけんか",
+    "en": "blinding",
+    "category": "research",
+    "aliases": [
+      "ブラインド化",
+      "マスキング"
+    ]
+  },
+  {
+    "slug": "allocation-concealment",
+    "ja": "割付の隠蔽",
+    "yomi": "わりつけのいんぺい",
+    "en": "allocation concealment",
+    "category": "research"
+  },
+  {
+    "slug": "selection-bias",
+    "ja": "選択バイアス",
+    "yomi": "せんたくばいあす",
+    "en": "selection bias",
+    "category": "research"
+  },
+  {
+    "slug": "recall-bias",
+    "ja": "想起バイアス",
+    "yomi": "そうきばいあす",
+    "en": "recall bias",
+    "category": "research",
+    "aliases": [
+      "思い出しバイアス"
+    ]
+  },
+  {
+    "slug": "confounding",
+    "ja": "交絡",
+    "yomi": "こうらく",
+    "en": "confounding",
+    "category": "research",
+    "aliases": [
+      "交絡因子"
+    ]
+  },
+  {
+    "slug": "propensity-score",
+    "ja": "傾向スコア",
+    "yomi": "けいこうすこあ",
+    "en": "propensity score",
+    "category": "research"
+  },
+  {
+    "slug": "instrumental-variable",
+    "ja": "操作変数法",
+    "yomi": "そうさへんすうほう",
+    "en": "instrumental variable",
+    "category": "research"
+  },
+  {
+    "slug": "mendelian-randomization",
+    "ja": "メンデルランダム化",
+    "yomi": "めんでるらんだむか",
+    "en": "Mendelian randomization",
+    "category": "research"
+  },
+  {
+    "slug": "bayesian-analysis",
+    "ja": "ベイズ分析",
+    "yomi": "べいずぶんせき",
+    "en": "Bayesian analysis",
+    "category": "research"
+  },
+  {
+    "slug": "prior-probability",
+    "ja": "事前確率",
+    "yomi": "じぜんかくりつ",
+    "en": "prior probability",
+    "category": "research"
+  },
+  {
+    "slug": "posterior-probability",
+    "ja": "事後確率",
+    "yomi": "じごかくりつ",
+    "en": "posterior probability",
+    "category": "research"
+  },
+  {
+    "slug": "likelihood-ratio",
+    "ja": "尤度比",
+    "yomi": "ゆうどひ",
+    "en": "likelihood ratio",
+    "category": "research"
+  },
+  {
+    "slug": "standardized-mean-difference",
+    "ja": "標準化平均差",
+    "yomi": "ひょうじゅんかへいきんさ",
+    "en": "standardized mean difference",
+    "abbr": "SMD",
+    "category": "research"
+  },
+  {
+    "slug": "risk-ratio",
+    "ja": "リスク比",
+    "yomi": "りすくひ",
+    "en": "risk ratio",
+    "category": "research"
+  },
+  {
+    "slug": "incidence",
+    "ja": "発症率",
+    "yomi": "はっしょうりつ",
+    "en": "incidence",
+    "category": "research",
+    "aliases": [
+      "罹患率"
+    ]
+  },
+  {
+    "slug": "prevalence",
+    "ja": "有病率",
+    "yomi": "ゆうびょうりつ",
+    "en": "prevalence",
+    "category": "research"
+  },
+  {
+    "slug": "mortality",
+    "ja": "死亡率",
+    "yomi": "しぼうりつ",
+    "en": "mortality",
+    "category": "research"
+  },
+  {
+    "slug": "morbidity",
+    "ja": "罹病率",
+    "yomi": "りびょうりつ",
+    "en": "morbidity",
+    "category": "research"
+  },
+  {
+    "slug": "non-inferiority-trial",
+    "ja": "非劣性試験",
+    "yomi": "ひれっせいしけん",
+    "en": "non-inferiority trial",
+    "category": "research"
+  },
+  {
+    "slug": "equivalence-trial",
+    "ja": "同等性試験",
+    "yomi": "どうとうせいしけん",
+    "en": "equivalence trial",
+    "category": "research"
+  },
+  {
+    "slug": "crossover-trial",
+    "ja": "クロスオーバー試験",
+    "yomi": "くろすおーばーしけん",
+    "en": "crossover trial",
+    "category": "research",
+    "aliases": [
+      "交差試験"
+    ]
+  },
+  {
+    "slug": "cluster-randomized-trial",
+    "ja": "クラスターランダム化試験",
+    "yomi": "くらすたーらんだむかしけん",
+    "en": "cluster randomized trial",
+    "category": "research"
+  },
+  {
+    "slug": "adaptive-trial",
+    "ja": "アダプティブ試験",
+    "yomi": "あだぷてぃぶしけん",
+    "en": "adaptive trial",
+    "category": "research",
+    "aliases": [
+      "適応試験"
+    ]
+  },
+  {
+    "slug": "n-of-1-trial",
+    "ja": "N-of-1試験",
+    "yomi": "えぬおぶわんしけん",
+    "en": "N-of-1 trial",
+    "category": "research",
+    "aliases": [
+      "個人内比較試験"
+    ]
+  },
+  {
+    "slug": "insulin",
+    "ja": "インスリン",
+    "yomi": "いんすりん",
+    "en": "insulin",
+    "category": "biology"
+  },
+  {
+    "slug": "glucagon",
+    "ja": "グルカゴン",
+    "yomi": "ぐるかごん",
+    "en": "glucagon",
+    "category": "biology"
+  },
+  {
+    "slug": "glp1",
+    "ja": "GLP-1",
+    "yomi": "じーえるぴーわん",
+    "en": "glucagon-like peptide-1",
+    "abbr": "GLP-1",
+    "category": "biology",
+    "aliases": [
+      "グルカゴン様ペプチド1"
+    ]
+  },
+  {
+    "slug": "leptin",
+    "ja": "レプチン",
+    "yomi": "れぷちん",
+    "en": "leptin",
+    "category": "biology"
+  },
+  {
+    "slug": "ghrelin",
+    "ja": "グレリン",
+    "yomi": "ぐれりん",
+    "en": "ghrelin",
+    "category": "biology"
+  },
+  {
+    "slug": "adiponectin",
+    "ja": "アディポネクチン",
+    "yomi": "あでぃぽねくちん",
+    "en": "adiponectin",
+    "category": "biology"
+  },
+  {
+    "slug": "thyroid-hormone",
+    "ja": "甲状腺ホルモン",
+    "yomi": "こうじょうせんほるもん",
+    "en": "thyroid hormone",
+    "category": "biology"
+  },
+  {
+    "slug": "estrogen",
+    "ja": "エストロゲン",
+    "yomi": "えすとろげん",
+    "en": "estrogen",
+    "category": "biology",
+    "aliases": [
+      "エストロジェン"
+    ]
+  },
+  {
+    "slug": "progesterone",
+    "ja": "プロゲステロン",
+    "yomi": "ぷろげすてろん",
+    "en": "progesterone",
+    "category": "biology"
+  },
+  {
+    "slug": "testosterone",
+    "ja": "テストステロン",
+    "yomi": "てすとすてろん",
+    "en": "testosterone",
+    "category": "biology"
+  },
+  {
+    "slug": "growth-hormone",
+    "ja": "成長ホルモン",
+    "yomi": "せいちょうほるもん",
+    "en": "growth hormone",
+    "abbr": "GH",
+    "category": "biology"
+  },
+  {
+    "slug": "oxytocin",
+    "ja": "オキシトシン",
+    "yomi": "おきしとしん",
+    "en": "oxytocin",
+    "category": "biology"
+  },
+  {
+    "slug": "vasopressin",
+    "ja": "バソプレシン",
+    "yomi": "ばそぷれしん",
+    "en": "vasopressin",
+    "category": "biology",
+    "aliases": [
+      "抗利尿ホルモン"
+    ]
+  },
+  {
+    "slug": "prolactin",
+    "ja": "プロラクチン",
+    "yomi": "ぷろらくちん",
+    "en": "prolactin",
+    "category": "biology"
+  },
+  {
+    "slug": "circadian-rhythm",
+    "ja": "概日リズム",
+    "yomi": "がいじつりずむ",
+    "en": "circadian rhythm",
+    "category": "biology",
+    "aliases": [
+      "サーカディアンリズム",
+      "体内時計"
+    ]
+  },
+  {
+    "slug": "rem-sleep",
+    "ja": "REM睡眠",
+    "yomi": "れむすいみん",
+    "en": "REM sleep",
+    "category": "biology",
+    "aliases": [
+      "急速眼球運動睡眠"
+    ]
+  },
+  {
+    "slug": "nrem-sleep",
+    "ja": "NREM睡眠",
+    "yomi": "のんれむすいみん",
+    "en": "non-REM sleep",
+    "category": "biology",
+    "aliases": [
+      "ノンレム睡眠"
+    ]
+  },
+  {
+    "slug": "slow-wave-sleep",
+    "ja": "徐波睡眠",
+    "yomi": "じょはすいみん",
+    "en": "slow-wave sleep",
+    "category": "biology",
+    "aliases": [
+      "深睡眠"
+    ]
+  },
+  {
+    "slug": "glymphatic-system",
+    "ja": "グリンパティック系",
+    "yomi": "ぐりんぱてぃっくけい",
+    "en": "glymphatic system",
+    "category": "biology",
+    "aliases": [
+      "脳リンパ系"
+    ]
+  },
+  {
+    "slug": "blood-brain-barrier",
+    "ja": "血液脳関門",
+    "yomi": "けつえきのうかんもん",
+    "en": "blood-brain barrier",
+    "abbr": "BBB",
+    "category": "biology"
+  },
+  {
+    "slug": "synaptic-plasticity",
+    "ja": "シナプス可塑性",
+    "yomi": "しなぷすかそせい",
+    "en": "synaptic plasticity",
+    "category": "biology"
+  },
+  {
+    "slug": "long-term-potentiation",
+    "ja": "長期増強",
+    "yomi": "ちょうきぞうきょう",
+    "en": "long-term potentiation",
+    "abbr": "LTP",
+    "category": "biology"
+  },
+  {
+    "slug": "glutamate",
+    "ja": "グルタミン酸",
+    "yomi": "ぐるたみんさん",
+    "en": "glutamate",
+    "category": "biology"
+  },
+  {
+    "slug": "acetylcholine",
+    "ja": "アセチルコリン",
+    "yomi": "あせちるこりん",
+    "en": "acetylcholine",
+    "category": "biology"
+  },
+  {
+    "slug": "norepinephrine",
+    "ja": "ノルアドレナリン",
+    "yomi": "のるあどれなりん",
+    "en": "norepinephrine",
+    "category": "biology",
+    "aliases": [
+      "ノルエピネフリン"
+    ]
+  },
+  {
+    "slug": "endorphin",
+    "ja": "エンドルフィン",
+    "yomi": "えんどるふぃん",
+    "en": "endorphin",
+    "category": "biology"
+  },
+  {
+    "slug": "c-reactive-protein",
+    "ja": "C反応性タンパク",
+    "yomi": "しーはんのうせいたんぱく",
+    "en": "C-reactive protein",
+    "abbr": "CRP",
+    "category": "biology"
+  },
+  {
+    "slug": "interleukin-6",
+    "ja": "インターロイキン6",
+    "yomi": "いんたーろいきんろく",
+    "en": "interleukin-6",
+    "abbr": "IL-6",
+    "category": "biology"
+  },
+  {
+    "slug": "tnf-alpha",
+    "ja": "TNF-α",
+    "yomi": "てぃーえぬえふあるふぁ",
+    "en": "tumor necrosis factor alpha",
+    "abbr": "TNF-α",
+    "category": "biology",
+    "aliases": [
+      "腫瘍壊死因子α"
+    ]
+  },
+  {
+    "slug": "cytokine",
+    "ja": "サイトカイン",
+    "yomi": "さいとかいん",
+    "en": "cytokine",
+    "category": "biology"
+  },
+  {
+    "slug": "chemokine",
+    "ja": "ケモカイン",
+    "yomi": "けもかいん",
+    "en": "chemokine",
+    "category": "biology"
+  },
+  {
+    "slug": "macrophage",
+    "ja": "マクロファージ",
+    "yomi": "まくろふぁーじ",
+    "en": "macrophage",
+    "category": "biology"
+  },
+  {
+    "slug": "t-cell",
+    "ja": "T細胞",
+    "yomi": "てぃーさいぼう",
+    "en": "T cell",
+    "category": "biology",
+    "aliases": [
+      "Tリンパ球"
+    ]
+  },
+  {
+    "slug": "b-cell",
+    "ja": "B細胞",
+    "yomi": "びーさいぼう",
+    "en": "B cell",
+    "category": "biology",
+    "aliases": [
+      "Bリンパ球"
+    ]
+  },
+  {
+    "slug": "nk-cell",
+    "ja": "NK細胞",
+    "yomi": "えぬけーさいぼう",
+    "en": "natural killer cell",
+    "abbr": "NK cell",
+    "category": "biology",
+    "aliases": [
+      "ナチュラルキラー細胞"
+    ]
+  },
+  {
+    "slug": "regulatory-t-cell",
+    "ja": "制御性T細胞",
+    "yomi": "せいぎょせいてぃーさいぼう",
+    "en": "regulatory T cell",
+    "abbr": "Treg",
+    "category": "biology"
+  },
+  {
+    "slug": "microbiome",
+    "ja": "マイクロバイオーム",
+    "yomi": "まいくろばいおーむ",
+    "en": "microbiome",
+    "category": "biology"
+  },
+  {
+    "slug": "probiotic",
+    "ja": "プロバイオティクス",
+    "yomi": "ぷろばいおてぃくす",
+    "en": "probiotic",
+    "category": "biology"
+  },
+  {
+    "slug": "prebiotic",
+    "ja": "プレバイオティクス",
+    "yomi": "ぷればいおてぃくす",
+    "en": "prebiotic",
+    "category": "biology"
+  },
+  {
+    "slug": "postbiotic",
+    "ja": "ポストバイオティクス",
+    "yomi": "ぽすとばいおてぃくす",
+    "en": "postbiotic",
+    "category": "biology"
+  },
+  {
+    "slug": "gut-brain-axis",
+    "ja": "腸脳相関",
+    "yomi": "ちょうのうそうかん",
+    "en": "gut-brain axis",
+    "category": "biology"
+  },
+  {
+    "slug": "vagus-nerve",
+    "ja": "迷走神経",
+    "yomi": "めいそうしんけい",
+    "en": "vagus nerve",
+    "category": "biology"
+  },
+  {
+    "slug": "autophagy",
+    "ja": "オートファジー",
+    "yomi": "おーとふぁじー",
+    "en": "autophagy",
+    "category": "biology",
+    "aliases": [
+      "自食作用"
+    ]
+  },
+  {
+    "slug": "apoptosis",
+    "ja": "アポトーシス",
+    "yomi": "あぽとーしす",
+    "en": "apoptosis",
+    "category": "biology",
+    "aliases": [
+      "細胞死"
+    ]
+  },
+  {
+    "slug": "senescence",
+    "ja": "細胞老化",
+    "yomi": "さいぼうろうか",
+    "en": "cellular senescence",
+    "category": "biology"
+  },
+  {
+    "slug": "stem-cell",
+    "ja": "幹細胞",
+    "yomi": "かんさいぼう",
+    "en": "stem cell",
+    "category": "biology"
+  },
+  {
+    "slug": "ips-cell",
+    "ja": "iPS細胞",
+    "yomi": "あいぴーえすさいぼう",
+    "en": "induced pluripotent stem cell",
+    "abbr": "iPS cell",
+    "category": "biology",
+    "aliases": [
+      "人工多能性幹細胞"
+    ]
+  },
+  {
+    "slug": "crispr",
+    "ja": "CRISPR",
+    "yomi": "くりすぱー",
+    "en": "CRISPR",
+    "category": "biology",
+    "aliases": [
+      "クリスパー"
+    ]
+  },
+  {
+    "slug": "methylation",
+    "ja": "メチル化",
+    "yomi": "めちるか",
+    "en": "methylation",
+    "category": "biology",
+    "aliases": [
+      "DNAメチル化"
+    ]
+  },
+  {
+    "slug": "histone-modification",
+    "ja": "ヒストン修飾",
+    "yomi": "ひすとんしゅうしょく",
+    "en": "histone modification",
+    "category": "biology"
+  },
+  {
+    "slug": "micro-rna",
+    "ja": "マイクロRNA",
+    "yomi": "まいくろあーるえぬえー",
+    "en": "microRNA",
+    "abbr": "miRNA",
+    "category": "biology"
+  },
+  {
+    "slug": "exosome",
+    "ja": "エクソソーム",
+    "yomi": "えくそそーむ",
+    "en": "exosome",
+    "category": "biology",
+    "aliases": [
+      "細胞外小胞"
+    ]
+  },
+  {
+    "slug": "metabolomics",
+    "ja": "メタボロミクス",
+    "yomi": "めたぼろみくす",
+    "en": "metabolomics",
+    "category": "biology",
+    "aliases": [
+      "代謝物解析"
+    ]
+  },
+  {
+    "slug": "proteomics",
+    "ja": "プロテオミクス",
+    "yomi": "ぷろておみくす",
+    "en": "proteomics",
+    "category": "biology",
+    "aliases": [
+      "タンパク質解析"
+    ]
+  },
+  {
+    "slug": "transcriptomics",
+    "ja": "トランスクリプトミクス",
+    "yomi": "とらんすくりぷとみくす",
+    "en": "transcriptomics",
+    "category": "biology",
+    "aliases": [
+      "転写産物解析"
+    ]
+  },
+  {
+    "slug": "genomics",
+    "ja": "ゲノミクス",
+    "yomi": "げのみくす",
+    "en": "genomics",
+    "category": "biology",
+    "aliases": [
+      "ゲノム解析"
+    ]
+  },
+  {
+    "slug": "single-cell-sequencing",
+    "ja": "シングルセル解析",
+    "yomi": "しんぐるせるかいせき",
+    "en": "single-cell sequencing",
+    "category": "biology"
+  },
+  {
+    "slug": "amyloid-beta",
+    "ja": "アミロイドβ",
+    "yomi": "あみろいどべーた",
+    "en": "amyloid beta",
+    "abbr": "Aβ",
+    "category": "biology"
+  },
+  {
+    "slug": "tau-protein",
+    "ja": "タウタンパク",
+    "yomi": "たうたんぱく",
+    "en": "tau protein",
+    "category": "biology"
+  },
+  {
+    "slug": "alpha-synuclein",
+    "ja": "αシヌクレイン",
+    "yomi": "あるふぁしぬくれいん",
+    "en": "alpha-synuclein",
+    "category": "biology"
+  },
+  {
+    "slug": "neurogenesis",
+    "ja": "神経新生",
+    "yomi": "しんけいしんせい",
+    "en": "neurogenesis",
+    "category": "biology"
+  },
+  {
+    "slug": "myelination",
+    "ja": "髄鞘化",
+    "yomi": "ずいしょうか",
+    "en": "myelination",
+    "category": "biology",
+    "aliases": [
+      "ミエリン化"
+    ]
+  },
+  {
+    "slug": "glial-cell",
+    "ja": "グリア細胞",
+    "yomi": "ぐりあさいぼう",
+    "en": "glial cell",
+    "category": "biology",
+    "aliases": [
+      "神経膠細胞"
+    ]
+  },
+  {
+    "slug": "microglia",
+    "ja": "ミクログリア",
+    "yomi": "みくろぐりあ",
+    "en": "microglia",
+    "category": "biology"
+  },
+  {
+    "slug": "astrocyte",
+    "ja": "アストロサイト",
+    "yomi": "あすとろさいと",
+    "en": "astrocyte",
+    "category": "biology",
+    "aliases": [
+      "星状膠細胞"
+    ]
+  },
+  {
+    "slug": "oligodendrocyte",
+    "ja": "オリゴデンドロサイト",
+    "yomi": "おりごでんどろさいと",
+    "en": "oligodendrocyte",
+    "category": "biology",
+    "aliases": [
+      "希突起膠細胞"
+    ]
+  },
+  {
+    "slug": "receptor",
+    "ja": "受容体",
+    "yomi": "じゅようたい",
+    "en": "receptor",
+    "category": "biology"
+  },
+  {
+    "slug": "ion-channel",
+    "ja": "イオンチャネル",
+    "yomi": "いおんちゃねる",
+    "en": "ion channel",
+    "category": "biology"
+  },
+  {
+    "slug": "signal-transduction",
+    "ja": "シグナル伝達",
+    "yomi": "しぐなるでんたつ",
+    "en": "signal transduction",
+    "category": "biology"
+  },
+  {
+    "slug": "gene-expression",
+    "ja": "遺伝子発現",
+    "yomi": "いでんしはつげん",
+    "en": "gene expression",
+    "category": "biology"
+  },
+  {
+    "slug": "transcription-factor",
+    "ja": "転写因子",
+    "yomi": "てんしゃいんし",
+    "en": "transcription factor",
+    "category": "biology"
+  },
+  {
+    "slug": "nuclear-receptor",
+    "ja": "核内受容体",
+    "yomi": "かくないじゅようたい",
+    "en": "nuclear receptor",
+    "category": "biology"
+  },
+  {
+    "slug": "second-messenger",
+    "ja": "セカンドメッセンジャー",
+    "yomi": "せかんどめっせんじゃー",
+    "en": "second messenger",
+    "category": "biology"
+  },
+  {
+    "slug": "reactive-oxygen-species",
+    "ja": "活性酸素種",
+    "yomi": "かっせいさんそしゅ",
+    "en": "reactive oxygen species",
+    "abbr": "ROS",
+    "category": "biology"
+  },
+  {
+    "slug": "glutathione",
+    "ja": "グルタチオン",
+    "yomi": "ぐるたちおん",
+    "en": "glutathione",
+    "category": "biology"
+  },
+  {
+    "slug": "ampk",
+    "ja": "AMPK",
+    "yomi": "えーえむぴーけー",
+    "en": "AMP-activated protein kinase",
+    "abbr": "AMPK",
+    "category": "biology"
+  },
+  {
+    "slug": "mtor",
+    "ja": "mTOR",
+    "yomi": "えむとーる",
+    "en": "mechanistic target of rapamycin",
+    "abbr": "mTOR",
+    "category": "biology"
+  },
+  {
+    "slug": "theory-of-mind",
+    "ja": "心の理論",
+    "yomi": "こころのりろん",
+    "en": "theory of mind",
+    "category": "psychology"
+  },
+  {
+    "slug": "metacognition",
+    "ja": "メタ認知",
+    "yomi": "めたにんち",
+    "en": "metacognition",
+    "category": "psychology"
+  },
+  {
+    "slug": "long-term-memory",
+    "ja": "長期記憶",
+    "yomi": "ちょうききおく",
+    "en": "long-term memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "short-term-memory",
+    "ja": "短期記憶",
+    "yomi": "たんききおく",
+    "en": "short-term memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "episodic-memory",
+    "ja": "エピソード記憶",
+    "yomi": "えぴそーどきおく",
+    "en": "episodic memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "semantic-memory",
+    "ja": "意味記憶",
+    "yomi": "いみきおく",
+    "en": "semantic memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "procedural-memory",
+    "ja": "手続き記憶",
+    "yomi": "てつづききおく",
+    "en": "procedural memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "prospective-memory",
+    "ja": "展望記憶",
+    "yomi": "てんぼうきおく",
+    "en": "prospective memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "implicit-memory",
+    "ja": "潜在記憶",
+    "yomi": "せんざいきおく",
+    "en": "implicit memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "source-memory",
+    "ja": "ソース記憶",
+    "yomi": "そーすきおく",
+    "en": "source memory",
+    "category": "psychology"
+  },
+  {
+    "slug": "attention",
+    "ja": "注意",
+    "yomi": "ちゅうい",
+    "en": "attention",
+    "category": "psychology"
+  },
+  {
+    "slug": "selective-attention",
+    "ja": "選択的注意",
+    "yomi": "せんたくてきちゅうい",
+    "en": "selective attention",
+    "category": "psychology"
+  },
+  {
+    "slug": "sustained-attention",
+    "ja": "持続性注意",
+    "yomi": "じぞくせいちゅうい",
+    "en": "sustained attention",
+    "category": "psychology"
+  },
+  {
+    "slug": "inhibitory-control",
+    "ja": "抑制制御",
+    "yomi": "よくせいせいぎょ",
+    "en": "inhibitory control",
+    "category": "psychology"
+  },
+  {
+    "slug": "cognitive-flexibility",
+    "ja": "認知的柔軟性",
+    "yomi": "にんちてきじゅうなんせい",
+    "en": "cognitive flexibility",
+    "category": "psychology"
+  },
+  {
+    "slug": "emotion-regulation",
+    "ja": "情動調整",
+    "yomi": "じょうどうちょうせい",
+    "en": "emotion regulation",
+    "category": "psychology",
+    "aliases": [
+      "感情調整"
+    ]
+  },
+  {
+    "slug": "reappraisal",
+    "ja": "再評価",
+    "yomi": "さいひょうか",
+    "en": "cognitive reappraisal",
+    "category": "psychology"
+  },
+  {
+    "slug": "rumination",
+    "ja": "反芻",
+    "yomi": "はんすう",
+    "en": "rumination",
+    "category": "psychology",
+    "aliases": [
+      "反芻思考"
+    ]
+  },
+  {
+    "slug": "intrusive-thoughts",
+    "ja": "侵入思考",
+    "yomi": "しんにゅうしこう",
+    "en": "intrusive thoughts",
+    "category": "psychology"
+  },
+  {
+    "slug": "catastrophizing",
+    "ja": "破局的思考",
+    "yomi": "はきょくてきしこう",
+    "en": "catastrophizing",
+    "category": "psychology"
+  },
+  {
+    "slug": "bipolar-disorder",
+    "ja": "双極性障害",
+    "yomi": "そうきょくせいしょうがい",
+    "en": "bipolar disorder",
+    "category": "psychology",
+    "aliases": [
+      "躁うつ病"
+    ]
+  },
+  {
+    "slug": "schizophrenia",
+    "ja": "統合失調症",
+    "yomi": "とうごうしっちょうしょう",
+    "en": "schizophrenia",
+    "category": "psychology"
+  },
+  {
+    "slug": "ocd",
+    "ja": "強迫性障害",
+    "yomi": "きょうはくせいしょうがい",
+    "en": "obsessive-compulsive disorder",
+    "abbr": "OCD",
+    "category": "psychology"
+  },
+  {
+    "slug": "panic-disorder",
+    "ja": "パニック障害",
+    "yomi": "ぱにっくしょうがい",
+    "en": "panic disorder",
+    "category": "psychology"
+  },
+  {
+    "slug": "social-anxiety-disorder",
+    "ja": "社交不安障害",
+    "yomi": "しゃこうふあんしょうがい",
+    "en": "social anxiety disorder",
+    "category": "psychology",
+    "aliases": [
+      "社交不安症"
+    ]
+  },
+  {
+    "slug": "generalized-anxiety-disorder",
+    "ja": "全般性不安障害",
+    "yomi": "ぜんぱんせいふあんしょうがい",
+    "en": "generalized anxiety disorder",
+    "abbr": "GAD",
+    "category": "psychology"
+  },
+  {
+    "slug": "borderline-personality-disorder",
+    "ja": "境界性パーソナリティ障害",
+    "yomi": "きょうかいせいぱーそなりてぃしょうがい",
+    "en": "borderline personality disorder",
+    "abbr": "BPD",
+    "category": "psychology"
+  },
+  {
+    "slug": "eating-disorder",
+    "ja": "摂食障害",
+    "yomi": "せっしょくしょうがい",
+    "en": "eating disorder",
+    "category": "psychology"
+  },
+  {
+    "slug": "anorexia-nervosa",
+    "ja": "神経性やせ症",
+    "yomi": "しんけいせいやせしょう",
+    "en": "anorexia nervosa",
+    "category": "psychology",
+    "aliases": [
+      "拒食症"
+    ]
+  },
+  {
+    "slug": "bulimia-nervosa",
+    "ja": "神経性過食症",
+    "yomi": "しんけいせいかしょくしょう",
+    "en": "bulimia nervosa",
+    "category": "psychology",
+    "aliases": [
+      "過食症"
+    ]
+  },
+  {
+    "slug": "adjustment-disorder",
+    "ja": "適応障害",
+    "yomi": "てきおうしょうがい",
+    "en": "adjustment disorder",
+    "category": "psychology"
+  },
+  {
+    "slug": "dissociation",
+    "ja": "解離",
+    "yomi": "かいり",
+    "en": "dissociation",
+    "category": "psychology"
+  },
+  {
+    "slug": "burnout",
+    "ja": "バーンアウト",
+    "yomi": "ばーんあうと",
+    "en": "burnout",
+    "category": "psychology",
+    "aliases": [
+      "燃え尽き症候群"
+    ]
+  },
+  {
+    "slug": "stress",
+    "ja": "ストレス",
+    "yomi": "すとれす",
+    "en": "stress",
+    "category": "psychology"
+  },
+  {
+    "slug": "allostatic-load",
+    "ja": "アロスタシス負荷",
+    "yomi": "あろすたしすふか",
+    "en": "allostatic load",
+    "category": "psychology"
+  },
+  {
+    "slug": "resilience",
+    "ja": "レジリエンス",
+    "yomi": "れじりえんす",
+    "en": "resilience",
+    "category": "psychology",
+    "aliases": [
+      "精神的回復力"
+    ]
+  },
+  {
+    "slug": "social-support",
+    "ja": "ソーシャルサポート",
+    "yomi": "そーしゃるさぽーと",
+    "en": "social support",
+    "category": "psychology",
+    "aliases": [
+      "社会的支援"
+    ]
+  },
+  {
+    "slug": "loneliness",
+    "ja": "孤独感",
+    "yomi": "こどくかん",
+    "en": "loneliness",
+    "category": "psychology"
+  },
+  {
+    "slug": "social-isolation",
+    "ja": "社会的孤立",
+    "yomi": "しゃかいてきこりつ",
+    "en": "social isolation",
+    "category": "psychology"
+  },
+  {
+    "slug": "prosocial-behavior",
+    "ja": "向社会的行動",
+    "yomi": "こうしゃかいてきこうどう",
+    "en": "prosocial behavior",
+    "category": "psychology"
+  },
+  {
+    "slug": "empathy",
+    "ja": "共感",
+    "yomi": "きょうかん",
+    "en": "empathy",
+    "category": "psychology"
+  },
+  {
+    "slug": "compassion",
+    "ja": "思いやり",
+    "yomi": "おもいやり",
+    "en": "compassion",
+    "category": "psychology",
+    "aliases": [
+      "コンパッション"
+    ]
+  },
+  {
+    "slug": "gratitude",
+    "ja": "感謝",
+    "yomi": "かんしゃ",
+    "en": "gratitude",
+    "category": "psychology"
+  },
+  {
+    "slug": "subjective-well-being",
+    "ja": "主観的ウェルビーイング",
+    "yomi": "しゅかんてきうぇるびーいんぐ",
+    "en": "subjective well-being",
+    "abbr": "SWB",
+    "category": "psychology"
+  },
+  {
+    "slug": "hedonic-adaptation",
+    "ja": "快楽適応",
+    "yomi": "かいらくてきおう",
+    "en": "hedonic adaptation",
+    "category": "psychology"
+  },
+  {
+    "slug": "intrinsic-motivation",
+    "ja": "内発的動機づけ",
+    "yomi": "ないはつてきどうきづけ",
+    "en": "intrinsic motivation",
+    "category": "psychology"
+  },
+  {
+    "slug": "extrinsic-motivation",
+    "ja": "外発的動機づけ",
+    "yomi": "がいはつてきどうきづけ",
+    "en": "extrinsic motivation",
+    "category": "psychology"
+  },
+  {
+    "slug": "self-determination-theory",
+    "ja": "自己決定理論",
+    "yomi": "じこけっていりろん",
+    "en": "self-determination theory",
+    "abbr": "SDT",
+    "category": "psychology"
+  },
+  {
+    "slug": "operant-conditioning",
+    "ja": "オペラント条件づけ",
+    "yomi": "おぺらんとじょうけんづけ",
+    "en": "operant conditioning",
+    "category": "psychology",
+    "aliases": [
+      "道具的条件づけ"
+    ]
+  },
+  {
+    "slug": "classical-conditioning",
+    "ja": "古典的条件づけ",
+    "yomi": "こてんてきじょうけんづけ",
+    "en": "classical conditioning",
+    "category": "psychology",
+    "aliases": [
+      "パヴロフ型条件づけ"
+    ]
+  },
+  {
+    "slug": "habit-formation",
+    "ja": "習慣形成",
+    "yomi": "しゅうかんけいせい",
+    "en": "habit formation",
+    "category": "psychology"
+  },
+  {
+    "slug": "behavioral-activation",
+    "ja": "行動活性化",
+    "yomi": "こうどうかっせいか",
+    "en": "behavioral activation",
+    "category": "psychology"
+  },
+  {
+    "slug": "exposure-therapy",
+    "ja": "曝露療法",
+    "yomi": "ばくろりょうほう",
+    "en": "exposure therapy",
+    "category": "psychology"
+  },
+  {
+    "slug": "acceptance-commitment-therapy",
+    "ja": "アクセプタンス&コミットメントセラピー",
+    "yomi": "あくせぷたんすあんどこみっとめんとせらぴー",
+    "en": "acceptance and commitment therapy",
+    "abbr": "ACT",
+    "category": "psychology"
+  },
+  {
+    "slug": "dialectical-behavior-therapy",
+    "ja": "弁証法的行動療法",
+    "yomi": "べんしょうほうてきこうどうりょうほう",
+    "en": "dialectical behavior therapy",
+    "abbr": "DBT",
+    "category": "psychology"
+  },
+  {
+    "slug": "interpersonal-therapy",
+    "ja": "対人関係療法",
+    "yomi": "たいじんかんけいりょうほう",
+    "en": "interpersonal psychotherapy",
+    "abbr": "IPT",
+    "category": "psychology"
+  },
+  {
+    "slug": "meta-analysis-psychology",
+    "ja": "社会認知",
+    "yomi": "しゃかいにんち",
+    "en": "social cognition",
+    "category": "psychology"
+  },
+  {
+    "slug": "stereotype-threat",
+    "ja": "ステレオタイプ脅威",
+    "yomi": "すてれおたいぷきょうい",
+    "en": "stereotype threat",
+    "category": "psychology"
+  },
+  {
+    "slug": "implicit-bias",
+    "ja": "潜在的バイアス",
+    "yomi": "せんざいてきばいあす",
+    "en": "implicit bias",
+    "category": "psychology",
+    "aliases": [
+      "無意識バイアス"
+    ]
+  },
+  {
+    "slug": "heuristic",
+    "ja": "ヒューリスティック",
+    "yomi": "ひゅーりすてぃっく",
+    "en": "heuristic",
+    "category": "psychology",
+    "aliases": [
+      "発見的手法"
+    ]
+  },
+  {
+    "slug": "anchoring-effect",
+    "ja": "アンカリング効果",
+    "yomi": "あんかりんぐこうか",
+    "en": "anchoring effect",
+    "category": "psychology"
+  },
+  {
+    "slug": "availability-heuristic",
+    "ja": "利用可能性ヒューリスティック",
+    "yomi": "りようかのうせいひゅーりすてぃっく",
+    "en": "availability heuristic",
+    "category": "psychology"
+  },
+  {
+    "slug": "confirmation-bias",
+    "ja": "確証バイアス",
+    "yomi": "かくしょうばいあす",
+    "en": "confirmation bias",
+    "category": "psychology"
+  },
+  {
+    "slug": "loss-aversion",
+    "ja": "損失回避",
+    "yomi": "そんしつかいひ",
+    "en": "loss aversion",
+    "category": "psychology"
+  },
+  {
+    "slug": "framing-effect",
+    "ja": "フレーミング効果",
+    "yomi": "ふれーみんぐこうか",
+    "en": "framing effect",
+    "category": "psychology"
+  },
+  {
+    "slug": "dunning-kruger-effect",
+    "ja": "ダニングクルーガー効果",
+    "yomi": "だにんぐくるーがーこうか",
+    "en": "Dunning-Kruger effect",
+    "category": "psychology"
+  },
+  {
+    "slug": "placebo-analgesia",
+    "ja": "プラセボ鎮痛",
+    "yomi": "ぷらせぼちんつう",
+    "en": "placebo analgesia",
+    "category": "psychology"
+  },
+  {
+    "slug": "nocebo-effect",
+    "ja": "ノセボ効果",
+    "yomi": "のせぼこうか",
+    "en": "nocebo effect",
+    "category": "psychology",
+    "aliases": [
+      "反偽薬効果"
+    ]
+  },
+  {
+    "slug": "self-regulation",
+    "ja": "自己制御",
+    "yomi": "じこせいぎょ",
+    "en": "self-regulation",
+    "category": "psychology"
+  },
+  {
+    "slug": "delay-discounting",
+    "ja": "遅延割引",
+    "yomi": "ちえんわりびき",
+    "en": "delay discounting",
+    "category": "psychology"
+  },
+  {
+    "slug": "reward-sensitivity",
+    "ja": "報酬感受性",
+    "yomi": "ほうしゅうかんじゅせい",
+    "en": "reward sensitivity",
+    "category": "psychology"
+  },
+  {
+    "slug": "behavioral-economics",
+    "ja": "行動経済学",
+    "yomi": "こうどうけいざいがく",
+    "en": "behavioral economics",
+    "category": "psychology"
+  },
+  {
+    "slug": "nudge-theory",
+    "ja": "ナッジ理論",
+    "yomi": "なっじりろん",
+    "en": "nudge theory",
+    "category": "psychology"
+  },
+  {
+    "slug": "habit-loop",
+    "ja": "習慣ループ",
+    "yomi": "しゅうかんるーぷ",
+    "en": "habit loop",
+    "category": "psychology"
+  },
+  {
+    "slug": "flow-state",
+    "ja": "フロー状態",
+    "yomi": "ふろーじょうたい",
+    "en": "flow state",
+    "category": "psychology"
+  },
+  {
+    "slug": "grit",
+    "ja": "やり抜く力",
+    "yomi": "やりぬくちから",
+    "en": "grit",
+    "category": "psychology",
+    "aliases": [
+      "グリット"
+    ]
+  },
+  {
+    "slug": "patient-reported-outcomes",
+    "ja": "患者報告アウトカム",
+    "yomi": "かんじゃほうこくあうとかむ",
+    "en": "patient-reported outcomes",
+    "abbr": "PROs",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "shared-decision-making",
+    "ja": "共同意思決定",
+    "yomi": "きょうどういしけってい",
+    "en": "shared decision making",
+    "abbr": "SDM",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "informed-consent",
+    "ja": "インフォームドコンセント",
+    "yomi": "いんふぉーむどこんせんと",
+    "en": "informed consent",
+    "category": "nursing-pharma",
+    "aliases": [
+      "説明と同意"
+    ]
+  },
+  {
+    "slug": "advance-directive",
+    "ja": "事前指示書",
+    "yomi": "じぜんしじしょ",
+    "en": "advance directive",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "palliative-care",
+    "ja": "緩和ケア",
+    "yomi": "かんわけあ",
+    "en": "palliative care",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "hospice-care",
+    "ja": "ホスピスケア",
+    "yomi": "ほすぴすけあ",
+    "en": "hospice care",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "end-of-life-care",
+    "ja": "終末期ケア",
+    "yomi": "しゅうまつきけあ",
+    "en": "end-of-life care",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "advance-care-planning",
+    "ja": "アドバンスケアプランニング",
+    "yomi": "あどばんすけあぷらんにんぐ",
+    "en": "advance care planning",
+    "abbr": "ACP",
+    "category": "nursing-pharma",
+    "aliases": [
+      "人生会議"
+    ]
+  },
+  {
+    "slug": "patient-safety",
+    "ja": "患者安全",
+    "yomi": "かんじゃあんぜん",
+    "en": "patient safety",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "medication-error",
+    "ja": "投薬過誤",
+    "yomi": "とうやくかご",
+    "en": "medication error",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "polypharmacy",
+    "ja": "多剤併用",
+    "yomi": "たざいへいよう",
+    "en": "polypharmacy",
+    "category": "nursing-pharma",
+    "aliases": [
+      "ポリファーマシー"
+    ]
+  },
+  {
+    "slug": "drug-interaction",
+    "ja": "薬物相互作用",
+    "yomi": "やくぶつそうごさよう",
+    "en": "drug interaction",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "pharmacokinetics",
+    "ja": "薬物動態学",
+    "yomi": "やくぶつどうたいがく",
+    "en": "pharmacokinetics",
+    "abbr": "PK",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "pharmacodynamics",
+    "ja": "薬力学",
+    "yomi": "やくりきがく",
+    "en": "pharmacodynamics",
+    "abbr": "PD",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "half-life",
+    "ja": "半減期",
+    "yomi": "はんげんき",
+    "en": "half-life",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "bioavailability",
+    "ja": "生物学的利用能",
+    "yomi": "せいぶつがくてきりようのう",
+    "en": "bioavailability",
+    "category": "nursing-pharma",
+    "aliases": [
+      "バイオアベイラビリティ"
+    ]
+  },
+  {
+    "slug": "first-pass-effect",
+    "ja": "初回通過効果",
+    "yomi": "しょかいつうかこうか",
+    "en": "first-pass effect",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "therapeutic-index",
+    "ja": "治療係数",
+    "yomi": "ちりょうけいすう",
+    "en": "therapeutic index",
+    "category": "nursing-pharma",
+    "aliases": [
+      "治療指数"
+    ]
+  },
+  {
+    "slug": "therapeutic-drug-monitoring",
+    "ja": "薬物血中濃度モニタリング",
+    "yomi": "やくぶつけっちゅうのうどもにたりんぐ",
+    "en": "therapeutic drug monitoring",
+    "abbr": "TDM",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "pharmacogenomics",
+    "ja": "ファーマコゲノミクス",
+    "yomi": "ふぁーまこげのみくす",
+    "en": "pharmacogenomics",
+    "category": "nursing-pharma",
+    "aliases": [
+      "薬理ゲノム学"
+    ]
+  },
+  {
+    "slug": "drug-reaction",
+    "ja": "薬物有害反応",
+    "yomi": "やくぶつゆうがいはんのう",
+    "en": "adverse drug reaction",
+    "abbr": "ADR",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "serious-adverse-event",
+    "ja": "重篤有害事象",
+    "yomi": "じゅうとくゆうがいじしょう",
+    "en": "serious adverse event",
+    "abbr": "SAE",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "vital-signs",
+    "ja": "バイタルサイン",
+    "yomi": "ばいたるさいん",
+    "en": "vital signs",
+    "category": "nursing-pharma",
+    "aliases": [
+      "生命徴候"
+    ]
+  },
+  {
+    "slug": "glasgow-coma-scale",
+    "ja": "グラスゴーコーマスケール",
+    "yomi": "ぐらすごーこーますけーる",
+    "en": "Glasgow Coma Scale",
+    "abbr": "GCS",
+    "category": "nursing-pharma",
+    "aliases": [
+      "GCS"
+    ]
+  },
+  {
+    "slug": "triage",
+    "ja": "トリアージ",
+    "yomi": "とりあーじ",
+    "en": "triage",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "early-warning-score",
+    "ja": "早期警告スコア",
+    "yomi": "そうきけいこくすこあ",
+    "en": "early warning score",
+    "abbr": "EWS",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "nursing-diagnosis",
+    "ja": "看護診断",
+    "yomi": "かんごしんだん",
+    "en": "nursing diagnosis",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "nursing-process",
+    "ja": "看護過程",
+    "yomi": "かんごかてい",
+    "en": "nursing process",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "care-plan",
+    "ja": "ケアプラン",
+    "yomi": "けあぷらん",
+    "en": "care plan",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "nanda",
+    "ja": "NANDA",
+    "yomi": "なんだ",
+    "en": "NANDA International",
+    "category": "nursing-pharma",
+    "aliases": [
+      "看護診断分類"
+    ]
+  },
+  {
+    "slug": "hand-hygiene",
+    "ja": "手指衛生",
+    "yomi": "しゅしえいせい",
+    "en": "hand hygiene",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "nosocomial-infection",
+    "ja": "院内感染",
+    "yomi": "いんないかんせん",
+    "en": "nosocomial infection",
+    "category": "nursing-pharma",
+    "aliases": [
+      "医療関連感染"
+    ]
+  },
+  {
+    "slug": "catheter-infection",
+    "ja": "カテーテル関連感染",
+    "yomi": "かてーてるかんれんかんせん",
+    "en": "catheter-associated infection",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "antimicrobial-stewardship",
+    "ja": "抗菌薬適正使用",
+    "yomi": "こうきんやくてきせいしよう",
+    "en": "antimicrobial stewardship",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "antimicrobial-resistance",
+    "ja": "抗菌薬耐性",
+    "yomi": "こうきんやくたいせい",
+    "en": "antimicrobial resistance",
+    "abbr": "AMR",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "sarcopenia",
+    "ja": "サルコペニア",
+    "yomi": "さるこぺにあ",
+    "en": "sarcopenia",
+    "category": "nursing-pharma",
+    "aliases": [
+      "筋肉減少症"
+    ]
+  },
+  {
+    "slug": "frailty",
+    "ja": "フレイル",
+    "yomi": "ふれいる",
+    "en": "frailty",
+    "category": "nursing-pharma",
+    "aliases": [
+      "虚弱"
+    ]
+  },
+  {
+    "slug": "locomotive-syndrome",
+    "ja": "ロコモティブシンドローム",
+    "yomi": "ろこもてぃぶしんどろーむ",
+    "en": "locomotive syndrome",
+    "category": "nursing-pharma",
+    "aliases": [
+      "運動器症候群"
+    ]
+  },
+  {
+    "slug": "activities-of-daily-living",
+    "ja": "日常生活動作",
+    "yomi": "にちじょうせいかつどうさ",
+    "en": "activities of daily living",
+    "abbr": "ADL",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "iadl",
+    "ja": "手段的日常生活動作",
+    "yomi": "しゅだんてきにちじょうせいかつどうさ",
+    "en": "instrumental activities of daily living",
+    "abbr": "IADL",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "swallowing-disorder",
+    "ja": "嚥下障害",
+    "yomi": "えんげしょうがい",
+    "en": "dysphagia",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "aspiration-pneumonia",
+    "ja": "誤嚥性肺炎",
+    "yomi": "ごえんせいはいえん",
+    "en": "aspiration pneumonia",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "malnutrition",
+    "ja": "低栄養",
+    "yomi": "ていえいよう",
+    "en": "malnutrition",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "pain-assessment",
+    "ja": "疼痛評価",
+    "yomi": "とうつうひょうか",
+    "en": "pain assessment",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "numerical-rating-scale",
+    "ja": "数値評価スケール",
+    "yomi": "すうちひょうかすけーる",
+    "en": "numerical rating scale",
+    "abbr": "NRS",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "visual-analog-scale",
+    "ja": "視覚的アナログスケール",
+    "yomi": "しかくてきあなろぐすけーる",
+    "en": "visual analog scale",
+    "abbr": "VAS",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "delirium",
+    "ja": "せん妄",
+    "yomi": "せんもう",
+    "en": "delirium",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "dementia",
+    "ja": "認知症",
+    "yomi": "にんちしょう",
+    "en": "dementia",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "mild-cognitive-impairment",
+    "ja": "軽度認知障害",
+    "yomi": "けいどにんちしょうがい",
+    "en": "mild cognitive impairment",
+    "abbr": "MCI",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "behavioral-psychological-symptoms-dementia",
+    "ja": "認知症の行動心理症状",
+    "yomi": "にんちしょうのこうどうしんりしょうじょう",
+    "en": "behavioral and psychological symptoms of dementia",
+    "abbr": "BPSD",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "chronic-kidney-disease",
+    "ja": "慢性腎臓病",
+    "yomi": "まんせいじんぞうびょう",
+    "en": "chronic kidney disease",
+    "abbr": "CKD",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "copd",
+    "ja": "COPD",
+    "yomi": "しーおーぴーでぃー",
+    "en": "chronic obstructive pulmonary disease",
+    "abbr": "COPD",
+    "category": "nursing-pharma",
+    "aliases": [
+      "慢性閉塞性肺疾患"
+    ]
+  },
+  {
+    "slug": "metabolic-syndrome",
+    "ja": "メタボリックシンドローム",
+    "yomi": "めたぼりっくしんどろーむ",
+    "en": "metabolic syndrome",
+    "category": "nursing-pharma",
+    "aliases": [
+      "内臓脂肪症候群"
+    ]
+  },
+  {
+    "slug": "insulin-resistance",
+    "ja": "インスリン抵抗性",
+    "yomi": "いんすりんていこうせい",
+    "en": "insulin resistance",
+    "category": "nursing-pharma"
+  },
+  {
+    "slug": "hypertension",
+    "ja": "高血圧",
+    "yomi": "こうけつあつ",
+    "en": "hypertension",
+    "category": "nursing-pharma"
   }
 ]

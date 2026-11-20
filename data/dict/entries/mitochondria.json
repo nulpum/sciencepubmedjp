@@ -1,0 +1,93 @@
+{
+  "slug": "mitochondria",
+  "ja": "ミトコンドリア",
+  "yomi": "みとこんどりあ",
+  "en": "mitochondria",
+  "category": "biology",
+  "meshHeading": "Mitochondria",
+  "meshUi": "68008928",
+  "description": {
+    "ja": "細胞内でエネルギー (ATP) を産生する二重膜構造の小器官で、独自のDNAをもち母系遺伝することが知られています。好気呼吸の中心的な場として、糖や脂質から効率的にエネルギーを取り出す役割を担っています。",
+    "en": "Mitochondria are double-membrane organelles within cells that produce energy (ATP) and possess their own DNA, which is maternally inherited. They serve as the central sites for aerobic respiration, efficiently extracting energy from sugars and lipids."
+  },
+  "usage": {
+    "ja": "論文では酸化的リン酸化、電子伝達系、ミトコンドリア膜電位、活性酸素種 (ROS) 産生、アポトーシス制御などの文脈で登場し、蛍光プローブや電子顕微鏡、酵素活性測定で評価されます。代謝疾患、神経変性疾患、老化研究で重要な指標です。",
+    "en": "In research papers, mitochondria are discussed in the contexts of oxidative phosphorylation, electron transport chain, mitochondrial membrane potential, ROS production, and apoptosis regulation. They are evaluated using fluorescent probes, electron microscopy, and enzymatic assays, and are key indicators in metabolic disorders, neurodegenerative diseases, and aging studies."
+  },
+  "synonyms": {
+    "ja": "単数形はmitochondrionで、略称mtや接頭辞ミトコンドリア性 (mitochondrial) もよく使われます。ミトコンドリアDNAはmtDNAと表記され、核DNAとは区別されます。機能異常を指すミトコンドリア機能障害 (mitochondrial dysfunction) も頻出用語です。",
+    "en": "The singular form is mitochondrion; abbreviations such as mt and the prefix mitochondrial are commonly used. Mitochondrial DNA is denoted as mtDNA, distinct from nuclear DNA. Mitochondrial dysfunction, referring to impaired function, is also a frequently encountered term."
+  },
+  "pubmedCount": 291167,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 10026
+    },
+    {
+      "year": 2018,
+      "count": 10380
+    },
+    {
+      "year": 2019,
+      "count": 11061
+    },
+    {
+      "year": 2020,
+      "count": 12210
+    },
+    {
+      "year": 2021,
+      "count": 12445
+    },
+    {
+      "year": 2022,
+      "count": 10840
+    },
+    {
+      "year": 2023,
+      "count": 10604
+    },
+    {
+      "year": 2024,
+      "count": 12501
+    },
+    {
+      "year": 2025,
+      "count": 14346
+    },
+    {
+      "year": 2026,
+      "count": 13594
+    }
+  ],
+  "searchQuery": "(\"Mitochondria\"[MeSH Terms]) OR (\"mitochondria\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43022420",
+      "title": "Systematic metabolic engineering for trans-aconitic acid production in Aspergillus niger.",
+      "year": 2027
+    },
+    {
+      "pmid": "42959301",
+      "title": "Coacervate protocells-mediated mitochondrial transplantation restores gut epithelial energetic homeostasis in ulcerative colitis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42936108",
+      "title": "Mitochondria-rich cytochalasomes as an intravenously deliverable vesicle platform for ischemic heart disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42904193",
+      "title": "Guanidine-quaternary ammonium polymer-derived carbon dots differentially modulate bacterial respiration and osteoblast mitochondria to resolve infection and foster osteointegration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42861280",
+      "title": "An ultrasound-responsive hydrogel with piezoelectric-enhanced bioelectric-vesicular coupling alleviates mitochondrial dysfunction and inflammation for osteoarthritis therapy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:27:28.058Z"
+}

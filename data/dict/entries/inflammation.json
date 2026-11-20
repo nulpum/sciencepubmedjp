@@ -1,0 +1,93 @@
+{
+  "slug": "inflammation",
+  "ja": "炎症",
+  "yomi": "えんしょう",
+  "en": "inflammation",
+  "category": "biology",
+  "meshHeading": "Inflammation",
+  "meshUi": "68007249",
+  "description": {
+    "ja": "組織が損傷や病原体などの刺激を受けたとき、体がそれを修復・防御しようとする生体反応です。発赤・腫脹・発熱・疼痛といった症状を伴い、免疫細胞やサイトカインなどが関与します。急性炎症と慢性炎症に分類され、後者は生活習慣病や老化との関連が研究されています。",
+    "en": "A biological response triggered when tissues are damaged by pathogens, injuries, or other stimuli, aimed at repair and defense. It involves immune cells and cytokines, manifesting as redness, swelling, heat, and pain. It is classified into acute and chronic inflammation, with the latter being studied in relation to lifestyle diseases and aging."
+  },
+  "usage": {
+    "ja": "論文では炎症マーカー(CRP、IL-6、TNF-αなど)の測定値や、組織の病理学的評価によって炎症の程度を記述します。疾患との関連を調べる疫学研究や、介入試験での炎症指標の変化が報告されます。",
+    "en": "In papers, inflammation is assessed by measuring inflammatory markers (CRP, IL-6, TNF-α, etc.) or histopathological evaluation of tissues. Epidemiological studies examine associations with diseases, and intervention trials report changes in inflammatory indices."
+  },
+  "synonyms": {
+    "ja": "「炎症反応」「炎症性変化」とも表現されます。慢性炎症は「low-grade inflammation(軽度慢性炎症)」、急性炎症は「acute inflammatory response」と区別されることがあります。炎症を起こす物質は「炎症性メディエーター」と呼ばれます。",
+    "en": "Also referred to as 'inflammatory response' or 'inflammatory changes'. Chronic inflammation may be termed 'low-grade inflammation', while acute inflammation is 'acute inflammatory response'. Substances that induce inflammation are called 'inflammatory mediators'."
+  },
+  "pubmedCount": 1109636,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 45025
+    },
+    {
+      "year": 2018,
+      "count": 48073
+    },
+    {
+      "year": 2019,
+      "count": 51688
+    },
+    {
+      "year": 2020,
+      "count": 60712
+    },
+    {
+      "year": 2021,
+      "count": 67934
+    },
+    {
+      "year": 2022,
+      "count": 66290
+    },
+    {
+      "year": 2023,
+      "count": 64649
+    },
+    {
+      "year": 2024,
+      "count": 70613
+    },
+    {
+      "year": 2025,
+      "count": 85407
+    },
+    {
+      "year": 2026,
+      "count": 84975
+    }
+  ],
+  "searchQuery": "(\"Inflammation\"[MeSH Terms]) OR (\"inflammation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "43034570",
+      "title": "Engineering copper homeostasis for microenvironment-adaptive therapy in inflammation-driven disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032824",
+      "title": "Staged photothermal hydrogel containing manganese-doped bioactive glass nanoparticles promotes infected bone regeneration by engaging Schwann cell PI3K/AKT signaling and neuro-osteogenic coupling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42999915",
+      "title": "A let-7a-5p-engineered extracellular vesicle-laden bioactive scaffold promotes immunomodulation and regeneration of segmental tracheal defects.",
+      "year": 2027
+    },
+    {
+      "pmid": "42994316",
+      "title": "Ulcerative colitis imaging via a ratiometric fluorescent probe with large emission shift for SO(2) sensing.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:26:09.594Z"
+}

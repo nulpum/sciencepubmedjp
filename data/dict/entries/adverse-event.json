@@ -1,0 +1,95 @@
+{
+  "slug": "adverse-event",
+  "ja": "有害事象",
+  "yomi": "ゆうがいじしょう",
+  "en": "adverse event",
+  "abbr": "AE",
+  "category": "nursing-pharma",
+  "aliases": [
+    "副作用"
+  ],
+  "description": {
+    "ja": "医薬品や医療行為を受けた患者に生じたあらゆる好ましくない出来事を指す包括的な用語です。因果関係が明確でない症状や検査値異常も含まれ、必ずしも治療との関連が証明されたものとは限りません。副作用(因果関係がある事象)よりも広い概念として臨床試験で用いられます。",
+    "en": "Any undesirable occurrence in a patient who received a medical product or procedure, regardless of causal relationship. It includes all unfavorable signs, symptoms, or laboratory findings, not necessarily linked to the treatment. This broader term encompasses adverse reactions (events with established causality) and is widely used in clinical trials."
+  },
+  "usage": {
+    "ja": "臨床試験では全ての有害事象を記録・報告し、重症度(Grade 1-5)や治療との因果関係を評価します。論文では「AE発現率」「重篤な有害事象(SAE)」「治療関連有害事象」などの表現で安全性評価の指標として示されます。",
+    "en": "In clinical trials, all adverse events are documented and reported, with assessments of severity (Grade 1-5) and causality. Papers present safety outcomes using terms like 'AE incidence,' 'serious adverse events (SAE),' and 'treatment-related adverse events.'"
+  },
+  "synonyms": {
+    "ja": "副作用(adverse reaction/drug reaction)は因果関係が認められる事象を指し、有害事象の一部です。重篤な有害事象(SAE)は入院や死亡など重大な転帰をもたらすもの、有害反応(adverse drug reaction)も因果関係を含意する表現として使い分けられます。",
+    "en": "Adverse reaction or drug reaction refers to events with established causality, forming a subset of adverse events. Serious adverse event (SAE) denotes outcomes requiring hospitalization or causing death. Adverse drug reaction (ADR) also implies causality and is distinguished from the broader term AE."
+  },
+  "pubmedCount": 54742,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2594
+    },
+    {
+      "year": 2018,
+      "count": 2719
+    },
+    {
+      "year": 2019,
+      "count": 3028
+    },
+    {
+      "year": 2020,
+      "count": 3590
+    },
+    {
+      "year": 2021,
+      "count": 4260
+    },
+    {
+      "year": 2022,
+      "count": 4422
+    },
+    {
+      "year": 2023,
+      "count": 4393
+    },
+    {
+      "year": 2024,
+      "count": 4890
+    },
+    {
+      "year": 2025,
+      "count": 5808
+    },
+    {
+      "year": 2026,
+      "count": 6243
+    }
+  ],
+  "searchQuery": "\"adverse event\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43011506",
+      "title": "Prospective Multicenter Evaluation of a Novel Low-Axial-Force Colonic Stent for Malignant Colorectal Obstruction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42871153",
+      "title": "Evaluating a Modified American Society of Anesthesiologists Physical Status-Based Sedation Management System for Pancreatobiliary Endoscopy: A Prospective Feasibility Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42812640",
+      "title": "Clinical Outcomes of Double Half-Pigtail Versus Straight Plastic Stents for Endoscopic Biliary Drainage of Malignant Distal Biliary Obstruction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42582981",
+      "title": "Efficacy of Overtube in Preventing Aspiration Pneumonia During Esophageal Endoscopic Submucosal Dissection.",
+      "year": 2027
+    },
+    {
+      "pmid": "42058267",
+      "title": "Patients With Pancreatitis-Related Gene Variants Showed Higher Incidence of Hyperpancreatic Enzymemia After Endoscopic Retrograde Cholangiopancreatography.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:36:24.963Z"
+}

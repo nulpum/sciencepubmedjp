@@ -1,0 +1,92 @@
+{
+  "slug": "hazard-ratio",
+  "ja": "ハザード比",
+  "yomi": "はざーどひ",
+  "en": "hazard ratio",
+  "abbr": "HR",
+  "category": "research",
+  "description": {
+    "ja": "ハザード比 (HR) は、ある時点でイベント (死亡や再発など) が発生するリスクを2群間で比較する統計指標です。HR=1なら両群で同等、HR>1なら介入群でリスクが高く、HR<1なら介入群でリスクが低いことを示します。生存期間分析でよく用いられ、時間経過を考慮できる点が特徴です。",
+    "en": "Hazard ratio (HR) is a statistical measure comparing the risk of an event (such as death or recurrence) occurring at a given time between two groups. HR=1 indicates equal risk, HR>1 indicates higher risk in the intervention group, and HR<1 indicates lower risk in the intervention group. Commonly used in survival analysis, it accounts for time-to-event data."
+  },
+  "usage": {
+    "ja": "臨床試験や観察研究で、治療効果や予後因子の影響を評価する際に報告されます。Cox比例ハザードモデルで推定され、95%信頼区間とともに示されることが一般的です。",
+    "en": "Reported in clinical trials and observational studies to evaluate treatment effects or prognostic factors. Typically estimated using Cox proportional hazards models and presented with 95% confidence intervals."
+  },
+  "synonyms": {
+    "ja": "相対ハザード、リスク比と混同されることがありますが、リスク比は特定時点での累積発生率の比であるのに対し、ハザード比は瞬間的な発生率の比を表します。論文では「adjusted HR」(調整済みハザード比) として交絡因子を補正した値が示されることもあります。",
+    "en": "Also called relative hazard. Often confused with risk ratio, but risk ratio compares cumulative incidence at a specific time point, while hazard ratio compares instantaneous rates. Papers may report 'adjusted HR' accounting for confounding factors."
+  },
+  "pubmedCount": 183895,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 10975
+    },
+    {
+      "year": 2018,
+      "count": 11553
+    },
+    {
+      "year": 2019,
+      "count": 12649
+    },
+    {
+      "year": 2020,
+      "count": 14769
+    },
+    {
+      "year": 2021,
+      "count": 16556
+    },
+    {
+      "year": 2022,
+      "count": 16237
+    },
+    {
+      "year": 2023,
+      "count": 15408
+    },
+    {
+      "year": 2024,
+      "count": 15647
+    },
+    {
+      "year": 2025,
+      "count": 16502
+    },
+    {
+      "year": 2026,
+      "count": 16051
+    }
+  ],
+  "searchQuery": "\"hazard ratio\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42897078",
+      "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42558978",
+      "title": "Delayed Argon Plasma Coagulation After Endoscopic Injection Sclerotherapy for Esophageal Varices Reduces Recurrence Risk.",
+      "year": 2027
+    },
+    {
+      "pmid": "42256606",
+      "title": "Optimal Stenting Strategy During Chemotherapy: Impact of Time to First Reintervention on Survival in Malignant Hilar Biliary Obstruction.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:22:56.014Z"
+}

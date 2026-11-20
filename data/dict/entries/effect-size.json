@@ -1,0 +1,94 @@
+{
+  "slug": "effect-size",
+  "ja": "効果量",
+  "yomi": "こうかりょう",
+  "en": "effect size",
+  "category": "research",
+  "aliases": [
+    "エフェクトサイズ"
+  ],
+  "description": {
+    "ja": "効果量とは、統計的検定で得られた差や関連の「大きさ」を標準化した指標です。p値が「差があるかどうか」を示すのに対し、効果量は「どれくらい差があるか」を表します。Cohen's d、オッズ比、相関係数などさまざまな種類があり、研究結果の実質的な意義を評価するために用いられます。",
+    "en": "Effect size is a standardized measure that quantifies the magnitude of a difference or relationship found in statistical analyses. While p-values indicate whether a difference exists, effect size shows how large that difference is. Various types exist including Cohen's d, odds ratios, and correlation coefficients, and are used to evaluate the practical significance of research findings."
+  },
+  "usage": {
+    "ja": "メタアナリシスや臨床試験の論文では「effect size (Cohen's d = 0.5)」のように具体的な数値とともに報告されます。介入研究では治療群と対照群の差の大きさを、観察研究では曝露と転帰の関連の強さを定量化する際に使用されます。",
+    "en": "In meta-analyses and clinical trials, effect sizes are reported with specific values such as 'effect size (Cohen's d = 0.5)'. They are used to quantify the magnitude of differences between treatment and control groups in intervention studies, or the strength of associations between exposures and outcomes in observational studies."
+  },
+  "synonyms": {
+    "ja": "エフェクトサイズとも呼ばれます。具体的な指標としてはCohen's d(平均値差)、Hedges' g(補正版)、オッズ比、リスク比、相関係数rなどがあり、データの種類や研究デザインによって使い分けられます。一般に0.2を小、0.5を中、0.8以上を大とする目安がありますが、分野により解釈は異なります。",
+    "en": "Also called エフェクトサイズ in Japanese. Specific measures include Cohen's d (mean difference), Hedges' g (corrected version), odds ratio, risk ratio, and correlation coefficient r, chosen based on data type and study design. General benchmarks suggest 0.2 as small, 0.5 as medium, and 0.8+ as large, though interpretations vary by field."
+  },
+  "pubmedCount": 50400,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2675
+    },
+    {
+      "year": 2018,
+      "count": 3056
+    },
+    {
+      "year": 2019,
+      "count": 3244
+    },
+    {
+      "year": 2020,
+      "count": 3867
+    },
+    {
+      "year": 2021,
+      "count": 4442
+    },
+    {
+      "year": 2022,
+      "count": 4640
+    },
+    {
+      "year": 2023,
+      "count": 4488
+    },
+    {
+      "year": 2024,
+      "count": 4641
+    },
+    {
+      "year": 2025,
+      "count": 5413
+    },
+    {
+      "year": 2026,
+      "count": 5404
+    }
+  ],
+  "searchQuery": "\"effect size\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42962944",
+      "title": "EWM-CRITIC-VIKOR framework reveals mechanistic insights of Buyang Huanwu Decoction in ischemic stroke with experimental validation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863801",
+      "title": "Efficacy of adjunctive mitochondrial modulators for bipolar depression: A comprehensive systematic review and network meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854790",
+      "title": "Prolonged exposure therapy for posttraumatic stress disorder: A systematic review and meta-analysis of randomized controlled trials.",
+      "year": 2027
+    },
+    {
+      "pmid": "42601231",
+      "title": "2'-Fucosyllactose attenuates estrogen-deficiency-associated bone loss and intestinal dysfunction in ovariectomized rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42990106",
+      "title": "Feasibility, Safety, and Preliminary Effect Estimates of an Ultrasound-Informed Hybrid Joint-Sparing Rehabilitation Strategy in Patients With Rheumatoid Arthritis: A Prospective Non-Randomized Proof-of-Concept Study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:23:58.512Z"
+}

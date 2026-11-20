@@ -1,0 +1,96 @@
+{
+  "slug": "anxiety",
+  "ja": "不安",
+  "yomi": "ふあん",
+  "en": "anxiety",
+  "category": "psychology",
+  "aliases": [
+    "不安症"
+  ],
+  "meshHeading": "Anxiety",
+  "meshUi": "68001007",
+  "description": {
+    "ja": "不安とは、明確な対象がない漠然とした恐れや心配、緊張状態を指す心理学用語です。正常な感情反応としての不安から、日常生活に支障をきたす病的な不安まで幅広い状態を含みます。医学研究では質問票や生理指標を用いて測定され、ストレス応答や精神健康の重要な評価項目とされています。",
+    "en": "Anxiety refers to a psychological state characterized by vague fear, worry, or tension without a clear object. It encompasses a wide spectrum from normal emotional responses to pathological conditions that interfere with daily functioning. In medical research, anxiety is measured using questionnaires and physiological indicators as an important assessment of stress response and mental health."
+  },
+  "usage": {
+    "ja": "論文では、STAI(State-Trait Anxiety Inventory)やHAM-A(Hamilton Anxiety Rating Scale)などの標準化された尺度を用いて測定されます。介入研究では治療前後の不安スコアの変化を主要評価項目とすることが多く、心拍変動や唾液中コルチゾールなどの生理学的マーカーと併せて評価されることもあります。",
+    "en": "In research papers, anxiety is typically measured using standardized scales such as STAI (State-Trait Anxiety Inventory) or HAM-A (Hamilton Anxiety Rating Scale). Intervention studies often use changes in anxiety scores as primary outcomes, sometimes combined with physiological markers like heart rate variability or salivary cortisol levels."
+  },
+  "synonyms": {
+    "ja": "「不安症」は診断名として用いられる用語で、以前の「不安障害」に相当します。研究では「state anxiety(状態不安)」と「trait anxiety(特性不安)」を区別することが重要で、前者は一時的な不安状態、後者は個人の不安になりやすい傾向を指します。",
+    "en": "The term 'anxiety disorder' is used as a diagnostic category in clinical settings. In research, it is important to distinguish between 'state anxiety' (temporary anxiety in specific situations) and 'trait anxiety' (an individual's general tendency to experience anxiety). Related terms include 'anxious,' 'nervousness,' and 'worry.'"
+  },
+  "pubmedCount": 387729,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 15872
+    },
+    {
+      "year": 2018,
+      "count": 16669
+    },
+    {
+      "year": 2019,
+      "count": 17947
+    },
+    {
+      "year": 2020,
+      "count": 23538
+    },
+    {
+      "year": 2021,
+      "count": 29495
+    },
+    {
+      "year": 2022,
+      "count": 30771
+    },
+    {
+      "year": 2023,
+      "count": 28777
+    },
+    {
+      "year": 2024,
+      "count": 29474
+    },
+    {
+      "year": 2025,
+      "count": 34753
+    },
+    {
+      "year": 2026,
+      "count": 33094
+    }
+  ],
+  "searchQuery": "(\"Anxiety\"[MeSH Terms]) OR (\"anxiety\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42867073",
+      "title": "From prevalence to prognosis: the clinical relevance of depression and anxiety in COPD.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834000",
+      "title": "Physicians' perspectives of palliative care quality in nursing homes: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956610",
+      "title": "Deep learning-assisted portable sensing platform based on a fluorescent MOF-polymer mixed-matrix membrane for rapid detection of nitrazepam in biological samples.",
+      "year": 2027
+    },
+    {
+      "pmid": "42597464",
+      "title": "Update on Sedation for Upper Gastrointestinal Endoscopy in Japan: Current Evidence on Remimazolam.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887235",
+      "title": "A tunable brain-targeted PEGylated ginsenoside Rg1 derivative disrupts the ROS-mediated inflammasome-pyroptosis cascade to ameliorate Alzheimer's cognitive deficits.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:32:36.018Z"
+}

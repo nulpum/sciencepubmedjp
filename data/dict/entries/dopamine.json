@@ -1,0 +1,96 @@
+{
+  "slug": "dopamine",
+  "ja": "ドーパミン",
+  "yomi": "どーぱみん",
+  "en": "dopamine",
+  "category": "biology",
+  "aliases": [
+    "ドパミン"
+  ],
+  "meshHeading": "Dopamine",
+  "meshUi": "68004298",
+  "description": {
+    "ja": "ドーパミンは脳内で働く神経伝達物質の一つで、運動制御、報酬系、意欲、学習などに関与します。パーキンソン病ではドーパミン産生細胞の減少が、統合失調症ではドーパミン系の過活動が研究されています。カテコールアミンの一種で、ノルアドレナリンやアドレナリンの前駆体でもあります。",
+    "en": "Dopamine is a neurotransmitter in the brain involved in motor control, reward systems, motivation, and learning. Research examines dopamine-producing cell loss in Parkinson's disease and dopaminergic hyperactivity in schizophrenia. It is a catecholamine and precursor to norepinephrine and epinephrine."
+  },
+  "usage": {
+    "ja": "論文では、脳内ドーパミン濃度の測定、ドーパミン受容体(D1-D5型)の発現解析、ドーパミン作動性ニューロンの活動記録などが行われます。PETスキャンや微小透析法、免疫組織化学などの手法で評価され、行動実験や認知機能検査と組み合わせて研究されます。",
+    "en": "Papers measure brain dopamine levels, analyze dopamine receptor (D1-D5) expression, and record dopaminergic neuron activity. Assessment methods include PET scans, microdialysis, and immunohistochemistry, often combined with behavioral experiments and cognitive function tests."
+  },
+  "synonyms": {
+    "ja": "「ドパミン」とも表記されます。関連用語として「ドーパミン作動性(dopaminergic)」「線条体(striatum)」「黒質(substantia nigra)」「腹側被蓋野(VTA)」などがあります。受容体サブタイプや代謝産物(DOPAC、HVAなど)も研究対象となります。",
+    "en": "Also written as \"ドパミン\" in Japanese. Related terms include \"dopaminergic,\" \"striatum,\" \"substantia nigra,\" and \"ventral tegmental area (VTA).\" Receptor subtypes and metabolites (DOPAC, HVA) are also research targets."
+  },
+  "pubmedCount": 179670,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5179
+    },
+    {
+      "year": 2018,
+      "count": 5223
+    },
+    {
+      "year": 2019,
+      "count": 5275
+    },
+    {
+      "year": 2020,
+      "count": 5300
+    },
+    {
+      "year": 2021,
+      "count": 5402
+    },
+    {
+      "year": 2022,
+      "count": 5124
+    },
+    {
+      "year": 2023,
+      "count": 5007
+    },
+    {
+      "year": 2024,
+      "count": 5157
+    },
+    {
+      "year": 2025,
+      "count": 5440
+    },
+    {
+      "year": 2026,
+      "count": 4844
+    }
+  ],
+  "searchQuery": "(\"Dopamine\"[MeSH Terms]) OR (\"dopamine\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43020680",
+      "title": "Corrigendum to 'Sulfur-doped graphitic carbon nitride/cerium tungstate nanocomposites for ultrasensitive dopamine sensing in mouse striatal tissue' [Talanta 313, Part A (2026), 130799].",
+      "year": 2027
+    },
+    {
+      "pmid": "42976425",
+      "title": "A novel, cost-efficient and sinusoidal voltage-based amperometric biosensor integrated into a 3D-printed microfluidic system for glucose determination in untreated blood and serum plasma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901062",
+      "title": "Sulfur-doped graphitic carbon nitride/cerium tungstate nanocomposites for ultrasensitive dopamine sensing in mouse striatal tissue.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896352",
+      "title": "Heterojunction-induced interface barrier modulation in ZnO@Zn-HHTP for dopamine detection.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987740",
+      "title": "Fluorescent probes for catecholamine sensing: A critical review from molecular recognition to biomedical and doping applications.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:28:41.625Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "publication-bias",
+  "ja": "出版バイアス",
+  "yomi": "しゅっぱんばいあす",
+  "en": "publication bias",
+  "category": "research",
+  "meshHeading": "Publication Bias",
+  "meshUi": "68017594",
+  "description": {
+    "ja": "研究結果が統計的に有意であったり、ポジティブな結果を示した場合に論文として出版されやすく、逆に有意差がなかったり期待外れの結果は公表されにくい現象を指します。これによりメタ解析や系統的レビューで扱われる論文が偏り、真の効果が過大評価される問題が生じます。",
+    "en": "Publication bias refers to the tendency for studies with statistically significant or positive results to be published more readily than those with null or negative findings. This phenomenon skews meta-analyses and systematic reviews, potentially leading to overestimation of true effects."
+  },
+  "usage": {
+    "ja": "メタ解析では、ファンネルプロットやEgger検定などの統計手法を用いて出版バイアスの有無を評価します。臨床試験登録制度やプレプリントの普及により、未発表データの存在を検出・補正する試みが進められています。",
+    "en": "In meta-analyses, publication bias is assessed using funnel plots, Egger's test, and other statistical methods. Clinical trial registries and preprint servers help detect and address unpublished data to minimize this bias."
+  },
+  "synonyms": {
+    "ja": "報告バイアス(reporting bias)とほぼ同義ですが、後者は論文内での選択的な結果報告も含む広い概念です。ファイルドロワー効果(file drawer effect)も類似の現象を指し、ネガティブな結果が研究者の引き出しに眠ったままになることを比喩的に表現します。",
+    "en": "Reporting bias is a broader term that includes selective outcome reporting within published papers, while publication bias specifically refers to non-publication of entire studies. The file drawer effect metaphorically describes the same phenomenon where negative results remain unpublished in researchers' drawers."
+  },
+  "pubmedCount": 34278,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1866
+    },
+    {
+      "year": 2018,
+      "count": 1764
+    },
+    {
+      "year": 2019,
+      "count": 2031
+    },
+    {
+      "year": 2020,
+      "count": 2383
+    },
+    {
+      "year": 2021,
+      "count": 2637
+    },
+    {
+      "year": 2022,
+      "count": 2670
+    },
+    {
+      "year": 2023,
+      "count": 2421
+    },
+    {
+      "year": 2024,
+      "count": 2929
+    },
+    {
+      "year": 2025,
+      "count": 4253
+    },
+    {
+      "year": 2026,
+      "count": 4182
+    }
+  ],
+  "searchQuery": "(\"Publication Bias\"[MeSH Terms]) OR (\"publication bias\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43014336",
+      "title": "Interventions to reduce paediatric cancer treatment abandonment in low-income and middle-income countries: a systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42759891",
+      "title": "Therapeutic potential of mesenchymal stem cell-derived extracellular vesicles as a cell-free approach in autism spectrum disorder: A systematic review and meta-analysis of preclinical studies.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032093",
+      "title": "Recurrence rates in Dupuytren's contracture: a systematic review and meta-analysis comparing percutaneous and open surgical management.",
+      "year": 2027
+    },
+    {
+      "pmid": "43012629",
+      "title": "Exploring the Association Between Cannabis Use and Male Reproductive Parameters: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43004820",
+      "title": "Sperm DNA Fragmentation Index, Semen Quality, and Assisted Reproductive Technology Outcomes: A Systematic Review and Meta-analysis of Observational Studies.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:24:54.028Z"
+}

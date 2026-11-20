@@ -1,0 +1,96 @@
+{
+  "slug": "executive-function",
+  "ja": "実行機能",
+  "yomi": "じっこうきのう",
+  "en": "executive function",
+  "category": "psychology",
+  "aliases": [
+    "遂行機能"
+  ],
+  "meshHeading": "Executive Function",
+  "meshUi": "68056344",
+  "description": {
+    "ja": "目標達成のために計画を立てたり、注意を切り替えたり、衝動を抑えたりする高次の認知機能の総称です。前頭前野が主に関与し、作業記憶・抑制制御・認知的柔軟性などが含まれます。日常生活や学習、社会適応に重要な役割を果たします。",
+    "en": "Executive function refers to a set of higher-order cognitive processes that enable goal-directed behavior, including planning, attention shifting, and impulse control. Primarily associated with the prefrontal cortex, it encompasses working memory, inhibitory control, and cognitive flexibility, playing a crucial role in daily functioning, learning, and social adaptation."
+  },
+  "usage": {
+    "ja": "心理学や神経科学の論文では、ウィスコンシンカード分類テスト、ストループ課題、トレイルメイキングテスト、ロンドン塔課題などを用いて測定されます。ADHD、自閉スペクトラム症、認知症、うつ病などの研究で障害の程度を評価する指標として頻繁に用いられます。",
+    "en": "In psychology and neuroscience research, executive function is typically measured using tools such as the Wisconsin Card Sorting Test, Stroop task, Trail Making Test, and Tower of London task. It is frequently used as an assessment indicator for impairment levels in studies of ADHD, autism spectrum disorder, dementia, and depression."
+  },
+  "synonyms": {
+    "ja": "遂行機能とも呼ばれ、ほぼ同義です。認知制御や実行制御という表記もあります。個別の構成要素を指す場合は作業記憶、抑制機能、セットシフティングなどと区別して使われることがあります。",
+    "en": "Also called executive control or cognitive control. When referring to specific components, terms like working memory, inhibitory control, and set-shifting are distinguished. The term encompasses multiple subprocesses rather than a single unified construct."
+  },
+  "pubmedCount": 43526,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3125
+    },
+    {
+      "year": 2018,
+      "count": 3182
+    },
+    {
+      "year": 2019,
+      "count": 3302
+    },
+    {
+      "year": 2020,
+      "count": 3269
+    },
+    {
+      "year": 2021,
+      "count": 3249
+    },
+    {
+      "year": 2022,
+      "count": 2982
+    },
+    {
+      "year": 2023,
+      "count": 2855
+    },
+    {
+      "year": 2024,
+      "count": 3283
+    },
+    {
+      "year": 2025,
+      "count": 3970
+    },
+    {
+      "year": 2026,
+      "count": 3873
+    }
+  ],
+  "searchQuery": "(\"Executive Function\"[MeSH Terms]) OR (\"executive function\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43008422",
+      "title": "Do parental questions and gestures support executive functions in toddlers born preterm and full-term?",
+      "year": 2027
+    },
+    {
+      "pmid": "42892216",
+      "title": "Self-report measures of mindfulness for children: convergent validity, predictive validity, and impacts of social desirability bias.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858506",
+      "title": "Children successfully use external cues as a cognitive strategy in an unsolvable memory task but demonstrate limitation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42837797",
+      "title": "Cognitive predictors of narrative retelling in early childhood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854760",
+      "title": "Contribution of the medial prefrontal cortex to performance on the Traveling Salesperson Problem in rats.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:31:17.840Z"
+}

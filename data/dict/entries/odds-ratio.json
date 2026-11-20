@@ -1,0 +1,94 @@
+{
+  "slug": "odds-ratio",
+  "ja": "オッズ比",
+  "yomi": "おっずひ",
+  "en": "odds ratio",
+  "abbr": "OR",
+  "category": "research",
+  "meshHeading": "Odds Ratio",
+  "meshUi": "68016017",
+  "description": {
+    "ja": "ある事象の起こりやすさを2つのグループ間で比較する指標で、疫学研究や臨床試験でよく用いられます。オッズ比が1より大きければ曝露群で事象が起こりやすく、1より小さければ起こりにくいことを示します。相対リスクと似ていますが、特に症例対照研究で有用な統計量です。",
+    "en": "A measure comparing the likelihood of an event occurring between two groups, commonly used in epidemiological studies and clinical trials. An odds ratio greater than 1 indicates higher odds in the exposed group, while less than 1 indicates lower odds. It is similar to relative risk but particularly useful in case-control studies."
+  },
+  "usage": {
+    "ja": "症例対照研究やロジスティック回帰分析で頻繁に報告され、「adjusted OR」(調整済みオッズ比)として交絡因子を考慮した値が示されることが多いです。95%信頼区間とともに提示され、信頼区間が1を含まなければ統計的に有意とされます。",
+    "en": "Frequently reported in case-control studies and logistic regression analyses, often presented as 'adjusted OR' accounting for confounding factors. Typically shown with 95% confidence intervals, and considered statistically significant when the interval does not include 1."
+  },
+  "synonyms": {
+    "ja": "相対リスク(relative risk, RR)と混同されやすいですが、オッズ比はオッズ同士の比であり、稀な疾患では近似しますが頻度の高い事象では値が異なります。日本語では「オッズ比」「勝算比」と表記されます。",
+    "en": "Often confused with relative risk (RR), but odds ratio compares odds rather than probabilities. While they approximate each other for rare events, they differ for common outcomes. May be referred to as 'odds ratio' or 'cross-product ratio' in statistical contexts."
+  },
+  "pubmedCount": 441290,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 22905
+    },
+    {
+      "year": 2018,
+      "count": 23193
+    },
+    {
+      "year": 2019,
+      "count": 24588
+    },
+    {
+      "year": 2020,
+      "count": 27931
+    },
+    {
+      "year": 2021,
+      "count": 31883
+    },
+    {
+      "year": 2022,
+      "count": 31518
+    },
+    {
+      "year": 2023,
+      "count": 29034
+    },
+    {
+      "year": 2024,
+      "count": 29815
+    },
+    {
+      "year": 2025,
+      "count": 29785
+    },
+    {
+      "year": 2026,
+      "count": 28274
+    }
+  ],
+  "searchQuery": "(\"Odds Ratio\"[MeSH Terms]) OR (\"odds ratio\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42841288",
+      "title": "Circulatory arrest versus aortic cross-clamping in proximal thoracic aortic aneurysm repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843391",
+      "title": "Mortality and disability after hospitalisation for injuries in low-income and middle-income countries: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948259",
+      "title": "Prevalence and Clinical Significance of Gastric-Type Mucosal Lesions in Non-Ampullary Duodenal Epithelial Tumors Based on Mucin Phenotype.",
+      "year": 2027
+    },
+    {
+      "pmid": "42871153",
+      "title": "Evaluating a Modified American Society of Anesthesiologists Physical Status-Based Sedation Management System for Pancreatobiliary Endoscopy: A Prospective Feasibility Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781370",
+      "title": "Synchronous and Metachronous Multiple Gastric Epithelial Neoplasms Detected During Index Evaluation and Post-Endoscopic Submucosal Dissection Surveillance: A Descriptive Comparison.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:22:39.028Z"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "quality-of-life",
+  "ja": "生活の質",
+  "yomi": "せいかつのしつ",
+  "en": "quality of life",
+  "abbr": "QOL",
+  "category": "nursing-pharma",
+  "aliases": [
+    "QOL"
+  ],
+  "meshHeading": "Quality of Life",
+  "meshUi": "68011788",
+  "description": {
+    "ja": "身体的健康だけでなく、精神的・社会的な満足度や生活全般の充実度を含む包括的な健康指標です。医療や介護の分野では、治療や介入が患者の日常生活にどのような影響を与えるかを評価する重要な尺度として用いられます。WHO（世界保健機関）は、身体的・心理的・社会的な側面を含む多次元的な概念として定義しています。",
+    "en": "A comprehensive health indicator that encompasses not only physical health but also mental and social well-being and overall life satisfaction. In healthcare and nursing fields, it serves as an important measure to evaluate how treatments or interventions affect patients' daily lives. The WHO defines it as a multidimensional concept including physical, psychological, and social aspects."
+  },
+  "usage": {
+    "ja": "臨床研究では、SF-36、EQ-5D、WHOQOL-BREFなどの標準化された質問票を用いて測定されます。疾患の治療効果や介護サービスの評価において、生存期間だけでなくQOLの改善も主要な評価項目とされ、患者報告アウトカム（PRO）として重視されています。",
+    "en": "In clinical research, it is measured using standardized questionnaires such as SF-36, EQ-5D, and WHOQOL-BREF. In evaluating treatment effectiveness and care services, QOL improvement is considered a major endpoint alongside survival, and is valued as a patient-reported outcome (PRO)."
+  },
+  "synonyms": {
+    "ja": "健康関連QOL（HRQOL: Health-Related Quality of Life）は身体的健康に特化した概念で、より広義のQOLと使い分けられます。主観的幸福感（subjective well-being）や生活満足度（life satisfaction）も関連概念ですが、QOLは健康状態との関連をより重視します。",
+    "en": "Health-Related Quality of Life (HRQOL) is a concept focusing specifically on physical health aspects and is distinguished from the broader QOL. Subjective well-being and life satisfaction are related concepts, but QOL emphasizes the connection with health status more explicitly."
+  },
+  "pubmedCount": 580979,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 26327
+    },
+    {
+      "year": 2018,
+      "count": 28162
+    },
+    {
+      "year": 2019,
+      "count": 30053
+    },
+    {
+      "year": 2020,
+      "count": 34946
+    },
+    {
+      "year": 2021,
+      "count": 39282
+    },
+    {
+      "year": 2022,
+      "count": 40537
+    },
+    {
+      "year": 2023,
+      "count": 40411
+    },
+    {
+      "year": 2024,
+      "count": 45212
+    },
+    {
+      "year": 2025,
+      "count": 53478
+    },
+    {
+      "year": 2026,
+      "count": 47290
+    }
+  ],
+  "searchQuery": "(\"Quality of Life\"[MeSH Terms]) OR (\"quality of life\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42853895",
+      "title": "Influence of perineal tears and body image disturbance on postpartum sexual quality of life: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42852132",
+      "title": "Therapeutic Balloon-Assisted Enteroscopy: Recent Advances in the Management of Small Bowel Diseases.",
+      "year": 2027
+    },
+    {
+      "pmid": "42677194",
+      "title": "Clinical Utility of Anti-reflux Mucosal Intervention for Refractory Gastroesophageal Reflux Disease in Patients With a Hiatal Hernia.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906126",
+      "title": "Perineal Urethrostomy After Urethral Stricture: Step-by-Step Surgical Technique.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828281",
+      "title": "In situ bioactive nanocoating enables transocular delivery of permeable drug for dual-location intervention of ocular surface and fundus disorders.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:36:05.550Z"
+}

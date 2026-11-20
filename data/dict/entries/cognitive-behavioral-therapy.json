@@ -1,0 +1,94 @@
+{
+  "slug": "cognitive-behavioral-therapy",
+  "ja": "認知行動療法",
+  "yomi": "にんちこうどうりょうほう",
+  "en": "cognitive behavioral therapy",
+  "abbr": "CBT",
+  "category": "psychology",
+  "meshHeading": "Cognitive Behavioral Therapy",
+  "meshUi": "68015928",
+  "description": {
+    "ja": "認知行動療法(CBT)は、考え方のパターン(認知)と行動の関係に着目し、ストレスや心理的問題を軽減するための心理療法の一つです。うつや不安障害などさまざまな精神的症状を対象に、エビデンスに基づいて研究されています。",
+    "en": "Cognitive Behavioral Therapy (CBT) is a form of psychotherapy that focuses on the relationship between thinking patterns (cognition) and behavior to reduce stress and psychological problems. It has been studied with evidence-based approaches for various mental health conditions such as depression and anxiety disorders."
+  },
+  "usage": {
+    "ja": "論文では「CBT群vs対照群」のようなランダム化比較試験で効果を検証したり、症状スコア(うつ尺度、不安尺度など)の変化を測定指標として用いられます。セッション数や実施期間、対面・オンラインなどの形式も報告されます。",
+    "en": "In research papers, CBT is often evaluated through randomized controlled trials comparing 'CBT group vs control group,' using symptom scores (depression scales, anxiety scales, etc.) as outcome measures. The number of sessions, duration, and delivery format (in-person, online) are also reported."
+  },
+  "synonyms": {
+    "ja": "「認知療法」と「行動療法」を統合したアプローチで、第三世代CBTとしてマインドフルネス認知療法(MBCT)やアクセプタンス&コミットメント・セラピー(ACT)などの発展形もあります。検索時は「CBT」「cognitive behavior therapy」(英国式綴り)も併用すると網羅的です。",
+    "en": "CBT integrates cognitive therapy and behavioral therapy; third-wave CBT approaches include Mindfulness-Based Cognitive Therapy (MBCT) and Acceptance and Commitment Therapy (ACT). For comprehensive searches, use both 'CBT' and the British spelling 'cognitive behaviour therapy'."
+  },
+  "pubmedCount": 53995,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3074
+    },
+    {
+      "year": 2018,
+      "count": 3237
+    },
+    {
+      "year": 2019,
+      "count": 3497
+    },
+    {
+      "year": 2020,
+      "count": 3544
+    },
+    {
+      "year": 2021,
+      "count": 3542
+    },
+    {
+      "year": 2022,
+      "count": 3512
+    },
+    {
+      "year": 2023,
+      "count": 3441
+    },
+    {
+      "year": 2024,
+      "count": 3849
+    },
+    {
+      "year": 2025,
+      "count": 4520
+    },
+    {
+      "year": 2026,
+      "count": 3669
+    }
+  ],
+  "searchQuery": "(\"Cognitive Behavioral Therapy\"[MeSH Terms]) OR (\"cognitive behavioral therapy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892216",
+      "title": "Self-report measures of mindfulness for children: convergent validity, predictive validity, and impacts of social desirability bias.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045437",
+      "title": "Sleep and Pain.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045433",
+      "title": "Advancements in the Diagnosis and Treatment of Insomnia.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906705",
+      "title": "Efficacy and safety of interactive digital therapeutics with cognitive behavioral therapy for depressive symptoms in patients with major depressive disorder: A multicenter, randomized, assessor-blinded trial versus an active mood diary control.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901396",
+      "title": "The effects of an online mindfulness-based intervention for parents of children with attention deficit/hyperactivity disorder.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:30:20.998Z"
+}

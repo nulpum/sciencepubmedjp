@@ -1,0 +1,97 @@
+{
+  "slug": "intention-to-treat",
+  "ja": "ITT解析",
+  "yomi": "あいてぃーてぃーかいせき",
+  "en": "intention-to-treat analysis",
+  "abbr": "ITT",
+  "category": "research",
+  "aliases": [
+    "治療企図解析"
+  ],
+  "meshHeading": "Intention to Treat Analysis",
+  "meshUi": "68057194",
+  "description": {
+    "ja": "臨床試験において、ランダム割り付けされた全参加者を、実際に治療を受けたかどうかに関わらず、当初割り付けられた群で解析する方法です。途中で脱落した人や治療を変更した人も含めるため、実臨床での効果をより現実的に評価できます。",
+    "en": "A method in clinical trials where all participants are analyzed according to their originally assigned treatment groups, regardless of whether they actually received the treatment or completed the study. This approach includes dropouts and protocol deviations, providing a more realistic assessment of treatment effectiveness in real-world settings."
+  },
+  "usage": {
+    "ja": "ランダム化比較試験の主要解析として用いられ、論文では「ITT analysis included all 500 randomized participants」のように記載されます。Per-protocol解析と対比して結果の頑健性を確認する際にも使われます。",
+    "en": "Used as the primary analysis in randomized controlled trials, typically described as 'ITT analysis included all 500 randomized participants.' Often compared with per-protocol analysis to assess robustness of findings."
+  },
+  "synonyms": {
+    "ja": "対比される用語として「Per-protocol解析」(実際にプロトコルを遵守した参加者のみ解析)、「As-treated解析」(実際に受けた治療に基づく解析)があります。ITTは有効性を保守的に評価し、Per-protocolは理想的条件での効果を示す傾向があります。",
+    "en": "Contrasts with 'per-protocol analysis' (analyzing only participants who completed the protocol) and 'as-treated analysis' (analyzing based on actual treatment received). ITT provides conservative effectiveness estimates, while per-protocol tends to show efficacy under ideal conditions."
+  },
+  "pubmedCount": 13625,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 851
+    },
+    {
+      "year": 2018,
+      "count": 832
+    },
+    {
+      "year": 2019,
+      "count": 833
+    },
+    {
+      "year": 2020,
+      "count": 891
+    },
+    {
+      "year": 2021,
+      "count": 874
+    },
+    {
+      "year": 2022,
+      "count": 736
+    },
+    {
+      "year": 2023,
+      "count": 680
+    },
+    {
+      "year": 2024,
+      "count": 734
+    },
+    {
+      "year": 2025,
+      "count": 856
+    },
+    {
+      "year": 2026,
+      "count": 809
+    }
+  ],
+  "searchQuery": "(\"Intention to Treat Analysis\"[MeSH Terms]) OR (\"intention-to-treat analysis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42826221",
+      "title": "Population-level effects of a community-based program on intimate partner violence: A stepped-wedge trial in South African informal settlements.",
+      "year": 2026
+    },
+    {
+      "pmid": "42865280",
+      "title": "Promoting Rehabilitation Services for Persons at Risk of Reduced Work Capacity: A Pragmatic Randomized Controlled Trial in Routine Care (AktiFAME).",
+      "year": 2026
+    },
+    {
+      "pmid": "42697250",
+      "title": "Comparative effectiveness of different acupuncture courses for chronic insomnia disorder: a randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42964789",
+      "title": "Shortened eutectic mixture of lidocaine and prilocaine plus skin cooling for pediatric vaccination pain: A randomized non-inferiority trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "43051187",
+      "title": "Early middle meningeal artery embolisation plus standard treatment versus standard treatment alone for chronic subdural haematoma in France (OTEMACS): a randomised, open-label, controlled trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:24:15.686Z"
+}

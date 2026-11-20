@@ -1,0 +1,93 @@
+{
+  "slug": "mindfulness",
+  "ja": "マインドフルネス",
+  "yomi": "まいんどふるねす",
+  "en": "mindfulness",
+  "category": "psychology",
+  "meshHeading": "Mindfulness",
+  "meshUi": "68064866",
+  "description": {
+    "ja": "マインドフルネスとは、今この瞬間の経験に対して、判断を加えずに意図的に注意を向ける心の状態や実践法を指します。元は仏教瞑想の概念ですが、現代心理学では不安やストレスの軽減、注意力向上などに関連する認知プロセスとして研究されています。臨床場面ではマインドフルネス認知療法(MBCT)やマインドフルネスストレス低減法(MBSR)などのプログラムで用いられます。",
+    "en": "Mindfulness refers to a mental state or practice of intentionally paying attention to present-moment experiences without judgment. Originally derived from Buddhist meditation, it is studied in contemporary psychology as a cognitive process related to anxiety reduction, stress management, and improved attention. Clinical applications include Mindfulness-Based Cognitive Therapy (MBCT) and Mindfulness-Based Stress Reduction (MBSR) programs."
+  },
+  "usage": {
+    "ja": "心理学研究では、Five Facet Mindfulness Questionnaire(FFMQ)やMindful Attention Awareness Scale(MAAS)などの質問票で測定されます。介入研究では、マインドフルネス瞑想プログラムの実施前後で、抑うつ症状、不安指標、注意機能、脳画像(fMRI)での変化などが評価されます。",
+    "en": "In psychological research, mindfulness is measured using questionnaires such as the Five Facet Mindfulness Questionnaire (FFMQ) or Mindful Attention Awareness Scale (MAAS). Intervention studies evaluate changes in depression scores, anxiety indicators, attentional functions, and brain imaging (fMRI) patterns before and after mindfulness meditation programs."
+  },
+  "synonyms": {
+    "ja": "「マインドフルネス瞑想」「気づきの瞑想」とほぼ同義で使われますが、マインドフルネスは状態(state)と特性(trait)の両面があります。類似概念に「メタ認知的気づき(metacognitive awareness)」「脱中心化(decentering)」があり、文脈によって使い分けられます。",
+    "en": "Terms like 'mindfulness meditation' and 'awareness meditation' are often used interchangeably, though mindfulness encompasses both state and trait aspects. Related concepts include 'metacognitive awareness' and 'decentering,' which are distinguished based on specific research contexts."
+  },
+  "pubmedCount": 21336,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1147
+    },
+    {
+      "year": 2018,
+      "count": 1365
+    },
+    {
+      "year": 2019,
+      "count": 1603
+    },
+    {
+      "year": 2020,
+      "count": 1765
+    },
+    {
+      "year": 2021,
+      "count": 2115
+    },
+    {
+      "year": 2022,
+      "count": 2481
+    },
+    {
+      "year": 2023,
+      "count": 2283
+    },
+    {
+      "year": 2024,
+      "count": 2414
+    },
+    {
+      "year": 2025,
+      "count": 2877
+    },
+    {
+      "year": 2026,
+      "count": 2495
+    }
+  ],
+  "searchQuery": "(\"Mindfulness\"[MeSH Terms]) OR (\"mindfulness\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42862599",
+      "title": "Predicting IGD treatment outcomes across interventions using a whole-brain functional connectome biomarker.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892216",
+      "title": "Self-report measures of mindfulness for children: convergent validity, predictive validity, and impacts of social desirability bias.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901396",
+      "title": "The effects of an online mindfulness-based intervention for parents of children with attention deficit/hyperactivity disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42998616",
+      "title": "Beyond adversity: Dispositional mindfulness as a potential link between positive childhood experiences and lower hair cortisol concentration in adulthood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42995473",
+      "title": "Relationship Mindfulness Profiles and Their Association With Personal and Relational Well-Being: A Person-Centered Analysis at Individual, Dyadic, and Program Levels.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:30:38.807Z"
+}

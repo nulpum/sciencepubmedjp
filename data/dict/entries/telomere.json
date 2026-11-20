@@ -1,0 +1,93 @@
+{
+  "slug": "telomere",
+  "ja": "テロメア",
+  "yomi": "てろめあ",
+  "en": "telomere",
+  "category": "biology",
+  "meshHeading": "Telomere",
+  "meshUi": "68016615",
+  "description": {
+    "ja": "テロメアは染色体の末端にある特殊なDNA配列と関連タンパク質の複合体で、染色体を保護する役割を持ちます。細胞分裂のたびに短縮し、細胞老化のマーカーとして研究されています。ヒトでは主にTTAGGGという6塩基の繰り返し配列から構成されます。",
+    "en": "Telomeres are specialized DNA-protein complexes located at the ends of chromosomes that protect chromosomal integrity. They shorten with each cell division and serve as a marker of cellular aging. In humans, they consist primarily of TTAGGG hexanucleotide repeats."
+  },
+  "usage": {
+    "ja": "論文では加齢・疾患との関連や細胞老化の研究で頻出し、定量的PCR法やフローサイトメトリーでテロメア長を測定します。longitudinal studyでは経時的なテロメア短縮速度が解析対象となることが多いです。",
+    "en": "In research papers, telomeres are studied in relation to aging and disease, with length measurements typically performed using quantitative PCR or flow cytometry. Longitudinal studies often analyze the rate of telomere shortening over time."
+  },
+  "synonyms": {
+    "ja": "テロメア長(telomere length)、末端小粒(古い呼称)と表現されることがあります。telomeric DNAやchromosomal endsも同義的に使用されますが、後者は物理的構造を指す場合が多いです。",
+    "en": "Also referred to as telomeric DNA or chromosomal ends, though the latter typically emphasizes physical structure. Telomere length (TL) is commonly used when discussing measurements, and terminal restriction fragments (TRF) refers to a specific analytical method."
+  },
+  "pubmedCount": 33575,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1466
+    },
+    {
+      "year": 2018,
+      "count": 1420
+    },
+    {
+      "year": 2019,
+      "count": 1451
+    },
+    {
+      "year": 2020,
+      "count": 1545
+    },
+    {
+      "year": 2021,
+      "count": 1586
+    },
+    {
+      "year": 2022,
+      "count": 1508
+    },
+    {
+      "year": 2023,
+      "count": 1550
+    },
+    {
+      "year": 2024,
+      "count": 1642
+    },
+    {
+      "year": 2025,
+      "count": 1934
+    },
+    {
+      "year": 2026,
+      "count": 1817
+    }
+  ],
+  "searchQuery": "(\"Telomere\"[MeSH Terms]) OR (\"telomere\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42925693",
+      "title": "Complexation of natural flavonoids to human telomeric G quadruplex: understanding of binding mechanism and effects of molecular crowders.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045400",
+      "title": "Biology of Skin Aging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42762864",
+      "title": "Benchmarking of plasma proteomics workflows reveals complementarity of deep mass spectrometry and affinity-based assays.",
+      "year": 2027
+    },
+    {
+      "pmid": "42911490",
+      "title": "Purification of RNA G-Quadruplex Binding Proteins.",
+      "year": 2027
+    },
+    {
+      "pmid": "42870083",
+      "title": "Analysis of DNA-Protein Complexes by Atomic Force Microscopy Imaging: The Case of TRF2-Telomeric DNA Wrapping.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:27:08.704Z"
+}

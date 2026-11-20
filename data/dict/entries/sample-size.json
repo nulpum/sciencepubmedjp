@@ -1,0 +1,97 @@
+{
+  "slug": "sample-size",
+  "ja": "サンプルサイズ",
+  "yomi": "さんぷるさいず",
+  "en": "sample size",
+  "category": "research",
+  "aliases": [
+    "標本サイズ",
+    "標本数"
+  ],
+  "meshHeading": "Sample Size",
+  "meshUi": "68018401",
+  "description": {
+    "ja": "研究で実際に調べた対象者や検体の数を指します。サンプルサイズが大きいほど統計的な信頼性が高まり、偶然による誤差の影響を減らすことができます。研究計画の段階で適切なサンプルサイズを算出することが、科学的に妥当な結論を得るために重要です。",
+    "en": "Sample size refers to the number of participants or specimens actually examined in a study. A larger sample size increases statistical reliability and reduces the impact of random error. Calculating an appropriate sample size during the study planning phase is crucial for obtaining scientifically valid conclusions."
+  },
+  "usage": {
+    "ja": "論文の方法セクションで「本研究のサンプルサイズはn=200」のように記載されます。統計的検出力(power)を80%以上確保するために事前にサンプルサイズ計算を行い、その根拠を示すことが一般的です。",
+    "en": "In the methods section, it is typically stated as 'the sample size of this study was n=200.' Researchers commonly perform sample size calculations in advance to ensure statistical power of 80% or higher and provide the rationale for the chosen size."
+  },
+  "synonyms": {
+    "ja": "標本サイズ、標本数とも呼ばれ、記号では「n」で表されます。類似概念に「症例数(number of cases)」がありますが、サンプルサイズは研究対象全体を指すのに対し、症例数は特定の疾患や条件を持つ対象の数を指す場合が多いです。",
+    "en": "Also called sample number or denoted as 'n.' A related concept is 'number of cases,' but while sample size refers to the entire study population, number of cases often specifically indicates subjects with a particular disease or condition."
+  },
+  "pubmedCount": 120448,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5535
+    },
+    {
+      "year": 2018,
+      "count": 5942
+    },
+    {
+      "year": 2019,
+      "count": 6502
+    },
+    {
+      "year": 2020,
+      "count": 7703
+    },
+    {
+      "year": 2021,
+      "count": 8542
+    },
+    {
+      "year": 2022,
+      "count": 8977
+    },
+    {
+      "year": 2023,
+      "count": 8781
+    },
+    {
+      "year": 2024,
+      "count": 9598
+    },
+    {
+      "year": 2025,
+      "count": 11318
+    },
+    {
+      "year": 2026,
+      "count": 12155
+    }
+  ],
+  "searchQuery": "(\"Sample Size\"[MeSH Terms]) OR (\"sample size\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42987522",
+      "title": "Enrichment characteristics and hyperspectral quantitative retrieval of lithium and rare earth element concentrations in coal.",
+      "year": 2027
+    },
+    {
+      "pmid": "42609944",
+      "title": "Evaluation of Computer-aided Detection for Identifying Missed Gastric Cancer After Endoscopic Submucosal Dissection.",
+      "year": 2027
+    },
+    {
+      "pmid": "42880088",
+      "title": "Calibration transfer via standard reference materials: A chemometric strategy for multi-element screening of soil heavy metals using Vis-NIR spectroscopy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42805353",
+      "title": "Shenhuang Granules regulate the NLRP3/Caspase-1/GSDMD pathway to alleviate pyroptosis of pulmonary microvascular endothelial cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874785",
+      "title": "Functional remodeling of the maternal brain: Linking brain c-Fos dynamics to behavioral changes in pregnancy: An exploratory study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:25:12.553Z"
+}

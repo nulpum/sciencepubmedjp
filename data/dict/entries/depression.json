@@ -1,0 +1,97 @@
+{
+  "slug": "depression",
+  "ja": "うつ病",
+  "yomi": "うつびょう",
+  "en": "depression",
+  "category": "psychology",
+  "aliases": [
+    "抑うつ",
+    "大うつ病性障害"
+  ],
+  "meshHeading": "Depressive Disorder",
+  "meshUi": "68003866",
+  "description": {
+    "ja": "気分の落ち込み、興味や喜びの喪失、エネルギー低下などが持続する精神状態を指す用語です。医学研究では診断基準(DSM-5やICD-11など)に基づいて定義され、質問票スコアや臨床面接で評価されます。疾患概念としての「大うつ病性障害(Major Depressive Disorder)」と、症状としての「抑うつ(depressive symptoms)」は区別されることがあります。",
+    "en": "A mental state characterized by persistent low mood, loss of interest or pleasure, and decreased energy. In medical research, it is defined based on diagnostic criteria (such as DSM-5 or ICD-11) and assessed through questionnaire scores or clinical interviews. The disease concept of 'Major Depressive Disorder' and symptom-level 'depressive symptoms' are sometimes distinguished."
+  },
+  "usage": {
+    "ja": "論文では「うつ病患者を対象に」「抑うつ症状をBDI(Beck Depression Inventory)やPHQ-9で測定」といった形で登場します。疫学研究では有病率、介入研究では症状スコアの変化量が主要評価項目となることが多いです。",
+    "en": "In papers, it appears as 'patients with depression' or 'depressive symptoms measured by BDI (Beck Depression Inventory) or PHQ-9'. Epidemiological studies often report prevalence rates, while intervention studies use changes in symptom scores as primary outcomes."
+  },
+  "synonyms": {
+    "ja": "「抑うつ」は症状レベル、「大うつ病性障害(MDD)」は診断名として使い分けられます。「うつ状態」は一時的な状態を指すこともあり、持続期間や重症度で区別されます。英語では'depressive disorder', 'clinical depression', 'unipolar depression'なども用いられます。",
+    "en": "'Depressive symptoms' refers to symptom-level manifestations, while 'Major Depressive Disorder (MDD)' is a diagnostic term. 'Depressive state' may indicate a temporary condition, distinguished by duration and severity. Related English terms include 'depressive disorder', 'clinical depression', and 'unipolar depression'."
+  },
+  "pubmedCount": 576638,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 23048
+    },
+    {
+      "year": 2018,
+      "count": 24441
+    },
+    {
+      "year": 2019,
+      "count": 26016
+    },
+    {
+      "year": 2020,
+      "count": 30893
+    },
+    {
+      "year": 2021,
+      "count": 36482
+    },
+    {
+      "year": 2022,
+      "count": 37325
+    },
+    {
+      "year": 2023,
+      "count": 35300
+    },
+    {
+      "year": 2024,
+      "count": 36227
+    },
+    {
+      "year": 2025,
+      "count": 41449
+    },
+    {
+      "year": 2026,
+      "count": 36851
+    }
+  ],
+  "searchQuery": "(\"Depressive Disorder\"[MeSH Terms]) OR (\"depression\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42867073",
+      "title": "From prevalence to prognosis: the clinical relevance of depression and anxiety in COPD.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834000",
+      "title": "Physicians' perspectives of palliative care quality in nursing homes: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42699223",
+      "title": "Respiratory Support With Nasal High Flow Reduces Opioid Requirements During Endoscopic Retrograde Cholangiopancreatography.",
+      "year": 2027
+    },
+    {
+      "pmid": "42602348",
+      "title": "Underestimation of Subserosal Invasion in Early Gastric Cancer-Like Advanced Gastric Carcinoma With Focal Enteroblastic Differentiation: A Case Report.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:32:16.192Z"
+}

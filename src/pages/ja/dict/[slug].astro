@@ -61,7 +61,7 @@ const jsonLd = {
   },
 };
 ---
-<BaseLayout title={title} description={description} lang="ja" noindex={!indexable}>
+<BaseLayout title={title} description={description} lang="ja" noindex={!indexable} ogImage={`/og/dict/${entry.slug}.png`} ogType="article">
   <article class="dict-entry">
     <nav class="breadcrumb">
       <a href="/ja/">ホーム</a> / <a href="/ja/dict/">日英辞書</a> / <span>{entry.ja}</span>

@@ -1,0 +1,97 @@
+{
+  "slug": "pressure-ulcer",
+  "ja": "褥瘡",
+  "yomi": "じょくそう",
+  "en": "pressure ulcer",
+  "category": "nursing-pharma",
+  "aliases": [
+    "床ずれ",
+    "圧迫潰瘍"
+  ],
+  "meshHeading": "Pressure Ulcer",
+  "meshUi": "68003668",
+  "description": {
+    "ja": "褥瘡(じょくそう)とは、長時間同じ姿勢で寝たきりや座位を続けることで、皮膚の一部が持続的に圧迫され、血流が悪くなって組織が損傷する状態です。一般に「床ずれ」とも呼ばれ、高齢者や身体機能が低下した患者に起こりやすい合併症として知られています。重症化すると深部組織まで壊死が進行するため、看護・介護現場での予防ケアが重視されています。",
+    "en": "A pressure ulcer is a localized injury to the skin and underlying tissue resulting from prolonged pressure, typically occurring in individuals who are bedridden or have limited mobility. Blood flow to the compressed area is reduced, leading to tissue damage that can range from superficial skin changes to deep tissue necrosis. Prevention through repositioning, specialized mattresses, and skin care is a key focus in nursing and long-term care settings."
+  },
+  "usage": {
+    "ja": "論文では「pressure ulcer発生率」「褥瘡予防プログラムの効果」といった形で、看護介入の評価指標や入院患者のQOL研究で用いられます。重症度分類(NPUAP分類やDESIGN-R®など)を用いてステージ別に記録・分析されることが多く、体位変換の頻度やマットレスの種類との関連が検討されます。",
+    "en": "In research, terms like 'pressure ulcer incidence' or 'effectiveness of prevention protocols' are used to evaluate nursing interventions and patient quality of life. Studies commonly employ staging systems (e.g., NPUAP classification, DESIGN-R®) to document severity and analyze associations with repositioning frequency, support surfaces, and nutritional status."
+  },
+  "synonyms": {
+    "ja": "「床ずれ」は一般向けの呼称で、医学・看護文献では「褥瘡」が正式用語です。英語では pressure ulcer のほか pressure injury, pressure sore, decubitus ulcer などが使われますが、近年は pressure injury が国際的に推奨される傾向にあります。",
+    "en": "While 'pressure ulcer' and 'pressure sore' are common, the term 'pressure injury' is increasingly preferred in international guidelines to encompass the full spectrum of tissue damage. 'Decubitus ulcer' is an older term still found in some literature but is less favored in current practice."
+  },
+  "pubmedCount": 17204,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 557
+    },
+    {
+      "year": 2018,
+      "count": 555
+    },
+    {
+      "year": 2019,
+      "count": 596
+    },
+    {
+      "year": 2020,
+      "count": 643
+    },
+    {
+      "year": 2021,
+      "count": 608
+    },
+    {
+      "year": 2022,
+      "count": 648
+    },
+    {
+      "year": 2023,
+      "count": 669
+    },
+    {
+      "year": 2024,
+      "count": 715
+    },
+    {
+      "year": 2025,
+      "count": 735
+    },
+    {
+      "year": 2026,
+      "count": 664
+    }
+  ],
+  "searchQuery": "(\"Pressure Ulcer\"[MeSH Terms]) OR (\"pressure ulcer\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42925663",
+      "title": "Pressure injury prevention in critical care: A reflexive thematic analysis of clinicians' perspectives on complexity and clinical judgement.",
+      "year": 2027
+    },
+    {
+      "pmid": "42879986",
+      "title": "Reframing pressure ulcer prevention through fundamental care: Findings from a hospital-based action research study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42735514",
+      "title": "Nisin Z and cinnamaldehyde co-delivery via fiber-reinforced alginate hydrogels: A synergistic in vitro strategy against infected pressure ulcers.",
+      "year": 2027
+    },
+    {
+      "pmid": "42580892",
+      "title": "Women vs men after traumatic spinal cord injury: Longitudinal sex differences in secondary complications, rehospitalization burden, and community participation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42435511",
+      "title": "Deep-penetrating tetrahedral framework nucleic acid nanogel spray restores miRNA-223 to potentiate macrophage-driven angiogenesis for deep tissue pressure injuries.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:35:29.585Z"
+}

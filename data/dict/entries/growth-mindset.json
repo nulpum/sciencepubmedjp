@@ -1,0 +1,94 @@
+{
+  "slug": "growth-mindset",
+  "ja": "成長マインドセット",
+  "yomi": "せいちょうまいんどせっと",
+  "en": "growth mindset",
+  "category": "psychology",
+  "aliases": [
+    "成長型マインドセット"
+  ],
+  "description": {
+    "ja": "能力や知性は努力や学習によって伸ばせるという信念のこと。心理学者Carol Dweckが提唱した概念で、失敗を学習の機会と捉え、挑戦を前向きに受け止める思考様式を指します。対義語は固定マインドセット(fixed mindset)で、能力は生まれつき決まっていると考える信念です。",
+    "en": "A belief that abilities and intelligence can be developed through effort and learning. Proposed by psychologist Carol Dweck, it refers to a thinking pattern that views failures as learning opportunities and embraces challenges positively. The opposite concept is fixed mindset, which assumes abilities are innate and unchangeable."
+  },
+  "usage": {
+    "ja": "教育心理学や組織行動の研究で、学業成績、モチベーション、レジリエンス(回復力)との関連を調べる際に用いられます。質問紙(Mindset Scale等)やインタビューで測定し、介入研究では成長マインドセットを促す教育プログラムの効果を検証します。",
+    "en": "Used in educational psychology and organizational behavior research to examine relationships with academic performance, motivation, and resilience. Measured through questionnaires (e.g., Mindset Scale) or interviews, and intervention studies test the effectiveness of educational programs designed to foster growth mindset."
+  },
+  "synonyms": {
+    "ja": "成長型マインドセット、拡張的知能観とも呼ばれます。implicit theory of intelligence(知能の潜在的理論)の一形態として扱われることもあります。同様の概念にlearning orientation(学習志向)がありますが、growth mindsetは特に能力の可変性への信念を強調する点で区別されます。",
+    "en": "Also called incremental theory of intelligence, one form of implicit theory of intelligence. Similar to learning orientation, but growth mindset specifically emphasizes the belief in malleability of abilities. Sometimes used interchangeably with malleable mindset or expansive intelligence belief in Japanese literature."
+  },
+  "pubmedCount": 880,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 14
+    },
+    {
+      "year": 2018,
+      "count": 30
+    },
+    {
+      "year": 2019,
+      "count": 47
+    },
+    {
+      "year": 2020,
+      "count": 74
+    },
+    {
+      "year": 2021,
+      "count": 100
+    },
+    {
+      "year": 2022,
+      "count": 91
+    },
+    {
+      "year": 2023,
+      "count": 119
+    },
+    {
+      "year": 2024,
+      "count": 136
+    },
+    {
+      "year": 2025,
+      "count": 189
+    },
+    {
+      "year": 2026,
+      "count": 197
+    }
+  ],
+  "searchQuery": "\"growth mindset\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42976044",
+      "title": "A national survey evaluating the construct validity and reliability of a medical student feedback literacy questionnaire.",
+      "year": 2026
+    },
+    {
+      "pmid": "43050393",
+      "title": "An Introduction to Chemical and Biomolecular Engineering Course Redesign Supports Students' Mastery Goals, Growth Mindset, and Disciplinary Identity.",
+      "year": 2026
+    },
+    {
+      "pmid": "43031677",
+      "title": "Dweck's Growth Mindset Theory in Health Professions Education: A Bibliometric Review.",
+      "year": 2026
+    },
+    {
+      "pmid": "42923823",
+      "title": "Teachers' Strategies for Supporting Perfectionistic Students: Assessment and Lessons Learned in Elementary and Secondary Schools.",
+      "year": 2026
+    },
+    {
+      "pmid": "42888513",
+      "title": "Pathways to the development of purpose in life among ethnic minority adolescents.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:34:47.686Z"
+}

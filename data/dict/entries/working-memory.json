@@ -1,0 +1,96 @@
+{
+  "slug": "working-memory",
+  "ja": "ワーキングメモリ",
+  "yomi": "わーきんぐめもり",
+  "en": "working memory",
+  "category": "psychology",
+  "aliases": [
+    "作業記憶"
+  ],
+  "meshHeading": "Memory, Short-Term",
+  "meshUi": "68008570",
+  "description": {
+    "ja": "ワーキングメモリ（作業記憶）とは、情報を一時的に保持しながら同時に処理を行う認知機能のことです。例えば、暗算をするときに数字を覚えながら計算する、会話中に相手の話を記憶しながら返答を考えるなど、日常的な思考活動に不可欠な能力です。短期記憶よりも能動的な処理を伴う概念として、認知心理学や神経科学の研究で広く用いられています。",
+    "en": "Working memory refers to the cognitive system that temporarily holds and manipulates information during complex tasks. It is essential for everyday activities such as mental arithmetic, language comprehension, and reasoning, where information must be retained while simultaneously being processed. This concept emphasizes active processing beyond simple short-term storage and is widely studied in cognitive psychology and neuroscience."
+  },
+  "usage": {
+    "ja": "論文では、N-back課題、数字逆唱課題、リーディングスパン課題などの標準化されたテストを用いて容量や機能を測定します。fMRIや脳波を使った神経科学研究では、前頭前野や頭頂葉の活動との関連が調べられることが多く、加齢、精神疾患、学習能力との関係を検討する研究が多数あります。",
+    "en": "In research papers, working memory is typically assessed using standardized tests such as the N-back task, digit span backward, or reading span tasks. Neuroimaging studies using fMRI or EEG often examine its relationship with prefrontal and parietal cortex activity, with numerous studies investigating its association with aging, psychiatric conditions, and learning abilities."
+  },
+  "synonyms": {
+    "ja": "作業記憶、ワーキングメモリー、WMと略記されることもあります。短期記憶（short-term memory）と混同されやすいですが、ワーキングメモリは情報の保持だけでなく操作・処理機能を含む点が特徴です。Baddeley＆Hitchモデルでは中央実行系、音韻ループ、視空間スケッチパッドなどの下位システムに分けられます。",
+    "en": "Also referred to as working memory capacity, operative memory, or abbreviated as WM. While often confused with short-term memory, working memory specifically includes manipulation and processing functions beyond mere storage. Baddeley and Hitch's model divides it into subsystems including the central executive, phonological loop, and visuospatial sketchpad."
+  },
+  "pubmedCount": 61165,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3226
+    },
+    {
+      "year": 2018,
+      "count": 3403
+    },
+    {
+      "year": 2019,
+      "count": 3218
+    },
+    {
+      "year": 2020,
+      "count": 3396
+    },
+    {
+      "year": 2021,
+      "count": 3540
+    },
+    {
+      "year": 2022,
+      "count": 3381
+    },
+    {
+      "year": 2023,
+      "count": 3172
+    },
+    {
+      "year": 2024,
+      "count": 3295
+    },
+    {
+      "year": 2025,
+      "count": 3601
+    },
+    {
+      "year": 2026,
+      "count": 3577
+    }
+  ],
+  "searchQuery": "(\"Memory, Short-Term\"[MeSH Terms]) OR (\"working memory\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43008422",
+      "title": "Do parental questions and gestures support executive functions in toddlers born preterm and full-term?",
+      "year": 2027
+    },
+    {
+      "pmid": "42837797",
+      "title": "Cognitive predictors of narrative retelling in early childhood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42790558",
+      "title": "Extracts of Coriaria nepalensis ameliorate MK-801-induced schizophrenia-like behaviors via regulation of neurotransmitter imbalance and neuroinflammation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892467",
+      "title": "Maternal piromelatine treatment is associated with attenuated behavioral alterations and sex-specific changes in hippocampal pCREB/BDNF signaling in adult offspring following prenatal constant-light exposure.",
+      "year": 2027
+    },
+    {
+      "pmid": "42815690",
+      "title": "Shared EEG functional connectivity patterns between time reproduction and working memory.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:30:59.765Z"
+}

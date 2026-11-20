@@ -1,0 +1,96 @@
+{
+  "slug": "medication-adherence",
+  "ja": "服薬アドヒアランス",
+  "yomi": "ふくやくあどひあらんす",
+  "en": "medication adherence",
+  "category": "nursing-pharma",
+  "aliases": [
+    "服薬遵守"
+  ],
+  "meshHeading": "Medication Adherence",
+  "meshUi": "68055118",
+  "description": {
+    "ja": "患者が処方された薬を指示通りに服用する行動のこと。単なる指示への従属ではなく、患者自身が治療方針に納得して主体的に薬を飲み続ける姿勢を重視する概念です。慢性疾患の治療成績や再入院率などに影響する重要な指標として研究されています。",
+    "en": "The extent to which patients take medications as prescribed by their healthcare providers. This concept emphasizes patients' active participation and agreement with treatment plans, rather than passive obedience. It is studied as a key indicator affecting treatment outcomes and hospital readmission rates, especially in chronic diseases."
+  },
+  "usage": {
+    "ja": "論文では質問票 (Morisky Medication Adherence Scaleなど) や服薬率 (Medication Possession Ratioなど) で測定されます。高血圧・糖尿病・精神疾患などの長期治療における服薬継続の実態や、服薬中断の要因分析、介入効果の評価に用いられます。",
+    "en": "Measured in studies using questionnaires (e.g., Morisky Medication Adherence Scale) or prescription refill data (e.g., Medication Possession Ratio). Commonly examined in contexts of long-term treatments for hypertension, diabetes, and mental disorders to assess continuation patterns, identify barriers, and evaluate intervention effectiveness."
+  },
+  "synonyms": {
+    "ja": "古くは「服薬遵守 (compliance)」と呼ばれましたが、患者の主体性を軽視する表現として「アドヒアランス (adherence)」が推奨されるようになりました。さらに患者と医療者の協働を強調する「服薬コンコーダンス (concordance)」という用語もあります。",
+    "en": "Previously termed 'medication compliance,' but 'adherence' is now preferred to emphasize patient autonomy rather than passive obedience. 'Medication concordance' further stresses collaborative agreement between patients and healthcare providers in decision-making."
+  },
+  "pubmedCount": 38072,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2569
+    },
+    {
+      "year": 2018,
+      "count": 2542
+    },
+    {
+      "year": 2019,
+      "count": 2605
+    },
+    {
+      "year": 2020,
+      "count": 2678
+    },
+    {
+      "year": 2021,
+      "count": 2527
+    },
+    {
+      "year": 2022,
+      "count": 2268
+    },
+    {
+      "year": 2023,
+      "count": 2069
+    },
+    {
+      "year": 2024,
+      "count": 2344
+    },
+    {
+      "year": 2025,
+      "count": 2937
+    },
+    {
+      "year": 2026,
+      "count": 2832
+    }
+  ],
+  "searchQuery": "(\"Medication Adherence\"[MeSH Terms]) OR (\"medication adherence\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43045422",
+      "title": "Using Electronic Medication Monitoring to Address the Why Behind Poor Adherence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901397",
+      "title": "Interaction patterns of internalized and perceived stigma with antidepressant adverse reactions on medication adherence in major depressive disorder: A prospective cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42759616",
+      "title": "A smartphone-based serious game to improve mental health and medication adherence in adults with depression: A randomised controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648938",
+      "title": "Pharmaceutical pictograms: From fragmented evidence to accessible care.",
+      "year": 2027
+    },
+    {
+      "pmid": "42637584",
+      "title": "Pharmacy-based interventions for patients with limited health literacy and chronic disease: A systematic review of intervention outcomes with a focus on co-design.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:35:07.953Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "self-efficacy",
+  "ja": "自己効力感",
+  "yomi": "じここうりょくかん",
+  "en": "self-efficacy",
+  "category": "psychology",
+  "meshHeading": "Self Efficacy",
+  "meshUi": "68020377",
+  "description": {
+    "ja": "自己効力感とは、ある課題や行動を自分がうまく遂行できるという確信や信念のことです。心理学者バンデューラが提唱した概念で、人の動機づけや行動選択に大きく影響します。医学研究では、患者の治療への取り組みや健康行動の実践を予測する重要な心理指標として扱われます。",
+    "en": "Self-efficacy refers to an individual's belief in their capability to successfully execute specific tasks or behaviors. Proposed by psychologist Bandura, this concept significantly influences motivation and behavioral choices. In medical research, it serves as an important psychological indicator predicting patients' engagement in treatment and health-promoting behaviors."
+  },
+  "usage": {
+    "ja": "論文では質問紙法による測定が一般的で、特定の健康行動(運動、服薬、食事管理など)に対する自信の程度を数値化します。介入研究では、教育プログラムや行動療法が自己効力感を向上させ、結果として健康行動の改善につながるかを検証することが多いです。",
+    "en": "Studies typically measure self-efficacy using questionnaires that quantify confidence levels for specific health behaviors such as exercise, medication adherence, or dietary management. Intervention research often examines whether educational programs or behavioral therapies enhance self-efficacy, subsequently leading to improved health behaviors."
+  },
+  "synonyms": {
+    "ja": "「自己効力」とも表記されますが、「自己効力感」がより一般的です。類似概念として自尊心(self-esteem)がありますが、自己効力感は特定の課題遂行能力への信念を指すのに対し、自尊心は自己の価値全般への評価を指す点で区別されます。",
+    "en": "Sometimes written as 'self-efficacy belief.' While related to self-esteem, the two concepts differ: self-efficacy refers specifically to confidence in performing particular tasks, whereas self-esteem represents overall self-worth evaluation."
+  },
+  "pubmedCount": 67589,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3187
+    },
+    {
+      "year": 2018,
+      "count": 3355
+    },
+    {
+      "year": 2019,
+      "count": 3682
+    },
+    {
+      "year": 2020,
+      "count": 4174
+    },
+    {
+      "year": 2021,
+      "count": 4874
+    },
+    {
+      "year": 2022,
+      "count": 5486
+    },
+    {
+      "year": 2023,
+      "count": 5063
+    },
+    {
+      "year": 2024,
+      "count": 5205
+    },
+    {
+      "year": 2025,
+      "count": 6558
+    },
+    {
+      "year": 2026,
+      "count": 7069
+    }
+  ],
+  "searchQuery": "(\"Self Efficacy\"[MeSH Terms]) OR (\"self-efficacy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42683123",
+      "title": "Bethesda Endoscopic Retrograde Cholangiopancreatography Skill Assessment Tool (BESAT)-Based Simulator Training Using a Novel Dry Endoscopic Retrograde Cholangiopancreatography Model Improves Technical Proficiency and Self-Efficacy: A Prospective Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025916",
+      "title": "Mental Health and Vocational Benefits of Soft Skills Training in Autistic Young Adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025912",
+      "title": "Problem-Solving Therapy After Acquired Brain Injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42904802",
+      "title": "Trends in Digital Health Literacy: Results of the Third Health Literacy Survey in Germany.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041199",
+      "title": "Association of Parenting Styles and Parental Involvement with the Mental Health of Adolescents with Type 1 Diabetes: A Scoping Review.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:33:31.568Z"
+}

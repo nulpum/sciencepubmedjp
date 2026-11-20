@@ -1,0 +1,96 @@
+{
+  "slug": "epigenetics",
+  "ja": "エピジェネティクス",
+  "yomi": "えぴじぇねてぃくす",
+  "en": "epigenetics",
+  "category": "biology",
+  "aliases": [
+    "後成遺伝学"
+  ],
+  "meshHeading": "Epigenomics",
+  "meshUi": "68057890",
+  "description": {
+    "ja": "DNA配列自体は変化しないものの、遺伝子の働き方(発現パターン)が変わり、その状態が細胞分裂後も維持される仕組みを研究する分野です。DNAメチル化やヒストン修飾などの化学的な目印が、遺伝子のオン・オフを制御します。環境要因や生活習慣が遺伝子発現に影響を与える経路として注目されています。",
+    "en": "Epigenetics is the study of changes in gene activity and expression that do not involve alterations to the DNA sequence itself, yet can be maintained through cell divisions. Chemical marks such as DNA methylation and histone modifications regulate whether genes are turned on or off. This field highlights how environmental factors and lifestyle can influence gene expression patterns."
+  },
+  "usage": {
+    "ja": "論文では「epigenetic modifications」や「DNA methylation analysis」として、がん研究・発生生物学・老化研究などで広く登場します。バイサルファイト シーケンスやChIP-seqといった手法でメチル化パターンやヒストン修飾を測定し、疾患との関連や世代を超えた影響を調べます。",
+    "en": "In research papers, terms like 'epigenetic modifications' and 'DNA methylation analysis' appear frequently in cancer studies, developmental biology, and aging research. Techniques such as bisulfite sequencing and ChIP-seq are used to measure methylation patterns and histone modifications, exploring disease associations and transgenerational effects."
+  },
+  "synonyms": {
+    "ja": "「後成遺伝学」は日本語の訳語で同義です。「エピゲノム (epigenome)」は細胞内のエピジェネティック修飾の総体を指し、「エピジェネティック制御 (epigenetic regulation)」は遺伝子発現を調節する機構そのものを指します。DNA配列の変異 (mutation) とは明確に区別される概念です。",
+    "en": "The term '後成遺伝学' is the Japanese equivalent. 'Epigenome' refers to the complete set of epigenetic modifications in a cell, while 'epigenetic regulation' denotes the mechanisms controlling gene expression. It is conceptually distinct from genetic mutations, which alter the DNA sequence itself."
+  },
+  "pubmedCount": 44448,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3117
+    },
+    {
+      "year": 2018,
+      "count": 3386
+    },
+    {
+      "year": 2019,
+      "count": 3314
+    },
+    {
+      "year": 2020,
+      "count": 3746
+    },
+    {
+      "year": 2021,
+      "count": 4181
+    },
+    {
+      "year": 2022,
+      "count": 3875
+    },
+    {
+      "year": 2023,
+      "count": 3477
+    },
+    {
+      "year": 2024,
+      "count": 3415
+    },
+    {
+      "year": 2025,
+      "count": 3785
+    },
+    {
+      "year": 2026,
+      "count": 3482
+    }
+  ],
+  "searchQuery": "(\"Epigenomics\"[MeSH Terms]) OR (\"epigenetics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43022616",
+      "title": "Novel post-translational modifications in fibrosis: The mechanisms and implications.",
+      "year": 2027
+    },
+    {
+      "pmid": "42679541",
+      "title": "Self-sustaining ROS-responsive hydrogel enabled delivery of PROTAC/Ce6 nanoparticles via PDT-Epigenetic protein degradation to amplify pyroptosis for enhanced cancer immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863532",
+      "title": "The epigenetic landscape of hepatocellular carcinoma: from molecular mechanisms to early detection biomarkers and precision therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "43052654",
+      "title": "Tailored Therapies Guided by Multi-Omics Integration: Principles, Applications, and Future Directions.",
+      "year": 2027
+    },
+    {
+      "pmid": "43031330",
+      "title": "Exercise Reprograms the Epigenetic-Mitochondrial Axis: Mechanisms of Healthy Aging across Muscle, Brain, and Heart.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:27:48.305Z"
+}

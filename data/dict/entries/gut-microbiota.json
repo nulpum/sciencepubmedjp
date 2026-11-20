@@ -1,0 +1,97 @@
+{
+  "slug": "gut-microbiota",
+  "ja": "腸内細菌叢",
+  "yomi": "ちょうないさいきんそう",
+  "en": "gut microbiota",
+  "category": "biology",
+  "aliases": [
+    "腸内フローラ",
+    "腸内マイクロバイオータ"
+  ],
+  "meshHeading": "Gastrointestinal Microbiome",
+  "meshUi": "2009927",
+  "description": {
+    "ja": "腸内細菌叢(gut microbiota)とは、ヒトや動物の腸管内に生息する多種多様な微生物の集団を指します。主に細菌が中心ですが、古細菌、真菌、ウイルスなども含まれ、宿主の消化、免疫、代謝などに深く関わっています。近年の研究では、肥満、糖尿病、炎症性腸疾患、神経疾患など多様な健康状態との関連が調べられています。",
+    "en": "Gut microbiota refers to the diverse community of microorganisms residing in the intestinal tract of humans and animals. It primarily consists of bacteria, but also includes archaea, fungi, and viruses, playing crucial roles in digestion, immune function, and metabolism. Recent research investigates associations between gut microbiota composition and various health conditions including obesity, diabetes, inflammatory bowel diseases, and neurological disorders."
+  },
+  "usage": {
+    "ja": "論文では16S rRNA遺伝子シーケンシングやメタゲノム解析によって菌叢の組成や多様性を評価し、α多様性(Shannon指数など)やβ多様性(UniFrac距離など)といった指標で表現されます。糞便サンプルから抽出したDNAを用いて、門・属・種レベルでの菌の存在比率を定量化することが一般的です。",
+    "en": "In research papers, gut microbiota composition and diversity are evaluated using 16S rRNA gene sequencing or metagenomic analysis, expressed through metrics such as alpha diversity (e.g., Shannon index) and beta diversity (e.g., UniFrac distance). DNA extracted from fecal samples is typically used to quantify bacterial abundance at phylum, genus, and species levels."
+  },
+  "synonyms": {
+    "ja": "腸内フローラ、腸内マイクロバイオータとも呼ばれ、ほぼ同義ですが、「マイクロバイオーム(microbiome)」は微生物の遺伝子全体を指すため厳密には区別されます。英語ではgut microbiome、intestinal microbiota、gut floraなども使われますが、現在はgut microbiotaが最も標準的な学術用語です。",
+    "en": "Also called gut flora, intestinal microbiota, or gut microbiome, though 'microbiome' technically refers to the collective genetic material of microorganisms rather than the organisms themselves. While terms like gut flora and intestinal microbiota are used interchangeably, gut microbiota is currently the most standardized academic term in English literature."
+  },
+  "pubmedCount": 113798,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4550
+    },
+    {
+      "year": 2018,
+      "count": 5602
+    },
+    {
+      "year": 2019,
+      "count": 7522
+    },
+    {
+      "year": 2020,
+      "count": 9646
+    },
+    {
+      "year": 2021,
+      "count": 10981
+    },
+    {
+      "year": 2022,
+      "count": 11777
+    },
+    {
+      "year": 2023,
+      "count": 11874
+    },
+    {
+      "year": 2024,
+      "count": 15869
+    },
+    {
+      "year": 2025,
+      "count": 20205
+    },
+    {
+      "year": 2026,
+      "count": 18228
+    }
+  ],
+  "searchQuery": "(\"Gastrointestinal Microbiome\"[MeSH Terms]) OR (\"gut microbiota\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42908331",
+      "title": "Effects of xylooligosaccharide supplementation on methane emissions, rumen microbiome, and serum metabolome in lactating Jersey cows.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "43032397",
+      "title": "Effects of bile acids and gut microbiota interactions on neurological and psychiatric disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42959301",
+      "title": "Coacervate protocells-mediated mitochondrial transplantation restores gut epithelial energetic homeostasis in ulcerative colitis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42927684",
+      "title": "Bioactive shape-memory biodegradable biliary stent functionalized with dHAM-Curcumin for improved biliary repair and microenvironment modulation.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:25:33.923Z"
+}
