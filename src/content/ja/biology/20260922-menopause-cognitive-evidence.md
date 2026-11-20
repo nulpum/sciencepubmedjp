@@ -21,8 +21,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「更年期 認知機能 エストロゲン変動」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E6%259B%25B4%25E5%25B9%25B4%25E6%259C%259F%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%2B%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25AD%25E3%2582%25B2%25E3%2583%25B3%25E5%25A4%2589%25E5%258B%2595%26f%3D1"
-  - title: "書見台 (論文を開いたまま読める)"
-    url: "https://www.amazon.co.jp/s?k=%E6%9B%B8%E8%A6%8B%E5%8F%B0&tag=sciencepubm06-22&i=office-products&s=review-rank"
+  - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
 
 ## この記事で見ていくこと

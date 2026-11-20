@@ -20,8 +20,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「認知行動療法 CBT うつ」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E8%25AA%258D%25E7%259F%25A5%25E8%25A1%258C%25E5%258B%2595%25E7%2599%2582%25E6%25B3%2595%2BCBT%2B%25E3%2581%2586%25E3%2581%25A4%26f%3D1"
-  - title: "ブックライト (夜の読書に)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88%20%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97&tag=sciencepubm06-22&i=electronics&s=review-rank"
+  - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
 
 ## この記事で見ていくこと

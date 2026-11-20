@@ -16,8 +16,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「過敏性腸症候群 IBS 治療最前線：低FODMAP食」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E9%2581%258E%25E6%2595%258F%25E6%2580%25A7%25E8%2585%25B8%25E7%2597%2587%25E5%2580%2599%25E7%25BE%25A4%2BIBS%2B%25E6%25B2%25BB%25E7%2599%2582%25E6%259C%2580%25E5%2589%258D%25E7%25B7%259A%25EF%25BC%259A%25E4%25BD%258EFODMAP%25E9%25A3%259F%26f%3D1"
-  - title: "ノイキャンイヤホン (集中読書に)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubm06-22&i=electronics&s=review-rank"
+  - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 tags:
   - "probiotics"
   - "diet-nutrition"

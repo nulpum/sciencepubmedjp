@@ -16,8 +16,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「慢性疲労症候群 CFS/ME 最新治療エビデンス」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E6%2585%25A2%25E6%2580%25A7%25E7%2596%25B2%25E5%258A%25B4%25E7%2597%2587%25E5%2580%2599%25E7%25BE%25A4%2BCFS%252FME%2B%25E6%259C%2580%25E6%2596%25B0%25E6%25B2%25BB%25E7%2599%2582%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%26f%3D1"
-  - title: "ノイキャンイヤホン (集中読書に)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubm06-22&i=electronics&s=review-rank"
+  - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 tags:
   - "immunity"
   - "exercise"

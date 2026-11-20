@@ -19,8 +19,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「ビタミンD 免疫 メンタルヘルス効果」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2583%2593%25E3%2582%25BF%25E3%2583%259F%25E3%2583%25B3D%2B%25E5%2585%258D%25E7%2596%25AB%2B%25E3%2583%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2598%25E3%2583%25AB%25E3%2582%25B9%25E5%258A%25B9%25E6%259E%259C%26f%3D1"
-  - title: "ブックスタンド (角度調整)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%96%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89%20%E8%A7%92%E5%BA%A6%E8%AA%BF%E6%95%B4&tag=sciencepubm06-22&i=office-products&s=review-rank"
+  - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
 
 ## この記事で見ていくこと

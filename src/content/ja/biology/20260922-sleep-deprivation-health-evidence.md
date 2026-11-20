@@ -21,8 +21,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "「睡眠不足 健康影響 認知機能」で 楽天ブックス 検索"
     url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E7%259D%25A1%25E7%259C%25A0%25E4%25B8%258D%25E8%25B6%25B3%2B%25E5%2581%25A5%25E5%25BA%25B7%25E5%25BD%25B1%25E9%259F%25BF%2B%25E8%25AA%258D%25E7%259F%25A5%25E6%25A9%259F%25E8%2583%25BD%26f%3D1"
-  - title: "ノイキャンイヤホン (集中読書に)"
-    url: "https://www.amazon.co.jp/s?k=%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0%20%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=sciencepubm06-22&i=electronics&s=review-rank"
+  - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
+    url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
 
 ## この記事で見ていくこと
