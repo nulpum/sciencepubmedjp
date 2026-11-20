@@ -1,0 +1,158 @@
+---
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { DictEntry, DictCategory } from '../../../../scripts/types';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const dir = join(process.cwd(), 'data', 'dict', 'entries');
+  let files: string[] = [];
+  try { files = await readdir(dir); } catch { return []; }
+  const entries: DictEntry[] = [];
+  for (const f of files) {
+    if (!f.endsWith('.json')) continue;
+    try { entries.push(JSON.parse(await readFile(join(dir, f), 'utf-8'))); } catch {}
+  }
+  return entries.map(e => ({ params: { slug: e.slug }, props: { entry: e, allEntries: entries } }));
+}
+
+const { entry, allEntries } = Astro.props as { entry: DictEntry; allEntries: DictEntry[] };
+const indexable = import.meta.env.DICT_INDEXABLE === 'true';
+
+const CATEGORY_LABELS: Record<DictCategory, string> = {
+  research: 'Research & Statistics',
+  biology: 'Biology',
+  psychology: 'Psychology',
+  'nursing-pharma': 'Nursing & Pharmacy',
+};
+
+const maxCount = Math.max(...entry.yearlyCount.map(y => y.count), 1);
+const GRAPH_W = 560;
+const GRAPH_H = 160;
+const BAR_W = GRAPH_W / entry.yearlyCount.length * 0.7;
+const GAP = GRAPH_W / entry.yearlyCount.length * 0.3;
+
+const related = allEntries
+  .filter(e => e.category === entry.category && e.slug !== entry.slug)
+  .slice(0, 5);
+
+const labUrl = `/en/lab/?q=${encodeURIComponent(entry.en)}`;
+const title = `${entry.en}${entry.abbr ? ' (' + entry.abbr + ')' : ''} | PubMed EN-JP Dictionary`;
+const description = entry.description.en.slice(0, 150);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTerm',
+  name: entry.en,
+  alternateName: [entry.ja, entry.abbr].filter(Boolean),
+  description: entry.description.en,
+  inDefinedTermSet: {
+    '@type': 'DefinedTermSet',
+    name: 'PubMed EN-JP Dictionary',
+    url: 'https://sciencepubmed.net/en/dict/',
+  },
+};
+---
+<BaseLayout title={title} description={description} lang="en" noindex={!indexable}>
+  <article class="dict-entry">
+    <nav class="breadcrumb">
+      <a href="/en/">Home</a> / <a href="/en/dict/">Dictionary</a> / <span>{entry.en}</span>
+    </nav>
+
+    <header>
+      <div class="cat-badge">{CATEGORY_LABELS[entry.category]}</div>
+      <h1>{entry.en}</h1>
+      <p class="ja-term">Japanese: <strong>{entry.ja}</strong>{entry.abbr && <span class="abbr"> ({entry.abbr})</span>}</p>
+      {entry.meshHeading && (
+        <p class="mesh">MeSH: <code>{entry.meshHeading}</code>{entry.meshUi && <span> ({entry.meshUi})</span>}</p>
+      )}
+    </header>
+
+    <section class="desc"><h2>Meaning</h2><p>{entry.description.en}</p></section>
+    <section class="usage"><h2>Usage in papers</h2><p>{entry.usage.en}</p></section>
+    <section class="synonyms"><h2>Synonyms & Notes</h2><p>{entry.synonyms.en}</p></section>
+
+    <section class="pubmed-stats">
+      <h2>PubMed article count</h2>
+      <p class="stat-big">{entry.pubmedCount.toLocaleString()} articles (cumulative)</p>
+      <div class="yearly-graph">
+        <svg viewBox={`0 0 ${GRAPH_W} ${GRAPH_H + 30}`} width="100%" role="img">
+          {entry.yearlyCount.map((y, i) => {
+            const h = (y.count / maxCount) * GRAPH_H;
+            const x = i * (BAR_W + GAP);
+            return (
+              <g>
+                <rect x={x} y={GRAPH_H - h} width={BAR_W} height={h} fill="#4a90e2" />
+                <text x={x + BAR_W / 2} y={GRAPH_H + 14} text-anchor="middle" font-size="10" fill="#666">{y.year}</text>
+                <text x={x + BAR_W / 2} y={GRAPH_H - h - 4} text-anchor="middle" font-size="9" fill="#333">{y.count}</text>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+    </section>
+
+    <section class="search-query">
+      <h2>Copyable PubMed query</h2>
+      <pre><code>{entry.searchQuery}</code></pre>
+    </section>
+
+    <section class="lab-link">
+      <a href={labUrl} class="lab-button">Search "{entry.en}" in PubMed Lab →</a>
+    </section>
+
+    {entry.recentArticles.length > 0 && (
+      <section class="recent">
+        <h2>Recent articles</h2>
+        <ul>
+          {entry.recentArticles.map(a => (
+            <li>
+              <a href={`https://pubmed.ncbi.nlm.nih.gov/${a.pmid}/`} target="_blank" rel="noopener">{a.title}</a>
+              {a.year && <span class="year"> ({a.year})</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {related.length > 0 && (
+      <section class="related">
+        <h2>Related terms</h2>
+        <ul class="related-list">
+          {related.map(r => (
+            <li><a href={`/en/dict/${r.slug}/`}>{r.en} <small>({r.ja})</small></a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <footer class="foot-nav">
+      <a href="/en/dict/">← Back to dictionary</a>
+    </footer>
+  </article>
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</BaseLayout>
+
+<style>
+  .dict-entry { max-width: 720px; margin: 0 auto; padding: 1rem; }
+  .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+  .cat-badge { display: inline-block; background: #e8f0fe; color: #1a73e8; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; }
+  h1 { font-size: 1.8rem; margin: 0.3rem 0; }
+  .ja-term { font-size: 1.05rem; color: #555; }
+  .mesh { font-size: 0.9rem; color: #666; }
+  .mesh code { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; }
+  section { margin: 1.5rem 0; }
+  section h2 { font-size: 1.1rem; border-left: 4px solid #4a90e2; padding-left: 0.5rem; }
+  .stat-big { font-size: 1.4rem; font-weight: bold; color: #1a73e8; }
+  .yearly-graph svg { background: #fafafa; border-radius: 4px; padding: 0.5rem; }
+  .search-query pre { background: #f8f8f8; padding: 0.7rem; border-radius: 4px; overflow-x: auto; font-size: 0.85rem; }
+  .lab-link { text-align: center; padding: 1.2rem; background: #f0f7ff; border-radius: 8px; }
+  .lab-button { display: inline-block; padding: 0.7rem 1.5rem; background: #1a73e8; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+  .related-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .related-list li a { display: block; padding: 0.4rem 0.8rem; background: #f4f4f4; border-radius: 4px; text-decoration: none; color: #333; }
+  .recent .year { color: #888; font-size: 0.85rem; }
+  .foot-nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.9rem; }
+</style>

@@ -1,0 +1,117 @@
+---
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { DictEntry, DictCategory } from '../../../../scripts/types';
+
+export const prerender = true;
+
+const dir = join(process.cwd(), 'data', 'dict', 'entries');
+let entries: DictEntry[] = [];
+try {
+  const files = await readdir(dir);
+  for (const f of files) {
+    if (!f.endsWith('.json')) continue;
+    try { entries.push(JSON.parse(await readFile(join(dir, f), 'utf-8'))); } catch {}
+  }
+} catch {}
+
+const indexable = import.meta.env.DICT_INDEXABLE === 'true';
+
+const CATEGORY_LABELS: Record<DictCategory, string> = {
+  research: '研究・統計',
+  biology: '生物学',
+  psychology: '心理学',
+  'nursing-pharma': '看護・薬学',
+};
+const CATEGORY_ORDER: DictCategory[] = ['research', 'biology', 'psychology', 'nursing-pharma'];
+
+// カテゴリ別 + 50音順
+const byCategory: Record<string, DictEntry[]> = {};
+for (const e of entries) {
+  (byCategory[e.category] ||= []).push(e);
+}
+for (const key of Object.keys(byCategory)) {
+  byCategory[key].sort((a, b) => a.yomi.localeCompare(b.yomi, 'ja'));
+}
+---
+<BaseLayout
+  title="PubMed 日英辞書 ｜ PubMed Trivia"
+  description="研究・統計、生物学、心理学、看護・薬学の専門用語を日本語と英語で引ける辞書。MeSH確認済み、PubMed検索クエリ付き。"
+  lang="ja"
+  noindex={!indexable}
+>
+  <article class="dict-index">
+    <header>
+      <h1>PubMed 日英辞書</h1>
+      <p class="lede">
+        PubMedで論文を探すときに必要な専門用語を、日本語⇔英語で引ける辞書です。
+        用語ごとにMeSH確認・掲載論文数・コピペ用検索クエリ・最新論文を掲載しています。
+      </p>
+      <nav class="quick">
+        <a href="/ja/jiten/">日英対訳シンプル一覧 →</a>
+      </nav>
+    </header>
+
+    <div class="search-box">
+      <input type="search" id="dict-search" placeholder="用語を検索 (日本語/英語/略語)" autocomplete="off" />
+    </div>
+
+    {CATEGORY_ORDER.map(cat => byCategory[cat] && byCategory[cat].length > 0 && (
+      <section class="cat-block" data-category={cat}>
+        <h2>{CATEGORY_LABELS[cat]} <span class="count">({byCategory[cat].length})</span></h2>
+        <ul class="term-list">
+          {byCategory[cat].map(e => (
+            <li class="term-item" data-search={`${e.ja} ${e.en} ${e.abbr || ''} ${(e.aliases||[]).join(' ')}`.toLowerCase()}>
+              <a href={`/ja/dict/${e.slug}/`}>
+                <span class="ja">{e.ja}</span>
+                {e.abbr && <span class="abbr">{e.abbr}</span>}
+                <span class="en">{e.en}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    {entries.length === 0 && (
+      <p class="empty">辞書エントリはまだ生成されていません。<code>npm run gen:dict</code> を実行してください。</p>
+    )}
+  </article>
+
+  <script is:inline>
+    (() => {
+      const box = document.getElementById('dict-search');
+      if (!box) return;
+      box.addEventListener('input', () => {
+        const q = box.value.trim().toLowerCase();
+        document.querySelectorAll('.term-item').forEach(li => {
+          const hay = li.getAttribute('data-search') || '';
+          li.style.display = !q || hay.includes(q) ? '' : 'none';
+        });
+        document.querySelectorAll('.cat-block').forEach(sec => {
+          const visible = sec.querySelectorAll('.term-item:not([style*="display: none"])').length;
+          sec.style.display = visible === 0 && q ? 'none' : '';
+        });
+      });
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .dict-index { max-width: 760px; margin: 0 auto; padding: 1rem; }
+  .lede { color: #555; }
+  .quick a { color: #1a73e8; font-size: 0.9rem; }
+  .search-box { margin: 1rem 0 1.5rem; }
+  #dict-search { width: 100%; padding: 0.7rem 1rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+  .cat-block { margin: 2rem 0; }
+  .cat-block h2 { border-left: 4px solid #4a90e2; padding-left: 0.5rem; }
+  .count { color: #888; font-size: 0.85rem; font-weight: normal; }
+  .term-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem; }
+  .term-item a { display: block; padding: 0.6rem 0.8rem; background: #fff; border: 1px solid #e4e4e4; border-radius: 4px; text-decoration: none; color: #333; }
+  .term-item a:hover { background: #f0f7ff; border-color: #4a90e2; }
+  .ja { font-weight: bold; }
+  .abbr { background: #fff3cd; color: #856404; padding: 0 0.3rem; border-radius: 3px; font-size: 0.75rem; margin: 0 0.3rem; }
+  .en { color: #666; font-size: 0.85rem; display: block; margin-top: 0.2rem; }
+  .empty { color: #888; text-align: center; padding: 2rem; }
+</style>

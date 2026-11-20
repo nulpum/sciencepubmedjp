@@ -1,0 +1,96 @@
+{
+  "slug": "systematic-review",
+  "ja": "システマティックレビュー",
+  "yomi": "しすてまてぃっくれびゅー",
+  "en": "systematic review",
+  "category": "research",
+  "aliases": [
+    "系統的レビュー"
+  ],
+  "meshHeading": "Systematic Review",
+  "meshUi": "2028176",
+  "description": {
+    "ja": "特定の研究テーマについて、明確な基準で文献を網羅的に検索・選定し、バイアスを最小限に抑えながら結果を統合・評価する研究手法です。個別研究のばらつきを整理し、エビデンス全体を俯瞰するために用いられます。",
+    "en": "A research method that comprehensively searches, selects, and evaluates studies on a specific topic using explicit criteria to minimize bias. It synthesizes available evidence to provide an overview of research findings across multiple studies."
+  },
+  "usage": {
+    "ja": "医学論文では「We conducted a systematic review following PRISMA guidelines」のように記述され、事前にプロトコル登録(PROSPERO等)を行い、複数データベースでの検索式、適格基準、質評価の方法を明示します。メタアナリシスを含む場合と含まない場合があります。",
+    "en": "In medical papers, it appears as 'We conducted a systematic review following PRISMA guidelines,' with pre-registered protocols (e.g., PROSPERO), explicit search strategies across multiple databases, eligibility criteria, and quality assessment methods. It may or may not include meta-analysis."
+  },
+  "synonyms": {
+    "ja": "「系統的レビュー」とも呼ばれます。メタアナリシスは統計的統合を伴う特定タイプのシステマティックレビューであり、ナラティブレビュー(narrative review)は体系的手法を用いない従来型文献レビューとして区別されます。",
+    "en": "Also called '系統的レビュー' in Japanese. Meta-analysis is a specific type of systematic review that includes statistical pooling. It differs from narrative reviews, which lack systematic methodology and explicit selection criteria."
+  },
+  "pubmedCount": 433732,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 20480
+    },
+    {
+      "year": 2018,
+      "count": 22981
+    },
+    {
+      "year": 2019,
+      "count": 27108
+    },
+    {
+      "year": 2020,
+      "count": 34800
+    },
+    {
+      "year": 2021,
+      "count": 43581
+    },
+    {
+      "year": 2022,
+      "count": 47317
+    },
+    {
+      "year": 2023,
+      "count": 45872
+    },
+    {
+      "year": 2024,
+      "count": 49029
+    },
+    {
+      "year": 2025,
+      "count": 57453
+    },
+    {
+      "year": 2026,
+      "count": 55965
+    }
+  ],
+  "searchQuery": "(\"Systematic Review\"[MeSH Terms]) OR (\"systematic review\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42974622",
+      "title": "The Efficacy and Safety of Dalfampridine on Cognition and Fatigue in People With Multiple Sclerosis: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014336",
+      "title": "Interventions to reduce paediatric cancer treatment abandonment in low-income and middle-income countries: a systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42898903",
+      "title": "Prediction Models for Delayed Bleeding After Colorectal Endoscopic Submucosal Dissection: A Systematic Review and Critical Appraisal.",
+      "year": 2027
+    },
+    {
+      "pmid": "42058263",
+      "title": "Endoscopic Thrombin Injection for Gastric Variceal Bleeding: A Systematic Review and Meta-Analysis of Observational and Trial Data.",
+      "year": 2027
+    },
+    {
+      "pmid": "42580608",
+      "title": "suPAR as a circulating inflammatory biomarker: time for translation into clinical practice - A systematic review.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:15:25.456Z"
+}

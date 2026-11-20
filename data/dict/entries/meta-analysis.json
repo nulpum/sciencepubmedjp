@@ -1,0 +1,96 @@
+{
+  "slug": "meta-analysis",
+  "ja": "メタアナリシス",
+  "yomi": "めたあなりしす",
+  "en": "meta-analysis",
+  "category": "research",
+  "aliases": [
+    "メタ解析"
+  ],
+  "meshHeading": "Meta-Analysis as Topic",
+  "meshUi": "68015201",
+  "description": {
+    "ja": "複数の独立した研究結果を統計的に統合して、より信頼性の高い結論を導く研究手法です。個々の研究では見えにくかった傾向や効果の大きさを、定量的に評価できます。系統的レビューの中で統計解析を伴う場合に用いられ、エビデンスレベルが高いとされています。",
+    "en": "A statistical method that combines results from multiple independent studies to derive more reliable conclusions. It enables quantitative assessment of trends and effect sizes that may not be apparent in individual studies, and is considered to provide high-level evidence when conducted within systematic reviews."
+  },
+  "usage": {
+    "ja": "論文では「メタアナリシスを実施した」「フォレストプロットで効果量を示した」などと記述されます。複数の臨床試験や観察研究のデータを統合し、オッズ比やリスク比、標準化平均差などの統合効果量を算出して報告されます。",
+    "en": "Papers typically describe 'conducted a meta-analysis' or 'presented effect sizes in forest plots.' Data from multiple clinical trials or observational studies are integrated to calculate and report pooled effect measures such as odds ratios, risk ratios, or standardized mean differences."
+  },
+  "synonyms": {
+    "ja": "メタ解析とも呼ばれ、広義の系統的レビュー(systematic review)に含まれますが、メタアナリシスは統計的統合を伴う点で区別されます。個別研究の統合(pooled analysis)とは異なり、各研究の要約統計量を用いる手法です。",
+    "en": "Also called meta-analysis in Japanese katakana form, it is included in the broader category of systematic reviews but distinguished by its statistical synthesis. Unlike pooled analysis of individual studies, meta-analysis uses summary statistics from each study."
+  },
+  "pubmedCount": 372480,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 18251
+    },
+    {
+      "year": 2018,
+      "count": 20118
+    },
+    {
+      "year": 2019,
+      "count": 22918
+    },
+    {
+      "year": 2020,
+      "count": 28433
+    },
+    {
+      "year": 2021,
+      "count": 33874
+    },
+    {
+      "year": 2022,
+      "count": 36141
+    },
+    {
+      "year": 2023,
+      "count": 34837
+    },
+    {
+      "year": 2024,
+      "count": 37609
+    },
+    {
+      "year": 2025,
+      "count": 43439
+    },
+    {
+      "year": 2026,
+      "count": 41661
+    }
+  ],
+  "searchQuery": "(\"Meta-Analysis as Topic\"[MeSH Terms]) OR (\"meta-analysis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42974622",
+      "title": "The Efficacy and Safety of Dalfampridine on Cognition and Fatigue in People With Multiple Sclerosis: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014336",
+      "title": "Interventions to reduce paediatric cancer treatment abandonment in low-income and middle-income countries: a systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42947979",
+      "title": "Environmental Impact of Conventional Versus Underwater Endoscopic Mucosal Resection for Colorectal Lesions: A Procedure-Based Life Cycle Assessment With Pooled Effectiveness Estimates.",
+      "year": 2027
+    },
+    {
+      "pmid": "42058263",
+      "title": "Endoscopic Thrombin Injection for Gastric Variceal Bleeding: A Systematic Review and Meta-Analysis of Observational and Trial Data.",
+      "year": 2027
+    },
+    {
+      "pmid": "42962945",
+      "title": "Exploring the therapeutic role of Chinses herbal medicine in the recurrence rate of uterine fibroids after conservative surgery: a systematic review and meta-analysis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:15:44.310Z"
+}

@@ -68,6 +68,8 @@ export default defineConfig({
           if (NOINDEX_PATHS.has(path)) return false;
           // tag + archive 一覧 (本体 は noindex 設定 + sitemap 除外)
           if (/^\/(ja|en)\/(tag|archive)(\/|$)/.test(path)) return false;
+          // 辞書 / 日英対訳: DICT_INDEXABLE=true の時だけ sitemap に載せる (AdSense 審査保護)
+          if (/^\/(ja|en)\/(dict|jiten)(\/|$)/.test(path) && process.env.DICT_INDEXABLE !== 'true') return false;
           return true;
         } catch { return true; }
       },

@@ -1,0 +1,93 @@
+{
+  "slug": "cohort-study",
+  "ja": "コホート研究",
+  "yomi": "こほーとけんきゅう",
+  "en": "cohort study",
+  "category": "research",
+  "meshHeading": "Cohort Studies",
+  "meshUi": "68015331",
+  "description": {
+    "ja": "特定の集団を一定期間追跡し、要因の有無によって結果(疾患の発生など)を比較する観察研究デザインです。前向きに追跡する前向きコホート研究と、過去のデータを用いる後ろ向きコホート研究があります。因果関係を検討する際にランダム化比較試験の次に信頼性が高いとされます。",
+    "en": "An observational study design that follows a specific group of people over time and compares outcomes (such as disease occurrence) based on exposure status. It includes prospective cohort studies that follow participants forward in time and retrospective cohort studies using historical data. It is considered highly reliable for examining causal relationships, second only to randomized controlled trials."
+  },
+  "usage": {
+    "ja": "論文では「○○人の看護師コホートを10年間追跡した」「ベースライン時に喫煙状況を評価し、その後の心血管疾患発症を観察した」のように記述されます。相対リスクやハザード比を算出して、要因と結果の関連の強さを定量化します。",
+    "en": "Papers typically describe it as 'followed a cohort of X nurses for 10 years' or 'assessed smoking status at baseline and observed subsequent cardiovascular disease incidence.' Relative risks or hazard ratios are calculated to quantify the strength of association between exposures and outcomes."
+  },
+  "synonyms": {
+    "ja": "「追跡研究」「longitudinal study(縦断研究)」とも呼ばれますが、厳密には縦断研究は繰り返し測定する研究全般を指します。対照として「症例対照研究(case-control study)」があり、こちらは結果から遡って要因を調べる逆向きのデザインです。",
+    "en": "Also called 'follow-up study' or 'longitudinal study,' though longitudinal studies broadly refer to any repeated-measures research. The contrasting design is a 'case-control study,' which works backward from outcomes to investigate exposures retrospectively."
+  },
+  "pubmedCount": 3100090,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 141852
+    },
+    {
+      "year": 2018,
+      "count": 151545
+    },
+    {
+      "year": 2019,
+      "count": 159711
+    },
+    {
+      "year": 2020,
+      "count": 176135
+    },
+    {
+      "year": 2021,
+      "count": 187716
+    },
+    {
+      "year": 2022,
+      "count": 172868
+    },
+    {
+      "year": 2023,
+      "count": 161529
+    },
+    {
+      "year": 2024,
+      "count": 170949
+    },
+    {
+      "year": 2025,
+      "count": 190269
+    },
+    {
+      "year": 2026,
+      "count": 171031
+    }
+  ],
+  "searchQuery": "(\"Cohort Studies\"[MeSH Terms]) OR (\"cohort study\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42924917",
+      "title": "Pressure-guided pneumatic radial compression and radial artery occlusion after transradial coronary procedures: a retrospective historical cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42862737",
+      "title": "Beyond stroke: atrial fibrillation and the broader burden of thromboembolic events in the population-based EpiHealth study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:16:03.106Z"
+}

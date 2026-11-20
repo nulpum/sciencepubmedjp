@@ -1,0 +1,96 @@
+{
+  "slug": "case-control-study",
+  "ja": "症例対照研究",
+  "yomi": "しょうれいたいしょうけんきゅう",
+  "en": "case-control study",
+  "category": "research",
+  "aliases": [
+    "ケースコントロール研究"
+  ],
+  "meshHeading": "Case-Control Studies",
+  "meshUi": "68016022",
+  "description": {
+    "ja": "特定の疾患や状態を持つ人(症例群)と持たない人(対照群)を比較し、過去の曝露や要因との関連を調べる観察研究デザインです。すでに結果(疾患の有無)が分かっている集団を遡って調査するため、稀な疾患や長い潜伏期間を持つ疾患の研究に適しています。比較的短期間・低コストで実施できる利点がある一方、過去の情報に依存するため想起バイアスなどの限界もあります。",
+    "en": "A case-control study is an observational research design that compares individuals with a specific disease or condition (cases) to those without it (controls), examining past exposures or risk factors. It works backward from outcome to exposure, making it suitable for studying rare diseases or conditions with long latency periods. While it offers advantages of being relatively quick and cost-effective, it has limitations including recall bias due to reliance on past information."
+  },
+  "usage": {
+    "ja": "論文では「症例群として○○病患者100名、対照群として年齢・性別をマッチさせた健常者100名を選定した」のように記述されます。オッズ比(OR)を用いて曝露と疾患の関連の強さを評価し、多変量解析で交絡因子を調整することが一般的です。",
+    "en": "Papers typically describe the study as 'We selected 100 patients with disease X as cases and 100 age- and sex-matched healthy individuals as controls.' The association between exposure and disease is evaluated using odds ratios (OR), with multivariate analysis commonly employed to adjust for confounding factors."
+  },
+  "synonyms": {
+    "ja": "ケースコントロール研究、患者対照研究とも呼ばれます。前向き研究であるコホート研究とは対照的に後ろ向き研究に分類されますが、コホート内症例対照研究(nested case-control study)のように前向きコホートの中で実施される変法もあります。",
+    "en": "Also called case-referent study or patient-control study. Unlike prospective cohort studies, it is classified as a retrospective study, though variations such as nested case-control studies conducted within prospective cohorts exist."
+  },
+  "pubmedCount": 1800763,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 90095
+    },
+    {
+      "year": 2018,
+      "count": 96112
+    },
+    {
+      "year": 2019,
+      "count": 102477
+    },
+    {
+      "year": 2020,
+      "count": 116738
+    },
+    {
+      "year": 2021,
+      "count": 127149
+    },
+    {
+      "year": 2022,
+      "count": 118103
+    },
+    {
+      "year": 2023,
+      "count": 111653
+    },
+    {
+      "year": 2024,
+      "count": 114765
+    },
+    {
+      "year": 2025,
+      "count": 123753
+    },
+    {
+      "year": 2026,
+      "count": 101209
+    }
+  ],
+  "searchQuery": "(\"Case-Control Studies\"[MeSH Terms]) OR (\"case-control study\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42924917",
+      "title": "Pressure-guided pneumatic radial compression and radial artery occlusion after transradial coronary procedures: a retrospective historical cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42848027",
+      "title": "Clinical Outcomes following invasive coronary angiography for patients with acute coronary syndromes pretreated with P2Y(12) inhibitors and considered for urgent coronary artery bypass graft surgery.",
+      "year": 2027
+    },
+    {
+      "pmid": "42841288",
+      "title": "Circulatory arrest versus aortic cross-clamping in proximal thoracic aortic aneurysm repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42256610",
+      "title": "Histological Helicobacter pylori Density Might Not be Associated With the Severity of Neutrophilic Inflammatory Activity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42665119",
+      "title": "Improving diagnostic strategies for plasma cell dyscrasias: a laboratory perspective on Bence Jones proteinuria.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:16:21.427Z"
+}

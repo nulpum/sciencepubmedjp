@@ -1,0 +1,98 @@
+{
+  "slug": "randomized-controlled-trial",
+  "ja": "ランダム化比較試験",
+  "yomi": "らんだむかひかくしけん",
+  "en": "randomized controlled trial",
+  "abbr": "RCT",
+  "category": "research",
+  "aliases": [
+    "無作為化比較試験",
+    "無作為化対照試験"
+  ],
+  "meshHeading": "Randomized Controlled Trials as Topic",
+  "meshUi": "68016032",
+  "description": {
+    "ja": "参加者を無作為にグループ分けして、介入の効果を比較する研究デザインです。偶然によるグループ分けを行うことで、既知・未知の交絡因子を均等に分散させ、因果関係をより正確に評価できます。医薬品や治療法の効果を検証する際に最も信頼性の高い方法とされています。",
+    "en": "A study design where participants are randomly assigned to groups to compare the effects of interventions. Random allocation helps distribute known and unknown confounding factors evenly across groups, allowing more accurate evaluation of causal relationships. It is considered the gold standard for evaluating the effectiveness of drugs and treatments."
+  },
+  "usage": {
+    "ja": "論文では「RCT conducted with 500 participants」のように研究デザインを示す際や、エビデンスレベルを議論する文脈で使われます。二重盲検法やプラセボ対照群との組み合わせで記述されることが多く、CONSORT声明に基づいた報告が推奨されています。",
+    "en": "In papers, it appears in phrases like 'RCT conducted with 500 participants' to describe study design or when discussing levels of evidence. Often combined with terms like double-blind method or placebo control group, and reporting follows the CONSORT statement guidelines."
+  },
+  "synonyms": {
+    "ja": "無作為化比較試験、無作為化対照試験とも呼ばれます。「対照」は比較対象となるコントロール群を、「比較」は複数群の比較を強調する表現ですが、実質的な意味は同じです。観察研究と対比される介入研究の代表例です。",
+    "en": "Also called randomised controlled trial (UK spelling) or randomized clinical trial when conducted in clinical settings. The terms 'controlled' and 'comparative' are often used interchangeably. It represents the key type of interventional study, contrasted with observational studies."
+  },
+  "pubmedCount": 348833,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 16442
+    },
+    {
+      "year": 2018,
+      "count": 17724
+    },
+    {
+      "year": 2019,
+      "count": 19905
+    },
+    {
+      "year": 2020,
+      "count": 21997
+    },
+    {
+      "year": 2021,
+      "count": 21344
+    },
+    {
+      "year": 2022,
+      "count": 20218
+    },
+    {
+      "year": 2023,
+      "count": 19497
+    },
+    {
+      "year": 2024,
+      "count": 24217
+    },
+    {
+      "year": 2025,
+      "count": 28933
+    },
+    {
+      "year": 2026,
+      "count": 26244
+    }
+  ],
+  "searchQuery": "(\"Randomized Controlled Trials as Topic\"[MeSH Terms]) OR (\"randomized controlled trial\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42699223",
+      "title": "Respiratory Support With Nasal High Flow Reduces Opioid Requirements During Endoscopic Retrograde Cholangiopancreatography.",
+      "year": 2027
+    },
+    {
+      "pmid": "42559051",
+      "title": "Lidocaine Spray Versus Viscous Lidocaine Solution Plus Lidocaine Spray in Patients Undergoing Non-Sedated Esophagogastroduodenoscopy: A Randomized Controlled Trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42962945",
+      "title": "Exploring the therapeutic role of Chinses herbal medicine in the recurrence rate of uterine fibroids after conservative surgery: a systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42685937",
+      "title": "Comparative efficacy and safety of traditional Chinese medicine injections combined with chemotherapy in ovarian cancer: A systematic review and network meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036664",
+      "title": "Current trends in traumatic elbow dislocations: simple or complex and how are they managed?",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:15:08.290Z"
+}

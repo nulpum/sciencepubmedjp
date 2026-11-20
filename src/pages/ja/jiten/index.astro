@@ -1,0 +1,138 @@
+---
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { DictEntry, DictCategory } from '../../../../scripts/types';
+
+export const prerender = true;
+
+const dir = join(process.cwd(), 'data', 'dict', 'entries');
+let entries: DictEntry[] = [];
+try {
+  const files = await readdir(dir);
+  for (const f of files) {
+    if (!f.endsWith('.json')) continue;
+    try { entries.push(JSON.parse(await readFile(join(dir, f), 'utf-8'))); } catch {}
+  }
+} catch {}
+
+// 50音順に全部まとめる
+entries.sort((a, b) => a.yomi.localeCompare(b.yomi, 'ja'));
+
+const indexable = import.meta.env.DICT_INDEXABLE === 'true';
+
+const CATEGORY_LABELS: Record<DictCategory, string> = {
+  research: '研究',
+  biology: '生物',
+  psychology: '心理',
+  'nursing-pharma': '看護薬学',
+};
+
+// 50音の行ごとにグループ化
+function kanaRow(yomi: string): string {
+  const c = yomi[0] || '';
+  const rows: [string, RegExp][] = [
+    ['あ', /[あいうえおぁぃぅぇぉ]/],
+    ['か', /[かきくけこがぎぐげごゃゅょ]/],
+    ['さ', /[さしすせそざじずぜぞ]/],
+    ['た', /[たちつてとだぢづでど]/],
+    ['な', /[なにぬねの]/],
+    ['は', /[はひふへほばびぶべぼぱぴぷぺぽ]/],
+    ['ま', /[まみむめも]/],
+    ['や', /[やゆよ]/],
+    ['ら', /[らりるれろ]/],
+    ['わ', /[わをん]/],
+  ];
+  for (const [label, re] of rows) if (re.test(c)) return label;
+  return 'A-Z';
+}
+
+const grouped: Record<string, DictEntry[]> = {};
+for (const e of entries) {
+  const row = kanaRow(e.yomi);
+  (grouped[row] ||= []).push(e);
+}
+const ROW_ORDER = ['あ','か','さ','た','な','は','ま','や','ら','わ','A-Z'];
+---
+<BaseLayout
+  title="日英対訳一覧 ｜ PubMed Trivia"
+  description="PubMedで使われる専門用語の日本語⇔英語対訳を50音順で一覧表示。コピペで使える対訳表。"
+  lang="ja"
+  noindex={!indexable}
+>
+  <article class="jiten">
+    <header>
+      <h1>日英対訳一覧</h1>
+      <p class="lede">
+        PubMedで検索する時にそのまま使える日本語⇔英語の対訳一覧です。
+        詳しい解説・MeSH・論文数が必要な場合は <a href="/ja/dict/">辞書本編</a> をご覧ください。
+      </p>
+    </header>
+
+    <div class="search-box">
+      <input type="search" id="jiten-search" placeholder="絞り込み (日本語/英語)" autocomplete="off" />
+    </div>
+
+    <nav class="kana-nav">
+      {ROW_ORDER.map(k => grouped[k] && (
+        <a href={`#${k}`}>{k}</a>
+      ))}
+    </nav>
+
+    {ROW_ORDER.map(k => grouped[k] && (
+      <section class="kana-block" id={k}>
+        <h2>{k}</h2>
+        <table class="jiten-table">
+          <thead><tr><th>日本語</th><th>英語</th><th>略語</th><th>分野</th></tr></thead>
+          <tbody>
+            {grouped[k].map(e => (
+              <tr class="row" data-search={`${e.ja} ${e.en} ${e.abbr || ''}`.toLowerCase()}>
+                <td><a href={`/ja/dict/${e.slug}/`}>{e.ja}</a></td>
+                <td>{e.en}</td>
+                <td>{e.abbr || ''}</td>
+                <td class="cat">{CATEGORY_LABELS[e.category]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))}
+
+    {entries.length === 0 && (
+      <p class="empty">対訳データはまだ生成されていません。</p>
+    )}
+  </article>
+
+  <script is:inline>
+    (() => {
+      const box = document.getElementById('jiten-search');
+      if (!box) return;
+      box.addEventListener('input', () => {
+        const q = box.value.trim().toLowerCase();
+        document.querySelectorAll('.row').forEach(r => {
+          const hay = r.getAttribute('data-search') || '';
+          r.style.display = !q || hay.includes(q) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .jiten { max-width: 820px; margin: 0 auto; padding: 1rem; }
+  .lede { color: #555; }
+  .search-box { margin: 1rem 0; }
+  #jiten-search { width: 100%; padding: 0.7rem 1rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+  .kana-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1rem 0 2rem; padding: 0.7rem; background: #f8f8f8; border-radius: 6px; }
+  .kana-nav a { padding: 0.3rem 0.7rem; background: white; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; font-weight: bold; }
+  .kana-nav a:hover { background: #1a73e8; color: white; }
+  .kana-block { margin: 2rem 0; }
+  .kana-block h2 { border-left: 4px solid #4a90e2; padding-left: 0.5rem; font-size: 1.3rem; }
+  .jiten-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .jiten-table th, .jiten-table td { padding: 0.5rem 0.7rem; border-bottom: 1px solid #eee; text-align: left; }
+  .jiten-table th { background: #fafafa; font-weight: bold; }
+  .jiten-table td a { color: #1a73e8; text-decoration: none; }
+  .jiten-table td a:hover { text-decoration: underline; }
+  .cat { color: #888; font-size: 0.85rem; }
+  .empty { color: #888; text-align: center; padding: 2rem; }
+</style>

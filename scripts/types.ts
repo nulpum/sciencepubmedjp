@@ -35,3 +35,34 @@ export interface GeneratedArticle {
   // Phase 3: 編集ノート (2026-10-15 追加、E-E-A-T 強化、Claude 自動生成)
   editorNote?: string;
 }
+
+// 辞書エントリの分野 (既存Categoryと独立、研究統計/看護薬学を追加)
+export type DictCategory = 'research' | 'biology' | 'psychology' | 'nursing-pharma';
+export const ALL_DICT_CATEGORIES: DictCategory[] = ['research', 'biology', 'psychology', 'nursing-pharma'];
+
+// terms.json の1エントリ (手動シード)
+export interface DictTerm {
+  slug: string;
+  ja: string;
+  yomi: string;
+  en: string;
+  abbr?: string;
+  category: DictCategory;
+  aliases?: string[];
+}
+
+// Claude + PubMed から生成した辞書エントリ (data/dict/entries/<slug>.json)
+export interface DictEntry extends DictTerm {
+  meshHeading?: string;
+  meshUi?: string;
+  description: { ja: string; en: string };
+  usage: { ja: string; en: string };
+  synonyms: { ja: string; en: string };
+  pubmedCount: number;
+  yearlyCount: { year: number; count: number }[];
+  searchQuery: string;
+  recentArticles: { pmid: string; title: string; year?: number }[];
+  relatedSlugs?: string[];
+  generatedAt: string;
+}
+

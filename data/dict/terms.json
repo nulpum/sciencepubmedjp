@@ -1,0 +1,468 @@
+[
+  {
+    "slug": "randomized-controlled-trial",
+    "ja": "ランダム化比較試験",
+    "yomi": "らんだむかひかくしけん",
+    "en": "randomized controlled trial",
+    "abbr": "RCT",
+    "category": "research",
+    "aliases": [
+      "無作為化比較試験",
+      "無作為化対照試験"
+    ]
+  },
+  {
+    "slug": "systematic-review",
+    "ja": "システマティックレビュー",
+    "yomi": "しすてまてぃっくれびゅー",
+    "en": "systematic review",
+    "category": "research",
+    "aliases": [
+      "系統的レビュー"
+    ]
+  },
+  {
+    "slug": "meta-analysis",
+    "ja": "メタアナリシス",
+    "yomi": "めたあなりしす",
+    "en": "meta-analysis",
+    "category": "research",
+    "aliases": [
+      "メタ解析"
+    ]
+  },
+  {
+    "slug": "cohort-study",
+    "ja": "コホート研究",
+    "yomi": "こほーとけんきゅう",
+    "en": "cohort study",
+    "category": "research"
+  },
+  {
+    "slug": "case-control-study",
+    "ja": "症例対照研究",
+    "yomi": "しょうれいたいしょうけんきゅう",
+    "en": "case-control study",
+    "category": "research",
+    "aliases": [
+      "ケースコントロール研究"
+    ]
+  },
+  {
+    "slug": "cross-sectional-study",
+    "ja": "横断研究",
+    "yomi": "おうだんけんきゅう",
+    "en": "cross-sectional study",
+    "category": "research",
+    "aliases": [
+      "断面研究"
+    ]
+  },
+  {
+    "slug": "odds-ratio",
+    "ja": "オッズ比",
+    "yomi": "おっずひ",
+    "en": "odds ratio",
+    "abbr": "OR",
+    "category": "research"
+  },
+  {
+    "slug": "hazard-ratio",
+    "ja": "ハザード比",
+    "yomi": "はざーどひ",
+    "en": "hazard ratio",
+    "abbr": "HR",
+    "category": "research"
+  },
+  {
+    "slug": "confidence-interval",
+    "ja": "信頼区間",
+    "yomi": "しんらいくかん",
+    "en": "confidence interval",
+    "abbr": "CI",
+    "category": "research"
+  },
+  {
+    "slug": "p-value",
+    "ja": "P値",
+    "yomi": "ぴーち",
+    "en": "p-value",
+    "category": "research",
+    "aliases": [
+      "ピー値",
+      "p値"
+    ]
+  },
+  {
+    "slug": "effect-size",
+    "ja": "効果量",
+    "yomi": "こうかりょう",
+    "en": "effect size",
+    "category": "research",
+    "aliases": [
+      "エフェクトサイズ"
+    ]
+  },
+  {
+    "slug": "intention-to-treat",
+    "ja": "ITT解析",
+    "yomi": "あいてぃーてぃーかいせき",
+    "en": "intention-to-treat analysis",
+    "abbr": "ITT",
+    "category": "research",
+    "aliases": [
+      "治療企図解析"
+    ]
+  },
+  {
+    "slug": "placebo-effect",
+    "ja": "プラセボ効果",
+    "yomi": "ぷらせぼこうか",
+    "en": "placebo effect",
+    "category": "research",
+    "aliases": [
+      "偽薬効果"
+    ]
+  },
+  {
+    "slug": "publication-bias",
+    "ja": "出版バイアス",
+    "yomi": "しゅっぱんばいあす",
+    "en": "publication bias",
+    "category": "research"
+  },
+  {
+    "slug": "sample-size",
+    "ja": "サンプルサイズ",
+    "yomi": "さんぷるさいず",
+    "en": "sample size",
+    "category": "research",
+    "aliases": [
+      "標本サイズ",
+      "標本数"
+    ]
+  },
+  {
+    "slug": "gut-microbiota",
+    "ja": "腸内細菌叢",
+    "yomi": "ちょうないさいきんそう",
+    "en": "gut microbiota",
+    "category": "biology",
+    "aliases": [
+      "腸内フローラ",
+      "腸内マイクロバイオータ"
+    ]
+  },
+  {
+    "slug": "short-chain-fatty-acids",
+    "ja": "短鎖脂肪酸",
+    "yomi": "たんさしぼうさん",
+    "en": "short-chain fatty acids",
+    "abbr": "SCFA",
+    "category": "biology"
+  },
+  {
+    "slug": "inflammation",
+    "ja": "炎症",
+    "yomi": "えんしょう",
+    "en": "inflammation",
+    "category": "biology"
+  },
+  {
+    "slug": "cortisol",
+    "ja": "コルチゾール",
+    "yomi": "こるちぞーる",
+    "en": "cortisol",
+    "category": "biology",
+    "aliases": [
+      "ハイドロコーチゾン"
+    ]
+  },
+  {
+    "slug": "melatonin",
+    "ja": "メラトニン",
+    "yomi": "めらとにん",
+    "en": "melatonin",
+    "category": "biology"
+  },
+  {
+    "slug": "telomere",
+    "ja": "テロメア",
+    "yomi": "てろめあ",
+    "en": "telomere",
+    "category": "biology"
+  },
+  {
+    "slug": "mitochondria",
+    "ja": "ミトコンドリア",
+    "yomi": "みとこんどりあ",
+    "en": "mitochondria",
+    "category": "biology"
+  },
+  {
+    "slug": "epigenetics",
+    "ja": "エピジェネティクス",
+    "yomi": "えぴじぇねてぃくす",
+    "en": "epigenetics",
+    "category": "biology",
+    "aliases": [
+      "後成遺伝学"
+    ]
+  },
+  {
+    "slug": "neuroplasticity",
+    "ja": "神経可塑性",
+    "yomi": "しんけいかそせい",
+    "en": "neuroplasticity",
+    "category": "biology",
+    "aliases": [
+      "脳可塑性"
+    ]
+  },
+  {
+    "slug": "bdnf",
+    "ja": "脳由来神経栄養因子",
+    "yomi": "のうゆらいしんけいえいよういんし",
+    "en": "brain-derived neurotrophic factor",
+    "abbr": "BDNF",
+    "category": "biology"
+  },
+  {
+    "slug": "dopamine",
+    "ja": "ドーパミン",
+    "yomi": "どーぱみん",
+    "en": "dopamine",
+    "category": "biology",
+    "aliases": [
+      "ドパミン"
+    ]
+  },
+  {
+    "slug": "serotonin",
+    "ja": "セロトニン",
+    "yomi": "せろとにん",
+    "en": "serotonin",
+    "category": "biology"
+  },
+  {
+    "slug": "gaba",
+    "ja": "ギャバ",
+    "yomi": "ぎゃば",
+    "en": "gamma-aminobutyric acid",
+    "abbr": "GABA",
+    "category": "biology",
+    "aliases": [
+      "γ-アミノ酪酸"
+    ]
+  },
+  {
+    "slug": "hpa-axis",
+    "ja": "HPA軸",
+    "yomi": "えいちぴーえいじく",
+    "en": "hypothalamic-pituitary-adrenal axis",
+    "abbr": "HPA axis",
+    "category": "biology",
+    "aliases": [
+      "視床下部-下垂体-副腎軸"
+    ]
+  },
+  {
+    "slug": "oxidative-stress",
+    "ja": "酸化ストレス",
+    "yomi": "さんかすとれす",
+    "en": "oxidative stress",
+    "category": "biology"
+  },
+  {
+    "slug": "cognitive-behavioral-therapy",
+    "ja": "認知行動療法",
+    "yomi": "にんちこうどうりょうほう",
+    "en": "cognitive behavioral therapy",
+    "abbr": "CBT",
+    "category": "psychology"
+  },
+  {
+    "slug": "mindfulness",
+    "ja": "マインドフルネス",
+    "yomi": "まいんどふるねす",
+    "en": "mindfulness",
+    "category": "psychology"
+  },
+  {
+    "slug": "working-memory",
+    "ja": "ワーキングメモリ",
+    "yomi": "わーきんぐめもり",
+    "en": "working memory",
+    "category": "psychology",
+    "aliases": [
+      "作業記憶"
+    ]
+  },
+  {
+    "slug": "executive-function",
+    "ja": "実行機能",
+    "yomi": "じっこうきのう",
+    "en": "executive function",
+    "category": "psychology",
+    "aliases": [
+      "遂行機能"
+    ]
+  },
+  {
+    "slug": "adhd",
+    "ja": "注意欠如・多動症",
+    "yomi": "ちゅういけつじょたどうしょう",
+    "en": "attention-deficit/hyperactivity disorder",
+    "abbr": "ADHD",
+    "category": "psychology",
+    "aliases": [
+      "注意欠陥多動性障害",
+      "注意欠如多動症"
+    ]
+  },
+  {
+    "slug": "autism-spectrum-disorder",
+    "ja": "自閉スペクトラム症",
+    "yomi": "じへいすぺくとらむしょう",
+    "en": "autism spectrum disorder",
+    "abbr": "ASD",
+    "category": "psychology",
+    "aliases": [
+      "自閉症スペクトラム障害"
+    ]
+  },
+  {
+    "slug": "depression",
+    "ja": "うつ病",
+    "yomi": "うつびょう",
+    "en": "depression",
+    "category": "psychology",
+    "aliases": [
+      "抑うつ",
+      "大うつ病性障害"
+    ]
+  },
+  {
+    "slug": "anxiety",
+    "ja": "不安",
+    "yomi": "ふあん",
+    "en": "anxiety",
+    "category": "psychology",
+    "aliases": [
+      "不安症"
+    ]
+  },
+  {
+    "slug": "ptsd",
+    "ja": "心的外傷後ストレス障害",
+    "yomi": "しんてきがいしょうごすとれすしょうがい",
+    "en": "post-traumatic stress disorder",
+    "abbr": "PTSD",
+    "category": "psychology"
+  },
+  {
+    "slug": "attachment-theory",
+    "ja": "愛着理論",
+    "yomi": "あいちゃくりろん",
+    "en": "attachment theory",
+    "category": "psychology"
+  },
+  {
+    "slug": "self-efficacy",
+    "ja": "自己効力感",
+    "yomi": "じここうりょくかん",
+    "en": "self-efficacy",
+    "category": "psychology"
+  },
+  {
+    "slug": "locus-of-control",
+    "ja": "統制の所在",
+    "yomi": "とうせいのしょざい",
+    "en": "locus of control",
+    "category": "psychology",
+    "aliases": [
+      "ローカス・オブ・コントロール"
+    ]
+  },
+  {
+    "slug": "cognitive-dissonance",
+    "ja": "認知的不協和",
+    "yomi": "にんちてきふきょうわ",
+    "en": "cognitive dissonance",
+    "category": "psychology"
+  },
+  {
+    "slug": "flow",
+    "ja": "フロー",
+    "yomi": "ふろー",
+    "en": "flow",
+    "category": "psychology",
+    "aliases": [
+      "フロー状態"
+    ]
+  },
+  {
+    "slug": "growth-mindset",
+    "ja": "成長マインドセット",
+    "yomi": "せいちょうまいんどせっと",
+    "en": "growth mindset",
+    "category": "psychology",
+    "aliases": [
+      "成長型マインドセット"
+    ]
+  },
+  {
+    "slug": "medication-adherence",
+    "ja": "服薬アドヒアランス",
+    "yomi": "ふくやくあどひあらんす",
+    "en": "medication adherence",
+    "category": "nursing-pharma",
+    "aliases": [
+      "服薬遵守"
+    ]
+  },
+  {
+    "slug": "pressure-ulcer",
+    "ja": "褥瘡",
+    "yomi": "じょくそう",
+    "en": "pressure ulcer",
+    "category": "nursing-pharma",
+    "aliases": [
+      "床ずれ",
+      "圧迫潰瘍"
+    ]
+  },
+  {
+    "slug": "fall-prevention",
+    "ja": "転倒予防",
+    "yomi": "てんとうよぼう",
+    "en": "fall prevention",
+    "category": "nursing-pharma",
+    "aliases": [
+      "転倒",
+      "転倒防止"
+    ]
+  },
+  {
+    "slug": "quality-of-life",
+    "ja": "生活の質",
+    "yomi": "せいかつのしつ",
+    "en": "quality of life",
+    "abbr": "QOL",
+    "category": "nursing-pharma",
+    "aliases": [
+      "QOL"
+    ]
+  },
+  {
+    "slug": "adverse-event",
+    "ja": "有害事象",
+    "yomi": "ゆうがいじしょう",
+    "en": "adverse event",
+    "abbr": "AE",
+    "category": "nursing-pharma",
+    "aliases": [
+      "副作用"
+    ]
+  }
+]
