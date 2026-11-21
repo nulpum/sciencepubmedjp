@@ -212,7 +212,39 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
       })();
     </script>
 
-    {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
+    {/* Global Rakuyoko click tracker (2026-11-21 追加)
+        目的: ラクヨコ banner の click を GA4 で 捕捉、Amazon/Moshimo と
+        同じ source 別集計で CTR と CV 相関を 見える化。
+        対象 host: hb.afl.rakuten.co.jp (楽天アフィリエイト直リダイレクタ) */}
+    <script is:inline>
+      (function () {
+        if (window.__rakuyokoGlobalClickInit) return;
+        window.__rakuyokoGlobalClickInit = true;
+        function classify(link) {
+          if (link.closest('.rakuyoko-banner')) return 'banner';
+          if (link.classList && link.classList.contains('rb-cta')) return 'cta_button';
+          if (link.dataset && link.dataset.affiliate === 'rakuyoko') return 'tagged';
+          return 'other';
+        }
+        document.addEventListener('click', function (ev) {
+          var link = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+          if (!link) return;
+          var href = link.getAttribute('href') || '';
+          if (href.indexOf('hb.afl.rakuten.co.jp') < 0 && href.indexOf('rakuyoko.rakuten.co.jp') < 0) return;
+          if (typeof gtag !== 'function') return;
+          try {
+            gtag('event', 'rakuyoko_link_click', {
+              source: classify(link),
+              link_url: href.slice(0, 200),
+              page_path: location.pathname,
+              transport_type: 'beacon',
+            });
+          } catch (e) {}
+        }, { capture: true, passive: true });
+      })();
+    </script>
+
+        {/* Google Search Console 認証メタタグ (GA4 経由認証を使う場合は不要、
         HTML タグ認証なら content="..." の値を Search Console 側でコピペ確認用に埋める) */}
     {/* <meta name="google-site-verification" content="ここに認証文字列を入れる" /> */}
     {/* サイト全体の WebSite + SearchAction JSON-LD (2026-10-11 追加)
