@@ -1,0 +1,96 @@
+{
+  "slug": "estrogen",
+  "ja": "エストロゲン",
+  "yomi": "えすとろげん",
+  "en": "estrogen",
+  "category": "biology",
+  "aliases": [
+    "エストロジェン"
+  ],
+  "meshHeading": "Estrogens",
+  "meshUi": "82004967",
+  "description": {
+    "ja": "エストロゲン(estrogen)は、主に卵巣で産生される女性ホルモンの総称で、エストラジオール、エストロン、エストリオールなどが含まれます。生殖機能、骨代謝、心血管系、脳機能など多様な生理作用に関与する脂溶性ステロイドホルモンです。男性でも少量産生され、性別を問わず重要な役割を果たしています。",
+    "en": "Estrogen is a collective term for female sex hormones primarily produced in the ovaries, including estradiol, estrone, and estriol. These lipid-soluble steroid hormones are involved in diverse physiological functions such as reproduction, bone metabolism, cardiovascular system, and brain function. Small amounts are also produced in males, playing important roles regardless of sex."
+  },
+  "usage": {
+    "ja": "論文では血中エストロゲン濃度の測定(ELISA法、LC-MS/MS法など)、更年期や骨粗鬆症との関連、乳がんや子宮内膜がんのリスク因子、ホルモン補充療法の効果指標として研究されます。受容体(ERα、ERβ)を介したシグナル伝達機構の解析も頻繁に行われます。",
+    "en": "In research papers, estrogen is studied through serum concentration measurements (ELISA, LC-MS/MS), associations with menopause and osteoporosis, risk factors for breast and endometrial cancer, and as an outcome measure in hormone therapy studies. Analyses of signaling mechanisms via receptors (ERα, ERβ) are also common."
+  },
+  "synonyms": {
+    "ja": "「エストロジェン」は発音の違いによる表記で同義です。「卵胞ホルモン」とも呼ばれます。個別物質を指す場合は「エストラジオール(E2)」「エストロン(E1)」「エストリオール(E3)」と明示されます。検索時は「estradiol」など具体的な分子名を併用すると効果的です。",
+    "en": "Alternative spelling 'oestrogen' is used in British English. Also called 'follicular hormone' in some contexts. When referring to specific molecules, terms like 'estradiol (E2)', 'estrone (E1)', or 'estriol (E3)' are used explicitly. Searching with specific molecular names like 'estradiol' alongside 'estrogen' improves precision."
+  },
+  "pubmedCount": 187501,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5456
+    },
+    {
+      "year": 2018,
+      "count": 5564
+    },
+    {
+      "year": 2019,
+      "count": 5305
+    },
+    {
+      "year": 2020,
+      "count": 5724
+    },
+    {
+      "year": 2021,
+      "count": 5729
+    },
+    {
+      "year": 2022,
+      "count": 5472
+    },
+    {
+      "year": 2023,
+      "count": 5191
+    },
+    {
+      "year": 2024,
+      "count": 5027
+    },
+    {
+      "year": 2025,
+      "count": 5886
+    },
+    {
+      "year": 2026,
+      "count": 5623
+    }
+  ],
+  "searchQuery": "(\"Estrogens\"[MeSH Terms]) OR (\"estrogen\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42926849",
+      "title": "Osteoporosis treatment via programmed delivery of IRF5 siRNA to macrophages in bone tissue combined with ROS scavenging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42732702",
+      "title": "Photonic crystal barcode microfluidic chip for smart screening of lactogenic Chinese herbs using human mammary organoids.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863730",
+      "title": "Ligustilide enhances TNT-mediated mitochondrial transfer to accelerate the reactivation of TECs in sleep deprivation induced postpartum mouse.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833363",
+      "title": "Anticancer effects of Ekebergia capensis Sparrm: cytotoxicity on human breast cancer cells and genotoxicity on Allium cepa L. roots.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772616",
+      "title": "Rapid antidepressant-like effects of Chaihu Shugan San in female restraint-stressed mice: involvement of hippocampal TC2N and ERβ-eNOS-CaMKII-BDNF signaling.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:53:16.766Z"
+}

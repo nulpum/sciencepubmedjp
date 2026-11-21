@@ -1,0 +1,96 @@
+{
+  "slug": "informed-consent",
+  "ja": "インフォームドコンセント",
+  "yomi": "いんふぉーむどこんせんと",
+  "en": "informed consent",
+  "category": "nursing-pharma",
+  "aliases": [
+    "説明と同意"
+  ],
+  "meshHeading": "Informed Consent",
+  "meshUi": "68007258",
+  "description": {
+    "ja": "患者や研究参加者が、治療や研究の目的・方法・リスク・利益について十分な説明を受け、内容を理解した上で自発的に同意することを指します。医療倫理と研究倫理の基本原則であり、参加者の自己決定権を保障する重要な手続きです。",
+    "en": "The process by which patients or research participants receive adequate information about the purpose, methods, risks, and benefits of a treatment or study, understand the content, and voluntarily agree to participate. It is a fundamental principle of medical and research ethics that protects the right to self-determination."
+  },
+  "usage": {
+    "ja": "臨床試験や観察研究の論文では、Methods セクションで「本研究は倫理委員会の承認を得て、すべての参加者からインフォームドコンセントを取得した」と記載されます。同意取得の方法(書面、口頭)や説明内容の詳細が補足されることもあります。",
+    "en": "In clinical trials and observational studies, the Methods section typically states that the study was approved by an ethics committee and informed consent was obtained from all participants. Details about the consent process (written, oral) and information provided may be included."
+  },
+  "synonyms": {
+    "ja": "「説明と同意」と訳されることもあります。略語 IC も用いられます。単なる同意書への署名ではなく、理解と自発性を伴う同意プロセス全体を指す点に注意が必要です。",
+    "en": "Also referred to as IC (abbreviation). It emphasizes the entire process of understanding and voluntary agreement, not just signing a consent form. Related terms include assent (for minors) and consent process."
+  },
+  "pubmedCount": 89709,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3042
+    },
+    {
+      "year": 2018,
+      "count": 3005
+    },
+    {
+      "year": 2019,
+      "count": 3274
+    },
+    {
+      "year": 2020,
+      "count": 3622
+    },
+    {
+      "year": 2021,
+      "count": 3542
+    },
+    {
+      "year": 2022,
+      "count": 3430
+    },
+    {
+      "year": 2023,
+      "count": 3426
+    },
+    {
+      "year": 2024,
+      "count": 3738
+    },
+    {
+      "year": 2025,
+      "count": 4585
+    },
+    {
+      "year": 2026,
+      "count": 4403
+    }
+  ],
+  "searchQuery": "(\"Informed Consent\"[MeSH Terms]) OR (\"informed consent\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43045314",
+      "title": "Risks and Ethical Concerns of Artificial Intelligence in Plastic Surgery.",
+      "year": 2027
+    },
+    {
+      "pmid": "42945997",
+      "title": "Attitudes Towards Clinical Research in Acute Illness-A Population-Based Survey in Sweden.",
+      "year": 2027
+    },
+    {
+      "pmid": "41129725",
+      "title": "Bearing Witness in Home Hospice: Ethical Reflections on Caring for Asian American Patients.",
+      "year": 2027
+    },
+    {
+      "pmid": "43049458",
+      "title": "Perspectives on healthy ageing: a qualitative study in Germany.",
+      "year": 2026
+    },
+    {
+      "pmid": "42640086",
+      "title": "Adherence to ethics reporting standards in locally accredited medical journals: a case study from a developing country.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:30:17.087Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "second-messenger",
+  "ja": "セカンドメッセンジャー",
+  "yomi": "せかんどめっせんじゃー",
+  "en": "second messenger",
+  "category": "biology",
+  "meshHeading": "Second Messenger Systems",
+  "meshUi": "68015290",
+  "description": {
+    "ja": "細胞外からのシグナル(ホルモンや神経伝達物質など)が細胞膜上の受容体に結合した後、細胞内で情報を伝達するために生成される小分子のこと。代表的なものにcAMP(環状アデノシン一リン酸)、Ca2+イオン、イノシトール三リン酸(IP3)、ジアシルグリセロール(DAG)などがあり、細胞内の様々な酵素やタンパク質を活性化して生理応答を引き起こす。",
+    "en": "Small molecules generated inside the cell to relay signals after external signals (such as hormones or neurotransmitters) bind to receptors on the cell membrane. Representative examples include cAMP (cyclic adenosine monophosphate), Ca2+ ions, inositol trisphosphate (IP3), and diacylglycerol (DAG), which activate various intracellular enzymes and proteins to trigger physiological responses."
+  },
+  "usage": {
+    "ja": "細胞内シグナル伝達経路の研究で頻繁に登場し、蛍光プローブや生化学的アッセイで濃度変化を測定する。「cAMP levelsの上昇」「Ca2+ mobilization」といった表現で、受容体刺激後の細胞応答を評価する指標として用いられる。",
+    "en": "Frequently appears in studies of intracellular signaling pathways, where concentration changes are measured using fluorescent probes or biochemical assays. Used as indicators to evaluate cellular responses after receptor stimulation, with expressions such as 'elevation of cAMP levels' or 'Ca2+ mobilization'."
+  },
+  "synonyms": {
+    "ja": "「細胞内メッセンジャー」「intracellular messenger」とも呼ばれる。ファーストメッセンジャー(細胞外のシグナル分子)と対比して使われ、シグナル伝達カスケードにおける階層を示す用語。個々の分子名(cAMP、IP3など)で具体的に記述されることも多い。",
+    "en": "Also called 'intracellular messenger'. Used in contrast to first messenger (extracellular signaling molecules) to indicate hierarchy in signal transduction cascades. Often described specifically by individual molecular names such as cAMP or IP3."
+  },
+  "pubmedCount": 49407,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1853
+    },
+    {
+      "year": 2018,
+      "count": 1707
+    },
+    {
+      "year": 2019,
+      "count": 1650
+    },
+    {
+      "year": 2020,
+      "count": 1681
+    },
+    {
+      "year": 2021,
+      "count": 1537
+    },
+    {
+      "year": 2022,
+      "count": 909
+    },
+    {
+      "year": 2023,
+      "count": 778
+    },
+    {
+      "year": 2024,
+      "count": 972
+    },
+    {
+      "year": 2025,
+      "count": 1177
+    },
+    {
+      "year": 2026,
+      "count": 1017
+    }
+  ],
+  "searchQuery": "(\"Second Messenger Systems\"[MeSH Terms]) OR (\"second messenger\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42617466",
+      "title": "A sonogenetic antigen-presenting nanoplatform enables spatiotemporal control of calcium signalling in T cells for enhanced cancer immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42607642",
+      "title": "Enhancing neural communication via activating calcium-dependent signals toward spinal cord injury repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42993056",
+      "title": "Developmental elimination of electrical synapses by UNC-51/UNC-76-mediated vesicular transport.",
+      "year": 2027
+    },
+    {
+      "pmid": "43050173",
+      "title": "Cytosolic and Mitochondrial Ca(2+) Imaging in Drosophila Dopaminergic Neurons.",
+      "year": 2027
+    },
+    {
+      "pmid": "43004844",
+      "title": "Spatial Coordination of Ca(2+) Signaling by Astrocyte Morphology.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:04:07.565Z"
+}

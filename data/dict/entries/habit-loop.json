@@ -1,0 +1,65 @@
+{
+  "slug": "habit-loop",
+  "ja": "習慣ループ",
+  "yomi": "しゅうかんるーぷ",
+  "en": "habit loop",
+  "category": "psychology",
+  "description": {
+    "ja": "習慣ループとは、心理学における習慣形成の基本モデルで、「きっかけ(cue)」「ルーチン(routine)」「報酬(reward)」の3要素が循環する仕組みを指します。この循環が繰り返されることで行動が自動化され、意識的な努力なしに実行されるようになります。",
+    "en": "The habit loop is a fundamental model in psychology describing how habits form through a cycle of three components: cue, routine, and reward. Through repeated cycles, behaviors become automated and can be performed without conscious effort."
+  },
+  "usage": {
+    "ja": "行動変容や依存症研究の論文で、習慣的行動のメカニズムを説明する際に用いられます。介入研究では、既存の習慣ループを分析し、ルーチン部分を置き換えることで望ましい行動への変容を試みる手法が検討されています。",
+    "en": "Used in behavioral change and addiction research papers to explain mechanisms of habitual behaviors. Intervention studies examine methods to modify existing habit loops by analyzing and replacing the routine component while maintaining the same cue and reward structure."
+  },
+  "synonyms": {
+    "ja": "「習慣サイクル」「cue-routine-reward cycle」とも呼ばれます。神経科学では「stimulus-response-reinforcement loop」と表現されることもあり、基底核における神経回路の自動化プロセスと関連づけられます。",
+    "en": "Also referred to as 'habit cycle' or 'cue-routine-reward cycle.' In neuroscience literature, may be described as 'stimulus-response-reinforcement loop,' often associated with automatization processes in the basal ganglia circuitry."
+  },
+  "pubmedCount": 0,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 0
+    },
+    {
+      "year": 2018,
+      "count": 0
+    },
+    {
+      "year": 2019,
+      "count": 0
+    },
+    {
+      "year": 2020,
+      "count": 0
+    },
+    {
+      "year": 2021,
+      "count": 0
+    },
+    {
+      "year": 2022,
+      "count": 0
+    },
+    {
+      "year": 2023,
+      "count": 0
+    },
+    {
+      "year": 2024,
+      "count": 0
+    },
+    {
+      "year": 2025,
+      "count": 0
+    },
+    {
+      "year": 2026,
+      "count": 0
+    }
+  ],
+  "searchQuery": "\"habit loop\"[tiab]",
+  "recentArticles": [],
+  "generatedAt": "2026-11-21T06:28:46.732Z"
+}

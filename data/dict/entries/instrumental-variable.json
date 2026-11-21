@@ -1,0 +1,91 @@
+{
+  "slug": "instrumental-variable",
+  "ja": "操作変数法",
+  "yomi": "そうさへんすうほう",
+  "en": "instrumental variable",
+  "category": "research",
+  "description": {
+    "ja": "操作変数法とは、観察研究において因果関係を推定する統計手法の一つです。交絡因子によるバイアスを取り除くため、結果変数には直接影響しないが介入・曝露変数とは関連する「道具変数」を用いて分析します。ランダム化比較試験が困難な場合に、疑似的な無作為化を実現する方法として医学疫学でも活用されています。",
+    "en": "Instrumental variable (IV) is a statistical method used to estimate causal relationships in observational studies. It employs a 'tool variable' that affects the exposure but does not directly influence the outcome, thereby removing bias from confounding factors. This approach is utilized in medical epidemiology to achieve quasi-randomization when randomized controlled trials are not feasible."
+  },
+  "usage": {
+    "ja": "論文では「遺伝的変異をIVとしたメンデルランダム化解析」「地理的距離を操作変数とした治療効果の推定」などの文脈で登場します。Two-stage least squares (2SLS) などの推定方法が用いられ、IV assumptions（関連性・独立性・排除制約）の妥当性が議論されます。",
+    "en": "In papers, IV appears in contexts such as 'Mendelian randomization using genetic variants as IVs' or 'estimating treatment effects using geographic distance as an instrument.' Estimation methods like two-stage least squares (2SLS) are employed, and the validity of IV assumptions (relevance, independence, exclusion restriction) is discussed."
+  },
+  "synonyms": {
+    "ja": "道具変数、instrumental variables analysis（IV解析）とも呼ばれます。メンデルランダム化（Mendelian randomization）は遺伝子を操作変数とする特殊な応用例です。内生性（endogeneity）問題への対処法として計量経済学から導入された手法で、疫学では因果推論の文脈で用いられます。",
+    "en": "Also called tool variable or IV analysis. Mendelian randomization is a specific application using genetic variants as instruments. Originally introduced from econometrics to address endogeneity problems, it is now used in epidemiology for causal inference contexts."
+  },
+  "pubmedCount": 3809,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 201
+    },
+    {
+      "year": 2018,
+      "count": 227
+    },
+    {
+      "year": 2019,
+      "count": 228
+    },
+    {
+      "year": 2020,
+      "count": 249
+    },
+    {
+      "year": 2021,
+      "count": 311
+    },
+    {
+      "year": 2022,
+      "count": 419
+    },
+    {
+      "year": 2023,
+      "count": 402
+    },
+    {
+      "year": 2024,
+      "count": 400
+    },
+    {
+      "year": 2025,
+      "count": 459
+    },
+    {
+      "year": 2026,
+      "count": 395
+    }
+  ],
+  "searchQuery": "\"instrumental variable\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42887376",
+      "title": "Climate resilience through residential solar energy: Reducing health risks from extreme temperatures.",
+      "year": 2026
+    },
+    {
+      "pmid": "42853183",
+      "title": "Home-Based Primary Care and Emergency Department Use Among Veterans With Dementia: An Instrumental Variable Analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42820398",
+      "title": "Refining Genetic Instruments for Dietary Intake Mendelian Randomization Using Phenome-Wide Association Studies.",
+      "year": 2026
+    },
+    {
+      "pmid": "42498943",
+      "title": "Treatment-Effect-Based Versus Risk-Based Targeting of Care Management Outreach in Medicaid: A Retrospective Cohort Study with Machine Learning.",
+      "year": 2026
+    },
+    {
+      "pmid": "42482262",
+      "title": "Adaptation-mitigation synergies or trade-offs? The asymmetric impacts of agricultural insurance on disaggregated GHG emissions in China.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:45:32.857Z"
+}

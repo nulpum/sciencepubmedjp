@@ -1,0 +1,93 @@
+{
+  "slug": "dissociation",
+  "ja": "解離",
+  "yomi": "かいり",
+  "en": "dissociation",
+  "category": "psychology",
+  "meshHeading": "Dissociative Disorders",
+  "meshUi": "68004213",
+  "description": {
+    "ja": "心理学における解離とは、通常まとまっているはずの意識・記憶・知覚・行動などが一時的または持続的に分離してしまう心理現象を指します。強いストレスや外傷体験への防衛反応として起こることが多く、離人感や記憶の断片化などとして現れます。研究では質問紙や面接で評価され、心的外傷後ストレス障害(PTSD)や解離性障害の研究で中心的に扱われます。",
+    "en": "Dissociation in psychology refers to a mental phenomenon where consciousness, memory, perception, and behavior that are normally integrated become temporarily or persistently separated. It often occurs as a defense mechanism against severe stress or traumatic experiences, manifesting as depersonalization or fragmented memories. Research typically assesses it through questionnaires and interviews, and it is central to studies on post-traumatic stress disorder (PTSD) and dissociative disorders."
+  },
+  "usage": {
+    "ja": "論文では「解離症状スコア」「解離体験尺度(DES)」などの測定尺度を用いて評価されます。トラウマ研究、急性ストレス反応、境界性パーソナリティ障害の研究などで、症状の程度や治療反応の指標として頻繁に登場します。",
+    "en": "In research papers, dissociation is assessed using measures such as dissociation symptom scores and the Dissociative Experiences Scale (DES). It frequently appears in trauma research, acute stress response studies, and borderline personality disorder research as an indicator of symptom severity or treatment response."
+  },
+  "synonyms": {
+    "ja": "「解離性体験」「解離反応」とも呼ばれます。類似概念に「離人感(depersonalization)」「現実感消失(derealization)」があり、これらは解離の下位症状として扱われることが多いです。精神医学の文脈では「解離性障害(dissociative disorders)」という診断カテゴリーとして用いられることもあります。",
+    "en": "Also referred to as dissociative experience or dissociative response. Related concepts include depersonalization and derealization, which are often treated as subtypes of dissociation. In psychiatric contexts, it may appear as a diagnostic category called dissociative disorders."
+  },
+  "pubmedCount": 141385,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3992
+    },
+    {
+      "year": 2018,
+      "count": 4073
+    },
+    {
+      "year": 2019,
+      "count": 3941
+    },
+    {
+      "year": 2020,
+      "count": 4316
+    },
+    {
+      "year": 2021,
+      "count": 4419
+    },
+    {
+      "year": 2022,
+      "count": 4406
+    },
+    {
+      "year": 2023,
+      "count": 4384
+    },
+    {
+      "year": 2024,
+      "count": 4642
+    },
+    {
+      "year": 2025,
+      "count": 5639
+    },
+    {
+      "year": 2026,
+      "count": 6585
+    }
+  ],
+  "searchQuery": "(\"Dissociative Disorders\"[MeSH Terms]) OR (\"dissociation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42959484",
+      "title": "Inhaled nanogels ameliorate vascular remodeling in pulmonary arterial hypertension via normalization of endothelia-smooth muscle cell crosstalk.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933162",
+      "title": "Selection of a high-affinity DNA aptamer for puerarin and its application in fluorescence sensing.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800426",
+      "title": "Hijacking dead tumor cells for lung-targeted and gene-augmented cuproptosis therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42721634",
+      "title": "Acidic pH-responsive and dissociative dimeric CpG oligodeoxynucleotides for enhanced cancer immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42710336",
+      "title": "Microenvironment-responsive coating with bio-functional switching from infection clearance to adaptive osteogenesis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:15:37.922Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "medication-error",
+  "ja": "投薬過誤",
+  "yomi": "とうやくかご",
+  "en": "medication error",
+  "category": "nursing-pharma",
+  "meshHeading": "Medication Errors",
+  "meshUi": "68008508",
+  "description": {
+    "ja": "投薬過誤とは、医薬品の処方、調剤、投与、モニタリングなど医療現場での薬剤使用過程において発生する誤りの総称です。誤った薬剤、用量、投与経路、タイミングでの投与や、患者取り違えなどが含まれます。医療安全研究では予防可能な有害事象として重要な調査対象となっています。",
+    "en": "Medication error refers to any preventable mistake that occurs during prescribing, dispensing, administering, or monitoring drugs in healthcare settings. It includes wrong drug, dose, route, timing, or patient identification errors. This is a critical research topic in patient safety and quality improvement studies."
+  },
+  "usage": {
+    "ja": "論文では発生頻度、分類(処方エラー、調剤エラー、投与エラーなど)、リスク因子(疲労、業務負荷、類似薬名など)、予防策(ダブルチェック、電子処方システム、教育介入など)の効果が検討されます。インシデントレポートや観察研究、介入研究で評価されます。",
+    "en": "Studies examine incidence rates, classifications (prescribing, dispensing, administration errors), risk factors (fatigue, workload, look-alike drugs), and preventive strategies (double-checking, electronic prescribing systems, educational interventions). Evaluated through incident reports, observational studies, and intervention trials."
+  },
+  "synonyms": {
+    "ja": "「投薬ミス」「薬剤関連インシデント」とも呼ばれます。medication mishap、drug error、prescribing errorなども関連語ですが、medication errorは医薬品使用過程全体の誤りを包括的に指す標準的用語です。adverse drug event(薬物有害事象)は実際に患者への害が生じた場合を指し、より狭い概念です。",
+    "en": "Also called medication mishap, drug error, or prescribing error, though medication error is the standard comprehensive term covering all stages of drug use. Distinguished from adverse drug event (ADE), which specifically refers to harm caused to patients. Near miss refers to errors caught before reaching patients."
+  },
+  "pubmedCount": 23361,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1215
+    },
+    {
+      "year": 2018,
+      "count": 1311
+    },
+    {
+      "year": 2019,
+      "count": 1389
+    },
+    {
+      "year": 2020,
+      "count": 1185
+    },
+    {
+      "year": 2021,
+      "count": 1092
+    },
+    {
+      "year": 2022,
+      "count": 849
+    },
+    {
+      "year": 2023,
+      "count": 736
+    },
+    {
+      "year": 2024,
+      "count": 885
+    },
+    {
+      "year": 2025,
+      "count": 900
+    },
+    {
+      "year": 2026,
+      "count": 754
+    }
+  ],
+  "searchQuery": "(\"Medication Errors\"[MeSH Terms]) OR (\"medication error\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42573429",
+      "title": "Non-prescription antibiotic dispensing in community pharmacies in jordan: a simulated patient study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43049318",
+      "title": "Benchmarking in Medication Safety: A Report from the Alliance of Dedicated Cancer Centers Patient Safety Organization.",
+      "year": 2026
+    },
+    {
+      "pmid": "43032945",
+      "title": "Association between empirical antibiotic appropriateness and clinical outcomes in surgically managed diabetic infections of the lower extremities: a retrospective cohort study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42840262",
+      "title": "Electronic prescribing and patient safety: a rigour-stratified systematic review of medication error, adverse drug events, workflow, and communication.",
+      "year": 2026
+    },
+    {
+      "pmid": "42830969",
+      "title": "Factors contributing to medication safety incidents observed by community pharmacists - a content analysis of incident reports.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:32:22.484Z"
+}

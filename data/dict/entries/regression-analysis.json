@@ -1,0 +1,93 @@
+{
+  "slug": "regression-analysis",
+  "ja": "回帰分析",
+  "yomi": "かいきぶんせき",
+  "en": "regression analysis",
+  "category": "research",
+  "meshHeading": "Regression Analysis",
+  "meshUi": "68012044",
+  "description": {
+    "ja": "1つ以上の独立変数(説明変数)から従属変数(目的変数)を予測するための統計手法です。医学研究では、年齢や体重などの要因が血圧や疾患リスクにどう影響するかを数式で表現し、関係の強さを定量化します。線形回帰、ロジスティック回帰、Cox回帰など目的に応じた多様な手法があります。",
+    "en": "A statistical method to predict a dependent variable (outcome) from one or more independent variables (predictors). In medical research, it quantifies how factors like age or weight influence outcomes such as blood pressure or disease risk through mathematical equations. Various types exist including linear, logistic, and Cox regression depending on the research question."
+  },
+  "usage": {
+    "ja": "観察研究で交絡因子を調整しながら曝露と転帰の関連を評価する際に用いられます。単回帰分析は1つの説明変数、多変量回帰分析(重回帰分析)は複数の説明変数を同時に扱い、回帰係数・オッズ比・ハザード比などで効果の大きさを報告します。",
+    "en": "Used in observational studies to assess associations between exposures and outcomes while adjusting for confounders. Simple regression uses one predictor, while multivariable (multiple) regression handles several predictors simultaneously, reporting effect sizes as regression coefficients, odds ratios, or hazard ratios."
+  },
+  "synonyms": {
+    "ja": "「回帰モデル」「回帰式」とも呼ばれます。重回帰分析は多変量回帰分析と同義ですが、多変量解析(multivariate analysis)は複数の従属変数を扱う別の概念なので混同に注意が必要です。線形性や残差の正規性など仮定の確認が解釈の前提となります。",
+    "en": "Also called 'regression modeling' or 'regression equation.' Multiple regression is synonymous with multivariable regression, but be careful not to confuse it with multivariate analysis (which handles multiple dependent variables). Interpretation requires checking assumptions like linearity and normality of residuals."
+  },
+  "pubmedCount": 792540,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 40974
+    },
+    {
+      "year": 2018,
+      "count": 38450
+    },
+    {
+      "year": 2019,
+      "count": 38553
+    },
+    {
+      "year": 2020,
+      "count": 38911
+    },
+    {
+      "year": 2021,
+      "count": 40769
+    },
+    {
+      "year": 2022,
+      "count": 36789
+    },
+    {
+      "year": 2023,
+      "count": 33198
+    },
+    {
+      "year": 2024,
+      "count": 39353
+    },
+    {
+      "year": 2025,
+      "count": 43140
+    },
+    {
+      "year": 2026,
+      "count": 31497
+    }
+  ],
+  "searchQuery": "(\"Regression Analysis\"[MeSH Terms]) OR (\"regression analysis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976423",
+      "title": "Enzymatic inhibition analysis in colored plant extracts: understanding the balance between analytical signal and matrix background using RGB imaging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948259",
+      "title": "Prevalence and Clinical Significance of Gastric-Type Mucosal Lesions in Non-Ampullary Duodenal Epithelial Tumors Based on Mucin Phenotype.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781318",
+      "title": "Submucosal Invasion and Ulceration in Early Gastric Cancer Affect Mucosal Impedance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42694720",
+      "title": "Association of Propofol Versus Midazolam Sedation With Successful Pharyngeal Observation During Upper Gastrointestinal Endoscopy: A Retrospective Study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:39:27.916Z"
+}

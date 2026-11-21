@@ -1,0 +1,91 @@
+{
+  "slug": "loss-aversion",
+  "ja": "損失回避",
+  "yomi": "そんしつかいひ",
+  "en": "loss aversion",
+  "category": "psychology",
+  "description": {
+    "ja": "損失回避とは、同じ大きさの利益を得ることよりも、損失を避けることに対してより強い動機づけを感じる心理傾向のことです。行動経済学や意思決定研究で広く確認されており、人は一般的に得られるものよりも失うものに対して約2倍敏感に反応するとされています。リスクを伴う選択場面や健康行動の研究で重要な概念となっています。",
+    "en": "Loss aversion refers to the psychological tendency where people are more strongly motivated to avoid losses than to acquire equivalent gains. Widely documented in behavioral economics and decision-making research, individuals typically react about twice as strongly to losses as to gains of the same magnitude. This concept is crucial in studies of risky choices and health behaviors."
+  },
+  "usage": {
+    "ja": "論文では、健康行動の変容、治療選択、リスク認知、金銭的意思決定などの文脈で用いられます。実験では、等価な利得と損失のフレーミングを変えた選択課題や、プロスペクト理論に基づく価値関数の測定が行われます。",
+    "en": "In research papers, this term appears in contexts such as health behavior change, treatment choices, risk perception, and financial decision-making. Experiments typically involve choice tasks with equivalent gains and losses framed differently, or measurements of value functions based on prospect theory."
+  },
+  "synonyms": {
+    "ja": "関連用語として「損失優位性(loss dominance)」「負の価値の非対称性」などがあります。プロスペクト理論(prospect theory)の中核概念であり、リスク回避(risk aversion)とは区別されます。リスク回避は不確実性そのものへの態度を指すのに対し、損失回避は利得と損失の評価の非対称性を指します。",
+    "en": "Related terms include loss dominance and asymmetry in negative valuation. It is a core concept in prospect theory and should be distinguished from risk aversion. While risk aversion refers to attitudes toward uncertainty itself, loss aversion specifically describes the asymmetry in evaluating gains versus losses."
+  },
+  "pubmedCount": 661,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 43
+    },
+    {
+      "year": 2018,
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "count": 51
+    },
+    {
+      "year": 2020,
+      "count": 54
+    },
+    {
+      "year": 2021,
+      "count": 55
+    },
+    {
+      "year": 2022,
+      "count": 58
+    },
+    {
+      "year": 2023,
+      "count": 57
+    },
+    {
+      "year": 2024,
+      "count": 45
+    },
+    {
+      "year": 2025,
+      "count": 47
+    },
+    {
+      "year": 2026,
+      "count": 60
+    }
+  ],
+  "searchQuery": "\"loss aversion\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42674197",
+      "title": "Mapping the functional neurocognitive correlates of loss aversion: A coordinate-based meta-analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42570249",
+      "title": "Time Preferences, Risk Preferences and Choices of Healthy Diet: Evidence From Mekelle City, Northern Ethiopia.",
+      "year": 2026
+    },
+    {
+      "pmid": "42998497",
+      "title": "Loss aversion for time and money: Cross-commodity variation in loss weighting and choice consistency.",
+      "year": 2026
+    },
+    {
+      "pmid": "42987625",
+      "title": "Incentive-compatible risk preferences and sustainable land management adoption under climate risk: Evidence from semi-arid Kenya.",
+      "year": 2026
+    },
+    {
+      "pmid": "41591919",
+      "title": "Loss aversion and genetic variants influence food choice: Implications for healthier dietary decisions.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:25:41.062Z"
+}

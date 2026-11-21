@@ -1,0 +1,91 @@
+{
+  "slug": "dunning-kruger-effect",
+  "ja": "ダニングクルーガー効果",
+  "yomi": "だにんぐくるーがーこうか",
+  "en": "Dunning-Kruger effect",
+  "category": "psychology",
+  "description": {
+    "ja": "能力が低い人ほど自分の能力を過大評価し、逆に能力が高い人ほど自分を過小評価する傾向を指す心理学的現象です。1999年にDunningとKrugerが発表した研究で示され、メタ認知能力(自分の能力を客観的に評価する力)の欠如が原因とされています。医療コミュニケーションや教育介入の研究で、患者や学習者の自己認識バイアスを理解する文脈で言及されます。",
+    "en": "A psychological phenomenon where individuals with low ability tend to overestimate their competence, while those with high ability tend to underestimate themselves. First described by Dunning and Kruger in 1999, it is attributed to a lack of metacognitive ability to accurately assess one's own skills. This effect is referenced in medical communication and educational intervention studies to understand self-perception biases in patients and learners."
+  },
+  "usage": {
+    "ja": "心理学研究では自己評価と客観的パフォーマンステストの差を分析する際に用いられます。医学教育や患者教育の研究では、知識レベルと自己認識のギャップを測定し、効果的な介入方法を検討する文脈で登場します。",
+    "en": "In psychological research, it is used when analyzing discrepancies between self-assessment and objective performance tests. In medical education and patient education studies, it appears in contexts examining gaps between knowledge levels and self-perception to explore effective intervention strategies."
+  },
+  "synonyms": {
+    "ja": "メタ認知バイアス、能力錯覚、自己評価バイアスなどと関連しますが、ダニングクルーガー効果は特に低能力者の過信と高能力者の過小評価という二重の傾向を指す点で区別されます。近年では再現性や文化差について議論もあります。",
+    "en": "Related to metacognitive bias, illusory superiority, and self-assessment bias, but the Dunning-Kruger effect specifically refers to the dual pattern of overconfidence in low performers and underestimation in high performers. Recent discussions address issues of replicability and cultural differences in this phenomenon."
+  },
+  "pubmedCount": 105,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "count": 6
+    },
+    {
+      "year": 2020,
+      "count": 8
+    },
+    {
+      "year": 2021,
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "count": 17
+    },
+    {
+      "year": 2023,
+      "count": 16
+    },
+    {
+      "year": 2024,
+      "count": 15
+    },
+    {
+      "year": 2025,
+      "count": 20
+    },
+    {
+      "year": 2026,
+      "count": 20
+    }
+  ],
+  "searchQuery": "\"Dunning-Kruger effect\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42841132",
+      "title": "The Dunning-Kruger effect does not account for Covid-scepticism or vaccine hesitancy.",
+      "year": 2026
+    },
+    {
+      "pmid": "42508128",
+      "title": "Discordance Between Perceived and Measured Procedural Competence in Trauma Surgery.",
+      "year": 2026
+    },
+    {
+      "pmid": "42682951",
+      "title": "Working under pressure: How virtual reality and psychoeducation shape stress and moral distress responses in nurses.",
+      "year": 2026
+    },
+    {
+      "pmid": "42572749",
+      "title": "The Interplay Between Self-Determination and Cognitive Bias: Nonlinear Associations Between Myopia Control Knowledge Reserve and Parental Communication Preparedness.",
+      "year": 2026
+    },
+    {
+      "pmid": "41923400",
+      "title": "Artificial intelligence, personalized education, and the Dunning-Kruger effect.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:26:16.505Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "likelihood-ratio",
+  "ja": "尤度比",
+  "yomi": "ゆうどひ",
+  "en": "likelihood ratio",
+  "category": "research",
+  "description": {
+    "ja": "尤度比は、ある検査結果が陽性(または陰性)だったとき、疾患がある確率とない確率の比を示す統計指標です。診断精度の評価に用いられ、事前確率(検査前の疾患の可能性)を事後確率(検査後の疾患の可能性)に変換する際に利用されます。陽性尤度比が大きいほど、陽性結果が疾患の存在を強く示唆します。",
+    "en": "Likelihood ratio is a statistical measure that indicates the ratio of the probability of a disease being present versus absent given a positive (or negative) test result. It is used to evaluate diagnostic accuracy and helps convert pre-test probability (likelihood of disease before testing) to post-test probability (likelihood after testing). A higher positive likelihood ratio indicates that a positive result more strongly suggests the presence of disease."
+  },
+  "usage": {
+    "ja": "診断検査研究で感度と特異度から算出され、陽性尤度比(LR+)は感度/(1-特異度)、陰性尤度比(LR-)は(1-感度)/特異度で計算されます。LR+が10以上またはLR-が0.1以下の場合、臨床的に有用な検査とみなされることが多いです。",
+    "en": "In diagnostic test studies, it is calculated from sensitivity and specificity: positive likelihood ratio (LR+) = sensitivity/(1-specificity), and negative likelihood ratio (LR-) = (1-sensitivity)/specificity. Tests with LR+ ≥10 or LR- ≤0.1 are generally considered clinically useful."
+  },
+  "synonyms": {
+    "ja": "LRと略記され、陽性尤度比(positive likelihood ratio, LR+)と陰性尤度比(negative likelihood ratio, LR-)に区別されます。診断オッズ比(diagnostic odds ratio)と関連しますが、尤度比は検査結果が陽性か陰性かで別々に評価する点が異なります。",
+    "en": "Abbreviated as LR, it is divided into positive likelihood ratio (LR+) and negative likelihood ratio (LR-). It is related to diagnostic odds ratio but differs in that likelihood ratios are evaluated separately for positive and negative test results."
+  },
+  "pubmedCount": 19004,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 966
+    },
+    {
+      "year": 2018,
+      "count": 996
+    },
+    {
+      "year": 2019,
+      "count": 1031
+    },
+    {
+      "year": 2020,
+      "count": 1163
+    },
+    {
+      "year": 2021,
+      "count": 1275
+    },
+    {
+      "year": 2022,
+      "count": 1265
+    },
+    {
+      "year": 2023,
+      "count": 1192
+    },
+    {
+      "year": 2024,
+      "count": 1151
+    },
+    {
+      "year": 2025,
+      "count": 1280
+    },
+    {
+      "year": 2026,
+      "count": 1587
+    }
+  ],
+  "searchQuery": "\"likelihood ratio\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42637067",
+      "title": "Joint mixture effects and population attributable burden of ANA/ENA panels in connective tissue disease-associated interstitial lung disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42826445",
+      "title": "Factors associated with pregnancy following transfer of Japanese Black embryos into Japanese Black, Holstein, and crossbred heifers.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032093",
+      "title": "Recurrence rates in Dupuytren's contracture: a systematic review and meta-analysis comparing percutaneous and open surgical management.",
+      "year": 2027
+    },
+    {
+      "pmid": "42531991",
+      "title": "IBDKinship: An LR-based kinship analysis method for distant relatives up to the seventh degree using IBD segments.",
+      "year": 2027
+    },
+    {
+      "pmid": "42401178",
+      "title": "KLINK: A program for kinship testing with pairwise linked STR markers.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:47:08.618Z"
+}

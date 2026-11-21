@@ -1,0 +1,96 @@
+{
+  "slug": "social-anxiety-disorder",
+  "ja": "社交不安障害",
+  "yomi": "しゃこうふあんしょうがい",
+  "en": "social anxiety disorder",
+  "category": "psychology",
+  "aliases": [
+    "社交不安症"
+  ],
+  "meshHeading": "Phobia, Social",
+  "meshUi": "2016799",
+  "description": {
+    "ja": "社交不安障害は、他者からの評価や注目を受ける社交場面で強い不安や恐怖を感じ、日常生活に支障をきたす精神医学的な状態を指します。DSM-5では「社交不安症」という名称も用いられ、公の場での発表やグループでの会話など特定の状況で過剰な不安反応が生じることが特徴です。",
+    "en": "Social anxiety disorder refers to a psychiatric condition characterized by intense fear or anxiety in social situations where one may be evaluated or scrutinized by others, causing significant impairment in daily functioning. Also termed 'social anxiety disorder' in DSM-5, it is marked by excessive anxiety responses in specific situations such as public speaking or group conversations."
+  },
+  "usage": {
+    "ja": "論文では、LSAS（Liebowitz Social Anxiety Scale）やSPIN（Social Phobia Inventory）などの評価尺度を用いた重症度測定、認知行動療法やエクスポージャー療法などの介入研究、脳画像研究における扁桃体活動との関連などが調べられています。疫学研究では有病率や発症年齢、併存症との関連も検討されます。",
+    "en": "In research papers, this condition is assessed using rating scales such as LSAS (Liebowitz Social Anxiety Scale) or SPIN (Social Phobia Inventory) for severity measurement, examined through intervention studies of cognitive behavioral therapy or exposure therapy, and investigated in neuroimaging studies regarding amygdala activity. Epidemiological studies explore prevalence, age of onset, and comorbidities."
+  },
+  "synonyms": {
+    "ja": "「社交不安症」「社交恐怖」「社会不安障害」とも呼ばれます。DSM-5では「社交不安症」が正式名称ですが、ICD-10では「社交恐怖」が用いられるなど、診断基準により名称が異なる点に注意が必要です。英語では「social phobia」も同義で用いられることがあります。",
+    "en": "Also referred to as 'social phobia' or 'social anxiety disorder.' While DSM-5 uses 'social anxiety disorder' as the official term, ICD-10 employs 'social phobia,' indicating terminology varies across diagnostic systems. The term 'social phobia' is often used synonymously in English literature."
+  },
+  "pubmedCount": 4758,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 351
+    },
+    {
+      "year": 2018,
+      "count": 322
+    },
+    {
+      "year": 2019,
+      "count": 348
+    },
+    {
+      "year": 2020,
+      "count": 342
+    },
+    {
+      "year": 2021,
+      "count": 335
+    },
+    {
+      "year": 2022,
+      "count": 307
+    },
+    {
+      "year": 2023,
+      "count": 316
+    },
+    {
+      "year": 2024,
+      "count": 327
+    },
+    {
+      "year": 2025,
+      "count": 394
+    },
+    {
+      "year": 2026,
+      "count": 341
+    }
+  ],
+  "searchQuery": "(\"Phobia, Social\"[MeSH Terms]) OR (\"social anxiety disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42753978",
+      "title": "Deconstructing the heterogeneity of adolescent social anxiety: A cognitive diagnostic approach from a sex perspective.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041658",
+      "title": "The gut microbiome is associated with structural and functional brain alterations in adolescents with social anxiety disorder.",
+      "year": 2026
+    },
+    {
+      "pmid": "43032696",
+      "title": "Unguided bibliotherapy and digital self-help interventions based on cognitive behavioural therapy for university students with gaze-related anxiety and social anxiety symptoms: a randomised controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42935939",
+      "title": "AI-generated vs. human therapist feedback in internet-based CBT for social anxiety disorder: A six-arm randomized controlled trial with deception design.",
+      "year": 2026
+    },
+    {
+      "pmid": "42840561",
+      "title": "Patient experience and psychologists' attitudes toward AI in psychological treatment: A topic-modeling study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:13:23.691Z"
+}

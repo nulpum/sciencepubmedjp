@@ -1,0 +1,91 @@
+{
+  "slug": "behavioral-activation",
+  "ja": "行動活性化",
+  "yomi": "こうどうかっせいか",
+  "en": "behavioral activation",
+  "category": "psychology",
+  "description": {
+    "ja": "行動活性化とは、うつ症状などに対する心理療法の一技法で、患者が日常生活の中で肯定的な活動や価値ある行動を計画的に増やすことで気分の改善を目指すアプローチです。活動量の低下が気分の悪化につながるという行動理論に基づき、まず行動を変えることで感情や思考の変化を促します。",
+    "en": "Behavioral activation is a psychotherapeutic technique for depression and related conditions that focuses on systematically increasing engagement in positive and valued activities in daily life to improve mood. Based on behavioral theory that reduced activity leads to worsening mood, it aims to change emotions and thoughts by first changing behaviors."
+  },
+  "usage": {
+    "ja": "うつ病の臨床試験でアウトカム指標としてBeck Depression Inventoryなどの気分尺度と併せて、活動スケジュールの完遂率や快感情を伴う活動の頻度が測定されます。認知行動療法の構成要素として、あるいは単独の介入として比較研究で用いられることがあります。",
+    "en": "In depression clinical trials, behavioral activation is measured using activity schedule completion rates and frequency of pleasurable activities, alongside mood scales like the Beck Depression Inventory. It is examined either as a component of cognitive-behavioral therapy or as a standalone intervention in comparative studies."
+  },
+  "synonyms": {
+    "ja": "BA、活動活性化、活動スケジューリングとも呼ばれます。広義の認知行動療法(CBT)に含まれますが、認知再構成法よりも行動面の変化を重視する点で区別されます。",
+    "en": "Also called BA, activity scheduling, or behavioral activation therapy. While part of broader cognitive-behavioral therapy (CBT), it is distinguished by emphasizing behavioral change over cognitive restructuring techniques."
+  },
+  "pubmedCount": 2488,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 127
+    },
+    {
+      "year": 2018,
+      "count": 109
+    },
+    {
+      "year": 2019,
+      "count": 125
+    },
+    {
+      "year": 2020,
+      "count": 153
+    },
+    {
+      "year": 2021,
+      "count": 161
+    },
+    {
+      "year": 2022,
+      "count": 176
+    },
+    {
+      "year": 2023,
+      "count": 192
+    },
+    {
+      "year": 2024,
+      "count": 208
+    },
+    {
+      "year": 2025,
+      "count": 207
+    },
+    {
+      "year": 2026,
+      "count": 222
+    }
+  ],
+  "searchQuery": "\"behavioral activation\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42998541",
+      "title": "Early self-regulation in context: Multidimensional organization of neonatal non-nutritive sucking and its association with subclinical maternal depressive traits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901398",
+      "title": "Right putaminal gray matter change tracks psychomotor recovery after accelerated iTBS in melancholic treatment-resistant depression.",
+      "year": 2027
+    },
+    {
+      "pmid": "42805405",
+      "title": "Reinforcement sensitivity and the association between exposure to racialized stressors and internalizing psychopathology among Black young adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "42904719",
+      "title": "[The role of a primary care nurse in screening, managing, and supporting patients with mental disorders: overview of foreign integration models].",
+      "year": 2026
+    },
+    {
+      "pmid": "42648549",
+      "title": "Perinatal depression and anxiety among Latinas: Behavioral activation and contextual predictors.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:21:58.640Z"
+}

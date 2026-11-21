@@ -1,0 +1,91 @@
+{
+  "slug": "receptor",
+  "ja": "受容体",
+  "yomi": "じゅようたい",
+  "en": "receptor",
+  "category": "biology",
+  "description": {
+    "ja": "細胞の表面や内部に存在し、ホルモン・神経伝達物質・薬物などの特定の分子(リガンド)と結合して、細胞内へ情報を伝える役割を持つタンパク質です。鍵と鍵穴のような関係で、特定の物質だけを認識して細胞の反応を引き起こします。多くの薬は受容体に作用することで効果を発揮するため、創薬研究の重要なターゲットとなっています。",
+    "en": "A protein located on the cell surface or inside the cell that binds to specific molecules (ligands) such as hormones, neurotransmitters, or drugs, and transmits signals into the cell. It works like a lock-and-key mechanism, recognizing only certain substances to trigger cellular responses. Many drugs exert their effects by acting on receptors, making them important targets in drug discovery research."
+  },
+  "usage": {
+    "ja": "論文では「insulin receptor(インスリン受容体)」「dopamine receptor(ドパミン受容体)」のように物質名と組み合わせて使われます。受容体の発現量測定や結合実験、遺伝子ノックアウト研究などが一般的で、「receptor binding assay」「receptor expression」といった用語で頻繁に登場します。",
+    "en": "In papers, it is typically used in combination with substance names like 'insulin receptor' or 'dopamine receptor.' Common research methods include receptor expression measurement, binding assays, and gene knockout studies, frequently appearing in terms such as 'receptor binding assay' and 'receptor expression.'"
+  },
+  "synonyms": {
+    "ja": "英語では単に「receptor」と表記されます。機能により「cell surface receptor(細胞表面受容体)」「nuclear receptor(核内受容体)」、構造により「G protein-coupled receptor(Gタンパク質共役受容体)」「ion channel receptor(イオンチャネル型受容体)」などに分類されます。日本語では「レセプター」とカタカナ表記されることもあります。",
+    "en": "In Japanese, it is written as '受容体' or sometimes as 'レセプター' (receptor in katakana). Classified by function into 'cell surface receptor' and 'nuclear receptor,' or by structure into 'G protein-coupled receptor (GPCR)' and 'ion channel receptor.' The term 'receptor' is universally used across biological and medical literature."
+  },
+  "pubmedCount": 1508505,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 55259
+    },
+    {
+      "year": 2018,
+      "count": 55909
+    },
+    {
+      "year": 2019,
+      "count": 56325
+    },
+    {
+      "year": 2020,
+      "count": 62980
+    },
+    {
+      "year": 2021,
+      "count": 67548
+    },
+    {
+      "year": 2022,
+      "count": 64156
+    },
+    {
+      "year": 2023,
+      "count": 59940
+    },
+    {
+      "year": 2024,
+      "count": 60909
+    },
+    {
+      "year": 2025,
+      "count": 67723
+    },
+    {
+      "year": 2026,
+      "count": 67943
+    }
+  ],
+  "searchQuery": "\"receptor\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42960295",
+      "title": "Uncovering a cryptic allosteric hub governing energy landscape plasticity within the Nur77 ligand-binding domain.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041590",
+      "title": "Genetically engineered extracellular vesicles with chimeric antigen receptors of human stem cell-derived neutrophils targeting fibroblast activation protein to modulate tumor microenvironment.",
+      "year": 2027
+    },
+    {
+      "pmid": "43023045",
+      "title": "A fluorinated poly(amino acid) nanovaccine with spatiotemporally encoded innate priming and antigen cross-presentation for tumor immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42968916",
+      "title": "Reconsidering the Mechanism of Proton Pump Inhibitor-Associated Fundic Gland Polyps: Absence of Re-enlargement during Potassium-Competitive Acid Blocker Therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42465714",
+      "title": "Lymphocytic Esophagitis Mimicking Eosinophilic Esophagitis and Esophageal Candidiasis: A Case Report.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:02:15.045Z"
+}

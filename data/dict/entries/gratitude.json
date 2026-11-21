@@ -1,0 +1,91 @@
+{
+  "slug": "gratitude",
+  "ja": "感謝",
+  "yomi": "かんしゃ",
+  "en": "gratitude",
+  "category": "psychology",
+  "description": {
+    "ja": "感謝(gratitude)とは、他者や状況から恩恵を受けたときに生じる肯定的な感情状態を指す心理学用語です。ポジティブ心理学では、幸福感やwell-beingを高める重要な要因として研究されています。個人の特性としての感謝傾向(dispositional gratitude)と、特定の出来事に対する一時的な感謝(state gratitude)の両面から調査されます。",
+    "en": "Gratitude refers to a positive emotional state that arises when one recognizes benefits received from others or circumstances. In positive psychology, it is studied as a key factor that enhances happiness and well-being. Research examines both dispositional gratitude as a personality trait and state gratitude as a momentary response to specific events."
+  },
+  "usage": {
+    "ja": "研究では、Gratitude Questionnaire-6(GQ-6)などの質問紙を用いて感謝傾向を測定したり、感謝日記を書く介入研究が行われます。うつ症状、ストレス、対人関係満足度、主観的幸福感などとの関連が調べられ、神経科学的研究では脳活動パターンの解析も行われています。",
+    "en": "Studies measure gratitude using questionnaires such as the Gratitude Questionnaire-6 (GQ-6), or conduct intervention studies involving gratitude journaling. Research examines associations with depressive symptoms, stress, relationship satisfaction, and subjective well-being, while neuroscience studies analyze brain activation patterns related to gratitude."
+  },
+  "synonyms": {
+    "ja": "thankfulness(感謝の気持ち)、appreciation(感謝・評価)と類似しますが、gratitudeは学術的に最も広く使われる標準用語です。trait gratitudeは特性感謝、grateful dispositionは感謝傾向と訳され、いずれも個人差を示す概念として用いられます。",
+    "en": "Terms like thankfulness and appreciation are similar, but gratitude is the most widely used academic term. Trait gratitude and grateful disposition refer to individual differences in the tendency to experience gratitude, while grateful affect denotes the emotional experience itself."
+  },
+  "pubmedCount": 3715,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 167
+    },
+    {
+      "year": 2018,
+      "count": 164
+    },
+    {
+      "year": 2019,
+      "count": 186
+    },
+    {
+      "year": 2020,
+      "count": 303
+    },
+    {
+      "year": 2021,
+      "count": 367
+    },
+    {
+      "year": 2022,
+      "count": 430
+    },
+    {
+      "year": 2023,
+      "count": 407
+    },
+    {
+      "year": 2024,
+      "count": 384
+    },
+    {
+      "year": 2025,
+      "count": 470
+    },
+    {
+      "year": 2026,
+      "count": 443
+    }
+  ],
+  "searchQuery": "\"gratitude\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42777957",
+      "title": "Gratitude and pride in intergroup cooperation: Differentiated neural patterns revealed by fNIRS hyperscanning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42537114",
+      "title": "Adaptation before and one year after liver transplantation: a longitudinal grounded theory study.",
+      "year": 2026
+    },
+    {
+      "pmid": "41930623",
+      "title": "Care and commitment as catalysts for independence: the impact of hemophilia society support programs through ripple effect mapping.",
+      "year": 2026
+    },
+    {
+      "pmid": "41864830",
+      "title": "Beyond the ICU: family resilience and emotional turmoil after intensive care - a qualitative study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43037587",
+      "title": "Turning the page: Reflecting with gratitude and welcoming new chapters.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:19:13.521Z"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "ips-cell",
+  "ja": "iPS細胞",
+  "yomi": "あいぴーえすさいぼう",
+  "en": "induced pluripotent stem cell",
+  "abbr": "iPS cell",
+  "category": "biology",
+  "aliases": [
+    "人工多能性幹細胞"
+  ],
+  "meshHeading": "Induced Pluripotent Stem Cells",
+  "meshUi": "68057026",
+  "description": {
+    "ja": "体細胞に特定の遺伝子を導入することで、多能性(pluripotency)を獲得させた幹細胞です。受精卵を使わずに、皮膚や血液などの体細胞から作製でき、ほぼすべての細胞種に分化できる能力を持ちます。再生医療や疾患モデル研究で広く用いられています。",
+    "en": "A type of stem cell artificially generated from adult somatic cells by introducing specific reprogramming factors. iPS cells possess pluripotency, meaning they can differentiate into almost any cell type in the body, without using embryos. They are widely used in regenerative medicine research and disease modeling."
+  },
+  "usage": {
+    "ja": "論文では「patient-derived iPS cells」(患者由来iPS細胞)として疾患メカニズム解明や「iPS cell-derived cardiomyocytes」(iPS細胞由来心筋細胞)のような分化細胞を用いた研究で登場します。reprogramming効率、pluripotency markersの発現、teratoma形成能などが評価指標となります。",
+    "en": "In research papers, iPS cells appear in contexts such as 'patient-derived iPS cells' for disease modeling or 'iPS cell-derived neurons/cardiomyocytes' for differentiation studies. Key metrics include reprogramming efficiency, expression of pluripotency markers (OCT4, NANOG, SOX2), and teratoma formation assay."
+  },
+  "synonyms": {
+    "ja": "iPSCs、induced pluripotent stem cells(複数形)とも表記されます。ES細胞(embryonic stem cells)と機能的に類似しますが、倫理的課題が少ない点で区別されます。人工多能性幹細胞は日本語の正式名称ですが、論文検索では英語の略語iPSまたはiPSCsが一般的です。",
+    "en": "Also written as iPSCs (plural form) or iPSC. Functionally similar to embryonic stem cells (ESCs) but distinguished by fewer ethical concerns since they don't require embryos. For literature searches, use 'induced pluripotent stem cell' or the abbreviations 'iPS' and 'iPSC' as standard terms."
+  },
+  "pubmedCount": 27977,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1766
+    },
+    {
+      "year": 2018,
+      "count": 1807
+    },
+    {
+      "year": 2019,
+      "count": 2175
+    },
+    {
+      "year": 2020,
+      "count": 2387
+    },
+    {
+      "year": 2021,
+      "count": 2583
+    },
+    {
+      "year": 2022,
+      "count": 2342
+    },
+    {
+      "year": 2023,
+      "count": 2170
+    },
+    {
+      "year": 2024,
+      "count": 2533
+    },
+    {
+      "year": 2025,
+      "count": 2729
+    },
+    {
+      "year": 2026,
+      "count": 2532
+    }
+  ],
+  "searchQuery": "(\"Induced Pluripotent Stem Cells\"[MeSH Terms]) OR (\"induced pluripotent stem cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42832974",
+      "title": "Silnr1 promotes pluripotent induction by coordinating Cohesin SMC1-mediated nuclear remodeling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42685382",
+      "title": "UV-programmed gelatin methacryloyl hydrogel microenvironments reveal a bell-shaped vascularization window and enable compartmentalized neuromuscular disease modeling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42727715",
+      "title": "Bupleuri Radix- Aurantii Fructus Immaturus pair attenuates metabolic dysfunction-associated fatty liver disease in association with modulation of PI3K/Akt-GSK3β/FoxO1 pathway: Evidence from multi-model validation including human iPSC-derived liver organoids.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833559",
+      "title": "iPSC-derived cardiomyocytes for personalized medicine- promises and challenges.",
+      "year": 2027
+    },
+    {
+      "pmid": "42612320",
+      "title": "In situ bioorthogonal anchoring of stem cells to conductive nanofibrils for enhanced myocardial infarction repair.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:05:43.684Z"
+}

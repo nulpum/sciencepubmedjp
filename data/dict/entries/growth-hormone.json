@@ -1,0 +1,94 @@
+{
+  "slug": "growth-hormone",
+  "ja": "成長ホルモン",
+  "yomi": "せいちょうほるもん",
+  "en": "growth hormone",
+  "abbr": "GH",
+  "category": "biology",
+  "meshHeading": "Growth Hormone",
+  "meshUi": "68013006",
+  "description": {
+    "ja": "成長ホルモン (GH) は脳下垂体前葉から分泌されるペプチドホルモンで、小児期の身長成長や成人期の代謝調節に関与します。肝臓でのインスリン様成長因子-1 (IGF-1) の産生を促進し、タンパク質合成、脂質代謝、糖代謝に影響を与えます。",
+    "en": "Growth hormone (GH) is a peptide hormone secreted by the anterior pituitary gland that plays crucial roles in childhood linear growth and adult metabolic regulation. It stimulates the production of insulin-like growth factor-1 (IGF-1) in the liver and influences protein synthesis, lipid metabolism, and glucose metabolism."
+  },
+  "usage": {
+    "ja": "論文では血中GH濃度の測定 (免疫測定法)、GH分泌刺激試験、IGF-1との相関解析などが報告されます。小児の成長障害、成人の代謝異常、運動生理学、睡眠研究などの文脈で頻出します。",
+    "en": "Research papers commonly report serum GH measurements using immunoassays, GH stimulation tests, and correlation analyses with IGF-1. The term appears frequently in contexts of pediatric growth disorders, adult metabolic conditions, exercise physiology, and sleep studies."
+  },
+  "synonyms": {
+    "ja": "ソマトトロピン (somatotropin) とも呼ばれます。検索時は「GH」「hGH (human growth hormone)」「somatotropin」が有用です。GH分泌不全症、先端巨大症などの病名で検索すると関連論文が見つかりますが、これらは医学的診断名です。",
+    "en": "Also called somatotropin or somatotropic hormone. For literature searches, use 'GH,' 'hGH (human growth hormone),' or 'somatotropin.' Related medical terms include growth hormone deficiency and acromegaly, which are diagnostic terms used in clinical contexts."
+  },
+  "pubmedCount": 81567,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1437
+    },
+    {
+      "year": 2018,
+      "count": 1392
+    },
+    {
+      "year": 2019,
+      "count": 1395
+    },
+    {
+      "year": 2020,
+      "count": 1482
+    },
+    {
+      "year": 2021,
+      "count": 1591
+    },
+    {
+      "year": 2022,
+      "count": 1487
+    },
+    {
+      "year": 2023,
+      "count": 1377
+    },
+    {
+      "year": 2024,
+      "count": 1391
+    },
+    {
+      "year": 2025,
+      "count": 1549
+    },
+    {
+      "year": 2026,
+      "count": 1454
+    }
+  ],
+  "searchQuery": "(\"Growth Hormone\"[MeSH Terms]) OR (\"growth hormone\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42815256",
+      "title": "Prototypical transfer learning framework for small-sample (1)H NMR metabolomics: Accurate and interpretable classification of short stature.",
+      "year": 2027
+    },
+    {
+      "pmid": "42442643",
+      "title": "Assessment of Xiao'er Xiexieting Keli-induced toxicity in juvenile rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "43047711",
+      "title": "Novel AIP variant in aggressive somatotroph adenoma presenting as gigantism.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039600",
+      "title": "Multidisciplinary Approach to Functioning Pituitary Neuroendocrine Tumors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834214",
+      "title": "AA in Brain-Memory, Dementia, Depression, Anxiety, Alzheimer's Disease, Affective and Psychiatric Disorders, and Coronary Heart Disease (CHD).",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:54:11.400Z"
+}

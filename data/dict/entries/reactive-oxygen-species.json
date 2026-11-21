@@ -1,0 +1,94 @@
+{
+  "slug": "reactive-oxygen-species",
+  "ja": "活性酸素種",
+  "yomi": "かっせいさんそしゅ",
+  "en": "reactive oxygen species",
+  "abbr": "ROS",
+  "category": "biology",
+  "meshHeading": "Reactive Oxygen Species",
+  "meshUi": "68017382",
+  "description": {
+    "ja": "活性酸素種(ROS)は、酸素分子から生じる反応性の高い化学物質の総称です。細胞内のミトコンドリアなどで産生され、適度な量では細胞シグナル伝達に関与しますが、過剰になると脂質、タンパク質、DNAを酸化的に損傷させます。老化、炎症、様々な疾患の発生機序との関連が研究されています。",
+    "en": "Reactive oxygen species (ROS) are highly reactive chemical compounds derived from oxygen molecules. They are produced in cellular organelles such as mitochondria and play roles in cell signaling at moderate levels, but excessive amounts cause oxidative damage to lipids, proteins, and DNA. ROS are studied in relation to aging, inflammation, and various disease mechanisms."
+  },
+  "usage": {
+    "ja": "論文では「ROS産生」「酸化ストレス」「抗酸化能」などの文脈で登場し、蛍光プローブ(DCF-DAなど)やルミノール化学発光法で測定されます。ストレス応答、細胞死、疾患モデルの研究で頻繁に評価される指標です。",
+    "en": "In research papers, ROS appears in contexts such as 'ROS production,' 'oxidative stress,' and 'antioxidant capacity,' measured using fluorescent probes (e.g., DCF-DA) or luminol chemiluminescence assays. It is frequently evaluated in studies of stress responses, cell death, and disease models."
+  },
+  "synonyms": {
+    "ja": "「活性酸素」とほぼ同義ですが、ROSはスーパーオキシド、過酸化水素、ヒドロキシルラジカルなど複数の化学種を含む包括的な用語です。「酸化ストレス」は状態を指す関連用語で、ROS産生と抗酸化機構のバランスが崩れた状態を表します。",
+    "en": "Nearly synonymous with 'oxygen radicals,' but ROS is a comprehensive term encompassing multiple species including superoxide, hydrogen peroxide, and hydroxyl radicals. 'Oxidative stress' is a related term referring to the state of imbalance between ROS production and antioxidant mechanisms."
+  },
+  "pubmedCount": 384087,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 16153
+    },
+    {
+      "year": 2018,
+      "count": 17330
+    },
+    {
+      "year": 2019,
+      "count": 18885
+    },
+    {
+      "year": 2020,
+      "count": 20447
+    },
+    {
+      "year": 2021,
+      "count": 21445
+    },
+    {
+      "year": 2022,
+      "count": 23324
+    },
+    {
+      "year": 2023,
+      "count": 22016
+    },
+    {
+      "year": 2024,
+      "count": 23703
+    },
+    {
+      "year": 2025,
+      "count": 26311
+    },
+    {
+      "year": 2026,
+      "count": 24906
+    }
+  ],
+  "searchQuery": "(\"Reactive Oxygen Species\"[MeSH Terms]) OR (\"reactive oxygen species\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43061383",
+      "title": "ROS-responsive Se@HSC-DIA enables local drug delivery and modulates CD44(high) inflammatory nucleus pulposus cell states in intervertebral disc degeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041721",
+      "title": "Atomically dispersed nanoactivators drive innate mitochondrial biogenesis for active neuroprotection in ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041618",
+      "title": "Constructing functionalized cartilage organoids by preserving mitochondrial homeostasis to accelerate cartilage repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "43008371",
+      "title": "Turning alloxan redox cycling into light: A derivatization-free microplate chemiluminescence assay for its determination in food samples.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967388",
+      "title": "Activation of singlet oxygen sonochemiluminescence via the contact-electro-catalysis of fluorinated ethylene propylene powders for the detection of thiabendazole.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:04:25.642Z"
+}

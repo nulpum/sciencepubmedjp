@@ -1,0 +1,96 @@
+{
+  "slug": "proteomics",
+  "ja": "プロテオミクス",
+  "yomi": "ぷろておみくす",
+  "en": "proteomics",
+  "category": "biology",
+  "aliases": [
+    "タンパク質解析"
+  ],
+  "meshHeading": "Proteomics",
+  "meshUi": "68040901",
+  "description": {
+    "ja": "プロテオミクス (proteomics) とは、細胞や組織に存在するすべてのタンパク質 (プロテオーム) を網羅的に解析する研究分野です。質量分析などの技術を用いて、タンパク質の種類、量、修飾、相互作用などを調べます。ゲノム情報だけでは分からない実際の生体機能を理解するために重要な手法です。",
+    "en": "Proteomics is the field of study that comprehensively analyzes all proteins (the proteome) present in cells or tissues. Using techniques such as mass spectrometry, it examines protein types, quantities, modifications, and interactions. This approach is essential for understanding actual biological functions that cannot be determined from genomic information alone."
+  },
+  "usage": {
+    "ja": "医学論文では、疾患バイオマーカーの探索、薬剤応答の解析、細胞内シグナル伝達経路の解明などで用いられます。液体クロマトグラフィー質量分析 (LC-MS/MS)、二次元電気泳動、抗体アレイなどが主な測定技術として記載されます。",
+    "en": "In medical papers, proteomics is used for discovering disease biomarkers, analyzing drug responses, and elucidating intracellular signaling pathways. Common methods described include liquid chromatography-mass spectrometry (LC-MS/MS), two-dimensional electrophoresis, and antibody arrays."
+  },
+  "synonyms": {
+    "ja": "タンパク質解析、プロテオーム解析とも呼ばれます。ゲノミクス (遺伝子解析)、トランスクリプトミクス (RNA解析)、メタボロミクス (代謝物解析) と並ぶオミクス研究の一分野で、これらを統合した解析も行われます。",
+    "en": "Also referred to as protein analysis or proteome analysis. It is one of the omics sciences alongside genomics (gene analysis), transcriptomics (RNA analysis), and metabolomics (metabolite analysis), and integrated multi-omics approaches are increasingly common."
+  },
+  "pubmedCount": 138693,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 6677
+    },
+    {
+      "year": 2018,
+      "count": 6833
+    },
+    {
+      "year": 2019,
+      "count": 7453
+    },
+    {
+      "year": 2020,
+      "count": 8224
+    },
+    {
+      "year": 2021,
+      "count": 9339
+    },
+    {
+      "year": 2022,
+      "count": 9533
+    },
+    {
+      "year": 2023,
+      "count": 9809
+    },
+    {
+      "year": 2024,
+      "count": 10441
+    },
+    {
+      "year": 2025,
+      "count": 12286
+    },
+    {
+      "year": 2026,
+      "count": 12637
+    }
+  ],
+  "searchQuery": "(\"Proteomics\"[MeSH Terms]) OR (\"proteomics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892707",
+      "title": "Trait-like proteomic signatures of stress resilience: correlates of freeze-like response resistance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906230",
+      "title": "Distinct proteomic responses of Zygosaccharomyces rouxii to functional protein and palmitoleic acid supplementation under salt stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "42927683",
+      "title": "Cytochalasin D-induced cytoskeletal remodeling with MYH9 enhances release of extracellular vesicles for therapeutic application.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874363",
+      "title": "Development of a high-throughput proteome sample preparation workflow based on efficient protein extraction to empower rational design of yeast cell factories.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849313",
+      "title": "Bubble-cell native fluorescence imaging for high-sensitivity label-free protein quantification.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:07:55.868Z"
+}

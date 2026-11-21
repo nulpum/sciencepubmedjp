@@ -1,0 +1,94 @@
+{
+  "slug": "n-of-1-trial",
+  "ja": "N-of-1試験",
+  "yomi": "えぬおぶわんしけん",
+  "en": "N-of-1 trial",
+  "category": "research",
+  "aliases": [
+    "個人内比較試験"
+  ],
+  "description": {
+    "ja": "単一の患者を対象に、複数回の介入期と対照期を繰り返して効果を評価する研究デザインです。個人差が大きい疾患や稀な病態で、その患者にとって最適な治療を見極める目的で用いられます。個別化医療の実践的手法として注目されています。",
+    "en": "A research design that evaluates treatment effects in a single patient by alternating multiple intervention and control periods. It is used to identify the optimal treatment for individual patients with highly variable conditions or rare diseases, and is recognized as a practical approach to personalized medicine."
+  },
+  "usage": {
+    "ja": "慢性疾患の治療選択、稀少疾患の症例報告、プラセボ効果の評価などで用いられます。クロスオーバーデザインを何度も繰り返し、患者自身の中で介入効果を統計的に検証します。論文では「single-subject design」「single-case experimental design」などの表記でも検索できます。",
+    "en": "Used in treatment selection for chronic diseases, case reports of rare conditions, and placebo effect evaluation. Multiple crossover periods are repeated to statistically verify intervention effects within the same patient. Can be searched in literature using terms like 'single-subject design' or 'single-case experimental design'."
+  },
+  "synonyms": {
+    "ja": "個人内比較試験、シングルケース試験、n=1試験とも呼ばれます。通常のランダム化比較試験(RCT)が集団での平均効果を見るのに対し、N-of-1試験は個々の患者での効果を重視する点が異なります。複数のN-of-1試験を統合する「series of N-of-1 trials」という手法もあります。",
+    "en": "Also called single-case trial, single-patient trial, or n=1 trial. Unlike conventional randomized controlled trials (RCTs) that assess average effects across populations, N-of-1 trials focus on individual patient responses. Multiple N-of-1 trials can be aggregated using 'series of N-of-1 trials' approach."
+  },
+  "pubmedCount": 293,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 11
+    },
+    {
+      "year": 2018,
+      "count": 13
+    },
+    {
+      "year": 2019,
+      "count": 19
+    },
+    {
+      "year": 2020,
+      "count": 29
+    },
+    {
+      "year": 2021,
+      "count": 21
+    },
+    {
+      "year": 2022,
+      "count": 23
+    },
+    {
+      "year": 2023,
+      "count": 24
+    },
+    {
+      "year": 2024,
+      "count": 26
+    },
+    {
+      "year": 2025,
+      "count": 22
+    },
+    {
+      "year": 2026,
+      "count": 28
+    }
+  ],
+  "searchQuery": "\"N-of-1 trial\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42331198",
+      "title": "Role of an Ayurvedic formulation 'Kalyanaka Ghrita' in mild cognitive impairment: A single-patient, quasi-randomized, controlled, open-label N-of-1 trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "43032243",
+      "title": "A framework for the aggregation and visualization of personalized N-of-1 trial data: the Personalized N-of-1 Data Wizard.",
+      "year": 2026
+    },
+    {
+      "pmid": "42842573",
+      "title": "Using dapagliflozin to reduce symptoms in transthyretin cardiac amyloidosis: An n-of-1 trial series pilot study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42991791",
+      "title": "AI Health Coach Prototype and Personalized Pathophysiological Hypotheses Based on an N-of-1 Big Data Study of Non-specific Musculoskeletal Chronic Pain.",
+      "year": 2026
+    },
+    {
+      "pmid": "42827697",
+      "title": "A novel provocation protocol to identify nocebo effects in clinical practice-a proof-of-concept n-of-1 study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:50:48.936Z"
+}

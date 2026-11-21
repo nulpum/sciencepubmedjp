@@ -1,0 +1,93 @@
+{
+  "slug": "vagus-nerve",
+  "ja": "迷走神経",
+  "yomi": "めいそうしんけい",
+  "en": "vagus nerve",
+  "category": "biology",
+  "meshHeading": "Vagus Nerve",
+  "meshUi": "68014630",
+  "description": {
+    "ja": "迷走神経は脳神経の第10番目で、脳から腹部まで広範囲に分布する副交感神経です。心拍数の調節、消化管の運動、呼吸、発声などに関与し、自律神経系の重要な構成要素として体の恒常性維持に寄与します。",
+    "en": "The vagus nerve is the 10th cranial nerve and a major parasympathetic nerve extending from the brain to the abdomen. It regulates heart rate, gastrointestinal motility, respiration, and vocalization, playing a crucial role in maintaining homeostasis through the autonomic nervous system."
+  },
+  "usage": {
+    "ja": "論文では心拍変動解析による迷走神経活動の評価、消化管運動の神経制御、炎症反応の調節機構、ストレス応答研究などで登場します。電気生理学的記録、心電図から算出される副交感神経指標、神経刺激実験などの手法が用いられます。",
+    "en": "In research papers, it appears in studies on heart rate variability analysis for vagal activity assessment, neural control of gastrointestinal motility, inflammation regulation mechanisms, and stress response research. Methods include electrophysiological recordings, parasympathetic indices derived from ECG, and nerve stimulation experiments."
+  },
+  "synonyms": {
+    "ja": "第10脳神経、迷走神経系、vagal nerve、CN Xなどと表記されます。迷走神経緊張(vagal tone)は神経活動の程度を示す指標として使われ、副交感神経活動の代表的な指標とされますが、交感神経との相互作用も考慮する必要があります。",
+    "en": "Also referred to as the 10th cranial nerve, vagal nerve, or CN X. Vagal tone represents the degree of nerve activity and serves as a primary indicator of parasympathetic activity, though interactions with sympathetic activity should be considered in interpretation."
+  },
+  "pubmedCount": 37128,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 743
+    },
+    {
+      "year": 2018,
+      "count": 736
+    },
+    {
+      "year": 2019,
+      "count": 832
+    },
+    {
+      "year": 2020,
+      "count": 1016
+    },
+    {
+      "year": 2021,
+      "count": 1089
+    },
+    {
+      "year": 2022,
+      "count": 954
+    },
+    {
+      "year": 2023,
+      "count": 965
+    },
+    {
+      "year": 2024,
+      "count": 1084
+    },
+    {
+      "year": 2025,
+      "count": 1326
+    },
+    {
+      "year": 2026,
+      "count": 1394
+    }
+  ],
+  "searchQuery": "(\"Vagus Nerve\"[MeSH Terms]) OR (\"vagus nerve\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42978186",
+      "title": "Top-Down Self-Regulation: Bidirectional Associations Between Vagal Regulation and Cool and Hot Executive Functions in Adolescents.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948641",
+      "title": "The gut-brain axis in Binge Eating Disorder: From microbial dysbiosis to vagal dysfunction and therapeutic intervention.",
+      "year": 2027
+    },
+    {
+      "pmid": "42753900",
+      "title": "Acupotomy alleviates perineural fibrosis, adhesion, and inflammation in experimental sciatic and vagus nerve adhesion models.",
+      "year": 2027
+    },
+    {
+      "pmid": "42715660",
+      "title": "Noninvasive acoustic vagus nerve stimulation modulates Emotion-Related brain networks.",
+      "year": 2027
+    },
+    {
+      "pmid": "42867037",
+      "title": "Hypertensive disorders of pregnancy: epidemiology, pathophysiology, therapeutic strategies, and maternal-offspring outcomes.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T15:04:13.037Z"
+}

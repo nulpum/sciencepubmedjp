@@ -1,0 +1,93 @@
+{
+  "slug": "non-inferiority-trial",
+  "ja": "非劣性試験",
+  "yomi": "ひれっせいしけん",
+  "en": "non-inferiority trial",
+  "category": "research",
+  "meshHeading": "Equivalence Trial",
+  "meshUi": "2023172",
+  "description": {
+    "ja": "新しい治療法が既存の標準治療と比べて「著しく劣っていないこと」を証明するための臨床試験デザインです。優越性を示すのではなく、効果が一定の許容範囲内であることを統計的に検証します。新治療が安全性やコスト、利便性で優れている場合に用いられることが多いです。",
+    "en": "A clinical trial design that aims to demonstrate a new treatment is not substantially worse than an existing standard treatment, within a pre-specified margin. Rather than proving superiority, it statistically verifies that efficacy remains within acceptable limits. This design is often used when the new treatment offers advantages in safety, cost, or convenience."
+  },
+  "usage": {
+    "ja": "論文では「非劣性マージン(non-inferiority margin)」という許容差を事前に設定し、信頼区間がこのマージンを超えないことを示します。製薬領域ではジェネリック医薬品や新剤形の評価、治療期間の短縮などを検討する際に頻繁に採用されます。",
+    "en": "In papers, researchers pre-define a non-inferiority margin and demonstrate that the confidence interval does not exceed this threshold. Commonly used in pharmaceutical research to evaluate generic drugs, new formulations, or shortened treatment durations."
+  },
+  "synonyms": {
+    "ja": "類似概念に「同等性試験(equivalence trial)」があり、こちらは両方向の差がないことを示します。優越性試験(superiority trial)とは目的が異なるため、統計手法や解釈も区別が必要です。",
+    "en": "Related to equivalence trials, which demonstrate no difference in either direction. Distinct from superiority trials in objectives, requiring different statistical methods and interpretations."
+  },
+  "pubmedCount": 2854,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 139
+    },
+    {
+      "year": 2018,
+      "count": 166
+    },
+    {
+      "year": 2019,
+      "count": 180
+    },
+    {
+      "year": 2020,
+      "count": 193
+    },
+    {
+      "year": 2021,
+      "count": 238
+    },
+    {
+      "year": 2022,
+      "count": 260
+    },
+    {
+      "year": 2023,
+      "count": 274
+    },
+    {
+      "year": 2024,
+      "count": 285
+    },
+    {
+      "year": 2025,
+      "count": 328
+    },
+    {
+      "year": 2026,
+      "count": 419
+    }
+  ],
+  "searchQuery": "(\"Equivalence Trial\"[MeSH Terms]) OR (\"non-inferiority trial\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42964789",
+      "title": "Shortened eutectic mixture of lidocaine and prilocaine plus skin cooling for pediatric vaccination pain: A randomized non-inferiority trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42675918",
+      "title": "Efficacy and safety of ferric citrate tablets in Chinese patients with hyperphosphatemia undergoing maintenance hemodialysis: a multicenter, randomized, open-label, active-controlled, phase III trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42504731",
+      "title": "Response to letter regarding 'Anterior quadratus lumborum block at the lateral supra-arcuate ligament versus thoracic paravertebral block for postoperative analgesia after laparoscopic nephrectomy: a randomized non-inferiority trial'.",
+      "year": 2026
+    },
+    {
+      "pmid": "42384896",
+      "title": "Transcutaneous auricular vagus nerve stimulation combined with ciprofol for sedation in patients undergoing same-session bidirectional endoscopy: a randomized, double-blind, placebo-controlled, three-arm non-inferiority trial protocol.",
+      "year": 2026
+    },
+    {
+      "pmid": "42300723",
+      "title": "The use of letrozole or mifepristone for pre-treatment of medical termination of pregnancy: A randomized, non-inferiority trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:49:18.659Z"
+}

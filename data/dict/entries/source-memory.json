@@ -1,0 +1,91 @@
+{
+  "slug": "source-memory",
+  "ja": "ソース記憶",
+  "yomi": "そーすきおく",
+  "en": "source memory",
+  "category": "psychology",
+  "description": {
+    "ja": "ソース記憶とは、ある情報をいつ、どこで、誰から得たのかといった情報の「出所」や「文脈」を思い出す記憶能力を指します。単に内容を覚えているだけでなく、その情報をどのような状況で獲得したかを想起できるかが重要です。加齢や認知症、前頭葉の損傷などで障害されやすい記憶機能として研究されています。",
+    "en": "Source memory refers to the ability to recall the origin or context of information, such as when, where, and from whom it was obtained. It involves not just remembering the content itself, but also recalling the circumstances under which the information was acquired. This memory function is frequently studied as it is particularly vulnerable to aging, dementia, and frontal lobe damage."
+  },
+  "usage": {
+    "ja": "心理学実験では、参加者に単語や画像を異なる条件(色、位置、話者など)で提示した後、その内容だけでなく提示条件を思い出せるかをテストする課題が用いられます。fMRIなどの脳画像研究では前頭前野や海馬の活動との関連が調べられます。",
+    "en": "In psychological experiments, participants are presented with words or images under different conditions (color, location, speaker, etc.), and are later tested on their ability to recall not just the content but also the presentation conditions. Brain imaging studies using fMRI examine the association with activity in the prefrontal cortex and hippocampus."
+  },
+  "synonyms": {
+    "ja": "文脈記憶やエピソード記憶の一側面とも関連します。内容記憶(item memory)と対比され、「何を覚えているか」ではなく「どのように出会ったか」を問う点が特徴です。source monitoring(ソースモニタリング)という関連概念もあります。",
+    "en": "It is related to contextual memory and is an aspect of episodic memory. Source memory is contrasted with item memory, focusing on 'how the information was encountered' rather than 'what was remembered.' The related concept of source monitoring is also frequently used in the literature."
+  },
+  "pubmedCount": 1018,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 64
+    },
+    {
+      "year": 2018,
+      "count": 46
+    },
+    {
+      "year": 2019,
+      "count": 59
+    },
+    {
+      "year": 2020,
+      "count": 62
+    },
+    {
+      "year": 2021,
+      "count": 67
+    },
+    {
+      "year": 2022,
+      "count": 53
+    },
+    {
+      "year": 2023,
+      "count": 39
+    },
+    {
+      "year": 2024,
+      "count": 50
+    },
+    {
+      "year": 2025,
+      "count": 54
+    },
+    {
+      "year": 2026,
+      "count": 53
+    }
+  ],
+  "searchQuery": "\"source memory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43046687",
+      "title": "The offloading paradox: reminders improve prospective memory target detection but impair output monitoring.",
+      "year": 2026
+    },
+    {
+      "pmid": "43045514",
+      "title": "Intervening contexts reshape hippocampal-cortical retrieval states and later source attribution.",
+      "year": 2026
+    },
+    {
+      "pmid": "42844862",
+      "title": "Sleep benefits cross-dimensional binding of spatial context in episodic memory.",
+      "year": 2026
+    },
+    {
+      "pmid": "42681107",
+      "title": "The contribution of semantic control to elaborative episodic encoding.",
+      "year": 2026
+    },
+    {
+      "pmid": "42663967",
+      "title": "Dissociable effects of schema congruency on item recognition and source memory across levels of expectedness and surprise.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:08:29.288Z"
+}

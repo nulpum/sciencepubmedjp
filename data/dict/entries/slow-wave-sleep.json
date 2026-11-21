@@ -1,0 +1,96 @@
+{
+  "slug": "slow-wave-sleep",
+  "ja": "徐波睡眠",
+  "yomi": "じょはすいみん",
+  "en": "slow-wave sleep",
+  "category": "biology",
+  "aliases": [
+    "深睡眠"
+  ],
+  "meshHeading": "Sleep, Slow-Wave",
+  "meshUi": "2027990",
+  "description": {
+    "ja": "徐波睡眠は、ノンレム睡眠の中で最も深い睡眠段階を指し、脳波上で周波数の遅いデルタ波(0.5-4Hz)が優勢になることが特徴です。成長ホルモンの分泌や記憶の定着、脳の老廃物除去など重要な生理機能が活発になる時期とされています。入眠後の前半に多く出現し、加齢とともに減少する傾向があります。",
+    "en": "Slow-wave sleep refers to the deepest stage of non-REM sleep, characterized by predominant delta waves (0.5-4Hz) on electroencephalography. This sleep stage is associated with important physiological functions such as growth hormone secretion, memory consolidation, and clearance of brain metabolites. It occurs primarily in the first half of the night and tends to decrease with aging."
+  },
+  "usage": {
+    "ja": "睡眠ポリグラフ検査で脳波を測定し、徐波(デルタ波)の割合で評価されます。睡眠の質、認知機能、加齢、睡眠障害などの研究で、総睡眠時間に占める徐波睡眠の割合やパワースペクトル密度として解析されます。",
+    "en": "It is measured by polysomnography through electroencephalography and evaluated by the proportion of slow waves (delta waves). In research on sleep quality, cognitive function, aging, and sleep disorders, it is analyzed as the percentage of total sleep time or as power spectral density."
+  },
+  "synonyms": {
+    "ja": "深睡眠、ステージ3睡眠、N3睡眠とも呼ばれます。古い分類ではステージ3と4に分けられていましたが、現在は統合されN3として扱われることが一般的です。デルタ睡眠という表現も使われます。",
+    "en": "Also called deep sleep, stage 3 sleep, or N3 sleep. In older classifications, it was divided into stages 3 and 4, but now it is commonly integrated and referred to as N3. The term delta sleep is also used."
+  },
+  "pubmedCount": 6777,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 217
+    },
+    {
+      "year": 2018,
+      "count": 228
+    },
+    {
+      "year": 2019,
+      "count": 243
+    },
+    {
+      "year": 2020,
+      "count": 232
+    },
+    {
+      "year": 2021,
+      "count": 252
+    },
+    {
+      "year": 2022,
+      "count": 200
+    },
+    {
+      "year": 2023,
+      "count": 210
+    },
+    {
+      "year": 2024,
+      "count": 221
+    },
+    {
+      "year": 2025,
+      "count": 231
+    },
+    {
+      "year": 2026,
+      "count": 219
+    }
+  ],
+  "searchQuery": "(\"Sleep, Slow-Wave\"[MeSH Terms]) OR (\"slow-wave sleep\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42879336",
+      "title": "Sleep EEG oscillations and synaptic plasticity in memory consolidation across NREM and REM sleep.",
+      "year": 2027
+    },
+    {
+      "pmid": "42070107",
+      "title": "Association between energy availability and sleep quality in elite female and male swimmers: a brief report.",
+      "year": 2026
+    },
+    {
+      "pmid": "41459834",
+      "title": "Role and mechanism of gut microbiota and metabolites in schizophrenia complicated with sleep disorder.",
+      "year": 2026
+    },
+    {
+      "pmid": "42777560",
+      "title": "Not all N3 sleep is equal: EEG-defined N3 sleep depth and health-related quality of life in the sleep heart health study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42772083",
+      "title": "Management of Non-REM parasomnias: A systematic review of evidence-based treatment approaches.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:56:32.197Z"
+}

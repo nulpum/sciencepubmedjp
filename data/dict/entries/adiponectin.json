@@ -1,0 +1,93 @@
+{
+  "slug": "adiponectin",
+  "ja": "アディポネクチン",
+  "yomi": "あでぃぽねくちん",
+  "en": "adiponectin",
+  "category": "biology",
+  "meshHeading": "Adiponectin",
+  "meshUi": "68052242",
+  "description": {
+    "ja": "アディポネクチンは脂肪細胞から分泌されるホルモンの一種で、インスリン感受性の改善や抗炎症作用に関わるとされています。肥満では血中濃度が低下する傾向があり、メタボリックシンドロームや糖尿病などの研究で注目される指標です。",
+    "en": "Adiponectin is a hormone secreted by adipose tissue that is associated with improved insulin sensitivity and anti-inflammatory effects. Its blood levels tend to decrease in obesity, making it a key marker in research on metabolic syndrome and diabetes."
+  },
+  "usage": {
+    "ja": "疫学研究や臨床試験では血清アディポネクチン濃度をELISA法などで測定し、肥満・糖代謝・心血管疾患リスクとの関連を調べます。動物実験ではアディポネクチン受容体の発現や遺伝子改変モデルが用いられます。",
+    "en": "In epidemiological and clinical studies, serum adiponectin levels are measured by ELISA to examine associations with obesity, glucose metabolism, and cardiovascular disease risk. Animal studies often involve adiponectin receptor expression or genetically modified models."
+  },
+  "synonyms": {
+    "ja": "「ACRP30」「AdipoQ」「GBP28」などの別名があります。論文検索では「adiponectin levels」「hypoadiponectinemia(低アディポネクチン血症)」「adiponectin receptor」などの組み合わせが有用です。",
+    "en": "Also known as ACRP30, AdipoQ, or GBP28. For literature searches, combine with terms like 'adiponectin levels,' 'hypoadiponectinemia,' or 'adiponectin receptor' for relevant results."
+  },
+  "pubmedCount": 28278,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1646
+    },
+    {
+      "year": 2018,
+      "count": 1585
+    },
+    {
+      "year": 2019,
+      "count": 1497
+    },
+    {
+      "year": 2020,
+      "count": 1546
+    },
+    {
+      "year": 2021,
+      "count": 1547
+    },
+    {
+      "year": 2022,
+      "count": 1353
+    },
+    {
+      "year": 2023,
+      "count": 1221
+    },
+    {
+      "year": 2024,
+      "count": 1109
+    },
+    {
+      "year": 2025,
+      "count": 1107
+    },
+    {
+      "year": 2026,
+      "count": 996
+    }
+  ],
+  "searchQuery": "(\"Adiponectin\"[MeSH Terms]) OR (\"adiponectin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42822680",
+      "title": "Crosstalk between visceral adipose tissue secretome and tumoral microenvironment in obesity-induced colorectal cancer.",
+      "year": 2027
+    },
+    {
+      "pmid": "43011226",
+      "title": "Evidence generation for diabetes prevention and treatment through the integration of clinical medicine, nutritional epidemiology, and behavioral science.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834213",
+      "title": "AA in Obesity and Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) Nonalcoholic Fatty Liver Disease (NAFLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "42366506",
+      "title": "Adiponectin improves the aortic dissection by inhibiting inflammatory cell infiltration and macrophage pyroptosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43001661",
+      "title": "Adipokines as biomarkers in paediatric acute pancreatitis: a prospective exploratory single-centre observational study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:52:39.878Z"
+}

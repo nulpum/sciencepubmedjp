@@ -1,0 +1,93 @@
+{
+  "slug": "synaptic-plasticity",
+  "ja": "シナプス可塑性",
+  "yomi": "しなぷすかそせい",
+  "en": "synaptic plasticity",
+  "category": "biology",
+  "meshHeading": "Neuronal Plasticity",
+  "meshUi": "68009473",
+  "description": {
+    "ja": "シナプス可塑性とは、神経細胞同士の接続部位であるシナプスにおいて、その伝達効率が経験や活動パターンに応じて変化する性質を指します。学習や記憶の基礎となる脳の重要な機能で、シナプスの強度が長期的に増強されたり減弱されたりする現象が含まれます。",
+    "en": "Synaptic plasticity refers to the ability of synapses, the junctions between neurons, to change their transmission efficiency in response to experience and patterns of activity. It is a fundamental property of the brain underlying learning and memory, encompassing phenomena where synaptic strength is enhanced or weakened over time."
+  },
+  "usage": {
+    "ja": "神経科学の論文では、長期増強(LTP)や長期抑圧(LTD)などの現象を電気生理学的記録や光学イメージングで測定する文脈で使われます。学習課題と関連づけた行動実験や、分子メカニズムの解析研究でも頻出します。",
+    "en": "In neuroscience papers, this term is used in contexts involving electrophysiological recordings or optical imaging to measure phenomena such as long-term potentiation (LTP) and long-term depression (LTD). It also frequently appears in behavioral studies linking learning tasks and molecular mechanism analyses."
+  },
+  "synonyms": {
+    "ja": "神経可塑性(neuroplasticity)はより広い概念で、シナプス可塑性はその一部です。機能的可塑性や構造的可塑性といった分類もあり、文脈に応じて使い分けられます。Hebbianプラスチシティなど特定の理論に基づく用語もあります。",
+    "en": "Neuroplasticity is a broader concept that includes synaptic plasticity as a subset. There are classifications such as functional plasticity and structural plasticity, used depending on context. Terms based on specific theories, such as Hebbian plasticity, are also employed."
+  },
+  "pubmedCount": 70656,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3254
+    },
+    {
+      "year": 2018,
+      "count": 3097
+    },
+    {
+      "year": 2019,
+      "count": 3010
+    },
+    {
+      "year": 2020,
+      "count": 2869
+    },
+    {
+      "year": 2021,
+      "count": 3002
+    },
+    {
+      "year": 2022,
+      "count": 2421
+    },
+    {
+      "year": 2023,
+      "count": 2306
+    },
+    {
+      "year": 2024,
+      "count": 2712
+    },
+    {
+      "year": 2025,
+      "count": 3758
+    },
+    {
+      "year": 2026,
+      "count": 3714
+    }
+  ],
+  "searchQuery": "(\"Neuronal Plasticity\"[MeSH Terms]) OR (\"synaptic plasticity\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42879336",
+      "title": "Sleep EEG oscillations and synaptic plasticity in memory consolidation across NREM and REM sleep.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887234",
+      "title": "Implanted and degradable hydrogel evaporative cooler for regional and repeated mild hypothermia therapy of traumatic brain injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42832867",
+      "title": "A multifunctional memristor for neuromorphic vision and secure voice encryption.",
+      "year": 2027
+    },
+    {
+      "pmid": "42893747",
+      "title": "Ginsenoside compound K inhibits complement C1qA/C3-CR3-mediated microglial synaptic pruning and neuronal pyroptosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863728",
+      "title": "Si-shen-san attenuates Alzheimer's disease pathology and cognitive deficits through multi-target regulation of astrocyte function and synaptic plasticity.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:57:29.454Z"
+}

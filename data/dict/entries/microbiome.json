@@ -1,0 +1,93 @@
+{
+  "slug": "microbiome",
+  "ja": "マイクロバイオーム",
+  "yomi": "まいくろばいおーむ",
+  "en": "microbiome",
+  "category": "biology",
+  "meshHeading": "Microbiota",
+  "meshUi": "68064307",
+  "description": {
+    "ja": "特定の環境や生物に生息する微生物群集全体とそのゲノム情報の総体を指します。腸内細菌叢(gut microbiota)のように、細菌・真菌・ウイルスなど多様な微生物とその遺伝子を含む生態系として捉えられます。ヒトの健康や疾患との関連が盛んに研究されています。",
+    "en": "The entire collection of microorganisms and their genetic material inhabiting a specific environment or organism. It encompasses diverse microbes including bacteria, fungi, and viruses as an ecosystem, such as the gut microbiota. Extensively studied for its associations with human health and disease."
+  },
+  "usage": {
+    "ja": "16S rRNA遺伝子シーケンスやメタゲノム解析により腸内・皮膚・口腔などのマイクロバイオームを調べ、疾患群と健常群での組成の違いや多様性指標(α多様性、β多様性)を比較します。特定の微生物種の存在量と代謝産物の関連も解析されます。",
+    "en": "Analyzed through 16S rRNA gene sequencing or metagenomic approaches to characterize microbial communities in gut, skin, oral cavity, etc. Studies compare compositional differences and diversity metrics (alpha/beta diversity) between disease and healthy groups, examining associations between specific taxa abundance and metabolites."
+  },
+  "synonyms": {
+    "ja": "「マイクロバイオータ(microbiota)」は微生物群そのものを指し、マイクロバイオームはその遺伝情報を含む概念ですが、実際には混同して使われることもあります。腸内細菌叢、腸内フローラは腸のマイクロバイオームを指す日常的な表現です。",
+    "en": "While 'microbiota' refers to the microbial community itself and 'microbiome' includes genetic information, terms are often used interchangeably. Gut microbiota, intestinal flora, and gut microbiome are commonly used for intestinal microbial ecosystems."
+  },
+  "pubmedCount": 181056,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 7975
+    },
+    {
+      "year": 2018,
+      "count": 10200
+    },
+    {
+      "year": 2019,
+      "count": 13427
+    },
+    {
+      "year": 2020,
+      "count": 16505
+    },
+    {
+      "year": 2021,
+      "count": 18661
+    },
+    {
+      "year": 2022,
+      "count": 18807
+    },
+    {
+      "year": 2023,
+      "count": 18932
+    },
+    {
+      "year": 2024,
+      "count": 23548
+    },
+    {
+      "year": 2025,
+      "count": 27965
+    },
+    {
+      "year": 2026,
+      "count": 25828
+    }
+  ],
+  "searchQuery": "(\"Microbiota\"[MeSH Terms]) OR (\"microbiome\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42908331",
+      "title": "Effects of xylooligosaccharide supplementation on methane emissions, rumen microbiome, and serum metabolome in lactating Jersey cows.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "42901678",
+      "title": "Microbial succession and genome-resolved metabolic functions shape flavor evolution during sauce-flavor Baijiu fermentation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901677",
+      "title": "Effects of indigenous microbiota in fresh produce on Salmonella survival and inactivation by oregano essential oil vapor.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901654",
+      "title": "Serum metaviromic profiling of yaks and Tibetan sheep provides a pre-harvest viral baseline for food-producing ruminants.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:02:32.846Z"
+}

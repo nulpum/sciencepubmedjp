@@ -1,0 +1,92 @@
+{
+  "slug": "serious-adverse-event",
+  "ja": "重篤有害事象",
+  "yomi": "じゅうとくゆうがいじしょう",
+  "en": "serious adverse event",
+  "abbr": "SAE",
+  "category": "nursing-pharma",
+  "description": {
+    "ja": "重篤有害事象(SAE)とは、臨床試験や薬剤使用時に発生した有害事象のうち、死亡・入院・障害・生命を脅かす状態など重大な結果をもたらしたものを指します。規制当局への報告が義務付けられており、医薬品の安全性評価で最も重視される指標です。",
+    "en": "A serious adverse event (SAE) is an adverse event that results in significant outcomes such as death, hospitalization, disability, or life-threatening conditions during clinical trials or medication use. SAEs are subject to mandatory reporting to regulatory authorities and represent the most critical safety indicators in drug evaluation."
+  },
+  "usage": {
+    "ja": "臨床試験の安全性評価セクションで「SAE発生率」として報告され、治験薬との因果関係の有無を慎重に判定します。ICH-GCP基準に基づき、発生後24時間以内の報告が求められることが多く、論文では「No SAEs were reported」や「SAE incidence was similar between groups」などの表現で記載されます。",
+    "en": "SAEs are reported in the safety evaluation section of clinical trials as 'SAE incidence,' with careful assessment of causal relationship to the investigational product. Under ICH-GCP guidelines, reporting within 24 hours is often required, and papers typically describe findings as 'No SAEs were reported' or 'SAE incidence was similar between groups.'"
+  },
+  "synonyms": {
+    "ja": "「重大な有害事象」とも呼ばれ、単なる有害事象(AE)とは重症度で区別されます。SAEは規制上の定義に基づく分類であり、重症度gradeとは異なる概念です。関連用語に「予期しない重篤な有害反応(SUSAR)」があります。",
+    "en": "Also called 'serious adverse reactions,' SAEs are distinguished from ordinary adverse events (AEs) by severity. SAEs are defined by regulatory criteria and differ from severity grades. Related terms include 'suspected unexpected serious adverse reaction (SUSAR).'"
+  },
+  "pubmedCount": 4243,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 248
+    },
+    {
+      "year": 2018,
+      "count": 269
+    },
+    {
+      "year": 2019,
+      "count": 271
+    },
+    {
+      "year": 2020,
+      "count": 313
+    },
+    {
+      "year": 2021,
+      "count": 367
+    },
+    {
+      "year": 2022,
+      "count": 328
+    },
+    {
+      "year": 2023,
+      "count": 316
+    },
+    {
+      "year": 2024,
+      "count": 303
+    },
+    {
+      "year": 2025,
+      "count": 317
+    },
+    {
+      "year": 2026,
+      "count": 290
+    }
+  ],
+  "searchQuery": "\"serious adverse event\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43061269",
+      "title": "Nurse-delivered cognitive behavioural therapy for anxiety in cardiac disease versus usual care: a randomised superiority trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42963077",
+      "title": "Serious Adverse Events in Adult ICU Patients: A Substudy of the PATIENCE Cohort.",
+      "year": 2027
+    },
+    {
+      "pmid": "42755112",
+      "title": "Effectiveness, Safety and Pharmacokinetics of BGM0504, a Dual GLP-1/GIP Receptor Agonist, in Chinese Adults With Overweight or Obesity Without Diabetes: A Phase 2 Multicentre, Randomized, Double-Blind, Placebo-Controlled Trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42616314",
+      "title": "Safety and feasibility of a balloon-based pulsed field ablation system for the catheter ablation of paroxysmal atrial fibrillation.",
+      "year": 2026
+    },
+    {
+      "pmid": "42552850",
+      "title": "Safety, Tolerability, and Efficacy of a Prophylactic Sirolimus Protocol for Patients Receiving Delandistrogene Moxeparvovec-Rokl Gene Therapy.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:36:09.056Z"
+}

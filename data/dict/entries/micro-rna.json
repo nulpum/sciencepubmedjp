@@ -1,0 +1,94 @@
+{
+  "slug": "micro-rna",
+  "ja": "マイクロRNA",
+  "yomi": "まいくろあーるえぬえー",
+  "en": "microRNA",
+  "abbr": "miRNA",
+  "category": "biology",
+  "meshHeading": "MicroRNAs",
+  "meshUi": "68035683",
+  "description": {
+    "ja": "マイクロRNA(miRNA)は、約22塩基程度の短い一本鎖RNA分子で、遺伝子発現を制御する重要な役割を持ちます。標的となるメッセンジャーRNA(mRNA)に結合することで、タンパク質の翻訳を抑制したりmRNAを分解したりします。細胞の分化、増殖、アポトーシスなど様々な生命現象の調節に関わっており、がんをはじめとする疾患との関連も研究されています。",
+    "en": "MicroRNA (miRNA) is a small non-coding RNA molecule of approximately 22 nucleotides in length that plays a crucial role in regulating gene expression. It binds to target messenger RNAs (mRNAs) to suppress protein translation or promote mRNA degradation. miRNAs are involved in regulating various biological processes including cell differentiation, proliferation, and apoptosis, and their roles in diseases such as cancer are actively studied."
+  },
+  "usage": {
+    "ja": "論文では「miR-21の発現上昇」「let-7ファミリーによる標的遺伝子の制御」のように個別のmiRNA名とその機能が記載されます。定量的RT-PCR、マイクロアレイ、次世代シーケンシングなどで発現量を測定し、ルシフェラーゼアッセイで標的遺伝子との結合を検証する手法が一般的です。",
+    "en": "Papers typically describe specific miRNAs such as 'upregulation of miR-21' or 'target gene regulation by let-7 family.' Expression levels are measured using quantitative RT-PCR, microarray, or next-generation sequencing, while luciferase assays are commonly used to validate miRNA-target gene interactions."
+  },
+  "synonyms": {
+    "ja": "miRNAと略記されることが最も多く、マイクロRNAとカタカナ表記されることもあります。small non-coding RNA(低分子非コードRNA)の一種ですが、siRNA(低分子干渉RNA)とは生合成経路や機能が異なるため区別が必要です。個別のmiRNAは「miR-」で始まる番号で命名されます(例:miR-21、miR-155)。",
+    "en": "Most commonly abbreviated as miRNA, it is a type of small non-coding RNA. It should be distinguished from siRNA (small interfering RNA), which has different biogenesis pathways and functions. Individual miRNAs are named with 'miR-' followed by a number (e.g., miR-21, miR-155), and mature sequences from opposite arms of the precursor hairpin are designated with -5p or -3p suffixes."
+  },
+  "pubmedCount": 183272,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 12781
+    },
+    {
+      "year": 2018,
+      "count": 14567
+    },
+    {
+      "year": 2019,
+      "count": 16566
+    },
+    {
+      "year": 2020,
+      "count": 18405
+    },
+    {
+      "year": 2021,
+      "count": 18170
+    },
+    {
+      "year": 2022,
+      "count": 16966
+    },
+    {
+      "year": 2023,
+      "count": 13843
+    },
+    {
+      "year": 2024,
+      "count": 12335
+    },
+    {
+      "year": 2025,
+      "count": 11539
+    },
+    {
+      "year": 2026,
+      "count": 8979
+    }
+  ],
+  "searchQuery": "(\"MicroRNAs\"[MeSH Terms]) OR (\"microRNA\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43041590",
+      "title": "Genetically engineered extracellular vesicles with chimeric antigen receptors of human stem cell-derived neutrophils targeting fibroblast activation protein to modulate tumor microenvironment.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971085",
+      "title": "A background-suppressed CRISPR/Cas13a-HRCA biosensor for ultrasensitive miR-137 detection toward differential screening of Alzheimer's disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967396",
+      "title": "Metal-organic framework-assisted signal amplification in electrochemiluminescent microRNA biosensing: Current advances and barriers to clinical implementation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967392",
+      "title": "A pH/miR-21 dual-responsive multifunctional DNA tetrahedron for targeted tumor imaging and synergistic chemo-gene therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965052",
+      "title": "3D culture-derived MSC EV facilitate repair by activating microglial autophagy in spinal cord injury.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:07:01.217Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "generalized-anxiety-disorder",
+  "ja": "全般性不安障害",
+  "yomi": "ぜんぱんせいふあんしょうがい",
+  "en": "generalized anxiety disorder",
+  "abbr": "GAD",
+  "category": "psychology",
+  "meshHeading": "Generalized Anxiety Disorder",
+  "meshUi": "2108144",
+  "description": {
+    "ja": "全般性不安障害(GAD)は、特定の状況に限定されず、日常生活の様々な出来事や活動に対して過度で制御困難な心配や不安が6か月以上続く状態を指します。筋肉の緊張、疲労感、集中困難、睡眠障害などの身体症状を伴うことが特徴です。心理学や精神医学の研究では、不安症群の一つとして扱われます。",
+    "en": "Generalized Anxiety Disorder (GAD) refers to a condition characterized by excessive, uncontrollable worry and anxiety about various everyday events and activities, persisting for at least six months without being limited to specific situations. It is typically accompanied by physical symptoms such as muscle tension, fatigue, difficulty concentrating, and sleep disturbances, and is classified as one of the anxiety disorders in psychological and psychiatric research."
+  },
+  "usage": {
+    "ja": "論文では、GAD-7(7項目の質問票)やHAM-A(ハミルトン不安評価尺度)などの標準化された評価尺度を用いて症状の重症度を測定します。認知行動療法の効果検証、神経画像研究における扁桃体の活動パターン分析、疫学調査における有病率の報告などで頻繁に使用されます。",
+    "en": "In research papers, GAD severity is typically measured using standardized assessment tools such as the GAD-7 (7-item questionnaire) or HAM-A (Hamilton Anxiety Rating Scale). The term is frequently used in studies examining the efficacy of cognitive behavioral therapy, neuroimaging research analyzing amygdala activity patterns, and epidemiological surveys reporting prevalence rates."
+  },
+  "synonyms": {
+    "ja": "「全般不安症」とも呼ばれ、DSM-5(精神疾患の診断・統計マニュアル第5版)での正式な診断名です。「慢性不安」や「病的心配」といった表現と混同されることがありますが、GADは診断基準を満たす特定の状態を指します。検索時は「generalized anxiety」「GAD」のほか「excessive worry」でも関連文献が見つかります。",
+    "en": "Also referred to as \"generalized anxiety syndrome,\" GAD is an official diagnostic term in the DSM-5 (Diagnostic and Statistical Manual of Mental Disorders, 5th edition). While sometimes confused with descriptions like \"chronic anxiety\" or \"pathological worry,\" GAD specifically refers to a condition meeting defined diagnostic criteria. Literature searches can use \"generalized anxiety,\" \"GAD,\" or \"excessive worry\" as keywords."
+  },
+  "pubmedCount": 13921,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 491
+    },
+    {
+      "year": 2018,
+      "count": 482
+    },
+    {
+      "year": 2019,
+      "count": 576
+    },
+    {
+      "year": 2020,
+      "count": 859
+    },
+    {
+      "year": 2021,
+      "count": 1216
+    },
+    {
+      "year": 2022,
+      "count": 1311
+    },
+    {
+      "year": 2023,
+      "count": 1326
+    },
+    {
+      "year": 2024,
+      "count": 1304
+    },
+    {
+      "year": 2025,
+      "count": 1583
+    },
+    {
+      "year": 2026,
+      "count": 1573
+    }
+  ],
+  "searchQuery": "(\"Generalized Anxiety Disorder\"[MeSH Terms]) OR (\"generalized anxiety disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42863799",
+      "title": "Associations of one-to-one peer support service and intervention outcomes among older adults with depressive symptoms: Evidence from a community-based stepped care programme for late-life depression in Hong Kong.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843468",
+      "title": "Mild depressive symptoms in older U.S. veterans: Prevalence, correlates, and psychiatric and functional burden.",
+      "year": 2027
+    },
+    {
+      "pmid": "42829165",
+      "title": "Trajectory of maternal perinatal negative psychological states and its association with early offspring neurodevelopment: A longitudinal cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42748768",
+      "title": "Shared and disorder-specific functional alterations in generalized anxiety disorder and major depressive disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42744144",
+      "title": "Altered resting-state EEG microstate topographies and transition dynamics in generalized anxiety disorder.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:13:43.844Z"
+}

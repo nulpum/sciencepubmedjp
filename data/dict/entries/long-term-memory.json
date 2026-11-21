@@ -1,0 +1,93 @@
+{
+  "slug": "long-term-memory",
+  "ja": "長期記憶",
+  "yomi": "ちょうききおく",
+  "en": "long-term memory",
+  "category": "psychology",
+  "meshHeading": "Memory, Long-Term",
+  "meshUi": "68057567",
+  "description": {
+    "ja": "数分以上から数十年にわたって保持される記憶のこと。短期記憶や作業記憶とは異なり、容量に制限がなく、繰り返しや意味づけによって定着する。宣言的記憶(エピソード記憶・意味記憶)と手続き記憶に大きく分類される。",
+    "en": "Memory that is retained from minutes to decades, distinct from short-term or working memory. It has virtually unlimited capacity and is consolidated through repetition or semantic processing. It is broadly classified into declarative memory (episodic and semantic) and procedural memory."
+  },
+  "usage": {
+    "ja": "心理学・神経科学の論文では、記憶課題(単語リスト・物語の再生など)を用いて数日後や数週間後の想起率を測定し、海馬や大脳皮質の活動をfMRIで観察する研究が多い。認知症研究では長期記憶の障害パターンが重要な指標となる。",
+    "en": "In psychology and neuroscience papers, long-term memory is assessed using tasks such as word-list or story recall after days or weeks, often with fMRI to observe hippocampal and cortical activity. Impairment patterns are key indicators in dementia research."
+  },
+  "synonyms": {
+    "ja": "LTMと略記されることもある。短期記憶(STM)、作業記憶(working memory)と対比して用いられる。consolidation(固定化・定着)やretrieval(検索・想起)という関連用語とともに論じられる。",
+    "en": "Often abbreviated as LTM. It is contrasted with short-term memory (STM) and working memory. Related terms include consolidation and retrieval, which describe processes of encoding and accessing long-term memories."
+  },
+  "pubmedCount": 14989,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 857
+    },
+    {
+      "year": 2018,
+      "count": 885
+    },
+    {
+      "year": 2019,
+      "count": 913
+    },
+    {
+      "year": 2020,
+      "count": 924
+    },
+    {
+      "year": 2021,
+      "count": 876
+    },
+    {
+      "year": 2022,
+      "count": 811
+    },
+    {
+      "year": 2023,
+      "count": 767
+    },
+    {
+      "year": 2024,
+      "count": 823
+    },
+    {
+      "year": 2025,
+      "count": 865
+    },
+    {
+      "year": 2026,
+      "count": 676
+    }
+  ],
+  "searchQuery": "(\"Memory, Long-Term\"[MeSH Terms]) OR (\"long-term memory\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42879336",
+      "title": "Sleep EEG oscillations and synaptic plasticity in memory consolidation across NREM and REM sleep.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863209",
+      "title": "Memristor-based neuromorphic circuit based on associative network theory of mood and memory: A bio-Inspired approach for robotics.",
+      "year": 2027
+    },
+    {
+      "pmid": "43046925",
+      "title": "Neurocognitive functioning and psychological outcomes in advanced cancer survivors treated with immune checkpoint blockade: A prospective longitudinal study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42988363",
+      "title": "Using occupation to support dementia and delirium care in hospital: An observational pilot study of a Task Box intervention.",
+      "year": 2026
+    },
+    {
+      "pmid": "42988287",
+      "title": "Repetition dissociates pointer and content-based representations in visual working memory: contrasting the CDA with multivariate shape decoding.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:06:16.550Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "framing-effect",
+  "ja": "フレーミング効果",
+  "yomi": "ふれーみんぐこうか",
+  "en": "framing effect",
+  "category": "psychology",
+  "description": {
+    "ja": "同じ情報でも表現方法や文脈の提示の仕方によって、人々の判断や意思決定が変化する心理現象を指します。例えば「生存率90%」と「死亡率10%」は数値的に同じですが、受け手の印象や選択が異なることがあります。行動経済学や認知心理学で広く研究されている概念です。",
+    "en": "A psychological phenomenon where people's judgments and decisions change depending on how the same information is presented or framed. For example, '90% survival rate' and '10% mortality rate' are numerically identical, but may lead to different impressions and choices. This concept is widely studied in behavioral economics and cognitive psychology."
+  },
+  "usage": {
+    "ja": "医療場面での治療選択、リスク認知、健康行動の研究などで用いられます。実験では同一内容を「利得フレーム」と「損失フレーム」で提示し、参加者の選択や態度の違いを測定することが典型的です。",
+    "en": "Used in studies of treatment choices in medical settings, risk perception, and health behaviors. Experiments typically present identical content in 'gain frames' versus 'loss frames' and measure differences in participants' choices and attitudes."
+  },
+  "synonyms": {
+    "ja": "「フレーミングバイアス」「枠組み効果」とも呼ばれます。プロスペクト理論における「参照点依存性」と関連が深く、ポジティブフレームとネガティブフレームの対比で検討されることが多いです。",
+    "en": "Also called 'framing bias' or 'message framing.' Closely related to 'reference dependence' in prospect theory, often examined through contrasts between positive and negative frames."
+  },
+  "pubmedCount": 398,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 25
+    },
+    {
+      "year": 2018,
+      "count": 25
+    },
+    {
+      "year": 2019,
+      "count": 16
+    },
+    {
+      "year": 2020,
+      "count": 26
+    },
+    {
+      "year": 2021,
+      "count": 36
+    },
+    {
+      "year": 2022,
+      "count": 55
+    },
+    {
+      "year": 2023,
+      "count": 35
+    },
+    {
+      "year": 2024,
+      "count": 29
+    },
+    {
+      "year": 2025,
+      "count": 26
+    },
+    {
+      "year": 2026,
+      "count": 26
+    }
+  ],
+  "searchQuery": "\"framing effect\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43055502",
+      "title": "When One Case Feels Riskier Than One Hundred Cases: A New Framing Effect in Risk Communication.",
+      "year": 2026
+    },
+    {
+      "pmid": "42977421",
+      "title": "Calibrating risk perception in household food safety: A mixed-methods field trial of framing and regulatory fit.",
+      "year": 2026
+    },
+    {
+      "pmid": "43037454",
+      "title": "The Allure of Simplicity: Framing Effects and Theoretical Virtues.",
+      "year": 2026
+    },
+    {
+      "pmid": "42723845",
+      "title": "The debiasing paradox: cognitive biases in judicial adjudication of valuation adjustment mechanisms across Chinese and American courts.",
+      "year": 2026
+    },
+    {
+      "pmid": "42551567",
+      "title": "The Cost of a Word: Radiation Therapy Versus Radiotherapy and Public Treatment Preferences.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:25:57.495Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "schizophrenia",
+  "ja": "統合失調症",
+  "yomi": "とうごうしっちょうしょう",
+  "en": "schizophrenia",
+  "category": "psychology",
+  "meshHeading": "Schizophrenia",
+  "meshUi": "68012559",
+  "description": {
+    "ja": "統合失調症は、幻覚や妄想などの陽性症状、感情の平板化や意欲低下などの陰性症状、認知機能の障害を特徴とする精神疾患です。通常、青年期から成人早期に発症し、神経伝達物質(特にドパミン)の異常が関与すると考えられています。研究では脳画像、遺伝要因、認知機能などが調査されています。",
+    "en": "Schizophrenia is a mental disorder characterized by positive symptoms such as hallucinations and delusions, negative symptoms including emotional flattening and reduced motivation, and cognitive impairments. It typically emerges in adolescence to early adulthood and is associated with neurotransmitter abnormalities, particularly involving dopamine. Research examines brain imaging, genetic factors, and cognitive function."
+  },
+  "usage": {
+    "ja": "論文では診断基準としてDSM-5やICD-11が用いられ、症状評価にはPANSS(陽性・陰性症状評価尺度)などの標準化されたスケールが使われます。脳構造や機能の研究にはfMRIやPETスキャン、遺伝研究にはゲノムワイド関連解析(GWAS)が活用されます。",
+    "en": "In research, diagnostic criteria such as DSM-5 or ICD-11 are applied, and symptom assessment uses standardized scales like PANSS (Positive and Negative Syndrome Scale). Brain structure and function studies employ fMRI or PET scans, while genetic research utilizes genome-wide association studies (GWAS)."
+  },
+  "synonyms": {
+    "ja": "かつては「精神分裂病」と呼ばれていましたが、2002年に日本精神神経学会により「統合失調症」に名称変更されました。英語では「schizophrenic disorder」とも表記され、サブタイプ(妄想型、解体型など)の分類が研究では使われることがあります。",
+    "en": "Previously termed \"dementia praecox\" historically, the condition is also referred to as \"schizophrenic disorder.\" Research may employ subtypes such as paranoid, disorganized, or catatonic schizophrenia, though current diagnostic systems emphasize dimensional approaches over categorical subtypes."
+  },
+  "pubmedCount": 179955,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 6478
+    },
+    {
+      "year": 2018,
+      "count": 6657
+    },
+    {
+      "year": 2019,
+      "count": 6489
+    },
+    {
+      "year": 2020,
+      "count": 6905
+    },
+    {
+      "year": 2021,
+      "count": 7150
+    },
+    {
+      "year": 2022,
+      "count": 6857
+    },
+    {
+      "year": 2023,
+      "count": 6499
+    },
+    {
+      "year": 2024,
+      "count": 6341
+    },
+    {
+      "year": 2025,
+      "count": 6873
+    },
+    {
+      "year": 2026,
+      "count": 6183
+    }
+  ],
+  "searchQuery": "(\"Schizophrenia\"[MeSH Terms]) OR (\"schizophrenia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42888839",
+      "title": "Local-Global Spherical Sliced Wasserstein Graph Kernel for Schizophrenia Identification.",
+      "year": 2027
+    },
+    {
+      "pmid": "42790558",
+      "title": "Extracts of Coriaria nepalensis ameliorate MK-801-induced schizophrenia-like behaviors via regulation of neurotransmitter imbalance and neuroinflammation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800397",
+      "title": "Multi criteria evaluation of schizophrenia drugs: DFT, ADMET, and molecular docking investigations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854788",
+      "title": "Sleep quality and its associated factors among community-dwelling patients with severe mental disorders in Minhang District, Shanghai: A cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838229",
+      "title": "Cognitive performance and self-reported physical exercise in bipolar disorder: A cross-sectional analysis of pre-randomization screening data from an ongoing randomized controlled trial.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:12:19.141Z"
+}

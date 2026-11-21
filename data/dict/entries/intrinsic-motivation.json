@@ -1,0 +1,91 @@
+{
+  "slug": "intrinsic-motivation",
+  "ja": "内発的動機づけ",
+  "yomi": "ないはつてきどうきづけ",
+  "en": "intrinsic motivation",
+  "category": "psychology",
+  "description": {
+    "ja": "内発的動機づけとは、外部からの報酬や強制ではなく、活動そのものへの興味や楽しさによって行動が動機づけられる状態を指します。心理学では、自律性・有能感・関係性の3つの基本的欲求が満たされることで高まるとされています。",
+    "en": "Intrinsic motivation refers to engaging in an activity for its inherent satisfaction and interest rather than for external rewards or pressure. In psychology, it is theorized to increase when three basic psychological needs—autonomy, competence, and relatedness—are fulfilled."
+  },
+  "usage": {
+    "ja": "教育心理学や組織行動研究において、自己決定理論(Self-Determination Theory)の枠組みで測定されることが多く、質問紙(Intrinsic Motivation Inventoryなど)やインタビューによって評価されます。学習成果、創造性、持続性との関連が検討されます。",
+    "en": "Commonly measured within the Self-Determination Theory framework in educational and organizational psychology using questionnaires (e.g., Intrinsic Motivation Inventory) or interviews. Studies examine its relationship with learning outcomes, creativity, and persistence."
+  },
+  "synonyms": {
+    "ja": "対義語は「外発的動機づけ(extrinsic motivation)」で、外部報酬や罰によって駆動される状態です。自律的動機づけ(autonomous motivation)という上位概念に含まれることもあり、統制的動機づけ(controlled motivation)と対比されます。",
+    "en": "The antonym is extrinsic motivation, driven by external rewards or punishments. It is sometimes included in the broader concept of autonomous motivation, contrasted with controlled motivation."
+  },
+  "pubmedCount": 3817,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 170
+    },
+    {
+      "year": 2018,
+      "count": 176
+    },
+    {
+      "year": 2019,
+      "count": 199
+    },
+    {
+      "year": 2020,
+      "count": 220
+    },
+    {
+      "year": 2021,
+      "count": 300
+    },
+    {
+      "year": 2022,
+      "count": 350
+    },
+    {
+      "year": 2023,
+      "count": 326
+    },
+    {
+      "year": 2024,
+      "count": 336
+    },
+    {
+      "year": 2025,
+      "count": 534
+    },
+    {
+      "year": 2026,
+      "count": 587
+    }
+  ],
+  "searchQuery": "\"intrinsic motivation\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42710349",
+      "title": "\"I don't see myself in the nursing profession in the next five years:\" Brain drain and intentions to leave clinical practice among newly qualified nurses.",
+      "year": 2027
+    },
+    {
+      "pmid": "42480056",
+      "title": "Engagement in cardiac rehabilitation after a first myocardial infarction: a qualitative evidence synthesis of patient experiences.",
+      "year": 2026
+    },
+    {
+      "pmid": "42374842",
+      "title": "Consensus and learning climate in temporary versus permanent teams in team-based learning.",
+      "year": 2026
+    },
+    {
+      "pmid": "43041759",
+      "title": "Social prescribing interventions for pre-frail or frail older adults: a scoping review.",
+      "year": 2026
+    },
+    {
+      "pmid": "43032085",
+      "title": "Curricular Experiences Perceived to Support Resilience, Motivation, and Curiosity in First-Year Medical Students.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:20:08.076Z"
+}

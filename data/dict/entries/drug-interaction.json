@@ -1,0 +1,93 @@
+{
+  "slug": "drug-interaction",
+  "ja": "薬物相互作用",
+  "yomi": "やくぶつそうごさよう",
+  "en": "drug interaction",
+  "category": "nursing-pharma",
+  "meshHeading": "Drug Interactions",
+  "meshUi": "68004347",
+  "description": {
+    "ja": "2種類以上の薬剤を同時に使用した際に、一方の薬が他方の効果や副作用に影響を及ぼす現象です。薬の吸収・代謝・排泄が変化したり、薬理作用が増強または減弱したりすることがあります。重大な健康リスクにつながる場合もあるため、薬物療法の研究や臨床実践で重要な観察項目です。",
+    "en": "A phenomenon where two or more drugs taken together affect each other's efficacy or side effects. Drug interactions can alter absorption, metabolism, or excretion, and may enhance or diminish pharmacological actions. This is a critical consideration in pharmacotherapy research and clinical practice as it can lead to serious health risks."
+  },
+  "usage": {
+    "ja": "薬剤疫学研究や臨床試験で、併用薬の有無や種類を記録し、有害事象との関連を分析する際に使われます。薬物動態学的相互作用(体内での薬の動き)と薬力学的相互作用(薬の作用メカニズム)に分類して評価されることが多く、電子カルテデータやデータベース研究でも頻繁に検討されます。",
+    "en": "Used in pharmacoepidemiological studies and clinical trials to document concomitant medications and analyze their association with adverse events. Interactions are often classified as pharmacokinetic (affecting drug movement in the body) or pharmacodynamic (affecting drug mechanisms of action), and are frequently examined in electronic health record data and database studies."
+  },
+  "synonyms": {
+    "ja": "「薬剤相互作用」「drug-drug interaction(DDI)」とも呼ばれます。食品や健康食品との相互作用は「drug-food interaction」、薬と疾患の相互作用は「drug-disease interaction」として区別されることがあります。多剤併用(polypharmacy)の文脈でもよく議論されます。",
+    "en": "Also referred to as 'drug-drug interaction (DDI)'. Interactions with food or supplements are termed 'drug-food interaction', while those with diseases are called 'drug-disease interaction'. This term is frequently discussed in the context of polypharmacy."
+  },
+  "pubmedCount": 182807,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4407
+    },
+    {
+      "year": 2018,
+      "count": 4260
+    },
+    {
+      "year": 2019,
+      "count": 4312
+    },
+    {
+      "year": 2020,
+      "count": 4133
+    },
+    {
+      "year": 2021,
+      "count": 3420
+    },
+    {
+      "year": 2022,
+      "count": 1864
+    },
+    {
+      "year": 2023,
+      "count": 1625
+    },
+    {
+      "year": 2024,
+      "count": 2998
+    },
+    {
+      "year": 2025,
+      "count": 3712
+    },
+    {
+      "year": 2026,
+      "count": 3013
+    }
+  ],
+  "searchQuery": "(\"Drug Interactions\"[MeSH Terms]) OR (\"drug interaction\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42863263",
+      "title": "Synergistic antibacterial effects of zinc oxide with cinnamaldehyde or carvacrol against Brochothrix thermosphacta and their application in chicken breast preservation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42480877",
+      "title": "Herb-drug interactions with clinical impact: A systematic review of global clinical evidence on medicinal plants widely used in Ecuador.",
+      "year": 2027
+    },
+    {
+      "pmid": "42480876",
+      "title": "Post-marketing safety profile and potential aspirin interaction of Serenoa repens extract: A real-world study using FAERS and network toxicology.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887068",
+      "title": "Demethylgorgosterol-derived steroids as a new class of RORγ-preferential inverse agonists.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843121",
+      "title": "A benchmark study comparing deep learning and path analysis approaches for multi-class link prediction on a disease-specific literature knowledge graph.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:33:00.897Z"
+}

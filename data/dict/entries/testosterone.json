@@ -1,0 +1,93 @@
+{
+  "slug": "testosterone",
+  "ja": "テストステロン",
+  "yomi": "てすとすてろん",
+  "en": "testosterone",
+  "category": "biology",
+  "meshHeading": "Testosterone",
+  "meshUi": "68013739",
+  "description": {
+    "ja": "主に精巣や卵巣で産生される男性ホルモン (アンドロゲン) の一種で、筋肉量や骨密度、性機能、気分などに関与するステロイドホルモンです。男性で多く分泌されますが、女性でも少量産生され、両性で重要な生理機能を担います。",
+    "en": "Testosterone is a steroid hormone and primary androgen produced mainly in the testes and ovaries, playing key roles in muscle mass, bone density, sexual function, and mood. It is secreted in higher amounts in males but is also produced in smaller quantities in females, serving important physiological functions in both sexes."
+  },
+  "usage": {
+    "ja": "論文では血清テストステロン濃度 (ng/dL または nmol/L) が測定され、加齢による低下、運動や栄養介入の影響、性腺機能低下症などの内分泌疾患、またメタボリックシンドロームや心血管疾患との関連が調べられます。測定には免疫測定法や質量分析法が用いられ、総テストステロンと遊離テストステロンが区別されることがあります。",
+    "en": "In research, serum testosterone levels (ng/dL or nmol/L) are measured to examine age-related decline, effects of exercise or nutritional interventions, endocrine disorders such as hypogonadism, and associations with metabolic syndrome or cardiovascular disease. Measurement methods include immunoassays and mass spectrometry, with distinction often made between total and free testosterone."
+  },
+  "synonyms": {
+    "ja": "「テストステロン値」「血中テストステロン」「総テストステロン (total testosterone)」「遊離テストステロン (free testosterone)」などと表記されます。研究文脈では「T」と略されることもあり、女性ホルモンのエストロゲンとの比較で論じられる場合もあります。",
+    "en": "Also referred to as 'testosterone level,' 'serum testosterone,' 'total testosterone,' or 'free testosterone.' In research contexts, it may be abbreviated as 'T' and is sometimes discussed in comparison with estrogen or other sex hormones."
+  },
+  "pubmedCount": 122614,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3395
+    },
+    {
+      "year": 2018,
+      "count": 3437
+    },
+    {
+      "year": 2019,
+      "count": 3439
+    },
+    {
+      "year": 2020,
+      "count": 3751
+    },
+    {
+      "year": 2021,
+      "count": 3820
+    },
+    {
+      "year": 2022,
+      "count": 3689
+    },
+    {
+      "year": 2023,
+      "count": 3518
+    },
+    {
+      "year": 2024,
+      "count": 3687
+    },
+    {
+      "year": 2025,
+      "count": 3960
+    },
+    {
+      "year": 2026,
+      "count": 3653
+    }
+  ],
+  "searchQuery": "(\"Testosterone\"[MeSH Terms]) OR (\"testosterone\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43024574",
+      "title": "Structural Aspects of Gubernaculum Testis and Inguinal Region Applied to Human Tes-ticular Migration and Undescended Testis - A Narrative Review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906125",
+      "title": "Extending the Graft Harvesting Area in Severe Penoscrotal Hypospadias: The Rainbow Technique.",
+      "year": 2027
+    },
+    {
+      "pmid": "42674091",
+      "title": "Preliminary analytical evaluation of the fully automated Cobas i601 LC-MS/MS system for steroid hormones and vitamin D in a clinical laboratory.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901065",
+      "title": "Integrated serum pharmacochemistry , network pharmacology, untargeted metabolomics and experimental validation to explore the mechanism of Wenjian Qigong Decoction in the treatment of polycystic ovary syndrome.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:53:53.803Z"
+}

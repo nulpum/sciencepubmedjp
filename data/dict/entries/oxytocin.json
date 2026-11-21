@@ -1,0 +1,93 @@
+{
+  "slug": "oxytocin",
+  "ja": "オキシトシン",
+  "yomi": "おきしとしん",
+  "en": "oxytocin",
+  "category": "biology",
+  "meshHeading": "Oxytocin",
+  "meshUi": "68010121",
+  "description": {
+    "ja": "オキシトシンは脳の視床下部で合成され下垂体後葉から分泌されるペプチドホルモンで、子宮収縮や乳汁分泌を促すほか、社会的行動や愛着形成に関わるとされています。生物学研究では「愛情ホルモン」「社交ホルモン」とも呼ばれ、ヒトや動物の行動・神経科学で広く研究されています。",
+    "en": "Oxytocin is a peptide hormone synthesized in the hypothalamus and released from the posterior pituitary gland, promoting uterine contractions and milk ejection, while also being involved in social behavior and attachment. In biological research, it is often called the 'love hormone' or 'social hormone' and is widely studied in behavioral and neuroscience contexts across humans and animals."
+  },
+  "usage": {
+    "ja": "論文では出産時の子宮収縮、授乳期の乳汁射出反射の生理的メカニズムのほか、母子間の愛着形成、ペア結合、社会的認知、信頼行動などの心理・行動実験で血中または唾液中オキシトシン濃度を測定したり、鼻腔内投与による行動変化を調べたりします。動物モデルではプレーリーハタネズミなどでペア結合の神経基盤研究にも用いられます。",
+    "en": "In research papers, oxytocin is measured in blood or saliva to study physiological mechanisms of uterine contractions during labor and milk let-down during lactation, as well as psychological and behavioral experiments on parent-infant attachment, pair bonding, social cognition, and trust behavior. Studies also investigate behavioral changes following intranasal administration. In animal models such as prairie voles, it is used to explore neural bases of pair bonding."
+  },
+  "synonyms": {
+    "ja": "略称はOTまたはOXTと表記されることがあります。類似の神経ペプチドにバソプレシン(抗利尿ホルモン)があり、構造が似ていますが機能は異なります。文脈により「内因性オキシトシン」(体内で自然に分泌されるもの)と「外因性オキシトシン」(実験的に投与されるもの)を区別する場合があります。",
+    "en": "Abbreviated as OT or OXT in some literature. A related neuropeptide is vasopressin (antidiuretic hormone), which has a similar structure but different functions. Depending on context, researchers distinguish between 'endogenous oxytocin' (naturally secreted in the body) and 'exogenous oxytocin' (experimentally administered)."
+  },
+  "pubmedCount": 33856,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1064
+    },
+    {
+      "year": 2018,
+      "count": 1107
+    },
+    {
+      "year": 2019,
+      "count": 1094
+    },
+    {
+      "year": 2020,
+      "count": 1126
+    },
+    {
+      "year": 2021,
+      "count": 1163
+    },
+    {
+      "year": 2022,
+      "count": 1090
+    },
+    {
+      "year": 2023,
+      "count": 1018
+    },
+    {
+      "year": 2024,
+      "count": 1035
+    },
+    {
+      "year": 2025,
+      "count": 1147
+    },
+    {
+      "year": 2026,
+      "count": 1068
+    }
+  ],
+  "searchQuery": "(\"Oxytocin\"[MeSH Terms]) OR (\"oxytocin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42766882",
+      "title": "Carboxyl-enriched molecularly imprinted interface with enhanced electrostatic binding for ultrasensitive oxytocin detection in a portable electrochemical platform.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828790",
+      "title": "The corpus luteum transcriptome is dysregulated in dairy cows with mastitis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42998617",
+      "title": "A UHPLC-MS/MS method for the quantification of oxytocin in human saliva.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914679",
+      "title": "Longitudinal associations between plasma oxytocin levels and borderline personality disorder symptoms in adolescents.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:54:34.308Z"
+}

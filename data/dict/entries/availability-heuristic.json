@@ -1,0 +1,91 @@
+{
+  "slug": "availability-heuristic",
+  "ja": "利用可能性ヒューリスティック",
+  "yomi": "りようかのうせいひゅーりすてぃっく",
+  "en": "availability heuristic",
+  "category": "psychology",
+  "description": {
+    "ja": "利用可能性ヒューリスティックとは、記憶から容易に思い出せる事例や情報をもとに、物事の頻度や確率を判断する心理的な傾向のことです。メディアで頻繁に報道される出来事ほど実際より起こりやすいと判断したり、印象的な経験が判断に強く影響したりする現象を説明します。",
+    "en": "The availability heuristic is a mental shortcut where people estimate the frequency or probability of events based on how easily examples come to mind. It explains why events frequently covered in media are often perceived as more common than they actually are, or why vivid personal experiences disproportionately influence judgments."
+  },
+  "usage": {
+    "ja": "心理学研究では、リスク認知や意思決定の偏りを調べる際に測定されます。研究参加者に特定の事象の頻度を推定させ、実際の統計データと比較することで、記憶の想起しやすさが判断に与える影響を評価します。",
+    "en": "In psychological research, this heuristic is measured when examining biases in risk perception and decision-making. Studies typically ask participants to estimate the frequency of specific events and compare these estimates with actual statistical data to assess how memory accessibility affects judgment."
+  },
+  "synonyms": {
+    "ja": "「想起容易性ヒューリスティック」とも呼ばれます。類似概念として「代表性ヒューリスティック」がありますが、こちらは典型性に基づく判断を指し、想起しやすさとは異なる認知プロセスです。",
+    "en": "Also referred to as the 'ease of retrieval heuristic.' A related concept is the 'representativeness heuristic,' which involves judgments based on typicality rather than ease of recall, representing a different cognitive process."
+  },
+  "pubmedCount": 87,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "count": 5
+    },
+    {
+      "year": 2021,
+      "count": 10
+    },
+    {
+      "year": 2022,
+      "count": 8
+    },
+    {
+      "year": 2023,
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "count": 8
+    },
+    {
+      "year": 2025,
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "count": 8
+    }
+  ],
+  "searchQuery": "\"availability heuristic\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42945898",
+      "title": "From diagnosis to detention: examining structural bias in the Ontario forensic system.",
+      "year": 2026
+    },
+    {
+      "pmid": "42837964",
+      "title": "Exponential-growth underestimation: Semantic framing and information availability.",
+      "year": 2026
+    },
+    {
+      "pmid": "42723845",
+      "title": "The debiasing paradox: cognitive biases in judicial adjudication of valuation adjustment mechanisms across Chinese and American courts.",
+      "year": 2026
+    },
+    {
+      "pmid": "42641053",
+      "title": "Impact of Repeated Negative Affective Social Media Content on Acceptability of the IUD.",
+      "year": 2026
+    },
+    {
+      "pmid": "42115901",
+      "title": "Patient and clinician perspectives on clinical trials in transplant failure: a qualitative interview study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:25:04.134Z"
+}

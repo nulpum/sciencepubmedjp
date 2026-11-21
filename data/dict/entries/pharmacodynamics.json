@@ -1,0 +1,94 @@
+{
+  "slug": "pharmacodynamics",
+  "ja": "薬力学",
+  "yomi": "やくりきがく",
+  "en": "pharmacodynamics",
+  "abbr": "PD",
+  "category": "nursing-pharma",
+  "meshHeading": "pharmacology",
+  "meshUi": "81000494",
+  "description": {
+    "ja": "薬力学とは、薬物が生体に及ぼす作用のメカニズムや効果の強さを研究する学問分野です。薬物が受容体に結合してからどのような生理学的変化が起こるか、用量と反応の関係などを扱います。薬物動態学(PK)が「体が薬をどう処理するか」を見るのに対し、薬力学は「薬が体に何をするか」を明らかにします。",
+    "en": "Pharmacodynamics is the study of the mechanisms and intensity of drug effects on the body. It examines physiological changes after drug-receptor binding and dose-response relationships. While pharmacokinetics (PK) focuses on 'what the body does to the drug,' pharmacodynamics addresses 'what the drug does to the body.'"
+  },
+  "usage": {
+    "ja": "臨床薬理学の論文では、薬物の用量反応曲線、受容体親和性、最大効果(Emax)、半数効果濃度(EC50)などの指標が薬力学パラメータとして測定されます。PK/PD解析として薬物動態と統合的に評価されることも多く、個別化医療や新薬開発の基盤データとなります。",
+    "en": "In clinical pharmacology papers, pharmacodynamic parameters such as dose-response curves, receptor affinity, maximum effect (Emax), and half-maximal effective concentration (EC50) are measured. Often integrated with pharmacokinetics as PK/PD analysis, these data form the basis for personalized medicine and new drug development."
+  },
+  "synonyms": {
+    "ja": "略語のPDが頻用され、薬理作用、薬効ダイナミクスとも呼ばれます。薬物動態学(pharmacokinetics, PK)と対をなす概念で、両者を合わせてPK/PDモデリングとして扱う研究が増えています。受容体結合論、用量反応関係論なども関連分野として含まれます。",
+    "en": "Commonly abbreviated as PD, it may also be referred to as drug action or pharmacologic effects. It forms a complementary concept with pharmacokinetics (PK), and integrated PK/PD modeling studies are increasingly common. Related areas include receptor binding theory and dose-response relationship studies."
+  },
+  "pubmedCount": 142266,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4378
+    },
+    {
+      "year": 2018,
+      "count": 4144
+    },
+    {
+      "year": 2019,
+      "count": 3827
+    },
+    {
+      "year": 2020,
+      "count": 3935
+    },
+    {
+      "year": 2021,
+      "count": 3853
+    },
+    {
+      "year": 2022,
+      "count": 3049
+    },
+    {
+      "year": 2023,
+      "count": 2744
+    },
+    {
+      "year": 2024,
+      "count": 3360
+    },
+    {
+      "year": 2025,
+      "count": 3626
+    },
+    {
+      "year": 2026,
+      "count": 3471
+    }
+  ],
+  "searchQuery": "(\"pharmacology\"[MeSH Terms]) OR (\"pharmacodynamics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42822344",
+      "title": "Fluoropharmacology: intrinsic AIE antibiotics as theranostic photosensitizers against resistance and systemic toxicity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887829",
+      "title": "Aquilaria leaves (Thymelaeaceae): A comprehensive review of ethnobotany, traditional applications, phytochemistry, pharmacological activities, toxicity and quality evaluation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843669",
+      "title": "Ethnopharmacological relevance of Aristolochia paucinervis leaf: phytochemical profile and assessment of wound healing, antioxidant and anti-inflammatory properties.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810459",
+      "title": "Traditional Chinese medicine for Helicobacter pylori infection in the antibiotic-resistance era: Ethnopharmacological evidence, mechanisms, and Host-Pathogen modulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42767407",
+      "title": "Herbal medicine among vulnerable populations in Cameroon: a systematic review and meta-analysis with clinical, mechanistic, and global health perspectives.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:33:41.280Z"
+}

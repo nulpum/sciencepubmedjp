@@ -1,0 +1,93 @@
+{
+  "slug": "ghrelin",
+  "ja": "グレリン",
+  "yomi": "ぐれりん",
+  "en": "ghrelin",
+  "category": "biology",
+  "meshHeading": "Ghrelin",
+  "meshUi": "68054439",
+  "description": {
+    "ja": "グレリンは主に胃から分泌されるペプチドホルモンで、成長ホルモン分泌促進受容体に作用し、食欲増進や成長ホルモン分泌調節に関与します。血中濃度は空腹時に上昇し食後に低下するため「空腹ホルモン」とも呼ばれ、エネルギー恒常性の維持に重要な役割を果たしています。",
+    "en": "Ghrelin is a peptide hormone primarily secreted by the stomach that acts on growth hormone secretagogue receptors and is involved in appetite stimulation and growth hormone secretion regulation. Its blood concentration rises during fasting and decreases after meals, earning it the nickname 'hunger hormone,' and it plays a crucial role in maintaining energy homeostasis."
+  },
+  "usage": {
+    "ja": "論文では摂食行動、肥満、糖代謝、成長ホルモン分泌の研究で測定されます。血漿中の活性型グレリン(アシル化型)と総グレリン濃度をELISA法などで定量し、絶食状態や食事介入前後での変動を評価することが一般的です。",
+    "en": "In research papers, ghrelin is measured in studies of feeding behavior, obesity, glucose metabolism, and growth hormone secretion. Plasma levels of active ghrelin (acylated form) and total ghrelin are typically quantified using ELISA methods, with evaluations of fluctuations during fasting states or before and after dietary interventions."
+  },
+  "synonyms": {
+    "ja": "活性型は「アシル化グレリン(acyl-ghrelin)」、不活性型は「デスアシルグレリン(desacyl-ghrelin)」と区別されます。成長ホルモン分泌促進物質(growth hormone secretagogue)の一種として分類されることもあり、受容体はGHSR(growth hormone secretagogue receptor)と表記されます。",
+    "en": "The active form is referred to as 'acyl-ghrelin' while the inactive form is called 'desacyl-ghrelin.' It is sometimes classified as a type of growth hormone secretagogue, and its receptor is abbreviated as GHSR (growth hormone secretagogue receptor)."
+  },
+  "pubmedCount": 13748,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 751
+    },
+    {
+      "year": 2018,
+      "count": 716
+    },
+    {
+      "year": 2019,
+      "count": 695
+    },
+    {
+      "year": 2020,
+      "count": 644
+    },
+    {
+      "year": 2021,
+      "count": 674
+    },
+    {
+      "year": 2022,
+      "count": 616
+    },
+    {
+      "year": 2023,
+      "count": 507
+    },
+    {
+      "year": 2024,
+      "count": 492
+    },
+    {
+      "year": 2025,
+      "count": 528
+    },
+    {
+      "year": 2026,
+      "count": 464
+    }
+  ],
+  "searchQuery": "(\"Ghrelin\"[MeSH Terms]) OR (\"ghrelin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42977001",
+      "title": "Exposure-informed deconstruction of Chaihu Shugan San links tetramethylpyrazine-paeoniflorin to PRKACA-related neurotrophic signaling and brain-gut pharmacology.",
+      "year": 2027
+    },
+    {
+      "pmid": "42637062",
+      "title": "Yukgunja-tang and Pyeongwi-san improve functional dyspepsia and modulate ghrelin dynamics: A multicenter randomized controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838183",
+      "title": "Central GHSR inverse agonism by a LEAP2 analog regulates thermometabolic and behavioral responses via catecholamine signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42434935",
+      "title": "Christensenella massiliensis reduces kynurenine levels and alleviates obesity and related metabolic disorders in model mice.",
+      "year": 2026
+    },
+    {
+      "pmid": "43034609",
+      "title": "Standardized Korean mint (Agastache rugosa) extract attenuates cancer-induced cachexia by ameliorating anorexia, muscle atrophy, and adipose tissue wasting in BALB/c mice.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:52:23.875Z"
+}

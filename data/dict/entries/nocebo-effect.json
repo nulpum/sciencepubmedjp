@@ -1,0 +1,96 @@
+{
+  "slug": "nocebo-effect",
+  "ja": "ノセボ効果",
+  "yomi": "のせぼこうか",
+  "en": "nocebo effect",
+  "category": "psychology",
+  "aliases": [
+    "反偽薬効果"
+  ],
+  "meshHeading": "Nocebo Effect",
+  "meshUi": "68064786",
+  "description": {
+    "ja": "偽薬や治療に対する否定的な期待によって、実際に有害な症状や副作用が生じる現象です。プラセボ効果の逆に当たり、心理的要因が身体的な不快感を引き起こすメカニズムとして研究されています。",
+    "en": "A phenomenon where negative expectations about a placebo or treatment lead to actual adverse symptoms or side effects. It represents the opposite of the placebo effect and is studied as a mechanism by which psychological factors induce physical discomfort."
+  },
+  "usage": {
+    "ja": "臨床試験で偽薬群に生じる副作用の報告、薬剤の副作用情報が患者の症状発現に与える影響、疼痛研究における期待効果の測定などで調べられます。心理学・神経科学・臨床医学の複数領域にまたがる現象として扱われます。",
+    "en": "It is examined in reports of adverse events in placebo groups of clinical trials, the impact of drug side effect information on symptom manifestation in patients, and measurement of expectancy effects in pain research. It is treated as a phenomenon spanning psychology, neuroscience, and clinical medicine."
+  },
+  "synonyms": {
+    "ja": "反偽薬効果とも呼ばれます。プラセボ効果(placebo effect)と対比されますが、両者は期待の方向性(ポジティブ/ネガティブ)が異なるだけで、心理的要因が身体反応に影響する点では共通しています。",
+    "en": "Also called anti-placebo effect. It contrasts with the placebo effect, but both share the common feature that psychological factors influence physical responses, differing only in the direction of expectation (positive/negative)."
+  },
+  "pubmedCount": 1031,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 75
+    },
+    {
+      "year": 2018,
+      "count": 87
+    },
+    {
+      "year": 2019,
+      "count": 98
+    },
+    {
+      "year": 2020,
+      "count": 103
+    },
+    {
+      "year": 2021,
+      "count": 99
+    },
+    {
+      "year": 2022,
+      "count": 107
+    },
+    {
+      "year": 2023,
+      "count": 95
+    },
+    {
+      "year": 2024,
+      "count": 86
+    },
+    {
+      "year": 2025,
+      "count": 96
+    },
+    {
+      "year": 2026,
+      "count": 91
+    }
+  ],
+  "searchQuery": "(\"Nocebo Effect\"[MeSH Terms]) OR (\"nocebo effect\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42978238",
+      "title": "Learning from many: Nocebo effects following exposure to multiple social models.",
+      "year": 2026
+    },
+    {
+      "pmid": "42908691",
+      "title": "Beyond pharmacology: The mediating role of expectations in the experience of side effects in anxious patients treated with secukinumab.",
+      "year": 2026
+    },
+    {
+      "pmid": "42759622",
+      "title": "Placebo and nocebo effects on cognition: Mechanisms, mediators, and cognitive resource constraints.",
+      "year": 2026
+    },
+    {
+      "pmid": "42013206",
+      "title": "Online consent risk-warnings about negative psychological side-effects do not change participant expectations or cause negative psychological side-effects.",
+      "year": 2026
+    },
+    {
+      "pmid": "41689407",
+      "title": "Trait Neuroticism and the Nocebo Effect: The Mediating Role of Side-Effect Expectations.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:26:55.286Z"
+}

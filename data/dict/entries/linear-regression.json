@@ -1,0 +1,93 @@
+{
+  "slug": "linear-regression",
+  "ja": "線形回帰",
+  "yomi": "せんけいかいき",
+  "en": "linear regression",
+  "category": "research",
+  "meshHeading": "Linear Models",
+  "meshUi": "68016014",
+  "description": {
+    "ja": "線形回帰とは、ある変数(例:年齢、体重)と別の変数(例:血圧、検査値)の関係を直線で表す統計手法です。医学研究では、危険因子と疾患の関連性や、治療効果の予測などに広く用いられます。データの傾向を数式で表現し、将来の予測や影響度の評価が可能になります。",
+    "en": "Linear regression is a statistical method that models the relationship between one variable (e.g., age, weight) and another variable (e.g., blood pressure, lab values) using a straight line. In medical research, it is widely used to examine associations between risk factors and diseases, or to predict treatment outcomes. It expresses data trends as mathematical equations, enabling future predictions and assessment of effect magnitudes."
+  },
+  "usage": {
+    "ja": "論文では「単回帰分析」(説明変数が1つ)や「重回帰分析」(複数の説明変数を同時に扱う)として登場し、結果は回帰係数(β)、標準誤差、p値などで報告されます。連続的なアウトカム(血糖値、BMIなど)を予測する際に使用され、交絡因子の調整にも用いられます。",
+    "en": "In papers, it appears as 'simple linear regression' (one predictor variable) or 'multiple linear regression' (multiple predictors simultaneously), with results reported as regression coefficients (β), standard errors, and p-values. It is used to predict continuous outcomes (e.g., blood glucose, BMI) and to adjust for confounding factors."
+  },
+  "synonyms": {
+    "ja": "「回帰分析」は線形回帰を含む広い概念で、「最小二乗法」は線形回帰の推定方法の一つです。ロジスティック回帰は二値アウトカム(疾患の有無など)に用いる別手法であり、線形回帰とは異なります。Cox回帰は生存時間データに特化した手法です。",
+    "en": "The term 'regression analysis' is a broader concept that includes linear regression, while 'least squares method' is one estimation technique for linear regression. Logistic regression is a different method used for binary outcomes (e.g., presence or absence of disease), distinct from linear regression. Cox regression is specialized for survival time data."
+  },
+  "pubmedCount": 265582,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 12835
+    },
+    {
+      "year": 2018,
+      "count": 13355
+    },
+    {
+      "year": 2019,
+      "count": 13981
+    },
+    {
+      "year": 2020,
+      "count": 15449
+    },
+    {
+      "year": 2021,
+      "count": 17163
+    },
+    {
+      "year": 2022,
+      "count": 16895
+    },
+    {
+      "year": 2023,
+      "count": 16163
+    },
+    {
+      "year": 2024,
+      "count": 17401
+    },
+    {
+      "year": 2025,
+      "count": 20426
+    },
+    {
+      "year": 2026,
+      "count": 21137
+    }
+  ],
+  "searchQuery": "(\"Linear Models\"[MeSH Terms]) OR (\"linear regression\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42962623",
+      "title": "Quantification of multi-class pesticides in wipes dust by liquid chromatography - mass spectrometry: development and application in rural households.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781318",
+      "title": "Submucosal Invasion and Ulceration in Early Gastric Cancer Affect Mucosal Impedance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42416859",
+      "title": "Time to Confirmed Completion of Bowel Preparation as a Preprocedural Indicator of Colonoscope Insertion Difficulty: A Prospective Observational Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42868232",
+      "title": "Clitoris Development During 2nd Gestational Trimester in Human Fetuses.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:40:04.782Z"
+}

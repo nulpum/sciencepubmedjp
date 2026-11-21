@@ -1,0 +1,93 @@
+{
+  "slug": "hypertension",
+  "ja": "高血圧",
+  "yomi": "こうけつあつ",
+  "en": "hypertension",
+  "category": "nursing-pharma",
+  "meshHeading": "Hypertension",
+  "meshUi": "68006973",
+  "description": {
+    "ja": "血圧が正常範囲を超えて高い状態を指す医学用語です。一般的に収縮期血圧が140 mmHg以上、または拡張期血圧が90 mmHg以上の状態として定義されます。心血管疾患のリスク因子として、看護・薬学分野で重要な健康指標となっています。",
+    "en": "A medical term referring to a condition where blood pressure is elevated above the normal range. Generally defined as systolic blood pressure of 140 mmHg or higher, or diastolic blood pressure of 90 mmHg or higher. It serves as an important health indicator in nursing and pharmaceutical fields as a risk factor for cardiovascular diseases."
+  },
+  "usage": {
+    "ja": "論文では血圧測定値(mmHg)として報告され、患者の背景因子や治療効果の評価指標として用いられます。疫学研究では有病率の算出、介入研究では降圧効果の検証に使われ、WHOやAHA/ACCなどの診断基準に基づいて分類されます。",
+    "en": "In research papers, it is reported as blood pressure measurements (mmHg) and used as an indicator for patient characteristics and treatment efficacy evaluation. Epidemiological studies calculate prevalence rates, while intervention studies examine antihypertensive effects, with classifications based on diagnostic criteria from WHO, AHA/ACC, and other guidelines."
+  },
+  "synonyms": {
+    "ja": "高血圧症と表記される場合もあります。elevated blood pressure(血圧上昇)は軽度の場合に使われることがあり、arterial hypertension(動脈性高血圧)は病態を強調した表現です。論文検索では「HTN」という略語も使用されます。",
+    "en": "Also referred to as high blood pressure in general contexts. Elevated blood pressure may be used for milder cases, while arterial hypertension emphasizes the pathological condition. The abbreviation 'HTN' is commonly used in medical literature searches."
+  },
+  "pubmedCount": 642481,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 20560
+    },
+    {
+      "year": 2018,
+      "count": 21203
+    },
+    {
+      "year": 2019,
+      "count": 22177
+    },
+    {
+      "year": 2020,
+      "count": 26409
+    },
+    {
+      "year": 2021,
+      "count": 28688
+    },
+    {
+      "year": 2022,
+      "count": 28526
+    },
+    {
+      "year": 2023,
+      "count": 27002
+    },
+    {
+      "year": 2024,
+      "count": 28171
+    },
+    {
+      "year": 2025,
+      "count": 31382
+    },
+    {
+      "year": 2026,
+      "count": 28596
+    }
+  ],
+  "searchQuery": "(\"Hypertension\"[MeSH Terms]) OR (\"hypertension\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42886340",
+      "title": "Hemodynamic effects of ventilating or not, during cardiopulmonary bypass in a porcine model.",
+      "year": 2027
+    },
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42694965",
+      "title": "Endoscopic Injection Sclerotherapy With Pre-deflation Ligation for Prolonged Sclerosant Retention in Esophageal Varices: A Case Report.",
+      "year": 2027
+    },
+    {
+      "pmid": "42602295",
+      "title": "Recent Development of Endo-hepatology.",
+      "year": 2027
+    },
+    {
+      "pmid": "42582674",
+      "title": "Risk of Delayed Post-polypectomy Bleeding in Patients With Antithrombotic Therapy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:46:31.790Z"
+}

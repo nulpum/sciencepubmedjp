@@ -1,0 +1,93 @@
+{
+  "slug": "antimicrobial-stewardship",
+  "ja": "抗菌薬適正使用",
+  "yomi": "こうきんやくてきせいしよう",
+  "en": "antimicrobial stewardship",
+  "category": "nursing-pharma",
+  "meshHeading": "Antimicrobial Stewardship",
+  "meshUi": "2023144",
+  "description": {
+    "ja": "抗菌薬適正使用 (antimicrobial stewardship) とは、抗菌薬を必要な患者に、適切な薬剤・用量・期間で投与し、耐性菌の出現を抑えながら治療効果を最大化する組織的な取り組みです。医師・薬剤師・看護師などの多職種チームで処方を監視・助言し、不適切な使用を減らすことを目指します。感染症治療の質向上と薬剤耐性対策の両立が目的です。",
+    "en": "Antimicrobial stewardship refers to coordinated program interventions designed to optimize antimicrobial use by ensuring the right drug, dose, and duration for patients who need them, while minimizing resistance development. Multidisciplinary teams including physicians, pharmacists, and nurses monitor and provide guidance on prescriptions to reduce inappropriate use. The goal is to improve infection treatment outcomes and combat antimicrobial resistance."
+  },
+  "usage": {
+    "ja": "論文では「antimicrobial stewardship program (ASP) の導入効果」「抗菌薬使用量の変化」「耐性菌検出率の推移」などが評価指標として用いられます。介入前後の比較研究や、ガイドライン遵守率、処方の適正度スコアなどで効果が測定されます。",
+    "en": "Studies typically evaluate 'antimicrobial stewardship program (ASP) implementation outcomes,' changes in antimicrobial consumption (often measured in defined daily doses), and trends in resistant organism detection rates. Before-after comparisons, guideline adherence rates, and appropriateness scores are common metrics."
+  },
+  "synonyms": {
+    "ja": "抗菌薬管理プログラム (ASP)、抗生物質適正使用支援とも呼ばれます。antimicrobial stewardshipは抗菌薬全般を指し、antibiotic stewardshipは細菌用の抗生物質に限定した表現ですが、実際には混用されることもあります。",
+    "en": "Also called antimicrobial stewardship program (ASP) or antibiotic stewardship. While 'antimicrobial stewardship' broadly covers all antimicrobials, 'antibiotic stewardship' specifically refers to antibacterial agents, though the terms are often used interchangeably in practice."
+  },
+  "pubmedCount": 15629,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 700
+    },
+    {
+      "year": 2018,
+      "count": 880
+    },
+    {
+      "year": 2019,
+      "count": 1227
+    },
+    {
+      "year": 2020,
+      "count": 1378
+    },
+    {
+      "year": 2021,
+      "count": 1432
+    },
+    {
+      "year": 2022,
+      "count": 1380
+    },
+    {
+      "year": 2023,
+      "count": 1332
+    },
+    {
+      "year": 2024,
+      "count": 1594
+    },
+    {
+      "year": 2025,
+      "count": 2328
+    },
+    {
+      "year": 2026,
+      "count": 3477
+    }
+  ],
+  "searchQuery": "(\"Antimicrobial Stewardship\"[MeSH Terms]) OR (\"antimicrobial stewardship\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42580611",
+      "title": "Procalcitonin measurement uncertainty around Sepsis-related decision thresholds: Monte Carlo modeling from a large-scale clinical laboratory dataset.",
+      "year": 2027
+    },
+    {
+      "pmid": "43009225",
+      "title": "Transperineal and Transrectal Prostate Biopsy: A Review of Complications.",
+      "year": 2027
+    },
+    {
+      "pmid": "42628453",
+      "title": "A smartphone-assisted one-tube ERA-CRISPR/Cas12a biosensor for integrated detection of hypervirulence and antimicrobial resistance determinants in Klebsiella pneumoniae.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036331",
+      "title": "Pediatric intensive care resources in Ibero-Latin America: SPREAD PED Ibero-Latin America, a multinational, multicentre, cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967404",
+      "title": "Impact of early microbiology laboratory activation on rapid diagnosis and antimicrobial optimization in a sepsis alert pathway.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:39:52.762Z"
+}

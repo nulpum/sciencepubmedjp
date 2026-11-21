@@ -1,0 +1,92 @@
+{
+  "slug": "absolute-risk",
+  "ja": "絶対リスク",
+  "yomi": "ぜったいりすく",
+  "en": "absolute risk",
+  "abbr": "AR",
+  "category": "research",
+  "description": {
+    "ja": "特定の期間内に、ある集団で特定の疾患やアウトカムが発生する確率を表す指標です。割合や発生率として示され、介入や曝露の有無にかかわらず、その集団における実際のリスクの大きさを示します。相対リスクと異なり、実数としての影響度を把握できます。",
+    "en": "Absolute risk represents the probability that a specific disease or outcome will occur in a population during a defined period. It is expressed as a proportion or incidence rate and indicates the actual magnitude of risk in that population, regardless of intervention or exposure. Unlike relative risk, it provides the real-world impact in numerical terms."
+  },
+  "usage": {
+    "ja": "臨床試験や疫学研究で、治療群と対照群それぞれの疾患発生率を報告する際に使用されます。例えば「10年間の心血管イベント発生率が治療群で5%、対照群で8%」のように表現され、絶対リスク減少(ARR)やNNT(治療必要数)の算出基盤となります。",
+    "en": "Used in clinical trials and epidemiological studies to report the incidence rate of disease in treatment and control groups separately. For example, it may be stated as 'cardiovascular event rate over 10 years was 5% in the treatment group and 8% in the control group,' serving as the basis for calculating absolute risk reduction (ARR) and number needed to treat (NNT)."
+  },
+  "synonyms": {
+    "ja": "発生率、罹患率、イベント発生確率などと近い意味で使われます。絶対リスク減少(ARR)は2群間の絶対リスクの差を指し、相対リスク(RR)とは区別が必要です。臨床的意義を判断する際は絶対リスクの評価が重要とされます。",
+    "en": "Often used interchangeably with incidence rate, attack rate, or event rate. Absolute risk reduction (ARR) refers to the difference in absolute risk between two groups and must be distinguished from relative risk (RR). Evaluating absolute risk is considered crucial for assessing clinical significance."
+  },
+  "pubmedCount": 10842,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 492
+    },
+    {
+      "year": 2018,
+      "count": 472
+    },
+    {
+      "year": 2019,
+      "count": 531
+    },
+    {
+      "year": 2020,
+      "count": 591
+    },
+    {
+      "year": 2021,
+      "count": 750
+    },
+    {
+      "year": 2022,
+      "count": 715
+    },
+    {
+      "year": 2023,
+      "count": 629
+    },
+    {
+      "year": 2024,
+      "count": 633
+    },
+    {
+      "year": 2025,
+      "count": 739
+    },
+    {
+      "year": 2026,
+      "count": 1586
+    }
+  ],
+  "searchQuery": "\"absolute risk\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42906704",
+      "title": "National trends in suicidal ideation, planning, and attempts among US adults aged 50 and older, 2021-2024.",
+      "year": 2027
+    },
+    {
+      "pmid": "42994162",
+      "title": "Progressive reduction in CSF leak rates in translabyrinthine vestibular schwannoma surgery using a suture-stabilised fat graft and improved Eustachian tube obliteration: Technical note.",
+      "year": 2027
+    },
+    {
+      "pmid": "42936426",
+      "title": "Model-Based Normal Tissue Complication Probability Comparison Between Proton and Photon Therapies for Brain Tumors Complying With Planning Study Guidelines.",
+      "year": 2027
+    },
+    {
+      "pmid": "42921361",
+      "title": "Safety and sustainability of potable tap water irrigation in endoscopy in Canada: an interrupted time series study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42910284",
+      "title": "Testosterone Replacement Therapy and Associated Outcomes and Management of Trigger Finger.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:37:25.194Z"
+}

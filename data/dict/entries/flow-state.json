@@ -1,0 +1,91 @@
+{
+  "slug": "flow-state",
+  "ja": "フロー状態",
+  "yomi": "ふろーじょうたい",
+  "en": "flow state",
+  "category": "psychology",
+  "description": {
+    "ja": "心理学者ミハイ・チクセントミハイが提唱した、活動に完全に没頭し時間感覚を忘れるほど集中している心理状態を指します。スポーツ、芸術、仕事などで技能と課題の難易度が適切に釣り合ったときに生じやすく、高いパフォーマンスと主観的な充足感が特徴です。",
+    "en": "A psychological state proposed by Mihaly Csikszentmihalyi, characterized by complete immersion and focused concentration in an activity where one loses sense of time. It typically occurs when skill level appropriately matches task difficulty in sports, arts, or work, featuring high performance and subjective well-being."
+  },
+  "usage": {
+    "ja": "心理学研究では、Flow State Scale (FSS) やExperience Sampling Method (ESM) などの質問票や日誌法で測定されます。スポーツ心理学、職場のウェルビーイング研究、教育心理学、創造性研究などで、パフォーマンスや満足度との関連が調べられています。",
+    "en": "In psychological research, it is measured using questionnaires such as the Flow State Scale (FSS) or Experience Sampling Method (ESM). Studies examine its relationship with performance and satisfaction in sports psychology, workplace well-being, educational psychology, and creativity research."
+  },
+  "synonyms": {
+    "ja": "「フロー体験」「最適体験」とも呼ばれます。類似概念として「ゾーンに入る (in the zone)」がありますが、フロー状態は理論的枠組みを持つ学術用語として区別されます。単なる集中状態とは異なり、技能と挑戦のバランスが重要な要素です。",
+    "en": "Also called 'flow experience' or 'optimal experience.' A related colloquial term is 'being in the zone,' but flow state is distinguished as an academic term with a theoretical framework. Unlike simple concentration, the balance between skill and challenge is a crucial element."
+  },
+  "pubmedCount": 911,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 26
+    },
+    {
+      "year": 2018,
+      "count": 25
+    },
+    {
+      "year": 2019,
+      "count": 32
+    },
+    {
+      "year": 2020,
+      "count": 47
+    },
+    {
+      "year": 2021,
+      "count": 50
+    },
+    {
+      "year": 2022,
+      "count": 69
+    },
+    {
+      "year": 2023,
+      "count": 74
+    },
+    {
+      "year": 2024,
+      "count": 85
+    },
+    {
+      "year": 2025,
+      "count": 91
+    },
+    {
+      "year": 2026,
+      "count": 73
+    }
+  ],
+  "searchQuery": "\"flow state\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43048374",
+      "title": "Evolving vortex dynamics around a pitching wing for dynamic stall at a transitional Reynolds number.",
+      "year": 2026
+    },
+    {
+      "pmid": "42623733",
+      "title": "Segmental flow responses in glaucomatous trabecular meshwork cells.",
+      "year": 2026
+    },
+    {
+      "pmid": "43063861",
+      "title": "Motivational factors and optimal psychological states of flow and clutch: Analysis of prediction models in Colombian athletes.",
+      "year": 2026
+    },
+    {
+      "pmid": "42749896",
+      "title": "An automated endpoint control platform for a cyclone concentration pipette.",
+      "year": 2026
+    },
+    {
+      "pmid": "41108179",
+      "title": "\"Being in the zone\" makes a difference: flow, birth experience, birth duration, and postpartum Stress.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:29:04.758Z"
+}

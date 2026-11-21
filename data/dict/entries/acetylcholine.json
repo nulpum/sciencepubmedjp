@@ -1,0 +1,93 @@
+{
+  "slug": "acetylcholine",
+  "ja": "アセチルコリン",
+  "yomi": "あせちるこりん",
+  "en": "acetylcholine",
+  "category": "biology",
+  "meshHeading": "Acetylcholine",
+  "meshUi": "68000109",
+  "description": {
+    "ja": "神経細胞間で情報を伝える神経伝達物質の一つで、運動神経と骨格筋の接合部や副交感神経系で主に働きます。記憶・学習・筋肉の収縮など多様な生理機能に関わり、脳内のアセチルコリン濃度の変化は認知機能と関連することが研究されています。",
+    "en": "A neurotransmitter that transmits signals between nerve cells, primarily functioning at the junction between motor neurons and skeletal muscles and in the parasympathetic nervous system. It is involved in diverse physiological functions including memory, learning, and muscle contraction, with research examining how changes in brain acetylcholine levels relate to cognitive function."
+  },
+  "usage": {
+    "ja": "神経科学や薬理学の論文で、シナプス伝達の研究、認知機能試験、筋肉収縮メカニズムの解析などで測定されます。脳組織や血液中の濃度測定、受容体結合実験、酵素活性アッセイ(合成酵素や分解酵素)などの手法が用いられます。",
+    "en": "Measured in neuroscience and pharmacology papers through studies of synaptic transmission, cognitive function tests, and muscle contraction mechanisms. Methods include concentration measurements in brain tissue or blood, receptor binding assays, and enzyme activity assays for synthetic or degrading enzymes."
+  },
+  "synonyms": {
+    "ja": "略称はACh、アセチルコリン受容体(ニコチン性・ムスカリン性)やコリン作動性神経系といった関連用語とともに使われます。神経伝達物質全般を指すneurotransmitterの代表例として、ドパミンやセロトニンと対比されることもあります。",
+    "en": "Abbreviated as ACh, often used with related terms such as acetylcholine receptors (nicotinic and muscarinic) and cholinergic nervous system. As a representative example of neurotransmitters, it is sometimes compared with dopamine and serotonin."
+  },
+  "pubmedCount": 106276,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2224
+    },
+    {
+      "year": 2018,
+      "count": 2224
+    },
+    {
+      "year": 2019,
+      "count": 2025
+    },
+    {
+      "year": 2020,
+      "count": 2233
+    },
+    {
+      "year": 2021,
+      "count": 2294
+    },
+    {
+      "year": 2022,
+      "count": 2052
+    },
+    {
+      "year": 2023,
+      "count": 1859
+    },
+    {
+      "year": 2024,
+      "count": 2031
+    },
+    {
+      "year": 2025,
+      "count": 2152
+    },
+    {
+      "year": 2026,
+      "count": 1896
+    }
+  ],
+  "searchQuery": "(\"Acetylcholine\"[MeSH Terms]) OR (\"acetylcholine\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42763996",
+      "title": "Engineered α9-nAChR-targeting antibodies attenuate nicotine-enhanced triple-negative breast cancer progression and exhibit favorable short-term tolerability in cynomolgus macaques.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772618",
+      "title": "Huanglian Wendan Decoction ameliorates insomnia-like phenotypes in a composite mouse model with phlegm-heat-related features: Insights from the brain-gut axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858929",
+      "title": "The regulatory roles of the medial septum and hippocampus in spatial memory impairment of PTSD mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800540",
+      "title": "Aging reduces basal cholinergic reserve, but the pattern of scopolamine-induced memory impairment remains comparable in rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42777955",
+      "title": "Role of dopaminergic projections from ventral tegmental area to paraventricular thalamus in heroin-induced behavioural sensitization of rats.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:58:31.246Z"
+}

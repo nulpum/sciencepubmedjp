@@ -1,0 +1,93 @@
+{
+  "slug": "short-term-memory",
+  "ja": "短期記憶",
+  "yomi": "たんききおく",
+  "en": "short-term memory",
+  "category": "psychology",
+  "meshHeading": "Memory, Short-Term",
+  "meshUi": "68008570",
+  "description": {
+    "ja": "短期記憶とは、情報を数秒から数十秒程度の短い時間だけ保持する記憶システムです。電話番号を覚えて即座にダイヤルするような一時的な情報保持に関わり、容量に限界があることが知られています。作業記憶(working memory)と密接に関連し、認知機能や学習能力の基礎となる心理学的概念です。",
+    "en": "Short-term memory is a memory system that retains information for a brief period, typically from a few seconds to several tens of seconds. It is involved in temporary information storage, such as remembering a phone number to dial immediately, and is known to have limited capacity. Closely related to working memory, it serves as a foundation for cognitive functions and learning abilities in psychological research."
+  },
+  "usage": {
+    "ja": "論文では、記憶課題(数字や単語の即時再生テスト)を用いて容量や保持時間を測定します。認知症研究、発達心理学、神経科学などで、短期記憶の障害パターンや脳活動との関連が調べられています。",
+    "en": "In research papers, short-term memory is measured using memory tasks such as immediate recall tests of digits or words. Studies in dementia research, developmental psychology, and neuroscience examine impairment patterns and brain activity associations related to short-term memory."
+  },
+  "synonyms": {
+    "ja": "作業記憶(working memory)はより能動的な情報処理を含む広い概念で、短期記憶はその一部とされます。即時記憶(immediate memory)もほぼ同義ですが、文脈により使い分けられます。長期記憶(long-term memory)との対比で用いられることが多い用語です。",
+    "en": "Working memory is a broader concept that includes active information processing, with short-term memory considered as a component. Immediate memory is nearly synonymous but usage varies by context. This term is often used in contrast with long-term memory in research literature."
+  },
+  "pubmedCount": 49225,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2165
+    },
+    {
+      "year": 2018,
+      "count": 2429
+    },
+    {
+      "year": 2019,
+      "count": 2526
+    },
+    {
+      "year": 2020,
+      "count": 2727
+    },
+    {
+      "year": 2021,
+      "count": 3039
+    },
+    {
+      "year": 2022,
+      "count": 3376
+    },
+    {
+      "year": 2023,
+      "count": 3137
+    },
+    {
+      "year": 2024,
+      "count": 3500
+    },
+    {
+      "year": 2025,
+      "count": 4097
+    },
+    {
+      "year": 2026,
+      "count": 3169
+    }
+  ],
+  "searchQuery": "(\"Memory, Short-Term\"[MeSH Terms]) OR (\"short-term memory\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43008422",
+      "title": "Do parental questions and gestures support executive functions in toddlers born preterm and full-term?",
+      "year": 2027
+    },
+    {
+      "pmid": "42837797",
+      "title": "Cognitive predictors of narrative retelling in early childhood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42671321",
+      "title": "Compensation-Balanced Recurrent Neural Architecture Based on Nonlinear Spiking Neural Membrane Systems.",
+      "year": 2027
+    },
+    {
+      "pmid": "42962523",
+      "title": "Robust quantitative FTIR gas analysis under spectral overlap using an LSTM-PSO-SVR hybrid framework.",
+      "year": 2027
+    },
+    {
+      "pmid": "42785011",
+      "title": "Chemical fingerprinting of rapeseed varieties: A BiLSTM-based fusion strategy for near-infrared and fluorescence spectra.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:06:34.221Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "macrophage",
+  "ja": "マクロファージ",
+  "yomi": "まくろふぁーじ",
+  "en": "macrophage",
+  "category": "biology",
+  "meshHeading": "Macrophages",
+  "meshUi": "68008264",
+  "description": {
+    "ja": "マクロファージは白血球の一種で、体内に侵入した細菌や死んだ細胞などを取り込んで分解する免疫細胞です。組織内に存在し、異物を貪食するだけでなく、炎症反応の調節や組織修復にも関わります。M1型(炎症促進)とM2型(抗炎症・修復)に大きく分類され、疾患との関連が研究されています。",
+    "en": "Macrophages are a type of white blood cell that engulf and digest bacteria, dead cells, and other foreign substances in the body. They reside in tissues and not only perform phagocytosis but also regulate inflammatory responses and tissue repair. Macrophages are broadly classified into M1 (pro-inflammatory) and M2 (anti-inflammatory, reparative) phenotypes, and their roles in various diseases are actively studied."
+  },
+  "usage": {
+    "ja": "論文では炎症性疾患、感染症、がん、動脈硬化などの研究で頻出します。フローサイトメトリーや免疫染色でCD68やF4/80などのマーカーを用いて同定し、M1/M2の分極状態を遺伝子発現やサイトカイン産生で評価します。",
+    "en": "Commonly appears in studies of inflammatory diseases, infections, cancer, and atherosclerosis. Identified using markers such as CD68 or F4/80 via flow cytometry or immunostaining, with M1/M2 polarization assessed through gene expression and cytokine production profiles."
+  },
+  "synonyms": {
+    "ja": "大食細胞とも呼ばれます。組織マクロファージ(tissue macrophage)、活性化マクロファージ(activated macrophage)、腫瘍関連マクロファージ(tumor-associated macrophage, TAM)など、局在や機能状態による呼称があります。単球(monocyte)から分化した細胞で、両者を区別する文脈に注意が必要です。",
+    "en": "Also called phagocytes in broader contexts. Terms include tissue macrophage, activated macrophage, and tumor-associated macrophage (TAM) based on location and functional state. Derived from monocytes; careful distinction between monocytes and macrophages is important depending on the research context."
+  },
+  "pubmedCount": 346370,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 11799
+    },
+    {
+      "year": 2018,
+      "count": 12406
+    },
+    {
+      "year": 2019,
+      "count": 13035
+    },
+    {
+      "year": 2020,
+      "count": 14565
+    },
+    {
+      "year": 2021,
+      "count": 14807
+    },
+    {
+      "year": 2022,
+      "count": 12777
+    },
+    {
+      "year": 2023,
+      "count": 12766
+    },
+    {
+      "year": 2024,
+      "count": 16089
+    },
+    {
+      "year": 2025,
+      "count": 19546
+    },
+    {
+      "year": 2026,
+      "count": 20573
+    }
+  ],
+  "searchQuery": "(\"Macrophages\"[MeSH Terms]) OR (\"macrophage\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43032824",
+      "title": "Staged photothermal hydrogel containing manganese-doped bioactive glass nanoparticles promotes infected bone regeneration by engaging Schwann cell PI3K/AKT signaling and neuro-osteogenic coupling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42936108",
+      "title": "Mitochondria-rich cytochalasomes as an intravenously deliverable vesicle platform for ischemic heart disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42927683",
+      "title": "Cytochalasin D-induced cytoskeletal remodeling with MYH9 enhances release of extracellular vesicles for therapeutic application.",
+      "year": 2027
+    },
+    {
+      "pmid": "42927026",
+      "title": "Corrigendum to \"Matrix nanoalignment programs macrophage vesicular immunity through TRPV2 mechanogating\" [Bioact. Mater. 69 (2027) 18-32].",
+      "year": 2027
+    },
+    {
+      "pmid": "42926849",
+      "title": "Osteoporosis treatment via programmed delivery of IRF5 siRNA to macrophages in bone tissue combined with ROS scavenging.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:01:01.204Z"
+}

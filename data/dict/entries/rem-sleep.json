@@ -1,0 +1,96 @@
+{
+  "slug": "rem-sleep",
+  "ja": "REM睡眠",
+  "yomi": "れむすいみん",
+  "en": "REM sleep",
+  "category": "biology",
+  "aliases": [
+    "急速眼球運動睡眠"
+  ],
+  "meshHeading": "Sleep, REM",
+  "meshUi": "68012895",
+  "description": {
+    "ja": "急速眼球運動 (Rapid Eye Movement) を伴う睡眠段階で、脳波は覚醒に近い活動を示しながら筋肉の緊張が低下する状態です。夢を見やすい時期として知られ、記憶の整理や学習の定着に関与すると考えられています。睡眠全体の約20-25%を占め、90分周期で繰り返されます。",
+    "en": "A sleep stage characterized by rapid eye movements, brain wave activity similar to wakefulness, and reduced muscle tone. It is commonly associated with vivid dreaming and thought to play a role in memory consolidation and learning. REM sleep comprises approximately 20-25% of total sleep and recurs in roughly 90-minute cycles."
+  },
+  "usage": {
+    "ja": "睡眠ポリグラフ検査 (PSG) で脳波・眼球運動・筋電図を同時測定して判定されます。論文では睡眠の質、記憶形成、神経疾患、精神疾患との関連を調べる研究で頻繁に登場し、REM潜時 (入眠からREM睡眠までの時間) やREM密度 (眼球運動の頻度) などの指標が用いられます。",
+    "en": "Identified through polysomnography (PSG) which simultaneously measures brain waves, eye movements, and muscle activity. In research papers, REM sleep is frequently examined in studies on sleep quality, memory formation, neurological disorders, and psychiatric conditions, using metrics such as REM latency (time from sleep onset to first REM period) and REM density (frequency of eye movements)."
+  },
+  "synonyms": {
+    "ja": "逆説睡眠 (paradoxical sleep)、活動的睡眠とも呼ばれます。対義語はノンREM睡眠 (non-REM sleep) で、こちらは深い睡眠段階を含みます。REM sleep behavior disorder (REM睡眠行動障害) のように病態名にも使われます。",
+    "en": "Also called paradoxical sleep or active sleep. The contrasting term is non-REM sleep (NREM sleep), which includes deeper sleep stages. The term appears in clinical conditions such as REM sleep behavior disorder, where normal muscle atonia during REM is absent."
+  },
+  "pubmedCount": 22577,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 605
+    },
+    {
+      "year": 2018,
+      "count": 569
+    },
+    {
+      "year": 2019,
+      "count": 651
+    },
+    {
+      "year": 2020,
+      "count": 662
+    },
+    {
+      "year": 2021,
+      "count": 751
+    },
+    {
+      "year": 2022,
+      "count": 690
+    },
+    {
+      "year": 2023,
+      "count": 746
+    },
+    {
+      "year": 2024,
+      "count": 736
+    },
+    {
+      "year": 2025,
+      "count": 875
+    },
+    {
+      "year": 2026,
+      "count": 893
+    }
+  ],
+  "searchQuery": "(\"Sleep, REM\"[MeSH Terms]) OR (\"REM sleep\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42879336",
+      "title": "Sleep EEG oscillations and synaptic plasticity in memory consolidation across NREM and REM sleep.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946180",
+      "title": "Total polyphenols from Hemerocallis citrina Baroni leaves improve sleep quality in mice with perimenopausal insomnia and are associated with altered expression of 5-HT(1A)R, ADCY5, PKA, and GABRA2.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045443",
+      "title": "Sleep and Neurodegenerative Diseases: Understanding the Bidirectional Relationship.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045430",
+      "title": "Updates in Rapid Eye Movement Sleep Behavior Disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42586392",
+      "title": "Neuroprotective effects of AnMei decoction on hypothalamic neuronal injury and circadian rhythm dysregulation in murine models of insomnia.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:55:49.181Z"
+}

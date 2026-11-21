@@ -1,0 +1,96 @@
+{
+  "slug": "burnout",
+  "ja": "バーンアウト",
+  "yomi": "ばーんあうと",
+  "en": "burnout",
+  "category": "psychology",
+  "aliases": [
+    "燃え尽き症候群"
+  ],
+  "meshHeading": "Burnout, Psychological",
+  "meshUi": "2027894",
+  "description": {
+    "ja": "バーンアウト（燃え尽き症候群）とは、長期的なストレスや過度な仕事への没頭により、心身の疲労が蓄積して意欲や関心が失われる心理状態を指します。情緒的消耗感、脱人格化（他者への冷淡な態度）、個人的達成感の低下の3要素で特徴づけられます。医療従事者や対人援助職で特に注目されてきましたが、現在では幅広い職種で研究対象となっています。",
+    "en": "Burnout refers to a psychological state characterized by accumulated mental and physical exhaustion resulting from prolonged stress or excessive work engagement, leading to loss of motivation and interest. It is typically defined by three dimensions: emotional exhaustion, depersonalization (cynical attitudes toward others), and reduced personal accomplishment. While initially studied among healthcare workers and helping professionals, burnout is now investigated across diverse occupational settings."
+  },
+  "usage": {
+    "ja": "心理学・産業保健の論文では、Maslach Burnout Inventory（MBI）などの標準化された質問票を用いて測定されます。職場環境要因（労働時間、職務負担、対人関係ストレス）との関連や、メンタルヘルス、離職意向、パフォーマンス低下などのアウトカムとの関係が検討されます。",
+    "en": "In psychology and occupational health research, burnout is typically measured using standardized questionnaires such as the Maslach Burnout Inventory (MBI). Studies examine associations with workplace factors (working hours, job demands, interpersonal stress) and outcomes including mental health, turnover intention, and performance decline."
+  },
+  "synonyms": {
+    "ja": "「燃え尽き症候群」は日本語での一般的な言い換えです。職業性ストレス、慢性疲労、情緒的消耗などの関連概念がありますが、バーンアウトは特に「仕事への情熱が失われる過程」を含む点で区別されます。うつ病とは重複する症状もありますが、バーンアウトは職業文脈に特異的とされます。",
+    "en": "The term is sometimes translated as 'burnout syndrome' in Japanese contexts. Related concepts include occupational stress, chronic fatigue, and emotional exhaustion, but burnout specifically encompasses the process of losing passion for work. While overlapping with depression symptoms, burnout is considered more occupation-specific."
+  },
+  "pubmedCount": 39594,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1338
+    },
+    {
+      "year": 2018,
+      "count": 1699
+    },
+    {
+      "year": 2019,
+      "count": 2231
+    },
+    {
+      "year": 2020,
+      "count": 2896
+    },
+    {
+      "year": 2021,
+      "count": 3440
+    },
+    {
+      "year": 2022,
+      "count": 3806
+    },
+    {
+      "year": 2023,
+      "count": 3634
+    },
+    {
+      "year": 2024,
+      "count": 3697
+    },
+    {
+      "year": 2025,
+      "count": 4601
+    },
+    {
+      "year": 2026,
+      "count": 4707
+    }
+  ],
+  "searchQuery": "(\"Burnout, Psychological\"[MeSH Terms]) OR (\"burnout\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43045439",
+      "title": "Sleep Health and Well-being for the Neurologist.",
+      "year": 2027
+    },
+    {
+      "pmid": "43009228",
+      "title": "Physician Impact and Toll of Surgical Complications.",
+      "year": 2027
+    },
+    {
+      "pmid": "42777487",
+      "title": "A longitudinal study of supervisor support as a moderator in maintaining work engagement during working from home: A moderated moderated-mediation model.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854789",
+      "title": "The association between alexithymia and job burnout in nurses: A systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "43003544",
+      "title": "Administrative Harm and Workforce Strain Indicators.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:15:59.735Z"
+}

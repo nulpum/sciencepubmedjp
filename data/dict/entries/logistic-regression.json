@@ -1,0 +1,93 @@
+{
+  "slug": "logistic-regression",
+  "ja": "ロジスティック回帰",
+  "yomi": "ろじすてぃっくかいき",
+  "en": "logistic regression",
+  "category": "research",
+  "meshHeading": "Logistic Models",
+  "meshUi": "68016015",
+  "description": {
+    "ja": "ある事象が起こるか起こらないか(例:病気になるかならないか、治療効果があるかないか)を予測するための統計手法です。年齢や性別などの複数の要因から、その事象が起こる確率を0から1の範囲で計算します。医学研究では、病気の発症リスクや治療の成功率を分析する際に広く用いられています。",
+    "en": "A statistical method used to predict whether an event will occur or not (e.g., disease onset, treatment response) based on multiple factors. It calculates the probability of an event occurring as a value between 0 and 1. Widely used in medical research to analyze disease risk and treatment success rates."
+  },
+  "usage": {
+    "ja": "疫学研究では、喫煙・運動習慣・遺伝的要因などを説明変数として、病気の発症(あり/なし)を予測する際に使用されます。結果はオッズ比や95%信頼区間とともに報告され、各要因が結果に与える影響の大きさを評価できます。",
+    "en": "In epidemiological studies, it is used to predict disease onset (yes/no) using explanatory variables such as smoking, exercise habits, and genetic factors. Results are reported with odds ratios and 95% confidence intervals to evaluate the magnitude of each factor's effect."
+  },
+  "synonyms": {
+    "ja": "二項ロジスティック回帰、logit modelとも呼ばれます。結果が3つ以上のカテゴリーを持つ場合は多項ロジスティック回帰、順序がある場合は順序ロジスティック回帰を用います。線形回帰とは異なり、結果が二値(0か1)の場合に適しています。",
+    "en": "Also called binomial logistic regression or logit model. For outcomes with three or more categories, multinomial logistic regression is used; for ordered outcomes, ordinal logistic regression applies. Unlike linear regression, it is suitable when the outcome is binary (0 or 1)."
+  },
+  "pubmedCount": 649751,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30349
+    },
+    {
+      "year": 2018,
+      "count": 31581
+    },
+    {
+      "year": 2019,
+      "count": 34269
+    },
+    {
+      "year": 2020,
+      "count": 40272
+    },
+    {
+      "year": 2021,
+      "count": 48120
+    },
+    {
+      "year": 2022,
+      "count": 50760
+    },
+    {
+      "year": 2023,
+      "count": 47532
+    },
+    {
+      "year": 2024,
+      "count": 51894
+    },
+    {
+      "year": 2025,
+      "count": 63987
+    },
+    {
+      "year": 2026,
+      "count": 69292
+    }
+  ],
+  "searchQuery": "(\"Logistic Models\"[MeSH Terms]) OR (\"logistic regression\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42924917",
+      "title": "Pressure-guided pneumatic radial compression and radial artery occlusion after transradial coronary procedures: a retrospective historical cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948259",
+      "title": "Prevalence and Clinical Significance of Gastric-Type Mucosal Lesions in Non-Ampullary Duodenal Epithelial Tumors Based on Mucin Phenotype.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781370",
+      "title": "Synchronous and Metachronous Multiple Gastric Epithelial Neoplasms Detected During Index Evaluation and Post-Endoscopic Submucosal Dissection Surveillance: A Descriptive Comparison.",
+      "year": 2027
+    },
+    {
+      "pmid": "42756095",
+      "title": "Feasibility and Safety Profile of Non-anesthesiologist-administered Propofol During Colorectal Endoscopic Submucosal Dissection: A Single-center Study of 454 Procedures.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:39:46.407Z"
+}

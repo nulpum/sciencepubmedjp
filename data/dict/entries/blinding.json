@@ -1,0 +1,95 @@
+{
+  "slug": "blinding",
+  "ja": "盲検化",
+  "yomi": "もうけんか",
+  "en": "blinding",
+  "category": "research",
+  "aliases": [
+    "ブラインド化",
+    "マスキング"
+  ],
+  "description": {
+    "ja": "臨床試験において、被験者や研究者が「誰がどの治療を受けているか」を知らないようにする手法です。思い込みや期待による結果の偏りを防ぎ、客観的な評価を可能にします。単盲検(被験者のみ)、二重盲検(被験者と評価者)、三重盲検(統計解析者も含む)などの種類があります。",
+    "en": "A method in clinical trials where participants and/or researchers are kept unaware of which treatment is being administered. This prevents bias from expectations or beliefs, enabling objective evaluation. Types include single-blind (participants only), double-blind (participants and evaluators), and triple-blind (including statisticians)."
+  },
+  "usage": {
+    "ja": "ランダム化比較試験(RCT)の質を高める重要な要素として用いられます。論文では「double-blind, placebo-controlled trial」のように記載され、プラセボ(偽薬)と実薬を外見上区別できないようにして実施されます。",
+    "en": "Used as a key element to enhance the quality of randomized controlled trials (RCTs). Papers typically describe this as 'double-blind, placebo-controlled trial,' where active treatment and placebo are made indistinguishable in appearance."
+  },
+  "synonyms": {
+    "ja": "マスキング(masking)とも呼ばれ、特に欧州の文献で多用されます。ブラインド化は主に割付情報の秘匿を指し、オープンラベル(open-label)試験はその対義語で全員が治療内容を知っている状態を指します。",
+    "en": "Also called masking, particularly common in European literature. Blinding refers to concealment of allocation information, while open-label trials are the opposite, where all parties know the treatment assignment."
+  },
+  "pubmedCount": 13909,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 717
+    },
+    {
+      "year": 2018,
+      "count": 613
+    },
+    {
+      "year": 2019,
+      "count": 713
+    },
+    {
+      "year": 2020,
+      "count": 922
+    },
+    {
+      "year": 2021,
+      "count": 945
+    },
+    {
+      "year": 2022,
+      "count": 783
+    },
+    {
+      "year": 2023,
+      "count": 767
+    },
+    {
+      "year": 2024,
+      "count": 816
+    },
+    {
+      "year": 2025,
+      "count": 996
+    },
+    {
+      "year": 2026,
+      "count": 1186
+    }
+  ],
+  "searchQuery": "\"blinding\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42526549",
+      "title": "Prunella Oral Liquid in combination with Western medical treatment for Graves' disease: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42966254",
+      "title": "Efficacy and implementation of augmented reality in healthcare: a scoping review in randomized controlled trials.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896244",
+      "title": "Clinical utility and transparency in randomized trials of biportal endoscopic lumbar discectomy: a systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "43056144",
+      "title": "Lower-limb performance and muscle soreness after short-term dark chocolate intake in CrossFit®-trained women: an exploratory secondary analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43001450",
+      "title": "Dose-specific effects of caffeinated chewing gum on reactive blocking timing, jump mechanics, and neuromuscular responses after volleyball-specific fatigue in elite female volleyball players.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:43:46.139Z"
+}

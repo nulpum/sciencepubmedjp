@@ -1,0 +1,93 @@
+{
+  "slug": "social-isolation",
+  "ja": "社会的孤立",
+  "yomi": "しゃかいてきこりつ",
+  "en": "social isolation",
+  "category": "psychology",
+  "meshHeading": "Social Isolation",
+  "meshUi": "68012934",
+  "description": {
+    "ja": "社会的孤立とは、家族や友人、地域社会との接触や交流が客観的に少ない状態を指します。孤独感(loneliness)が主観的な感情であるのに対し、社会的孤立は実際の人間関係の量や頻度で測定される客観的な指標です。高齢者の健康リスク、精神疾患との関連、認知機能低下などを調べる疫学研究で重要な概念として扱われます。",
+    "en": "Social isolation refers to an objective state of having minimal contact or interaction with family, friends, or community members. Unlike loneliness, which is a subjective feeling, social isolation is measured by the actual quantity and frequency of social relationships. It is an important concept in epidemiological studies examining health risks in older adults, associations with mental disorders, and cognitive decline."
+  },
+  "usage": {
+    "ja": "論文では、一人暮らしの有無、社会活動への参加頻度、友人・家族との接触回数などの客観的指標で評価されます。Lubben Social Network ScaleやBerkman-Syme Social Network Indexなどの標準化された尺度が用いられ、心血管疾患リスク、死亡率、うつ症状などのアウトカムとの関連が調べられます。",
+    "en": "In research papers, it is assessed using objective indicators such as living alone, frequency of social activity participation, and number of contacts with friends and family. Standardized scales like the Lubben Social Network Scale or Berkman-Syme Social Network Index are commonly used to examine associations with outcomes such as cardiovascular disease risk, mortality, and depressive symptoms."
+  },
+  "synonyms": {
+    "ja": "「社会的ネットワークの欠如」「社会的つながりの欠如(lack of social connection)」とも表現されます。主観的な「孤独感(loneliness)」とは区別して用いられますが、両者は相互に関連しながらも独立した健康リスク要因として研究されています。",
+    "en": "Also expressed as 'lack of social networks' or 'lack of social connection.' It is distinguished from subjective 'loneliness,' though both are studied as interrelated yet independent risk factors for health outcomes."
+  },
+  "pubmedCount": 43448,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1152
+    },
+    {
+      "year": 2018,
+      "count": 1271
+    },
+    {
+      "year": 2019,
+      "count": 1422
+    },
+    {
+      "year": 2020,
+      "count": 3112
+    },
+    {
+      "year": 2021,
+      "count": 3466
+    },
+    {
+      "year": 2022,
+      "count": 3113
+    },
+    {
+      "year": 2023,
+      "count": 2690
+    },
+    {
+      "year": 2024,
+      "count": 2994
+    },
+    {
+      "year": 2025,
+      "count": 3580
+    },
+    {
+      "year": 2026,
+      "count": 3291
+    }
+  ],
+  "searchQuery": "(\"Social Isolation\"[MeSH Terms]) OR (\"social isolation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880599",
+      "title": "Neuroendocrine and circuit remodeling under chronic social stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "42988109",
+      "title": "Female ddY mice show a weaker diazepam-induced reduction in aggressive biting behavior toward inanimate objects and lower hypothalamic KCC2 expression than males do.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863799",
+      "title": "Associations of one-to-one peer support service and intervention outcomes among older adults with depressive symptoms: Evidence from a community-based stepped care programme for late-life depression in Hong Kong.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854791",
+      "title": "Consensus on components of psychological treatment for depression to reduce symptoms and target relapse risk factors in young adults: A modified Delphi study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42763052",
+      "title": "Early attachment disruption differentially enhances multiple signs of microglia activation in the prefrontal cortex, hippocampus, and preoptic area of periadolescent guinea pigs.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:17:57.918Z"
+}

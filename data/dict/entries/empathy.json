@@ -1,0 +1,93 @@
+{
+  "slug": "empathy",
+  "ja": "共感",
+  "yomi": "きょうかん",
+  "en": "empathy",
+  "category": "psychology",
+  "meshHeading": "Empathy",
+  "meshUi": "68004645",
+  "description": {
+    "ja": "他者の感情や経験を自分のことのように感じ取り、理解する能力を指します。認知的共感（相手の視点を理解する）と情動的共感（相手の感情を共有する）の2側面があり、心理学では対人関係や社会性を支える重要な要素として研究されています。",
+    "en": "The ability to sense and understand another person's feelings and experiences as if they were one's own. It includes cognitive empathy (understanding another's perspective) and affective empathy (sharing another's emotions), and is studied as a key component supporting interpersonal relationships and social functioning in psychology."
+  },
+  "usage": {
+    "ja": "心理学論文では質問紙法（Interpersonal Reactivity IndexやEmpathy Quotientなど）や脳画像研究（fMRIでの前頭前野・島皮質の活動測定）で評価されます。臨床場面では対人関係障害や自閉スペクトラム症における共感機能の特徴が調べられています。",
+    "en": "In psychology papers, empathy is assessed using questionnaires (such as the Interpersonal Reactivity Index or Empathy Quotient) or neuroimaging studies (measuring prefrontal cortex and insula activity via fMRI). Clinical research examines empathic functioning in interpersonal disorders and autism spectrum conditions."
+  },
+  "synonyms": {
+    "ja": "「sympathy（同情）」は共感と混同されやすいですが、sympathyは相手を気の毒に思う感情であり、相手の視点に立つempathyとは異なります。「perspective-taking（視点取得）」は認知的共感の側面を指す用語です。",
+    "en": "Often confused with 'sympathy,' which refers to feeling sorry for someone rather than understanding their perspective. 'Perspective-taking' specifically refers to the cognitive aspect of empathy, while 'emotional contagion' describes automatic sharing of emotions without conscious understanding."
+  },
+  "pubmedCount": 42925,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1962
+    },
+    {
+      "year": 2018,
+      "count": 2038
+    },
+    {
+      "year": 2019,
+      "count": 2174
+    },
+    {
+      "year": 2020,
+      "count": 2583
+    },
+    {
+      "year": 2021,
+      "count": 2797
+    },
+    {
+      "year": 2022,
+      "count": 2670
+    },
+    {
+      "year": 2023,
+      "count": 2483
+    },
+    {
+      "year": 2024,
+      "count": 2985
+    },
+    {
+      "year": 2025,
+      "count": 3791
+    },
+    {
+      "year": 2026,
+      "count": 3850
+    }
+  ],
+  "searchQuery": "(\"Empathy\"[MeSH Terms]) OR (\"empathy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42862709",
+      "title": "Artificial Intelligence in suicide prevention: promise, peril, and clinical implications for clinical practice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045439",
+      "title": "Sleep Health and Well-being for the Neurologist.",
+      "year": 2027
+    },
+    {
+      "pmid": "43048730",
+      "title": "First- or Third-Person: The Impact of Narrative Voice and Reception Mode on Empathy, Identification, and Parasocial Interaction in Literary Engagement.",
+      "year": 2027
+    },
+    {
+      "pmid": "42975003",
+      "title": "Enhancing Empathic Functioning in Married Individuals Experiencing Marital Conflict Through Mentalization-Based Therapy in Iran.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:18:35.426Z"
+}

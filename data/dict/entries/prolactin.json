@@ -1,0 +1,93 @@
+{
+  "slug": "prolactin",
+  "ja": "プロラクチン",
+  "yomi": "ぷろらくちん",
+  "en": "prolactin",
+  "category": "biology",
+  "meshHeading": "Prolactin",
+  "meshUi": "68011388",
+  "description": {
+    "ja": "プロラクチン (prolactin) は、脳の下垂体前葉から分泌されるホルモンで、主に乳腺の発達や乳汁分泌に関与します。授乳期の女性で特に高値を示しますが、男性や妊娠していない女性でも一定量が分泌されており、生殖機能や免疫、代謝など多様な生理作用が研究されています。",
+    "en": "Prolactin is a hormone secreted from the anterior pituitary gland in the brain, primarily involved in mammary gland development and milk production. It is particularly elevated during lactation, but is also present in males and non-pregnant females, with diverse physiological roles in reproduction, immunity, and metabolism being actively studied."
+  },
+  "usage": {
+    "ja": "論文では血中プロラクチン濃度を測定し、授乳行動、月経周期、ストレス応答、下垂体腫瘍 (prolactinoma) などとの関連が調べられます。測定は主にELISAや免疫測定法で行われ、単位はng/mLまたはμg/Lで表記されます。",
+    "en": "In research papers, serum prolactin levels are measured to investigate associations with lactation, menstrual cycles, stress responses, and pituitary tumors such as prolactinomas. Measurements are typically performed using ELISA or immunoassays, with results expressed in ng/mL or μg/L."
+  },
+  "synonyms": {
+    "ja": "略称「PRL」が頻用されます。「luteotropic hormone (黄体刺激ホルモン)」は古い呼称で現在はあまり使われません。高プロラクチン血症 (hyperprolactinemia) は血中濃度が異常高値の状態を指す別の概念です。",
+    "en": "Commonly abbreviated as 'PRL.' The older term 'luteotropic hormone' is rarely used today. Hyperprolactinemia refers to an abnormally elevated blood level and is a distinct clinical concept from the hormone itself."
+  },
+  "pubmedCount": 57173,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 791
+    },
+    {
+      "year": 2018,
+      "count": 777
+    },
+    {
+      "year": 2019,
+      "count": 805
+    },
+    {
+      "year": 2020,
+      "count": 877
+    },
+    {
+      "year": 2021,
+      "count": 919
+    },
+    {
+      "year": 2022,
+      "count": 816
+    },
+    {
+      "year": 2023,
+      "count": 811
+    },
+    {
+      "year": 2024,
+      "count": 831
+    },
+    {
+      "year": 2025,
+      "count": 917
+    },
+    {
+      "year": 2026,
+      "count": 782
+    }
+  ],
+  "searchQuery": "(\"Prolactin\"[MeSH Terms]) OR (\"prolactin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42732702",
+      "title": "Photonic crystal barcode microfluidic chip for smart screening of lactogenic Chinese herbs using human mammary organoids.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039610",
+      "title": "Pituitary Neuroendocrine Tumors in the Pediatric Population.",
+      "year": 2027
+    },
+    {
+      "pmid": "42945770",
+      "title": "Optimizing inferior petrosal sinus sampling: results of a multicenter study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838182",
+      "title": "Environmental enrichment differentially suppresses anxiety-related behaviors, reduces passive avoidance learning, and upregulates hippocampal brain-derived neurotrophic factor expression in high- and low-avoidance Hatano rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42660265",
+      "title": "Development and validation of a mechanism-based Ba/F3-hGHR bioassay for the potency assessment of recombinant human growth hormone.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:55:12.537Z"
+}

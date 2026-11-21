@@ -1,0 +1,96 @@
+{
+  "slug": "grade-evidence",
+  "ja": "GRADE",
+  "yomi": "ぐれーど",
+  "en": "GRADE approach",
+  "category": "research",
+  "aliases": [
+    "エビデンスの質評価"
+  ],
+  "meshHeading": "GRADE Approach",
+  "meshUi": "2027889",
+  "description": {
+    "ja": "GRADE (Grading of Recommendations Assessment, Development and Evaluation) は、医学研究のエビデンスの質を評価し、診療ガイドライン作成時の推奨度を決定するための国際的な標準手法です。研究デザイン、バイアスリスク、結果の一貫性などを基に、エビデンスを「高」「中」「低」「非常に低い」の4段階で格付けします。",
+    "en": "GRADE (Grading of Recommendations Assessment, Development and Evaluation) is an internationally standardized framework for assessing the quality of evidence in medical research and determining the strength of recommendations in clinical practice guidelines. It rates evidence quality into four levels: high, moderate, low, or very low, based on study design, risk of bias, consistency of results, and other factors."
+  },
+  "usage": {
+    "ja": "システマティックレビューやメタ解析、診療ガイドラインの作成時に使用されます。研究デザイン(ランダム化比較試験は高評価から開始、観察研究は低評価から開始)を起点に、バイアスリスク、非一貫性、非直接性、不精確さ、出版バイアスなどの要因で評価を下げ、効果量が大きい場合などには評価を上げることもあります。",
+    "en": "Used in systematic reviews, meta-analyses, and development of clinical practice guidelines. The evaluation starts with study design (randomized controlled trials begin at high quality, observational studies at low quality), then grades down for risk of bias, inconsistency, indirectness, imprecision, or publication bias, and may grade up for large effect sizes or dose-response gradients."
+  },
+  "synonyms": {
+    "ja": "「エビデンスの質評価」「GRADE system」とも呼ばれます。類似の評価システムとして以前はOxford Centre for Evidence-Based Medicineのレベル分類などが使われていましたが、GRADEはより体系的で透明性が高いため、WHO、Cochrane、各国のガイドライン作成機関で広く採用されています。",
+    "en": "Also referred to as \"GRADE system\" or \"quality of evidence assessment.\" While earlier frameworks like the Oxford Centre for Evidence-Based Medicine levels were used, GRADE has become the preferred method due to its systematic and transparent approach, adopted by WHO, Cochrane Collaboration, and guideline development organizations worldwide."
+  },
+  "pubmedCount": 6964,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 352
+    },
+    {
+      "year": 2018,
+      "count": 375
+    },
+    {
+      "year": 2019,
+      "count": 411
+    },
+    {
+      "year": 2020,
+      "count": 575
+    },
+    {
+      "year": 2021,
+      "count": 674
+    },
+    {
+      "year": 2022,
+      "count": 722
+    },
+    {
+      "year": 2023,
+      "count": 651
+    },
+    {
+      "year": 2024,
+      "count": 732
+    },
+    {
+      "year": 2025,
+      "count": 1013
+    },
+    {
+      "year": 2026,
+      "count": 1329
+    }
+  ],
+  "searchQuery": "(\"GRADE Approach\"[MeSH Terms]) OR (\"GRADE approach\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880603",
+      "title": "Transcranial alternating current stimulation for major depressive disorder: An updated systematic review and meta-analysis of randomized trials with GRADE assessment.",
+      "year": 2027
+    },
+    {
+      "pmid": "43034829",
+      "title": "The Scandinavian Neurotrauma Committee 2026 guidelines for initial management of minimal, mild and moderate head injuries in adults: a systematic review, meta-analysis and modified Delphi consensus study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976419",
+      "title": "Childhood adversity and autoimmune thyroid diseases: A systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965121",
+      "title": "No superiority of double drains over single drainage after tissue expander-based breast reconstruction: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849762",
+      "title": "Chinese expert consensus on botulinum toxin injection for the treatment of disabling spasticity in adults.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:42:14.224Z"
+}

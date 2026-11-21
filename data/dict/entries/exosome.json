@@ -1,0 +1,96 @@
+{
+  "slug": "exosome",
+  "ja": "エクソソーム",
+  "yomi": "えくそそーむ",
+  "en": "exosome",
+  "category": "biology",
+  "aliases": [
+    "細胞外小胞"
+  ],
+  "meshHeading": "Exosomes",
+  "meshUi": "68055354",
+  "description": {
+    "ja": "エクソソームは、細胞が分泌する直径30-150nm程度の膜小胞で、タンパク質やRNA、脂質などを含みます。細胞間コミュニケーションや、がん転移、免疫応答などさまざまな生理現象に関与することが研究されています。近年、診断マーカーや薬物送達システムとしての応用が注目されています。",
+    "en": "Exosomes are membrane-bound vesicles with diameters of approximately 30-150 nm, secreted by cells and containing proteins, RNAs, and lipids. They are studied for their roles in intercellular communication, cancer metastasis, and immune responses. Recent research focuses on their potential applications as diagnostic biomarkers and drug delivery systems."
+  },
+  "usage": {
+    "ja": "論文では「exosome isolation」「exosomal miRNA」などの形で登場し、超遠心分離法やサイズ排除クロマトグラフィーで分離されます。エクソソーム中の特定分子(miRNA、タンパク質マーカー)を定量し、疾患との関連や細胞間シグナル伝達の解析に用いられます。",
+    "en": "Papers commonly describe 'exosome isolation' or 'exosomal miRNA', using methods such as ultracentrifugation or size exclusion chromatography. Researchers quantify specific molecules (miRNAs, protein markers) within exosomes to analyze disease associations and intercellular signaling pathways."
+  },
+  "synonyms": {
+    "ja": "「細胞外小胞(extracellular vesicles, EVs)」はエクソソームを含むより広い概念で、マイクロベシクルなども含まれます。厳密にはエクソソームは多胞体由来の小胞を指しますが、文献によっては小型EVsの総称として使われることもあり、定義の確認が必要です。",
+    "en": "Extracellular vesicles (EVs) is a broader term that includes exosomes as well as microvesicles. Strictly, exosomes refer to vesicles of endosomal origin from multivesicular bodies, but some literature uses the term for small EVs in general, requiring careful definition review."
+  },
+  "pubmedCount": 32049,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1449
+    },
+    {
+      "year": 2018,
+      "count": 1835
+    },
+    {
+      "year": 2019,
+      "count": 2408
+    },
+    {
+      "year": 2020,
+      "count": 2977
+    },
+    {
+      "year": 2021,
+      "count": 3443
+    },
+    {
+      "year": 2022,
+      "count": 3426
+    },
+    {
+      "year": 2023,
+      "count": 3329
+    },
+    {
+      "year": 2024,
+      "count": 3749
+    },
+    {
+      "year": 2025,
+      "count": 4400
+    },
+    {
+      "year": 2026,
+      "count": 3735
+    }
+  ],
+  "searchQuery": "(\"Exosomes\"[MeSH Terms]) OR (\"exosome\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42701464",
+      "title": "Ribosome engineering enhances genetic code expansion in Saccharomyces cerevisiae.",
+      "year": 2027
+    },
+    {
+      "pmid": "42927683",
+      "title": "Cytochalasin D-induced cytoskeletal remodeling with MYH9 enhances release of extracellular vesicles for therapeutic application.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914654",
+      "title": "A mechanically active microneedle platform integrated with engineered exosomes for enhanced tendon-bone regeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874362",
+      "title": "Improving spectral reproducibility in SERS analysis of exosomes via surface charge-modulated and biofunctionalized gold nanoparticles.",
+      "year": 2027
+    },
+    {
+      "pmid": "42785223",
+      "title": "Infrapatellar fat pad exosomes promote osteoarthritis by reprogramming macrophage polarization.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:07:21.502Z"
+}

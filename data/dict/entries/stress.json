@@ -1,0 +1,91 @@
+{
+  "slug": "stress",
+  "ja": "ストレス",
+  "yomi": "すとれす",
+  "en": "stress",
+  "category": "psychology",
+  "description": {
+    "ja": "心身に負担がかかる状態、またはその原因となる刺激を指す。心理学では、環境からの要求と個人の対処能力のバランスが崩れたときに生じる緊張状態として定義される。急性ストレス、慢性ストレス、心理社会的ストレスなど多様な側面がある。",
+    "en": "A state of mental or physical tension, or the stimulus causing it. In psychology, defined as a tension state arising when environmental demands exceed an individual's coping capacity. Includes acute stress, chronic stress, and psychosocial stress among various aspects."
+  },
+  "usage": {
+    "ja": "論文では「perceived stress(知覚されたストレス)」を質問紙(PSS: Perceived Stress Scaleなど)で測定したり、生理指標としてコルチゾール濃度、心拍変動、血圧などで評価される。介入研究では、ストレス軽減法(マインドフルネス、認知行動療法など)の効果検証に用いられる。",
+    "en": "In research, 'perceived stress' is measured by questionnaires (e.g., Perceived Stress Scale) or assessed via biomarkers such as cortisol levels, heart rate variability, and blood pressure. Intervention studies examine stress reduction techniques (mindfulness, cognitive behavioral therapy) as research targets."
+  },
+  "synonyms": {
+    "ja": "「psychological stress(心理的ストレス)」「distress(苦痛)」「strain(緊張)」などと使い分けられる。eustress(良いストレス)とdistress(悪いストレス)の区別や、stressor(ストレス源)とstress response(ストレス反応)の違いに注意が必要。",
+    "en": "Distinguished from 'psychological stress,' 'distress,' and 'strain.' Important to differentiate eustress (positive stress) from distress (negative stress), and 'stressor' (stress source) from 'stress response' (physiological/psychological reaction)."
+  },
+  "pubmedCount": 1302800,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 55795
+    },
+    {
+      "year": 2018,
+      "count": 58851
+    },
+    {
+      "year": 2019,
+      "count": 63372
+    },
+    {
+      "year": 2020,
+      "count": 74344
+    },
+    {
+      "year": 2021,
+      "count": 85544
+    },
+    {
+      "year": 2022,
+      "count": 88972
+    },
+    {
+      "year": 2023,
+      "count": 84835
+    },
+    {
+      "year": 2024,
+      "count": 90442
+    },
+    {
+      "year": 2025,
+      "count": 111477
+    },
+    {
+      "year": 2026,
+      "count": 118233
+    }
+  ],
+  "searchQuery": "\"stress\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42905428",
+      "title": "Visual behaviour in acute stress during simulated and on-road driving.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892707",
+      "title": "Trait-like proteomic signatures of stress resilience: correlates of freeze-like response resistance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42839367",
+      "title": "Enterovirus 2B protein: From viroporin to membrane stress sensor, mechanistic principles of multi-pathway regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:16:18.899Z"
+}

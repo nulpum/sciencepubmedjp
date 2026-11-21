@@ -1,0 +1,91 @@
+{
+  "slug": "confirmation-bias",
+  "ja": "確証バイアス",
+  "yomi": "かくしょうばいあす",
+  "en": "confirmation bias",
+  "category": "psychology",
+  "description": {
+    "ja": "確証バイアスとは、自分の信念や仮説を支持する情報ばかりを探したり、重視したりする傾向を指す認知バイアスです。反対の証拠があっても、それを軽視したり、自分の考えに合うように解釈してしまう心理的傾向として、心理学や意思決定研究で広く研究されています。",
+    "en": "Confirmation bias refers to the cognitive tendency to search for, favor, and recall information that confirms one's preexisting beliefs or hypotheses. It is a widely studied psychological phenomenon where people tend to dismiss or reinterpret evidence that contradicts their views, affecting decision-making and reasoning processes."
+  },
+  "usage": {
+    "ja": "心理学実験では、被験者に仮説検証課題を与え、どのような情報を選択するかを観察することで測定されます。臨床研究では診断エラーの要因として、また健康情報の探索行動やワクチン態度の形成過程などで確証バイアスの影響が調べられています。",
+    "en": "In psychological experiments, it is measured by presenting hypothesis-testing tasks and observing which information participants choose to examine. In clinical research, confirmation bias is studied as a factor in diagnostic errors, health information seeking behavior, and the formation of attitudes toward medical interventions such as vaccination."
+  },
+  "synonyms": {
+    "ja": "確認バイアス、検証バイアスとも呼ばれます。類似概念として、自分に都合の良い解釈をする「動機づけられた推論(motivated reasoning)」や、最初の情報に引きずられる「アンカリング効果」などがあり、文脈により使い分けられます。",
+    "en": "Also called confirmatory bias or verificatory bias. Related concepts include motivated reasoning, where people interpret information in self-serving ways, and anchoring effect, where initial information disproportionately influences judgment. These terms are distinguished based on specific cognitive mechanisms involved."
+  },
+  "pubmedCount": 675,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30
+    },
+    {
+      "year": 2018,
+      "count": 45
+    },
+    {
+      "year": 2019,
+      "count": 51
+    },
+    {
+      "year": 2020,
+      "count": 60
+    },
+    {
+      "year": 2021,
+      "count": 57
+    },
+    {
+      "year": 2022,
+      "count": 61
+    },
+    {
+      "year": 2023,
+      "count": 52
+    },
+    {
+      "year": 2024,
+      "count": 68
+    },
+    {
+      "year": 2025,
+      "count": 80
+    },
+    {
+      "year": 2026,
+      "count": 101
+    }
+  ],
+  "searchQuery": "\"confirmation bias\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42697024",
+      "title": "Robust webly supervised fine-grained recognition via decoupled global-local fusion and geometric-semantic consensus.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648237",
+      "title": "Intrinsic logit-based debiasing for class-imbalanced semi-supervised learning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42093142",
+      "title": "Sad but true: how emotions and political ideology shape perceptions of information.",
+      "year": 2026
+    },
+    {
+      "pmid": "43019952",
+      "title": "Wavelength alignment: a brain electromagnetic signature hypothesis for why the person we remember soon calls or appears.",
+      "year": 2026
+    },
+    {
+      "pmid": "42981246",
+      "title": "Text-to-Image Diffusion Sample Selector for Learning With Noisy Labels.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:25:22.259Z"
+}

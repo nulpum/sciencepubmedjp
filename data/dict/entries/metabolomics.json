@@ -1,0 +1,96 @@
+{
+  "slug": "metabolomics",
+  "ja": "メタボロミクス",
+  "yomi": "めたぼろみくす",
+  "en": "metabolomics",
+  "category": "biology",
+  "aliases": [
+    "代謝物解析"
+  ],
+  "meshHeading": "Metabolomics",
+  "meshUi": "68055432",
+  "description": {
+    "ja": "生体内に存在する低分子化合物(代謝物)を網羅的に測定・解析する研究手法です。糖・脂質・アミノ酸など数百から数千種類の代謝物を一度に調べることで、生命活動の状態を包括的に理解できます。",
+    "en": "A research approach that comprehensively measures and analyzes small molecular compounds (metabolites) present in living organisms. By examining hundreds to thousands of metabolites such as sugars, lipids, and amino acids simultaneously, researchers can gain a holistic understanding of biological states."
+  },
+  "usage": {
+    "ja": "論文では質量分析計やNMR装置を用いた測定データから、疾患マーカーの探索や薬剤応答の評価、栄養状態の把握などが報告されます。血液・尿・組織サンプルから抽出した代謝物プロファイルを統計解析し、健常群と患者群の違いを明らかにする研究が典型的です。",
+    "en": "Papers typically report disease biomarker discovery, drug response evaluation, or nutritional status assessment using mass spectrometry or NMR data. Studies commonly involve statistical analysis of metabolite profiles extracted from blood, urine, or tissue samples to identify differences between healthy controls and patient groups."
+  },
+  "synonyms": {
+    "ja": "「代謝物解析」「メタボローム解析」とも呼ばれます。遺伝子を調べる「ゲノミクス」、タンパク質を調べる「プロテオミクス」と並ぶオミクス研究の一分野で、生命現象の最終的な化学状態を反映する特徴があります。",
+    "en": "Also called 'metabolite profiling' or 'metabolome analysis.' It is part of omics research alongside genomics (genes) and proteomics (proteins), characterized by reflecting the final chemical state of biological processes."
+  },
+  "pubmedCount": 90742,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3723
+    },
+    {
+      "year": 2018,
+      "count": 4399
+    },
+    {
+      "year": 2019,
+      "count": 5502
+    },
+    {
+      "year": 2020,
+      "count": 6459
+    },
+    {
+      "year": 2021,
+      "count": 7673
+    },
+    {
+      "year": 2022,
+      "count": 8416
+    },
+    {
+      "year": 2023,
+      "count": 8733
+    },
+    {
+      "year": 2024,
+      "count": 10916
+    },
+    {
+      "year": 2025,
+      "count": 14340
+    },
+    {
+      "year": 2026,
+      "count": 15093
+    }
+  ],
+  "searchQuery": "(\"Metabolomics\"[MeSH Terms]) OR (\"metabolomics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42908331",
+      "title": "Effects of xylooligosaccharide supplementation on methane emissions, rumen microbiome, and serum metabolome in lactating Jersey cows.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "43019776",
+      "title": "Micro-flow LC- drift tube IMS-MS with high-resolution demultiplexing for enhanced lipidome coverage of volume-limited biological samples.",
+      "year": 2027
+    },
+    {
+      "pmid": "43008372",
+      "title": "Next-generation hyphenated analytical technologies in natural product research: From high-resolution separation and structural elucidation to dereplication, metabolomics and drug discovery.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901676",
+      "title": "Multi-omics and functional validation profiling reveals the regulatory mechanism of biofilm-forming Tetragenococcus halophilus JY1 in response to salt tolerance.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:07:39.719Z"
+}

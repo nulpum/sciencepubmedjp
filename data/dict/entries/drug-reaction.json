@@ -1,0 +1,94 @@
+{
+  "slug": "drug-reaction",
+  "ja": "薬物有害反応",
+  "yomi": "やくぶつゆうがいはんのう",
+  "en": "adverse drug reaction",
+  "abbr": "ADR",
+  "category": "nursing-pharma",
+  "meshHeading": "Drug-Related Side Effects and Adverse Reactions",
+  "meshUi": "68064420",
+  "description": {
+    "ja": "薬物有害反応(ADR)とは、医薬品の使用に伴って生じる好ましくない、意図しない反応のことです。軽微な副作用から重篤なアレルギー反応まで幅広く含まれ、医薬品の安全性評価において重要な指標となります。薬物動態や患者背景によって発現頻度や重症度が異なるため、臨床現場での注意深いモニタリングが求められます。",
+    "en": "An adverse drug reaction (ADR) is an unwanted or unintended response associated with the use of a medication. It encompasses a wide range of outcomes from mild side effects to serious allergic reactions, and serves as a crucial indicator in drug safety evaluation. The frequency and severity of ADRs vary depending on pharmacokinetics and patient characteristics, requiring careful monitoring in clinical practice."
+  },
+  "usage": {
+    "ja": "臨床試験や市販後調査では、ADRの種類、発現頻度、重症度、因果関係が系統的に記録されます。WHOのUMC基準やNaranjoスケールなどを用いて薬剤との因果関係を評価し、MedDRAなどの標準化された用語体系で分類されることが一般的です。",
+    "en": "In clinical trials and post-marketing surveillance, the type, incidence, severity, and causality of ADRs are systematically documented. Causality assessment is conducted using tools such as WHO-UMC criteria or the Naranjo scale, and ADRs are typically classified using standardized terminology systems like MedDRA."
+  },
+  "synonyms": {
+    "ja": "副作用(side effect)、有害事象(adverse event)と混同されやすいですが、ADRは薬剤との因果関係が疑われるものを指し、有害事象は因果関係を問わず治療中に生じたあらゆる好ましくない医療上の出来事を含みます。薬物有害作用と表記されることもあります。",
+    "en": "Often confused with side effect or adverse event (AE), but ADR specifically refers to reactions with suspected causality to the drug, whereas an adverse event includes any unfavorable medical occurrence during treatment regardless of causality. May also be termed drug adverse effect or drug adverse reaction."
+  },
+  "pubmedCount": 152241,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5351
+    },
+    {
+      "year": 2018,
+      "count": 5721
+    },
+    {
+      "year": 2019,
+      "count": 6115
+    },
+    {
+      "year": 2020,
+      "count": 6176
+    },
+    {
+      "year": 2021,
+      "count": 5764
+    },
+    {
+      "year": 2022,
+      "count": 5426
+    },
+    {
+      "year": 2023,
+      "count": 5597
+    },
+    {
+      "year": 2024,
+      "count": 5141
+    },
+    {
+      "year": 2025,
+      "count": 5346
+    },
+    {
+      "year": 2026,
+      "count": 4456
+    }
+  ],
+  "searchQuery": "(\"Drug-Related Side Effects and Adverse Reactions\"[MeSH Terms]) OR (\"adverse drug reaction\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892242",
+      "title": "A near-infrared fluorescent probe for imaging hydrogen peroxide in living cells and acute liver injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887831",
+      "title": "Traditional licorice-milk processing of Alangium chinense (Lour.) Harms reduces hepatotoxicity and enhances bioactivity via EGFR/PI3K/AKT pathway modulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42829071",
+      "title": "Analysis of molecular events triggered by furanocoumarins in Psoralea corylifolia L. via reactive metabolites and protein adducts.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800687",
+      "title": "Forsythiaside A suppresses PANoptosis to alleviate senecionine-induced hepatotoxicity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42665171",
+      "title": "ABCB1 rs2032582 as a potential biomarker for predicting Scutellaria baicalensis Georgi-drug induced liver injury in humans.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:35:50.387Z"
+}

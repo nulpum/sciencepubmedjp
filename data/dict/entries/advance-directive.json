@@ -1,0 +1,93 @@
+{
+  "slug": "advance-directive",
+  "ja": "事前指示書",
+  "yomi": "じぜんしじしょ",
+  "en": "advance directive",
+  "category": "nursing-pharma",
+  "meshHeading": "Advance Directives",
+  "meshUi": "68016223",
+  "description": {
+    "ja": "患者が将来判断能力を失った際に備えて、医療やケアに関する希望を事前に文書化したものです。延命治療の希望や拒否、療養場所の選択などを記載し、本人の意思を尊重した医療・ケアの実現を目指します。リビングウィルや医療代理人の指定を含むことがあります。",
+    "en": "A document in which patients express their preferences for future medical care and treatment in case they lose decision-making capacity. It may include wishes regarding life-sustaining treatment, place of care, and designation of a healthcare proxy to ensure patient-centered care aligned with their values."
+  },
+  "usage": {
+    "ja": "終末期医療や高齢者ケアの研究で、事前指示書の作成率や内容、医療従事者の遵守状況が調査されます。アドバンス・ケア・プランニング(ACP)の一環として、患者・家族・医療者間のコミュニケーションツールとしても評価されます。",
+    "en": "Studies in end-of-life care and geriatric nursing examine the prevalence, content, and adherence to advance directives. They are evaluated as communication tools within advance care planning (ACP) processes involving patients, families, and healthcare providers."
+  },
+  "synonyms": {
+    "ja": "「リビングウィル」は事前指示書の一種で、主に延命治療に関する意思表明を指します。「事前意思表明」や「アドバンス・ディレクティブ」とも呼ばれ、法的効力や形式は国や地域により異なります。広義には「アドバンス・ケア・プランニング(ACP)」の成果物の一つです。",
+    "en": "\"Living will\" is a type of advance directive focusing on life-sustaining treatment preferences. Terms like \"advance care directive\" or \"advance healthcare directive\" are also used. Legal validity and formats vary by jurisdiction. It is considered an outcome document of the broader \"advance care planning (ACP)\" process."
+  },
+  "pubmedCount": 8905,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 285
+    },
+    {
+      "year": 2018,
+      "count": 282
+    },
+    {
+      "year": 2019,
+      "count": 330
+    },
+    {
+      "year": 2020,
+      "count": 317
+    },
+    {
+      "year": 2021,
+      "count": 284
+    },
+    {
+      "year": 2022,
+      "count": 233
+    },
+    {
+      "year": 2023,
+      "count": 216
+    },
+    {
+      "year": 2024,
+      "count": 188
+    },
+    {
+      "year": 2025,
+      "count": 189
+    },
+    {
+      "year": 2026,
+      "count": 155
+    }
+  ],
+  "searchQuery": "(\"Advance Directives\"[MeSH Terms]) OR (\"advance directive\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42503465",
+      "title": "Knowledge, Attitudes, and Practices Regarding Advance Care Planning Among Preoperative Patients in Malaysia.",
+      "year": 2026
+    },
+    {
+      "pmid": "40970804",
+      "title": "Exploring the Feasibility of the LEAD Trial: Online Dyadic Dementia Care Planning for Early Alzheimer's and Other Dementias.",
+      "year": 2026
+    },
+    {
+      "pmid": "42998764",
+      "title": "Shared care planning. Advance directive.",
+      "year": 2026
+    },
+    {
+      "pmid": "42989609",
+      "title": "Culturally tailored communication factors in advance care planning for Chinese Americans: An integrative review and conceptual framework.",
+      "year": 2026
+    },
+    {
+      "pmid": "41879158",
+      "title": "Palliative care in cardiovascular medicine.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:30:36.464Z"
+}

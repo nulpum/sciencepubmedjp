@@ -1,0 +1,96 @@
+{
+  "slug": "transcriptomics",
+  "ja": "トランスクリプトミクス",
+  "yomi": "とらんすくりぷとみくす",
+  "en": "transcriptomics",
+  "category": "biology",
+  "aliases": [
+    "転写産物解析"
+  ],
+  "meshHeading": "Gene Expression Profiling",
+  "meshUi": "68020869",
+  "description": {
+    "ja": "細胞や組織内で発現しているすべてのRNA(転写産物)を網羅的に解析する研究手法です。どの遺伝子がいつ、どれくらい活性化しているかを明らかにし、疾患や発生段階における遺伝子発現パターンの変化を捉えます。ゲノムが設計図なら、トランスクリプトームはその時々に実際に読み出されている情報を表します。",
+    "en": "A comprehensive research approach that analyzes all RNA molecules (transcripts) expressed in cells or tissues. It reveals which genes are active, when, and to what extent, capturing changes in gene expression patterns across diseases or developmental stages. While the genome is a blueprint, the transcriptome represents the information actually being read at any given moment."
+  },
+  "usage": {
+    "ja": "RNA-seqやマイクロアレイを用いて測定され、「トランスクリプトーム解析により差次的発現遺伝子を同定した」「健常群と患者群のトランスクリプトミクスデータを比較した」のように使われます。シングルセル解析と組み合わせて細胞ごとの発現プロファイルを調べる研究も増えています。",
+    "en": "Measured using RNA-seq or microarrays, typically appearing as 'differentially expressed genes were identified by transcriptome analysis' or 'transcriptomics data were compared between healthy and patient groups.' Increasingly combined with single-cell analysis to examine expression profiles at individual cell resolution."
+  },
+  "synonyms": {
+    "ja": "転写産物解析、トランスクリプトーム解析と呼ばれることもあります。遺伝子発現解析(gene expression analysis)と重なる部分が多いですが、トランスクリプトミクスは網羅的・全体的な解析を指す点で区別されます。mRNA以外に非コードRNAも含む場合があります。",
+    "en": "Also called transcriptome analysis or gene expression profiling. While overlapping with gene expression analysis, transcriptomics specifically emphasizes comprehensive, genome-wide approaches. May include non-coding RNAs in addition to mRNA depending on the study design."
+  },
+  "pubmedCount": 336268,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 12837
+    },
+    {
+      "year": 2018,
+      "count": 12487
+    },
+    {
+      "year": 2019,
+      "count": 13914
+    },
+    {
+      "year": 2020,
+      "count": 14740
+    },
+    {
+      "year": 2021,
+      "count": 15261
+    },
+    {
+      "year": 2022,
+      "count": 11320
+    },
+    {
+      "year": 2023,
+      "count": 11843
+    },
+    {
+      "year": 2024,
+      "count": 16969
+    },
+    {
+      "year": 2025,
+      "count": 22694
+    },
+    {
+      "year": 2026,
+      "count": 24568
+    }
+  ],
+  "searchQuery": "(\"Gene Expression Profiling\"[MeSH Terms]) OR (\"transcriptomics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42921389",
+      "title": "Screening a thermotolerant Komagataella phaffii strain with methanol cross-tolerance and the associated physiological and transcriptional responses.",
+      "year": 2027
+    },
+    {
+      "pmid": "42991010",
+      "title": "Disrupting the cholesterol-mechanics axis enables ferroptosis and deep drug delivery in hepatocellular carcinoma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42959965",
+      "title": "Integrating single-cell transcriptomics and machine learning to reveal prognostic and immune significance of lactylation in breast cancer.",
+      "year": 2027
+    },
+    {
+      "pmid": "42910182",
+      "title": "Oxygen-vacancy-rich LDH sonosensitizers potentiate narrow-spectrum antibiotics via membrane-disruption strategy for mixed bacterial wound infections.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901669",
+      "title": "Salt-dependent osmoadaptation and metabolic responses of Lactiplantibacillus plantarum BS3-1 in fermented bamboo shoots.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:08:16.231Z"
+}

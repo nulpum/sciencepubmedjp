@@ -1,0 +1,94 @@
+{
+  "slug": "c-reactive-protein",
+  "ja": "C反応性タンパク",
+  "yomi": "しーはんのうせいたんぱく",
+  "en": "C-reactive protein",
+  "abbr": "CRP",
+  "category": "biology",
+  "meshHeading": "C-Reactive Protein",
+  "meshUi": "68002097",
+  "description": {
+    "ja": "C反応性タンパク(CRP)は、体内で炎症が起きたときに肝臓から血液中へ多く放出されるタンパク質です。感染症や組織損傷、自己免疫疾患などで数値が上昇するため、炎症の有無や程度を知る指標として広く用いられます。健康な状態では血中濃度は低く保たれています。",
+    "en": "C-reactive protein (CRP) is a protein released by the liver into the bloodstream in response to inflammation. It increases during infections, tissue injury, and autoimmune conditions, making it a widely used biomarker for detecting and monitoring inflammation. In healthy individuals, blood CRP levels remain low."
+  },
+  "usage": {
+    "ja": "論文では血液検査による血清CRP濃度(mg/L または mg/dL)として報告され、炎症性疾患の診断補助や治療効果の評価に使われます。高感度CRP(hs-CRP)測定では、心血管疾患リスクの評価など、より低い濃度範囲での変化を調べることができます。",
+    "en": "In research papers, CRP is reported as serum concentration (mg/L or mg/dL) measured by blood tests, used to aid diagnosis of inflammatory conditions and assess treatment response. High-sensitivity CRP (hs-CRP) assays can detect lower concentration ranges for evaluating cardiovascular disease risk."
+  },
+  "synonyms": {
+    "ja": "高感度CRP(hs-CRP)は同じ物質をより精密に測定する方法です。急性相反応物質(acute phase reactant)の代表例として扱われ、ESR(赤血球沈降速度)と並んで炎症マーカーとして引用されますが、CRPの方が変化が早く現れます。",
+    "en": "High-sensitivity CRP (hs-CRP) refers to a more precise measurement method for the same molecule. CRP is a representative acute phase reactant and is cited alongside ESR (erythrocyte sedimentation rate) as an inflammation marker, though CRP changes more rapidly."
+  },
+  "pubmedCount": 128733,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5759
+    },
+    {
+      "year": 2018,
+      "count": 5859
+    },
+    {
+      "year": 2019,
+      "count": 6162
+    },
+    {
+      "year": 2020,
+      "count": 8052
+    },
+    {
+      "year": 2021,
+      "count": 9082
+    },
+    {
+      "year": 2022,
+      "count": 8534
+    },
+    {
+      "year": 2023,
+      "count": 7286
+    },
+    {
+      "year": 2024,
+      "count": 7549
+    },
+    {
+      "year": 2025,
+      "count": 8947
+    },
+    {
+      "year": 2026,
+      "count": 9004
+    }
+  ],
+  "searchQuery": "(\"C-Reactive Protein\"[MeSH Terms]) OR (\"C-reactive protein\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42981634",
+      "title": "Advancing neonatal care through non-invasive biochemical monitoring and diagnostics.",
+      "year": 2027
+    },
+    {
+      "pmid": "43011241",
+      "title": "Associations of fibroblast growth factor 21 with renal parameter changes during pemafibrate treatment in patients with type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "43011226",
+      "title": "Evidence generation for diabetes prevention and treatment through the integration of clinical medicine, nutritional epidemiology, and behavioral science.",
+      "year": 2027
+    },
+    {
+      "pmid": "42968831",
+      "title": "Baseline monocyte SGLT2 mRNA expression and changes in the fibrosis-4 index after luseogliflozin treatment in participants with type 2 diabetes and MASLD.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:59:26.469Z"
+}

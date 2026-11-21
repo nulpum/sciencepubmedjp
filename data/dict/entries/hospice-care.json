@@ -1,0 +1,93 @@
+{
+  "slug": "hospice-care",
+  "ja": "ホスピスケア",
+  "yomi": "ほすぴすけあ",
+  "en": "hospice care",
+  "category": "nursing-pharma",
+  "meshHeading": "Hospice Care",
+  "meshUi": "68017051",
+  "description": {
+    "ja": "終末期の患者に対して、延命治療よりも痛みや苦痛の緩和を優先し、残された時間を尊厳を持って過ごせるように支援するケアの形態です。医療チームだけでなく、家族や精神的サポートも含めた包括的なアプローチが特徴で、病院のホスピス病棟や在宅で提供されます。患者の生活の質(QOL)を最大限に高めることを目的としています。",
+    "en": "A form of care for terminally ill patients that prioritizes relief of pain and suffering over life-prolonging treatments, supporting patients to spend their remaining time with dignity. It features a comprehensive approach involving not only medical teams but also family and spiritual support, provided in hospice units or at home. The goal is to maximize the patient's quality of life (QOL)."
+  },
+  "usage": {
+    "ja": "終末期がん患者や進行性疾患患者のQOL評価、緩和ケアとの効果比較、在宅ホスピスケアの実施状況調査などの研究で用いられます。痛みの評価尺度(VASやNRSなど)、患者満足度調査、家族介護者の負担評価などが測定指標となります。",
+    "en": "Used in studies evaluating QOL of terminal cancer patients or those with progressive diseases, comparing effectiveness with palliative care, and surveying implementation of home hospice care. Measurement indicators include pain assessment scales (VAS, NRS), patient satisfaction surveys, and caregiver burden assessments."
+  },
+  "synonyms": {
+    "ja": "「緩和ケア(palliative care)」と重複する部分がありますが、ホスピスケアは主に予後6ヶ月以内の終末期に特化し、治癒目的の治療を行わない点で区別されます。「ターミナルケア(terminal care)」「エンドオブライフケア(end-of-life care)」とも類似しますが、ホスピスは包括的なケアシステムを指す場合が多いです。",
+    "en": "While overlapping with 'palliative care,' hospice care is typically distinguished by focusing specifically on the terminal phase (prognosis of 6 months or less) without curative treatments. Similar to 'terminal care' and 'end-of-life care,' but hospice often refers to a comprehensive care system rather than just a phase of care."
+  },
+  "pubmedCount": 11911,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 549
+    },
+    {
+      "year": 2018,
+      "count": 538
+    },
+    {
+      "year": 2019,
+      "count": 553
+    },
+    {
+      "year": 2020,
+      "count": 688
+    },
+    {
+      "year": 2021,
+      "count": 798
+    },
+    {
+      "year": 2022,
+      "count": 774
+    },
+    {
+      "year": 2023,
+      "count": 680
+    },
+    {
+      "year": 2024,
+      "count": 611
+    },
+    {
+      "year": 2025,
+      "count": 563
+    },
+    {
+      "year": 2026,
+      "count": 503
+    }
+  ],
+  "searchQuery": "(\"Hospice Care\"[MeSH Terms]) OR (\"hospice care\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "41353626",
+      "title": "Examining Social Support and Digital Literacy Among Caregivers of People Living With Dementia Receiving Hospice Services.",
+      "year": 2027
+    },
+    {
+      "pmid": "41243141",
+      "title": "Characterizing the Use of Emergency Department Resources and Dispositions of Hospice Patients in an Appalachian Region of the United States.",
+      "year": 2027
+    },
+    {
+      "pmid": "41129725",
+      "title": "Bearing Witness in Home Hospice: Ethical Reflections on Caring for Asian American Patients.",
+      "year": 2027
+    },
+    {
+      "pmid": "41058121",
+      "title": "Live Discharges of Patients in Hospice Home Settings-Relief or Grief: A Narrative Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42980526",
+      "title": "Moral Distress Among Hospice Nurses in China: A Mixed-Methods Study Informed by an Ecological Systems Perspective.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:47:21.842Z"
+}

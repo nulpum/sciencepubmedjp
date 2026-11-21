@@ -1,0 +1,93 @@
+{
+  "slug": "triage",
+  "ja": "トリアージ",
+  "yomi": "とりあーじ",
+  "en": "triage",
+  "category": "nursing-pharma",
+  "meshHeading": "Triage",
+  "meshUi": "68014218",
+  "description": {
+    "ja": "トリアージとは、多数の傷病者が発生した際に、治療の優先順位を決定する過程です。限られた医療資源を最も効果的に配分するため、傷病の緊急度と重症度に基づいて患者を分類します。災害医療や救急医療の現場で用いられる重要な判断プロセスです。",
+    "en": "Triage is the process of determining treatment priority when multiple casualties occur. It classifies patients based on urgency and severity of illness or injury to allocate limited medical resources most effectively. This is a critical decision-making process used in disaster medicine and emergency care settings."
+  },
+  "usage": {
+    "ja": "論文では救急外来での患者分類システム、災害時の医療対応プロトコル、電話トリアージの精度評価などの文脈で使われます。START法やPAT法などの標準化されたトリアージ手法の有効性や、トリアージ実施者の判断精度を検証する研究が報告されています。",
+    "en": "In research papers, triage appears in contexts such as emergency department classification systems, disaster response protocols, and accuracy evaluation of telephone triage. Studies examine the effectiveness of standardized triage methods like START or PAT, and validate the decision-making accuracy of triage officers."
+  },
+  "synonyms": {
+    "ja": "「優先順位付け (prioritization)」「患者分類 (patient sorting)」とも呼ばれます。トリアージタグによる色分け (赤・黄・緑・黒) は視覚的分類手段として広く認識されていますが、具体的な基準は状況や地域により異なる場合があります。",
+    "en": "Also referred to as 'prioritization' or 'patient sorting.' Color-coded triage tags (red, yellow, green, black) are widely recognized as visual classification tools, though specific criteria may vary depending on context and region."
+  },
+  "pubmedCount": 41154,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1514
+    },
+    {
+      "year": 2018,
+      "count": 1703
+    },
+    {
+      "year": 2019,
+      "count": 1784
+    },
+    {
+      "year": 2020,
+      "count": 3316
+    },
+    {
+      "year": 2021,
+      "count": 3260
+    },
+    {
+      "year": 2022,
+      "count": 2657
+    },
+    {
+      "year": 2023,
+      "count": 2343
+    },
+    {
+      "year": 2024,
+      "count": 2338
+    },
+    {
+      "year": 2025,
+      "count": 3186
+    },
+    {
+      "year": 2026,
+      "count": 5254
+    }
+  ],
+  "searchQuery": "(\"Triage\"[MeSH Terms]) OR (\"triage\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42881012",
+      "title": "From reactive diagnosis to proactive triage: connecting the dots at labour onset.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967395",
+      "title": "Colorimetric sensor arrays and artificial intelligence for natural product quality evaluation: From cross-reactive fingerprints to analytical validation.",
+      "year": 2027
+    },
+    {
+      "pmid": "43044613",
+      "title": "Burn Management in Disasters.",
+      "year": 2027
+    },
+    {
+      "pmid": "43044611",
+      "title": "Thoracoabdominal Trauma in Disaster.",
+      "year": 2027
+    },
+    {
+      "pmid": "43044610",
+      "title": "Critical Care Management of Disaster-Related Organ Failure.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:37:03.018Z"
+}

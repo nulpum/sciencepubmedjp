@@ -1,0 +1,91 @@
+{
+  "slug": "mendelian-randomization",
+  "ja": "メンデルランダム化",
+  "yomi": "めんでるらんだむか",
+  "en": "Mendelian randomization",
+  "category": "research",
+  "description": {
+    "ja": "遺伝子変異を「自然な無作為化」として利用し、ある要因(例:コレステロール値)と健康アウトカム(例:心疾患)の因果関係を推定する疫学研究手法です。遺伝子は生まれつき決まっており生活習慣などの交絡因子の影響を受けにくいため、観察研究でも因果推論に近づけるという考え方に基づきます。ランダム化比較試験が困難な場合の代替手段として注目されています。",
+    "en": "Mendelian randomization is an epidemiological method that uses genetic variants as 'natural randomization' to estimate causal relationships between an exposure (e.g., cholesterol levels) and health outcomes (e.g., heart disease). Since genetic variants are determined at birth and less affected by confounders like lifestyle factors, this approach enables causal inference in observational studies. It serves as an alternative when randomized controlled trials are impractical."
+  },
+  "usage": {
+    "ja": "論文では「MR解析により、LDLコレステロールと冠動脈疾患の因果関係を検証した」のように記述されます。遺伝情報データベース(UK Biobankなど)を用いて、特定の形質に関連する一塩基多型(SNP)を操作変数として統計解析を行います。",
+    "en": "In papers, it appears as 'MR analysis was used to examine the causal relationship between LDL cholesterol and coronary artery disease.' Researchers utilize genetic databases (e.g., UK Biobank) and perform statistical analysis using single nucleotide polymorphisms (SNPs) associated with specific traits as instrumental variables."
+  },
+  "synonyms": {
+    "ja": "略称は「MR」または「MR研究」です。類似概念に「操作変数法」がありますが、メンデルランダム化は特に遺伝子変異を操作変数とする点が特徴です。two-sample MR、MR-Egger回帰など、解析手法のバリエーションも多数存在します。",
+    "en": "Abbreviated as 'MR' or 'MR study.' Related to 'instrumental variable analysis,' but Mendelian randomization specifically uses genetic variants as instruments. Various analytical approaches exist, including two-sample MR and MR-Egger regression."
+  },
+  "pubmedCount": 24022,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 256
+    },
+    {
+      "year": 2018,
+      "count": 335
+    },
+    {
+      "year": 2019,
+      "count": 482
+    },
+    {
+      "year": 2020,
+      "count": 749
+    },
+    {
+      "year": 2021,
+      "count": 1097
+    },
+    {
+      "year": 2022,
+      "count": 1525
+    },
+    {
+      "year": 2023,
+      "count": 2793
+    },
+    {
+      "year": 2024,
+      "count": 6201
+    },
+    {
+      "year": 2025,
+      "count": 6838
+    },
+    {
+      "year": 2026,
+      "count": 5012
+    }
+  ],
+  "searchQuery": "\"Mendelian randomization\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42997717",
+      "title": "Identification of novel therapeutic targets for heart failure and its subtypes: Insights from proteomic and transcriptomic Mendelian randomization.",
+      "year": 2027
+    },
+    {
+      "pmid": "42471213",
+      "title": "Hyperuricemia, circulating metabolites, and the risk of cardiometabolic multimorbidity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838303",
+      "title": "Mechanism of Buyang Huanwu Decoction in regulating arachidonic acid metabolism to mediate microglial polarization and alleviate cerebral ischemic injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810524",
+      "title": "Integrative genetic analyses of circadian chronotype and autism highlight regional co-association at 17q21.31.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987678",
+      "title": "A multi-omics study with in vitro and in vivo interventions targeting the leptin-mediated Hypoxia-Inducible Factor-1 Alpha metabolic-inflammatory axis in gastroesophageal reflux disease.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:45:54.113Z"
+}

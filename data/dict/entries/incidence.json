@@ -1,0 +1,96 @@
+{
+  "slug": "incidence",
+  "ja": "発症率",
+  "yomi": "はっしょうりつ",
+  "en": "incidence",
+  "category": "research",
+  "aliases": [
+    "罹患率"
+  ],
+  "meshHeading": "epidemiology",
+  "meshUi": "81000453",
+  "description": {
+    "ja": "一定期間内に、特定の集団の中で新たに病気や症状が発生した人の割合を示す指標です。既に病気を持っている人は含まず、新規発生のみをカウントします。疫学研究で疾患リスクや予防効果を評価する際の基本的な測定値として広く用いられます。",
+    "en": "A measure indicating the proportion of new cases of a disease or condition that occur in a specific population during a defined time period. It counts only new occurrences and excludes existing cases. This is a fundamental metric widely used in epidemiological studies to assess disease risk and preventive effects."
+  },
+  "usage": {
+    "ja": "論文では「10万人年あたりの発症率」のように、観察期間と集団規模を明示して報告されます。コホート研究で介入群と対照群の発症率を比較したり、年齢調整発症率として標準化して用いられることが多いです。",
+    "en": "In papers, it is typically reported as 'incidence per 100,000 person-years,' clearly specifying the observation period and population size. It is commonly used in cohort studies to compare incidence between intervention and control groups, or as age-adjusted incidence for standardization."
+  },
+  "synonyms": {
+    "ja": "罹患率とほぼ同義で使われますが、厳密には発症率は新規発生を、有病率(prevalence)は特定時点での患者の存在割合を指します。検索時は「incidence rate」「attack rate」なども関連語として有用です。",
+    "en": "Often used interchangeably with 'morbidity rate,' but strictly speaking, incidence refers to new occurrences while prevalence indicates the proportion of existing cases at a specific time. Related search terms include 'incidence rate' and 'attack rate.'"
+  },
+  "pubmedCount": 1145242,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 42614
+    },
+    {
+      "year": 2018,
+      "count": 44568
+    },
+    {
+      "year": 2019,
+      "count": 47448
+    },
+    {
+      "year": 2020,
+      "count": 56160
+    },
+    {
+      "year": 2021,
+      "count": 64220
+    },
+    {
+      "year": 2022,
+      "count": 65847
+    },
+    {
+      "year": 2023,
+      "count": 62930
+    },
+    {
+      "year": 2024,
+      "count": 67408
+    },
+    {
+      "year": 2025,
+      "count": 75111
+    },
+    {
+      "year": 2026,
+      "count": 60288
+    }
+  ],
+  "searchQuery": "(\"epidemiology\"[MeSH Terms]) OR (\"incidence\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42973038",
+      "title": "Animal protein supply, cognitive ageing and female-male dementia disparities: a global ecological analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42862737",
+      "title": "Beyond stroke: atrial fibrillation and the broader burden of thromboembolic events in the population-based EpiHealth study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42898903",
+      "title": "Prediction Models for Delayed Bleeding After Colorectal Endoscopic Submucosal Dissection: A Systematic Review and Critical Appraisal.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:48:04.260Z"
+}

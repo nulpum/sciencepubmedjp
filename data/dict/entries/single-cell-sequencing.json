@@ -1,0 +1,91 @@
+{
+  "slug": "single-cell-sequencing",
+  "ja": "シングルセル解析",
+  "yomi": "しんぐるせるかいせき",
+  "en": "single-cell sequencing",
+  "category": "biology",
+  "description": {
+    "ja": "個々の細胞1つずつのゲノムやRNA、タンパク質などを解析する技術です。従来の組織全体を均質化して測定する方法では見えなかった、細胞ごとの遺伝子発現の違いや細胞集団内の多様性を明らかにできます。がん研究、免疫学、発生生物学などで細胞の個性や状態を詳しく調べるために用いられます。",
+    "en": "A technique that analyzes genomic DNA, RNA, proteins, or other molecules from individual cells one at a time. Unlike traditional methods that measure bulk tissue samples, single-cell sequencing reveals cell-to-cell variations in gene expression and population heterogeneity. It is widely used in cancer research, immunology, and developmental biology to characterize cellular identity and states."
+  },
+  "usage": {
+    "ja": "論文では「single-cell RNA sequencing (scRNA-seq)」として遺伝子発現プロファイルを測定する場合が多く、腫瘍内の細胞の種類分けや免疫細胞のサブタイプ解析などに応用されます。結果はt-SNEやUMAPといった次元削減法で可視化され、クラスタリングによって細胞集団が分類されます。",
+    "en": "In research papers, it often appears as 'single-cell RNA sequencing (scRNA-seq)' to profile gene expression, applied to tumor cell classification or immune cell subtype analysis. Results are typically visualized using dimensionality reduction methods such as t-SNE or UMAP, with clustering used to identify cell populations."
+  },
+  "synonyms": {
+    "ja": "scRNA-seqやscDNA-seqなど測定対象によって呼び分けられ、単に「single-cell analysis」と表記されることもあります。日本語では「一細胞解析」「単一細胞シークエンシング」とも呼ばれますが、カタカナ表記が一般的です。",
+    "en": "Terms vary by target molecule (scRNA-seq, scDNA-seq, scATAC-seq), and may be broadly referred to as 'single-cell analysis.' Related terms include 'single-cell transcriptomics' and 'single-cell genomics,' with distinctions based on the type of data being sequenced."
+  },
+  "pubmedCount": 8286,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 114
+    },
+    {
+      "year": 2018,
+      "count": 153
+    },
+    {
+      "year": 2019,
+      "count": 216
+    },
+    {
+      "year": 2020,
+      "count": 378
+    },
+    {
+      "year": 2021,
+      "count": 634
+    },
+    {
+      "year": 2022,
+      "count": 935
+    },
+    {
+      "year": 2023,
+      "count": 1099
+    },
+    {
+      "year": 2024,
+      "count": 1568
+    },
+    {
+      "year": 2025,
+      "count": 2090
+    },
+    {
+      "year": 2026,
+      "count": 1534
+    }
+  ],
+  "searchQuery": "\"single-cell sequencing\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42950907",
+      "title": "Chaihu-Shugan-San attenuates depression by downregulating liver LCN2 to suppress LHb GluN2B-associated glutamatergic signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913963",
+      "title": "Platycodon Decoction alleviates chronic obstructive pulmonary disease associated inflammation with potential dual-layer regulation of PI3K/AKT/NLRP3 signaling and ADGRE5-mediated intercellular interactions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42716194",
+      "title": "Exploring the molecular mechanisms of Weifuchun in the treatment of chronic atrophic gastritis based on single-cell sequencing and machine learning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42763524",
+      "title": "Single-cell sequencing-guided discovery of narciclasine as a dual VCAM-1/ICAM-1 inhibitor for atherosclerosis management.",
+      "year": 2027
+    },
+    {
+      "pmid": "42749212",
+      "title": "SEC-seq reveals translation-focused metabolic strategies for high IgG productivity in clonal CHO cells.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:08:54.176Z"
+}

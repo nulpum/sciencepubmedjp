@@ -1,0 +1,94 @@
+{
+  "slug": "stard",
+  "ja": "STARD",
+  "yomi": "すたーど",
+  "en": "STARD",
+  "category": "research",
+  "aliases": [
+    "診断精度研究報告基準"
+  ],
+  "description": {
+    "ja": "STARDは「Standards for Reporting of Diagnostic Accuracy Studies」の略で、診断精度研究の報告品質を向上させるためのガイドラインです。診断検査の感度や特異度などを評価する研究を発表する際に、必要な情報を漏れなく記載するためのチェックリストとフローチャートを提供しています。",
+    "en": "STARD stands for Standards for Reporting of Diagnostic Accuracy Studies, which is a guideline designed to improve the quality and completeness of reporting in diagnostic accuracy research. It provides a checklist and flow diagram to ensure that studies evaluating diagnostic tests (such as sensitivity and specificity) include all necessary information."
+  },
+  "usage": {
+    "ja": "診断精度研究の論文では、STARDチェックリストに従って患者の選択基準、検査方法、参照基準(ゴールドスタンダード)、統計解析などを明記します。多くの医学雑誌がSTARDへの準拠を推奨または要求しており、論文の透明性と再現性を高めるために用いられます。",
+    "en": "In diagnostic accuracy studies, researchers follow the STARD checklist to report patient selection criteria, index test methods, reference standards (gold standards), and statistical analyses. Many medical journals recommend or require adherence to STARD to enhance transparency and reproducibility of research findings."
+  },
+  "synonyms": {
+    "ja": "「診断精度研究報告基準」と訳されることがあります。類似の報告ガイドラインとして、臨床試験のCONSORT、観察研究のSTROBE、システマティックレビューのPRISMAなどがあり、それぞれ研究デザインに応じて使い分けられます。",
+    "en": "Also referred to as Standards for Reporting Diagnostic Accuracy. Similar reporting guidelines include CONSORT for clinical trials, STROBE for observational studies, and PRISMA for systematic reviews, each tailored to specific study designs."
+  },
+  "pubmedCount": 697,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30
+    },
+    {
+      "year": 2018,
+      "count": 30
+    },
+    {
+      "year": 2019,
+      "count": 37
+    },
+    {
+      "year": 2020,
+      "count": 45
+    },
+    {
+      "year": 2021,
+      "count": 51
+    },
+    {
+      "year": 2022,
+      "count": 44
+    },
+    {
+      "year": 2023,
+      "count": 34
+    },
+    {
+      "year": 2024,
+      "count": 37
+    },
+    {
+      "year": 2025,
+      "count": 69
+    },
+    {
+      "year": 2026,
+      "count": 113
+    }
+  ],
+  "searchQuery": "\"STARD\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42976630",
+      "title": "Nucleic acid amplification testing for obligate intracellular and cell wall-deficient bacteria: from assay performance to clinical interpretation, a structured narrative review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42979716",
+      "title": "Ruling out anastomotic leakage after digestive resection: diagnostic accuracy of postoperative day 3 and day 5 C-reactive protein in a single-centre cohort including several anastomotic sites.",
+      "year": 2026
+    },
+    {
+      "pmid": "42240646",
+      "title": "Deep learning for clinically significant prostate cancer detection on MRI: a systematic review, HSROC meta-analysis, and direct comparison with PI-RADS-based interpretation.",
+      "year": 2026
+    },
+    {
+      "pmid": "43049258",
+      "title": "From area under the curve to clinical readiness: A framework for AI-assisted ectasia risk assessment before refractive surgery.",
+      "year": 2026
+    },
+    {
+      "pmid": "43050770",
+      "title": "Artificial intelligence for detecting C-shaped canals on dental radiographs: A systematic review and bayesian diagnostic accuracy meta-analysis.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:43:28.016Z"
+}

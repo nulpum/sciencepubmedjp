@@ -1,0 +1,96 @@
+{
+  "slug": "rumination",
+  "ja": "反芻",
+  "yomi": "はんすう",
+  "en": "rumination",
+  "category": "psychology",
+  "aliases": [
+    "反芻思考"
+  ],
+  "meshHeading": "Rumination, Digestive",
+  "meshUi": "2023269",
+  "description": {
+    "ja": "心理学における反芻とは、ネガティブな出来事や自分の問題について繰り返し考え続けてしまう思考パターンを指します。うつ病や不安障害との関連が深く、過去の失敗や不快な経験を何度も頭の中で再生してしまう状態です。",
+    "en": "Rumination in psychology refers to a repetitive thinking pattern where individuals continuously dwell on negative events or personal problems. It is closely associated with depression and anxiety disorders, characterized by repeatedly replaying past failures or unpleasant experiences in one's mind."
+  },
+  "usage": {
+    "ja": "心理学研究では質問紙法で測定されることが多く、代表的な尺度にRuminative Response Scale (RRS)があります。うつ症状との相関分析や、認知行動療法における介入ターゲットとして研究されます。",
+    "en": "In psychological research, rumination is often measured using questionnaires such as the Ruminative Response Scale (RRS). Studies examine its correlation with depressive symptoms and investigate it as an intervention target in cognitive behavioral therapy."
+  },
+  "synonyms": {
+    "ja": "反芻思考、rumination thinking、侵入的思考との違いは意図性で、反芻は自発的に繰り返す点が特徴です。brooding(沈思型反芻)とreflection(内省型反芻)に分類されることもあります。",
+    "en": "Also called ruminative thinking or depressive rumination. Distinguished from intrusive thoughts by its voluntary nature. Sometimes categorized into brooding (maladaptive) and reflection (potentially adaptive) subtypes."
+  },
+  "pubmedCount": 8406,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 480
+    },
+    {
+      "year": 2018,
+      "count": 518
+    },
+    {
+      "year": 2019,
+      "count": 543
+    },
+    {
+      "year": 2020,
+      "count": 614
+    },
+    {
+      "year": 2021,
+      "count": 759
+    },
+    {
+      "year": 2022,
+      "count": 786
+    },
+    {
+      "year": 2023,
+      "count": 733
+    },
+    {
+      "year": 2024,
+      "count": 793
+    },
+    {
+      "year": 2025,
+      "count": 874
+    },
+    {
+      "year": 2026,
+      "count": 948
+    }
+  ],
+  "searchQuery": "(\"Rumination, Digestive\"[MeSH Terms]) OR (\"rumination\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42842760",
+      "title": "\"Sailing Two Boats\" the fragmented identity of working women and the hidden labor of infertility: a qualitative analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854791",
+      "title": "Consensus on components of psychological treatment for depression to reduce symptoms and target relapse risk factors in young adults: A modified Delphi study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648371",
+      "title": "Decoding ruminative states from neurophysiological patterns.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854622",
+      "title": "Decision fatigue and coping responses among primary caregivers of older adults with disabilities: A qualitative study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42809896",
+      "title": "The paradoxical role of professional satisfaction in the bidirectional relationship between psychological vulnerability and learning burnout among nursing students: A three-wave longitudinal study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:11:02.530Z"
+}

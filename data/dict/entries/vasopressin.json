@@ -1,0 +1,96 @@
+{
+  "slug": "vasopressin",
+  "ja": "バソプレシン",
+  "yomi": "ばそぷれしん",
+  "en": "vasopressin",
+  "category": "biology",
+  "aliases": [
+    "抗利尿ホルモン"
+  ],
+  "meshHeading": "Vasopressins",
+  "meshUi": "68014667",
+  "description": {
+    "ja": "バソプレシン(抗利尿ホルモン、ADH)は、脳の視床下部で合成され下垂体後葉から分泌されるペプチドホルモンです。腎臓での水分再吸収を促進し体液量を調節するほか、血管収縮作用も持ちます。体液浸透圧の維持や循環動態に重要な役割を果たしており、ストレス応答や社会行動にも関与することが研究されています。",
+    "en": "Vasopressin (antidiuretic hormone, ADH) is a peptide hormone synthesized in the hypothalamus and released from the posterior pituitary gland. It promotes water reabsorption in the kidneys to regulate body fluid volume and also has vasoconstrictive effects. It plays a crucial role in maintaining fluid osmolality and hemodynamics, and is studied for its involvement in stress responses and social behaviors."
+  },
+  "usage": {
+    "ja": "論文では血漿バソプレシン濃度の測定、尿浸透圧との関連、ショック時の循環管理における投与研究などで登場します。免疫測定法(ELISA、RIA)や質量分析により血中・尿中濃度が定量され、腎機能・内分泌機能・循環動態の評価指標として用いられます。",
+    "en": "In research papers, vasopressin appears in studies measuring plasma vasopressin concentrations, relationships with urine osmolality, and administration studies in circulatory management during shock. Blood and urine levels are quantified using immunoassays (ELISA, RIA) or mass spectrometry, serving as indicators for renal, endocrine, and hemodynamic function."
+  },
+  "synonyms": {
+    "ja": "抗利尿ホルモン(ADH)、アルギニンバソプレシン(AVP)とも呼ばれます。類似ホルモンにオキシトシンがありますが、バソプレシンは主に水分調節と血圧維持に、オキシトシンは分娩・授乳や社会的絆に特化しています。検索時は「ADH」「AVP」「arginine vasopressin」も併用すると網羅的です。",
+    "en": "Also called antidiuretic hormone (ADH) or arginine vasopressin (AVP). A related hormone is oxytocin, but vasopressin primarily regulates water balance and blood pressure, while oxytocin is specialized for labor, lactation, and social bonding. For comprehensive searches, use \"ADH,\" \"AVP,\" and \"arginine vasopressin\" as well."
+  },
+  "pubmedCount": 51066,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 825
+    },
+    {
+      "year": 2018,
+      "count": 784
+    },
+    {
+      "year": 2019,
+      "count": 843
+    },
+    {
+      "year": 2020,
+      "count": 817
+    },
+    {
+      "year": 2021,
+      "count": 806
+    },
+    {
+      "year": 2022,
+      "count": 755
+    },
+    {
+      "year": 2023,
+      "count": 710
+    },
+    {
+      "year": 2024,
+      "count": 690
+    },
+    {
+      "year": 2025,
+      "count": 798
+    },
+    {
+      "year": 2026,
+      "count": 788
+    }
+  ],
+  "searchQuery": "(\"Vasopressins\"[MeSH Terms]) OR (\"vasopressin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42501777",
+      "title": "Development of a liquid chromatography coupled to tandem mass spectrometry method for the quantification of Arginine Vasopressin in human plasma.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039606",
+      "title": "Role of Endocrine Testing and Preoperative Hormonal Assessment.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039599",
+      "title": "Postoperative Complications: Prevention and Management.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914678",
+      "title": "The transition to fatherhood beyond early infancy: Hormonal, behavioral and psychological changes.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036329",
+      "title": "Refractory circulatory shock following intentional polypharmacy antihypertensive and NSAID overdose: Clinical recovery temporally associated with sequential intravenous lipid emulsion and methylene blue - A case report.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:54:53.885Z"
+}

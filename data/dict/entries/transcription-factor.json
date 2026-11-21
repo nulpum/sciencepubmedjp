@@ -1,0 +1,93 @@
+{
+  "slug": "transcription-factor",
+  "ja": "転写因子",
+  "yomi": "てんしゃいんし",
+  "en": "transcription factor",
+  "category": "biology",
+  "meshHeading": "Transcription Factors",
+  "meshUi": "68014157",
+  "description": {
+    "ja": "転写因子とは、DNA上の特定の配列に結合し、遺伝子の転写(DNAからRNAへの情報転写)を促進または抑制するタンパク質のことです。細胞の分化、増殖、代謝など多様な生命現象の調節に中心的な役割を果たします。数百種類以上が知られ、それぞれが特定の遺伝子群の発現を制御しています。",
+    "en": "A transcription factor is a protein that binds to specific DNA sequences and promotes or suppresses the transcription of genes (the transfer of genetic information from DNA to RNA). They play central roles in regulating diverse biological processes including cell differentiation, proliferation, and metabolism. Hundreds of different transcription factors are known, each controlling the expression of specific gene sets."
+  },
+  "usage": {
+    "ja": "論文では「NF-κB転写因子の活性化」「STAT3転写因子の核内移行」のように、特定の転写因子名とその活性状態や局在の変化を記述することが多いです。ChIP-seq、EMSA、ルシフェラーゼアッセイなどの手法で、転写因子のDNA結合能や転写活性化能が測定されます。",
+    "en": "In research papers, transcription factors are typically described with specific names and their activity states or localization changes, such as 'activation of NF-κB transcription factor' or 'nuclear translocation of STAT3 transcription factor.' Methods like ChIP-seq, EMSA, and luciferase assays are used to measure DNA-binding ability and transcriptional activation capacity."
+  },
+  "synonyms": {
+    "ja": "「trans-acting factor」とも呼ばれることがあります。転写調節因子、DNA結合タンパク質とほぼ同義ですが、転写因子は特に転写の直接制御に関わるものを指します。構造や機能によりヘリックス-ターン-ヘリックス型、ジンクフィンガー型、ロイシンジッパー型などに分類されます。",
+    "en": "Also referred to as 'trans-acting factors.' Terms like transcriptional regulatory factors and DNA-binding proteins are nearly synonymous, though transcription factor specifically refers to those directly involved in transcription control. They are classified by structure and function into types such as helix-turn-helix, zinc finger, and leucine zipper."
+  },
+  "pubmedCount": 859461,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 38521
+    },
+    {
+      "year": 2018,
+      "count": 39116
+    },
+    {
+      "year": 2019,
+      "count": 40400
+    },
+    {
+      "year": 2020,
+      "count": 41010
+    },
+    {
+      "year": 2021,
+      "count": 38850
+    },
+    {
+      "year": 2022,
+      "count": 35832
+    },
+    {
+      "year": 2023,
+      "count": 33439
+    },
+    {
+      "year": 2024,
+      "count": 38172
+    },
+    {
+      "year": 2025,
+      "count": 40734
+    },
+    {
+      "year": 2026,
+      "count": 35227
+    }
+  ],
+  "searchQuery": "(\"Transcription Factors\"[MeSH Terms]) OR (\"transcription factor\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42967393",
+      "title": "Transcription factor-regulated rolling circle transcription cascaded with Cas12a for sensitive determination of tetracycline.",
+      "year": 2027
+    },
+    {
+      "pmid": "42662560",
+      "title": "Strategies and applications for alleviating carbon catabolite repression.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062001",
+      "title": "Hydrogen-rich saline alleviates inflammation-associated depression-like behaviors in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062000",
+      "title": "Hydrogen induces microglial M2 polarization and improves neurological outcomes of rats with traumatic brain injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "43061510",
+      "title": "Aporice comes of age.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:03:29.092Z"
+}

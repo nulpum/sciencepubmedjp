@@ -1,0 +1,96 @@
+{
+  "slug": "astrocyte",
+  "ja": "アストロサイト",
+  "yomi": "あすとろさいと",
+  "en": "astrocyte",
+  "category": "biology",
+  "aliases": [
+    "星状膠細胞"
+  ],
+  "meshHeading": "Astrocytes",
+  "meshUi": "68001253",
+  "description": {
+    "ja": "脳や脊髄に存在する星状の形をした神経膠細胞(グリア細胞)の一種です。神経細胞(ニューロン)に栄養を供給したり、血液脳関門の形成に関わったり、神経伝達物質の調整を行うなど、中枢神経系の恒常性維持に重要な役割を果たします。近年では記憶や学習、神経変性疾患との関連も研究されています。",
+    "en": "Astrocytes are star-shaped glial cells found in the brain and spinal cord. They play crucial roles in maintaining homeostasis of the central nervous system by supplying nutrients to neurons, forming the blood-brain barrier, and regulating neurotransmitters. Recent research explores their involvement in memory, learning, and neurodegenerative diseases."
+  },
+  "usage": {
+    "ja": "神経科学や神経病理学の論文で頻出します。免疫染色でGFAP(グリア線維性酸性タンパク質)などのマーカーを用いて同定し、形態観察や数の定量、遺伝子発現解析などが行われます。神経炎症や脳損傷、アルツハイマー病などの研究文脈でよく登場します。",
+    "en": "Commonly appears in neuroscience and neuropathology papers. Identified by immunostaining with markers such as GFAP (glial fibrillary acidic protein), followed by morphological observation, quantification, and gene expression analysis. Frequently discussed in contexts of neuroinflammation, brain injury, and Alzheimer's disease research."
+  },
+  "synonyms": {
+    "ja": "星状膠細胞、アストログリアとも呼ばれます。広義の「グリア細胞」「神経膠細胞」にはミクログリアやオリゴデンドロサイトも含まれるため、文脈で区別が必要です。反応性アストロサイト(reactive astrocyte)は病態時に活性化した状態を指します。",
+    "en": "Also called astroglia or star-shaped glial cells. Broader terms like 'glia' or 'glial cells' include microglia and oligodendrocytes, so context is important for distinction. Reactive astrocytes refer to activated states during pathological conditions."
+  },
+  "pubmedCount": 56209,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2311
+    },
+    {
+      "year": 2018,
+      "count": 2352
+    },
+    {
+      "year": 2019,
+      "count": 2403
+    },
+    {
+      "year": 2020,
+      "count": 2534
+    },
+    {
+      "year": 2021,
+      "count": 2606
+    },
+    {
+      "year": 2022,
+      "count": 2286
+    },
+    {
+      "year": 2023,
+      "count": 2242
+    },
+    {
+      "year": 2024,
+      "count": 2621
+    },
+    {
+      "year": 2025,
+      "count": 3087
+    },
+    {
+      "year": 2026,
+      "count": 2811
+    }
+  ],
+  "searchQuery": "(\"Astrocytes\"[MeSH Terms]) OR (\"astrocyte\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42950907",
+      "title": "Chaihu-Shugan-San attenuates depression by downregulating liver LCN2 to suppress LHb GluN2B-associated glutamatergic signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42950904",
+      "title": "Dihydrocaffeic acid alleviates APOE4-associated astrocyte dysfunction and cognitive impairment via LRP1/p38 MAPK signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863728",
+      "title": "Si-shen-san attenuates Alzheimer's disease pathology and cognitive deficits through multi-target regulation of astrocyte function and synaptic plasticity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42785531",
+      "title": "Shenghui Decoction ameliorates cognitive impairment and neuroinflammation in APP/PS1 mice via modulation of the HMGB1/TLR4/NLRP3 pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045309",
+      "title": "Diagnosis and Management of Hepatic Encephalopathy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:01:36.649Z"
+}

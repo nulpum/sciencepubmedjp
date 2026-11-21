@@ -1,0 +1,93 @@
+{
+  "slug": "microglia",
+  "ja": "ミクログリア",
+  "yomi": "みくろぐりあ",
+  "en": "microglia",
+  "category": "biology",
+  "meshHeading": "Microglia",
+  "meshUi": "68017628",
+  "description": {
+    "ja": "ミクログリアは中枢神経系(脳と脊髄)に存在する免疫細胞の一種で、脳内のマクロファージとして働きます。神経細胞の健康維持、老廃物の除去、病原体の監視などを担い、脳の恒常性維持に重要な役割を果たしています。神経炎症や神経変性疾患の研究において注目されている細胞です。",
+    "en": "Microglia are immune cells resident in the central nervous system (brain and spinal cord), functioning as the brain's macrophages. They play crucial roles in maintaining neuronal health, clearing cellular debris, monitoring pathogens, and sustaining brain homeostasis. These cells are a major focus in research on neuroinflammation and neurodegenerative conditions."
+  },
+  "usage": {
+    "ja": "論文では神経炎症マーカー(Iba1、CD11bなど)を用いた免疫染色や、活性化状態の形態学的評価(アメーバ様形態への変化)が行われます。フローサイトメトリーや単一細胞RNA解析により、M1型(炎症促進)・M2型(抗炎症)などの表現型分類や、加齢・疾患における機能変化が調べられています。",
+    "en": "Papers typically employ immunostaining with markers such as Iba1 and CD11b, along with morphological assessment of activation states (transformation to amoeboid forms). Flow cytometry and single-cell RNA sequencing are used to classify phenotypes like M1 (pro-inflammatory) and M2 (anti-inflammatory), and to investigate functional changes in aging and disease models."
+  },
+  "synonyms": {
+    "ja": "小膠細胞とも呼ばれます。マクロファージ様細胞ですが、末梢組織のマクロファージとは発生起源が異なります(卵黄嚢由来)。グリア細胞の一種ですが、アストロサイト(星状膠細胞)やオリゴデンドロサイト(乏突起膠細胞)とは機能・起源が異なる点に注意が必要です。",
+    "en": "Also called microglial cells. While macrophage-like, microglia differ from peripheral macrophages in developmental origin (derived from yolk sac). They are a type of glial cell but differ functionally and developmentally from astrocytes and oligodendrocytes."
+  },
+  "pubmedCount": 67084,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3065
+    },
+    {
+      "year": 2018,
+      "count": 3422
+    },
+    {
+      "year": 2019,
+      "count": 3709
+    },
+    {
+      "year": 2020,
+      "count": 4415
+    },
+    {
+      "year": 2021,
+      "count": 4926
+    },
+    {
+      "year": 2022,
+      "count": 4902
+    },
+    {
+      "year": 2023,
+      "count": 5148
+    },
+    {
+      "year": 2024,
+      "count": 5713
+    },
+    {
+      "year": 2025,
+      "count": 6482
+    },
+    {
+      "year": 2026,
+      "count": 6368
+    }
+  ],
+  "searchQuery": "(\"Microglia\"[MeSH Terms]) OR (\"microglia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43062001",
+      "title": "Hydrogen-rich saline alleviates inflammation-associated depression-like behaviors in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062000",
+      "title": "Hydrogen induces microglial M2 polarization and improves neurological outcomes of rats with traumatic brain injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965052",
+      "title": "3D culture-derived MSC EV facilitate repair by activating microglial autophagy in spinal cord injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42953726",
+      "title": "Microglia-targeted delivery of MCC950 suppresses NLRP3-IL-18-mediated neuroinflammation and retinal injury in retinal vein occlusion.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800424",
+      "title": "Neutrophil membrane-camouflaged ruthenium single-atom nanozymes precisely eliminate neutrophil extracellular traps to reprogram redox-immune microenvironment in intracerebral hemorrhage.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:01:03.065Z"
+}

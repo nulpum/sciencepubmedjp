@@ -1,0 +1,96 @@
+{
+  "slug": "crispr",
+  "ja": "CRISPR",
+  "yomi": "くりすぱー",
+  "en": "CRISPR",
+  "category": "biology",
+  "aliases": [
+    "クリスパー"
+  ],
+  "meshHeading": "Clustered Regularly Interspaced Short Palindromic Repeats",
+  "meshUi": "68064112",
+  "description": {
+    "ja": "CRISPR（クリスパー）は、細菌が持つ免疫システムに由来するゲノム編集技術です。特定のDNA配列を認識して切断し、遺伝子の追加・削除・修正を可能にします。生命科学研究や医療応用において革新的なツールとして広く用いられています。",
+    "en": "CRISPR is a genome editing technology derived from bacterial immune systems. It recognizes and cuts specific DNA sequences, enabling addition, deletion, or modification of genes. It is widely used as a revolutionary tool in life science research and medical applications."
+  },
+  "usage": {
+    "ja": "論文では「CRISPR-Cas9システムを用いて標的遺伝子をノックアウトした」「CRISPR/Cas9によるゲノム編集」のように記述されます。遺伝子機能解析、疾患モデル作製、遺伝子治療研究などで標準的な手法として使われ、オフターゲット効果や編集効率が評価指標となります。",
+    "en": "In papers, it appears as 'targeted gene was knocked out using CRISPR-Cas9 system' or 'genome editing by CRISPR/Cas9'. It is a standard method in gene function analysis, disease model creation, and gene therapy research, with off-target effects and editing efficiency serving as evaluation metrics."
+  },
+  "synonyms": {
+    "ja": "正式名称は「Clustered Regularly Interspaced Short Palindromic Repeats」で、CRISPR-Cas9が最も一般的ですが、CRISPR-Cas12やCRISPR-Cas13など複数のシステムがあります。ゲノム編集、遺伝子編集、gene editingなどの用語とともに使われ、文脈によって技術全体またはDNA配列そのものを指す場合があります。",
+    "en": "The full name is 'Clustered Regularly Interspaced Short Palindromic Repeats', with CRISPR-Cas9 being most common, though multiple systems exist including CRISPR-Cas12 and CRISPR-Cas13. Used alongside terms like genome editing, gene editing, and may refer to either the technology as a whole or the DNA sequences themselves depending on context."
+  },
+  "pubmedCount": 67354,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3203
+    },
+    {
+      "year": 2018,
+      "count": 4210
+    },
+    {
+      "year": 2019,
+      "count": 5207
+    },
+    {
+      "year": 2020,
+      "count": 6100
+    },
+    {
+      "year": 2021,
+      "count": 6913
+    },
+    {
+      "year": 2022,
+      "count": 7484
+    },
+    {
+      "year": 2023,
+      "count": 7601
+    },
+    {
+      "year": 2024,
+      "count": 8038
+    },
+    {
+      "year": 2025,
+      "count": 9989
+    },
+    {
+      "year": 2026,
+      "count": 9870
+    }
+  ],
+  "searchQuery": "(\"Clustered Regularly Interspaced Short Palindromic Repeats\"[MeSH Terms]) OR (\"CRISPR\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42888301",
+      "title": "Synthetic Biology Tools and Strategies for Microbial Cell Factory Construction.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036820",
+      "title": "A genetic engineering toolkit for the probiotic yeast Saccharomyces boulardii.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022511",
+      "title": "Unlocking genetic accessibility in Halomonas bluephagenesis: A high-efficiency transformation chassis enables linear DNA-mediated genome editing.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971085",
+      "title": "A background-suppressed CRISPR/Cas13a-HRCA biosensor for ultrasensitive miR-137 detection toward differential screening of Alzheimer's disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967396",
+      "title": "Metal-organic framework-assisted signal amplification in electrochemiluminescent microRNA biosensing: Current advances and barriers to clinical implementation.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:06:04.028Z"
+}

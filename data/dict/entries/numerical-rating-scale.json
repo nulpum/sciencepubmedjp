@@ -1,0 +1,92 @@
+{
+  "slug": "numerical-rating-scale",
+  "ja": "数値評価スケール",
+  "yomi": "すうちひょうかすけーる",
+  "en": "numerical rating scale",
+  "abbr": "NRS",
+  "category": "nursing-pharma",
+  "description": {
+    "ja": "痛みや不快感の程度を0から10などの数字で患者自身が評価する主観的指標です。0を「痛みなし」、10を「想像できる最大の痛み」として、患者が最も当てはまる数値を選びます。簡便で繰り返し測定しやすいため、臨床現場や看護研究で広く用いられています。",
+    "en": "A subjective measure where patients rate their pain or discomfort intensity using numbers, typically from 0 to 10. Zero represents 'no pain' and 10 represents 'worst imaginable pain.' It is widely used in clinical settings and nursing research due to its simplicity and ease of repeated assessment."
+  },
+  "usage": {
+    "ja": "疼痛管理の研究で、介入前後の痛みの変化を測定する際に用いられます。患者に口頭または紙面で0-10の数値を提示し、現在の痛みに最も近い数字を選んでもらう方法が一般的です。",
+    "en": "Used in pain management studies to measure changes in pain intensity before and after interventions. Patients are typically asked verbally or on paper to select a number from 0 to 10 that best represents their current pain level."
+  },
+  "synonyms": {
+    "ja": "類似の評価法として、顔の表情で示すフェイススケールや線上に印をつけるビジュアルアナログスケール(VAS)があります。NRSは数値で記録できるため統計解析がしやすく、VASより実施が簡便とされます。",
+    "en": "Related scales include the Visual Analog Scale (VAS) where patients mark a point on a line, and the Faces Pain Scale using facial expressions. NRS is considered simpler to administer than VAS and provides discrete numerical data easier for statistical analysis."
+  },
+  "pubmedCount": 8791,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 404
+    },
+    {
+      "year": 2018,
+      "count": 447
+    },
+    {
+      "year": 2019,
+      "count": 516
+    },
+    {
+      "year": 2020,
+      "count": 631
+    },
+    {
+      "year": 2021,
+      "count": 773
+    },
+    {
+      "year": 2022,
+      "count": 845
+    },
+    {
+      "year": 2023,
+      "count": 806
+    },
+    {
+      "year": 2024,
+      "count": 983
+    },
+    {
+      "year": 2025,
+      "count": 1154
+    },
+    {
+      "year": 2026,
+      "count": 1177
+    }
+  ],
+  "searchQuery": "\"numerical rating scale\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43041797",
+      "title": "Pain severity and setup error in palliative radiotherapy for spinal metastases: A secondary analysis of a prospective cohort.",
+      "year": 2026
+    },
+    {
+      "pmid": "43022751",
+      "title": "Endoscopic thoracic facet joint denervation: A technical description and two cases.",
+      "year": 2026
+    },
+    {
+      "pmid": "43012496",
+      "title": "Assessing Response to Difelikefalin in Adults Receiving Haemodialysis: A Multidisciplinary, Person-Centred Framework for Chronic Kidney Disease-Associated Pruritus.",
+      "year": 2026
+    },
+    {
+      "pmid": "42899122",
+      "title": "Repetitive transcranial magnetic stimulation for depression after colorectal cancer treatment with chemotherapy-induced peripheral neuropathy: A case report.",
+      "year": 2026
+    },
+    {
+      "pmid": "42841428",
+      "title": "Randomized evidence breadth and comparative maturity of systemic targeted therapies for prurigo nodularis: a time-aligned systematic review and network meta-analysis.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:43:26.580Z"
+}

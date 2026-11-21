@@ -1,0 +1,93 @@
+{
+  "slug": "nuclear-receptor",
+  "ja": "核内受容体",
+  "yomi": "かくないじゅようたい",
+  "en": "nuclear receptor",
+  "category": "biology",
+  "meshHeading": "Receptors, Cytoplasmic and Nuclear",
+  "meshUi": "68018160",
+  "description": {
+    "ja": "核内受容体は、細胞の核内に存在し、ホルモンやビタミンなどの脂溶性リガンドと結合して遺伝子発現を調節する転写因子のファミリーです。ステロイドホルモン受容体やレチノイン酸受容体などが含まれ、発生・代謝・炎症など多様な生理機能に関わります。リガンド結合により構造変化を起こし、特定のDNA配列に結合して標的遺伝子の転写を活性化または抑制します。",
+    "en": "Nuclear receptors are a family of transcription factors located in the cell nucleus that regulate gene expression by binding to lipophilic ligands such as hormones and vitamins. This family includes steroid hormone receptors and retinoic acid receptors, playing diverse roles in development, metabolism, and inflammation. Upon ligand binding, they undergo conformational changes and bind to specific DNA sequences to activate or repress transcription of target genes."
+  },
+  "usage": {
+    "ja": "論文では「nuclear receptor signaling」「nuclear receptor activation」などの表現で、特定の受容体(例:ERα, PPARγ, VDR)の活性化や遺伝子発現への影響が調べられます。クロマチン免疫沈降法やルシフェラーゼアッセイで転写活性を測定し、リガンド結合実験やノックアウトモデルで機能解析が行われます。",
+    "en": "In research papers, expressions like 'nuclear receptor signaling' and 'nuclear receptor activation' describe studies on specific receptors (e.g., ERα, PPARγ, VDR) and their effects on gene expression. Transcriptional activity is measured using chromatin immunoprecipitation or luciferase assays, while functional analysis employs ligand-binding experiments and knockout models."
+  },
+  "synonyms": {
+    "ja": "「NR」と略されることがあり、スーパーファミリー全体を指す場合と個別受容体を指す場合があります。ステロイド受容体(steroid receptor)は核内受容体の一部であり、より狭い概念です。転写因子(transcription factor)は広義の用語で、核内受容体はリガンド依存性転写因子の代表例です。",
+    "en": "Often abbreviated as 'NR', the term can refer to the entire superfamily or individual receptors depending on context. Steroid receptors are a subset of nuclear receptors, representing a narrower concept. Transcription factor is a broader term, with nuclear receptors being典型的 examples of ligand-dependent transcription factors."
+  },
+  "pubmedCount": 210539,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 7690
+    },
+    {
+      "year": 2018,
+      "count": 8024
+    },
+    {
+      "year": 2019,
+      "count": 7964
+    },
+    {
+      "year": 2020,
+      "count": 8113
+    },
+    {
+      "year": 2021,
+      "count": 7763
+    },
+    {
+      "year": 2022,
+      "count": 7452
+    },
+    {
+      "year": 2023,
+      "count": 6683
+    },
+    {
+      "year": 2024,
+      "count": 7864
+    },
+    {
+      "year": 2025,
+      "count": 8612
+    },
+    {
+      "year": 2026,
+      "count": 7594
+    }
+  ],
+  "searchQuery": "(\"Receptors, Cytoplasmic and Nuclear\"[MeSH Terms]) OR (\"nuclear receptor\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42960295",
+      "title": "Uncovering a cryptic allosteric hub governing energy landscape plasticity within the Nur77 ligand-binding domain.",
+      "year": 2027
+    },
+    {
+      "pmid": "42603581",
+      "title": "Vitamin D deficiency is common in Hashimoto's thyroiditis, while VDR FokI shows subtype-specific association with gravis disease in Jordan: a case-control study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42925938",
+      "title": "Artepillin C from Artemisia capillaris attenuates liver fibrosis by targeting NR3C2 and regulating the PPAR-γ/Smad axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874694",
+      "title": "Agriophyllum squarrosum oligosaccharides ameliorate inflammation and lipid accumulation in T2DM-induced MASLD via miR-155-regulated PPARγ signaling pathways.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860231",
+      "title": "Gardenia jasminoides Ellis 70% ethanolic fraction alleviates hyperuricemia by upregulating PPARγ and modulating its downstream urate transporters and anti-inflammatory pathways.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:03:48.563Z"
+}

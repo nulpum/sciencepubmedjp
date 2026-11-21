@@ -1,0 +1,91 @@
+{
+  "slug": "nudge-theory",
+  "ja": "ナッジ理論",
+  "yomi": "なっじりろん",
+  "en": "nudge theory",
+  "category": "psychology",
+  "description": {
+    "ja": "ナッジ理論とは、強制や禁止ではなく、選択の自由を保ちながら人々の行動を望ましい方向へ穏やかに誘導する手法を研究する行動経済学・心理学の理論です。「ナッジ(nudge)」は「そっと後押しする」という意味で、選択肢の提示方法や環境デザインの工夫によって、意思決定や行動変容を促します。",
+    "en": "Nudge theory is a concept from behavioral economics and psychology that guides people's behavior in desired directions without coercion or prohibition, while preserving freedom of choice. A 'nudge' means a gentle push, using presentation of options and environmental design to influence decision-making and behavior change."
+  },
+  "usage": {
+    "ja": "健康行動、公衆衛生介入、患者の治療遵守(アドヒアランス)、生活習慣改善などの研究で、介入手法として用いられます。例えば、健康的な食品を目立つ位置に配置する、デフォルト選択肢を設定するなど、選択アーキテクチャ(choice architecture)の効果を検証する研究が行われています。",
+    "en": "Used as an intervention method in studies of health behavior, public health interventions, patient adherence, and lifestyle modification. Research examines the effects of choice architecture, such as placing healthy foods in prominent positions or setting default options."
+  },
+  "synonyms": {
+    "ja": "「行動ナッジ(behavioral nudge)」「選択アーキテクチャ(choice architecture)」「行動インサイト(behavioral insights)」などと関連します。心理学では「プライミング効果」や「デフォルト効果」など、ナッジを構成する個別の認知バイアスも研究されています。",
+    "en": "Related terms include 'behavioral nudge,' 'choice architecture,' and 'behavioral insights.' In psychology, specific cognitive biases that constitute nudges, such as 'priming effects' and 'default effects,' are also studied."
+  },
+  "pubmedCount": 94,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2
+    },
+    {
+      "year": 2018,
+      "count": 5
+    },
+    {
+      "year": 2019,
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "count": 9
+    },
+    {
+      "year": 2021,
+      "count": 9
+    },
+    {
+      "year": 2022,
+      "count": 7
+    },
+    {
+      "year": 2023,
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "count": 14
+    },
+    {
+      "year": 2025,
+      "count": 24
+    },
+    {
+      "year": 2026,
+      "count": 17
+    }
+  ],
+  "searchQuery": "\"nudge theory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42532273",
+      "title": "Applications of behavioral economics-based nudge theory in hospital pharmacy practice: A scoping review.",
+      "year": 2026
+    },
+    {
+      "pmid": "42870970",
+      "title": "Electronic Health Record Integration of a Calculator for Cesarean Risk During Labor Induction.",
+      "year": 2026
+    },
+    {
+      "pmid": "42721474",
+      "title": "A Nudge Theory-Based Mobile Health Intervention for Self-Management in Young and Middle-Aged Patients With Hypertension: Mixed Methods Pilot Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "41915316",
+      "title": "Nudging for practice change: a comparison of medications for alcohol use disorder prescribing in the emergency department before and after implementation of a standardized order set for patients with alcohol withdrawal.",
+      "year": 2026
+    },
+    {
+      "pmid": "42894153",
+      "title": "A nurse-led digital nudging strategy to enhance home-based cardiac rehabilitation exercise adherence among patients with chronic heart failure: development of a complex intervention informed by the Medical Research Council framework.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:28:31.232Z"
+}

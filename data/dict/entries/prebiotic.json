@@ -1,0 +1,93 @@
+{
+  "slug": "prebiotic",
+  "ja": "プレバイオティクス",
+  "yomi": "ぷればいおてぃくす",
+  "en": "prebiotic",
+  "category": "biology",
+  "meshHeading": "Prebiotics",
+  "meshUi": "68056692",
+  "description": {
+    "ja": "プレバイオティクスとは、消化されずに大腸に到達し、腸内細菌叢の有用菌の増殖や活性を促進する食品成分のことです。代表的なものにオリゴ糖や食物繊維(イヌリン、フラクトオリゴ糖など)があります。プロバイオティクス(生きた有用菌)と区別され、腸内環境を整える「菌のエサ」として機能します。",
+    "en": "Prebiotics are food components that resist digestion and reach the colon, where they promote the growth and activity of beneficial gut microbiota. Common examples include oligosaccharides and dietary fibers such as inulin and fructooligosaccharides. Unlike probiotics (live beneficial microorganisms), prebiotics serve as 'food for bacteria' to support intestinal health."
+  },
+  "usage": {
+    "ja": "腸内細菌叢の変化を調べる介入研究で、プレバイオティクスの摂取前後で糞便中の特定菌種(ビフィズス菌など)の割合や短鎖脂肪酸濃度を測定する文脈で使われます。メタゲノム解析や16S rRNA遺伝子配列解析と組み合わせることが多いです。",
+    "en": "In intervention studies examining gut microbiota changes, researchers measure the proportions of specific bacterial species (such as Bifidobacterium) and short-chain fatty acid concentrations in fecal samples before and after prebiotic intake. Often combined with metagenomic or 16S rRNA gene sequencing analyses."
+  },
+  "synonyms": {
+    "ja": "「プレバイオティック」とも呼ばれます。「シンバイオティクス(synbiotics)」はプロバイオティクスとプレバイオティクスを組み合わせたもので、両者の相乗効果を期待する概念です。機能性食品成分や難消化性炭水化物という広い分類で扱われることもあります。",
+    "en": "Also called 'prebiotic substance.' 'Synbiotics' refers to a combination of probiotics and prebiotics designed for synergistic effects. May be categorized broadly as functional food components or non-digestible carbohydrates."
+  },
+  "pubmedCount": 16657,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 782
+    },
+    {
+      "year": 2018,
+      "count": 867
+    },
+    {
+      "year": 2019,
+      "count": 1081
+    },
+    {
+      "year": 2020,
+      "count": 1267
+    },
+    {
+      "year": 2021,
+      "count": 1336
+    },
+    {
+      "year": 2022,
+      "count": 1469
+    },
+    {
+      "year": 2023,
+      "count": 1387
+    },
+    {
+      "year": 2024,
+      "count": 1659
+    },
+    {
+      "year": 2025,
+      "count": 1917
+    },
+    {
+      "year": 2026,
+      "count": 1735
+    }
+  ],
+  "searchQuery": "(\"Prebiotics\"[MeSH Terms]) OR (\"prebiotic\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42908331",
+      "title": "Effects of xylooligosaccharide supplementation on methane emissions, rumen microbiome, and serum metabolome in lactating Jersey cows.",
+      "year": 2027
+    },
+    {
+      "pmid": "42667973",
+      "title": "Subacute oral toxicity of Sinopodophyllum hexandrum fruit in mice: Integrated assessment of target-organ injury and gut microbiota alteration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42468192",
+      "title": "Self-organized criticality and information processing in gypsum-proteinoid assemblies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42575330",
+      "title": "The Aloe vera polysaccharides in inflammatory bowel disease: An ethnopharmacological review on the mechanisms of intestinal barrier repair and immunomodulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42619281",
+      "title": "Impact of soluble carbohydrates addition on the quality of high-protein probiotic yogurts with reduced lactose and fat content.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:03:10.777Z"
+}

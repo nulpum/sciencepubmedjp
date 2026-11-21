@@ -1,0 +1,93 @@
+{
+  "slug": "palliative-care",
+  "ja": "緩和ケア",
+  "yomi": "かんわけあ",
+  "en": "palliative care",
+  "category": "nursing-pharma",
+  "meshHeading": "Palliative Care",
+  "meshUi": "68010166",
+  "description": {
+    "ja": "重い病を抱える患者とその家族に対し、身体的苦痛(痛み・息苦しさなど)や精神的苦痛を和らげ、QOL(生活の質)を高めることを目的とするケアの総称です。終末期に限らず診断時から提供され、治療と並行して行われます。",
+    "en": "A comprehensive approach aimed at improving quality of life for patients with serious illness and their families by relieving physical symptoms (pain, dyspnea) and psychological distress. It is provided from the time of diagnosis alongside curative treatment, not limited to end-of-life care."
+  },
+  "usage": {
+    "ja": "がん患者や慢性疾患患者を対象とした研究で、疼痛スコア、QOL尺度(EORTC QLQ-C30など)、症状緩和の効果、家族の満足度などが評価指標として用いられます。介入研究では早期導入の効果や多職種チームの有効性が検討されます。",
+    "en": "Studies on cancer or chronic disease patients commonly assess pain scores, QOL measures (e.g., EORTC QLQ-C30), symptom relief, and family satisfaction. Intervention trials examine effects of early integration and multidisciplinary team approaches."
+  },
+  "synonyms": {
+    "ja": "支持療法(supportive care)、症状緩和、終末期ケア(end-of-life care)と重なる部分がありますが、緩和ケアはより広義で診断早期から適用される概念です。ホスピスケア(hospice care)は終末期に特化した形態を指します。",
+    "en": "Overlaps with supportive care, symptom management, and end-of-life care, but palliative care is broader and applicable from diagnosis. Hospice care specifically refers to end-of-life focused services."
+  },
+  "pubmedCount": 93924,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3802
+    },
+    {
+      "year": 2018,
+      "count": 4183
+    },
+    {
+      "year": 2019,
+      "count": 4261
+    },
+    {
+      "year": 2020,
+      "count": 4964
+    },
+    {
+      "year": 2021,
+      "count": 5075
+    },
+    {
+      "year": 2022,
+      "count": 4902
+    },
+    {
+      "year": 2023,
+      "count": 4480
+    },
+    {
+      "year": 2024,
+      "count": 4938
+    },
+    {
+      "year": 2025,
+      "count": 5484
+    },
+    {
+      "year": 2026,
+      "count": 5438
+    }
+  ],
+  "searchQuery": "(\"Palliative Care\"[MeSH Terms]) OR (\"palliative care\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42834000",
+      "title": "Physicians' perspectives of palliative care quality in nursing homes: a cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43011506",
+      "title": "Prospective Multicenter Evaluation of a Novel Low-Axial-Force Colonic Stent for Malignant Colorectal Obstruction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42164476",
+      "title": "Case Report of a Rapidly Progressive Indolent T-Cell Lymphoma of the Gastrointestinal Tract.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045305",
+      "title": "Acute-on-Chronic Liver Failure: Definitions, Management, Prognostication, and Transplantation.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039516",
+      "title": "Palliative Care and Discontinuation of Resuscitative Efforts for the Trauma Patient: A Paradigm for Concurrent Care.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:30:52.932Z"
+}

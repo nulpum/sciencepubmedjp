@@ -1,0 +1,94 @@
+{
+  "slug": "myelination",
+  "ja": "髄鞘化",
+  "yomi": "ずいしょうか",
+  "en": "myelination",
+  "category": "biology",
+  "aliases": [
+    "ミエリン化"
+  ],
+  "description": {
+    "ja": "神経細胞の軸索(神経線維)の周りに、ミエリンと呼ばれる脂質とタンパク質でできた絶縁性の鞘(さや)が形成されるプロセスです。この髄鞘があることで電気信号の伝導速度が飛躍的に速くなり、効率的な神経伝達が可能になります。脳や脊髄の発達、神経機能の成熟に欠かせない生物学的現象として研究されています。",
+    "en": "Myelination is the process by which a fatty, insulating sheath called myelin is formed around nerve axons. This myelin sheath dramatically increases the speed of electrical signal transmission and enables efficient neural communication. It is studied as an essential biological phenomenon for brain and spinal cord development and neural function maturation."
+  },
+  "usage": {
+    "ja": "発達神経科学や神経変性疾患の論文で頻出します。MRI画像解析による白質の評価、電子顕微鏡による髄鞘の微細構造観察、ミエリン関連タンパク質(MBP、PLP等)の発現測定などで髄鞘化の程度や異常を調べます。",
+    "en": "Commonly appears in developmental neuroscience and neurodegenerative disease research. Myelination is assessed through MRI-based white matter analysis, electron microscopy of myelin ultrastructure, and measurement of myelin-associated protein expression (MBP, PLP, etc.)."
+  },
+  "synonyms": {
+    "ja": "ミエリン化とも呼ばれます。関連用語として髄鞘形成、脱髄(demyelination)は髄鞘が失われる病的プロセス、再髄鞘化(remyelination)は髄鞘が再形成される現象を指し、多発性硬化症などの研究で区別して用いられます。",
+    "en": "Also written as myelinization. Related terms include demyelination (pathological loss of myelin) and remyelination (myelin regeneration), which are distinguished in research on conditions like multiple sclerosis. Myelin sheath formation is a synonymous expression."
+  },
+  "pubmedCount": 14163,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 640
+    },
+    {
+      "year": 2018,
+      "count": 663
+    },
+    {
+      "year": 2019,
+      "count": 721
+    },
+    {
+      "year": 2020,
+      "count": 706
+    },
+    {
+      "year": 2021,
+      "count": 791
+    },
+    {
+      "year": 2022,
+      "count": 735
+    },
+    {
+      "year": 2023,
+      "count": 702
+    },
+    {
+      "year": 2024,
+      "count": 736
+    },
+    {
+      "year": 2025,
+      "count": 890
+    },
+    {
+      "year": 2026,
+      "count": 864
+    }
+  ],
+  "searchQuery": "\"myelination\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42887234",
+      "title": "Implanted and degradable hydrogel evaporative cooler for regional and repeated mild hypothermia therapy of traumatic brain injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896433",
+      "title": "Evaluation of phosphodiesterase inhibitors in neural cell models for the development of functionalized chitosan microstructured films as scaffolds for peripheral nerve regeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781229",
+      "title": "A programmable spatiotemporal bioelectrical conduit promotes peripheral nerve regeneration by suppressing ferroptosis through modulation of ER-mitochondria coupling in Schwann cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "43050152",
+      "title": "Preparation of Oligodendrocyte Culture on Decellularized Brain Tissue.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965801",
+      "title": "Advanced Diffusion MRI in the Human Brain: Microstructure Imaging and Structural Connectivity.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:10:32.755Z"
+}

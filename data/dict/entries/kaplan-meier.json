@@ -1,0 +1,94 @@
+{
+  "slug": "kaplan-meier",
+  "ja": "カプランマイヤー法",
+  "yomi": "かぷらんまいやーほう",
+  "en": "Kaplan-Meier estimator",
+  "category": "research",
+  "aliases": [
+    "生存曲線"
+  ],
+  "description": {
+    "ja": "時間経過とともに「生存率」や「イベントまでの期間」を推定する統計手法です。途中で観察が打ち切られた患者も含めて解析できるため、臨床試験や疫学研究で広く用いられます。グラフ(生存曲線)では、階段状に確率が下がる形で表示されます。",
+    "en": "A statistical method to estimate survival probabilities or time-to-event outcomes over time. It can handle censored data (participants lost to follow-up or still alive at study end), making it widely used in clinical trials and epidemiological research. The resulting curve shows a step-like decline in probability."
+  },
+  "usage": {
+    "ja": "論文では「Kaplan-Meier法で生存率を推定した」「log-rank検定で群間比較を行った」のように記述されます。縦軸に累積生存率、横軸に時間(日・月・年)をとり、各イベント発生時点で曲線が階段状に下がります。打ち切り例は小さなマーク(+など)で示されることが多いです。",
+    "en": "Papers typically state 'survival rates were estimated using the Kaplan-Meier method' or 'groups were compared by log-rank test.' The y-axis shows cumulative survival probability and the x-axis shows time (days, months, years). The curve drops stepwise at each event, and censored cases are often marked with small symbols (e.g., +)."
+  },
+  "synonyms": {
+    "ja": "「生存曲線」「KM曲線」と呼ばれることもあります。似た手法にCox比例ハザードモデルがありますが、こちらは複数要因を同時に調整する回帰分析です。生存時間解析(survival analysis)の中で最も基本的な可視化手法として位置づけられます。",
+    "en": "Also called 'survival curve' or 'KM curve.' The Cox proportional hazards model is a related method but is a regression approach adjusting for multiple factors simultaneously. The Kaplan-Meier estimator is the most fundamental visualization tool in survival analysis."
+  },
+  "pubmedCount": 1292,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 70
+    },
+    {
+      "year": 2018,
+      "count": 86
+    },
+    {
+      "year": 2019,
+      "count": 89
+    },
+    {
+      "year": 2020,
+      "count": 114
+    },
+    {
+      "year": 2021,
+      "count": 138
+    },
+    {
+      "year": 2022,
+      "count": 155
+    },
+    {
+      "year": 2023,
+      "count": 154
+    },
+    {
+      "year": 2024,
+      "count": 141
+    },
+    {
+      "year": 2025,
+      "count": 111
+    },
+    {
+      "year": 2026,
+      "count": 91
+    }
+  ],
+  "searchQuery": "\"Kaplan-Meier estimator\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42999902",
+      "title": "Salvage High-Dose-Rate Brachytherapy for Localized Prostate Cancer Recurrence: A Comparative Analysis of 2 Fractionation Schedules-Single-Institution Study of 223 Patients.",
+      "year": 2027
+    },
+    {
+      "pmid": "42048609",
+      "title": "NOS1 hypermethylation may participate in the colorectal cancer development and be associated with its prognosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43048970",
+      "title": "Nonparametric cure rate estimation for multivariate failure times.",
+      "year": 2026
+    },
+    {
+      "pmid": "42556756",
+      "title": "Usability and relevance of specialized population-based cancer registry data in externally controlled trials.",
+      "year": 2026
+    },
+    {
+      "pmid": "41740813",
+      "title": "Survivorship of Total Hip Arthroplasty After Acute Hip Fracture and Failed Osteosynthesis Based on the Finnish Arthroplasty Register With a 4-Year Mean Follow-Up.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:40:23.653Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "inhibitory-control",
+  "ja": "抑制制御",
+  "yomi": "よくせいせいぎょ",
+  "en": "inhibitory control",
+  "category": "psychology",
+  "description": {
+    "ja": "抑制制御とは、不適切な行動や衝動的な反応を抑え、状況に応じて適切に行動を調整する認知機能のことです。実行機能の中核的な要素の一つとされ、目標達成のために不要な刺激や反応を意図的に制御する能力を指します。発達心理学や神経心理学の研究では、前頭前野の機能と関連があるとされています。",
+    "en": "Inhibitory control refers to the cognitive ability to suppress inappropriate actions and impulsive responses, allowing for appropriate behavioral adjustment according to the situation. It is considered one of the core components of executive function, representing the capacity to intentionally control unnecessary stimuli and responses for goal achievement. Research in developmental and neuropsychology associates this function with prefrontal cortex activity."
+  },
+  "usage": {
+    "ja": "論文では、Go/No-Go課題、ストループ課題、フランカー課題などの実験パラダイムを用いて測定されます。反応時間、エラー率、事象関連電位(ERP)などの指標で評価され、ADHD研究、加齢研究、依存症研究などで頻繁に調べられています。",
+    "en": "In research papers, it is typically measured using experimental paradigms such as Go/No-Go tasks, Stroop tasks, and Flanker tasks. Assessment involves metrics including reaction time, error rates, and event-related potentials (ERP), frequently examined in ADHD research, aging studies, and addiction research."
+  },
+  "synonyms": {
+    "ja": "「反応抑制」「行動抑制」とほぼ同義ですが、抑制制御はより広い概念として認知的抑制も含みます。「実行機能」の下位概念であり、「作業記憶」「認知的柔軟性」と並ぶ3要素の一つとされます。検索時は「inhibitory control」「response inhibition」が有用です。",
+    "en": "Nearly synonymous with \"response inhibition\" and \"behavioral inhibition,\" though inhibitory control is a broader concept that also encompasses cognitive inhibition. It is a subcomponent of \"executive function,\" considered one of three core elements alongside \"working memory\" and \"cognitive flexibility.\" Useful search terms include \"inhibitory control\" and \"response inhibition.\""
+  },
+  "pubmedCount": 11228,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 592
+    },
+    {
+      "year": 2018,
+      "count": 605
+    },
+    {
+      "year": 2019,
+      "count": 663
+    },
+    {
+      "year": 2020,
+      "count": 743
+    },
+    {
+      "year": 2021,
+      "count": 905
+    },
+    {
+      "year": 2022,
+      "count": 800
+    },
+    {
+      "year": 2023,
+      "count": 750
+    },
+    {
+      "year": 2024,
+      "count": 755
+    },
+    {
+      "year": 2025,
+      "count": 959
+    },
+    {
+      "year": 2026,
+      "count": 1189
+    }
+  ],
+  "searchQuery": "\"inhibitory control\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42837797",
+      "title": "Cognitive predictors of narrative retelling in early childhood.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849534",
+      "title": "Imagining joint action is more cognitively demanding than imagining individual action: Evidence from a dual-task paradigm.",
+      "year": 2027
+    },
+    {
+      "pmid": "42815692",
+      "title": "Shared regulatory systems in memory suppression and fear extinction: An ALE and MACM meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42722131",
+      "title": "Altered intertemporal decision-making in individuals with high autistic traits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892491",
+      "title": "Cholinergic-dependent metaplasticity in the amygdala-insula pathway during incubation of cocaine craving.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:09:49.963Z"
+}

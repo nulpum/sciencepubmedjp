@@ -1,0 +1,93 @@
+{
+  "slug": "delay-discounting",
+  "ja": "遅延割引",
+  "yomi": "ちえんわりびき",
+  "en": "delay discounting",
+  "category": "psychology",
+  "meshHeading": "Delay Discounting",
+  "meshUi": "68065786",
+  "description": {
+    "ja": "遅延割引とは、報酬を得るまでの待ち時間が長くなるほど、その報酬の主観的価値が低下する心理現象を指します。例えば「今すぐ1万円」と「1年後に1万5千円」を比較したとき、多くの人は待ち時間のために後者の価値を割り引いて評価します。衝動性や自己制御、依存症研究などで重要な指標として用いられます。",
+    "en": "Delay discounting refers to the psychological phenomenon where the subjective value of a reward decreases as the delay to receiving it increases. For example, when comparing 'receive $100 now' versus 'receive $150 in one year,' many people discount the value of the delayed reward due to the waiting time. It serves as an important measure in research on impulsivity, self-control, and addiction."
+  },
+  "usage": {
+    "ja": "論文では選択課題(例:即時の小報酬 vs 遅延のある大報酬)を用いて測定され、双曲割引関数などの数理モデルでk値(割引率)を算出します。物質使用障害、ADHD、肥満などの研究で、急峻な割引(高いk値)が衝動的行動と関連することが調べられています。",
+    "en": "In research papers, it is measured using choice tasks (e.g., immediate small reward vs. delayed large reward), and mathematical models such as hyperbolic discounting functions are used to calculate the k-value (discount rate). Studies on substance use disorders, ADHD, and obesity examine how steeper discounting (higher k-values) relates to impulsive behavior."
+  },
+  "synonyms": {
+    "ja": "時間割引、temporal discountingとも呼ばれます。類似概念に確率割引(probability discounting、不確実性による価値低下)がありますが、遅延割引は時間要因に特化した指標です。impulsive choice(衝動的選択)の客観的測定法としても位置づけられます。",
+    "en": "Also called temporal discounting or intertemporal choice. A related concept is probability discounting (value reduction due to uncertainty), but delay discounting specifically focuses on the temporal factor. It is also positioned as an objective measure of impulsive choice."
+  },
+  "pubmedCount": 3185,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 265
+    },
+    {
+      "year": 2018,
+      "count": 265
+    },
+    {
+      "year": 2019,
+      "count": 271
+    },
+    {
+      "year": 2020,
+      "count": 284
+    },
+    {
+      "year": 2021,
+      "count": 260
+    },
+    {
+      "year": 2022,
+      "count": 247
+    },
+    {
+      "year": 2023,
+      "count": 236
+    },
+    {
+      "year": 2024,
+      "count": 221
+    },
+    {
+      "year": 2025,
+      "count": 229
+    },
+    {
+      "year": 2026,
+      "count": 194
+    }
+  ],
+  "searchQuery": "(\"Delay Discounting\"[MeSH Terms]) OR (\"delay discounting\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42800541",
+      "title": "How punishment sensitivity affects delay discounting: The mediating role of functional connectivity between the left dorsal medial prefrontal cortex and right postcentral gyrus.",
+      "year": 2027
+    },
+    {
+      "pmid": "42749065",
+      "title": "The effects of prelimbic inhibition on time-based intervention and impulsive choice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42722131",
+      "title": "Altered intertemporal decision-making in individuals with high autistic traits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42705028",
+      "title": "It's about time: Specific and unspecific effects of episodic future thinking on farsighted decisions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42700727",
+      "title": "The differences in adolescents' health intertemporal decision-making across different socioeconomic statuses: Evidence based on delay discount rates of healthy and unhealthy foods.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:27:32.809Z"
+}

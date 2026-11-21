@@ -1,0 +1,96 @@
+{
+  "slug": "operant-conditioning",
+  "ja": "オペラント条件づけ",
+  "yomi": "おぺらんとじょうけんづけ",
+  "en": "operant conditioning",
+  "category": "psychology",
+  "aliases": [
+    "道具的条件づけ"
+  ],
+  "meshHeading": "Conditioning, Operant",
+  "meshUi": "68003216",
+  "description": {
+    "ja": "行動の結果によってその行動の頻度が変化する学習プロセスを指す心理学用語です。報酬や罰といった結果が行動を強化または抑制することで、動物やヒトが環境に適応する仕組みを説明します。B.F.スキナーによって体系化された行動主義心理学の中心概念です。",
+    "en": "A psychological term referring to a learning process in which the frequency of a behavior changes based on its consequences. It explains how animals and humans adapt to their environment through reinforcement or suppression of behaviors by outcomes such as rewards or punishments, systematized by B.F. Skinner as a core concept in behaviorism."
+  },
+  "usage": {
+    "ja": "神経科学や行動薬理学の研究では、動物にレバー押しやノーズポーク課題を訓練し、報酬獲得率や消去抵抗を測定することで学習・記憶・意思決定のメカニズムを調べます。臨床研究では応用行動分析として自閉症スペクトラム障害や依存症の介入効果を評価する際に用いられます。",
+    "en": "In neuroscience and behavioral pharmacology research, animals are trained on lever-pressing or nose-poke tasks to investigate mechanisms of learning, memory, and decision-making by measuring reward acquisition rates and extinction resistance. In clinical research, it is used as applied behavior analysis to evaluate intervention effects for autism spectrum disorder and addiction."
+  },
+  "synonyms": {
+    "ja": "道具的条件づけ(instrumental conditioning)とほぼ同義ですが、オペラント条件づけは自発的行動の強化を、道具的条件づけは目標達成の手段となる行動の学習を強調する文脈で使い分けられることがあります。古典的条件づけ(classical conditioning)とは異なり、行動が能動的である点が特徴です。",
+    "en": "Nearly synonymous with instrumental conditioning, though operant conditioning emphasizes reinforcement of spontaneous behavior while instrumental conditioning highlights learning of goal-directed actions. It differs from classical conditioning in that the behavior is active rather than reflexive."
+  },
+  "pubmedCount": 45513,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1320
+    },
+    {
+      "year": 2018,
+      "count": 1295
+    },
+    {
+      "year": 2019,
+      "count": 1207
+    },
+    {
+      "year": 2020,
+      "count": 1003
+    },
+    {
+      "year": 2021,
+      "count": 753
+    },
+    {
+      "year": 2022,
+      "count": 458
+    },
+    {
+      "year": 2023,
+      "count": 483
+    },
+    {
+      "year": 2024,
+      "count": 599
+    },
+    {
+      "year": 2025,
+      "count": 783
+    },
+    {
+      "year": 2026,
+      "count": 629
+    }
+  ],
+  "searchQuery": "(\"Conditioning, Operant\"[MeSH Terms]) OR (\"operant conditioning\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880600",
+      "title": "Behavioural avoidance to imagined conditioned stimuli in differential fear conditioning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42749065",
+      "title": "The effects of prelimbic inhibition on time-based intervention and impulsive choice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874832",
+      "title": "The effect of concurrent application of the deep brain stimulation of the nucleus accumbens and cannabidiol injection during extinction period on reinstatement of METH-induced conditioned place preference in extinguished rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854332",
+      "title": "Aversive learning retroactively modulates neutral episodic memories structured by prior knowledge of predictive sequences.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838182",
+      "title": "Environmental enrichment differentially suppresses anxiety-related behaviors, reduces passive avoidance learning, and upregulates hippocampal brain-derived neurotrophic factor expression in high- and low-avoidance Hatano rats.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:21:03.705Z"
+}

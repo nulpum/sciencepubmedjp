@@ -1,0 +1,96 @@
+{
+  "slug": "social-support",
+  "ja": "ソーシャルサポート",
+  "yomi": "そーしゃるさぽーと",
+  "en": "social support",
+  "category": "psychology",
+  "aliases": [
+    "社会的支援"
+  ],
+  "meshHeading": "Social Support",
+  "meshUi": "68012944",
+  "description": {
+    "ja": "家族・友人・同僚など周囲の人々から得られる情緒的・実際的な支えや援助を指す心理学・公衆衛生学の概念です。ストレス対処やメンタルヘルスの維持に重要な役割を果たすとされ、疫学研究では健康アウトカムとの関連が調べられています。情緒的支援(励まし・共感)、道具的支援(金銭・物的援助)、情報的支援(助言・指導)、評価的支援(肯定的フィードバック)などに分類されます。",
+    "en": "Social support refers to emotional and practical assistance provided by family, friends, colleagues, and other members of one's social network. It is a key concept in psychology and public health, recognized for its role in stress coping and mental health maintenance. Research examines its association with various health outcomes, categorizing it into emotional support (encouragement, empathy), instrumental support (financial or material aid), informational support (advice, guidance), and appraisal support (positive feedback)."
+  },
+  "usage": {
+    "ja": "疫学研究では質問票(例: Multidimensional Scale of Perceived Social Support)で測定し、うつ病・心血管疾患・死亡率などとの関連を検討します。介入研究では支援ネットワーク構築プログラムの効果評価に用いられ、交絡因子として年齢・性別・社会経済状態などが調整されることが一般的です。",
+    "en": "In epidemiological studies, social support is measured using questionnaires (e.g., Multidimensional Scale of Perceived Social Support) to examine associations with depression, cardiovascular disease, and mortality. Intervention studies evaluate programs designed to build support networks, typically adjusting for confounders such as age, sex, and socioeconomic status."
+  },
+  "synonyms": {
+    "ja": "「社会的支援」「社会的ネットワーク」と重なる部分が多いですが、後者は関係性の構造自体を指すのに対し、ソーシャルサポートは実際に得られる支援の質・量を重視します。「perceived social support(主観的ソーシャルサポート)」は本人の認識を、「received social support(受領したソーシャルサポート)」は客観的な援助行動を指す場合があり、使い分けに注意が必要です。",
+    "en": "While overlapping with 'social network,' the latter emphasizes the structure of relationships, whereas social support focuses on the quality and quantity of assistance received. 'Perceived social support' refers to subjective appraisal of available support, while 'received social support' denotes objectively documented assistance; distinguishing between these is important in research contexts."
+  },
+  "pubmedCount": 134271,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5645
+    },
+    {
+      "year": 2018,
+      "count": 5893
+    },
+    {
+      "year": 2019,
+      "count": 5891
+    },
+    {
+      "year": 2020,
+      "count": 6652
+    },
+    {
+      "year": 2021,
+      "count": 7150
+    },
+    {
+      "year": 2022,
+      "count": 7197
+    },
+    {
+      "year": 2023,
+      "count": 6419
+    },
+    {
+      "year": 2024,
+      "count": 7705
+    },
+    {
+      "year": 2025,
+      "count": 10007
+    },
+    {
+      "year": 2026,
+      "count": 9535
+    }
+  ],
+  "searchQuery": "(\"Social Support\"[MeSH Terms]) OR (\"social support\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42777487",
+      "title": "A longitudinal study of supervisor support as a moderator in maintaining work engagement during working from home: A moderated moderated-mediation model.",
+      "year": 2027
+    },
+    {
+      "pmid": "42721890",
+      "title": "The development of children's mathematics achievement in primary school: the early and longitudinal links with perceived teacher support and mathematics anxiety.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863799",
+      "title": "Associations of one-to-one peer support service and intervention outcomes among older adults with depressive symptoms: Evidence from a community-based stepped care programme for late-life depression in Hong Kong.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854789",
+      "title": "The association between alexithymia and job burnout in nurses: A systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854788",
+      "title": "Sleep quality and its associated factors among community-dwelling patients with severe mental disorders in Minhang District, Shanghai: A cross-sectional study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:17:17.900Z"
+}

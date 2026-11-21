@@ -1,0 +1,93 @@
+{
+  "slug": "patient-safety",
+  "ja": "患者安全",
+  "yomi": "かんじゃあんぜん",
+  "en": "patient safety",
+  "category": "nursing-pharma",
+  "meshHeading": "Patient Safety",
+  "meshUi": "68061214",
+  "description": {
+    "ja": "医療現場において患者が受ける可能性のある予防可能な危害やリスクを最小化し、安全な医療を提供するための概念と取り組み全般を指します。医療過誤、投薬ミス、院内感染、転倒などの有害事象を防ぐための組織的な活動が含まれます。",
+    "en": "Patient safety refers to the comprehensive concept and practices aimed at minimizing preventable harm and risks to patients in healthcare settings. It encompasses organizational activities to prevent adverse events such as medical errors, medication mistakes, healthcare-associated infections, and falls."
+  },
+  "usage": {
+    "ja": "看護研究では「患者安全文化」「安全管理体制」「インシデント報告システム」などの評価指標として用いられます。薬剤疫学研究では投薬エラーの発生率や重大な有害事象の頻度を測定する際の主要アウトカムとして扱われます。",
+    "en": "In nursing research, it is used as an evaluation indicator for 'patient safety culture,' 'safety management systems,' and 'incident reporting systems.' In pharmacoepidemiology, it serves as a primary outcome when measuring medication error rates and frequencies of serious adverse events."
+  },
+  "synonyms": {
+    "ja": "「医療安全」とほぼ同義ですが、患者安全は患者中心の視点を強調する表現です。関連用語に「有害事象(adverse event)」「医療の質(quality of care)」「リスクマネジメント」があり、文脈に応じて使い分けられます。",
+    "en": "Nearly synonymous with 'healthcare safety,' though patient safety emphasizes a patient-centered perspective. Related terms include 'adverse event,' 'quality of care,' and 'risk management,' which are used depending on context."
+  },
+  "pubmedCount": 76998,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4813
+    },
+    {
+      "year": 2018,
+      "count": 4845
+    },
+    {
+      "year": 2019,
+      "count": 5168
+    },
+    {
+      "year": 2020,
+      "count": 5248
+    },
+    {
+      "year": 2021,
+      "count": 4808
+    },
+    {
+      "year": 2022,
+      "count": 3987
+    },
+    {
+      "year": 2023,
+      "count": 3973
+    },
+    {
+      "year": 2024,
+      "count": 5214
+    },
+    {
+      "year": 2025,
+      "count": 7353
+    },
+    {
+      "year": 2026,
+      "count": 8421
+    }
+  ],
+  "searchQuery": "(\"Patient Safety\"[MeSH Terms]) OR (\"patient safety\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42476281",
+      "title": "Urine culture contamination in a tertiary hospital: Demographic predictors and direct economic impact.",
+      "year": 2027
+    },
+    {
+      "pmid": "42448163",
+      "title": "Investigating non-reproducible high-sensitivity cardiac troponin T results in real-world practice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42727310",
+      "title": "The effects of resilience-oriented workspace interventions: combining social network analysis and organizational quality indicators.",
+      "year": 2027
+    },
+    {
+      "pmid": "42664651",
+      "title": "Balancing speed and separation: A high-throughput native mass spectrometry platform for screening complex bispecific antibody variants.",
+      "year": 2027
+    },
+    {
+      "pmid": "42480877",
+      "title": "Herb-drug interactions with clinical impact: A systematic review of global clinical evidence on medicinal plants widely used in Ecuador.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:32:02.608Z"
+}

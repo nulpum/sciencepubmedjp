@@ -1,0 +1,96 @@
+{
+  "slug": "autophagy",
+  "ja": "オートファジー",
+  "yomi": "おーとふぁじー",
+  "en": "autophagy",
+  "category": "biology",
+  "aliases": [
+    "自食作用"
+  ],
+  "meshHeading": "Autophagy",
+  "meshUi": "68001343",
+  "description": {
+    "ja": "細胞が自分自身の一部を分解してリサイクルする仕組みです。不要になったタンパク質や傷ついた細胞小器官を膜で包み込み、分解酵素で消化して再利用します。飢餓状態やストレス時に活性化され、細胞の健康維持や老化との関連が研究されています。",
+    "en": "A cellular process where cells break down and recycle their own components. The cell engulfs unnecessary proteins or damaged organelles in membranes and digests them with enzymes for reuse. It is activated during starvation or stress and is studied in relation to cellular health maintenance and aging."
+  },
+  "usage": {
+    "ja": "論文では「autophagy flux(オートファジーフラックス)」として活性の流れを測定したり、LC3やp62などのマーカータンパク質の発現量を調べます。顕微鏡でオートファゴソーム(二重膜構造)の形成を観察する手法も用いられます。",
+    "en": "Papers measure autophagy flux or expression levels of marker proteins such as LC3 and p62. Microscopy is also used to observe the formation of autophagosomes, which have a double-membrane structure."
+  },
+  "synonyms": {
+    "ja": "「自食作用」は日本語の別名です。マクロオートファジー、ミクロオートファジー、シャペロン介在性オートファジーなど複数の種類があり、文脈で使い分けられます。macroautophagyが最も一般的に研究される形態です。",
+    "en": "Also called '自食作用(jishoku sayo)' in Japanese. Subtypes include macroautophagy, microautophagy, and chaperone-mediated autophagy, with macroautophagy being the most commonly studied form."
+  },
+  "pubmedCount": 113917,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 6451
+    },
+    {
+      "year": 2018,
+      "count": 7193
+    },
+    {
+      "year": 2019,
+      "count": 8195
+    },
+    {
+      "year": 2020,
+      "count": 9531
+    },
+    {
+      "year": 2021,
+      "count": 10496
+    },
+    {
+      "year": 2022,
+      "count": 10479
+    },
+    {
+      "year": 2023,
+      "count": 10051
+    },
+    {
+      "year": 2024,
+      "count": 10944
+    },
+    {
+      "year": 2025,
+      "count": 12436
+    },
+    {
+      "year": 2026,
+      "count": 11386
+    }
+  ],
+  "searchQuery": "(\"Autophagy\"[MeSH Terms]) OR (\"autophagy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42839367",
+      "title": "Enterovirus 2B protein: From viroporin to membrane stress sensor, mechanistic principles of multi-pathway regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965052",
+      "title": "3D culture-derived MSC EV facilitate repair by activating microglial autophagy in spinal cord injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42936108",
+      "title": "Mitochondria-rich cytochalasomes as an intravenously deliverable vesicle platform for ischemic heart disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42898649",
+      "title": "Cationized gelatin nanosphere-mediated release-controlled RNA interference targeting mTORC1 protects against intervertebral disc degeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42880083",
+      "title": "Ultrasound-triggered spinal cord-mimetic electroactive hydrogel enables localized bioelectrical modulation and promotes spinal cord injury repair through JNK-mediated autophagy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:04:31.655Z"
+}

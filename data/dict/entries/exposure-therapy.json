@@ -1,0 +1,93 @@
+{
+  "slug": "exposure-therapy",
+  "ja": "曝露療法",
+  "yomi": "ばくろりょうほう",
+  "en": "exposure therapy",
+  "category": "psychology",
+  "meshHeading": "Implosive Therapy",
+  "meshUi": "68007171",
+  "description": {
+    "ja": "不安障害やPTSDなどの治療で用いられる心理療法の一種で、患者が恐怖や不安を感じる状況や刺激に段階的または持続的にさらすことで、回避行動を減らし不安反応を軽減させる技法です。認知行動療法の重要な構成要素として研究されています。",
+    "en": "A psychological intervention used in treating anxiety disorders and PTSD, where patients are gradually or prolongedly exposed to fear- or anxiety-provoking situations or stimuli to reduce avoidance behaviors and anxiety responses. It is studied as a key component of cognitive behavioral therapy."
+  },
+  "usage": {
+    "ja": "論文では「exposure therapy for PTSD」「prolonged exposure (PE)」「in vivo exposure」などの形で登場し、治療前後の症状スコア変化や回避行動の頻度を測定することで効果が評価されます。仮想現実を用いた曝露 (VR exposure) などの新しい方法論も研究対象となっています。",
+    "en": "Papers typically describe it as 'exposure therapy for PTSD,' 'prolonged exposure (PE),' or 'in vivo exposure,' with outcomes measured through pre-post symptom score changes and avoidance behavior frequency. Novel approaches such as VR exposure therapy are also investigated in research."
+  },
+  "synonyms": {
+    "ja": "持続エクスポージャー療法、系統的脱感作、段階的曝露などの関連技法があります。in vivo exposure (実生活場面での曝露) と imaginal exposure (想像上の曝露) は実施方法による区別です。exposure-based interventions と総称されることもあります。",
+    "en": "Related terms include prolonged exposure therapy, systematic desensitization, and graded exposure. In vivo exposure (real-life situations) and imaginal exposure (imagined scenarios) distinguish implementation methods. The umbrella term exposure-based interventions is also used in literature."
+  },
+  "pubmedCount": 4267,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 252
+    },
+    {
+      "year": 2018,
+      "count": 303
+    },
+    {
+      "year": 2019,
+      "count": 286
+    },
+    {
+      "year": 2020,
+      "count": 303
+    },
+    {
+      "year": 2021,
+      "count": 279
+    },
+    {
+      "year": 2022,
+      "count": 266
+    },
+    {
+      "year": 2023,
+      "count": 283
+    },
+    {
+      "year": 2024,
+      "count": 331
+    },
+    {
+      "year": 2025,
+      "count": 417
+    },
+    {
+      "year": 2026,
+      "count": 357
+    }
+  ],
+  "searchQuery": "(\"Implosive Therapy\"[MeSH Terms]) OR (\"exposure therapy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42854790",
+      "title": "Prolonged exposure therapy for posttraumatic stress disorder: A systematic review and meta-analysis of randomized controlled trials.",
+      "year": 2027
+    },
+    {
+      "pmid": "41874230",
+      "title": "Exploring school nurses' experiences of a metaverse-based infectious disease simulation training: qualitative study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42716344",
+      "title": "Mapping mental representations of fear-relevant stimuli through similarity modeling.",
+      "year": 2026
+    },
+    {
+      "pmid": "43022962",
+      "title": "Engaged exposure therapy (EET) for autistic individuals with obsessive-compulsive disorder: Integrating special interests into evidence-based practice.",
+      "year": 2026
+    },
+    {
+      "pmid": "43022854",
+      "title": "One-session versus three-session virtual reality exposure therapy for public speaking anxiety: a randomized controlled trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:22:17.194Z"
+}

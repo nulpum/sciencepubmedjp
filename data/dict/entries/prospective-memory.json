@@ -1,0 +1,93 @@
+{
+  "slug": "prospective-memory",
+  "ja": "展望記憶",
+  "yomi": "てんぼうきおく",
+  "en": "prospective memory",
+  "category": "psychology",
+  "meshHeading": "Memory, Episodic",
+  "meshUi": "68061212",
+  "description": {
+    "ja": "展望記憶とは、将来実行すべき行動や予定を覚えておき、適切なタイミングで思い出して実行する記憶機能のことです。「明日10時に薬を飲む」「帰りに牛乳を買う」といった未来志向の記憶で、過去の出来事を思い出す回想記憶とは対照的です。加齢や神経疾患による日常生活能力の変化を評価する際に重要な指標として研究されています。",
+    "en": "Prospective memory refers to the cognitive ability to remember to perform intended actions or plans at the appropriate future time. It involves future-oriented remembering such as 'take medication at 10 am tomorrow' or 'buy milk on the way home,' contrasting with retrospective memory that recalls past events. This memory function is studied as an important indicator for assessing changes in daily living abilities due to aging or neurological conditions."
+  },
+  "usage": {
+    "ja": "心理学や神経科学の論文では、時間ベース課題(特定時刻に行動)やイベントベース課題(特定状況で行動)を用いて測定されます。質問紙法、実験室課題、日常生活シミュレーションなどの方法で評価され、認知症、パーキンソン病、注意欠如多動症などの疾患研究で用いられます。",
+    "en": "In psychology and neuroscience papers, it is measured using time-based tasks (actions at specific times) or event-based tasks (actions in specific situations). Assessment methods include questionnaires, laboratory tasks, and daily life simulations, commonly employed in research on dementia, Parkinson's disease, ADHD, and other conditions."
+  },
+  "synonyms": {
+    "ja": "「未来記憶」「予定記憶」とも呼ばれます。時間ベース展望記憶(time-based PM)とイベントベース展望記憶(event-based PM)の区別が重要で、前者は時間モニタリング、後者は手がかり検出が主な認知プロセスとなります。",
+    "en": "Also called 'future memory' or 'intention memory.' Important distinctions include time-based prospective memory (requiring time monitoring) and event-based prospective memory (requiring cue detection), which involve different cognitive processes."
+  },
+  "pubmedCount": 9661,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 801
+    },
+    {
+      "year": 2018,
+      "count": 872
+    },
+    {
+      "year": 2019,
+      "count": 902
+    },
+    {
+      "year": 2020,
+      "count": 803
+    },
+    {
+      "year": 2021,
+      "count": 780
+    },
+    {
+      "year": 2022,
+      "count": 696
+    },
+    {
+      "year": 2023,
+      "count": 702
+    },
+    {
+      "year": 2024,
+      "count": 722
+    },
+    {
+      "year": 2025,
+      "count": 759
+    },
+    {
+      "year": 2026,
+      "count": 645
+    }
+  ],
+  "searchQuery": "(\"Memory, Episodic\"[MeSH Terms]) OR (\"prospective memory\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43013934",
+      "title": "Healthy aging, processing speed, and mnemonic brain state engagement.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854332",
+      "title": "Aversive learning retroactively modulates neutral episodic memories structured by prior knowledge of predictive sequences.",
+      "year": 2027
+    },
+    {
+      "pmid": "42766942",
+      "title": "Bilingualism modulates baseline brain-cognition relationships in aging: Evidence from the HABS-HD cohort.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648466",
+      "title": "Film recall reveals intact event memory but impaired sequence memory in temporal lobe epilepsy patients.",
+      "year": 2026
+    },
+    {
+      "pmid": "42595245",
+      "title": "Stress-Related Psychopathology Shapes Episodic Memory Development in Youth: Network-Level Brain Predictors and Relations With Early-Life Stress.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:07:50.992Z"
+}

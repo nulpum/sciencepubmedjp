@@ -1,0 +1,96 @@
+{
+  "slug": "therapeutic-index",
+  "ja": "治療係数",
+  "yomi": "ちりょうけいすう",
+  "en": "therapeutic index",
+  "category": "nursing-pharma",
+  "aliases": [
+    "治療指数"
+  ],
+  "meshHeading": "Therapeutic Index",
+  "meshUi": "2023515",
+  "description": {
+    "ja": "薬物の有効量と中毒量の比を示す指標で、安全域の広さを表します。一般に「中毒量÷有効量」で計算され、値が大きいほど安全性が高い薬剤とされます。逆に値が小さい薬剤は投与量管理に注意が必要です。",
+    "en": "An indicator showing the ratio between the effective dose and toxic dose of a drug, representing the margin of safety. Generally calculated as 'toxic dose ÷ effective dose,' with larger values indicating safer medications. Drugs with smaller values require careful dose management."
+  },
+  "usage": {
+    "ja": "薬理学研究で薬剤の安全性評価に用いられ、LD50(半数致死量)÷ED50(半数有効量)として算出されます。抗がん剤や強心配糖体など治療係数が小さい薬剤では、血中濃度モニタリングが重視されます。",
+    "en": "Used in pharmacological research to evaluate drug safety, calculated as LD50 (median lethal dose) ÷ ED50 (median effective dose). For drugs with narrow therapeutic indices such as chemotherapy agents or cardiac glycosides, therapeutic drug monitoring is emphasized."
+  },
+  "synonyms": {
+    "ja": "治療指数とも呼ばれ、英語ではtherapeutic ratioとも表記されます。類似概念として安全域(safety margin)がありますが、治療係数は比で表すのに対し、安全域は差で表す点が異なります。",
+    "en": "Also called therapeutic ratio in English. A related concept is safety margin, but while therapeutic index is expressed as a ratio, safety margin is expressed as a difference between doses."
+  },
+  "pubmedCount": 9509,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 326
+    },
+    {
+      "year": 2018,
+      "count": 387
+    },
+    {
+      "year": 2019,
+      "count": 342
+    },
+    {
+      "year": 2020,
+      "count": 436
+    },
+    {
+      "year": 2021,
+      "count": 437
+    },
+    {
+      "year": 2022,
+      "count": 399
+    },
+    {
+      "year": 2023,
+      "count": 370
+    },
+    {
+      "year": 2024,
+      "count": 365
+    },
+    {
+      "year": 2025,
+      "count": 455
+    },
+    {
+      "year": 2026,
+      "count": 599
+    }
+  ],
+  "searchQuery": "(\"Therapeutic Index\"[MeSH Terms]) OR (\"therapeutic index\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42981877",
+      "title": "Structure-guided design and optimization of 3-amino-pyrazine-2-oxadiazole derivatives as novel FGFR2 inhibitors.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062578",
+      "title": "ADC Payloads Past, Present, and Future.",
+      "year": 2027
+    },
+    {
+      "pmid": "42826607",
+      "title": "Nicotinium-based surface-active ionic liquids as antimicrobial surfactants: Micellization properties, antibiofilm activity, and biocompatibility.",
+      "year": 2027
+    },
+    {
+      "pmid": "42679969",
+      "title": "Reactivation of an inert 15-mer antimicrobial peptide by truncation-directed i, i + 7 lactam cyclization.",
+      "year": 2027
+    },
+    {
+      "pmid": "41427517",
+      "title": "Polymersome-based nanomedicine for combined cancer therapy.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:34:53.469Z"
+}

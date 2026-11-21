@@ -1,0 +1,96 @@
+{
+  "slug": "bipolar-disorder",
+  "ja": "双極性障害",
+  "yomi": "そうきょくせいしょうがい",
+  "en": "bipolar disorder",
+  "category": "psychology",
+  "aliases": [
+    "躁うつ病"
+  ],
+  "meshHeading": "Bipolar Disorder",
+  "meshUi": "68001714",
+  "description": {
+    "ja": "気分が高揚する躁状態と、落ち込むうつ状態を繰り返す精神疾患の一つで、以前は躁うつ病と呼ばれていました。I型(顕著な躁状態を伴う)とII型(軽躁状態とうつ状態)などに分類され、発症メカニズムや遺伝的要因、治療反応性などが研究されています。診断には国際的な診断基準(DSMやICD)が用いられます。",
+    "en": "A mental health condition characterized by alternating episodes of elevated mood (mania) and depressed mood, formerly known as manic-depressive illness. It is classified into subtypes such as Type I (with full manic episodes) and Type II (with hypomanic and depressive episodes), and research focuses on mechanisms, genetic factors, and treatment responses. Diagnosis follows international criteria such as DSM or ICD."
+  },
+  "usage": {
+    "ja": "疫学研究では有病率や発症年齢、臨床研究では気分安定薬や認知行動療法の効果、神経画像研究では脳の構造・機能変化、遺伝学研究では関連遺伝子の探索などで用いられます。評価にはYoung Mania Rating Scale(YMRS)やHamilton Depression Rating Scale(HDRS)などの尺度が使われることがあります。",
+    "en": "Used in epidemiological studies for prevalence and age of onset, clinical trials for mood stabilizers and psychotherapy outcomes, neuroimaging studies for brain structure and function changes, and genetic studies for associated genes. Assessment may involve scales such as the Young Mania Rating Scale (YMRS) or Hamilton Depression Rating Scale (HDRS)."
+  },
+  "synonyms": {
+    "ja": "躁うつ病は古い呼称で、現在は双極性障害が標準的です。英語ではbipolar affective disorderやmanic-depressive illnessとも表記されます。単極性うつ病(major depressive disorder)とは区別され、文献検索では「bipolar I」「bipolar II」などサブタイプ指定も有効です。",
+    "en": "Manic-depressive illness is an older term; bipolar disorder is now standard. Also referred to as bipolar affective disorder. It is distinct from unipolar depression (major depressive disorder). Literature searches benefit from specifying subtypes such as 'bipolar I' or 'bipolar II'."
+  },
+  "pubmedCount": 65268,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2619
+    },
+    {
+      "year": 2018,
+      "count": 2612
+    },
+    {
+      "year": 2019,
+      "count": 2534
+    },
+    {
+      "year": 2020,
+      "count": 2800
+    },
+    {
+      "year": 2021,
+      "count": 2984
+    },
+    {
+      "year": 2022,
+      "count": 2781
+    },
+    {
+      "year": 2023,
+      "count": 2679
+    },
+    {
+      "year": 2024,
+      "count": 2690
+    },
+    {
+      "year": 2025,
+      "count": 3031
+    },
+    {
+      "year": 2026,
+      "count": 2813
+    }
+  ],
+  "searchQuery": "(\"Bipolar Disorder\"[MeSH Terms]) OR (\"bipolar disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42786613",
+      "title": "Neuroimaging Biomarkers for Brain Disorder Diagnosis Using Advanced Learning Techniques.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976994",
+      "title": "Type D personality, psychiatric symptom burden, and life satisfaction in bipolar II disorder and major depressive disorder: A family-based study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956846",
+      "title": "Cross-metric convergence reveals altered white matter microstructural-functional correspondence in bipolar Ⅱ disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42951040",
+      "title": "Rest-activity rhythm robustness and prospective mood symptoms in adolescence: Moderating effects of chronotype, sleep timing, and reward sensitivity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42951037",
+      "title": "Speech-based differentiation of unipolar and bipolar depression across scripted reading and interview questions.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:11:59.618Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "shared-decision-making",
+  "ja": "共同意思決定",
+  "yomi": "きょうどういしけってい",
+  "en": "shared decision making",
+  "abbr": "SDM",
+  "category": "nursing-pharma",
+  "meshHeading": "Decision Making, Shared",
+  "meshUi": "2030979",
+  "description": {
+    "ja": "患者と医療者が対等な立場で情報を共有し、治療方針や療養生活について一緒に決めていくプロセスを指します。患者の価値観や希望を尊重しながら、医学的根拠に基づいた選択肢を検討し、双方が納得できる意思決定を目指します。",
+    "en": "A process in which patients and healthcare providers work together as equal partners to share information and make decisions about treatment plans and care. It incorporates patient values and preferences while considering evidence-based medical options to reach mutually acceptable decisions."
+  },
+  "usage": {
+    "ja": "看護研究や薬学研究では、患者満足度や治療アドヒアランス向上との関連を調べる際に用いられます。質問票や面接を通じて患者と医療者の意思決定への関与度を測定し、介入前後での変化や健康アウトカムへの影響を評価します。",
+    "en": "In nursing and pharmaceutical research, SDM is examined in relation to patient satisfaction and treatment adherence. Studies measure the degree of patient and provider involvement in decision-making through questionnaires or interviews, evaluating changes before and after interventions and their impact on health outcomes."
+  },
+  "synonyms": {
+    "ja": "「協働意思決定」「参加型意思決定」とも呼ばれます。類似概念に「インフォームド・コンセント」がありますが、SDMはより双方向的で継続的な対話を重視する点で異なります。Patient-centered careやpatient engagementとも関連が深い概念です。",
+    "en": "Also referred to as 'collaborative decision making' or 'participatory decision making'. While related to informed consent, SDM emphasizes more bidirectional and ongoing dialogue. It is closely associated with concepts such as patient-centered care and patient engagement."
+  },
+  "pubmedCount": 24828,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1145
+    },
+    {
+      "year": 2018,
+      "count": 1254
+    },
+    {
+      "year": 2019,
+      "count": 1764
+    },
+    {
+      "year": 2020,
+      "count": 2115
+    },
+    {
+      "year": 2021,
+      "count": 2368
+    },
+    {
+      "year": 2022,
+      "count": 2405
+    },
+    {
+      "year": 2023,
+      "count": 2418
+    },
+    {
+      "year": 2024,
+      "count": 2680
+    },
+    {
+      "year": 2025,
+      "count": 3371
+    },
+    {
+      "year": 2026,
+      "count": 4342
+    }
+  ],
+  "searchQuery": "(\"Decision Making, Shared\"[MeSH Terms]) OR (\"shared decision making\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43039639",
+      "title": "Strategy for Exercise Restriction in Hypertrophic Cardiomyopathy.",
+      "year": 2027
+    },
+    {
+      "pmid": "43054420",
+      "title": "Adaptation of DECIDE, a Shared Decision Making Intervention, to Improve Perinatal Mental Health Care in Health Systems.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045321",
+      "title": "Artificial Intelligence in Breast Reconstruction.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045227",
+      "title": "Pediatric Digital Deformities.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032093",
+      "title": "Recurrence rates in Dupuytren's contracture: a systematic review and meta-analysis comparing percutaneous and open surgical management.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:29:59.424Z"
+}

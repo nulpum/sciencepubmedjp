@@ -1,0 +1,93 @@
+{
+  "slug": "end-of-life-care",
+  "ja": "終末期ケア",
+  "yomi": "しゅうまつきけあ",
+  "en": "end-of-life care",
+  "category": "nursing-pharma",
+  "meshHeading": "Hospice Care",
+  "meshUi": "68017051",
+  "description": {
+    "ja": "終末期ケアとは、治癒が見込めない疾患の進行期にある患者に対して、身体的苦痛の緩和、精神的・社会的サポート、尊厳の保持を目的とした包括的なケアのことです。医療・看護・介護・心理などの多職種が連携し、患者と家族の生活の質(QOL)を高めることを重視します。",
+    "en": "End-of-life care refers to comprehensive care aimed at alleviating physical suffering, providing psychological and social support, and maintaining dignity for patients with advanced, incurable illnesses. It emphasizes improving quality of life (QOL) for both patients and families through multidisciplinary collaboration involving healthcare, nursing, caregiving, and psychological professionals."
+  },
+  "usage": {
+    "ja": "論文では緩和ケアの質や介入効果を評価する研究で用いられ、疼痛管理、症状コントロール、患者・家族の満足度、意思決定支援などが測定指標となります。",
+    "en": "In research, it is used to evaluate the quality of palliative interventions, with outcome measures including pain management, symptom control, patient and family satisfaction, and advance care planning."
+  },
+  "synonyms": {
+    "ja": "「緩和ケア(palliative care)」とほぼ同義ですが、終末期ケアはより生命予後が限られた時期を指す場合が多く、緩和ケアは診断時から継続的に提供される概念として区別されることがあります。",
+    "en": "It is nearly synonymous with 'palliative care,' though end-of-life care often refers specifically to the final phase of life, while palliative care may begin at diagnosis and continue throughout the disease trajectory."
+  },
+  "pubmedCount": 25920,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1356
+    },
+    {
+      "year": 2018,
+      "count": 1429
+    },
+    {
+      "year": 2019,
+      "count": 1495
+    },
+    {
+      "year": 2020,
+      "count": 1692
+    },
+    {
+      "year": 2021,
+      "count": 1812
+    },
+    {
+      "year": 2022,
+      "count": 1781
+    },
+    {
+      "year": 2023,
+      "count": 1580
+    },
+    {
+      "year": 2024,
+      "count": 1726
+    },
+    {
+      "year": 2025,
+      "count": 1876
+    },
+    {
+      "year": 2026,
+      "count": 1945
+    }
+  ],
+  "searchQuery": "(\"Hospice Care\"[MeSH Terms]) OR (\"end-of-life care\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43039516",
+      "title": "Palliative Care and Discontinuation of Resuscitative Efforts for the Trauma Patient: A Paradigm for Concurrent Care.",
+      "year": 2027
+    },
+    {
+      "pmid": "43003547",
+      "title": "Culture and the Intensive Care Unit Team: Factors Driving Teamwork, Safety, Quality, and Well-Being.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956515",
+      "title": "Building system capacity for home visits for patients near the end of life: A mixed-methods study in Canada.",
+      "year": 2027
+    },
+    {
+      "pmid": "42685443",
+      "title": "The effect of simulation-based training on palliative care competence: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "41353626",
+      "title": "Examining Social Support and Digital Literacy Among Caregivers of People Living With Dementia Receiving Hospice Services.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:31:27.383Z"
+}

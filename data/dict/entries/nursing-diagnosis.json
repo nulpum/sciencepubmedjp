@@ -1,0 +1,93 @@
+{
+  "slug": "nursing-diagnosis",
+  "ja": "看護診断",
+  "yomi": "かんごしんだん",
+  "en": "nursing diagnosis",
+  "category": "nursing-pharma",
+  "meshHeading": "Nursing Diagnosis",
+  "meshUi": "68009733",
+  "description": {
+    "ja": "看護診断とは、看護師が患者の健康問題や生活上のニーズを系統的にアセスメントし、標準化された用語で表現する診断プロセスです。医師の医学診断とは異なり、患者の身体的・心理的・社会的反応や日常生活動作の問題に焦点を当てます。NANDA-I（北米看護診断協会インターナショナル）などの分類体系が国際的に用いられています。",
+    "en": "Nursing diagnosis is a systematic process in which nurses assess patients' health problems and life needs, expressing them using standardized terminology. Unlike medical diagnoses by physicians, it focuses on patients' physical, psychological, and social responses and activities of daily living. Classification systems such as NANDA-I (NANDA International) are used globally."
+  },
+  "usage": {
+    "ja": "看護研究では、特定の看護診断の頻度、看護介入との関連、患者アウトカムへの影響などが調査されます。看護記録や電子カルテのデータベースから抽出された看護診断ラベルを用いて、ケアの質や看護実践パターンを分析する研究が行われます。",
+    "en": "In nursing research, the frequency of specific nursing diagnoses, their relationship with nursing interventions, and impact on patient outcomes are investigated. Studies analyze quality of care and nursing practice patterns using nursing diagnosis labels extracted from nursing records and electronic health record databases."
+  },
+  "synonyms": {
+    "ja": "「看護問題」は看護診断とほぼ同義ですが、より広義に使われることもあります。「NANDA診断」は特にNANDA-Iの分類体系を用いた診断を指します。医学診断（medical diagnosis）とは目的と焦点が異なる点に注意が必要です。",
+    "en": "\"Nursing problem\" is nearly synonymous but may be used more broadly. \"NANDA diagnosis\" specifically refers to diagnoses using the NANDA-I classification system. It is important to note that nursing diagnosis differs in purpose and focus from medical diagnosis."
+  },
+  "pubmedCount": 5931,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 160
+    },
+    {
+      "year": 2018,
+      "count": 165
+    },
+    {
+      "year": 2019,
+      "count": 172
+    },
+    {
+      "year": 2020,
+      "count": 158
+    },
+    {
+      "year": 2021,
+      "count": 143
+    },
+    {
+      "year": 2022,
+      "count": 96
+    },
+    {
+      "year": 2023,
+      "count": 95
+    },
+    {
+      "year": 2024,
+      "count": 113
+    },
+    {
+      "year": 2025,
+      "count": 115
+    },
+    {
+      "year": 2026,
+      "count": 127
+    }
+  ],
+  "searchQuery": "(\"Nursing Diagnosis\"[MeSH Terms]) OR (\"nursing diagnosis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43048982",
+      "title": "Definition, Validation, and Defining Characteristics of \"Spiritual Distress\" Nursing Diagnosis: A Systematic Review and Meta-Analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43033071",
+      "title": "Clinical Validation of the Nursing Diagnosis Risk for occupational physical injury (00402) among Healthcare Professionals: A Case-Control Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43033070",
+      "title": "Nursing Care for Managing Excess Fluid Volume (00026) in Chronic Kidney Disease Hemodialysis Patients: An Integrative Review.",
+      "year": 2026
+    },
+    {
+      "pmid": "43012301",
+      "title": "Validation to NANDA-I of the Nursing Diagnosis Ineffective Community Process Based on Community Assessment, Intervention and Empowerment Model (MAIEC): A Focus Group Consensus Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43001057",
+      "title": "Beyond classical content validity indices: methodological aspects and reporting recommendations for nursing research.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:37:39.149Z"
+}

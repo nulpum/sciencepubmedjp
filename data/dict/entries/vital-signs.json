@@ -1,0 +1,96 @@
+{
+  "slug": "vital-signs",
+  "ja": "バイタルサイン",
+  "yomi": "ばいたるさいん",
+  "en": "vital signs",
+  "category": "nursing-pharma",
+  "aliases": [
+    "生命徴候"
+  ],
+  "meshHeading": "Vital Signs",
+  "meshUi": "68055986",
+  "description": {
+    "ja": "生命活動の基本的な兆候を示す測定値の総称で、体温・脈拍・呼吸数・血圧の4つを指すことが多く、近年は酸素飽和度や意識レベルを加えることもあります。患者の全身状態を客観的に把握するために、医療・看護の現場で日常的に測定される基本指標です。",
+    "en": "A collective term for fundamental physiological measurements indicating life activity, typically including body temperature, pulse, respiratory rate, and blood pressure, with oxygen saturation and level of consciousness sometimes added. These are routinely measured in clinical settings to objectively assess a patient's overall condition."
+  },
+  "usage": {
+    "ja": "看護研究では「入院時バイタルサインを測定した」「バイタルサインの変動を24時間モニタリングした」のように記述され、臨床試験では介入前後の比較や有害事象の早期発見指標として用いられます。測定値の正常範囲は年齢・性別・基礎疾患により異なるため、個別評価が必要です。",
+    "en": "In nursing research, it appears in contexts such as 'vital signs were measured on admission' or 'vital sign fluctuations were monitored for 24 hours.' In clinical trials, these measurements are used for pre-post intervention comparisons and early detection of adverse events, with normal ranges varying by age, sex, and underlying conditions."
+  },
+  "synonyms": {
+    "ja": "生命徴候とも呼ばれ、VS(ブイエス)と略記されることもあります。第5のバイタルサインとして疼痛や体温を追加する考え方もあり、測定項目は施設や研究目的により多少異なる場合があります。",
+    "en": "Also referred to as 生命徴候 (seimei-choukou) in Japanese and sometimes abbreviated as VS. Some frameworks include pain or other parameters as the 'fifth vital sign,' and the specific measurements may vary slightly depending on the facility or research objectives."
+  },
+  "pubmedCount": 485264,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 12393
+    },
+    {
+      "year": 2018,
+      "count": 12158
+    },
+    {
+      "year": 2019,
+      "count": 12273
+    },
+    {
+      "year": 2020,
+      "count": 12523
+    },
+    {
+      "year": 2021,
+      "count": 11613
+    },
+    {
+      "year": 2022,
+      "count": 9324
+    },
+    {
+      "year": 2023,
+      "count": 8871
+    },
+    {
+      "year": 2024,
+      "count": 10626
+    },
+    {
+      "year": 2025,
+      "count": 11432
+    },
+    {
+      "year": 2026,
+      "count": 8972
+    }
+  ],
+  "searchQuery": "(\"Vital Signs\"[MeSH Terms]) OR (\"vital signs\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42905428",
+      "title": "Visual behaviour in acute stress during simulated and on-road driving.",
+      "year": 2027
+    },
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42748791",
+      "title": "LN-PMUT ultrasonic transducer enables instantaneous blood pressure reduction via renal hilar implantation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833368",
+      "title": "Complementary antihypertensive mechanisms of the Tianma-Gouteng herb pair targeting the endothelium and smooth muscle: Emphasizing endothelial protection by Tianma involving the PGR-associated PI3K/Akt/eNOS pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "42636700",
+      "title": "Development and test-retest reliability of a laboratory-based shipboard firefighting simulation for controlled performance testing.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:36:28.367Z"
+}

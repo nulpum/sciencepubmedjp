@@ -1,0 +1,94 @@
+{
+  "slug": "confounding",
+  "ja": "交絡",
+  "yomi": "こうらく",
+  "en": "confounding",
+  "category": "research",
+  "aliases": [
+    "交絡因子"
+  ],
+  "description": {
+    "ja": "研究で調べたい要因(曝露)と結果(アウトカム)の関係を歪める第三の要因のこと。例えば喫煙と肺がんの関係を調べる際、年齢が両方に影響すると真の関係が見えにくくなる。観察研究では交絡の制御が重要な課題となる。",
+    "en": "A third factor that distorts the relationship between an exposure and an outcome of interest. For example, when studying smoking and lung cancer, age may influence both and obscure the true association. Controlling confounding is a critical challenge in observational studies."
+  },
+  "usage": {
+    "ja": "論文では交絡因子を特定し、統計的調整(多変量解析)、層別解析、傾向スコアマッチングなどで制御する。交絡の可能性を議論することは研究の限界として必ず記載される。",
+    "en": "Papers identify confounders and control them through statistical adjustment (multivariable analysis), stratification, or propensity score matching. Discussion of potential confounding is always included as a study limitation."
+  },
+  "synonyms": {
+    "ja": "交絡因子(confounder)、交絡変数(confounding variable)とも呼ばれる。交絡バイアスは因果推論を誤らせるため、媒介因子(mediator)や効果修飾因子(effect modifier)との区別が重要。",
+    "en": "Also called confounder or confounding variable. Confounding bias misleads causal inference, so distinguishing it from mediators and effect modifiers is essential."
+  },
+  "pubmedCount": 108683,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4908
+    },
+    {
+      "year": 2018,
+      "count": 5186
+    },
+    {
+      "year": 2019,
+      "count": 5579
+    },
+    {
+      "year": 2020,
+      "count": 6369
+    },
+    {
+      "year": 2021,
+      "count": 7251
+    },
+    {
+      "year": 2022,
+      "count": 7469
+    },
+    {
+      "year": 2023,
+      "count": 7167
+    },
+    {
+      "year": 2024,
+      "count": 7835
+    },
+    {
+      "year": 2025,
+      "count": 9170
+    },
+    {
+      "year": 2026,
+      "count": 10766
+    }
+  ],
+  "searchQuery": "\"confounding\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849536",
+      "title": "Maternal diet and offspring ASD and ADHD: A critical narrative review of dietary patterns, choline, and polyphenol-related exposures.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032432",
+      "title": "Depressive symptoms are associated with poor asthma control in adults and adolescents.",
+      "year": 2027
+    },
+    {
+      "pmid": "43026175",
+      "title": "Methodological and Clinical Considerations in a Trial of One Nostril Inspiration for Pain Management Following Thoracic Trauma.",
+      "year": 2027
+    },
+    {
+      "pmid": "43024214",
+      "title": "Measurement of Skeletal Muscle Mitochondrial DNA Synthesis Using Stable Isotope Labeling.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:44:55.857Z"
+}

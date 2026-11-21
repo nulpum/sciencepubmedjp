@@ -1,0 +1,93 @@
+{
+  "slug": "half-life",
+  "ja": "半減期",
+  "yomi": "はんげんき",
+  "en": "half-life",
+  "category": "nursing-pharma",
+  "meshHeading": "Half-Life",
+  "meshUi": "68006207",
+  "description": {
+    "ja": "薬物や放射性物質の血中濃度または量が半分になるまでの時間を指します。薬物動態学では投与間隔や定常状態到達時間の予測に用いられ、放射線医学では放射性同位体の崩壊速度を表す指標として重要です。半減期が長いほど体内に留まる時間が長く、短いほど速やかに排泄されます。",
+    "en": "The time required for the blood concentration or amount of a drug or radioactive substance to decrease to half of its initial value. In pharmacokinetics, it is used to predict dosing intervals and time to reach steady state, while in radiation medicine it represents the decay rate of radioisotopes. Longer half-lives indicate prolonged retention in the body, while shorter ones indicate rapid elimination."
+  },
+  "usage": {
+    "ja": "論文では「薬物Aの消失半減期は4時間であった」「5回の半減期後に定常状態に到達」のように記述されます。血漿中薬物濃度の経時的測定から算出され、投与計画の設計や薬物相互作用の評価に活用されます。",
+    "en": "Papers typically describe it as 'the elimination half-life of drug A was 4 hours' or 'steady state was reached after 5 half-lives.' It is calculated from time-course measurements of plasma drug concentrations and used for designing dosing regimens and evaluating drug interactions."
+  },
+  "synonyms": {
+    "ja": "消失半減期、血中半減期、生物学的半減期などの表現があります。物理的半減期は放射性崩壊のみを指し、生物学的半減期は生体内での代謝・排泄を含む概念として区別されることがあります。",
+    "en": "Terms include elimination half-life, plasma half-life, and biological half-life. Physical half-life refers specifically to radioactive decay, while biological half-life encompasses metabolism and excretion processes in living organisms, and these are sometimes distinguished in usage."
+  },
+  "pubmedCount": 112645,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2984
+    },
+    {
+      "year": 2018,
+      "count": 3084
+    },
+    {
+      "year": 2019,
+      "count": 3061
+    },
+    {
+      "year": 2020,
+      "count": 3310
+    },
+    {
+      "year": 2021,
+      "count": 3383
+    },
+    {
+      "year": 2022,
+      "count": 3027
+    },
+    {
+      "year": 2023,
+      "count": 2895
+    },
+    {
+      "year": 2024,
+      "count": 3089
+    },
+    {
+      "year": 2025,
+      "count": 3496
+    },
+    {
+      "year": 2026,
+      "count": 3175
+    }
+  ],
+  "searchQuery": "(\"Half-Life\"[MeSH Terms]) OR (\"half-life\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43002814",
+      "title": "Engineering a PEG/Co-modified carbon paste electrode for highly sensitive voltammetric determination of ophthalmic antihistamine epinastine: From pharmaceutical analysis to ocular pharmacokinetics.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914753",
+      "title": "Optimization and validation of a green analytical method for determining bixlozone herbicide in water.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901134",
+      "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896420",
+      "title": "Self-assembly prodrugs for controlled singlet oxygen release and resistance modulation in deep-tumor photodynamic therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42721634",
+      "title": "Acidic pH-responsive and dissociative dimeric CpG oligodeoxynucleotides for enhanced cancer immunotherapy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:34:01.136Z"
+}

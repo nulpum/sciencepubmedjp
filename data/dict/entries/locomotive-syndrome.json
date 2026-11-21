@@ -1,0 +1,94 @@
+{
+  "slug": "locomotive-syndrome",
+  "ja": "ロコモティブシンドローム",
+  "yomi": "ろこもてぃぶしんどろーむ",
+  "en": "locomotive syndrome",
+  "category": "nursing-pharma",
+  "aliases": [
+    "運動器症候群"
+  ],
+  "description": {
+    "ja": "加齢に伴い筋力・骨・関節などの運動器機能が低下し、移動能力の低下をきたしている状態を指す概念です。日本整形外科学会が2007年に提唱した用語で、要介護リスクが高い状態として広く認識されています。骨粗鬆症、変形性関節症、サルコペニアなどが代表的な要因となります。",
+    "en": "Locomotive syndrome refers to a condition where mobility function declines due to age-related deterioration of musculoskeletal components including muscles, bones, and joints. This concept was proposed by the Japanese Orthopaedic Association in 2007 to identify individuals at high risk of requiring nursing care. Common contributing factors include osteoporosis, osteoarthritis, and sarcopenia."
+  },
+  "usage": {
+    "ja": "高齢者の身体機能や転倒リスク、要介護予防に関する研究で頻繁に用いられます。ロコモ度テストや立ち上がりテスト、2ステップテストなどの評価指標を用いて、運動器の機能低下の程度を測定します。",
+    "en": "This term is frequently used in studies on physical function, fall risk, and nursing care prevention in older adults. Assessment tools such as the locomotive syndrome risk test, stand-up test, and two-step test are employed to measure the degree of musculoskeletal functional decline."
+  },
+  "synonyms": {
+    "ja": "運動器症候群とも呼ばれます。類似概念にフレイル(虚弱)やサルコペニア(筋肉量減少)がありますが、ロコモティブシンドロームは運動器全体の機能低下に焦点を当てた日本発の概念である点が特徴的です。",
+    "en": "Also called musculoskeletal syndrome. Related concepts include frailty and sarcopenia, but locomotive syndrome is distinctive as a Japan-originated concept focusing specifically on overall musculoskeletal functional decline rather than general weakness or muscle loss alone."
+  },
+  "pubmedCount": 530,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 27
+    },
+    {
+      "year": 2018,
+      "count": 36
+    },
+    {
+      "year": 2019,
+      "count": 52
+    },
+    {
+      "year": 2020,
+      "count": 49
+    },
+    {
+      "year": 2021,
+      "count": 67
+    },
+    {
+      "year": 2022,
+      "count": 55
+    },
+    {
+      "year": 2023,
+      "count": 51
+    },
+    {
+      "year": 2024,
+      "count": 56
+    },
+    {
+      "year": 2025,
+      "count": 74
+    },
+    {
+      "year": 2026,
+      "count": 66
+    }
+  ],
+  "searchQuery": "\"locomotive syndrome\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42967254",
+      "title": "Osteoporosis, sarcopenia, locomotive syndrome, and frailty in age-related spinal kyphosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42478300",
+      "title": "Association Between Locomotive Syndrome and Metabolic Dysfunction-Associated Steatotic Liver Disease in a Health Examination Cohort: A Cross-Sectional Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42966690",
+      "title": "Corrigendum to \"Association between knee extensor muscle strength and locomotive syndrome in adults undergoing health screening: A cross-sectional study\"[J Orthop Sci 2026; 2359].",
+      "year": 2026
+    },
+    {
+      "pmid": "42962617",
+      "title": "Beyond walking distance: Recognising functional vulnerability and supporting recovery after gastrointestinal cancer surgery.",
+      "year": 2026
+    },
+    {
+      "pmid": "42888140",
+      "title": "Association between knee extensor muscle strength and locomotive syndrome in adults undergoing health screening: A cross-sectional study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:41:10.302Z"
+}

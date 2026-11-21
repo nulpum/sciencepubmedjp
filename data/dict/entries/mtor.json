@@ -1,0 +1,92 @@
+{
+  "slug": "mtor",
+  "ja": "mTOR",
+  "yomi": "えむとーる",
+  "en": "mechanistic target of rapamycin",
+  "abbr": "mTOR",
+  "category": "biology",
+  "description": {
+    "ja": "mTORは細胞内のタンパク質キナーゼで、栄養状態やエネルギー量に応じて細胞の成長・増殖・代謝を調節する重要な制御因子です。mTORC1とmTORC2という2つの複合体を形成し、それぞれ異なる機能を担っています。がんや老化、代謝性疾患などの研究で広く注目されています。",
+    "en": "mTOR is an intracellular protein kinase that regulates cell growth, proliferation, and metabolism in response to nutrient availability and energy status. It forms two distinct complexes, mTORC1 and mTORC2, each with different functions. It is widely studied in cancer, aging, and metabolic disease research."
+  },
+  "usage": {
+    "ja": "論文では「mTOR signaling pathway」「mTOR inhibitor」といった表現で登場し、ウェスタンブロットやリン酸化タンパク質の測定によってその活性が評価されます。ラパマイシンなどの阻害剤を用いた実験で、細胞増殖や自食作用への影響が調べられます。",
+    "en": "In research papers, it appears in phrases like 'mTOR signaling pathway' or 'mTOR inhibitor,' and its activity is assessed through Western blotting or phosphorylated protein measurements. Experiments using inhibitors such as rapamycin examine its effects on cell proliferation and autophagy."
+  },
+  "synonyms": {
+    "ja": "かつては「mammalian target of rapamycin」と呼ばれていましたが、現在は「mechanistic target of rapamycin」が正式名称です。mTORC1はラパマイシン感受性、mTORC2は比較的非感受性という使い分けに注意が必要です。",
+    "en": "Previously called 'mammalian target of rapamycin,' the current official name is 'mechanistic target of rapamycin.' Note that mTORC1 is rapamycin-sensitive while mTORC2 is relatively rapamycin-insensitive."
+  },
+  "pubmedCount": 5907,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 526
+    },
+    {
+      "year": 2018,
+      "count": 604
+    },
+    {
+      "year": 2019,
+      "count": 592
+    },
+    {
+      "year": 2020,
+      "count": 533
+    },
+    {
+      "year": 2021,
+      "count": 652
+    },
+    {
+      "year": 2022,
+      "count": 549
+    },
+    {
+      "year": 2023,
+      "count": 467
+    },
+    {
+      "year": 2024,
+      "count": 494
+    },
+    {
+      "year": 2025,
+      "count": 519
+    },
+    {
+      "year": 2026,
+      "count": 694
+    }
+  ],
+  "searchQuery": "\"mechanistic target of rapamycin\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42898649",
+      "title": "Cationized gelatin nanosphere-mediated release-controlled RNA interference targeting mTORC1 protects against intervertebral disc degeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42831165",
+      "title": "Matrix nanoalignment programs macrophage vesicular immunity through TRPV2 mechanogating.",
+      "year": 2027
+    },
+    {
+      "pmid": "42675565",
+      "title": "Dual modulation of lipid-lowering and anti-inflammatory effects of Thymus quinquecostatus Celak. ethanol extract on atherosclerosis: integration of UPLC-Q-TOF-MS/MS, in silico, in vivo, and in vitro studies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42975656",
+      "title": "Bcl11a preserves hematopoietic stem cell function in culture by restraining Ncf1-dependent ROS.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933709",
+      "title": "Citalopram modulates hypothalamic appetite-related signalling and hepatic lipid metabolism in rainbow trout.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:05:22.733Z"
+}

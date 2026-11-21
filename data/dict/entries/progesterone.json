@@ -1,0 +1,93 @@
+{
+  "slug": "progesterone",
+  "ja": "プロゲステロン",
+  "yomi": "ぷろげすてろん",
+  "en": "progesterone",
+  "category": "biology",
+  "meshHeading": "Progesterone",
+  "meshUi": "68011374",
+  "description": {
+    "ja": "プロゲステロンは、主に卵巣の黄体から分泌されるステロイドホルモンで、妊娠の維持や月経周期の調節に重要な役割を果たします。子宮内膜を受精卵が着床しやすい状態に整え、妊娠中は子宮の収縮を抑制する働きがあります。副腎や胎盤からも産生され、男性でも微量が検出されます。",
+    "en": "Progesterone is a steroid hormone primarily secreted by the corpus luteum of the ovary, playing a crucial role in maintaining pregnancy and regulating the menstrual cycle. It prepares the endometrium for embryo implantation and suppresses uterine contractions during pregnancy. It is also produced in small amounts by the adrenal glands and placenta, and can be detected at low levels in males."
+  },
+  "usage": {
+    "ja": "生物学・医学論文では、血中や唾液中のプロゲステロン濃度を免疫測定法(ELISA、RIA等)や質量分析法で定量し、月経周期、排卵、妊娠状態、黄体機能、ホルモン補充療法の効果などを評価する指標として用いられます。動物実験では生殖生理学や神経保護作用の研究にも使われます。",
+    "en": "In biological and medical research, progesterone concentrations in blood or saliva are quantified using immunoassays (ELISA, RIA, etc.) or mass spectrometry to assess menstrual cycle phases, ovulation, pregnancy status, luteal function, and hormone replacement therapy outcomes. In animal studies, it is also used to investigate reproductive physiology and neuroprotective effects."
+  },
+  "synonyms": {
+    "ja": "P4、プロゲストーゲン(合成類似体を含む総称)、黄体ホルモンとも呼ばれます。合成プロゲステロン類似体(プロゲスチン)との区別が重要で、天然型と合成型では生理作用が異なる場合があります。",
+    "en": "Also referred to as P4, progestogen (a broader term including synthetic analogs), or luteal hormone. It is important to distinguish natural progesterone from synthetic progestins, as their physiological effects may differ."
+  },
+  "pubmedCount": 129808,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3058
+    },
+    {
+      "year": 2018,
+      "count": 3125
+    },
+    {
+      "year": 2019,
+      "count": 3045
+    },
+    {
+      "year": 2020,
+      "count": 3265
+    },
+    {
+      "year": 2021,
+      "count": 3349
+    },
+    {
+      "year": 2022,
+      "count": 3098
+    },
+    {
+      "year": 2023,
+      "count": 2997
+    },
+    {
+      "year": 2024,
+      "count": 2946
+    },
+    {
+      "year": 2025,
+      "count": 3175
+    },
+    {
+      "year": 2026,
+      "count": 2922
+    }
+  ],
+  "searchQuery": "(\"Progesterone\"[MeSH Terms]) OR (\"progesterone\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880028",
+      "title": "Interference-resistant palm electrochemical nickel-doped-enhanced cell-free biosensor for rapid multi-scenario progesterone detection.",
+      "year": 2027
+    },
+    {
+      "pmid": "42804952",
+      "title": "A dual-mode lateral flow immunoassay based on DTTC-functionalized sea urchin-like gold nanoprobes for reliable detection of progesterone residues.",
+      "year": 2027
+    },
+    {
+      "pmid": "42641936",
+      "title": "Non-enzymatic square-wave voltammetric determination of progesterone using an MWCNT-IMZ composite.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863730",
+      "title": "Ligustilide enhances TNT-mediated mitochondrial transfer to accelerate the reactivation of TECs in sleep deprivation induced postpartum mouse.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833368",
+      "title": "Complementary antihypertensive mechanisms of the Tianma-Gouteng herb pair targeting the endothelium and smooth muscle: Emphasizing endothelial protection by Tianma involving the PGR-associated PI3K/Akt/eNOS pathway.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:53:35.395Z"
+}

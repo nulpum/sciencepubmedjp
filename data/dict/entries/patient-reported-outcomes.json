@@ -1,0 +1,94 @@
+{
+  "slug": "patient-reported-outcomes",
+  "ja": "患者報告アウトカム",
+  "yomi": "かんじゃほうこくあうとかむ",
+  "en": "patient-reported outcomes",
+  "abbr": "PROs",
+  "category": "nursing-pharma",
+  "meshHeading": "Patient Reported Outcome Measures",
+  "meshUi": "2016372",
+  "description": {
+    "ja": "患者報告アウトカム(PROs)とは、患者自身が直接報告する健康状態や治療効果に関する情報のことです。医療者の評価ではなく、患者の主観的な体験(痛み、疲労感、生活の質など)を測定するために用いられます。臨床試験や日常診療で、治療が患者の実生活にどう影響するかを把握する重要な指標となっています。",
+    "en": "Patient-reported outcomes (PROs) are information about health status and treatment effects reported directly by patients themselves. Rather than clinician assessments, PROs measure patients' subjective experiences such as pain, fatigue, and quality of life. They serve as important indicators in clinical trials and routine care to understand how treatments impact patients' real-world lives."
+  },
+  "usage": {
+    "ja": "論文では質問票やスケールを用いて測定され、QOL(生活の質)、症状の重症度、機能状態などが評価されます。代表的な測定ツールにはEQ-5D、SF-36、EORTC QLQ-C30などがあり、介入前後の変化や群間比較に使用されます。",
+    "en": "In research papers, PROs are measured using questionnaires and scales to assess quality of life (QOL), symptom severity, and functional status. Common measurement tools include EQ-5D, SF-36, and EORTC QLQ-C30, used to evaluate changes before and after interventions or for between-group comparisons."
+  },
+  "synonyms": {
+    "ja": "Patient-Reported Outcome Measures(PROMs、患者報告アウトカム指標)と表記されることもあります。Patient-Centered Outcomes(患者中心アウトカム)やSubjective Outcomes(主観的アウトカム)と関連しますが、PRO/PROMは標準化された測定法を用いる点で区別されます。",
+    "en": "Sometimes referred to as Patient-Reported Outcome Measures (PROMs). Related terms include Patient-Centered Outcomes and Subjective Outcomes, but PROs/PROMs are distinguished by their use of standardized measurement methods."
+  },
+  "pubmedCount": 54158,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2744
+    },
+    {
+      "year": 2018,
+      "count": 3555
+    },
+    {
+      "year": 2019,
+      "count": 4353
+    },
+    {
+      "year": 2020,
+      "count": 5118
+    },
+    {
+      "year": 2021,
+      "count": 5515
+    },
+    {
+      "year": 2022,
+      "count": 5537
+    },
+    {
+      "year": 2023,
+      "count": 5642
+    },
+    {
+      "year": 2024,
+      "count": 6702
+    },
+    {
+      "year": 2025,
+      "count": 8208
+    },
+    {
+      "year": 2026,
+      "count": 9726
+    }
+  ],
+  "searchQuery": "(\"Patient Reported Outcome Measures\"[MeSH Terms]) OR (\"patient-reported outcomes\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036764",
+      "title": "Association of allostatic load with preoperative shoulder symptoms in patients undergoing rotator cuff repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42926853",
+      "title": "Comparing outcomes of onlay humeral stem designs in reverse total shoulder arthroplasty: a systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946139",
+      "title": "Measurement properties of anhedonia-related patient-reported outcome measures in depression-related populations: A COSMIN systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42638516",
+      "title": "Second Breast-Conserving Treatment for Ipsilateral Breast Tumor Recurrence: A Review of Patient Selection, Reirradiation Techniques, and Clinical Outcomes.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:29:42.390Z"
+}

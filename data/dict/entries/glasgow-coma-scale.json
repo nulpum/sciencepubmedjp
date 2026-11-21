@@ -1,0 +1,97 @@
+{
+  "slug": "glasgow-coma-scale",
+  "ja": "グラスゴーコーマスケール",
+  "yomi": "ぐらすごーこーますけーる",
+  "en": "Glasgow Coma Scale",
+  "abbr": "GCS",
+  "category": "nursing-pharma",
+  "aliases": [
+    "GCS"
+  ],
+  "meshHeading": "Glasgow Coma Scale",
+  "meshUi": "68015600",
+  "description": {
+    "ja": "意識障害の程度を評価する国際的な指標で、開眼反応・言語反応・運動反応の3要素を数値化し、3点(最低)から15点(正常)で表します。救急医療や神経学的評価で広く使われ、患者の意識レベルを客観的かつ簡便に記録できます。",
+    "en": "An international scale for assessing the level of consciousness, scoring eye opening, verbal response, and motor response from 3 (minimum) to 15 (normal). Widely used in emergency medicine and neurological assessment to objectively and simply record a patient's consciousness level."
+  },
+  "usage": {
+    "ja": "論文では外傷性脳損傷、脳卒中、敗血症などの意識状態評価に用いられ、「GCS 8以下で重症」「入院時GCS 13」のように記述されます。予後予測や治療効果の判定指標としても頻用されます。",
+    "en": "In research papers, it is used to evaluate consciousness in traumatic brain injury, stroke, and sepsis, described as 'GCS ≤8 indicating severe injury' or 'admission GCS 13'. Also commonly used as a prognostic indicator and treatment outcome measure."
+  },
+  "synonyms": {
+    "ja": "単に「GCS」と略記されることが多く、日本では「JCS(Japan Coma Scale)」という独自の意識評価スケールもありますが、国際論文ではGCSが標準です。意識レベルや昏睡度スケールと呼ばれることもあります。",
+    "en": "Often abbreviated as 'GCS'. In Japan, 'JCS (Japan Coma Scale)' is also used domestically, but GCS is the international standard in research papers. May also be referred to as consciousness level scale or coma scale."
+  },
+  "pubmedCount": 22046,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1088
+    },
+    {
+      "year": 2018,
+      "count": 1038
+    },
+    {
+      "year": 2019,
+      "count": 1022
+    },
+    {
+      "year": 2020,
+      "count": 1115
+    },
+    {
+      "year": 2021,
+      "count": 1166
+    },
+    {
+      "year": 2022,
+      "count": 1177
+    },
+    {
+      "year": 2023,
+      "count": 1104
+    },
+    {
+      "year": 2024,
+      "count": 1189
+    },
+    {
+      "year": 2025,
+      "count": 1361
+    },
+    {
+      "year": 2026,
+      "count": 1340
+    }
+  ],
+  "searchQuery": "(\"Glasgow Coma Scale\"[MeSH Terms]) OR (\"Glasgow Coma Scale\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42956626",
+      "title": "Chikungunya virus - associated meningitis with transient encephalopathy: a case report.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854465",
+      "title": "Assessing the consistency of a prognostic transition to persistent critical illness across two U.S. ICU databases: a daily risk-set analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42734443",
+      "title": "Development and validation of a machine learning-based predictive model for prognosis in cerebral hemorrhage patients after hyperbaric oxygen therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42307724",
+      "title": "Determinants of disability three months after hospital discharge among patients with road traffic injuries at the university teaching hospital.",
+      "year": 2026
+    },
+    {
+      "pmid": "42985252",
+      "title": "Hemorrhagic Vulnerability of Lenticulostriate Artery-Supplied Arteriovenous Malformations After Radiosurgery: De Novo Aneurysm Formation on Distal Feeders.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:36:45.186Z"
+}

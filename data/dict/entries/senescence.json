@@ -1,0 +1,93 @@
+{
+  "slug": "senescence",
+  "ja": "細胞老化",
+  "yomi": "さいぼうろうか",
+  "en": "cellular senescence",
+  "category": "biology",
+  "meshHeading": "Cellular Senescence",
+  "meshUi": "68016922",
+  "description": {
+    "ja": "細胞が分裂能力を失い、増殖を停止した状態を指します。老化細胞は特定の形態変化や遺伝子発現パターンを示し、炎症性物質を分泌することで周囲の組織に影響を与えます。加齢や発がん抑制機構の一部として重要な役割を果たしています。",
+    "en": "A state in which cells lose their ability to divide and stop proliferating. Senescent cells display specific morphological changes and gene expression patterns, secreting inflammatory substances that affect surrounding tissues. It plays an important role in aging and as part of cancer suppression mechanisms."
+  },
+  "usage": {
+    "ja": "論文では、SA-β-galactosidase染色やp16/p21などの老化マーカー発現、SASP(senescence-associated secretory phenotype)の測定により評価されます。加齢研究、がん研究、再生医療の文脈で頻繁に登場します。",
+    "en": "In research papers, it is evaluated by SA-β-galactosidase staining, expression of senescence markers such as p16/p21, and measurement of SASP (senescence-associated secretory phenotype). Frequently appears in aging research, cancer research, and regenerative medicine contexts."
+  },
+  "synonyms": {
+    "ja": "「細胞加齢」「複製老化(replicative senescence)」とも呼ばれます。ストレス誘導性老化、がん原遺伝子誘導老化など、原因による分類があり、単なる細胞死(アポトーシス)とは区別されます。",
+    "en": "Also called 'cell aging' or 'replicative senescence.' Classifications include stress-induced senescence and oncogene-induced senescence based on causes, and it is distinguished from simple cell death (apoptosis)."
+  },
+  "pubmedCount": 41790,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1616
+    },
+    {
+      "year": 2018,
+      "count": 1637
+    },
+    {
+      "year": 2019,
+      "count": 1892
+    },
+    {
+      "year": 2020,
+      "count": 2087
+    },
+    {
+      "year": 2021,
+      "count": 2117
+    },
+    {
+      "year": 2022,
+      "count": 1919
+    },
+    {
+      "year": 2023,
+      "count": 2100
+    },
+    {
+      "year": 2024,
+      "count": 2975
+    },
+    {
+      "year": 2025,
+      "count": 3837
+    },
+    {
+      "year": 2026,
+      "count": 4170
+    }
+  ],
+  "searchQuery": "(\"Cellular Senescence\"[MeSH Terms]) OR (\"cellular senescence\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42914653",
+      "title": "Hybrid nanovesicle artificial antigen-presenting cells integrate endogenous tumor antigen display with senescence-mimetic erythrocyte membrane-directed splenic T-cell priming.",
+      "year": 2027
+    },
+    {
+      "pmid": "42910095",
+      "title": "Microenvironmental barriers to healing in osteoradionecrosis and opportunities for regenerative intervention.",
+      "year": 2027
+    },
+    {
+      "pmid": "42876555",
+      "title": "Reprogramming NOX4-associated ferro-aging with an iron-chelating senescent-cell-targeted therapy for intervertebral disc degeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810129",
+      "title": "Inhalable mucus-penetrating and senescence-targeted nanoliposomes reverse senescence to overcome chemoresistance for enhanced lung cancer therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42777983",
+      "title": "Parishin B, a phenolic constituent of Gastrodia elata Blume, extends lifespan and improves stress resistance in Caenorhabditis elegans.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:05:07.667Z"
+}

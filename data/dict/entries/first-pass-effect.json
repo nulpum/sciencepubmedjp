@@ -1,0 +1,91 @@
+{
+  "slug": "first-pass-effect",
+  "ja": "初回通過効果",
+  "yomi": "しょかいつうかこうか",
+  "en": "first-pass effect",
+  "category": "nursing-pharma",
+  "description": {
+    "ja": "経口投与された薬物が消化管から吸収され、門脈を経由して肝臓を通過する際に代謝を受けることで、全身循環に到達する前に薬物濃度が低下する現象です。この効果により経口投与時の生体利用率(バイオアベイラビリティ)が低下することがあります。",
+    "en": "A phenomenon where orally administered drugs are metabolized during their first passage through the liver via the portal vein after intestinal absorption, resulting in reduced drug concentration before reaching systemic circulation. This effect can decrease oral bioavailability."
+  },
+  "usage": {
+    "ja": "薬物動態研究では、経口投与と静脈内投与の血中濃度曲線下面積(AUC)を比較することで初回通過効果の程度を評価します。肝代謝酵素の影響を受けやすい薬剤では、投与経路の選択や用量設定の重要な指標となります。",
+    "en": "In pharmacokinetic studies, the extent of first-pass effect is evaluated by comparing the area under the curve (AUC) between oral and intravenous administration. For drugs highly susceptible to hepatic metabolism, it serves as an important factor in selecting administration routes and determining dosage."
+  },
+  "synonyms": {
+    "ja": "「初回通過代謝」「肝初回通過効果」「first-pass metabolism」とも呼ばれます。広義には肝臓だけでなく腸管壁での代謝も含める場合があり、presystemic metabolismという用語が使われることもあります。",
+    "en": "Also referred to as 'first-pass metabolism', 'hepatic first-pass effect', or 'presystemic metabolism'. The broader term may include not only hepatic metabolism but also intestinal wall metabolism before the drug enters systemic circulation."
+  },
+  "pubmedCount": 1774,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 31
+    },
+    {
+      "year": 2018,
+      "count": 46
+    },
+    {
+      "year": 2019,
+      "count": 54
+    },
+    {
+      "year": 2020,
+      "count": 69
+    },
+    {
+      "year": 2021,
+      "count": 113
+    },
+    {
+      "year": 2022,
+      "count": 112
+    },
+    {
+      "year": 2023,
+      "count": 95
+    },
+    {
+      "year": 2024,
+      "count": 133
+    },
+    {
+      "year": 2025,
+      "count": 135
+    },
+    {
+      "year": 2026,
+      "count": 134
+    }
+  ],
+  "searchQuery": "\"first-pass effect\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43035882",
+      "title": "Excessive Unintentional Pulling of the Stent Retriever into the Aspiration Catheter Leads to Recanalization Failure.",
+      "year": 2026
+    },
+    {
+      "pmid": "43025905",
+      "title": "Procedural Time Independently Predicts Functional Outcome After First-Pass Reperfusion in Mechanical Thrombectomy: A Multicenter Cohort Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43007884",
+      "title": "Azole-mediated CYP3A inhibition and persistent gastrointestinal GVHD increase tacrolimus oral bioavailability after allo-HSCT.",
+      "year": 2026
+    },
+    {
+      "pmid": "42994965",
+      "title": "Is the First Pass Effect Really a First Pass Epiphenomenon?",
+      "year": 2026
+    },
+    {
+      "pmid": "43028525",
+      "title": "The Effectiveness of Mechanical Thrombectomy Following the Siriraj Stroke Fast Track Activation Protocol.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:34:36.609Z"
+}

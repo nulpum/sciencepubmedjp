@@ -1,0 +1,93 @@
+{
+  "slug": "delirium",
+  "ja": "せん妄",
+  "yomi": "せんもう",
+  "en": "delirium",
+  "category": "nursing-pharma",
+  "meshHeading": "Delirium",
+  "meshUi": "68003693",
+  "description": {
+    "ja": "急激に発症する一時的な意識障害で、注意力の低下、思考の混乱、見当識障害(時間・場所・人物の認識困難)などを特徴とします。高齢者の入院時や手術後、感染症や薬剤の影響などで起こりやすく、数時間から数日で症状が変動することが多い状態です。認知症とは異なり、原因を取り除けば多くの場合改善する可逆性の症状とされています。",
+    "en": "An acute and fluctuating disturbance of consciousness characterized by reduced attention, disorganized thinking, and disorientation to time, place, or person. It commonly occurs in hospitalized elderly patients, postoperative settings, or due to infections and medications, with symptoms varying over hours to days. Unlike dementia, delirium is often reversible when the underlying cause is identified and treated."
+  },
+  "usage": {
+    "ja": "論文では「術後せん妄(postoperative delirium)」「ICUせん妄」などの文脈で頻出し、CAM(Confusion Assessment Method)やCAM-ICUなどの評価スケールで測定されます。発症率、リスク因子(高齢・認知機能低下・多剤併用など)、予防的介入の効果などが研究対象となります。",
+    "en": "In research literature, it appears in contexts such as 'postoperative delirium' and 'ICU delirium,' assessed using tools like the Confusion Assessment Method (CAM) or CAM-ICU. Studies examine incidence rates, risk factors (age, cognitive impairment, polypharmacy), and effectiveness of preventive interventions."
+  },
+  "synonyms": {
+    "ja": "急性錯乱状態、急性混乱状態とも呼ばれます。過活動型(興奮・多動)、低活動型(傾眠・活動低下)、混合型に分類されますが、低活動型は見逃されやすいため注意が必要です。認知症(dementia)は慢性・進行性である点でせん妄と区別されます。",
+    "en": "Also referred to as acute confusional state. It is classified into hyperactive (agitation, hyperactivity), hypoactive (lethargy, reduced activity), and mixed subtypes, with hypoactive delirium often underrecognized. Distinguished from dementia by its acute onset and potentially reversible nature versus chronic progressive course."
+  },
+  "pubmedCount": 30914,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1306
+    },
+    {
+      "year": 2018,
+      "count": 1400
+    },
+    {
+      "year": 2019,
+      "count": 1479
+    },
+    {
+      "year": 2020,
+      "count": 1927
+    },
+    {
+      "year": 2021,
+      "count": 2159
+    },
+    {
+      "year": 2022,
+      "count": 2218
+    },
+    {
+      "year": 2023,
+      "count": 2169
+    },
+    {
+      "year": 2024,
+      "count": 2236
+    },
+    {
+      "year": 2025,
+      "count": 2783
+    },
+    {
+      "year": 2026,
+      "count": 2999
+    }
+  ],
+  "searchQuery": "(\"Delirium\"[MeSH Terms]) OR (\"delirium\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42869281",
+      "title": "From animal behavior to human perioperative neurocognitive disorders: Translational boundaries of the gut-brain axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039512",
+      "title": "Nerve Blocks for Traumatic Injuries.",
+      "year": 2027
+    },
+    {
+      "pmid": "43009229",
+      "title": "Complications of Transurethral Resection of Bladder Tumors: A Contemporary Review.",
+      "year": 2027
+    },
+    {
+      "pmid": "43051734",
+      "title": "Psychosis in medically ill Children and Adolescents.",
+      "year": 2027
+    },
+    {
+      "pmid": "42925836",
+      "title": "Effect of circadian-oriented goal-directed sedation on sleep quality and clinical outcomes in mechanically ventilated ICU patients.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:44:06.183Z"
+}

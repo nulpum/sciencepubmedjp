@@ -1,0 +1,94 @@
+{
+  "slug": "blood-brain-barrier",
+  "ja": "血液脳関門",
+  "yomi": "けつえきのうかんもん",
+  "en": "blood-brain barrier",
+  "abbr": "BBB",
+  "category": "biology",
+  "meshHeading": "Blood-Brain Barrier",
+  "meshUi": "68001812",
+  "description": {
+    "ja": "血液脳関門(BBB)は、脳の毛細血管を構成する内皮細胞が密着結合により形成するバリア構造で、血液中の物質が脳組織へ無秩序に移行することを防ぐ生理的な関所です。脳を有害物質から保護する一方で、薬物の脳内到達を妨げる要因ともなります。",
+    "en": "The blood-brain barrier (BBB) is a physiological barrier formed by tight junctions between endothelial cells lining brain capillaries, which prevents uncontrolled passage of substances from blood into brain tissue. While it protects the brain from harmful substances, it also poses a challenge for drug delivery to the central nervous system."
+  },
+  "usage": {
+    "ja": "神経疾患研究において、薬物のBBB透過性は重要な評価項目であり、in vitroモデルやトレーサー実験で透過率が測定されます。BBBの破綻は多発性硬化症や脳腫瘍などの病態で観察され、MRI造影検査や透過性マーカーを用いて評価されます。",
+    "en": "In neurological research, BBB permeability of drugs is a critical parameter measured using in vitro models and tracer experiments. BBB disruption is observed in conditions such as multiple sclerosis and brain tumors, evaluated through contrast-enhanced MRI and permeability markers."
+  },
+  "synonyms": {
+    "ja": "「脳血管関門」とも呼ばれます。類似概念として血液脳脊髄液関門(blood-CSF barrier)がありますが、これは脈絡叢で形成される別の関門を指します。BBB透過性(BBB permeability)、BBB破綻(BBB breakdown/disruption)などの関連用語が論文で頻用されます。",
+    "en": "Also referred to as the cerebrovascular barrier. The blood-CSF barrier is a related but distinct concept formed at the choroid plexus. Common related terms in literature include BBB permeability, BBB integrity, BBB breakdown, and BBB disruption."
+  },
+  "pubmedCount": 77970,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2889
+    },
+    {
+      "year": 2018,
+      "count": 3117
+    },
+    {
+      "year": 2019,
+      "count": 3335
+    },
+    {
+      "year": 2020,
+      "count": 3946
+    },
+    {
+      "year": 2021,
+      "count": 4271
+    },
+    {
+      "year": 2022,
+      "count": 4227
+    },
+    {
+      "year": 2023,
+      "count": 4242
+    },
+    {
+      "year": 2024,
+      "count": 4674
+    },
+    {
+      "year": 2025,
+      "count": 6115
+    },
+    {
+      "year": 2026,
+      "count": 6768
+    }
+  ],
+  "searchQuery": "(\"Blood-Brain Barrier\"[MeSH Terms]) OR (\"blood-brain barrier\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43032397",
+      "title": "Effects of bile acids and gut microbiota interactions on neurological and psychiatric disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887235",
+      "title": "A tunable brain-targeted PEGylated ginsenoside Rg1 derivative disrupts the ROS-mediated inflammasome-pyroptosis cascade to ameliorate Alzheimer's cognitive deficits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42832975",
+      "title": "Five-in-One NIR-II phototheranostic nanomedicine for glioblastoma multiforme: Unlocking bio-barriers and photothermal-ferroptotic amplification.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800424",
+      "title": "Neutrophil membrane-camouflaged ruthenium single-atom nanozymes precisely eliminate neutrophil extracellular traps to reprogram redox-immune microenvironment in intracerebral hemorrhage.",
+      "year": 2027
+    },
+    {
+      "pmid": "42762715",
+      "title": "Bright NIR-II fluorescence lipid membrane probes for labelling of biomimetic nanovesicles with image-guided targeted NIR-II mild photothermal-immunotherapy of orthotopic glioblastoma.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:57:12.435Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "sustained-attention",
+  "ja": "持続性注意",
+  "yomi": "じぞくせいちゅうい",
+  "en": "sustained attention",
+  "category": "psychology",
+  "description": {
+    "ja": "持続性注意とは、一定時間にわたって特定の課題や刺激に注意を向け続ける認知機能のことです。日常生活では読書や運転、授業への集中など、長時間の注意維持が必要な場面で重要な役割を果たします。注意欠如多動症(ADHD)や脳損傷後の認知機能評価などで、臨床的に調べられる指標の一つです。",
+    "en": "Sustained attention refers to the cognitive ability to maintain focus on a specific task or stimulus over an extended period of time. It plays a crucial role in daily activities such as reading, driving, and attending lectures that require prolonged concentration. This is one of the clinical indicators examined in cognitive assessments for conditions like attention-deficit/hyperactivity disorder (ADHD) and post-brain injury evaluations."
+  },
+  "usage": {
+    "ja": "心理学や神経科学の論文では、持続性注意は連続遂行課題(CPT: Continuous Performance Test)やPsychomotor Vigilance Task(PVT)などの標準化された測定法で評価されます。反応時間の変動性や見逃しエラー(omission errors)、誤反応(commission errors)などが分析指標として用いられます。",
+    "en": "In psychology and neuroscience research, sustained attention is typically measured using standardized tests such as the Continuous Performance Test (CPT) or Psychomotor Vigilance Task (PVT). Analysis focuses on metrics including reaction time variability, omission errors (missed targets), and commission errors (false alarms)."
+  },
+  "synonyms": {
+    "ja": "「持続的注意」「警戒機能(vigilance)」とも呼ばれ、ほぼ同義で使われます。ただし vigilance は特に単調な監視課題における長時間の注意維持を指すことが多く、持続性注意のほうがより広い文脈で用いられる傾向があります。選択的注意(selective attention)や分割性注意(divided attention)とは区別される概念です。",
+    "en": "Also referred to as 'continuous attention' or 'vigilance,' though vigilance often specifically denotes prolonged attention maintenance during monotonous monitoring tasks, while sustained attention is used in broader contexts. It is distinguished from selective attention (focusing on specific stimuli while ignoring others) and divided attention (attending to multiple tasks simultaneously)."
+  },
+  "pubmedCount": 6338,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 320
+    },
+    {
+      "year": 2018,
+      "count": 343
+    },
+    {
+      "year": 2019,
+      "count": 351
+    },
+    {
+      "year": 2020,
+      "count": 330
+    },
+    {
+      "year": 2021,
+      "count": 383
+    },
+    {
+      "year": 2022,
+      "count": 368
+    },
+    {
+      "year": 2023,
+      "count": 355
+    },
+    {
+      "year": 2024,
+      "count": 377
+    },
+    {
+      "year": 2025,
+      "count": 432
+    },
+    {
+      "year": 2026,
+      "count": 522
+    }
+  ],
+  "searchQuery": "\"sustained attention\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42913142",
+      "title": "The role of the HPA axis in tailoring cognitive remediation therapy in patients with early psychosis: An exploratory randomized clinical trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42600785",
+      "title": "Attentional-cognitive processes allow the association between depressive symptoms and leftward visuospatial bias to emerge in middle-aged adults.",
+      "year": 2026
+    },
+    {
+      "pmid": "43057791",
+      "title": "Traditional Vedic Sanskrit education and intrinsic brain organization: a cross-sectional resting-state fMRI study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43031675",
+      "title": "Digital Multitasking and Self-Perceived Working Memory and Attention in First-Year Medical Students.",
+      "year": 2026
+    },
+    {
+      "pmid": "42990011",
+      "title": "Mindfulness-Based Intervention Improves Cognitive Function in Patients With Schizophrenia in Remitted: A Randomized Controlled Trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:09:30.724Z"
+}

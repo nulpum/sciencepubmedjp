@@ -1,0 +1,96 @@
+{
+  "slug": "nosocomial-infection",
+  "ja": "院内感染",
+  "yomi": "いんないかんせん",
+  "en": "nosocomial infection",
+  "category": "nursing-pharma",
+  "aliases": [
+    "医療関連感染"
+  ],
+  "meshHeading": "Cross Infection",
+  "meshUi": "68003428",
+  "description": {
+    "ja": "病院や医療施設内で患者が新たに獲得する感染症を指します。入院時には存在せず、入院後48時間以降に発症する感染が典型的で、手術部位感染、カテーテル関連血流感染、人工呼吸器関連肺炎などが代表例です。近年は「医療関連感染(healthcare-associated infection)」という broader な用語も使われます。",
+    "en": "An infection acquired by a patient during their stay in a hospital or healthcare facility. Typically defined as infections that were not present at admission and develop 48 hours or more after hospitalization, including surgical site infections, catheter-related bloodstream infections, and ventilator-associated pneumonia. The broader term 'healthcare-associated infection' is increasingly used in modern literature."
+  },
+  "usage": {
+    "ja": "感染管理の研究では発生率(incidence)、病原体の種類(MRSA、緑膿菌など)、リスク因子(侵襲的処置、免疫抑制状態)の分析に用いられます。予防策の効果検証では、手指衛生遵守率や感染サーベイランスデータとの関連が調べられます。",
+    "en": "Studies analyze incidence rates, causative pathogens (such as MRSA, Pseudomonas), and risk factors including invasive procedures and immunosuppression. Research evaluates prevention strategies by examining hand hygiene compliance rates and infection surveillance data."
+  },
+  "synonyms": {
+    "ja": "「医療関連感染(HAI)」は院外の医療施設での感染も含むより広い概念です。「病院感染」とも呼ばれますが、現在は「nosocomial」よりも「healthcare-associated」が国際的に推奨されています。検索時は「HAI」「hospital-acquired infection」も併用すると効果的です。",
+    "en": "Healthcare-associated infection (HAI) is a broader term encompassing infections in various healthcare settings beyond hospitals. Also called hospital-acquired infection, though 'healthcare-associated' is now internationally preferred over 'nosocomial.' Search using 'HAI' and 'hospital-acquired infection' for comprehensive results."
+  },
+  "pubmedCount": 73337,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2440
+    },
+    {
+      "year": 2018,
+      "count": 2297
+    },
+    {
+      "year": 2019,
+      "count": 2302
+    },
+    {
+      "year": 2020,
+      "count": 2753
+    },
+    {
+      "year": 2021,
+      "count": 2205
+    },
+    {
+      "year": 2022,
+      "count": 1761
+    },
+    {
+      "year": 2023,
+      "count": 1623
+    },
+    {
+      "year": 2024,
+      "count": 1767
+    },
+    {
+      "year": 2025,
+      "count": 1964
+    },
+    {
+      "year": 2026,
+      "count": 1609
+    }
+  ],
+  "searchQuery": "(\"Cross Infection\"[MeSH Terms]) OR (\"nosocomial infection\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43025936",
+      "title": "Emerging Skin and Soft Tissue Infections.",
+      "year": 2027
+    },
+    {
+      "pmid": "43025933",
+      "title": "Human Immunodeficiency Virus, Opportunistic, and Hospital-Acquired Infections.",
+      "year": 2027
+    },
+    {
+      "pmid": "42966286",
+      "title": "Fungal biofilm-associated infections in immunocompromised African populations: A narrative review of Candidozyma auris emergence, antifungal resistance mechanisms, and laboratory detection algorithms.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933268",
+      "title": "EpiLinx - An interactive tool for establishing epidemiological links as part of national nosocomial outbreak investigation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42868910",
+      "title": "Mandatory reporting of healthcare-associated infections: a global comparative policy analysis using Kingdon's multiple streams framework.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:39:12.246Z"
+}

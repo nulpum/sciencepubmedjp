@@ -1,0 +1,93 @@
+{
+  "slug": "hand-hygiene",
+  "ja": "手指衛生",
+  "yomi": "しゅしえいせい",
+  "en": "hand hygiene",
+  "category": "nursing-pharma",
+  "meshHeading": "Hand Hygiene",
+  "meshUi": "68063373",
+  "description": {
+    "ja": "手指衛生とは、医療現場や日常生活で手指の微生物を減らすための行為全般を指します。石けんと流水による手洗い、アルコールベースの速乾性手指消毒薬の使用、手術時の手指消毒などが含まれます。感染予防の最も基本的で効果的な対策として、WHOや各国のガイドラインで推奨されています。",
+    "en": "Hand hygiene refers to any action taken to reduce microorganisms on hands in healthcare settings and daily life. It includes handwashing with soap and water, use of alcohol-based hand rubs, and surgical hand preparation. Hand hygiene is recognized as the most fundamental and effective measure for infection prevention, recommended by WHO and national guidelines worldwide."
+  },
+  "usage": {
+    "ja": "看護・医療安全の研究では、hand hygiene complianceやadherenceとして遵守率が測定されます。観察研究では「5つのタイミング」での実施率を評価し、介入研究では教育プログラムや自動モニタリングシステムの効果が検証されます。",
+    "en": "In nursing and patient safety research, hand hygiene compliance or adherence rates are measured. Observational studies evaluate implementation rates at the '5 Moments for Hand Hygiene,' while intervention studies examine the effectiveness of educational programs and automated monitoring systems."
+  },
+  "synonyms": {
+    "ja": "hand washingは手洗いのみを指し、hand hygieneはより広い概念です。hand sanitizationやhand disinfectionは消毒を強調した表現で、surgical hand antisepsisは手術時の特別な手指消毒を指します。日本語では「手指消毒」「手洗い」が場面により使い分けられます。",
+    "en": "Hand washing refers specifically to washing with soap and water, while hand hygiene is a broader concept. Hand sanitization and hand disinfection emphasize antimicrobial action, and surgical hand antisepsis refers to the specific procedure before surgery. These terms are used interchangeably in some contexts but have distinct meanings in infection control protocols."
+  },
+  "pubmedCount": 13024,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 546
+    },
+    {
+      "year": 2018,
+      "count": 538
+    },
+    {
+      "year": 2019,
+      "count": 615
+    },
+    {
+      "year": 2020,
+      "count": 1119
+    },
+    {
+      "year": 2021,
+      "count": 1049
+    },
+    {
+      "year": 2022,
+      "count": 730
+    },
+    {
+      "year": 2023,
+      "count": 606
+    },
+    {
+      "year": 2024,
+      "count": 553
+    },
+    {
+      "year": 2025,
+      "count": 582
+    },
+    {
+      "year": 2026,
+      "count": 573
+    }
+  ],
+  "searchQuery": "(\"Hand Hygiene\"[MeSH Terms]) OR (\"hand hygiene\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42953720",
+      "title": "Modelling the effect of interventions to prevent MRSA transmission within hospitals in Edmonton, Canada.",
+      "year": 2027
+    },
+    {
+      "pmid": "42212686",
+      "title": "Human factors validation study of a disposable autoinjector (Bmab 1200 autoinjector) for subcutaneous delivery of Ustekinumab.",
+      "year": 2026
+    },
+    {
+      "pmid": "43038412",
+      "title": "Glove stewardship framework for implementing WHO/CDC guidelines in the post-COVID era: A call for action.",
+      "year": 2026
+    },
+    {
+      "pmid": "43036135",
+      "title": "A Narrative Review on the Recent Advances in Pseudomonas aeruginosa Transmission: Focus on Hospital Environments.",
+      "year": 2026
+    },
+    {
+      "pmid": "42999594",
+      "title": "Implementation uptake and healthcare worker adherence following a World Health Organization-aligned multi-modal infection prevention and control intervention in Bangladeshi tertiary hospitals: a multi-centre comparative study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:38:52.611Z"
+}

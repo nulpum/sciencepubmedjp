@@ -1,0 +1,94 @@
+{
+  "slug": "prisma",
+  "ja": "PRISMA",
+  "yomi": "ぷりずま",
+  "en": "PRISMA",
+  "category": "research",
+  "aliases": [
+    "システマティックレビュー報告基準"
+  ],
+  "description": {
+    "ja": "PRISMAは「Preferred Reporting Items for Systematic Reviews and Meta-Analyses」の略で、システマティックレビューやメタアナリシスを報告する際の国際的な標準ガイドラインです。論文がどのように文献を検索・選択・評価したかを透明性高く報告するためのチェックリストとフローダイアグラムから構成されています。",
+    "en": "PRISMA stands for Preferred Reporting Items for Systematic Reviews and Meta-Analyses, an international standard guideline for reporting systematic reviews and meta-analyses. It consists of a checklist and flow diagram to transparently report how studies were searched, selected, and evaluated in a review."
+  },
+  "usage": {
+    "ja": "システマティックレビュー論文では「PRISMA声明に従って報告した」と記載され、文献検索の流れを示すPRISMAフローダイアグラムが図として掲載されます。データベース検索数、重複除外後の件数、スクリーニング後の件数、最終的に解析に含めた論文数が段階的に示されます。",
+    "en": "Systematic review papers state 'reported according to PRISMA statement' and include a PRISMA flow diagram showing the literature search process. It displays the number of records identified from databases, after duplicates removed, after screening, and finally included in the analysis in a stepwise manner."
+  },
+  "synonyms": {
+    "ja": "PRISMA声明、PRISMAガイドライン、PRISMA 2020(最新版)とも呼ばれます。旧版のQUOROM声明を発展させたもので、システマティックレビューの報告品質を標準化する目的で広く採用されています。",
+    "en": "Also called PRISMA statement, PRISMA guidelines, or PRISMA 2020 (latest version). It evolved from the earlier QUOROM statement and is widely adopted to standardize the reporting quality of systematic reviews."
+  },
+  "pubmedCount": 85340,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1842
+    },
+    {
+      "year": 2018,
+      "count": 2409
+    },
+    {
+      "year": 2019,
+      "count": 3462
+    },
+    {
+      "year": 2020,
+      "count": 4990
+    },
+    {
+      "year": 2021,
+      "count": 7477
+    },
+    {
+      "year": 2022,
+      "count": 9079
+    },
+    {
+      "year": 2023,
+      "count": 9820
+    },
+    {
+      "year": 2024,
+      "count": 12195
+    },
+    {
+      "year": 2025,
+      "count": 17887
+    },
+    {
+      "year": 2026,
+      "count": 23538
+    }
+  ],
+  "searchQuery": "\"PRISMA\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42826809",
+      "title": "Traditional Chinese medicine for Graves' disease: Clinical efficacy, pharmacological mechanisms, and challenges.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772613",
+      "title": "Efficacy and safety of Centella asiatica in wound healing: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42767407",
+      "title": "Herbal medicine among vulnerable populations in Cameroon: a systematic review and meta-analysis with clinical, mechanistic, and global health perspectives.",
+      "year": 2027
+    },
+    {
+      "pmid": "43056665",
+      "title": "Large Language Models in Clinical Neurology: A Scoping Review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971020",
+      "title": "Postural control differences in children who are deaf or hard of hearing: A systematic review and meta-analysis of postural sway outcomes.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:42:30.466Z"
+}

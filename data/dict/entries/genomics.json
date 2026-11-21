@@ -1,0 +1,96 @@
+{
+  "slug": "genomics",
+  "ja": "ゲノミクス",
+  "yomi": "げのみくす",
+  "en": "genomics",
+  "category": "biology",
+  "aliases": [
+    "ゲノム解析"
+  ],
+  "meshHeading": "Genomics",
+  "meshUi": "68023281",
+  "description": {
+    "ja": "ゲノミクスとは、生物の全遺伝情報(ゲノム)を網羅的に解析する学問分野です。DNAの塩基配列を読み取り、遺伝子の構造や機能、相互作用を調べます。個別の遺伝子だけでなく、ゲノム全体を対象とする点が特徴です。",
+    "en": "Genomics is the scientific field that comprehensively analyzes an organism's complete genetic information (genome). It involves reading DNA sequences and studying gene structure, function, and interactions. The key feature is examining the entire genome rather than individual genes."
+  },
+  "usage": {
+    "ja": "医学論文では次世代シーケンサー(NGS)による全ゲノム配列解析や、疾患関連遺伝子の同定研究で用いられます。comparative genomics(比較ゲノミクス)、functional genomics(機能ゲノミクス)など、目的に応じた解析手法が記載されます。",
+    "en": "In medical papers, it appears in contexts of whole genome sequencing using next-generation sequencing (NGS) and disease-associated gene identification studies. Methods such as comparative genomics and functional genomics are described depending on research objectives."
+  },
+  "synonyms": {
+    "ja": "「ゲノム解析」「ゲノム科学」とほぼ同義ですが、genomicsは学問分野全体を、genome analysisは具体的な解析作業を指すことが多いです。関連用語にtranscriptomics(トランスクリプトミクス:RNA解析)、proteomics(プロテオミクス:タンパク質解析)があります。",
+    "en": "Nearly synonymous with 'genome analysis' or 'genome science,' though 'genomics' typically refers to the entire field while 'genome analysis' indicates specific analytical work. Related terms include transcriptomics (RNA analysis) and proteomics (protein analysis)."
+  },
+  "pubmedCount": 264770,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 13884
+    },
+    {
+      "year": 2018,
+      "count": 14376
+    },
+    {
+      "year": 2019,
+      "count": 15868
+    },
+    {
+      "year": 2020,
+      "count": 16703
+    },
+    {
+      "year": 2021,
+      "count": 18623
+    },
+    {
+      "year": 2022,
+      "count": 18165
+    },
+    {
+      "year": 2023,
+      "count": 17751
+    },
+    {
+      "year": 2024,
+      "count": 18730
+    },
+    {
+      "year": 2025,
+      "count": 21632
+    },
+    {
+      "year": 2026,
+      "count": 21475
+    }
+  ],
+  "searchQuery": "(\"Genomics\"[MeSH Terms]) OR (\"genomics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892707",
+      "title": "Trait-like proteomic signatures of stress resilience: correlates of freeze-like response resistance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906230",
+      "title": "Distinct proteomic responses of Zygosaccharomyces rouxii to functional protein and palmitoleic acid supplementation under salt stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901661",
+      "title": "A quasi-metagenomics approach for subspecies level differentiation of Listeria monocytogenes in foods based on assembly alignment discrepancies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901658",
+      "title": "Interpreting glycine-associated phenotypes in Lactiplantibacillus plantarum: the need for strain-specific and medium-controlled evidence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901654",
+      "title": "Serum metaviromic profiling of yaks and Tibetan sheep provides a pre-harvest viral baseline for food-producing ruminants.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:08:34.582Z"
+}

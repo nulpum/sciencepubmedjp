@@ -1,0 +1,94 @@
+{
+  "slug": "grit",
+  "ja": "やり抜く力",
+  "yomi": "やりぬくちから",
+  "en": "grit",
+  "category": "psychology",
+  "aliases": [
+    "グリット"
+  ],
+  "description": {
+    "ja": "長期的な目標に向かって情熱を持ち続け、困難があっても粘り強く努力を継続する心理的特性を指します。心理学者Angela Duckworthが提唱した概念で、才能や知能とは独立して、成功や達成を予測する要因として研究されています。",
+    "en": "A psychological trait characterized by perseverance and sustained passion for long-term goals, maintaining effort despite obstacles. Proposed by psychologist Angela Duckworth, it is studied as a predictor of success and achievement independent of talent or intelligence."
+  },
+  "usage": {
+    "ja": "論文では「Grit Scale」や「Short Grit Scale (Grit-S)」という自己評価式質問紙を用いて測定されます。学業成績、職業的達成、健康行動の継続などとの関連を調べる研究で頻繁に用いられ、教育心理学や組織心理学の文脈で登場します。",
+    "en": "Measured in research using self-report questionnaires such as the Grit Scale or Short Grit Scale (Grit-S). Frequently appears in studies examining relationships with academic performance, occupational achievement, and adherence to health behaviors, particularly in educational and organizational psychology contexts."
+  },
+  "synonyms": {
+    "ja": "「粘り強さ (perseverance)」や「根気 (tenacity)」と重なる部分がありますが、gritは特に長期目標への情熱の維持を含む点で区別されます。日本語では「グリット」とカタカナ表記されることも多く、単なる忍耐力よりも目的志向的な持続性を強調した概念です。",
+    "en": "While overlapping with perseverance and tenacity, grit distinctively emphasizes sustained passion for long-term goals. It differs from mere persistence by incorporating the motivational element of enduring interest and commitment to objectives over extended periods."
+  },
+  "pubmedCount": 3949,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 164
+    },
+    {
+      "year": 2018,
+      "count": 178
+    },
+    {
+      "year": 2019,
+      "count": 209
+    },
+    {
+      "year": 2020,
+      "count": 214
+    },
+    {
+      "year": 2021,
+      "count": 264
+    },
+    {
+      "year": 2022,
+      "count": 277
+    },
+    {
+      "year": 2023,
+      "count": 270
+    },
+    {
+      "year": 2024,
+      "count": 266
+    },
+    {
+      "year": 2025,
+      "count": 332
+    },
+    {
+      "year": 2026,
+      "count": 283
+    }
+  ],
+  "searchQuery": "\"grit\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42971057",
+      "title": "Surface finish governs HXLPE wear and particle generation in conventional and 3D-printed PEEK hip bearings.",
+      "year": 2027
+    },
+    {
+      "pmid": "42935488",
+      "title": "GRIT Score Does Not Correlate With QuickDASH Scores in Patients Who Undergo Carpometacarpal Arthroplasty for Thumb Carpometacarpal Arthritis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42991962",
+      "title": "Childhood Trauma Subtypes and Emotional Distress: The Role of Derailment and Grit in Emerging Adults.",
+      "year": 2026
+    },
+    {
+      "pmid": "43057950",
+      "title": "Comparison of mechanical and optical properties of 3D printed denture bases.",
+      "year": 2026
+    },
+    {
+      "pmid": "43056925",
+      "title": "Engaged, but unevenly aligned: Language learning engagement in relation to sustained commitment, appraisal, and life evaluation.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:29:23.247Z"
+}

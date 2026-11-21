@@ -1,0 +1,91 @@
+{
+  "slug": "allocation-concealment",
+  "ja": "割付の隠蔽",
+  "yomi": "わりつけのいんぺい",
+  "en": "allocation concealment",
+  "category": "research",
+  "description": {
+    "ja": "ランダム化比較試験において、参加者の割り付け先(治療群か対照群か)を事前に知られないようにする手続きのこと。研究者や医療スタッフが次の参加者がどちらに割り付けられるかを予測できないようにすることで、選択バイアスを防ぎ試験の信頼性を高める。",
+    "en": "A procedure in randomized controlled trials to prevent researchers and medical staff from knowing in advance which group (treatment or control) a participant will be assigned to. This prevents selection bias and ensures the integrity of randomization by making the next allocation unpredictable."
+  },
+  "usage": {
+    "ja": "論文では「adequate allocation concealment was achieved using sequentially numbered, opaque sealed envelopes」のように具体的な方法とともに記載される。中央割付システム、封筒法、第三者による管理などの手法が用いられ、バイアスリスク評価の重要項目として扱われる。",
+    "en": "Papers typically describe specific methods such as 'central randomization system,' 'sequentially numbered opaque sealed envelopes,' or 'third-party allocation.' It is a key criterion in bias risk assessment tools like the Cochrane Risk of Bias tool."
+  },
+  "synonyms": {
+    "ja": "concealment of allocationとも表記される。ランダム化(randomization)そのものとは異なり、割り付け順序の生成後にその情報を隠す段階を指す。盲検化(blinding)とも別概念で、割り付け前の手続きに特化した用語。",
+    "en": "Also written as 'concealment of allocation.' Distinct from randomization itself, which generates the sequence, and from blinding, which conceals group assignment after allocation. Refers specifically to the process of hiding allocation information before participant enrollment."
+  },
+  "pubmedCount": 2888,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 159
+    },
+    {
+      "year": 2018,
+      "count": 141
+    },
+    {
+      "year": 2019,
+      "count": 155
+    },
+    {
+      "year": 2020,
+      "count": 156
+    },
+    {
+      "year": 2021,
+      "count": 146
+    },
+    {
+      "year": 2022,
+      "count": 140
+    },
+    {
+      "year": 2023,
+      "count": 113
+    },
+    {
+      "year": 2024,
+      "count": 124
+    },
+    {
+      "year": 2025,
+      "count": 157
+    },
+    {
+      "year": 2026,
+      "count": 238
+    }
+  ],
+  "searchQuery": "\"allocation concealment\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42526549",
+      "title": "Prunella Oral Liquid in combination with Western medical treatment for Graves' disease: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42498088",
+      "title": "Impact of lamiaceae plants on anthropometric indices in patients with metabolic syndrome: A systematic review and meta-analysis of randomized clinical trials.",
+      "year": 2027
+    },
+    {
+      "pmid": "42897966",
+      "title": "Placebo effects of caffeine on sport performance: a systematic review and meta-analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42686359",
+      "title": "Effects of erector spinae plane block on postoperative pain in patients undergoing implant-based breast reconstruction for breast cancer: a randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42624043",
+      "title": "Therapeutic approaches for the treatment of bovine metritis: a systematic review of clinical, reproductive and productive outcomes.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:44:04.101Z"
+}

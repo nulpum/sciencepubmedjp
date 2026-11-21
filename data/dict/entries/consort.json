@@ -1,0 +1,94 @@
+{
+  "slug": "consort",
+  "ja": "CONSORT",
+  "yomi": "こんそーと",
+  "en": "CONSORT",
+  "category": "research",
+  "aliases": [
+    "RCT報告基準"
+  ],
+  "description": {
+    "ja": "CONSORTは「Consolidated Standards of Reporting Trials」の略で、ランダム化比較試験(RCT)の報告における国際的な標準ガイドラインです。研究の透明性と再現性を高めるため、試験デザイン、実施方法、結果の報告方法について推奨事項をまとめたチェックリストとフローダイアグラムから構成されます。",
+    "en": "CONSORT stands for Consolidated Standards of Reporting Trials, an international guideline for reporting randomized controlled trials (RCTs). It consists of a checklist and flow diagram that provide recommendations on how to report trial design, conduct, and results to enhance transparency and reproducibility of research."
+  },
+  "usage": {
+    "ja": "RCTを報告する論文では、CONSORTチェックリスト(25項目)に従って、ランダム化の方法、盲検化、参加者のフロー、ベースライン特性、主要アウトカムなどを記載します。多くの医学雑誌が投稿規定でCONSORT声明への準拠を求めており、論文の「Methods」セクションで「本研究はCONSORT声明に従って報告した」と明記されることがあります。",
+    "en": "Papers reporting RCTs follow the CONSORT checklist (25 items) to describe randomization methods, blinding, participant flow, baseline characteristics, and primary outcomes. Many medical journals require adherence to the CONSORT statement in their submission guidelines, and authors often state in the Methods section that \"this study was reported in accordance with the CONSORT statement.\""
+  },
+  "synonyms": {
+    "ja": "正式名称は「CONSORT声明」または「CONSORT Statement」と呼ばれます。類似の報告ガイドラインとして、観察研究のSTROBE、システマティックレビューのPRISMA、診断精度研究のSTARDなどがあり、研究デザインごとに適切な報告基準が定められています。",
+    "en": "The formal name is \"CONSORT Statement.\" Similar reporting guidelines include STROBE for observational studies, PRISMA for systematic reviews, and STARD for diagnostic accuracy studies, with appropriate reporting standards established for each research design."
+  },
+  "pubmedCount": 4474,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 223
+    },
+    {
+      "year": 2018,
+      "count": 210
+    },
+    {
+      "year": 2019,
+      "count": 238
+    },
+    {
+      "year": 2020,
+      "count": 255
+    },
+    {
+      "year": 2021,
+      "count": 341
+    },
+    {
+      "year": 2022,
+      "count": 363
+    },
+    {
+      "year": 2023,
+      "count": 306
+    },
+    {
+      "year": 2024,
+      "count": 347
+    },
+    {
+      "year": 2025,
+      "count": 485
+    },
+    {
+      "year": 2026,
+      "count": 409
+    }
+  ],
+  "searchQuery": "\"CONSORT\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42887804",
+      "title": "Effect of music on the management of anxiety and stress in patients in the preoperative period of coronary transluminal angioplasty: A randomized clinical trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42880426",
+      "title": "Reporting quality assessment of sham acupuncture randomized controlled trials for acupuncture intervention in glaucoma.",
+      "year": 2026
+    },
+    {
+      "pmid": "42388229",
+      "title": "Quality of patient-reported outcome reporting and related trial characteristics in randomized controlled trials of cancer pain: A systematic review based on the CONSORT-PRO extension.",
+      "year": 2026
+    },
+    {
+      "pmid": "43058415",
+      "title": "The Impact of Telenursing on Post-Operative Self-Care in Women with Breast Cancer: A Randomized Controlled Clinical Trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "43048190",
+      "title": "EHA Guidelines for the use and reporting of patient-reported outcomes in clinical trials of classical Philadelphia chromosome-negative myeloproliferative neoplasms.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:42:51.088Z"
+}

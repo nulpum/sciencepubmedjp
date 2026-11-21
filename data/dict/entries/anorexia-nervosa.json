@@ -1,0 +1,96 @@
+{
+  "slug": "anorexia-nervosa",
+  "ja": "神経性やせ症",
+  "yomi": "しんけいせいやせしょう",
+  "en": "anorexia nervosa",
+  "category": "psychology",
+  "aliases": [
+    "拒食症"
+  ],
+  "meshHeading": "Anorexia Nervosa",
+  "meshUi": "68000856",
+  "description": {
+    "ja": "極端な食事制限や体重減少を特徴とする精神疾患で、体重増加への強い恐怖や身体イメージの歪みを伴います。心理学・精神医学の研究では、摂食障害の代表的な病態として扱われます。",
+    "en": "A mental disorder characterized by extreme food restriction and weight loss, accompanied by intense fear of weight gain and distorted body image. It is studied as a major eating disorder in psychology and psychiatry research."
+  },
+  "usage": {
+    "ja": "論文では「AN」と略されることが多く、DSM-5やICD-11の診断基準に基づいて定義されます。BMI、心理尺度（EAT-26など）、脳画像研究、治療介入の効果測定などで用いられます。",
+    "en": "Often abbreviated as 'AN' in papers, defined based on DSM-5 or ICD-11 diagnostic criteria. Used in studies involving BMI measurements, psychological scales (e.g., EAT-26), brain imaging research, and treatment intervention outcomes."
+  },
+  "synonyms": {
+    "ja": "「拒食症」は一般的な呼称ですが、医学論文では「神経性やせ症」「anorexia nervosa」が標準です。「神経性無食欲症」は古い訳語で現在はあまり使われません。検索時は「AN」「eating disorder」と組み合わせると効果的です。",
+    "en": "While commonly called '拒食症 (kyoshokusho)' in Japanese lay language, 'anorexia nervosa' is the standard medical term. Search effectively using 'AN,' 'eating disorder,' or 'restrictive eating' as combined keywords."
+  },
+  "pubmedCount": 21801,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 730
+    },
+    {
+      "year": 2018,
+      "count": 725
+    },
+    {
+      "year": 2019,
+      "count": 757
+    },
+    {
+      "year": 2020,
+      "count": 874
+    },
+    {
+      "year": 2021,
+      "count": 1077
+    },
+    {
+      "year": 2022,
+      "count": 995
+    },
+    {
+      "year": 2023,
+      "count": 920
+    },
+    {
+      "year": 2024,
+      "count": 927
+    },
+    {
+      "year": 2025,
+      "count": 1025
+    },
+    {
+      "year": 2026,
+      "count": 911
+    }
+  ],
+  "searchQuery": "(\"Anorexia Nervosa\"[MeSH Terms]) OR (\"anorexia nervosa\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43051736",
+      "title": "Antipsychotic Use in Eating Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914069",
+      "title": "Food restriction and hyperactivity differentially shape microglial Iba1 immunoreactivity across feeding-, cognitive-, and reward-related circuits in the activity-based anorexia model.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838416",
+      "title": "Effects of metabotropic 2/3-glutamate receptor agonism and antagonism on activity-based anorexia model in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42575474",
+      "title": "Odor-elicited anxiety-to-eat is heightened and independent of odor liking, intensity, and identification in anorexia nervosa.",
+      "year": 2027
+    },
+    {
+      "pmid": "41764036",
+      "title": "Intestinal epithelial TLR4 knock out induces sex-specific effects on gut barrier and microbiome in an activity-based anorexia model.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:14:39.487Z"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "b-cell",
+  "ja": "B細胞",
+  "yomi": "びーさいぼう",
+  "en": "B cell",
+  "category": "biology",
+  "aliases": [
+    "Bリンパ球"
+  ],
+  "meshHeading": "B-Lymphocytes",
+  "meshUi": "68001402",
+  "description": {
+    "ja": "B細胞(Bリンパ球)は、骨髄で産生される白血球の一種で、抗体を作り出すことで免疫応答において中心的な役割を果たします。病原体や異物を認識すると、形質細胞へと分化して特異的な抗体を大量に産生し、体液性免疫を担います。",
+    "en": "B cells (B lymphocytes) are a type of white blood cell produced in the bone marrow that play a central role in immune responses by producing antibodies. Upon recognizing pathogens or foreign substances, they differentiate into plasma cells that produce large amounts of specific antibodies, mediating humoral immunity."
+  },
+  "usage": {
+    "ja": "論文では免疫学研究において、フローサイトメトリーでCD19やCD20などの表面マーカーを用いてB細胞を同定・定量したり、抗体産生能や記憶B細胞の形成を評価する文脈で使用されます。自己免疫疾患、感染症、ワクチン研究などで頻繁に測定される指標です。",
+    "en": "In research papers, B cells are identified and quantified using flow cytometry with surface markers such as CD19 or CD20, and are studied in contexts evaluating antibody production capacity and memory B cell formation. They are frequently measured in studies of autoimmune diseases, infectious diseases, and vaccine research."
+  },
+  "synonyms": {
+    "ja": "Bリンパ球と同義で使われます。B cellの「B」は発見当初の研究でニワトリのファブリキウス嚢(bursa of Fabricius)に由来しますが、ヒトでは骨髄(bone marrow)がB細胞の産生場所です。T細胞と対比して細胞性免疫と体液性免疫を区別する際に用いられます。",
+    "en": "Synonymous with B lymphocyte. The 'B' originally referred to the bursa of Fabricius in chickens where they were first discovered, though in humans bone marrow is the site of B cell production. Used in contrast with T cells to distinguish humoral immunity from cell-mediated immunity."
+  },
+  "pubmedCount": 230161,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 7622
+    },
+    {
+      "year": 2018,
+      "count": 7932
+    },
+    {
+      "year": 2019,
+      "count": 7997
+    },
+    {
+      "year": 2020,
+      "count": 8807
+    },
+    {
+      "year": 2021,
+      "count": 10046
+    },
+    {
+      "year": 2022,
+      "count": 9386
+    },
+    {
+      "year": 2023,
+      "count": 8901
+    },
+    {
+      "year": 2024,
+      "count": 9329
+    },
+    {
+      "year": 2025,
+      "count": 10586
+    },
+    {
+      "year": 2026,
+      "count": 10369
+    }
+  ],
+  "searchQuery": "(\"B-Lymphocytes\"[MeSH Terms]) OR (\"B cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42465713",
+      "title": "Successful Endoscopic Submucosal Dissection for Primary Esophageal Mucosa-Associated Lymphoid Tissue Lymphoma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42641935",
+      "title": "MicroRNA profiles as diagnostic tools in pediatric acute lymphoblastic leukemia.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045330",
+      "title": "Emerging Drugs.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039492",
+      "title": "F-18 Fluorodeoxyglucose PET/Computed Tomography in Lymphoma: Staging, Response Assessment, and Common Mimics.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022957",
+      "title": "Spontaneous rupture of an infrarenal aorta as the primary presentation of advanced stage Marginal zone B-cell lymphoma.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:01:36.807Z"
+}

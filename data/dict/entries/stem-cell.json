@@ -1,0 +1,93 @@
+{
+  "slug": "stem-cell",
+  "ja": "幹細胞",
+  "yomi": "かんさいぼう",
+  "en": "stem cell",
+  "category": "biology",
+  "meshHeading": "Stem Cells",
+  "meshUi": "68013234",
+  "description": {
+    "ja": "幹細胞とは、自己複製能力と多分化能を持つ未分化な細胞です。自分自身のコピーを作りながら、様々な種類の細胞に分化できる能力を持っています。胚性幹細胞(ES細胞)、成体幹細胞、人工多能性幹細胞(iPS細胞)などの種類があり、再生医療や発生学の研究で重要な役割を果たします。",
+    "en": "Stem cells are undifferentiated cells with self-renewal capacity and pluripotency or multipotency. They can create copies of themselves while maintaining the ability to differentiate into various cell types. Types include embryonic stem cells (ES cells), adult stem cells, and induced pluripotent stem cells (iPS cells), playing crucial roles in regenerative medicine and developmental biology research."
+  },
+  "usage": {
+    "ja": "論文では細胞の分化能力や増殖能の評価、組織再生の研究文脈で登場します。フローサイトメトリーによる表面マーカー(CD34、CD90など)の測定、コロニー形成アッセイ、特定細胞への分化誘導実験などで特性が評価されます。",
+    "en": "In research papers, stem cells appear in contexts of differentiation potential, proliferation capacity, and tissue regeneration studies. Their characteristics are evaluated through flow cytometry for surface markers (CD34, CD90, etc.), colony-forming assays, and differentiation induction experiments into specific cell types."
+  },
+  "synonyms": {
+    "ja": "文脈により「未分化細胞」「前駆細胞(progenitor cell)」と使い分けられますが、前駆細胞は幹細胞より分化が進んだ段階を指します。多能性幹細胞(pluripotent stem cell)は胚性幹細胞やiPS細胞を、多分化能幹細胞(multipotent stem cell)は造血幹細胞など成体幹細胞を指すことが多いです。",
+    "en": "Terms like 'undifferentiated cells' or 'progenitor cells' are used contextually, though progenitor cells are more differentiated than stem cells. Pluripotent stem cells refer to embryonic stem cells or iPS cells, while multipotent stem cells typically refer to adult stem cells such as hematopoietic stem cells."
+  },
+  "pubmedCount": 445479,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 23035
+    },
+    {
+      "year": 2018,
+      "count": 22700
+    },
+    {
+      "year": 2019,
+      "count": 23687
+    },
+    {
+      "year": 2020,
+      "count": 24807
+    },
+    {
+      "year": 2021,
+      "count": 25365
+    },
+    {
+      "year": 2022,
+      "count": 21734
+    },
+    {
+      "year": 2023,
+      "count": 20119
+    },
+    {
+      "year": 2024,
+      "count": 21866
+    },
+    {
+      "year": 2025,
+      "count": 23989
+    },
+    {
+      "year": 2026,
+      "count": 21200
+    }
+  ],
+  "searchQuery": "(\"Stem Cells\"[MeSH Terms]) OR (\"stem cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43041590",
+      "title": "Genetically engineered extracellular vesicles with chimeric antigen receptors of human stem cell-derived neutrophils targeting fibroblast activation protein to modulate tumor microenvironment.",
+      "year": 2027
+    },
+    {
+      "pmid": "42999541",
+      "title": "Sustained delivery of 3D-bioprinted stem cell-derived small extracellular vesicles promotes neural regeneration following traumatic brain injury via the CREB1/PGC-1α/FNDC5 axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42960265",
+      "title": "Spatial mechanopriming of multicellular interfaces drives cytoskeletal-to-nuclear remodeling to boost therapeutic efficacy of stem cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914654",
+      "title": "A mechanically active microneedle platform integrated with engineered exosomes for enhanced tendon-bone regeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42899179",
+      "title": "DNA-adsorbing nanozyme hydrogel reprograms the immuno-oxidative microenvironment to support stem cell-based cartilage repair in osteoarthritis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:05:24.860Z"
+}

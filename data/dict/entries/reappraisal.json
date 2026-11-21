@@ -1,0 +1,91 @@
+{
+  "slug": "reappraisal",
+  "ja": "再評価",
+  "yomi": "さいひょうか",
+  "en": "cognitive reappraisal",
+  "category": "psychology",
+  "description": {
+    "ja": "認知的再評価とは、ストレスや負の感情を引き起こす出来事に対して、その意味や解釈を意図的に変えることで感情反応を調整する心理的戦略です。例えば「失敗は成長の機会」と捉え直すことで、落ち込みを軽減できます。感情制御の適応的な方法として心理学研究で広く検討されています。",
+    "en": "Cognitive reappraisal is a psychological strategy for regulating emotions by intentionally changing the meaning or interpretation of a stressful or negative event. For example, reframing a failure as a learning opportunity can reduce distress. It is widely studied in psychology as an adaptive emotion regulation method."
+  },
+  "usage": {
+    "ja": "心理学実験では、参加者に不快な画像を見せながら「別の視点で捉え直してください」と教示し、主観的な感情評定や生理指標(心拍数、皮膚電気活動)、脳活動(fMRI)を測定して、再評価の効果を検証します。うつや不安障害の研究でも、再評価能力の低下が調べられます。",
+    "en": "In psychological experiments, participants are instructed to reappraise unpleasant images while researchers measure subjective emotion ratings, physiological indicators (heart rate, skin conductance), and brain activity (fMRI) to assess reappraisal effectiveness. Studies on depression and anxiety disorders also examine impairments in reappraisal ability."
+  },
+  "synonyms": {
+    "ja": "「認知的再構成(cognitive restructuring)」は類似概念ですが、主に認知行動療法の文脈で用いられ、より体系的な介入を指します。「リフレーミング(reframing)」も近い意味ですが、再評価はより学術的・実験的文脈で使われる傾向があります。",
+    "en": "Cognitive restructuring is a similar concept but typically refers to a more systematic intervention in cognitive-behavioral therapy contexts. Reframing is also related, though cognitive reappraisal tends to be used more in academic and experimental settings."
+  },
+  "pubmedCount": 2274,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 108
+    },
+    {
+      "year": 2018,
+      "count": 130
+    },
+    {
+      "year": 2019,
+      "count": 151
+    },
+    {
+      "year": 2020,
+      "count": 178
+    },
+    {
+      "year": 2021,
+      "count": 211
+    },
+    {
+      "year": 2022,
+      "count": 255
+    },
+    {
+      "year": 2023,
+      "count": 245
+    },
+    {
+      "year": 2024,
+      "count": 270
+    },
+    {
+      "year": 2025,
+      "count": 318
+    },
+    {
+      "year": 2026,
+      "count": 407
+    }
+  ],
+  "searchQuery": "\"cognitive reappraisal\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42674301",
+      "title": "Emotion regulation and state body image during daily body-exposure situations: A pilot ecological momentary assessment study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42721739",
+      "title": "Investigating associations between cortisol, testosterone and emotion regulation in healthy young men.",
+      "year": 2026
+    },
+    {
+      "pmid": "42600787",
+      "title": "Network structure of psychological resilience, cognitive reappraisal, and social problem-solving in relation to non-suicidal self-injury in a sample of Chinese university freshmen.",
+      "year": 2026
+    },
+    {
+      "pmid": "42454526",
+      "title": "Cognitive reappraisal modulates neural responses to aversive sensory stimulation in autistic youth.",
+      "year": 2026
+    },
+    {
+      "pmid": "42347784",
+      "title": "Interactive effects of age and mindfulness on emotion regulation flexibility: Evidence from a daily diary study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:10:46.651Z"
+}

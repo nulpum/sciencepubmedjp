@@ -1,0 +1,94 @@
+{
+  "slug": "receiver-operating-characteristic",
+  "ja": "ROC曲線",
+  "yomi": "あーるおーしーきょくせん",
+  "en": "receiver operating characteristic",
+  "abbr": "ROC",
+  "category": "research",
+  "meshHeading": "ROC Curve",
+  "meshUi": "68012372",
+  "description": {
+    "ja": "診断検査やスクリーニングテストの性能を評価するグラフで、横軸に偽陽性率、縦軸に真陽性率をプロットしたものです。曲線が左上に近いほど、また曲線下面積が1に近いほど検査の識別能力が高いことを示します。医学研究では新しいバイオマーカーや診断基準の有用性を判定する際に広く使われます。",
+    "en": "A graph used to evaluate the performance of diagnostic tests or screening tools, plotting true positive rate (sensitivity) on the y-axis against false positive rate (1-specificity) on the x-axis. The closer the curve is to the upper left corner and the larger the area under the curve (AUC) approaches 1, the better the discriminatory ability. It is widely used in medical research to assess the utility of new biomarkers or diagnostic criteria."
+  },
+  "usage": {
+    "ja": "論文では「ROC曲線下面積(AUC)が0.85であり良好な識別能を示した」のように記述され、カットオフ値の設定や複数の検査法の比較に用いられます。感度と特異度のトレードオフを視覚的に示すため、診断精度研究では標準的な評価指標となっています。",
+    "en": "In papers, it is described as 'the area under the ROC curve (AUC) was 0.85, indicating good discriminatory ability,' and is used for setting cutoff values and comparing multiple diagnostic methods. As it visually demonstrates the trade-off between sensitivity and specificity, it serves as a standard evaluation metric in diagnostic accuracy studies."
+  },
+  "synonyms": {
+    "ja": "「ROC解析」「ROC曲線分析」とも呼ばれ、曲線下面積はAUC(Area Under the Curve)やAUROC、C統計量と表記されることもあります。元々はレーダー信号処理の分野で開発された手法ですが、現在は医学・疫学研究で必須のツールとなっています。",
+    "en": "Also referred to as 'ROC analysis' or 'ROC curve analysis,' with the area under the curve denoted as AUC (Area Under the Curve), AUROC, or C-statistic. Originally developed in radar signal detection, it has become an essential tool in medical and epidemiological research."
+  },
+  "pubmedCount": 209903,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 10167
+    },
+    {
+      "year": 2018,
+      "count": 10810
+    },
+    {
+      "year": 2019,
+      "count": 12088
+    },
+    {
+      "year": 2020,
+      "count": 14051
+    },
+    {
+      "year": 2021,
+      "count": 16580
+    },
+    {
+      "year": 2022,
+      "count": 16738
+    },
+    {
+      "year": 2023,
+      "count": 15853
+    },
+    {
+      "year": 2024,
+      "count": 18569
+    },
+    {
+      "year": 2025,
+      "count": 24577
+    },
+    {
+      "year": 2026,
+      "count": 26273
+    }
+  ],
+  "searchQuery": "(\"ROC Curve\"[MeSH Terms]) OR (\"receiver operating characteristic\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42881014",
+      "title": "A prognostic model for use at labour onset to estimate the risk of severe fetal compromise at birth: a retrospective, model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987521",
+      "title": "A versatile multi-dimensional ratiometric sensor exploiting material-interface properties for t-Tau protein detection in human serum.",
+      "year": 2027
+    },
+    {
+      "pmid": "42440754",
+      "title": "Risk Stratification for Rebleeding in Obscure Gastrointestinal Bleeding After Comprehensive Gastrointestinal Evaluation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42428234",
+      "title": "Evaluation of Large Language Models in the Clinical Management of Patients With Upper Gastrointestinal Bleeding: Insights From Real-World Patient Data.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:38:47.081Z"
+}

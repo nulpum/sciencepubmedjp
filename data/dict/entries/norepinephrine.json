@@ -1,0 +1,96 @@
+{
+  "slug": "norepinephrine",
+  "ja": "ノルアドレナリン",
+  "yomi": "のるあどれなりん",
+  "en": "norepinephrine",
+  "category": "biology",
+  "aliases": [
+    "ノルエピネフリン"
+  ],
+  "meshHeading": "Norepinephrine",
+  "meshUi": "68009638",
+  "description": {
+    "ja": "ノルアドレナリンは、脳内の神経伝達物質およびホルモンとして機能する物質です。交感神経系の活性化に関与し、覚醒、注意、ストレス応答などに重要な役割を果たします。血圧や心拍数の調節にも関わっています。",
+    "en": "Norepinephrine is a neurotransmitter and hormone that plays a key role in the sympathetic nervous system. It is involved in arousal, attention, stress responses, and regulates blood pressure and heart rate."
+  },
+  "usage": {
+    "ja": "論文では、脳内の濃度測定、受容体発現解析、ストレス研究、うつ病や注意欠陥多動症などの精神疾患研究で頻繁に登場します。血漿中や尿中の濃度測定、マイクロダイアリシス法による脳内濃度の測定などが用いられます。",
+    "en": "In research papers, it appears in studies measuring brain concentrations, receptor expression analysis, stress research, and studies on depression or ADHD. Methods include plasma or urinary concentration measurements and microdialysis for brain levels."
+  },
+  "synonyms": {
+    "ja": "ノルエピネフリンとも呼ばれ、特に北米の文献で使用されます。略号はNE、NAまたはNAd。アドレナリン(エピネフリン)とは構造が類似していますが異なる物質であり、作用する受容体や生理作用に違いがあります。",
+    "en": "Also called noradrenaline, particularly in European literature. Abbreviated as NE, NA, or NAd. Structurally similar to adrenaline (epinephrine) but distinct, with differences in receptor affinity and physiological actions."
+  },
+  "pubmedCount": 119684,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1462
+    },
+    {
+      "year": 2018,
+      "count": 1478
+    },
+    {
+      "year": 2019,
+      "count": 1634
+    },
+    {
+      "year": 2020,
+      "count": 1654
+    },
+    {
+      "year": 2021,
+      "count": 1715
+    },
+    {
+      "year": 2022,
+      "count": 1597
+    },
+    {
+      "year": 2023,
+      "count": 1539
+    },
+    {
+      "year": 2024,
+      "count": 1646
+    },
+    {
+      "year": 2025,
+      "count": 1917
+    },
+    {
+      "year": 2026,
+      "count": 1832
+    }
+  ],
+  "searchQuery": "(\"Norepinephrine\"[MeSH Terms]) OR (\"norepinephrine\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42987740",
+      "title": "Fluorescent probes for catecholamine sensing: A critical review from molecular recognition to biomedical and doping applications.",
+      "year": 2027
+    },
+    {
+      "pmid": "42764122",
+      "title": "Baihe Ganmai Dazao Decoction ameliorates depression-like and sleep-disturbance phenotypes: potential involvement of IL-17A/IL-17RA-related inflammatory signaling and microglial polarization.",
+      "year": 2027
+    },
+    {
+      "pmid": "42462921",
+      "title": "A Passiflora incarnata extract exerts multi-target effects on selected sleep-related receptors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828862",
+      "title": "Investigating the role of norepinephrine in regulating depression by a novel organic near-infrared fluorescent probe.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810511",
+      "title": "Adolescent ethanol exposure reduces central amygdala GABA transmission but preserves noradrenergic signaling in adulthood.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:58:48.648Z"
+}

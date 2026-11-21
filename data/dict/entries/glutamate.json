@@ -1,0 +1,93 @@
+{
+  "slug": "glutamate",
+  "ja": "グルタミン酸",
+  "yomi": "ぐるたみんさん",
+  "en": "glutamate",
+  "category": "biology",
+  "meshHeading": "Glutamic Acid",
+  "meshUi": "68018698",
+  "description": {
+    "ja": "グルタミン酸は、脳内で最も主要な興奮性神経伝達物質であり、学習や記憶などの神経機能に関わるアミノ酸です。タンパク質の構成要素としても重要な役割を果たし、エネルギー代謝や窒素代謝にも関与します。神経科学や代謝研究において頻繁に測定される生体分子です。",
+    "en": "Glutamate is the primary excitatory neurotransmitter in the brain, an amino acid involved in neural functions such as learning and memory. It also serves as a crucial protein building block and participates in energy and nitrogen metabolism. It is a frequently measured biomolecule in neuroscience and metabolic research."
+  },
+  "usage": {
+    "ja": "神経科学では脳組織や脳脊髄液中の濃度測定、シナプス伝達の解析に用いられます。代謝研究では血液・尿中の測定や、高速液体クロマトグラフィー(HPLC)、質量分析法などで定量されます。神経変性疾患やてんかん、統合失調症などの研究で指標として調べられます。",
+    "en": "In neuroscience, it is measured in brain tissue or cerebrospinal fluid to analyze synaptic transmission. In metabolic studies, it is quantified in blood or urine using high-performance liquid chromatography (HPLC) or mass spectrometry. It serves as a research indicator in studies of neurodegenerative diseases, epilepsy, and schizophrenia."
+  },
+  "synonyms": {
+    "ja": "グルタミン酸ナトリウム(食品添加物としての呼称)、L-グルタミン酸(立体異性体の表記)と区別されます。グルタミン(glutamine)は別の物質で、体内でグルタミン酸に変換されますが、両者は異なる生理機能を持ちます。英語では「glutamic acid」とも呼ばれますが、生理的pHではイオン化した「glutamate」が一般的です。",
+    "en": "Distinguished from monosodium glutamate (MSG, food additive) and L-glutamate (stereoisomer notation). Glutamine is a different substance that converts to glutamate in the body but has distinct physiological functions. Also called glutamic acid, though the ionized form 'glutamate' is more common at physiological pH."
+  },
+  "pubmedCount": 141750,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4627
+    },
+    {
+      "year": 2018,
+      "count": 4520
+    },
+    {
+      "year": 2019,
+      "count": 4562
+    },
+    {
+      "year": 2020,
+      "count": 4772
+    },
+    {
+      "year": 2021,
+      "count": 4873
+    },
+    {
+      "year": 2022,
+      "count": 4572
+    },
+    {
+      "year": 2023,
+      "count": 4427
+    },
+    {
+      "year": 2024,
+      "count": 4429
+    },
+    {
+      "year": 2025,
+      "count": 4873
+    },
+    {
+      "year": 2026,
+      "count": 4345
+    }
+  ],
+  "searchQuery": "(\"Glutamic Acid\"[MeSH Terms]) OR (\"glutamate\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42901657",
+      "title": "Biosynthetic mechanisms and application of bioactive compounds associated with in vitro lipid-lowering-related activities produced by Lactiplantibacillus plantarum fermentation of Porphyra haitanensis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42950907",
+      "title": "Chaihu-Shugan-San attenuates depression by downregulating liver LCN2 to suppress LHb GluN2B-associated glutamatergic signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863728",
+      "title": "Si-shen-san attenuates Alzheimer's disease pathology and cognitive deficits through multi-target regulation of astrocyte function and synaptic plasticity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42826807",
+      "title": "Neuroprotective eremophilane sesquiterpenoids from Ligularia species attenuate glutamate-induced oxidative stress via MAPK signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42790558",
+      "title": "Extracts of Coriaria nepalensis ameliorate MK-801-induced schizophrenia-like behaviors via regulation of neurotransmitter imbalance and neuroinflammation.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:58:12.797Z"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "apoptosis",
+  "ja": "アポトーシス",
+  "yomi": "あぽとーしす",
+  "en": "apoptosis",
+  "category": "biology",
+  "aliases": [
+    "細胞死"
+  ],
+  "meshHeading": "Apoptosis",
+  "meshUi": "68017209",
+  "description": {
+    "ja": "アポトーシスは、細胞が自ら死ぬようにプログラムされた「計画的な細胞死」のことです。傷ついた細胞や不要になった細胞が、周囲に炎症を起こさずに整然と分解・除去される仕組みで、発生や組織の恒常性維持に重要な役割を果たします。壊死(ネクローシス)とは異なり、細胞膜が保たれたまま小さく断片化していく点が特徴です。",
+    "en": "Apoptosis is a form of programmed cell death in which cells undergo an orderly, self-directed process of elimination. Unlike necrosis, apoptotic cells shrink and fragment without causing inflammation, maintaining membrane integrity throughout the process. This mechanism is essential for development, tissue homeostasis, and removal of damaged or unnecessary cells."
+  },
+  "usage": {
+    "ja": "論文では、TUNEL法やAnnexin V染色、カスパーゼ活性測定などでアポトーシスの程度を評価します。がん研究では抗がん剤によるアポトーシス誘導、神経変性疾患では神経細胞のアポトーシス亢進が調べられることが多く、細胞培養や組織標本で観察されます。",
+    "en": "In research papers, apoptosis is assessed using TUNEL assay, Annexin V staining, or caspase activity measurement. Cancer studies often examine apoptosis induction by anticancer agents, while neurodegenerative disease research investigates neuronal apoptosis enhancement, typically observed in cell cultures or tissue samples."
+  },
+  "synonyms": {
+    "ja": "「プログラム細胞死」「細胞自殺」とも呼ばれます。広義の細胞死には壊死(necrosis)やオートファジー関連細胞死もありますが、アポトーシスは形態学的・生化学的に区別される特定の経路を指します。",
+    "en": "Also called \"programmed cell death\" or \"cell suicide.\" While broader cell death categories include necrosis and autophagy-related cell death, apoptosis refers to a specific pathway distinguished by morphological and biochemical features."
+  },
+  "pubmedCount": 635755,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30178
+    },
+    {
+      "year": 2018,
+      "count": 32206
+    },
+    {
+      "year": 2019,
+      "count": 34608
+    },
+    {
+      "year": 2020,
+      "count": 37784
+    },
+    {
+      "year": 2021,
+      "count": 38114
+    },
+    {
+      "year": 2022,
+      "count": 35513
+    },
+    {
+      "year": 2023,
+      "count": 32577
+    },
+    {
+      "year": 2024,
+      "count": 33627
+    },
+    {
+      "year": 2025,
+      "count": 37348
+    },
+    {
+      "year": 2026,
+      "count": 32549
+    }
+  ],
+  "searchQuery": "(\"Apoptosis\"[MeSH Terms]) OR (\"apoptosis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42839367",
+      "title": "Enterovirus 2B protein: From viroporin to membrane stress sensor, mechanistic principles of multi-pathway regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041721",
+      "title": "Atomically dispersed nanoactivators drive innate mitochondrial biogenesis for active neuroprotection in ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041590",
+      "title": "Genetically engineered extracellular vesicles with chimeric antigen receptors of human stem cell-derived neutrophils targeting fibroblast activation protein to modulate tumor microenvironment.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022615",
+      "title": "Critical roles of phosphorylation in multiple signaling pathways during the progression of osteoarthritis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901134",
+      "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:04:49.989Z"
+}

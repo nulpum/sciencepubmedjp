@@ -1,0 +1,93 @@
+{
+  "slug": "aspiration-pneumonia",
+  "ja": "誤嚥性肺炎",
+  "yomi": "ごえんせいはいえん",
+  "en": "aspiration pneumonia",
+  "category": "nursing-pharma",
+  "meshHeading": "Pneumonia, Aspiration",
+  "meshUi": "68011015",
+  "description": {
+    "ja": "食べ物や唾液、胃液などが誤って気管に入り込むこと(誤嚥)によって引き起こされる肺の炎症です。高齢者や嚥下機能が低下した患者さんに多く見られ、看護・薬学分野では予防と早期発見が重要な課題とされています。",
+    "en": "Aspiration pneumonia is a lung inflammation caused by accidentally inhaling food, saliva, or gastric contents into the airway. It is commonly observed in elderly patients and those with impaired swallowing function, making prevention and early detection important topics in nursing and pharmaceutical care."
+  },
+  "usage": {
+    "ja": "論文では高齢者施設や病院での発生率、嚥下機能評価との関連、口腔ケアや体位管理などの予防策の効果が調べられます。疫学研究では「aspiration pneumonia incidence」として測定され、リスク因子の分析が行われます。",
+    "en": "Studies examine incidence rates in nursing homes and hospitals, associations with swallowing assessments, and effectiveness of preventive measures such as oral care and positioning. Epidemiological research measures this as 'aspiration pneumonia incidence' and analyzes risk factors."
+  },
+  "synonyms": {
+    "ja": "「吸引性肺炎」とも呼ばれます。検索時は「aspiration」「pneumonia」「dysphagia(嚥下障害)」「elderly(高齢者)」などを組み合わせると関連文献が見つかります。誤嚥そのものは「aspiration」、通常の市中肺炎「community-acquired pneumonia」とは区別されます。",
+    "en": "Also called 'inhalation pneumonia'. For literature searches, combine terms like 'aspiration', 'pneumonia', 'dysphagia', and 'elderly'. Aspiration itself is termed 'aspiration', and it is distinguished from 'community-acquired pneumonia'."
+  },
+  "pubmedCount": 11388,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 309
+    },
+    {
+      "year": 2018,
+      "count": 315
+    },
+    {
+      "year": 2019,
+      "count": 379
+    },
+    {
+      "year": 2020,
+      "count": 393
+    },
+    {
+      "year": 2021,
+      "count": 393
+    },
+    {
+      "year": 2022,
+      "count": 411
+    },
+    {
+      "year": 2023,
+      "count": 454
+    },
+    {
+      "year": 2024,
+      "count": 454
+    },
+    {
+      "year": 2025,
+      "count": 535
+    },
+    {
+      "year": 2026,
+      "count": 535
+    }
+  ],
+  "searchQuery": "(\"Pneumonia, Aspiration\"[MeSH Terms]) OR (\"aspiration pneumonia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42582981",
+      "title": "Efficacy of Overtube in Preventing Aspiration Pneumonia During Esophageal Endoscopic Submucosal Dissection.",
+      "year": 2027
+    },
+    {
+      "pmid": "42715872",
+      "title": "When TAT fails: A case of generalized tetanus and reactive thrombocytosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42899106",
+      "title": "Clinically suspected central nervous system Richter transformation presenting with progressive psychiatric symptoms: A case report.",
+      "year": 2026
+    },
+    {
+      "pmid": "42826843",
+      "title": "Yeast β-1,3/1,6 glucan regulates NRF2 to inhibit ferroptosis and ameliorates aspiration pneumonia in aged mice.",
+      "year": 2026
+    },
+    {
+      "pmid": "42664558",
+      "title": "Associations of energy and protein adequacy during the nil per os period with discharge Food Intake Level Scale and Functional Independence Measure motor scores in very old patients with aspiration pneumonia: a retrospective observational cohort study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:42:31.720Z"
+}

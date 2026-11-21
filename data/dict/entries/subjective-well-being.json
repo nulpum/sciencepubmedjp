@@ -1,0 +1,92 @@
+{
+  "slug": "subjective-well-being",
+  "ja": "主観的ウェルビーイング",
+  "yomi": "しゅかんてきうぇるびーいんぐ",
+  "en": "subjective well-being",
+  "abbr": "SWB",
+  "category": "psychology",
+  "description": {
+    "ja": "主観的ウェルビーイング(SWB)とは、個人が自分自身の人生や生活をどの程度肯定的に評価しているかを示す心理学的指標です。生活満足度、ポジティブ感情の頻度、ネガティブ感情の少なさなどの要素から構成され、客観的な生活条件ではなく本人の主観的な評価を重視します。幸福感や生活の質を測定する際の中心的な概念として、心理学、公衆衛生、社会疫学などの分野で広く用いられています。",
+    "en": "Subjective well-being (SWB) is a psychological indicator that reflects how positively individuals evaluate their own lives and life circumstances. It comprises components such as life satisfaction, frequency of positive emotions, and absence of negative emotions, emphasizing personal subjective evaluation rather than objective life conditions. SWB serves as a central concept in measuring happiness and quality of life across psychology, public health, and social epidemiology research."
+  },
+  "usage": {
+    "ja": "論文では、質問紙法による自己評価尺度で測定されることが多く、代表的なものにSatisfaction With Life Scale(SWLS)やPositive and Negative Affect Schedule(PANAS)があります。健康状態、社会経済的要因、ライフイベント、介入プログラムなどとの関連を調べる疫学研究や介入研究で、アウトカム指標として用いられます。",
+    "en": "In research papers, SWB is typically measured using self-report questionnaire scales, with the Satisfaction With Life Scale (SWLS) and Positive and Negative Affect Schedule (PANAS) being commonly employed instruments. It is used as an outcome measure in epidemiological and intervention studies examining associations with health status, socioeconomic factors, life events, and intervention programs."
+  },
+  "synonyms": {
+    "ja": "「幸福感」「ウェルビーイング」と重なる概念ですが、SWBは特に主観的評価を強調する用語です。客観的指標を含む「well-being」全般や、より哲学的な「幸福(happiness)」とは区別され、心理測定可能な主観的側面に焦点を当てます。",
+    "en": "SWB overlaps with concepts like 'happiness' and 'well-being' but specifically emphasizes subjective evaluation. It is distinguished from broader 'well-being' that may include objective indicators and more philosophical notions of 'happiness,' focusing on psychometrically measurable subjective aspects."
+  },
+  "pubmedCount": 6780,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 297
+    },
+    {
+      "year": 2018,
+      "count": 350
+    },
+    {
+      "year": 2019,
+      "count": 380
+    },
+    {
+      "year": 2020,
+      "count": 481
+    },
+    {
+      "year": 2021,
+      "count": 652
+    },
+    {
+      "year": 2022,
+      "count": 716
+    },
+    {
+      "year": 2023,
+      "count": 638
+    },
+    {
+      "year": 2024,
+      "count": 602
+    },
+    {
+      "year": 2025,
+      "count": 722
+    },
+    {
+      "year": 2026,
+      "count": 673
+    }
+  ],
+  "searchQuery": "\"subjective well-being\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42914693",
+      "title": "Well-being and healthcare work over the pandemic.",
+      "year": 2027
+    },
+    {
+      "pmid": "40528153",
+      "title": "Subjective Well-being in Patients With Newly Diagnosed Colorectal Cancer: An Observational Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42954199",
+      "title": "[The study of health state of persons of able-bodied age in ecologically unfavorable regions: the analysis of life quality indicators].",
+      "year": 2026
+    },
+    {
+      "pmid": "42415443",
+      "title": "[THE SUBJECTIVE ESTIMATES OF QUALITY OF LIFE OF URBAN POPULATION OF PROVINCIAL REGION THROUGH THE PRISM OF SATISFACTION OF HEALTH CARE SYSTEM].",
+      "year": 2026
+    },
+    {
+      "pmid": "43053283",
+      "title": "The role of online and offline support in the association between SOGIE-based victimization and subjective well-being among U.S. LGBTQ2S+ youth.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:19:33.115Z"
+}

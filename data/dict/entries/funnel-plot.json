@@ -1,0 +1,94 @@
+{
+  "slug": "funnel-plot",
+  "ja": "ファンネルプロット",
+  "yomi": "ふぁんねるぷろっと",
+  "en": "funnel plot",
+  "category": "research",
+  "aliases": [
+    "漏斗プロット"
+  ],
+  "description": {
+    "ja": "メタアナリシスにおいて出版バイアスの有無を視覚的に評価するための散布図です。横軸に効果量、縦軸に研究の精度(標準誤差の逆数やサンプルサイズ)をとり、バイアスがなければ漏斗を逆さにした形に点が分布します。左右非対称な分布は、統計的に有意でない研究が出版されていない可能性を示唆します。",
+    "en": "A scatter plot used in meta-analysis to visually assess publication bias. It displays effect sizes on the x-axis and study precision (inverse of standard error or sample size) on the y-axis. In the absence of bias, studies should distribute symmetrically in an inverted funnel shape. Asymmetric distribution suggests that statistically non-significant studies may not have been published."
+  },
+  "usage": {
+    "ja": "システマティックレビューやメタアナリシスの論文で、収集した複数の研究結果をプロットし、小規模研究で効果が大きく報告される傾向(small-study effect)や出版バイアスの存在を検討する際に用いられます。Egger検定やBegg検定などの統計的検定と併用されることが多いです。",
+    "en": "Used in systematic reviews and meta-analyses to plot results from multiple studies and examine small-study effects or publication bias, where smaller studies tend to report larger effects. Often combined with statistical tests such as Egger's test or Begg's test for formal assessment."
+  },
+  "synonyms": {
+    "ja": "漏斗プロットとも呼ばれます。類似の評価方法にcontour-enhanced funnel plot(等高線付きファンネルプロット)があり、統計的有意性の境界線を追加して解釈を補助します。非対称性の原因は出版バイアス以外に研究の異質性や真の効果の差異もあるため、解釈には注意が必要です。",
+    "en": "Also called 漏斗プロット (roto plot) in Japanese. Related methods include contour-enhanced funnel plots, which add significance contours to aid interpretation. Asymmetry may result not only from publication bias but also from heterogeneity or true differences in effects, requiring careful interpretation."
+  },
+  "pubmedCount": 6500,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 285
+    },
+    {
+      "year": 2018,
+      "count": 328
+    },
+    {
+      "year": 2019,
+      "count": 406
+    },
+    {
+      "year": 2020,
+      "count": 499
+    },
+    {
+      "year": 2021,
+      "count": 597
+    },
+    {
+      "year": 2022,
+      "count": 667
+    },
+    {
+      "year": 2023,
+      "count": 619
+    },
+    {
+      "year": 2024,
+      "count": 841
+    },
+    {
+      "year": 2025,
+      "count": 874
+    },
+    {
+      "year": 2026,
+      "count": 752
+    }
+  ],
+  "searchQuery": "\"funnel plot\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42874695",
+      "title": "Protective effects and possible mechanisms of Salvia miltiorrhiza-derived interventions in animal models of osteoarthritis: a preclinical systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892351",
+      "title": "Changing global prevalence of diuretic resistance amongst patients with heart failure: a systematic review and cumulative meta-analyses.",
+      "year": 2027
+    },
+    {
+      "pmid": "42342056",
+      "title": "C-reactive protein as a universal prognosticator in hemorrhagic stroke: a meta-analysis of intracerebral and aneurysmal subarachnoid hemorrhage.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858260",
+      "title": "Inhibin B as a biomarker for ovarian reserve and ovarian response: systematic reviews and meta-analyses of diagnostic test accuracy.",
+      "year": 2026
+    },
+    {
+      "pmid": "41433039",
+      "title": "The effectiveness of protein supplements on athletic performance and post-exercise recovery - a Bayesian multilevel meta-analysis of randomized controlled trials.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:41:19.312Z"
+}

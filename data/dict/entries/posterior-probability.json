@@ -1,0 +1,91 @@
+{
+  "slug": "posterior-probability",
+  "ja": "事後確率",
+  "yomi": "じごかくりつ",
+  "en": "posterior probability",
+  "category": "research",
+  "description": {
+    "ja": "ベイズ統計学において、事前情報とデータ(観察結果)を組み合わせて更新された後の確率のこと。研究では、既存のエビデンスや専門家の知見(事前確率)に新たな実験・観察データを加えて、仮説や母数がどの程度もっともらしいかを表す指標として用いられます。",
+    "en": "In Bayesian statistics, the probability updated after combining prior information with observed data. In research, it represents the plausibility of a hypothesis or parameter after incorporating new experimental or observational evidence into existing knowledge or expert opinion (prior probability)."
+  },
+  "usage": {
+    "ja": "ベイズ推定や診断検査の研究で頻繁に登場し、「事前確率×尤度→事後確率」という更新プロセスで算出されます。臨床研究では検査前確率と検査結果を組み合わせて疾患の事後確率を評価する文脈でも使われます。",
+    "en": "Commonly appears in Bayesian inference and diagnostic test studies, calculated through the update process 'prior probability × likelihood → posterior probability'. In clinical research, it is used to evaluate the probability of disease by combining pre-test probability with test results."
+  },
+  "synonyms": {
+    "ja": "「事後分布」は母数全体の確率分布を指す場合に使われ、「事後確率」はその中の特定の値や範囲の確率を指すことが多いです。頻度論統計のp値や信頼区間とは解釈の枠組みが異なる点に注意が必要です。",
+    "en": "The term 'posterior distribution' refers to the probability distribution of the entire parameter, while 'posterior probability' often indicates the probability of a specific value or range within it. Note that the interpretation framework differs from p-values and confidence intervals in frequentist statistics."
+  },
+  "pubmedCount": 3452,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 162
+    },
+    {
+      "year": 2018,
+      "count": 149
+    },
+    {
+      "year": 2019,
+      "count": 151
+    },
+    {
+      "year": 2020,
+      "count": 184
+    },
+    {
+      "year": 2021,
+      "count": 224
+    },
+    {
+      "year": 2022,
+      "count": 203
+    },
+    {
+      "year": 2023,
+      "count": 235
+    },
+    {
+      "year": 2024,
+      "count": 255
+    },
+    {
+      "year": 2025,
+      "count": 302
+    },
+    {
+      "year": 2026,
+      "count": 480
+    }
+  ],
+  "searchQuery": "\"posterior probability\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42887266",
+      "title": "A Bayesian two-component mixture model for predicting low and high coagulase-positive staphylococci contamination levels in raw milk.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913134",
+      "title": "Nurse staffing and 30-day mortality in hospitalised adults: A systematic review and meta-analysis of per-unit associations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42486044",
+      "title": "Optimizing hard cutoff quality control metrics for IBD segment inference and genotyping accuracy in low-coverage sequencing data.",
+      "year": 2027
+    },
+    {
+      "pmid": "43008256",
+      "title": "Association of Prethrombectomy Hemorrhagic Infarction on MRI With Further Transformation and Functional Outcomes: A Multicenter Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42331198",
+      "title": "Role of an Ayurvedic formulation 'Kalyanaka Ghrita' in mild cognitive impairment: A single-patient, quasi-randomized, controlled, open-label N-of-1 trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:46:51.098Z"
+}

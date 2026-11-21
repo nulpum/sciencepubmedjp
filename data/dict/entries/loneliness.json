@@ -1,0 +1,93 @@
+{
+  "slug": "loneliness",
+  "ja": "孤独感",
+  "yomi": "こどくかん",
+  "en": "loneliness",
+  "category": "psychology",
+  "meshHeading": "Loneliness",
+  "meshUi": "68008132",
+  "description": {
+    "ja": "孤独感とは、他者とのつながりや所属感が不足していると感じる主観的な心理状態を指します。実際の社会的孤立(客観的に人との接触が少ない状態)とは異なり、周囲に人がいても感じることがある個人の内的な体験です。心理学や公衆衛生の研究では、うつ病や認知機能低下、心血管疾患など様々な健康アウトカムとの関連が調査されています。",
+    "en": "Loneliness refers to the subjective psychological state of feeling a lack of connection or sense of belonging with others. Unlike social isolation (objectively having few social contacts), it is an internal experience that can occur even when surrounded by people. In psychology and public health research, loneliness is investigated for its associations with various health outcomes including depression, cognitive decline, and cardiovascular disease."
+  },
+  "usage": {
+    "ja": "論文では、UCLA孤独感尺度(UCLA Loneliness Scale)やde Jong Giersveld孤独感尺度などの質問票を用いて測定されることが多く、スコアが高いほど孤独感が強いことを示します。横断研究や縦断研究で独立変数または従属変数として扱われ、年齢、性別、社会経済的地位などの交絡因子を調整した解析が行われます。",
+    "en": "In research papers, loneliness is typically measured using questionnaires such as the UCLA Loneliness Scale or the de Jong Gierveld Loneliness Scale, with higher scores indicating greater loneliness. It is examined as either an independent or dependent variable in cross-sectional and longitudinal studies, with analyses adjusting for confounding factors such as age, sex, and socioeconomic status."
+  },
+  "synonyms": {
+    "ja": "「社会的孤立(social isolation)」は客観的な接触頻度を指すのに対し、孤独感は主観的感情という点で区別されます。「perceived loneliness(知覚された孤独感)」や「subjective social isolation(主観的社会的孤立)」という表現も同義として使われることがあります。",
+    "en": "While 'social isolation' refers to objective lack of social contacts, loneliness denotes the subjective emotional experience, making this distinction important. Terms like 'perceived loneliness' and 'subjective social isolation' are sometimes used synonymously to emphasize the subjective nature of the experience."
+  },
+  "pubmedCount": 21423,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 598
+    },
+    {
+      "year": 2018,
+      "count": 758
+    },
+    {
+      "year": 2019,
+      "count": 876
+    },
+    {
+      "year": 2020,
+      "count": 1510
+    },
+    {
+      "year": 2021,
+      "count": 2303
+    },
+    {
+      "year": 2022,
+      "count": 2576
+    },
+    {
+      "year": 2023,
+      "count": 2430
+    },
+    {
+      "year": 2024,
+      "count": 2497
+    },
+    {
+      "year": 2025,
+      "count": 2934
+    },
+    {
+      "year": 2026,
+      "count": 2947
+    }
+  ],
+  "searchQuery": "(\"Loneliness\"[MeSH Terms]) OR (\"loneliness\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42863799",
+      "title": "Associations of one-to-one peer support service and intervention outcomes among older adults with depressive symptoms: Evidence from a community-based stepped care programme for late-life depression in Hong Kong.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854791",
+      "title": "Consensus on components of psychological treatment for depression to reduce symptoms and target relapse risk factors in young adults: A modified Delphi study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42868917",
+      "title": "Interventions to address loneliness and social isolation in community-dwelling older adults: an umbrella review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854322",
+      "title": "Childhood loneliness and deficit-accumulation frailty progression in mid-to-late life.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849855",
+      "title": "Suicidality profiles among Korean adults: Ideation recency, lifetime behavioral history, and current psychiatric morbidity.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:17:38.985Z"
+}

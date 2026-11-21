@@ -1,0 +1,94 @@
+{
+  "slug": "adaptive-trial",
+  "ja": "アダプティブ試験",
+  "yomi": "あだぷてぃぶしけん",
+  "en": "adaptive trial",
+  "category": "research",
+  "aliases": [
+    "適応試験"
+  ],
+  "description": {
+    "ja": "試験の途中で得られたデータを分析し、その結果に基づいて試験デザイン(対象者数、用量、評価項目など)を柔軟に変更できる臨床試験の手法です。従来の固定デザインと比べて、効率的に情報を得られる可能性があります。",
+    "en": "A clinical trial method that allows planned modifications to trial design (sample size, dosage, endpoints, etc.) based on interim data analysis. It can potentially provide information more efficiently compared to traditional fixed designs."
+  },
+  "usage": {
+    "ja": "Phase II/III試験で、中間解析の結果により投与量の調整や無効な群の中止を行う場合などに用いられます。論文では「adaptive design」「group sequential design」などの用語とともに、事前に規定した変更ルールと統計的調整方法が記載されます。",
+    "en": "Used in Phase II/III trials when adjusting dosages or stopping ineffective arms based on interim analysis results. Papers describe pre-specified modification rules and statistical adjustment methods, often with terms like 'adaptive design' or 'group sequential design'."
+  },
+  "synonyms": {
+    "ja": "適応デザイン、適応的デザインとも呼ばれます。類似概念に逐次デザイン(sequential design)がありますが、アダプティブ試験はより広範な変更を含みます。変更の透明性と統計的妥当性の確保が重要です。",
+    "en": "Also called 'adaptive design' or 'flexible design'. Related to sequential design, but adaptive trials encompass broader modifications. Ensuring transparency of changes and statistical validity is crucial."
+  },
+  "pubmedCount": 637,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 24
+    },
+    {
+      "year": 2018,
+      "count": 26
+    },
+    {
+      "year": 2019,
+      "count": 38
+    },
+    {
+      "year": 2020,
+      "count": 39
+    },
+    {
+      "year": 2021,
+      "count": 45
+    },
+    {
+      "year": 2022,
+      "count": 54
+    },
+    {
+      "year": 2023,
+      "count": 51
+    },
+    {
+      "year": 2024,
+      "count": 56
+    },
+    {
+      "year": 2025,
+      "count": 93
+    },
+    {
+      "year": 2026,
+      "count": 158
+    }
+  ],
+  "searchQuery": "\"adaptive trial\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43019494",
+      "title": "A Primer on the Use of Frequentist Confidence Analysis in Neurology Clinical Trials.",
+      "year": 2026
+    },
+    {
+      "pmid": "42927317",
+      "title": "Beyond PD-L1 and HER2: emerging predictive biomarkers in gastroesophageal tumors.",
+      "year": 2026
+    },
+    {
+      "pmid": "42750274",
+      "title": "Global vaccine readiness: equity-by-design in pandemic preparedness and response.",
+      "year": 2026
+    },
+    {
+      "pmid": "42667964",
+      "title": "Drug failure in diabetic kidney disease: translational barriers, target validation and trial de-risking strategies.",
+      "year": 2026
+    },
+    {
+      "pmid": "43051385",
+      "title": "Drug Development in Pediatric Heart Failure: Current Landscape and Future Directions.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:50:28.073Z"
+}

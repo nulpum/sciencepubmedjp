@@ -1,0 +1,94 @@
+{
+  "slug": "nrem-sleep",
+  "ja": "NREM睡眠",
+  "yomi": "のんれむすいみん",
+  "en": "non-REM sleep",
+  "category": "biology",
+  "aliases": [
+    "ノンレム睡眠"
+  ],
+  "description": {
+    "ja": "NREM睡眠(non-REM sleep)は、急速眼球運動を伴わない睡眠段階の総称で、浅い眠りから深い眠りまで複数の段階(N1〜N3)に分類されます。脳波の特徴から判別され、特に深いNREM睡眠(徐波睡眠)では心身の回復や記憶の定着が起こるとされています。REM睡眠と交互に繰り返されることで、一晩の睡眠サイクルを構成します。",
+    "en": "Non-REM sleep refers to sleep stages without rapid eye movements, classified into multiple stages (N1-N3) from light to deep sleep. Distinguished by characteristic brain wave patterns, particularly deep NREM sleep (slow-wave sleep) is associated with physical restoration and memory consolidation. It alternates with REM sleep throughout the night to form complete sleep cycles."
+  },
+  "usage": {
+    "ja": "睡眠研究では脳波(EEG)、眼球運動(EOG)、筋電図(EMG)を用いたポリソムノグラフィーで判定され、N1(入眠期)、N2(軽睡眠)、N3(徐波睡眠)に分類されます。睡眠の質、睡眠障害、記憶・学習との関連、加齢による変化などを調べる論文で頻繁に使用されます。",
+    "en": "In sleep research, NREM sleep is identified through polysomnography using EEG, EOG, and EMG, and classified into N1 (drowsiness), N2 (light sleep), and N3 (slow-wave sleep). It is frequently examined in studies on sleep quality, sleep disorders, memory and learning processes, and age-related changes in sleep architecture."
+  },
+  "synonyms": {
+    "ja": "「徐波睡眠」は特にN3段階の深いNREM睡眠を指し、「ノンレム睡眠」はカタカナ表記です。古い文献では「正統睡眠」と呼ばれることもあります。段階別にN1、N2、N3(またはステージ1〜4)と表記され、N3とN4を統合してN3とする分類が現在は一般的です。",
+    "en": "Slow-wave sleep (SWS) specifically refers to deep NREM sleep (N3 stage), while orthodox sleep is an older term. NREM stages are designated as N1, N2, N3 (or stages 1-4 in older literature), with current classification combining former N3 and N4 into a single N3 stage."
+  },
+  "pubmedCount": 1775,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 86
+    },
+    {
+      "year": 2018,
+      "count": 56
+    },
+    {
+      "year": 2019,
+      "count": 52
+    },
+    {
+      "year": 2020,
+      "count": 49
+    },
+    {
+      "year": 2021,
+      "count": 73
+    },
+    {
+      "year": 2022,
+      "count": 69
+    },
+    {
+      "year": 2023,
+      "count": 71
+    },
+    {
+      "year": 2024,
+      "count": 54
+    },
+    {
+      "year": 2025,
+      "count": 78
+    },
+    {
+      "year": 2026,
+      "count": 68
+    }
+  ],
+  "searchQuery": "\"non-REM sleep\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42571331",
+      "title": "ETAS reduces wake time after sleep onset in healthy adults who are dissatisfied with their sleep: A randomized, placebo-controlled, double-blind crossover study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42205252",
+      "title": "The Sentinel Sleep Theory: Unweaving the biological function of REM sleep.",
+      "year": 2026
+    },
+    {
+      "pmid": "42777964",
+      "title": "REM sleep suppression after penetrating traumatic brain injury is associated with alterations in the supramammillary-hippocampal circuit.",
+      "year": 2026
+    },
+    {
+      "pmid": "42541537",
+      "title": "Repeated-sprint exercise in hypoxia does not alter sleep quality in young male adults.",
+      "year": 2026
+    },
+    {
+      "pmid": "42537545",
+      "title": "Sleep stage-dependent distribution of interictal epileptiform discharges in epilepsy: A systematic review.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:56:11.028Z"
+}

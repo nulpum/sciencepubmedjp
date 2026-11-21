@@ -1,0 +1,93 @@
+{
+  "slug": "signal-transduction",
+  "ja": "シグナル伝達",
+  "yomi": "しぐなるでんたつ",
+  "en": "signal transduction",
+  "category": "biology",
+  "meshHeading": "Signal Transduction",
+  "meshUi": "68015398",
+  "description": {
+    "ja": "細胞が外部からの刺激(ホルモン、増殖因子、光など)を受け取り、細胞内で一連の分子反応を引き起こして最終的な応答(遺伝子発現、細胞分裂、細胞死など)に至る過程のことです。受容体が刺激を感知すると、タンパク質のリン酸化や二次メッセンジャーの産生などを通じて情報が細胞内で伝わります。",
+    "en": "Signal transduction is the process by which cells receive external stimuli (such as hormones, growth factors, or light) and convert them into intracellular molecular responses, ultimately leading to cellular outcomes like gene expression, cell division, or apoptosis. When receptors detect signals, information is transmitted through the cell via protein phosphorylation, secondary messengers, and other mechanisms."
+  },
+  "usage": {
+    "ja": "論文では「MAPK/ERKシグナル伝達経路」「インスリンシグナル伝達」のように特定の経路名とともに使われます。ウエスタンブロットでリン酸化タンパク質を検出したり、蛍光プローブで二次メッセンジャー濃度を測定したりして、シグナル伝達の活性化を評価します。",
+    "en": "In research papers, it appears with specific pathway names such as 'MAPK/ERK signal transduction pathway' or 'insulin signal transduction.' Activation of signal transduction is assessed by detecting phosphorylated proteins via Western blotting or measuring secondary messenger concentrations using fluorescent probes."
+  },
+  "synonyms": {
+    "ja": "「シグナル伝達」と「シグナリング(signaling)」はほぼ同義で使われますが、後者の方が口語的です。「細胞内情報伝達」も類義語ですが、シグナル伝達は受容体での受容から細胞応答までの全過程を指すことが多く、より包括的な用語として用いられます。",
+    "en": "The terms 'signal transduction' and 'cell signaling' are used almost interchangeably, though 'signaling' is more colloquial. 'Intracellular signal transduction' is also related, but 'signal transduction' typically encompasses the entire process from receptor binding to cellular response, making it a more comprehensive term."
+  },
+  "pubmedCount": 845455,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 39794
+    },
+    {
+      "year": 2018,
+      "count": 40824
+    },
+    {
+      "year": 2019,
+      "count": 41939
+    },
+    {
+      "year": 2020,
+      "count": 41709
+    },
+    {
+      "year": 2021,
+      "count": 38015
+    },
+    {
+      "year": 2022,
+      "count": 21827
+    },
+    {
+      "year": 2023,
+      "count": 20678
+    },
+    {
+      "year": 2024,
+      "count": 33899
+    },
+    {
+      "year": 2025,
+      "count": 42839
+    },
+    {
+      "year": 2026,
+      "count": 40981
+    }
+  ],
+  "searchQuery": "(\"Signal Transduction\"[MeSH Terms]) OR (\"signal transduction\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42994315",
+      "title": "Ultrasensitive analysis of patulin using aggregation-induced electrochemiluminescence active polymer dots as probe.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971082",
+      "title": "Cascade fluorescence-to-thermal photothermal lateral flow immunoassay with simplified sample preparation for procymidone detection in vegetables.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062001",
+      "title": "Hydrogen-rich saline alleviates inflammation-associated depression-like behaviors in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062000",
+      "title": "Hydrogen induces microglial M2 polarization and improves neurological outcomes of rats with traumatic brain injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022615",
+      "title": "Critical roles of phosphorylation in multiple signaling pathways during the progression of osteoarthritis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:02:52.901Z"
+}

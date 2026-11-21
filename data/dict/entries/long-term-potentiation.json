@@ -1,0 +1,94 @@
+{
+  "slug": "long-term-potentiation",
+  "ja": "長期増強",
+  "yomi": "ちょうきぞうきょう",
+  "en": "long-term potentiation",
+  "abbr": "LTP",
+  "category": "biology",
+  "meshHeading": "Long-Term Potentiation",
+  "meshUi": "68017774",
+  "description": {
+    "ja": "長期増強(LTP)は、シナプス(神経細胞間の接合部)における信号伝達効率が長時間にわたって増強される現象です。高頻度の刺激を受けたシナプスで起こり、学習や記憶のメカニズムを理解する上で重要な生物学的基盤とされています。特に海馬などの脳領域で研究されており、記憶形成の細胞レベルでのモデルとして広く用いられます。",
+    "en": "Long-term potentiation (LTP) is a persistent strengthening of synaptic connections following high-frequency stimulation of a synapse. It represents a long-lasting enhancement in signal transmission between neurons and is widely studied as a cellular mechanism underlying learning and memory. LTP is particularly well-characterized in the hippocampus and serves as a major model for understanding how experiences modify neural circuits."
+  },
+  "usage": {
+    "ja": "論文では、海馬や大脳皮質のスライス標本に電気刺激を与え、シナプス後電位の増大や持続時間を測定することでLTPの誘導・維持を評価します。認知機能、加齢、疾患モデル、薬理学的介入などの研究で、シナプス可塑性の指標として頻繁に用いられます。",
+    "en": "In research papers, LTP is typically assessed by applying high-frequency electrical stimulation to brain slices (such as hippocampal or cortical preparations) and measuring the sustained increase in synaptic response amplitude. It is commonly used as an index of synaptic plasticity in studies examining cognitive function, aging, disease models, and pharmacological interventions."
+  },
+  "synonyms": {
+    "ja": "シナプス可塑性、長期記憶痕跡の形成などの関連用語があります。対になる現象として長期抑圧(LTD: long-term depression)があり、シナプス伝達効率が長期的に低下する現象を指します。LTPとLTDは双方向性の可塑性として研究されます。",
+    "en": "Related terms include synaptic plasticity and memory trace formation. The counterpart phenomenon is long-term depression (LTD), which refers to a persistent weakening of synaptic transmission. LTP and LTD together represent bidirectional synaptic plasticity mechanisms studied in neuroscience research."
+  },
+  "pubmedCount": 19777,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 837
+    },
+    {
+      "year": 2018,
+      "count": 785
+    },
+    {
+      "year": 2019,
+      "count": 704
+    },
+    {
+      "year": 2020,
+      "count": 669
+    },
+    {
+      "year": 2021,
+      "count": 751
+    },
+    {
+      "year": 2022,
+      "count": 605
+    },
+    {
+      "year": 2023,
+      "count": 627
+    },
+    {
+      "year": 2024,
+      "count": 595
+    },
+    {
+      "year": 2025,
+      "count": 638
+    },
+    {
+      "year": 2026,
+      "count": 536
+    }
+  ],
+  "searchQuery": "(\"Long-Term Potentiation\"[MeSH Terms]) OR (\"long-term potentiation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42832867",
+      "title": "A multifunctional memristor for neuromorphic vision and secure voice encryption.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858929",
+      "title": "The regulatory roles of the medial septum and hippocampus in spatial memory impairment of PTSD mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810313",
+      "title": "Pathway enrichment and network pharmacology identify convergent mechanisms of Renew® bioactive components across multiple physiological domains.",
+      "year": 2027
+    },
+    {
+      "pmid": "42471071",
+      "title": "Ginkgo biloba extract 50 alleviates memory and synaptic plasticity deficits by inhibiting neuroinflammation via the blockage of ATP-P2X7R axis in presenilin 1/2 conditional double knockout mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892491",
+      "title": "Cholinergic-dependent metaplasticity in the amygdala-insula pathway during incubation of cocaine craving.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:57:50.702Z"
+}

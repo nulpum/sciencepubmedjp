@@ -1,0 +1,96 @@
+{
+  "slug": "polypharmacy",
+  "ja": "多剤併用",
+  "yomi": "たざいへいよう",
+  "en": "polypharmacy",
+  "category": "nursing-pharma",
+  "aliases": [
+    "ポリファーマシー"
+  ],
+  "meshHeading": "Polypharmacy",
+  "meshUi": "68019338",
+  "description": {
+    "ja": "患者が同時に多数の薬剤を服用している状態を指す用語です。一般的には5剤以上の併用を指すことが多いですが、明確な定義は研究によって異なります。高齢者や複数の疾患を持つ患者で起こりやすく、薬物相互作用や副作用のリスク増加が懸念されます。",
+    "en": "A term referring to the concurrent use of multiple medications by a patient. It commonly indicates the use of five or more medications simultaneously, though the exact definition varies across studies. This condition is more prevalent in elderly patients and those with multiple comorbidities, raising concerns about drug interactions and increased adverse effects."
+  },
+  "usage": {
+    "ja": "高齢者医療や薬剤疫学の研究で、服用薬剤数の集計や有害事象との関連を調べる際に用いられます。処方データベースを用いて5剤以上、または10剤以上などの基準で分類し、転倒・入院・死亡率などのアウトカムとの関係を解析します。",
+    "en": "Used in geriatric medicine and pharmacoepidemiology research to examine the relationship between medication count and adverse outcomes. Studies typically categorize patients using thresholds such as 5 or more medications, or 10 or more, analyzing associations with outcomes like falls, hospitalization, and mortality using prescription databases."
+  },
+  "synonyms": {
+    "ja": "「多剤処方」「多剤投与」とも呼ばれます。「inappropriate polypharmacy(不適切な多剤併用)」は必要性の低い薬剤が含まれる場合を指し、単なる薬剤数の多さとは区別されます。検索時は「polypharmacy AND elderly」「medication burden」などが有用です。",
+    "en": "Also referred to as 'multiple medication use' or 'multidrug therapy.' 'Inappropriate polypharmacy' specifically denotes cases including medications with low clinical necessity, distinguished from mere high medication count. Useful search terms include 'polypharmacy AND elderly' and 'medication burden.'"
+  },
+  "pubmedCount": 19412,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 996
+    },
+    {
+      "year": 2018,
+      "count": 1017
+    },
+    {
+      "year": 2019,
+      "count": 1234
+    },
+    {
+      "year": 2020,
+      "count": 1354
+    },
+    {
+      "year": 2021,
+      "count": 1474
+    },
+    {
+      "year": 2022,
+      "count": 1441
+    },
+    {
+      "year": 2023,
+      "count": 1400
+    },
+    {
+      "year": 2024,
+      "count": 1491
+    },
+    {
+      "year": 2025,
+      "count": 1841
+    },
+    {
+      "year": 2026,
+      "count": 2222
+    }
+  ],
+  "searchQuery": "(\"Polypharmacy\"[MeSH Terms]) OR (\"polypharmacy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43045245",
+      "title": "Management of Type 2 Diabetes in Older Adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045242",
+      "title": "Menopause and Sexual Health in Older Adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045240",
+      "title": "Endocrine Disorders in Older Adults: Adrenal Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "43044606",
+      "title": "Care of Special Populations in Disasters.",
+      "year": 2027
+    },
+    {
+      "pmid": "42965051",
+      "title": "Sex- and age-specific trends in prescription medication use, 2005-2025: a nationwide repeated cross-sectional study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:32:41.320Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "habit-formation",
+  "ja": "習慣形成",
+  "yomi": "しゅうかんけいせい",
+  "en": "habit formation",
+  "category": "psychology",
+  "description": {
+    "ja": "繰り返しの行動が自動的・無意識的に実行されるようになる心理学的プロセスです。特定の状況や合図(cue)に対して、意識的な意思決定を経ずに行動が誘発される状態を指します。健康行動や依存症の研究で重要な概念とされています。",
+    "en": "A psychological process by which repeated behaviors become automatic and unconscious. It refers to a state where actions are triggered by specific situations or cues without conscious decision-making. This is a key concept in research on health behaviors and addiction."
+  },
+  "usage": {
+    "ja": "行動心理学の論文では、習慣強度を測定する質問紙(Self-Report Habit Index等)や、刺激-反応の自動性を評価する実験課題が用いられます。運動習慣、食習慣、服薬アドヒアランスなどの定着過程を分析する研究で頻繁に登場します。",
+    "en": "In behavioral psychology papers, questionnaires measuring habit strength (such as the Self-Report Habit Index) and experimental tasks assessing stimulus-response automaticity are commonly used. This term frequently appears in studies analyzing the establishment of exercise habits, dietary habits, and medication adherence."
+  },
+  "synonyms": {
+    "ja": "「習慣化」「習慣的行動」とも呼ばれます。類似概念として「自動処理(automatic processing)」がありますが、習慣形成は特に反復による学習過程を強調します。「行動変容(behavior change)」の一段階として位置づけられることもあります。",
+    "en": "Also referred to as 'habituation' or 'habitual behavior.' A related concept is 'automatic processing,' but habit formation specifically emphasizes the learning process through repetition. It is sometimes positioned as one stage of 'behavior change.'"
+  },
+  "pubmedCount": 1012,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 44
+    },
+    {
+      "year": 2018,
+      "count": 57
+    },
+    {
+      "year": 2019,
+      "count": 67
+    },
+    {
+      "year": 2020,
+      "count": 66
+    },
+    {
+      "year": 2021,
+      "count": 73
+    },
+    {
+      "year": 2022,
+      "count": 102
+    },
+    {
+      "year": 2023,
+      "count": 60
+    },
+    {
+      "year": 2024,
+      "count": 86
+    },
+    {
+      "year": 2025,
+      "count": 100
+    },
+    {
+      "year": 2026,
+      "count": 156
+    }
+  ],
+  "searchQuery": "\"habit formation\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42538475",
+      "title": "Testing key pathways of the multi-process action control framework: factors associated with exercise identity in people living with and beyond cancer.",
+      "year": 2026
+    },
+    {
+      "pmid": "43061686",
+      "title": "General Practice Registrar-Led Community Lifestyle Medicine Group Consultations in Primary Care: A Quality Improvement Feasibility Evaluation.",
+      "year": 2026
+    },
+    {
+      "pmid": "43020028",
+      "title": "Morphoelectric diversity and specialization of primate striatal neuron types.",
+      "year": 2026
+    },
+    {
+      "pmid": "43015113",
+      "title": "Capturing Habits in Humans: Neural Circuitry, Computations, and Clinical Mechanisms.",
+      "year": 2026
+    },
+    {
+      "pmid": "42998778",
+      "title": "When defense becomes compulsion: An evolutionary and circuit framework for obsessive-compulsive disorder.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:21:40.924Z"
+}

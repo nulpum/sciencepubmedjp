@@ -1,0 +1,93 @@
+{
+  "slug": "catheter-infection",
+  "ja": "カテーテル関連感染",
+  "yomi": "かてーてるかんれんかんせん",
+  "en": "catheter-associated infection",
+  "category": "nursing-pharma",
+  "meshHeading": "Catheter-Related Infections",
+  "meshUi": "68055499",
+  "description": {
+    "ja": "カテーテル関連感染とは、医療現場で使用される尿道カテーテル、中心静脈カテーテル、末梢静脈カテーテルなどの医療器具によって引き起こされる感染症の総称です。カテーテルが体内に留置されることで、細菌などの病原体が侵入・増殖する経路となり、尿路感染症や血流感染症などを引き起こします。医療関連感染(healthcare-associated infection)の中でも頻度が高く、予防対策が重要視されています。",
+    "en": "Catheter-associated infection refers to infections caused by medical devices such as urinary catheters, central venous catheters, and peripheral venous catheters used in healthcare settings. These devices provide a pathway for pathogens like bacteria to enter and multiply in the body, leading to urinary tract infections, bloodstream infections, and other complications. It is one of the most common types of healthcare-associated infections, making prevention strategies crucial."
+  },
+  "usage": {
+    "ja": "論文では「catheter-associated urinary tract infection (CAUTI)」や「catheter-related bloodstream infection (CRBSI)」など、カテーテルの種類と感染部位を特定した用語が使われます。感染率、発生頻度、予防介入の効果などが疫学研究や看護ケア研究で評価され、カテーテル留置日数あたりの感染発生率などの指標で測定されます。",
+    "en": "In research papers, specific terms such as 'catheter-associated urinary tract infection (CAUTI)' and 'catheter-related bloodstream infection (CRBSI)' are commonly used to identify the type of catheter and infection site. Infection rates, incidence, and effectiveness of preventive interventions are evaluated in epidemiological and nursing care studies, often measured as infection rates per catheter-days."
+  },
+  "synonyms": {
+    "ja": "「カテーテル由来感染」「カテーテル関連尿路感染症(CAUTI)」「カテーテル関連血流感染症(CRBSI)」などがあり、感染部位によって使い分けられます。「device-associated infection(医療器具関連感染)」はより広義の用語で、カテーテル以外の医療器具による感染も含みます。",
+    "en": "Related terms include 'catheter-related infection,' 'catheter-associated urinary tract infection (CAUTI),' and 'catheter-related bloodstream infection (CRBSI),' which are used depending on the infection site. 'Device-associated infection' is a broader term that encompasses infections caused by various medical devices beyond catheters."
+  },
+  "pubmedCount": 7739,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 573
+    },
+    {
+      "year": 2018,
+      "count": 583
+    },
+    {
+      "year": 2019,
+      "count": 580
+    },
+    {
+      "year": 2020,
+      "count": 496
+    },
+    {
+      "year": 2021,
+      "count": 423
+    },
+    {
+      "year": 2022,
+      "count": 369
+    },
+    {
+      "year": 2023,
+      "count": 363
+    },
+    {
+      "year": 2024,
+      "count": 483
+    },
+    {
+      "year": 2025,
+      "count": 515
+    },
+    {
+      "year": 2026,
+      "count": 387
+    }
+  ],
+  "searchQuery": "(\"Catheter-Related Infections\"[MeSH Terms]) OR (\"catheter-associated infection\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43048777",
+      "title": "Cost-consequence analysis of long peripheral catheters versus midline catheters: a post-hoc model-based analysis of published systematic review data.",
+      "year": 2026
+    },
+    {
+      "pmid": "42959349",
+      "title": "A stretchable liquid-metal bioelectric catheter for active management of catheter-associated urinary tract infections.",
+      "year": 2026
+    },
+    {
+      "pmid": "42933950",
+      "title": "Aligning Peripheral Intravenous Catheter Practices with the Vessel Health and Preservation Framework.",
+      "year": 2026
+    },
+    {
+      "pmid": "42768893",
+      "title": "An approach to treat refractory catheter-related infections in patients undergoing peritoneal dialysis: tunnel-reconstruction operation.",
+      "year": 2026
+    },
+    {
+      "pmid": "42721647",
+      "title": "Sarcopenia defined by Asian Working Group for Sarcopenia 2025 criteria is associated with postoperative infectious complications after esophagectomy for esophageal cancer.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:39:30.883Z"
+}

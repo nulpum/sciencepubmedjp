@@ -1,0 +1,93 @@
+{
+  "slug": "prosocial-behavior",
+  "ja": "向社会的行動",
+  "yomi": "こうしゃかいてきこうどう",
+  "en": "prosocial behavior",
+  "category": "psychology",
+  "meshHeading": "Altruism",
+  "meshUi": "68000533",
+  "description": {
+    "ja": "向社会的行動とは、他者や社会全体の利益になるような自発的な行動を指します。助ける、分け与える、協力する、慰めるといった行動が含まれ、心理学では利他性や共感性と関連する概念として研究されています。子どもの発達から成人の社会的認知まで幅広く調べられています。",
+    "en": "Prosocial behavior refers to voluntary actions intended to benefit others or society as a whole. It includes helping, sharing, cooperating, and comforting behaviors, and is studied in psychology as a concept related to altruism and empathy. Research spans from child development to adult social cognition."
+  },
+  "usage": {
+    "ja": "論文では実験的な課題(寄付行動、資源配分ゲーム、援助場面の観察)や質問紙を用いて測定されます。発達心理学では年齢による変化、社会心理学では共感性や道徳判断との関連、神経科学では脳活動との対応が調べられます。",
+    "en": "In research, prosocial behavior is measured through experimental tasks such as donation paradigms, resource allocation games, helping scenarios, and questionnaires. Developmental studies examine age-related changes, social psychology explores links with empathy and moral judgment, and neuroscience investigates associated brain activity."
+  },
+  "synonyms": {
+    "ja": "利他的行動(altruistic behavior)とほぼ同義ですが、向社会的行動はより広い概念で、必ずしも自己犠牲を伴わない協力行動も含みます。援助行動(helping behavior)は向社会的行動の一形態です。",
+    "en": "Prosocial behavior is closely related to altruistic behavior, but is broader and includes cooperative actions that do not necessarily involve self-sacrifice. Helping behavior is one form of prosocial behavior."
+  },
+  "pubmedCount": 11934,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 488
+    },
+    {
+      "year": 2018,
+      "count": 566
+    },
+    {
+      "year": 2019,
+      "count": 510
+    },
+    {
+      "year": 2020,
+      "count": 568
+    },
+    {
+      "year": 2021,
+      "count": 605
+    },
+    {
+      "year": 2022,
+      "count": 644
+    },
+    {
+      "year": 2023,
+      "count": 528
+    },
+    {
+      "year": 2024,
+      "count": 627
+    },
+    {
+      "year": 2025,
+      "count": 685
+    },
+    {
+      "year": 2026,
+      "count": 666
+    }
+  ],
+  "searchQuery": "(\"Altruism\"[MeSH Terms]) OR (\"prosocial behavior\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42985760",
+      "title": "The Development of Gender Stereotypes About Service.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946533",
+      "title": "Innovative humanitarian finance: examining the promises and realities of impact bonds in humanitarian and refugee response.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913826",
+      "title": "Lateral hypothalamic orexin→VTA projection regulates consolation via orexin receptor 1 in male mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42727163",
+      "title": "Emotion regulation and positive mental health in nursing students: Pre-post changes following an educational program.",
+      "year": 2027
+    },
+    {
+      "pmid": "42571767",
+      "title": "Collaboration fails to promote sharing behavior but both collaborative and parallel play boost friendship in young children aged 4 to 6.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:18:16.161Z"
+}

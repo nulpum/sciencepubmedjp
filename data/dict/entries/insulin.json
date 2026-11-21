@@ -1,0 +1,93 @@
+{
+  "slug": "insulin",
+  "ja": "インスリン",
+  "yomi": "いんすりん",
+  "en": "insulin",
+  "category": "biology",
+  "meshHeading": "Insulin",
+  "meshUi": "68007328",
+  "description": {
+    "ja": "膵臓のβ細胞から分泌されるホルモンで、血糖値を下げる働きを持ちます。食事後に血液中のブドウ糖を細胞内に取り込ませ、エネルギーとして利用したり貯蔵したりする役割を担っています。糖尿病の研究では中心的な測定対象となります。",
+    "en": "A hormone secreted by pancreatic β-cells that lowers blood glucose levels. It facilitates the uptake of glucose from the bloodstream into cells for energy use or storage after meals. Insulin is a central measurement target in diabetes research."
+  },
+  "usage": {
+    "ja": "論文では空腹時インスリン値、インスリン分泌能、インスリン抵抗性などが測定されます。血液検査で測定され、単位はμU/mLまたはpmol/Lで表記されることが多く、HOMA-IRなどの指標計算にも使われます。",
+    "en": "Studies measure fasting insulin levels, insulin secretion capacity, and insulin resistance. It is measured via blood tests, commonly expressed in μU/mL or pmol/L, and used in calculating indices such as HOMA-IR."
+  },
+  "synonyms": {
+    "ja": "インスリンホルモン、膵島ホルモンとも呼ばれます。「インスリン抵抗性」はインスリンが効きにくい状態、「インスリン感受性」は効きやすさを指し、逆の概念として使い分けられます。C-ペプチドは内因性インスリン分泌の指標です。",
+    "en": "Also referred to as insulin hormone or pancreatic islet hormone. 'Insulin resistance' indicates reduced insulin effectiveness, while 'insulin sensitivity' refers to responsiveness—opposite concepts. C-peptide serves as a marker of endogenous insulin secretion."
+  },
+  "pubmedCount": 500955,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 17026
+    },
+    {
+      "year": 2018,
+      "count": 17244
+    },
+    {
+      "year": 2019,
+      "count": 17058
+    },
+    {
+      "year": 2020,
+      "count": 18579
+    },
+    {
+      "year": 2021,
+      "count": 19171
+    },
+    {
+      "year": 2022,
+      "count": 18551
+    },
+    {
+      "year": 2023,
+      "count": 17190
+    },
+    {
+      "year": 2024,
+      "count": 17554
+    },
+    {
+      "year": 2025,
+      "count": 19810
+    },
+    {
+      "year": 2026,
+      "count": 18831
+    }
+  ],
+  "searchQuery": "(\"Insulin\"[MeSH Terms]) OR (\"insulin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42906522",
+      "title": "Programming hemostasis and healing via charge-density modulation in a thermo-responsive hydrogel.",
+      "year": 2027
+    },
+    {
+      "pmid": "42612897",
+      "title": "Comparative evaluation of traditional and novel biomarkers for pulmonary hypertension across clinical subtypes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42462872",
+      "title": "Association of the triglyceride-glucose index with tumor burden in newly diagnosed multiple myeloma: A retrospective cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874694",
+      "title": "Agriophyllum squarrosum oligosaccharides ameliorate inflammation and lipid accumulation in T2DM-induced MASLD via miR-155-regulated PPARγ signaling pathways.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800689",
+      "title": "Dendrobium polysaccharides as anti-diabetic agents: Hypoglycemic mechanisms, and structure-activity relationships.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:51:05.749Z"
+}

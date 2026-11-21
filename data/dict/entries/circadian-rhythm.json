@@ -1,0 +1,97 @@
+{
+  "slug": "circadian-rhythm",
+  "ja": "概日リズム",
+  "yomi": "がいじつりずむ",
+  "en": "circadian rhythm",
+  "category": "biology",
+  "aliases": [
+    "サーカディアンリズム",
+    "体内時計"
+  ],
+  "meshHeading": "Circadian Rhythm",
+  "meshUi": "68002940",
+  "description": {
+    "ja": "約24時間周期で変動する生体リズムのことで、睡眠・覚醒、体温、ホルモン分泌などが規則的に繰り返されます。光などの外部刺激によって調整され、脳の視交叉上核が中心的な役割を果たします。",
+    "en": "A biological rhythm that cycles approximately every 24 hours, regulating sleep-wake patterns, body temperature, hormone secretion, and other physiological processes. It is synchronized by external cues such as light and primarily controlled by the suprachiasmatic nucleus in the brain."
+  },
+  "usage": {
+    "ja": "論文では睡眠障害、時差ぼけ、交代勤務の健康影響などの研究で頻出し、メラトニン濃度や活動量計、睡眠ポリグラフなどで測定されます。遺伝子発現の日内変動解析にも用いられます。",
+    "en": "Commonly studied in research on sleep disorders, jet lag, shift work health effects, and measured using melatonin levels, actigraphy, polysomnography, and gene expression analysis across different times of day."
+  },
+  "synonyms": {
+    "ja": "体内時計、サーカディアンリズム、日周リズムとも呼ばれます。厳密には概日リズムは約24時間周期全般を指し、体内時計はそれを生み出す生体機構を意味しますが、実際にはほぼ同義で使われます。",
+    "en": "Also called circadian clock, diurnal rhythm, or biological clock. Technically, circadian rhythm refers to the approximately 24-hour cycle itself, while biological clock refers to the underlying mechanism, though these terms are often used interchangeably."
+  },
+  "pubmedCount": 94285,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2408
+    },
+    {
+      "year": 2018,
+      "count": 2407
+    },
+    {
+      "year": 2019,
+      "count": 2521
+    },
+    {
+      "year": 2020,
+      "count": 2705
+    },
+    {
+      "year": 2021,
+      "count": 2833
+    },
+    {
+      "year": 2022,
+      "count": 2763
+    },
+    {
+      "year": 2023,
+      "count": 2641
+    },
+    {
+      "year": 2024,
+      "count": 2896
+    },
+    {
+      "year": 2025,
+      "count": 3435
+    },
+    {
+      "year": 2026,
+      "count": 3405
+    }
+  ],
+  "searchQuery": "(\"Circadian Rhythm\"[MeSH Terms]) OR (\"circadian rhythm\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42604674",
+      "title": "Impact of renal impairment, hepatic function, and circadian rhythm on pre-treatment plasma uracil levels.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946180",
+      "title": "Total polyphenols from Hemerocallis citrina Baroni leaves improve sleep quality in mice with perimenopausal insomnia and are associated with altered expression of 5-HT(1A)R, ADCY5, PKA, and GABRA2.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892467",
+      "title": "Maternal piromelatine treatment is associated with attenuated behavioral alterations and sex-specific changes in hippocampal pCREB/BDNF signaling in adult offspring following prenatal constant-light exposure.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810524",
+      "title": "Integrative genetic analyses of circadian chronotype and autism highlight regional co-association at 17q21.31.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045443",
+      "title": "Sleep and Neurodegenerative Diseases: Understanding the Bidirectional Relationship.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:55:30.386Z"
+}

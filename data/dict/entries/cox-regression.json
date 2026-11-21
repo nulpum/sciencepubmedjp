@@ -1,0 +1,94 @@
+{
+  "slug": "cox-regression",
+  "ja": "Cox回帰",
+  "yomi": "こっくすかいき",
+  "en": "Cox proportional hazards regression",
+  "category": "research",
+  "aliases": [
+    "比例ハザードモデル"
+  ],
+  "description": {
+    "ja": "生存時間分析で用いられる統計手法で、イベント発生（死亡・再発など）までの時間と複数の要因との関係を評価します。年齢・性別・治療法などが生存率にどう影響するかを、時間経過を考慮しながら同時に分析できます。",
+    "en": "A statistical method used in survival analysis to evaluate the relationship between time-to-event (such as death or recurrence) and multiple factors. It allows simultaneous analysis of how variables like age, sex, or treatment affect survival rates while accounting for time progression."
+  },
+  "usage": {
+    "ja": "臨床研究や疫学研究で、ハザード比（HR）と95%信頼区間を算出し、特定の因子が予後に与える影響を評価します。多変量解析により、交絡因子を調整した独立した危険因子を特定する際に用いられます。",
+    "en": "Used in clinical and epidemiological studies to calculate hazard ratios (HR) with 95% confidence intervals, assessing the impact of specific factors on prognosis. Multivariate analysis identifies independent risk factors while adjusting for confounders."
+  },
+  "synonyms": {
+    "ja": "比例ハザードモデル、Coxモデルとも呼ばれます。ハザード比が時間によらず一定という「比例ハザード性の仮定」が前提で、この仮定が成立しない場合は層別化や時間依存共変量を用いた修正が必要です。",
+    "en": "Also called proportional hazards model or Cox model. It assumes proportional hazards (hazard ratio constant over time); when this assumption is violated, stratification or time-dependent covariates may be required."
+  },
+  "pubmedCount": 26960,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1367
+    },
+    {
+      "year": 2018,
+      "count": 1426
+    },
+    {
+      "year": 2019,
+      "count": 1660
+    },
+    {
+      "year": 2020,
+      "count": 1916
+    },
+    {
+      "year": 2021,
+      "count": 2184
+    },
+    {
+      "year": 2022,
+      "count": 2340
+    },
+    {
+      "year": 2023,
+      "count": 2201
+    },
+    {
+      "year": 2024,
+      "count": 2326
+    },
+    {
+      "year": 2025,
+      "count": 3090
+    },
+    {
+      "year": 2026,
+      "count": 3356
+    }
+  ],
+  "searchQuery": "\"Cox proportional hazards regression\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42920888",
+      "title": "Liver fibrosis risk, missed follow-up, and inequitable specialist referral in the All of Us Research Program: a retrospective cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887134",
+      "title": "Relative grip strength and incident cardiometabolic multimorbidity in middle-aged and older Chinese adults a prospective cohort study with mediation analysis of metabolic indicators.",
+      "year": 2027
+    },
+    {
+      "pmid": "42790260",
+      "title": "Trends in statin use and its association with mortality among older U.S. cancer survivors with and without coronary heart disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42629972",
+      "title": "Impact of Molecular Alterations on Survival in Biliary Tract Cancers: A Retrospective Belgian Cohort Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42419668",
+      "title": "NT-IGFBP-4: A novel biomarker for risk prediction in acute heart failure.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:40:39.667Z"
+}

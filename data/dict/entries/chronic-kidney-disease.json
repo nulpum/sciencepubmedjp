@@ -1,0 +1,94 @@
+{
+  "slug": "chronic-kidney-disease",
+  "ja": "慢性腎臓病",
+  "yomi": "まんせいじんぞうびょう",
+  "en": "chronic kidney disease",
+  "abbr": "CKD",
+  "category": "nursing-pharma",
+  "meshHeading": "Renal Insufficiency, Chronic",
+  "meshUi": "68051436",
+  "description": {
+    "ja": "腎臓の機能が慢性的に低下している状態を指す包括的な概念です。糸球体濾過量(GFR)の低下や尿中のタンパク質排泄異常が3か月以上持続する場合に診断されます。進行すると透析や腎移植が必要となることがあり、心血管疾患のリスクも高まることが知られています。",
+    "en": "A broad term referring to chronic impairment of kidney function, diagnosed when decreased glomerular filtration rate (GFR) or abnormal urinary protein excretion persists for three months or more. Progressive CKD may require dialysis or kidney transplantation, and is associated with increased cardiovascular disease risk."
+  },
+  "usage": {
+    "ja": "疫学研究では有病率や危険因子の特定に用いられ、臨床試験では腎機能マーカー(血清クレアチニン、eGFR、尿中アルブミン等)を測定して病期分類や進行度を評価します。介入研究では食事療法、薬物療法、生活習慣改善などの効果を検討する際の主要アウトカムとなります。",
+    "en": "In epidemiological studies, CKD is used to identify prevalence and risk factors. Clinical trials measure kidney function markers (serum creatinine, eGFR, urinary albumin) to classify disease stages and assess progression. It serves as a primary outcome in interventional studies examining dietary modifications, pharmacotherapy, and lifestyle changes."
+  },
+  "synonyms": {
+    "ja": "慢性腎不全、慢性腎疾患とも呼ばれますが、現在はCKDという包括的な用語が標準的です。病期はステージ1から5に分類され、ステージ5は末期腎不全(ESRD: end-stage renal disease)と呼ばれます。検索時は「CKD」「chronic renal disease」「chronic renal failure」なども関連語として有用です。",
+    "en": "Also referred to as chronic renal disease or chronic renal failure, though CKD is now the standard inclusive term. The condition is classified into stages 1-5, with stage 5 called end-stage renal disease (ESRD). Useful search terms include 'chronic renal disease,' 'chronic renal insufficiency,' and 'chronic kidney failure.'"
+  },
+  "pubmedCount": 207663,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8647
+    },
+    {
+      "year": 2018,
+      "count": 8819
+    },
+    {
+      "year": 2019,
+      "count": 9303
+    },
+    {
+      "year": 2020,
+      "count": 10520
+    },
+    {
+      "year": 2021,
+      "count": 11567
+    },
+    {
+      "year": 2022,
+      "count": 10871
+    },
+    {
+      "year": 2023,
+      "count": 10657
+    },
+    {
+      "year": 2024,
+      "count": 11574
+    },
+    {
+      "year": 2025,
+      "count": 13259
+    },
+    {
+      "year": 2026,
+      "count": 12813
+    }
+  ],
+  "searchQuery": "(\"Renal Insufficiency, Chronic\"[MeSH Terms]) OR (\"chronic kidney disease\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43062408",
+      "title": "Skeletal phenotype in patients with diabetes and chronic kidney disease: the sweeter it is, the slower it goes.",
+      "year": 2028
+    },
+    {
+      "pmid": "43062407",
+      "title": "Diabetes does not inherently imply adynamic bone in chronic kidney disease.",
+      "year": 2028
+    },
+    {
+      "pmid": "42959456",
+      "title": "A topologically engineered hydrogel platform targeting IL11 promotes renal repair after partial nephrectomy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42679883",
+      "title": "Electrochemical immunosensors for KIM-1 and NGAL: recent advances toward early and point-of-care diagnosis of acute kidney injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "42594981",
+      "title": "Comprehensive review of chronic kidney disease molecular biomarkers: Clinical significance, human health impact, and emerging diagnostic strategies.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:45:19.143Z"
+}

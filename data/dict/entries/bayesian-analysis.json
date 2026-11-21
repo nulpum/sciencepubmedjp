@@ -1,0 +1,93 @@
+{
+  "slug": "bayesian-analysis",
+  "ja": "ベイズ分析",
+  "yomi": "べいずぶんせき",
+  "en": "Bayesian analysis",
+  "category": "research",
+  "meshHeading": "Bayes Theorem",
+  "meshUi": "68001499",
+  "description": {
+    "ja": "ベイズ分析とは、事前に持っている知識や情報(事前分布)と新しく得られたデータ(尤度)を組み合わせて、より精度の高い結論(事後分布)を導き出す統計手法です。従来の頻度論的統計とは異なり、確率を「信念の度合い」として扱い、データが増えるごとに推定を更新していく特徴があります。医学研究では、過去の臨床試験の知見を活用したり、少数例の研究で柔軟な推論を行う際に利用されます。",
+    "en": "Bayesian analysis is a statistical method that combines prior knowledge or beliefs (prior distribution) with newly observed data (likelihood) to produce more refined conclusions (posterior distribution). Unlike frequentist statistics, it treats probability as a 'degree of belief' and updates estimates as more data become available. In medical research, it is used to incorporate findings from previous clinical trials or to perform flexible inference with small sample sizes."
+  },
+  "usage": {
+    "ja": "論文では「Bayesian hierarchical model」「事前分布の設定」「事後確率」「credible interval(信用区間)」などの表現とともに用いられます。メタアナリシスや臨床試験のデザイン、診断精度研究、薬剤反応の個別化予測などで応用され、ソフトウェアとしてはSTANやWinBUGS、JAGSなどが使用されます。",
+    "en": "In papers, it appears with terms such as 'Bayesian hierarchical model,' 'prior distribution specification,' 'posterior probability,' and 'credible interval.' It is applied in meta-analyses, clinical trial designs, diagnostic accuracy studies, and personalized drug response predictions, commonly using software like STAN, WinBUGS, or JAGS."
+  },
+  "synonyms": {
+    "ja": "「ベイズ推定」「ベイズ統計学」とほぼ同義で使われます。頻度論的アプローチ(frequentist approach)と対比され、事前情報の活用や確率解釈の違いに注意が必要です。ベイジアンネットワーク(Bayesian network)は因果関係のモデル化手法として別概念ですが、同じ確率論的基盤を持ちます。",
+    "en": "Often used interchangeably with 'Bayesian inference' or 'Bayesian statistics.' It is contrasted with the frequentist approach, with key differences in the use of prior information and probability interpretation. Bayesian networks, which model causal relationships, are a distinct concept but share the same probabilistic foundation."
+  },
+  "pubmedCount": 65348,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3076
+    },
+    {
+      "year": 2018,
+      "count": 3092
+    },
+    {
+      "year": 2019,
+      "count": 3329
+    },
+    {
+      "year": 2020,
+      "count": 4181
+    },
+    {
+      "year": 2021,
+      "count": 4990
+    },
+    {
+      "year": 2022,
+      "count": 5899
+    },
+    {
+      "year": 2023,
+      "count": 5468
+    },
+    {
+      "year": 2024,
+      "count": 4669
+    },
+    {
+      "year": 2025,
+      "count": 4712
+    },
+    {
+      "year": 2026,
+      "count": 4345
+    }
+  ],
+  "searchQuery": "(\"Bayes Theorem\"[MeSH Terms]) OR (\"Bayesian analysis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42976586",
+      "title": "Bayesian nonparametric survival analysis via deep Dirichlet process.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976585",
+      "title": "Distributed variational bayesian meta-learning over multi-agent systems.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956681",
+      "title": "Transient gait instability during the initial phase of the 6-minute walk test in people with stroke: A nonlinear analysis using inertial measurement units.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849131",
+      "title": "Uncertainty quantification for trustworthy deep learning: Methods and measures.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887266",
+      "title": "A Bayesian two-component mixture model for predicting low and high coagulase-positive staphylococci contamination levels in raw milk.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:46:14.866Z"
+}

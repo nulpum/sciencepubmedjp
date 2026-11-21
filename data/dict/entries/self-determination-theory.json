@@ -1,0 +1,92 @@
+{
+  "slug": "self-determination-theory",
+  "ja": "自己決定理論",
+  "yomi": "じこけっていりろん",
+  "en": "self-determination theory",
+  "abbr": "SDT",
+  "category": "psychology",
+  "description": {
+    "ja": "自己決定理論(SDT)は、人間の動機づけと心理的成長を説明する理論で、自律性・有能感・関係性という3つの基本的心理欲求が満たされることで内発的動機が高まるとします。医学・健康行動研究では、患者の治療継続や健康的なライフスタイル変容を予測する枠組みとして用いられます。",
+    "en": "Self-Determination Theory (SDT) is a framework explaining human motivation and psychological growth, proposing that intrinsic motivation increases when three basic psychological needs—autonomy, competence, and relatedness—are satisfied. In medical and health behavior research, it is used to predict patient adherence and sustainable lifestyle changes."
+  },
+  "usage": {
+    "ja": "医療場面では患者の服薬アドヒアランス、運動継続、食事改善などの行動変容を分析する際に用いられ、質問票で3つの欲求充足度や動機づけタイプ(内発的・外発的)を測定します。介入研究では自律性支援的なコミュニケーションの効果検証にも使われます。",
+    "en": "In medical settings, SDT is applied to analyze behavioral changes such as medication adherence, exercise maintenance, and dietary improvement, using questionnaires to measure the satisfaction of three needs and types of motivation (intrinsic vs. extrinsic). Intervention studies also test the effectiveness of autonomy-supportive communication."
+  },
+  "synonyms": {
+    "ja": "単に「SDT」と略されることが多く、関連概念として「内発的動機づけ(intrinsic motivation)」「自律性支援(autonomy support)」があります。行動変容理論の中でもトランスセオレティカルモデルや社会的認知理論と並んでよく引用されます。",
+    "en": "Often abbreviated as 'SDT,' related concepts include 'intrinsic motivation' and 'autonomy support.' Among behavior change theories, it is frequently cited alongside the Transtheoretical Model and Social Cognitive Theory."
+  },
+  "pubmedCount": 4787,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 228
+    },
+    {
+      "year": 2018,
+      "count": 255
+    },
+    {
+      "year": 2019,
+      "count": 330
+    },
+    {
+      "year": 2020,
+      "count": 370
+    },
+    {
+      "year": 2021,
+      "count": 432
+    },
+    {
+      "year": 2022,
+      "count": 498
+    },
+    {
+      "year": 2023,
+      "count": 428
+    },
+    {
+      "year": 2024,
+      "count": 442
+    },
+    {
+      "year": 2025,
+      "count": 647
+    },
+    {
+      "year": 2026,
+      "count": 926
+    }
+  ],
+  "searchQuery": "\"self-determination theory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43041199",
+      "title": "Association of Parenting Styles and Parental Involvement with the Mental Health of Adolescents with Type 1 Diabetes: A Scoping Review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42759433",
+      "title": "Psychological needs and collective capabilities in interprofessional education: A sequential mediation of healthcare students' interprofessional learning readiness.",
+      "year": 2027
+    },
+    {
+      "pmid": "42664900",
+      "title": "A strengths-based resilience intervention for first-year nursing students: A mixed-methods quasi-experimental evaluation of short-term outcomes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42573602",
+      "title": "A quasi-experimental crossover study on student engagement and performance in a gamified team-based learning module in physiology.",
+      "year": 2026
+    },
+    {
+      "pmid": "42171999",
+      "title": "Measuring AI literacy in medical students: scale development and validation within a self-determination theory framework.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:20:44.249Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "eating-disorder",
+  "ja": "摂食障害",
+  "yomi": "せっしょくしょうがい",
+  "en": "eating disorder",
+  "category": "psychology",
+  "meshHeading": "Feeding and Eating Disorders",
+  "meshUi": "68001068",
+  "description": {
+    "ja": "摂食行動や体重・体型に関する認知の異常を特徴とする精神疾患の総称です。神経性やせ症 (anorexia nervosa)、神経性過食症 (bulimia nervosa)、過食性障害 (binge eating disorder) などが含まれます。心理的要因、生物学的要因、社会文化的要因が複雑に関与すると考えられています。",
+    "en": "A group of mental disorders characterized by abnormal eating behaviors and distorted cognition related to weight and body shape. It includes anorexia nervosa, bulimia nervosa, and binge eating disorder. Psychological, biological, and sociocultural factors are considered to be complexly involved."
+  },
+  "usage": {
+    "ja": "心理学や精神医学の論文では、診断基準 (DSM-5やICD-11)、発症率、心理的リスク因子 (完璧主義、身体不満など)、認知行動療法などの介入効果を検討する文脈で用いられます。質問紙 (EAT-26、EDI など) や臨床面接による評価が一般的です。",
+    "en": "In psychology and psychiatry papers, the term is used in contexts examining diagnostic criteria (DSM-5, ICD-11), prevalence, psychological risk factors (perfectionism, body dissatisfaction), and intervention effects such as cognitive behavioral therapy. Assessment typically involves questionnaires (EAT-26, EDI) or clinical interviews."
+  },
+  "synonyms": {
+    "ja": "摂食障害群、食行動障害とも呼ばれます。各下位分類 (神経性やせ症、神経性過食症など) は固有の診断名として扱われ、症状パターンや重症度により使い分けられます。論文検索では eating disorders (複数形) も広く使用されます。",
+    "en": "Also referred to as feeding and eating disorders. Each subtype (anorexia nervosa, bulimia nervosa, etc.) is treated as a distinct diagnostic entity and differentiated based on symptom patterns and severity. The plural form eating disorders is widely used in literature searches."
+  },
+  "pubmedCount": 47485,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1868
+    },
+    {
+      "year": 2018,
+      "count": 1880
+    },
+    {
+      "year": 2019,
+      "count": 2032
+    },
+    {
+      "year": 2020,
+      "count": 2285
+    },
+    {
+      "year": 2021,
+      "count": 2597
+    },
+    {
+      "year": 2022,
+      "count": 2432
+    },
+    {
+      "year": 2023,
+      "count": 2302
+    },
+    {
+      "year": 2024,
+      "count": 2350
+    },
+    {
+      "year": 2025,
+      "count": 2743
+    },
+    {
+      "year": 2026,
+      "count": 2361
+    }
+  ],
+  "searchQuery": "(\"Feeding and Eating Disorders\"[MeSH Terms]) OR (\"eating disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43051736",
+      "title": "Antipsychotic Use in Eating Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948641",
+      "title": "The gut-brain axis in Binge Eating Disorder: From microbial dysbiosis to vagal dysfunction and therapeutic intervention.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838416",
+      "title": "Effects of metabotropic 2/3-glutamate receptor agonism and antagonism on activity-based anorexia model in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833409",
+      "title": "Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833098",
+      "title": "Resting-state functional connectivity in adolescents with binge eating disorder: An exploratory null study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:14:21.238Z"
+}

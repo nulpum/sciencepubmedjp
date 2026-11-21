@@ -1,0 +1,94 @@
+{
+  "slug": "area-under-curve",
+  "ja": "曲線下面積",
+  "yomi": "きょくせんかめんせき",
+  "en": "area under the curve",
+  "abbr": "AUC",
+  "category": "research",
+  "meshHeading": "Area Under Curve",
+  "meshUi": "68019540",
+  "description": {
+    "ja": "グラフで曲線と横軸に囲まれた領域の面積を表す統計指標です。薬物動態では血中濃度の時間変化を積分した値として薬物曝露量を示し、診断検査では ROC 曲線下の面積として検査の総合的な精度を 0 から 1 の範囲で評価します。分野によって意味が異なるため文脈の確認が重要です。",
+    "en": "A statistical measure representing the area enclosed by a curve and the horizontal axis on a graph. In pharmacokinetics, it quantifies drug exposure by integrating blood concentration over time, while in diagnostic testing, it evaluates overall test accuracy as the area under the ROC curve, ranging from 0 to 1. The meaning varies by context, requiring careful interpretation."
+  },
+  "usage": {
+    "ja": "薬物動態研究では「AUC0-24h」のように時間範囲を明記して投与量設計の指標とし、診断精度研究では「AUC = 0.85」のように ROC 曲線の識別能力を示します。薬理学では台形公式などで算出され、機械学習では感度と特異度の総合評価に用いられます。",
+    "en": "In pharmacokinetic studies, it is specified with time ranges such as 'AUC0-24h' for dose optimization, while in diagnostic accuracy research, it is reported as 'AUC = 0.85' to indicate ROC curve discrimination ability. Calculated using methods like the trapezoidal rule in pharmacology, and used for comprehensive sensitivity-specificity evaluation in machine learning."
+  },
+  "synonyms": {
+    "ja": "薬物動態では「薬物曝露量」「血中濃度時間曲線下面積」と呼ばれ、診断研究では「AUROC (area under the receiver operating characteristic curve)」「C統計量」とほぼ同義です。略語 AUC は文脈で意味が変わるため、論文の Methods セクションで定義を確認する必要があります。",
+    "en": "In pharmacokinetics, also called 'drug exposure' or 'area under the concentration-time curve,' while in diagnostic research, nearly synonymous with 'AUROC (area under the receiver operating characteristic curve)' or 'C-statistic.' Since the abbreviation AUC has context-dependent meanings, checking the definition in the Methods section is essential."
+  },
+  "pubmedCount": 153892,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 7002
+    },
+    {
+      "year": 2018,
+      "count": 7219
+    },
+    {
+      "year": 2019,
+      "count": 7972
+    },
+    {
+      "year": 2020,
+      "count": 9618
+    },
+    {
+      "year": 2021,
+      "count": 11181
+    },
+    {
+      "year": 2022,
+      "count": 11151
+    },
+    {
+      "year": 2023,
+      "count": 11126
+    },
+    {
+      "year": 2024,
+      "count": 13180
+    },
+    {
+      "year": 2025,
+      "count": 16499
+    },
+    {
+      "year": 2026,
+      "count": 16234
+    }
+  ],
+  "searchQuery": "(\"Area Under Curve\"[MeSH Terms]) OR (\"area under the curve\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42440754",
+      "title": "Risk Stratification for Rebleeding in Obscure Gastrointestinal Bleeding After Comprehensive Gastrointestinal Evaluation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933160",
+      "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
+      "year": 2027
+    },
+    {
+      "pmid": "42868808",
+      "title": "Multifunctional nanoflower-assisted catalytic hairpin assembly enables extracellular vesicles derived-microRNAs profiling for colorectal cancer diagnosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42668129",
+      "title": "Analytical validation and clinical performance of a chemiluminescence immunoassay panel for plasma biomarkers in Alzheimer's disease: a preliminary study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42468728",
+      "title": "A novel urinary metabolic signature for the non-invasive screening of lupus nephritis in systemic lupus erythematosus.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:39:06.860Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "pharmacokinetics",
+  "ja": "薬物動態学",
+  "yomi": "やくぶつどうたいがく",
+  "en": "pharmacokinetics",
+  "abbr": "PK",
+  "category": "nursing-pharma",
+  "meshHeading": "pharmacokinetics",
+  "meshUi": "81000493",
+  "description": {
+    "ja": "薬物動態学 (PK) は、体内に投与された薬物が吸収・分布・代謝・排泄される過程を定量的に研究する学問分野です。血中濃度の時間推移や半減期などを解析し、適切な投与量や投与間隔を決定するための科学的根拠を提供します。薬の体内での「動き」を数理モデルで表現し、個別化医療や新薬開発に不可欠な情報をもたらします。",
+    "en": "Pharmacokinetics (PK) is the scientific discipline that quantitatively studies the processes of absorption, distribution, metabolism, and excretion (ADME) of drugs in the body. It analyzes time-course changes in blood concentrations and parameters like half-life to provide evidence for determining appropriate dosing regimens. By mathematically modeling drug movement in the body, PK supplies essential information for personalized medicine and drug development."
+  },
+  "usage": {
+    "ja": "論文では「PK解析」「薬物動態パラメータ」として、最高血中濃度 (Cmax)、曲線下面積 (AUC)、消失半減期 (t1/2)、クリアランス (CL) などの指標が報告されます。臨床試験では採血スケジュールと測定法が詳述され、薬物相互作用や特定集団 (腎機能低下者・高齢者など) での動態変化が検討されます。",
+    "en": "In papers, PK analysis reports parameters such as maximum concentration (Cmax), area under the curve (AUC), elimination half-life (t1/2), and clearance (CL). Clinical trials detail blood sampling schedules and assay methods, examining drug interactions and kinetic changes in specific populations (e.g., renal impairment, elderly)."
+  },
+  "synonyms": {
+    "ja": "「薬動学」とも略されます。対となる概念は薬力学 (pharmacodynamics, PD) で、こちらは薬物が体に及ぼす作用を扱います。PK/PD解析は両者を統合した評価手法です。ADMEは薬物動態の4要素 (吸収・分布・代謝・排泄) の頭文字です。",
+    "en": "Often abbreviated as PK. The complementary concept is pharmacodynamics (PD), which studies drug effects on the body. PK/PD analysis integrates both disciplines. ADME stands for the four key processes: absorption, distribution, metabolism, and excretion."
+  },
+  "pubmedCount": 460372,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 16363
+    },
+    {
+      "year": 2018,
+      "count": 16402
+    },
+    {
+      "year": 2019,
+      "count": 16659
+    },
+    {
+      "year": 2020,
+      "count": 16481
+    },
+    {
+      "year": 2021,
+      "count": 15113
+    },
+    {
+      "year": 2022,
+      "count": 11594
+    },
+    {
+      "year": 2023,
+      "count": 10531
+    },
+    {
+      "year": 2024,
+      "count": 13599
+    },
+    {
+      "year": 2025,
+      "count": 16096
+    },
+    {
+      "year": 2026,
+      "count": 14097
+    }
+  ],
+  "searchQuery": "(\"pharmacokinetics\"[MeSH Terms]) OR (\"pharmacokinetics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42936124",
+      "title": "A modular in vitro multienzyme cascade for the sustainable synthesis of high-value vidarabine 5'-monophosphate from adenosine.",
+      "year": 2027
+    },
+    {
+      "pmid": "43002814",
+      "title": "Engineering a PEG/Co-modified carbon paste electrode for highly sensitive voltammetric determination of ophthalmic antihistamine epinastine: From pharmaceutical analysis to ocular pharmacokinetics.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860119",
+      "title": "Inflammation-anchored injectable hydrogel integrating pathological nitric oxide scavenging and on-demand drug release for localized inflammatory bowel disease therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42822344",
+      "title": "Fluoropharmacology: intrinsic AIE antibiotics as theranostic photosensitizers against resistance and systemic toxicity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42780481",
+      "title": "Dynamics modelling and control strategies of malaria transmission interruption by antimalarial-treated nets.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:33:19.670Z"
+}

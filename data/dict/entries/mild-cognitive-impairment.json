@@ -1,0 +1,94 @@
+{
+  "slug": "mild-cognitive-impairment",
+  "ja": "軽度認知障害",
+  "yomi": "けいどにんちしょうがい",
+  "en": "mild cognitive impairment",
+  "abbr": "MCI",
+  "category": "nursing-pharma",
+  "meshHeading": "Cognitive Dysfunction",
+  "meshUi": "68060825",
+  "description": {
+    "ja": "正常な加齢による変化と認知症の中間段階で、記憶力や思考力に軽い低下が見られるものの、日常生活は概ね自立して送れる状態を指します。すべてが認知症に進行するわけではありませんが、経過観察が重要とされています。",
+    "en": "An intermediate stage between normal age-related cognitive changes and dementia, characterized by mild decline in memory or thinking skills while maintaining independence in daily activities. Not all cases progress to dementia, but monitoring is considered important."
+  },
+  "usage": {
+    "ja": "論文では認知機能検査(MMSE、MoCAなど)のスコアと日常生活動作(ADL)評価を組み合わせて診断基準を記述し、縦断研究で認知症への進行率や介入効果を調べる際に用いられます。",
+    "en": "In research, it is defined using cognitive test scores (MMSE, MoCA, etc.) combined with activities of daily living (ADL) assessments, and used in longitudinal studies examining progression rates to dementia or intervention effects."
+  },
+  "synonyms": {
+    "ja": "「軽度認知機能障害」とも呼ばれ、amnestic MCI(記憶障害型)とnon-amnestic MCI(非記憶障害型)に分類されることがあります。認知症(dementia)や正常加齢(normal aging)との鑑別が論文の重要テーマです。",
+    "en": "Also called 'mild cognitive dysfunction,' it may be classified into amnestic MCI and non-amnestic MCI subtypes. Distinguishing MCI from dementia and normal aging is a key theme in research literature."
+  },
+  "pubmedCount": 75380,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4773
+    },
+    {
+      "year": 2018,
+      "count": 5393
+    },
+    {
+      "year": 2019,
+      "count": 6556
+    },
+    {
+      "year": 2020,
+      "count": 7114
+    },
+    {
+      "year": 2021,
+      "count": 7360
+    },
+    {
+      "year": 2022,
+      "count": 7002
+    },
+    {
+      "year": 2023,
+      "count": 7314
+    },
+    {
+      "year": 2024,
+      "count": 8652
+    },
+    {
+      "year": 2025,
+      "count": 9986
+    },
+    {
+      "year": 2026,
+      "count": 7867
+    }
+  ],
+  "searchQuery": "(\"Cognitive Dysfunction\"[MeSH Terms]) OR (\"mild cognitive impairment\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42887235",
+      "title": "A tunable brain-targeted PEGylated ginsenoside Rg1 derivative disrupts the ROS-mediated inflammasome-pyroptosis cascade to ameliorate Alzheimer's cognitive deficits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42668129",
+      "title": "Analytical validation and clinical performance of a chemiluminescence immunoassay panel for plasma biomarkers in Alzheimer's disease: a preliminary study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42981748",
+      "title": "ZeXieYin formula attenuates trimethylamine N-oxide- induced atherosclerosis and cognitive impairment by regulating microglial-neuronal signaling and autophagy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42950904",
+      "title": "Dihydrocaffeic acid alleviates APOE4-associated astrocyte dysfunction and cognitive impairment via LRP1/p38 MAPK signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863728",
+      "title": "Si-shen-san attenuates Alzheimer's disease pathology and cognitive deficits through multi-target regulation of astrocyte function and synaptic plasticity.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:44:43.689Z"
+}

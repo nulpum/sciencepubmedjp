@@ -1,0 +1,93 @@
+{
+  "slug": "equivalence-trial",
+  "ja": "同等性試験",
+  "yomi": "どうとうせいしけん",
+  "en": "equivalence trial",
+  "category": "research",
+  "meshHeading": "Equivalence Trial",
+  "meshUi": "2023172",
+  "description": {
+    "ja": "2つの治療法や製品の効果が統計的に同等であることを示すために行われる臨床試験です。新薬と既存薬、ジェネリック医薬品と先発医薬品などの比較で用いられ、「差がない」ことを積極的に証明する点が特徴です。",
+    "en": "A clinical trial designed to demonstrate that two treatments or products are statistically equivalent in their effects. Commonly used to compare new drugs with existing ones or generic medicines with brand-name drugs, it actively proves 'no difference' exists between them."
+  },
+  "usage": {
+    "ja": "論文では「equivalence margin (同等性マージン)」という許容範囲を事前に設定し、両群の差がその範囲内に収まることを統計的に検証します。信頼区間が同等性マージンの範囲内に完全に含まれることで同等性が示されます。",
+    "en": "Studies predefine an 'equivalence margin' as an acceptable range and statistically verify that the difference between groups falls within it. Equivalence is demonstrated when the confidence interval is entirely contained within the equivalence margin."
+  },
+  "synonyms": {
+    "ja": "非劣性試験 (non-inferiority trial) は「劣っていない」ことを示す試験で、同等性試験とは目的が異なります。優越性試験 (superiority trial) は「優れている」ことを示す従来型の試験です。",
+    "en": "Non-inferiority trials demonstrate 'not worse than' and differ in purpose from equivalence trials. Superiority trials are conventional studies that show 'better than' outcomes."
+  },
+  "pubmedCount": 488,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30
+    },
+    {
+      "year": 2018,
+      "count": 30
+    },
+    {
+      "year": 2019,
+      "count": 32
+    },
+    {
+      "year": 2020,
+      "count": 29
+    },
+    {
+      "year": 2021,
+      "count": 27
+    },
+    {
+      "year": 2022,
+      "count": 24
+    },
+    {
+      "year": 2023,
+      "count": 21
+    },
+    {
+      "year": 2024,
+      "count": 35
+    },
+    {
+      "year": 2025,
+      "count": 30
+    },
+    {
+      "year": 2026,
+      "count": 38
+    }
+  ],
+  "searchQuery": "(\"Equivalence Trial\"[MeSH Terms]) OR (\"equivalence trial\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42874833",
+      "title": "Recombinant human follicle-stimulating hormone injection versus Gonal-f® in controlled ovarian stimulation for assisted reproductive technology: A multicenter, randomized, assessor-blind, active-controlled phase III trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42548132",
+      "title": "Intravenous lidocaine does not provide additional pain reduction beyond placebo in probable nociplastic chronic low back pain: a randomized controlled equivalence trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42435885",
+      "title": "Enhanced recovery after distal radius fracture surgery using combined short- and long-acting nerve blocks: A randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42956084",
+      "title": "Immunogenicity and safety of Institut Pasteur du Cambodge (IPC) and updated Thai Red Cross (UTRC) intradermal rabies vaccine regimens among healthy adults in India: A phase 4, open label, equivalence randomised controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42925863",
+      "title": "Growth performance equivalence of three commercial PCV2 vaccination strategies under shared natural exposure: A randomized, blinded field trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:49:37.599Z"
+}

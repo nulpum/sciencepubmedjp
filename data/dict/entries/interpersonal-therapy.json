@@ -1,0 +1,94 @@
+{
+  "slug": "interpersonal-therapy",
+  "ja": "対人関係療法",
+  "yomi": "たいじんかんけいりょうほう",
+  "en": "interpersonal psychotherapy",
+  "abbr": "IPT",
+  "category": "psychology",
+  "meshHeading": "Interpersonal Psychotherapy",
+  "meshUi": "2030828",
+  "description": {
+    "ja": "対人関係療法(IPT)は、うつ病や不安障害などの精神疾患に対して、現在の対人関係上の問題に焦点を当てる短期間の構造化された心理療法です。薬物療法と並んで研究が進められている治療法のひとつで、12-16週間程度のセッションで対人関係のパターンやコミュニケーションの改善を目指します。",
+    "en": "Interpersonal psychotherapy (IPT) is a time-limited, structured psychotherapy that focuses on current interpersonal issues in mental health conditions such as depression and anxiety disorders. It is one of the therapeutic approaches studied alongside pharmacotherapy, typically consisting of 12-16 sessions aimed at improving interpersonal patterns and communication skills."
+  },
+  "usage": {
+    "ja": "うつ病や摂食障害、双極性障害などの精神疾患を対象とした介入研究で用いられます。ランダム化比較試験では認知行動療法や薬物療法との有効性比較が行われ、HAM-DやBDIなどの抑うつ尺度、対人関係機能の評価尺度を用いて効果が測定されます。",
+    "en": "IPT is used in intervention studies for mental health conditions including depression, eating disorders, and bipolar disorder. In randomized controlled trials, its efficacy is compared with cognitive behavioral therapy or pharmacotherapy, and outcomes are measured using depression scales such as HAM-D and BDI, as well as interpersonal functioning assessments."
+  },
+  "synonyms": {
+    "ja": "対人関係精神療法とも呼ばれます。認知行動療法(CBT)、精神力動的精神療法、支持的精神療法などと並ぶエビデンスに基づく心理療法のひとつとして位置づけられます。IPTには青少年向けのIPT-AやPTSD向けのIPT for PTSDなど派生版も存在します。",
+    "en": "Also referred to as interpersonal therapy. It is positioned as one of the evidence-based psychotherapies alongside cognitive behavioral therapy (CBT), psychodynamic psychotherapy, and supportive psychotherapy. Adaptations include IPT for adolescents (IPT-A) and IPT for PTSD."
+  },
+  "pubmedCount": 1232,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 52
+    },
+    {
+      "year": 2018,
+      "count": 49
+    },
+    {
+      "year": 2019,
+      "count": 61
+    },
+    {
+      "year": 2020,
+      "count": 75
+    },
+    {
+      "year": 2021,
+      "count": 73
+    },
+    {
+      "year": 2022,
+      "count": 57
+    },
+    {
+      "year": 2023,
+      "count": 54
+    },
+    {
+      "year": 2024,
+      "count": 64
+    },
+    {
+      "year": 2025,
+      "count": 64
+    },
+    {
+      "year": 2026,
+      "count": 65
+    }
+  ],
+  "searchQuery": "(\"Interpersonal Psychotherapy\"[MeSH Terms]) OR (\"interpersonal psychotherapy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42462927",
+      "title": "Examining early-phase symptom trajectories in interpersonal psychotherapy versus antidepressant medication for adults with depression: A dynamic time warp network analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43057535",
+      "title": "Weekly intensive longitudinal assessment as a therapeutic adjunct for adolescent suicide risk: An observational study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43018106",
+      "title": "A Mixed-Methods Examination of Patterns of Response and Nonresponse in Group Interpersonal Psychotherapy.",
+      "year": 2026
+    },
+    {
+      "pmid": "43003352",
+      "title": "Brief interpersonal therapy reduces anxiety during pregnancy: A randomized clinical trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42037361",
+      "title": "Pilotstudie zur Durchführbarkeit und Wirksamkeit der IPT-A zur ambulanten Behandlung depressiver Erkrankungen in einer deutschen Versorgungsklinik.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:23:10.836Z"
+}

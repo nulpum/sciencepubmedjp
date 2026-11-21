@@ -1,0 +1,93 @@
+{
+  "slug": "selection-bias",
+  "ja": "選択バイアス",
+  "yomi": "せんたくばいあす",
+  "en": "selection bias",
+  "category": "research",
+  "meshHeading": "Selection Bias",
+  "meshUi": "68015983",
+  "description": {
+    "ja": "研究対象者の選び方や脱落の仕方が偏ることで、結果が実態とずれてしまう問題です。例えば健康意識の高い人ばかりが研究に参加すると、その介入効果が過大評価される恐れがあります。観察研究やコホート研究で特に注意が必要なバイアスの一つです。",
+    "en": "Selection bias occurs when the way participants are chosen or drop out is systematic, causing study results to differ from the true situation. For example, if only health-conscious individuals join a study, the intervention effect may be overestimated. This bias is particularly important to address in observational and cohort studies."
+  },
+  "usage": {
+    "ja": "論文では「selection biasを最小化するため無作為割付を行った」「脱落率の群間差によりselection biasが生じた可能性」といった文脈で登場します。研究デザインの限界(Limitations)セクションでしばしば議論されます。",
+    "en": "In papers, phrases like 'randomization was performed to minimize selection bias' or 'differential dropout rates may have introduced selection bias' are common. It is often discussed in the Limitations section of study design."
+  },
+  "synonyms": {
+    "ja": "サンプリングバイアス(sampling bias)と重なる概念ですが、選択バイアスは参加者募集から脱落まで広く含みます。自己選択バイアス(self-selection bias)は参加意欲による偏りを指す下位概念です。",
+    "en": "Selection bias overlaps with sampling bias, but encompasses recruitment through dropout. Self-selection bias is a subtype referring specifically to bias from voluntary participation decisions."
+  },
+  "pubmedCount": 20024,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 935
+    },
+    {
+      "year": 2018,
+      "count": 888
+    },
+    {
+      "year": 2019,
+      "count": 973
+    },
+    {
+      "year": 2020,
+      "count": 1055
+    },
+    {
+      "year": 2021,
+      "count": 1151
+    },
+    {
+      "year": 2022,
+      "count": 1180
+    },
+    {
+      "year": 2023,
+      "count": 1136
+    },
+    {
+      "year": 2024,
+      "count": 1104
+    },
+    {
+      "year": 2025,
+      "count": 1556
+    },
+    {
+      "year": 2026,
+      "count": 2109
+    }
+  ],
+  "searchQuery": "(\"Selection Bias\"[MeSH Terms]) OR (\"selection bias\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43033487",
+      "title": "Penetration depth, standalone coiling, and branch selection in middle meningeal artery embolization for chronic subdural hematoma: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43024216",
+      "title": "Guide to Extending Findings from Selected Samples Using Inverse Odds of Selection Weights.",
+      "year": 2027
+    },
+    {
+      "pmid": "42898830",
+      "title": "Surgical Outcomes of Terrible Triad Injuries of the Elbow in a Resource-Limited Setting: A Consecutive Case Series.",
+      "year": 2027
+    },
+    {
+      "pmid": "42832904",
+      "title": "Auditing diagnosis-conditioned electronic health record exports for secondary use: A selection-aware study in child and adolescent psychiatry.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828129",
+      "title": "Surgery followed by adjuvant radiotherapy versus definitive radiotherapy for locally advanced squamous cell carcinoma of the pharynx and larynx: a propensity score-matched analysis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:44:21.239Z"
+}

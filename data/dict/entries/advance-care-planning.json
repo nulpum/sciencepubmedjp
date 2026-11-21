@@ -1,0 +1,97 @@
+{
+  "slug": "advance-care-planning",
+  "ja": "アドバンスケアプランニング",
+  "yomi": "あどばんすけあぷらんにんぐ",
+  "en": "advance care planning",
+  "abbr": "ACP",
+  "category": "nursing-pharma",
+  "aliases": [
+    "人生会議"
+  ],
+  "meshHeading": "Advance Care Planning",
+  "meshUi": "68032722",
+  "description": {
+    "ja": "患者が将来の医療やケアについて、あらかじめ医療者や家族と話し合い、意思を共有するプロセスです。認知機能の低下や重症化により自分で意思表示できなくなる前に、どのような治療や療養を望むかを繰り返し確認し記録します。日本では「人生会議」という愛称でも呼ばれます。",
+    "en": "A process in which patients discuss and share their future medical and care preferences with healthcare providers and family members in advance. It involves repeated conversations and documentation of treatment and care wishes before cognitive decline or severe illness prevents patients from expressing their own decisions."
+  },
+  "usage": {
+    "ja": "終末期医療、認知症ケア、がん看護などの研究で、ACPの実施率や患者・家族の満足度、医療者の実践状況が調査されます。質的研究では対話内容の分析、量的研究では標準化された質問票による評価が行われます。",
+    "en": "Research in end-of-life care, dementia care, and cancer nursing examines ACP implementation rates, patient and family satisfaction, and healthcare provider practices. Qualitative studies analyze conversation content, while quantitative studies use standardized questionnaires for evaluation."
+  },
+  "synonyms": {
+    "ja": "「事前ケア計画」「アドバンス・ケア・プランニング」とも表記されます。類似概念に「事前指示(advance directive)」がありますが、ACPは継続的な対話プロセスを重視する点で区別されます。リビングウィルは書面による意思表示の一形態です。",
+    "en": "Also written as 'advance-care planning' or '事前ケア計画' in Japanese. Related to 'advance directive,' but ACP emphasizes ongoing dialogue rather than a single written document. Living will is one form of written advance directive within the broader ACP framework."
+  },
+  "pubmedCount": 15419,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 664
+    },
+    {
+      "year": 2018,
+      "count": 700
+    },
+    {
+      "year": 2019,
+      "count": 847
+    },
+    {
+      "year": 2020,
+      "count": 950
+    },
+    {
+      "year": 2021,
+      "count": 982
+    },
+    {
+      "year": 2022,
+      "count": 838
+    },
+    {
+      "year": 2023,
+      "count": 780
+    },
+    {
+      "year": 2024,
+      "count": 809
+    },
+    {
+      "year": 2025,
+      "count": 855
+    },
+    {
+      "year": 2026,
+      "count": 876
+    }
+  ],
+  "searchQuery": "(\"Advance Care Planning\"[MeSH Terms]) OR (\"advance care planning\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42954935",
+      "title": "Clinical Practice Guideline: Palliative Care for Children and Adolescents With Cancer.",
+      "year": 2027
+    },
+    {
+      "pmid": "42944582",
+      "title": "Discussing Future Treatment and Care in the ICU: Perspectives From Patients.",
+      "year": 2027
+    },
+    {
+      "pmid": "41243521",
+      "title": "Perspectives of Advance Care Planning for Latinos During COVID-19.",
+      "year": 2027
+    },
+    {
+      "pmid": "41223093",
+      "title": "\"Consider the Following Situation,\" Parental Treatment Preferences for Children With Rare Diseases: A Content Analysis of Pediatric Advance Care Plans.",
+      "year": 2027
+    },
+    {
+      "pmid": "42980045",
+      "title": "When the Document Cannot Speak: Language Access, Emergency Response, and a Pediatric DNR.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:31:46.164Z"
+}

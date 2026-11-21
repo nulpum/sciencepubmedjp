@@ -1,0 +1,93 @@
+{
+  "slug": "panic-disorder",
+  "ja": "パニック障害",
+  "yomi": "ぱにっくしょうがい",
+  "en": "panic disorder",
+  "category": "psychology",
+  "meshHeading": "Panic Disorder",
+  "meshUi": "68016584",
+  "description": {
+    "ja": "パニック障害は、予期しない強い不安発作（パニック発作）が繰り返し起こり、次の発作への恐怖や回避行動が生活に支障をきたす状態を指す精神医学的な診断カテゴリーです。動悸、発汗、息苦しさ、めまいなどの身体症状を伴うことが特徴的とされています。研究では発症メカニズムや症状評価、介入効果の測定などが調べられています。",
+    "en": "Panic disorder is a psychiatric diagnostic category characterized by recurrent unexpected panic attacks and persistent concern about future attacks or avoidance behaviors that interfere with daily functioning. It typically involves physical symptoms such as palpitations, sweating, shortness of breath, and dizziness. Research investigates onset mechanisms, symptom assessment, and intervention outcomes."
+  },
+  "usage": {
+    "ja": "心理学・精神医学の論文では、DSM-5やICD-11などの診断基準に基づいて対象者を選定し、Panic Disorder Severity Scale (PDSS)などの評価尺度を用いて症状の重症度を測定します。疫学研究、神経画像研究、心理療法や薬理学的介入の効果検証などで頻繁に取り上げられます。",
+    "en": "In psychology and psychiatry papers, participants are selected based on diagnostic criteria such as DSM-5 or ICD-11, and symptom severity is measured using scales like the Panic Disorder Severity Scale (PDSS). The term appears frequently in epidemiological studies, neuroimaging research, and trials evaluating psychotherapeutic or pharmacological interventions."
+  },
+  "synonyms": {
+    "ja": "「PD」と略されることがあります。「パニック症」とも呼ばれ、DSM-5の日本語版では「パニック症/パニック障害」と併記されています。単発の「パニック発作（panic attack）」とは区別され、パニック障害は発作の反復と予期不安を伴う診断名です。",
+    "en": "Often abbreviated as \"PD.\" It is distinguished from a single \"panic attack,\" as panic disorder refers specifically to the recurrent nature of attacks with anticipatory anxiety. In Japanese clinical settings, it may also be called \"パニック症\" following DSM-5 terminology updates."
+  },
+  "pubmedCount": 12737,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 342
+    },
+    {
+      "year": 2018,
+      "count": 334
+    },
+    {
+      "year": 2019,
+      "count": 335
+    },
+    {
+      "year": 2020,
+      "count": 346
+    },
+    {
+      "year": 2021,
+      "count": 333
+    },
+    {
+      "year": 2022,
+      "count": 304
+    },
+    {
+      "year": 2023,
+      "count": 304
+    },
+    {
+      "year": 2024,
+      "count": 282
+    },
+    {
+      "year": 2025,
+      "count": 294
+    },
+    {
+      "year": 2026,
+      "count": 239
+    }
+  ],
+  "searchQuery": "(\"Panic Disorder\"[MeSH Terms]) OR (\"panic disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42918353",
+      "title": "Insular subregional dysfunction in panic disorder: A multimodal MRI study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833406",
+      "title": "Mental health risk stratification using heart rate variability and prefrontal electroencephalography: eXtreme gradient boosting-based classifier and latent class analysis-based subtyping.",
+      "year": 2027
+    },
+    {
+      "pmid": "42753522",
+      "title": "Functional brain abnormalities in panic disorder: A systematic review of functional magnetic resonance imaging studies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648552",
+      "title": "Associations between human oxytocin receptor gene promoter DNA methylation and brain structural connectome in panic disorder in Korea.",
+      "year": 2026
+    },
+    {
+      "pmid": "42923971",
+      "title": "Single-arm feasibility trial of manualized outpatient morita therapy for panic disorder with agoraphobia.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:13:02.585Z"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "nk-cell",
+  "ja": "NK細胞",
+  "yomi": "えぬけーさいぼう",
+  "en": "natural killer cell",
+  "abbr": "NK cell",
+  "category": "biology",
+  "aliases": [
+    "ナチュラルキラー細胞"
+  ],
+  "meshHeading": "Killer Cells, Natural",
+  "meshUi": "68007694",
+  "description": {
+    "ja": "NK細胞は、ウイルス感染細胞やがん細胞を認識して攻撃する免疫細胞の一種です。T細胞やB細胞のように事前の感作を必要とせず、異常な細胞を自然に(naturally)殺傷(kill)できることからこの名がつきました。自然免疫系の重要な構成要素として、感染症やがんに対する初期防御に関与しています。",
+    "en": "Natural killer (NK) cells are a type of immune cell that recognizes and attacks virus-infected cells and cancer cells. Unlike T cells and B cells, they do not require prior sensitization and can naturally kill abnormal cells, hence their name. They serve as important components of the innate immune system, participating in early defense against infections and cancer."
+  },
+  "usage": {
+    "ja": "論文では「NK細胞活性」「NK細胞数」「NK細胞の細胞傷害活性」などの指標として測定されます。フローサイトメトリーでCD56+CD3-などのマーカーで同定され、がん免疫療法研究や免疫老化、ストレスと免疫機能の関連を調べる研究で頻繁に登場します。",
+    "en": "In research papers, NK cells are measured as indicators such as 'NK cell activity,' 'NK cell count,' or 'NK cell cytotoxicity.' They are identified by markers like CD56+CD3- using flow cytometry and frequently appear in studies on cancer immunotherapy, immunosenescence, and the relationship between stress and immune function."
+  },
+  "synonyms": {
+    "ja": "ナチュラルキラー細胞、NK細胞と表記されます。類似の細胞にNKT細胞がありますが、これはT細胞受容体を持つ別の細胞集団です。論文検索では「natural killer」「NK cell activity」「CD56+ cells」などのキーワードが有効です。",
+    "en": "Also written as natural killer cells or NK cells. NKT cells are a related but distinct cell population that possesses T cell receptors. For literature searches, keywords like 'natural killer,' 'NK cell activity,' and 'CD56+ cells' are effective."
+  },
+  "pubmedCount": 57604,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1565
+    },
+    {
+      "year": 2018,
+      "count": 1544
+    },
+    {
+      "year": 2019,
+      "count": 1690
+    },
+    {
+      "year": 2020,
+      "count": 1813
+    },
+    {
+      "year": 2021,
+      "count": 1932
+    },
+    {
+      "year": 2022,
+      "count": 1642
+    },
+    {
+      "year": 2023,
+      "count": 1506
+    },
+    {
+      "year": 2024,
+      "count": 1880
+    },
+    {
+      "year": 2025,
+      "count": 2061
+    },
+    {
+      "year": 2026,
+      "count": 1818
+    }
+  ],
+  "searchQuery": "(\"Killer Cells, Natural\"[MeSH Terms]) OR (\"natural killer cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42918350",
+      "title": "Circulating immune cells phenotypes discriminate bipolar disorder from major depressive disorder during a depressive episode: A machine learning elastic-net approach.",
+      "year": 2027
+    },
+    {
+      "pmid": "43059385",
+      "title": "Impact of physical activity on immune cell populations and potential for synergy with immune checkpoint inhibitors (Review).",
+      "year": 2027
+    },
+    {
+      "pmid": "42854592",
+      "title": "Herpesvirus reactivation in critical illness: Pathogenesis, clinical consequences, and diagnostic challenges.",
+      "year": 2027
+    },
+    {
+      "pmid": "42814324",
+      "title": "Immunophenotypic Assessment of Natural Killer Cell Degranulation and Monocyte Function from Cryopreserved Peripheral Blood Mononuclear Cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "42814320",
+      "title": "Natural Killer Cells and Innate Lymphoid Cells Immunoprofiling.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:01:55.462Z"
+}

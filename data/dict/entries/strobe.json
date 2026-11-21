@@ -1,0 +1,94 @@
+{
+  "slug": "strobe",
+  "ja": "STROBE",
+  "yomi": "すとろーぶ",
+  "en": "STROBE",
+  "category": "research",
+  "aliases": [
+    "観察研究報告基準"
+  ],
+  "description": {
+    "ja": "STROBEは「Strengthening the Reporting of Observational Studies in Epidemiology」の略で、観察研究(コホート研究、症例対照研究、横断研究など)の報告品質を向上させるための国際的なガイドラインです。研究の方法、結果、解釈を明確に記述するための22項目のチェックリストで構成され、論文の透明性と再現性を高めることを目的としています。",
+    "en": "STROBE stands for 'Strengthening the Reporting of Observational Studies in Epidemiology,' an international guideline designed to improve the quality of reporting in observational studies such as cohort, case-control, and cross-sectional studies. It consists of a 22-item checklist that helps authors clearly describe methods, results, and interpretations, aiming to enhance transparency and reproducibility of research."
+  },
+  "usage": {
+    "ja": "疫学や臨床研究の観察研究論文で、Methods欄に「本研究はSTROBE声明に従って報告した」と記載されたり、投稿時にSTROBEチェックリストの提出が求められたりします。ランダム化比較試験ではなく、実際の診療データや集団調査データを用いた研究で使用されます。",
+    "en": "In epidemiological and clinical observational research papers, authors often state in the Methods section that 'this study was reported according to STROBE guidelines,' and journals may require submission of a STROBE checklist. It is used for studies based on real-world clinical data or population surveys, not for randomized controlled trials."
+  },
+  "synonyms": {
+    "ja": "観察研究報告基準、STROBE声明、STROBE guidelineとも呼ばれます。類似の報告ガイドラインとしてCONSORT(ランダム化比較試験用)、PRISMA(システマティックレビュー用)などがあり、研究デザインに応じて使い分けます。",
+    "en": "Also called STROBE statement or STROBE guideline in Japanese as 観察研究報告基準. Similar reporting guidelines include CONSORT (for randomized controlled trials) and PRISMA (for systematic reviews), each tailored to specific study designs."
+  },
+  "pubmedCount": 6327,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 175
+    },
+    {
+      "year": 2018,
+      "count": 216
+    },
+    {
+      "year": 2019,
+      "count": 374
+    },
+    {
+      "year": 2020,
+      "count": 414
+    },
+    {
+      "year": 2021,
+      "count": 582
+    },
+    {
+      "year": 2022,
+      "count": 665
+    },
+    {
+      "year": 2023,
+      "count": 714
+    },
+    {
+      "year": 2024,
+      "count": 936
+    },
+    {
+      "year": 2025,
+      "count": 1250
+    },
+    {
+      "year": 2026,
+      "count": 1290
+    }
+  ],
+  "searchQuery": "\"STROBE\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42664907",
+      "title": "Serial mediating role of belonging and state mindfulness in the relationship between clinical learning environment and caring behaviors in nursing students.",
+      "year": 2027
+    },
+    {
+      "pmid": "42547995",
+      "title": "Parental preferences for immunization advisory clinic settings for children with special health care needs and associated factors in Shanghai: A cross-sectional study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42415442",
+      "title": "[THE ACTUAL ISSUES OF FINANCING AND FORMS OF PAYMENT OF FAMILY MEDICINE].",
+      "year": 2026
+    },
+    {
+      "pmid": "43041609",
+      "title": "Assessment of safety and effectiveness of continuous intravenous labetalol infusion for blood pressure control in patients with spontaneous intracerebral hemorrhage: a STROBE-compliant observational study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43036935",
+      "title": "Left Without Treatment: An Observational Comparative Analysis of Emergency Department Patients Who Did Not Wait and the Treated Cohort.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:43:10.070Z"
+}

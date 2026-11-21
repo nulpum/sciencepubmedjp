@@ -1,0 +1,96 @@
+{
+  "slug": "nanda",
+  "ja": "NANDA",
+  "yomi": "なんだ",
+  "en": "NANDA International",
+  "category": "nursing-pharma",
+  "aliases": [
+    "看護診断分類"
+  ],
+  "meshHeading": "Standardized Nursing Terminology",
+  "meshUi": "2016803",
+  "description": {
+    "ja": "NANDA International (旧・北米看護診断協会) は、看護診断の標準的な分類体系を開発・維持する国際的な専門組織です。看護師が患者の健康問題を系統的に特定し、記録するための共通言語として世界中で活用されています。",
+    "en": "NANDA International (formerly North American Nursing Diagnosis Association) is an international professional organization that develops and maintains a standardized taxonomy of nursing diagnoses. It provides a common language for nurses worldwide to systematically identify and document patient health problems."
+  },
+  "usage": {
+    "ja": "看護研究では「NANDA看護診断分類」に基づいて患者の問題を分類・分析し、介入効果の評価や看護実践の標準化を検討します。論文では「NANDA-I診断ラベル」「NANDA分類法」などの表現で、使用した診断枠組みを明示します。",
+    "en": "In nursing research, patient problems are classified and analyzed based on the NANDA nursing diagnosis taxonomy to evaluate intervention effectiveness and standardize nursing practice. Papers specify the diagnostic framework used with terms like 'NANDA-I diagnostic labels' or 'NANDA taxonomy.'"
+  },
+  "synonyms": {
+    "ja": "「NANDA-I」は現在の正式名称で、「看護診断分類」「NANDA分類体系」とも呼ばれます。類似の標準分類として看護介入分類 (NIC) や看護成果分類 (NOC) がありますが、NANDAは診断に特化した体系である点が異なります。",
+    "en": "NANDA-I is the current official name, also referred to as 'nursing diagnosis taxonomy' or 'NANDA classification system.' Similar standardized classifications include Nursing Interventions Classification (NIC) and Nursing Outcomes Classification (NOC), but NANDA specifically focuses on diagnostic taxonomy."
+  },
+  "pubmedCount": 470,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 29
+    },
+    {
+      "year": 2018,
+      "count": 45
+    },
+    {
+      "year": 2019,
+      "count": 44
+    },
+    {
+      "year": 2020,
+      "count": 56
+    },
+    {
+      "year": 2021,
+      "count": 60
+    },
+    {
+      "year": 2022,
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "count": 41
+    },
+    {
+      "year": 2025,
+      "count": 37
+    },
+    {
+      "year": 2026,
+      "count": 58
+    }
+  ],
+  "searchQuery": "(\"Standardized Nursing Terminology\"[MeSH Terms]) OR (\"NANDA International\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43048954",
+      "title": "Validation of the NANDA-International Diagnoses, Nursing Interventions Classification, and Nursing Outcomes Classification for People Living with HIV Over 50.",
+      "year": 2026
+    },
+    {
+      "pmid": "43042517",
+      "title": "Implementation of the PaliEnf Digital Technology Based on Standardized Nursing Languages to Improve Nursing Documentation in Pediatric Oncology Palliative Care.",
+      "year": 2026
+    },
+    {
+      "pmid": "42878438",
+      "title": "Planetary Health Self-Management: Concept Analysis for a Proposed Nursing Diagnosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42848588",
+      "title": "Factors associated with pressure injuries in bedridden older adults in Primary Health Care.",
+      "year": 2026
+    },
+    {
+      "pmid": "42830464",
+      "title": "ENGENDER NANDA Guideline: Ensuring Gender inclusion in NANDA-I. A Delphi Study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:38:34.844Z"
+}

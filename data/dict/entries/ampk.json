@@ -1,0 +1,94 @@
+{
+  "slug": "ampk",
+  "ja": "AMPK",
+  "yomi": "えーえむぴーけー",
+  "en": "AMP-activated protein kinase",
+  "abbr": "AMPK",
+  "category": "biology",
+  "meshHeading": "AMP-Activated Protein Kinases",
+  "meshUi": "68055372",
+  "description": {
+    "ja": "AMPK (AMP-activated protein kinase) は、細胞内のエネルギー状態を感知して代謝を調節する酵素です。細胞のエネルギー通貨であるATPが減少しAMPが増加すると活性化され、エネルギー産生経路を促進し、エネルギー消費経路を抑制します。運動や飢餓、低酸素などのストレス状態で重要な役割を果たし、糖代謝や脂質代謝の研究で広く注目されています。",
+    "en": "AMPK (AMP-activated protein kinase) is an enzyme that senses cellular energy status and regulates metabolism. It is activated when ATP decreases and AMP increases, promoting energy-producing pathways while suppressing energy-consuming processes. AMPK plays a crucial role during stress conditions such as exercise, starvation, and hypoxia, and is widely studied in glucose and lipid metabolism research."
+  },
+  "usage": {
+    "ja": "論文では、Western blottingやELISAによるAMPKのリン酸化 (phosphorylation) 状態の測定、特にThr172部位のリン酸化が活性化の指標として用いられます。運動生理学、糖尿病研究、がん代謝、老化研究などで、AMPKの活性化状態や下流標的 (mTOR、ACC等) との関係が調べられます。",
+    "en": "In research papers, AMPK phosphorylation status is measured by Western blotting or ELISA, particularly phosphorylation at Thr172 as an activation marker. Studies in exercise physiology, diabetes research, cancer metabolism, and aging investigate AMPK activation status and its relationship with downstream targets such as mTOR and ACC."
+  },
+  "synonyms": {
+    "ja": "AMPKは「AMPK complex」や「AMPK pathway」として記載されることもあり、α、β、γサブユニットからなる複合体です。研究によってはエネルギーセンサー (energy sensor) やメタボリックマスターレギュレーター (metabolic master regulator) と表現されます。",
+    "en": "AMPK may be referred to as 'AMPK complex' or 'AMPK pathway,' consisting of α, β, and γ subunits. It is sometimes described as an energy sensor or metabolic master regulator depending on the research context."
+  },
+  "pubmedCount": 24603,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1452
+    },
+    {
+      "year": 2018,
+      "count": 1588
+    },
+    {
+      "year": 2019,
+      "count": 1618
+    },
+    {
+      "year": 2020,
+      "count": 1791
+    },
+    {
+      "year": 2021,
+      "count": 1700
+    },
+    {
+      "year": 2022,
+      "count": 1889
+    },
+    {
+      "year": 2023,
+      "count": 1787
+    },
+    {
+      "year": 2024,
+      "count": 1753
+    },
+    {
+      "year": 2025,
+      "count": 1821
+    },
+    {
+      "year": 2026,
+      "count": 1710
+    }
+  ],
+  "searchQuery": "(\"AMP-Activated Protein Kinases\"[MeSH Terms]) OR (\"AMP-activated protein kinase\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42785535",
+      "title": "Geraniin alleviates pathological visceral adipose tissue expansion through modulation of β-adrenergic receptor-associated cAMP-LKB1-AMPK signaling in high-fat diet-fed mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956966",
+      "title": "Melatonin ameliorates anxiety-like behavior and intestinal barrier dysfunction induced by high-fat diet in BTBR mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869302",
+      "title": "Epidermal growth factor receptor inhibition alleviates cardiac ischemia/reperfusion injury through preventing mitochondrial dysfunction and ferroptosis via Rho Family GTPase 3/5' AMP-activated protein kinase axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42575329",
+      "title": "Hemerocallis lilioasphodelus root water extract ameliorates non-alcoholic fatty liver disease by regulating the gut-liver axis and activating AMPK-mediated lipid metabolism: an integrated study based on metabolomics and 16S rRNA sequencing.",
+      "year": 2027
+    },
+    {
+      "pmid": "42526548",
+      "title": "Forsythiae Fructus attenuates DSS-induced colitis and associated neuroinflammation with modulation of AMPK/mTOR-related autophagy signaling.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:05:06.574Z"
+}

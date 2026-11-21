@@ -1,0 +1,93 @@
+{
+  "slug": "attention",
+  "ja": "注意",
+  "yomi": "ちゅうい",
+  "en": "attention",
+  "category": "psychology",
+  "meshHeading": "Attention",
+  "meshUi": "68001288",
+  "description": {
+    "ja": "心理学における「注意」は、多数の刺激の中から特定の情報を選択的に処理する認知機能を指します。視覚・聴覚などの感覚入力から必要な情報に焦点を当て、不要な情報を抑制する働きです。持続性、選択性、分割性など複数の側面があり、認知心理学や神経科学で広く研究されています。",
+    "en": "Attention in psychology refers to the cognitive function that selectively processes specific information from multiple stimuli. It involves focusing on necessary information from sensory inputs such as visual and auditory signals while suppressing irrelevant information. Attention has multiple aspects including sustained, selective, and divided attention, and is widely studied in cognitive psychology and neuroscience."
+  },
+  "usage": {
+    "ja": "論文では「selective attention (選択的注意)」「sustained attention (持続的注意)」「visual attention (視覚的注意)」などの形で使われます。測定には反応時間課題、眼球運動追跡、脳波 (EEG) やfMRIによる脳活動計測が用いられ、ストループ課題やフランカー課題などの実験パラダイムで評価されます。",
+    "en": "In research papers, it appears as 'selective attention,' 'sustained attention,' or 'visual attention.' Measurement methods include reaction time tasks, eye-tracking, brain activity recording via EEG or fMRI, and experimental paradigms such as the Stroop task and Flanker task are commonly used for assessment."
+  },
+  "synonyms": {
+    "ja": "関連用語に「concentration (集中)」「focus (焦点化)」「vigilance (警戒)」があります。注意は一時的な焦点化を指すのに対し、concentrationはより持続的な集中状態を、vigilanceは持続的な警戒や監視を意味する場合が多く、文脈により使い分けられます。",
+    "en": "Related terms include 'concentration,' 'focus,' and 'vigilance.' While attention refers to momentary focusing on information, concentration often implies a more sustained focused state, and vigilance typically means sustained alertness or monitoring. These terms are used depending on the specific context in research."
+  },
+  "pubmedCount": 777699,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 30748
+    },
+    {
+      "year": 2018,
+      "count": 33314
+    },
+    {
+      "year": 2019,
+      "count": 36573
+    },
+    {
+      "year": 2020,
+      "count": 44432
+    },
+    {
+      "year": 2021,
+      "count": 52272
+    },
+    {
+      "year": 2022,
+      "count": 57483
+    },
+    {
+      "year": 2023,
+      "count": 56788
+    },
+    {
+      "year": 2024,
+      "count": 59673
+    },
+    {
+      "year": 2025,
+      "count": 63585
+    },
+    {
+      "year": 2026,
+      "count": 57408
+    }
+  ],
+  "searchQuery": "(\"Attention\"[MeSH Terms]) OR (\"attention\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42887130",
+      "title": "Pan-Asian adapted ESMO Clinical Practice Guidelines for the diagnosis, treatment and follow-up of patients with early and locally advanced non-small-cell lung cancer.",
+      "year": 2027
+    },
+    {
+      "pmid": "42897078",
+      "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022664",
+      "title": "Integrated metabolic and process engineering of Rhodotorula toruloides for light-driven hydrocarbon production.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014046",
+      "title": "Stimuli-responsive (switchable) deep eutectic solvents in microextraction: Status, challenges and prospects in food safety and environmental analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43008372",
+      "title": "Next-generation hyphenated analytical technologies in natural product research: From high-resolution separation and structural elucidation to dereplication, metabolomics and drug discovery.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:08:46.942Z"
+}

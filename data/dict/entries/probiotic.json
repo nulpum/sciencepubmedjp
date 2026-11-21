@@ -1,0 +1,93 @@
+{
+  "slug": "probiotic",
+  "ja": "プロバイオティクス",
+  "yomi": "ぷろばいおてぃくす",
+  "en": "probiotic",
+  "category": "biology",
+  "meshHeading": "Probiotics",
+  "meshUi": "68019936",
+  "description": {
+    "ja": "プロバイオティクスとは、適切な量を摂取したときに宿主(ヒトや動物)の健康に有益な効果をもたらす可能性がある生きた微生物のことです。主に乳酸菌やビフィズス菌などの腸内細菌が該当し、腸内フローラ(腸内細菌叢)のバランスに関する研究で広く調べられています。ヨーグルトや発酵食品に含まれることが多く、基礎研究から臨床試験まで幅広い分野で注目されています。",
+    "en": "Probiotics are live microorganisms that, when administered in adequate amounts, may confer a health benefit on the host (humans or animals). They primarily include lactic acid bacteria and bifidobacteria, and are widely studied in research related to gut microbiota (intestinal flora) balance. Commonly found in yogurt and fermented foods, they are investigated across various fields from basic research to clinical trials."
+  },
+  "usage": {
+    "ja": "論文では、特定の菌株(例:Lactobacillus属、Bifidobacterium属)を投与した際の腸内細菌叢の変化、免疫マーカー、消化器症状などが測定されます。ランダム化比較試験やメタ解析において、プラセボとの比較でこれらの指標がどう変化するかが検討されることが一般的です。",
+    "en": "In research papers, changes in gut microbiota composition, immune markers, and gastrointestinal symptoms are typically measured following administration of specific strains (e.g., Lactobacillus, Bifidobacterium species). Randomized controlled trials and meta-analyses commonly examine how these indicators change compared to placebo."
+  },
+  "synonyms": {
+    "ja": "「プレバイオティクス」は微生物のエサとなる食物繊維などを指し、プロバイオティクスとは区別されます。両者を組み合わせたものは「シンバイオティクス」と呼ばれ、論文検索では使い分けが必要です。",
+    "en": "Prebiotics refer to dietary fibers that serve as food for microorganisms and are distinct from probiotics. The combination of both is called synbiotics, and careful distinction is necessary when searching literature."
+  },
+  "pubmedCount": 53174,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2307
+    },
+    {
+      "year": 2018,
+      "count": 2487
+    },
+    {
+      "year": 2019,
+      "count": 3048
+    },
+    {
+      "year": 2020,
+      "count": 3617
+    },
+    {
+      "year": 2021,
+      "count": 3915
+    },
+    {
+      "year": 2022,
+      "count": 4246
+    },
+    {
+      "year": 2023,
+      "count": 4339
+    },
+    {
+      "year": 2024,
+      "count": 5305
+    },
+    {
+      "year": 2025,
+      "count": 6635
+    },
+    {
+      "year": 2026,
+      "count": 6075
+    }
+  ],
+  "searchQuery": "(\"Probiotics\"[MeSH Terms]) OR (\"probiotic\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43036820",
+      "title": "A genetic engineering toolkit for the probiotic yeast Saccharomyces boulardii.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987524",
+      "title": "Synergistic construction of SERS strategy by Fe(3)O(4)@PDA@AgNPs and GNA: accurate pursuit and efficient detection of probiotics.",
+      "year": 2027
+    },
+    {
+      "pmid": "42662800",
+      "title": "Genome-integrated engineering of Escherichia coli Nissle 1917 enables sustained gut-local biosynthesis of 5-hydroxytryptophan.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901662",
+      "title": "Complementary enhancement of osmotic tolerance in Ligilactobacillus salivarius AR612 by exogenous purine nucleobases and gene engineering.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901651",
+      "title": "Glycine supplementation reshapes metabolism and enhances growth and stress tolerance in Lactiplantibacillus plantarum.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:02:53.019Z"
+}

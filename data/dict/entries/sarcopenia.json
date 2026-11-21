@@ -1,0 +1,96 @@
+{
+  "slug": "sarcopenia",
+  "ja": "サルコペニア",
+  "yomi": "さるこぺにあ",
+  "en": "sarcopenia",
+  "category": "nursing-pharma",
+  "aliases": [
+    "筋肉減少症"
+  ],
+  "meshHeading": "Sarcopenia",
+  "meshUi": "68055948",
+  "description": {
+    "ja": "加齢や疾患、運動不足などに伴い、筋肉量が減少し筋力や身体機能が低下した状態を指す医学用語です。転倒・骨折のリスク増加や日常生活動作の制限につながるため、高齢者医療や栄養管理の重要な評価指標となっています。診断には筋肉量測定(DXA法やBIA法)、握力測定、歩行速度測定などが組み合わせて用いられます。",
+    "en": "A medical term describing the condition of reduced muscle mass accompanied by decreased muscle strength and physical function, often associated with aging, disease, or physical inactivity. It is an important assessment indicator in geriatric care and nutritional management, as it increases the risk of falls, fractures, and limitations in activities of daily living. Diagnosis typically combines muscle mass measurement (DXA or BIA methods), grip strength testing, and gait speed assessment."
+  },
+  "usage": {
+    "ja": "高齢者を対象とした介入研究や疫学調査で広く用いられ、European Working Group on Sarcopenia in Older People(EWGSOP)やAsian Working Group for Sarcopenia(AWGS)などの診断基準に基づいて評価されます。論文では「sarcopenia prevalence(有病率)」「sarcopenic obesity(サルコペニア肥満)」「appendicular skeletal muscle mass(四肢骨格筋量)」などの関連指標とともに報告されることが多いです。",
+    "en": "Widely used in intervention studies and epidemiological surveys targeting older adults, evaluated based on diagnostic criteria from organizations such as the European Working Group on Sarcopenia in Older People (EWGSOP) and Asian Working Group for Sarcopenia (AWGS). In research papers, it is often reported alongside related indicators such as sarcopenia prevalence, sarcopenic obesity, and appendicular skeletal muscle mass."
+  },
+  "synonyms": {
+    "ja": "筋肉減少症と同義ですが、単なる筋肉量の減少(muscle loss)とは区別され、機能低下を伴う病態を指します。一次性サルコペニア(加齢性)と二次性サルコペニア(疾患・栄養不良・活動低下に起因)に分類されることがあり、文脈によって使い分けが必要です。関連用語にdynapenia(筋力低下)やfrailty(フレイル、虚弱)があります。",
+    "en": "Synonymous with muscle wasting syndrome, but distinguished from simple muscle loss by the inclusion of functional decline as a defining feature. It may be classified into primary sarcopenia (age-related) and secondary sarcopenia (due to disease, malnutrition, or inactivity), requiring careful distinction based on context. Related terms include dynapenia (loss of muscle strength) and frailty."
+  },
+  "pubmedCount": 30304,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1199
+    },
+    {
+      "year": 2018,
+      "count": 1557
+    },
+    {
+      "year": 2019,
+      "count": 1884
+    },
+    {
+      "year": 2020,
+      "count": 2395
+    },
+    {
+      "year": 2021,
+      "count": 2966
+    },
+    {
+      "year": 2022,
+      "count": 3107
+    },
+    {
+      "year": 2023,
+      "count": 3241
+    },
+    {
+      "year": 2024,
+      "count": 3693
+    },
+    {
+      "year": 2025,
+      "count": 4689
+    },
+    {
+      "year": 2026,
+      "count": 4781
+    }
+  ],
+  "searchQuery": "(\"Sarcopenia\"[MeSH Terms]) OR (\"sarcopenia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42960208",
+      "title": "GDF11 restores skeletal muscle satellite cell function via MYC to ameliorate sarcopenia.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648525",
+      "title": "Assay-specific reference intervals and evaluation of key preanalytical factors for C-terminal agrin fragment measured using the Abcam ab216945 ELISA.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045304",
+      "title": "Invasive Procedures and Surgery in Patients with Cirrhosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045248",
+      "title": "Obesity in Aging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869737",
+      "title": "Obesity, Weight Loss, and Perioperative Risk Assessment in Otolaryngology.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:40:30.330Z"
+}

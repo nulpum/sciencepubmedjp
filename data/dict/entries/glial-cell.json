@@ -1,0 +1,96 @@
+{
+  "slug": "glial-cell",
+  "ja": "グリア細胞",
+  "yomi": "ぐりあさいぼう",
+  "en": "glial cell",
+  "category": "biology",
+  "aliases": [
+    "神経膠細胞"
+  ],
+  "meshHeading": "Neuroglia",
+  "meshUi": "68009457",
+  "description": {
+    "ja": "脳や脊髄などの神経系において、神経細胞（ニューロン）を支持し保護する細胞の総称です。アストロサイト、オリゴデンドロサイト、ミクログリアなど複数の種類があり、神経伝達の調節や栄養供給、免疫応答など多様な機能を担います。かつては神経細胞の「接着剤」と考えられていましたが、現在では情報処理や脳機能の維持に積極的に関わることが知られています。",
+    "en": "Glial cells are non-neuronal cells in the nervous system that support, protect, and maintain neurons. They include astrocytes, oligodendrocytes, and microglia, performing diverse functions such as modulating neurotransmission, providing nutrients, and immune responses. Once thought to be merely structural support like 'glue,' they are now recognized as active participants in information processing and brain function."
+  },
+  "usage": {
+    "ja": "神経変性疾患や脳損傷の研究で、グリア細胞の活性化や数の変化が指標として測定されます。免疫組織化学染色やフローサイトメトリーでマーカータンパク質（GFAP、Iba1など）を検出し、炎症や組織修復の評価に用いられます。",
+    "en": "In studies of neurodegenerative diseases and brain injury, glial cell activation and population changes are measured as indicators. Immunohistochemistry and flow cytometry detect marker proteins (such as GFAP and Iba1) to assess inflammation and tissue repair."
+  },
+  "synonyms": {
+    "ja": "神経膠細胞とも呼ばれ、neuroglia、glia とも表記されます。種類によってアストロサイト（星状膠細胞）、オリゴデンドロサイト（希突起膠細胞）、ミクログリア（小膠細胞）など固有の名称があり、それぞれ機能が異なるため文脈に応じた使い分けが必要です。",
+    "en": "Also called neuroglia or simply glia. Specific types include astrocytes, oligodendrocytes, and microglia, each with distinct functions. Context-specific terminology is important as these subtypes have different roles in the nervous system."
+  },
+  "pubmedCount": 149085,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5562
+    },
+    {
+      "year": 2018,
+      "count": 5745
+    },
+    {
+      "year": 2019,
+      "count": 5870
+    },
+    {
+      "year": 2020,
+      "count": 6033
+    },
+    {
+      "year": 2021,
+      "count": 6090
+    },
+    {
+      "year": 2022,
+      "count": 5017
+    },
+    {
+      "year": 2023,
+      "count": 5024
+    },
+    {
+      "year": 2024,
+      "count": 6184
+    },
+    {
+      "year": 2025,
+      "count": 7237
+    },
+    {
+      "year": 2026,
+      "count": 6325
+    }
+  ],
+  "searchQuery": "(\"Neuroglia\"[MeSH Terms]) OR (\"glial cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892256",
+      "title": "3D-bioprinted dual-factor nerve conduits promote neurovascular co-regeneration via activation of the PI3K/AKT and MAPK/ERK pathways.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800424",
+      "title": "Neutrophil membrane-camouflaged ruthenium single-atom nanozymes precisely eliminate neutrophil extracellular traps to reprogram redox-immune microenvironment in intracerebral hemorrhage.",
+      "year": 2027
+    },
+    {
+      "pmid": "42731547",
+      "title": "In situ transformable fibrillar networks ameliorate secondary brain injury after intracerebral hemorrhage by activating KEAP1-Nrf2/ARE axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42981748",
+      "title": "ZeXieYin formula attenuates trimethylamine N-oxide- induced atherosclerosis and cognitive impairment by regulating microglial-neuronal signaling and autophagy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42957107",
+      "title": "Integrative network pharmacology, machine learning, and experimental validation identify the TLR4/NF-κB/NLRP3 axis as a potential mechanism underlying the therapeutic effects of Lingguizhugan decoction in Alzheimer's disease.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:10:53.412Z"
+}

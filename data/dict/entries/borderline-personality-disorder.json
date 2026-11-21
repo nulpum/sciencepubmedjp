@@ -1,0 +1,94 @@
+{
+  "slug": "borderline-personality-disorder",
+  "ja": "境界性パーソナリティ障害",
+  "yomi": "きょうかいせいぱーそなりてぃしょうがい",
+  "en": "borderline personality disorder",
+  "abbr": "BPD",
+  "category": "psychology",
+  "meshHeading": "Borderline Personality Disorder",
+  "meshUi": "68001883",
+  "description": {
+    "ja": "感情の不安定さ、対人関係の混乱、衝動的な行動、自己イメージの揺らぎなどを特徴とする精神医学的状態を指す用語です。心理学・精神医学の研究では、症状の評価尺度や治療介入の効果を調べる際に用いられます。診断基準はDSM-5などで定義されており、研究では特定の評価ツールを使って症状の程度を測定します。",
+    "en": "A psychiatric condition characterized by emotional instability, interpersonal difficulties, impulsive behaviors, and unstable self-image. In psychological and psychiatric research, this term is used when evaluating symptom severity scales and treatment intervention outcomes. Diagnostic criteria are defined in manuals such as DSM-5, and studies measure symptom levels using specific assessment tools."
+  },
+  "usage": {
+    "ja": "論文では「BPD患者における認知行動療法の効果」「BPD症状スコアの変化」のように、研究対象集団の特性や介入前後の評価指標として登場します。診断にはDSM-5基準、症状評価にはZAN-BPD尺度やBorderline Symptom Listなどの標準化ツールが使われます。",
+    "en": "In research papers, this appears in contexts such as 'effects of cognitive behavioral therapy in BPD patients' or 'changes in BPD symptom scores,' describing study population characteristics and pre-post intervention measures. Diagnosis uses DSM-5 criteria, and symptom assessment employs standardized tools like the ZAN-BPD scale or Borderline Symptom List."
+  },
+  "synonyms": {
+    "ja": "かつては「情緒不安定性パーソナリティ障害」とも呼ばれ、ICD-11では「Emotionally unstable personality disorder」に相当します。略語BPDは双極性障害(Bipolar Disorder)と混同しないよう文脈で判断が必要です。検索時は「borderline personality」「BPD symptoms」などが有効です。",
+    "en": "Previously termed 'emotionally unstable personality disorder,' corresponding to this classification in ICD-11. The abbreviation BPD should not be confused with Bipolar Disorder; context is essential for differentiation. Effective search terms include 'borderline personality,' 'BPD symptoms,' and 'emotionally unstable personality.'"
+  },
+  "pubmedCount": 11929,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 526
+    },
+    {
+      "year": 2018,
+      "count": 580
+    },
+    {
+      "year": 2019,
+      "count": 570
+    },
+    {
+      "year": 2020,
+      "count": 616
+    },
+    {
+      "year": 2021,
+      "count": 635
+    },
+    {
+      "year": 2022,
+      "count": 611
+    },
+    {
+      "year": 2023,
+      "count": 600
+    },
+    {
+      "year": 2024,
+      "count": 586
+    },
+    {
+      "year": 2025,
+      "count": 650
+    },
+    {
+      "year": 2026,
+      "count": 571
+    }
+  ],
+  "searchQuery": "(\"Borderline Personality Disorder\"[MeSH Terms]) OR (\"borderline personality disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880607",
+      "title": "Elevated borderline features in bipolar disorder: Clinical characteristics and symptom course in South Korea.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914679",
+      "title": "Longitudinal associations between plasma oxytocin levels and borderline personality disorder symptoms in adolescents.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858654",
+      "title": "Anxiety sensitivity, psychological vulnerability, and brain volumes in borderline personality disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42804975",
+      "title": "Symptom correlates of white matter pathology in borderline personality disorder: A narrative review of a structured pubmed search.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800510",
+      "title": "Mineralocorticoid receptor stimulation effects on stress-induced cortisol and alpha-amylase in female patients with borderline personality disorder and healthy controls: A randomized placebo-controlled experimental study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:14:04.437Z"
+}

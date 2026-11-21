@@ -1,0 +1,93 @@
+{
+  "slug": "ion-channel",
+  "ja": "イオンチャネル",
+  "yomi": "いおんちゃねる",
+  "en": "ion channel",
+  "category": "biology",
+  "meshHeading": "Ion Channels",
+  "meshUi": "68007473",
+  "description": {
+    "ja": "イオンチャネルは、細胞膜に存在するタンパク質で、ナトリウム、カリウム、カルシウムなどのイオンを選択的に通過させる孔を形成します。神経伝達、筋収縮、ホルモン分泌など、細胞の電気的シグナル伝達に不可欠な役割を果たしています。",
+    "en": "Ion channels are membrane proteins that form pores allowing selective passage of ions such as sodium, potassium, and calcium across cell membranes. They play essential roles in electrical signaling processes including nerve transmission, muscle contraction, and hormone secretion."
+  },
+  "usage": {
+    "ja": "論文では「voltage-gated ion channel(電位依存性イオンチャネル)」「ligand-gated ion channel(リガンド依存性イオンチャネル)」などの分類で記載され、パッチクランプ法や蛍光イメージングによる活性測定、遺伝子発現解析などが行われます。神経科学、心臓生理学、薬理学の研究で頻出します。",
+    "en": "In research papers, ion channels are typically classified as voltage-gated, ligand-gated, or mechanosensitive types, with measurements conducted using patch-clamp techniques, fluorescence imaging, and gene expression analyses. They are commonly studied in neuroscience, cardiac physiology, and pharmacology research."
+  },
+  "synonyms": {
+    "ja": "「チャネルタンパク質」「膜チャネル」とも呼ばれます。トランスポーター(能動輸送体)とは異なり、濃度勾配に従った受動的なイオン移動を媒介する点に注意が必要です。特定のイオン種に応じて「ナトリウムチャネル」「カリウムチャネル」などと呼ばれることもあります。",
+    "en": "Also referred to as channel proteins or membrane channels. It is important to distinguish ion channels from transporters, as channels mediate passive ion movement down concentration gradients. Specific types are named after the ions they conduct, such as sodium channels or potassium channels."
+  },
+  "pubmedCount": 300729,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 9816
+    },
+    {
+      "year": 2018,
+      "count": 9654
+    },
+    {
+      "year": 2019,
+      "count": 9171
+    },
+    {
+      "year": 2020,
+      "count": 9540
+    },
+    {
+      "year": 2021,
+      "count": 9244
+    },
+    {
+      "year": 2022,
+      "count": 8047
+    },
+    {
+      "year": 2023,
+      "count": 7299
+    },
+    {
+      "year": 2024,
+      "count": 8072
+    },
+    {
+      "year": 2025,
+      "count": 8467
+    },
+    {
+      "year": 2026,
+      "count": 7460
+    }
+  ],
+  "searchQuery": "(\"Ion Channels\"[MeSH Terms]) OR (\"ion channel\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42839367",
+      "title": "Enterovirus 2B protein: From viroporin to membrane stress sensor, mechanistic principles of multi-pathway regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887233",
+      "title": "Dual immuno-mechanical programming of a biomimetic periosteum for load-bearing bone restoration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42763996",
+      "title": "Engineered α9-nAChR-targeting antibodies attenuate nicotine-enhanced triple-negative breast cancer progression and exhibit favorable short-term tolerability in cynomolgus macaques.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843269",
+      "title": "Modular secondary-antibody-based SERS immunoprobes for detecting membrane-associated proteins in adherent cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "42977007",
+      "title": "Qi Yin San Liang San prevents gefitinib-induced nociceptive hypersensitivity by modulating TRPV1 channel activity.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:02:34.125Z"
+}

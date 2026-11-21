@@ -1,0 +1,96 @@
+{
+  "slug": "heuristic",
+  "ja": "ヒューリスティック",
+  "yomi": "ひゅーりすてぃっく",
+  "en": "heuristic",
+  "category": "psychology",
+  "aliases": [
+    "発見的手法"
+  ],
+  "meshHeading": "Heuristics",
+  "meshUi": "2009651",
+  "description": {
+    "ja": "複雑な問題を解決する際に、厳密な論理ではなく経験則や直感に基づいて素早く判断する思考の方略のことです。完全に正確ではないものの、時間や認知資源を節約しながら実用的な答えを導き出せる特徴があります。心理学では人間の判断や意思決定のメカニズムを理解する上で重要な概念です。",
+    "en": "A mental shortcut or rule of thumb that allows people to make judgments and solve problems quickly, based on experience and intuition rather than exhaustive logical analysis. While not always perfectly accurate, heuristics are practical strategies that save time and cognitive resources in decision-making processes."
+  },
+  "usage": {
+    "ja": "心理学研究では、代表性ヒューリスティック(典型例に基づく判断)や利用可能性ヒューリスティック(思い出しやすさに基づく判断)など、特定の種類のヒューリスティックが認知バイアスや判断エラーとどう関連するかが調べられます。実験では意思決定課題や確率判断課題を用いて、参加者がどのような思考の近道を使うかを測定します。",
+    "en": "Research examines specific types such as representativeness heuristic (judgments based on stereotypes) and availability heuristic (judgments based on ease of recall), and how they relate to cognitive biases and judgment errors. Studies typically use decision-making tasks or probability judgment tasks to measure which mental shortcuts participants employ."
+  },
+  "synonyms": {
+    "ja": "発見的手法、ヒューリスティクス、経験則、思考の近道などと呼ばれます。アルゴリズム(段階的な正確な解法)と対比されることが多く、ヒューリスティックは速いが不正確な可能性があり、アルゴリズムは遅いが正確という違いがあります。",
+    "en": "Also called heuristics (plural form), rule of thumb, mental shortcut, or cognitive shortcut. Often contrasted with algorithms (step-by-step exact procedures): heuristics are fast but potentially inaccurate, while algorithms are slow but precise."
+  },
+  "pubmedCount": 15837,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 667
+    },
+    {
+      "year": 2018,
+      "count": 762
+    },
+    {
+      "year": 2019,
+      "count": 748
+    },
+    {
+      "year": 2020,
+      "count": 787
+    },
+    {
+      "year": 2021,
+      "count": 972
+    },
+    {
+      "year": 2022,
+      "count": 1157
+    },
+    {
+      "year": 2023,
+      "count": 1073
+    },
+    {
+      "year": 2024,
+      "count": 974
+    },
+    {
+      "year": 2025,
+      "count": 1076
+    },
+    {
+      "year": 2026,
+      "count": 1456
+    }
+  ],
+  "searchQuery": "(\"Heuristics\"[MeSH Terms]) OR (\"heuristic\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42926955",
+      "title": "Collaborative intelligence for sustainable and patient-partnered clinical research.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874408",
+      "title": "Topology-aware dynamic co-evolution for robust graph learning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42955681",
+      "title": "Genetic Algorithm-Based Solvers for RNA-RNA Interaction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863397",
+      "title": "Dissociating accuracy and metacognition in nutritional judgements.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854632",
+      "title": "Rethinking waste management: From \"waste as resource\" to \"place as responsibility\".",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:24:29.076Z"
+}

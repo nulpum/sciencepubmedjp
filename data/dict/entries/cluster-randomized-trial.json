@@ -1,0 +1,91 @@
+{
+  "slug": "cluster-randomized-trial",
+  "ja": "クラスターランダム化試験",
+  "yomi": "くらすたーらんだむかしけん",
+  "en": "cluster randomized trial",
+  "category": "research",
+  "description": {
+    "ja": "個人ではなく、学校・病院・地域などの「集団 (クラスター)」単位でランダムに介入群と対照群に割り付ける臨床試験デザインです。集団内の個人が互いに影響し合う場合や、介入を個人別に分けることが現実的でない場合に用いられます。",
+    "en": "A clinical trial design in which groups (clusters) such as schools, hospitals, or communities—rather than individuals—are randomly assigned to intervention or control arms. This approach is used when individuals within a group influence each other or when individual-level randomization is impractical."
+  },
+  "usage": {
+    "ja": "公衆衛生介入や教育プログラムの評価で多用されます。解析では集団内の相関 (クラスター内相関係数, ICC) を考慮し、デザイン効果を補正したサンプルサイズ計算が必要です。",
+    "en": "Commonly used in evaluating public health interventions and educational programs. Analysis must account for intra-cluster correlation (ICC) and requires sample size calculations adjusted for design effect."
+  },
+  "synonyms": {
+    "ja": "cluster RCT、集団ランダム化試験とも呼ばれます。個人ランダム化試験 (individual RCT) と区別し、階層的データ構造を扱う統計手法 (多水準モデル等) がしばしば併用されます。",
+    "en": "Also called cluster RCT or group-randomized trial. Distinguished from individual RCT; often analyzed using hierarchical statistical methods such as multilevel models or generalized estimating equations."
+  },
+  "pubmedCount": 5246,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 277
+    },
+    {
+      "year": 2018,
+      "count": 326
+    },
+    {
+      "year": 2019,
+      "count": 359
+    },
+    {
+      "year": 2020,
+      "count": 415
+    },
+    {
+      "year": 2021,
+      "count": 463
+    },
+    {
+      "year": 2022,
+      "count": 438
+    },
+    {
+      "year": 2023,
+      "count": 437
+    },
+    {
+      "year": 2024,
+      "count": 486
+    },
+    {
+      "year": 2025,
+      "count": 503
+    },
+    {
+      "year": 2026,
+      "count": 531
+    }
+  ],
+  "searchQuery": "\"cluster randomized trial\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42991462",
+      "title": "Effectiveness of facilitator-driven and peer-led educational interventions on tobacco use intention among adolescents: a school-based cluster randomized trial protocol.",
+      "year": 2026
+    },
+    {
+      "pmid": "42906400",
+      "title": "The long-term and spillover effects of a radio drama on HIV knowledge, expressed stigma, willingness to disclose, and political priorities: Evidence from a cluster-randomized trial in Tanzania.",
+      "year": 2026
+    },
+    {
+      "pmid": "42843599",
+      "title": "Rethinking tuberculosis and human immunodeficiency virus as a syndemic: Implications for global prevention and care.",
+      "year": 2026
+    },
+    {
+      "pmid": "42223574",
+      "title": "Effects of the \"Claudia Carraro\" Universal Prevention Program on Eating Disorder Risk Factors in Adolescents: A Cluster Randomized Trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42176076",
+      "title": "Uptake of HIV Self-testing Among Adolescents and Young Adults in Nigeria: A Secondary Observational Analysis of a Stepped-Wedge, Cluster-Randomized Trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:50:10.422Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "cytokine",
+  "ja": "サイトカイン",
+  "yomi": "さいとかいん",
+  "en": "cytokine",
+  "category": "biology",
+  "meshHeading": "Cytokines",
+  "meshUi": "68016207",
+  "description": {
+    "ja": "サイトカインは、細胞間の情報伝達を担うタンパク質の総称で、免疫応答や炎症反応、細胞の増殖・分化などを調節します。インターロイキン、インターフェロン、腫瘍壊死因子(TNF)など多くの種類があり、それぞれ特定の受容体を介して標的細胞に作用します。過剰な産生は「サイトカインストーム」と呼ばれる状態を引き起こし、組織損傷の原因となることがあります。",
+    "en": "Cytokines are a broad category of signaling proteins that mediate communication between cells, regulating immune responses, inflammation, and cell proliferation and differentiation. This group includes interleukins, interferons, tumor necrosis factors (TNF), and many others, each acting on target cells through specific receptors. Excessive production can lead to a condition called 'cytokine storm,' which may cause tissue damage."
+  },
+  "usage": {
+    "ja": "論文では血清や組織中のサイトカイン濃度をELISA法やマルチプレックスアッセイで測定し、炎症性疾患や免疫関連疾患の病態メカニズム解明や治療効果の評価指標として用いられます。特定のサイトカイン(IL-6、TNF-αなど)の発現パターンや産生細胞の同定も免疫学的研究の重要な要素です。",
+    "en": "In research papers, cytokine concentrations in serum or tissue are measured using ELISA or multiplex assays to investigate disease mechanisms in inflammatory and immune-related conditions or to evaluate therapeutic efficacy. Identifying expression patterns and cellular sources of specific cytokines (such as IL-6 and TNF-α) is a key component of immunological research."
+  },
+  "synonyms": {
+    "ja": "「炎症性メディエーター」は炎症に関わるサイトカインを指す場合があり、「ケモカイン」は細胞遊走を促進する特定のサイトカインファミリーです。「増殖因子」(growth factor)もサイトカインの一種ですが、主に細胞増殖や分化に焦点を当てた文脈で使われます。",
+    "en": "The term 'inflammatory mediator' may refer to cytokines involved in inflammation, while 'chemokine' designates a specific family of cytokines that promote cell migration. 'Growth factors' are also a type of cytokine but are primarily used in contexts focusing on cell proliferation and differentiation."
+  },
+  "pubmedCount": 984197,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 37196
+    },
+    {
+      "year": 2018,
+      "count": 36714
+    },
+    {
+      "year": 2019,
+      "count": 36514
+    },
+    {
+      "year": 2020,
+      "count": 39667
+    },
+    {
+      "year": 2021,
+      "count": 38792
+    },
+    {
+      "year": 2022,
+      "count": 36778
+    },
+    {
+      "year": 2023,
+      "count": 32673
+    },
+    {
+      "year": 2024,
+      "count": 34214
+    },
+    {
+      "year": 2025,
+      "count": 36821
+    },
+    {
+      "year": 2026,
+      "count": 35323
+    }
+  ],
+  "searchQuery": "(\"Cytokines\"[MeSH Terms]) OR (\"cytokine\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "42999915",
+      "title": "A let-7a-5p-engineered extracellular vesicle-laden bioactive scaffold promotes immunomodulation and regeneration of segmental tracheal defects.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914653",
+      "title": "Hybrid nanovesicle artificial antigen-presenting cells integrate endogenous tumor antigen display with senescence-mimetic erythrocyte membrane-directed splenic T-cell priming.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901135",
+      "title": "Engineering biomaterials to improve cytokine therapies for wound healing.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896417",
+      "title": "Molecularly nanoengineered dendritic cells for tumor-specific antigen capture and sono-activatable cytokine-mediated immunotherapy.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:00:21.263Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "malnutrition",
+  "ja": "低栄養",
+  "yomi": "ていえいよう",
+  "en": "malnutrition",
+  "category": "nursing-pharma",
+  "meshHeading": "Malnutrition",
+  "meshUi": "68044342",
+  "description": {
+    "ja": "低栄養とは、エネルギーやタンパク質、ビタミン、ミネラルなどの栄養素の摂取不足や吸収障害により、身体機能や健康状態が損なわれている状態を指します。高齢者、入院患者、慢性疾患患者などで問題となり、筋肉量の減少、免疫機能の低下、創傷治癒の遅延などをもたらします。栄養スクリーニングや栄養アセスメントによって早期発見し、適切な栄養管理を行うことが重要です。",
+    "en": "Malnutrition refers to a condition where body function and health status are impaired due to insufficient intake or absorption of nutrients such as energy, protein, vitamins, and minerals. It is a significant concern in elderly individuals, hospitalized patients, and those with chronic diseases, leading to reduced muscle mass, decreased immune function, and delayed wound healing. Early detection through nutritional screening and assessment, followed by appropriate nutritional management, is essential."
+  },
+  "usage": {
+    "ja": "論文では、BMI、血清アルブミン値、体重減少率、MNA(Mini Nutritional Assessment)やMUST(Malnutrition Universal Screening Tool)などのスクリーニングツールを用いて評価されます。入院患者の予後予測因子や介入研究における主要アウトカムとして扱われ、栄養補助食品や経腸栄養の効果を検証する研究で頻繁に登場します。",
+    "en": "In research papers, malnutrition is assessed using BMI, serum albumin levels, percentage of weight loss, and screening tools such as MNA (Mini Nutritional Assessment) or MUST (Malnutrition Universal Screening Tool). It is frequently examined as a prognostic factor for hospitalized patients and as a primary outcome in intervention studies evaluating the effects of nutritional supplements or enteral nutrition."
+  },
+  "synonyms": {
+    "ja": "「栄養不良」「栄養障害」とほぼ同義ですが、「低栄養」は特にエネルギー・タンパク質の不足を強調する場合に用いられます。「サルコペニア(筋肉量減少)」や「フレイル(虚弱)」は低栄養と関連しますが、異なる概念です。英語では「undernutrition」がより狭義の栄養不足を指し、「malnutrition」は過栄養も含む広い概念として使われることがあります。",
+    "en": "Terms such as 'undernutrition' and 'nutritional deficiency' are closely related, with 'undernutrition' specifically emphasizing deficiencies in energy and protein intake. 'Sarcopenia' (muscle mass loss) and 'frailty' are associated with malnutrition but represent distinct concepts. In English, 'malnutrition' can be used broadly to include both undernutrition and overnutrition, though context usually clarifies the intended meaning."
+  },
+  "pubmedCount": 187360,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5351
+    },
+    {
+      "year": 2018,
+      "count": 5495
+    },
+    {
+      "year": 2019,
+      "count": 5875
+    },
+    {
+      "year": 2020,
+      "count": 6654
+    },
+    {
+      "year": 2021,
+      "count": 7128
+    },
+    {
+      "year": 2022,
+      "count": 6627
+    },
+    {
+      "year": 2023,
+      "count": 6263
+    },
+    {
+      "year": 2024,
+      "count": 6393
+    },
+    {
+      "year": 2025,
+      "count": 6984
+    },
+    {
+      "year": 2026,
+      "count": 6342
+    }
+  ],
+  "searchQuery": "(\"Malnutrition\"[MeSH Terms]) OR (\"malnutrition\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42815256",
+      "title": "Prototypical transfer learning framework for small-sample (1)H NMR metabolomics: Accurate and interpretable classification of short stature.",
+      "year": 2027
+    },
+    {
+      "pmid": "42603581",
+      "title": "Vitamin D deficiency is common in Hashimoto's thyroiditis, while VDR FokI shows subtype-specific association with gravis disease in Jordan: a case-control study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42547003",
+      "title": "From analytical bias to threshold-based discordance: An ID-LC-MS/MS reference method reveals and corrects hyperhomocysteinemia classification discordance in China.",
+      "year": 2027
+    },
+    {
+      "pmid": "42731717",
+      "title": "Shenqi Yanshen Decoction protects against renal and bone injury in chronic kidney disease-mineral and bone disorder with potential involvement of Wnt5a/RhoA/Pkn3 signaling.",
+      "year": 2027
+    },
+    {
+      "pmid": "42648412",
+      "title": "Pharmacodynamic-oriented serum pharmacochemistry-based discovery of the pharmacodynamic material basis and mechanism of Ohwia caudata leaves against acute ulcerative colitis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:42:53.493Z"
+}

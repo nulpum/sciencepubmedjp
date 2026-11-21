@@ -1,0 +1,96 @@
+{
+  "slug": "emotion-regulation",
+  "ja": "情動調整",
+  "yomi": "じょうどうちょうせい",
+  "en": "emotion regulation",
+  "category": "psychology",
+  "aliases": [
+    "感情調整"
+  ],
+  "meshHeading": "Emotional Regulation",
+  "meshUi": "2030918",
+  "description": {
+    "ja": "情動調整とは、自分の感情や気分を状況に応じて調整・コントロールする心理的プロセスを指します。ストレスや不安を感じたときに、認知的な再解釈や注意の向け方を変えることで感情を和らげたり、逆に必要な場面で感情を高めたりする能力です。うつ病や不安障害などの精神疾患研究で、症状との関連が調べられています。",
+    "en": "Emotion regulation refers to psychological processes by which individuals modulate their emotional experiences and expressions in response to situational demands. It includes strategies such as cognitive reappraisal (reinterpreting a situation to change its emotional impact) and attentional deployment (shifting focus to regulate feelings). This concept is extensively studied in relation to mental health conditions such as depression and anxiety disorders."
+  },
+  "usage": {
+    "ja": "心理学研究では質問紙(Emotion Regulation Questionnaire等)を用いて個人の調整方略を測定し、認知的再評価や抑制といった戦略の使用頻度と精神的健康との関連を分析します。fMRI研究では前頭前野や扁桃体の活動を観察し、情動調整の神経基盤を調べます。",
+    "en": "Research typically employs self-report questionnaires (e.g., Emotion Regulation Questionnaire) to assess individuals' use of strategies like cognitive reappraisal and suppression, examining their associations with mental health outcomes. Neuroimaging studies (fMRI) investigate neural correlates by observing prefrontal cortex and amygdala activity during emotion regulation tasks."
+  },
+  "synonyms": {
+    "ja": "感情調整や情動制御とも呼ばれます。類似概念に感情コントロールや情動的コーピングがありますが、情動調整はより包括的で、意識的・無意識的な調整プロセス全体を含む点で異なります。",
+    "en": "Also referred to as emotional regulation or affect regulation. Related concepts include emotional control and affective coping, though emotion regulation is broader, encompassing both conscious and unconscious regulatory processes across various contexts."
+  },
+  "pubmedCount": 19807,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1095
+    },
+    {
+      "year": 2018,
+      "count": 1225
+    },
+    {
+      "year": 2019,
+      "count": 1469
+    },
+    {
+      "year": 2020,
+      "count": 1698
+    },
+    {
+      "year": 2021,
+      "count": 1885
+    },
+    {
+      "year": 2022,
+      "count": 1986
+    },
+    {
+      "year": 2023,
+      "count": 1923
+    },
+    {
+      "year": 2024,
+      "count": 2115
+    },
+    {
+      "year": 2025,
+      "count": 2754
+    },
+    {
+      "year": 2026,
+      "count": 3018
+    }
+  ],
+  "searchQuery": "(\"Emotional Regulation\"[MeSH Terms]) OR (\"emotion regulation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42732759",
+      "title": "Training emotion regulation in Preschoolers: Preliminary evaluation of a Researcher-Teacher co-constructed program aligned with usual classroom practices.",
+      "year": 2027
+    },
+    {
+      "pmid": "42951731",
+      "title": "Corrigendum to \"Emotion regulation and state body image during daily body-exposure situations: A pilot ecological momentary assessment study\" [J. Affect. Disord. 415 (2026) 122447].",
+      "year": 2027
+    },
+    {
+      "pmid": "42874812",
+      "title": "Microstructural changes in prefrontal-cingulate networks following bilateral dorsomedial prefrontal cortex-targeted intermittent theta-burst stimulation in treatment-resistant depression: A diffusion tensor imaging study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42744138",
+      "title": "Cinepathy: A translational framework bridging neurocinematics and clinical therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "43031303",
+      "title": "Maternal responses to infant positive affect and toddler regulation of positive affect: A longitudinal pilot study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:10:26.742Z"
+}

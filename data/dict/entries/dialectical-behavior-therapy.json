@@ -1,0 +1,94 @@
+{
+  "slug": "dialectical-behavior-therapy",
+  "ja": "弁証法的行動療法",
+  "yomi": "べんしょうほうてきこうどうりょうほう",
+  "en": "dialectical behavior therapy",
+  "abbr": "DBT",
+  "category": "psychology",
+  "meshHeading": "Dialectical Behavior Therapy",
+  "meshUi": "2027951",
+  "description": {
+    "ja": "弁証法的行動療法(DBT)は、感情調整が困難な人を対象とした心理療法で、マインドフルネスやストレス耐性などのスキル訓練を組み合わせます。もともと境界性パーソナリティ障害の治療のために開発され、感情の受容と変化のバランスを重視する点が特徴です。",
+    "en": "Dialectical Behavior Therapy (DBT) is a psychotherapy approach designed for individuals with emotional regulation difficulties, combining mindfulness and distress tolerance skills training. Originally developed for borderline personality disorder, it emphasizes the balance between acceptance and change of emotions."
+  },
+  "usage": {
+    "ja": "心理学・精神医学の論文では、自傷行為や自殺念慮の減少、感情調整能力の向上を評価指標として用います。介入研究ではDBTを標準治療や他の心理療法と比較し、症状スコアの変化を測定することが一般的です。",
+    "en": "In psychology and psychiatry papers, DBT is evaluated using outcomes such as reduction in self-harm, suicidal ideation, and improvement in emotion regulation capacity. Intervention studies typically compare DBT with standard care or other psychotherapies, measuring changes in symptom scores."
+  },
+  "synonyms": {
+    "ja": "略称DBTが広く使われます。認知行動療法(CBT)の一種ですが、マインドフルネスや弁証法的思考を強調する点で区別されます。第三世代認知行動療法に分類されることもあります。",
+    "en": "The abbreviation DBT is widely used. While it is a form of Cognitive Behavioral Therapy (CBT), it is distinguished by its emphasis on mindfulness and dialectical thinking. It is sometimes classified as a third-wave cognitive behavioral therapy."
+  },
+  "pubmedCount": 1329,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 54
+    },
+    {
+      "year": 2018,
+      "count": 73
+    },
+    {
+      "year": 2019,
+      "count": 88
+    },
+    {
+      "year": 2020,
+      "count": 108
+    },
+    {
+      "year": 2021,
+      "count": 119
+    },
+    {
+      "year": 2022,
+      "count": 118
+    },
+    {
+      "year": 2023,
+      "count": 113
+    },
+    {
+      "year": 2024,
+      "count": 140
+    },
+    {
+      "year": 2025,
+      "count": 173
+    },
+    {
+      "year": 2026,
+      "count": 178
+    }
+  ],
+  "searchQuery": "(\"Dialectical Behavior Therapy\"[MeSH Terms]) OR (\"dialectical behavior therapy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43004775",
+      "title": "Evaluating the Feasibility, Acceptability, and Preliminary Efficacy of Virtually Delivered Dialectical Behaviour Therapy Skills Groups Among Emerging Adults in India.",
+      "year": 2026
+    },
+    {
+      "pmid": "43050679",
+      "title": "Development of PRECISE, a Data-Driven Personalized Suicide Prevention Intervention: Protocol for an Intervention Refinement Pilot and Randomized Controlled Trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42398677",
+      "title": "An implementation \"Field Trial\" of DBT for adolescents with bipolar disorder: Training procedures and therapist outcomes.",
+      "year": 2026
+    },
+    {
+      "pmid": "43007328",
+      "title": "Outcomes from a Pilot Trial of a Dialectical Behavior Therapy (DBT) Tobacco Cessation Intervention for Veterans at Heightened Risk for Suicide.",
+      "year": 2026
+    },
+    {
+      "pmid": "42970079",
+      "title": "Effects of a jail-adapted dialectical behavioral therapy skills group on in-custody outcomes and reentry preparedness: A randomized controlled trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:22:52.989Z"
+}

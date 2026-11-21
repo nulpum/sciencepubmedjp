@@ -1,0 +1,96 @@
+{
+  "slug": "frailty",
+  "ja": "フレイル",
+  "yomi": "ふれいる",
+  "en": "frailty",
+  "category": "nursing-pharma",
+  "aliases": [
+    "虚弱"
+  ],
+  "meshHeading": "Frailty",
+  "meshUi": "2023122",
+  "description": {
+    "ja": "加齢に伴い心身の活力が低下し、ストレスに対する脆弱性が増した状態を指す概念です。健康な状態と要介護状態の中間段階として位置づけられ、適切な介入により機能回復が期待できる可逆的な段階とされています。身体的側面だけでなく、認知機能や社会的つながりの低下も含む多面的な概念です。",
+    "en": "Frailty refers to a clinical state of increased vulnerability to stressors due to age-related decline in physiological reserve and function across multiple organ systems. It represents an intermediate stage between healthy aging and disability, characterized by decreased resistance to stressors and potentially reversible with appropriate interventions. The concept encompasses physical, cognitive, and social dimensions."
+  },
+  "usage": {
+    "ja": "論文では身体的フレイル評価にFriedの表現型モデル(体重減少、疲労感、活動量低下、歩行速度低下、筋力低下の5項目)や、多面的評価を行うフレイル指数が用いられます。高齢者研究において転倒、入院、死亡などのアウトカムとの関連を調べる際の重要な予測因子として測定されます。",
+    "en": "In research, frailty is commonly assessed using Fried's phenotype model (unintentional weight loss, exhaustion, low physical activity, slow gait speed, and weak grip strength) or the frailty index that incorporates multiple deficits. It serves as a key predictor in geriatric studies examining outcomes such as falls, hospitalization, and mortality."
+  },
+  "synonyms": {
+    "ja": "虚弱と同義ですが、フレイルは可逆性を強調する新しい用語として普及しています。physical frailtyは身体的フレイル、cognitive frailtyは認知的フレイルを指し、pre-frailtyはフレイルの前段階(前虚弱)を意味します。sarcopeniaは筋肉量・筋力低下に特化した概念で、フレイルと重複しますが区別されます。",
+    "en": "The term is synonymous with weakness or debility, though frailty emphasizes reversibility and clinical significance. Physical frailty focuses on physical aspects, while cognitive frailty includes cognitive decline. Pre-frailty denotes an intermediate state. Sarcopenia, which refers specifically to muscle mass and strength loss, overlaps with but is distinct from frailty."
+  },
+  "pubmedCount": 44889,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1890
+    },
+    {
+      "year": 2018,
+      "count": 2284
+    },
+    {
+      "year": 2019,
+      "count": 2826
+    },
+    {
+      "year": 2020,
+      "count": 3563
+    },
+    {
+      "year": 2021,
+      "count": 4249
+    },
+    {
+      "year": 2022,
+      "count": 4557
+    },
+    {
+      "year": 2023,
+      "count": 4469
+    },
+    {
+      "year": 2024,
+      "count": 5192
+    },
+    {
+      "year": 2025,
+      "count": 6556
+    },
+    {
+      "year": 2026,
+      "count": 7663
+    }
+  ],
+  "searchQuery": "(\"Frailty\"[MeSH Terms]) OR (\"frailty\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43008772",
+      "title": "Physical exercise interventions to promote healthy ageing in older adults: from research to clinical implementation.",
+      "year": 2027
+    },
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42338918",
+      "title": "Initial Experience With Endoscopic Ultrasound-Guided Gallbladder Drainage Using Lumen-apposing Metal Stents in Extremely Elderly and Frail Patients.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045248",
+      "title": "Obesity in Aging.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045246",
+      "title": "Type 1 Diabetes Mellitus in the Elderly: Clinical Challenges and Technological Advances.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:40:52.038Z"
+}

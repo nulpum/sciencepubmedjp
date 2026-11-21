@@ -1,0 +1,96 @@
+{
+  "slug": "resilience",
+  "ja": "レジリエンス",
+  "yomi": "れじりえんす",
+  "en": "resilience",
+  "category": "psychology",
+  "aliases": [
+    "精神的回復力"
+  ],
+  "meshHeading": "Resilience, Psychological",
+  "meshUi": "68055500",
+  "description": {
+    "ja": "ストレスや逆境に直面したときに、精神的に立ち直り適応する能力を指す心理学用語です。困難な状況から回復するだけでなく、その経験を通じて成長する力も含まれます。個人の特性だけでなく、環境や社会的サポートとの相互作用によっても形成されます。",
+    "en": "A psychological term referring to the ability to mentally recover and adapt when facing stress or adversity. It encompasses not only bouncing back from difficult situations but also the capacity to grow through such experiences. Resilience is shaped by interactions among individual traits, environmental factors, and social support."
+  },
+  "usage": {
+    "ja": "心理学研究では、Connor-Davidson Resilience Scale(CD-RISC)やResilience Scale for Adults(RSA)などの質問紙を用いて測定されます。トラウマ後の回復過程、メンタルヘルス研究、発達心理学などの分野で、ストレス耐性や適応能力の指標として調べられています。",
+    "en": "In psychological research, resilience is measured using questionnaires such as the Connor-Davidson Resilience Scale (CD-RISC) or the Resilience Scale for Adults (RSA). It is examined as an indicator of stress tolerance and adaptive capacity in fields including post-trauma recovery, mental health research, and developmental psychology."
+  },
+  "synonyms": {
+    "ja": "「精神的回復力」「心理的レジリエンス」とも呼ばれます。類似概念に「ストレス対処能力(coping)」や「精神的強靭性(mental toughness)」がありますが、レジリエンスは逆境後の回復と成長の過程により焦点を当てた概念です。",
+    "en": "Also called 'psychological resilience' or 'mental resilience.' Related concepts include 'coping' and 'mental toughness,' but resilience specifically focuses on the process of recovery and growth following adversity."
+  },
+  "pubmedCount": 101531,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3223
+    },
+    {
+      "year": 2018,
+      "count": 3885
+    },
+    {
+      "year": 2019,
+      "count": 4465
+    },
+    {
+      "year": 2020,
+      "count": 6143
+    },
+    {
+      "year": 2021,
+      "count": 8370
+    },
+    {
+      "year": 2022,
+      "count": 9241
+    },
+    {
+      "year": 2023,
+      "count": 9349
+    },
+    {
+      "year": 2024,
+      "count": 11909
+    },
+    {
+      "year": 2025,
+      "count": 20043
+    },
+    {
+      "year": 2026,
+      "count": 22232
+    }
+  ],
+  "searchQuery": "(\"Resilience, Psychological\"[MeSH Terms]) OR (\"resilience\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892707",
+      "title": "Trait-like proteomic signatures of stress resilience: correlates of freeze-like response resistance.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901666",
+      "title": "Combined phenotypic characterization of dominant Enterococcus strains isolated from aquaculture facilities and fish in Greece: growth kinetics, minimum inhibitory concentrations of antibiotics, and biofilm behavior.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901656",
+      "title": "Occurrence, persistence and pathogenic potential of Bacillus cereus sensu lato strains isolated during processing of two plant-based desserts.",
+      "year": 2027
+    },
+    {
+      "pmid": "42801833",
+      "title": "Molecular confinement within ammonium bis(biureto)borate nanosheets enables ultrastable room-temperature phosphorescence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42777983",
+      "title": "Parishin B, a phenolic constituent of Gastrodia elata Blume, extends lifespan and improves stress resistance in Caenorhabditis elegans.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:16:57.079Z"
+}

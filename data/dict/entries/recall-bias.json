@@ -1,0 +1,94 @@
+{
+  "slug": "recall-bias",
+  "ja": "想起バイアス",
+  "yomi": "そうきばいあす",
+  "en": "recall bias",
+  "category": "research",
+  "aliases": [
+    "思い出しバイアス"
+  ],
+  "description": {
+    "ja": "想起バイアスとは、過去の出来事や経験を思い出す際に生じる系統的な誤りのことです。研究参加者が過去の行動や症状を不正確に記憶・報告することで、研究結果に偏りが生じる現象を指します。特に症例対照研究や後ろ向き研究で問題となります。",
+    "en": "Recall bias refers to systematic errors that occur when participants remember and report past events or experiences. It happens when study participants inaccurately recall previous behaviors, exposures, or symptoms, leading to distorted research findings. This is particularly problematic in case-control and retrospective studies."
+  },
+  "usage": {
+    "ja": "疫学研究や臨床研究において、患者群が健常者群よりも過去の曝露をより詳細に思い出す傾向がある場合などに言及されます。研究の限界(limitation)として、「想起バイアスの可能性がある」と記述されることが多く、前向き研究デザインの採用や客観的記録の使用によって軽減が試みられます。",
+    "en": "In epidemiological and clinical studies, recall bias is discussed when cases may remember past exposures more thoroughly than controls. It is commonly mentioned in the limitations section as \"potential for recall bias,\" and researchers attempt to minimize it through prospective study designs or use of objective records rather than self-reported data."
+  },
+  "synonyms": {
+    "ja": "思い出しバイアス、記憶バイアスとも呼ばれます。情報バイアスの一種であり、測定バイアスや報告バイアスと関連しますが、想起バイアスは特に「過去の記憶に基づく報告」の不正確さに焦点を当てた用語です。",
+    "en": "Also called memory bias or reporting bias. It is a type of information bias and related to measurement bias, but recall bias specifically focuses on inaccuracies in reporting based on memory of past events rather than current observations."
+  },
+  "pubmedCount": 2654,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 117
+    },
+    {
+      "year": 2018,
+      "count": 132
+    },
+    {
+      "year": 2019,
+      "count": 132
+    },
+    {
+      "year": 2020,
+      "count": 151
+    },
+    {
+      "year": 2021,
+      "count": 165
+    },
+    {
+      "year": 2022,
+      "count": 172
+    },
+    {
+      "year": 2023,
+      "count": 197
+    },
+    {
+      "year": 2024,
+      "count": 199
+    },
+    {
+      "year": 2025,
+      "count": 261
+    },
+    {
+      "year": 2026,
+      "count": 240
+    }
+  ],
+  "searchQuery": "\"recall bias\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43001902",
+      "title": "Pharmacists' perspectives on efficiencies and other benefits of combination influenza/COVID-19 vaccination.",
+      "year": 2026
+    },
+    {
+      "pmid": "42856094",
+      "title": "Attack severity in hereditary angioedema: a qualitative study to inform future economic evaluations.",
+      "year": 2026
+    },
+    {
+      "pmid": "42568930",
+      "title": "Transitions between contraceptive states among women aged 15-49 Years in Guinea.",
+      "year": 2026
+    },
+    {
+      "pmid": "42501643",
+      "title": "Patterns and implications of co-use between vaping and hallucinogens: a systematic review and meta-analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42233628",
+      "title": "Characteristics of COVID-19 vaccine hesitancy in university students: Methodological insights from a syndemic perspective.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:44:37.957Z"
+}

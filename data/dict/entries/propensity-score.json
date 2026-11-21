@@ -1,0 +1,93 @@
+{
+  "slug": "propensity-score",
+  "ja": "傾向スコア",
+  "yomi": "けいこうすこあ",
+  "en": "propensity score",
+  "category": "research",
+  "meshHeading": "Propensity Score",
+  "meshUi": "68057216",
+  "description": {
+    "ja": "傾向スコアとは、観察研究において、ある治療や介入を受ける確率を、患者の背景因子(年齢、性別、既往歴など)から算出した値です。ランダム化比較試験が実施できない場合に、治療群と対照群の背景因子の偏りを調整して、より公平な比較を行うために用いられます。0から1の範囲の値をとり、スコアが近い対象者同士を比較することで、観察研究でも因果関係の推定精度を高めることができます。",
+    "en": "A propensity score is a probability estimate of receiving a particular treatment or intervention, calculated from baseline characteristics (age, sex, medical history, etc.) in observational studies. It is used to adjust for confounding by balancing baseline characteristics between treatment and control groups when randomized controlled trials are not feasible. The score ranges from 0 to 1, and by comparing subjects with similar scores, researchers can improve causal inference in observational research."
+  },
+  "usage": {
+    "ja": "論文では「propensity score matching(傾向スコアマッチング)」や「propensity score adjustment(傾向スコア調整)」として、比較群間のベースライン特性の違いを統計的に調整する方法論として登場します。ロジスティック回帰モデルなどで算出され、マッチング、層別化、逆確率重み付け(IPTW)などの手法と組み合わせて使用されます。",
+    "en": "In papers, it appears as 'propensity score matching' or 'propensity score adjustment' to statistically control for baseline differences between comparison groups. It is typically calculated using logistic regression models and combined with methods such as matching, stratification, or inverse probability of treatment weighting (IPTW)."
+  },
+  "synonyms": {
+    "ja": "PSと略されることが多く、傾向スコアマッチング(PSM)、傾向スコア重み付け、傾向スコア層別化などの応用手法があります。交絡因子の調整や選択バイアスの制御といった文脈で用いられ、因果推論(causal inference)の重要な手法の一つです。",
+    "en": "Often abbreviated as PS, with applications including propensity score matching (PSM), propensity score weighting, and propensity score stratification. It is used in contexts of confounding adjustment and selection bias control, representing a key method in causal inference."
+  },
+  "pubmedCount": 76819,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3515
+    },
+    {
+      "year": 2018,
+      "count": 4227
+    },
+    {
+      "year": 2019,
+      "count": 5041
+    },
+    {
+      "year": 2020,
+      "count": 6183
+    },
+    {
+      "year": 2021,
+      "count": 7764
+    },
+    {
+      "year": 2022,
+      "count": 8463
+    },
+    {
+      "year": 2023,
+      "count": 8165
+    },
+    {
+      "year": 2024,
+      "count": 9139
+    },
+    {
+      "year": 2025,
+      "count": 11738
+    },
+    {
+      "year": 2026,
+      "count": 13157
+    }
+  ],
+  "searchQuery": "(\"Propensity Score\"[MeSH Terms]) OR (\"propensity score\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42841288",
+      "title": "Circulatory arrest versus aortic cross-clamping in proximal thoracic aortic aneurysm repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42781356",
+      "title": "Clinical Outcomes of Rubber-clip-assisted Versus Conventional Colorectal Endoscopic Submucosal Dissection: A Retrospective Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42729492",
+      "title": "Comparison of Two Partially Covered Metal Stents for Endoscopic Ultrasound-guided Hepaticogastrostomy: A Multi-Center Retrospective Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42694720",
+      "title": "Association of Propofol Versus Midazolam Sedation With Successful Pharyngeal Observation During Upper Gastrointestinal Endoscopy: A Retrospective Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42582981",
+      "title": "Efficacy of Overtube in Preventing Aspiration Pneumonia During Esophageal Endoscopic Submucosal Dissection.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:45:14.387Z"
+}

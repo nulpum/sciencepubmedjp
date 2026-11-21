@@ -1,0 +1,91 @@
+{
+  "slug": "reward-sensitivity",
+  "ja": "報酬感受性",
+  "yomi": "ほうしゅうかんじゅせい",
+  "en": "reward sensitivity",
+  "category": "psychology",
+  "description": {
+    "ja": "報酬感受性とは、報酬(ポジティブな刺激や結果)に対する反応の強さや敏感さを示す心理学的概念です。個人差があり、高い人は報酬に対して強く動機づけられやすく、低い人は報酬への反応が弱い傾向があります。神経科学的にはドーパミン系の活動と関連することが示されています。",
+    "en": "Reward sensitivity refers to the strength or intensity of an individual's response to rewards (positive stimuli or outcomes). It varies across individuals, with high sensitivity associated with stronger motivation toward rewards and lower sensitivity linked to weaker reward responses. Neuroscientifically, it is associated with dopaminergic system activity."
+  },
+  "usage": {
+    "ja": "心理学研究では質問紙(BIS/BAS尺度など)や行動課題(金銭報酬課題、確率的学習課題)で測定されます。うつ病や依存症、ADHD、摂食障害などの研究で、報酬系の機能異常を調べる指標として用いられ、fMRIでは線条体や前頭前野の活動が解析されます。",
+    "en": "In psychological research, it is measured using questionnaires (such as BIS/BAS scales) or behavioral tasks (monetary reward tasks, probabilistic learning tasks). It serves as an indicator of reward system dysfunction in studies of depression, addiction, ADHD, and eating disorders, with fMRI analyses focusing on striatal and prefrontal cortex activity."
+  },
+  "synonyms": {
+    "ja": "「報酬反応性(reward responsiveness)」とほぼ同義ですが、感受性は特性的傾向、反応性は状態的反応を指すことがあります。関連概念に「行動賦活系(BAS: Behavioral Activation System)」「快感消失(anhedonia、報酬感受性の低下)」があります。",
+    "en": "Nearly synonymous with 'reward responsiveness,' though sensitivity often refers to trait-like tendencies while responsiveness may indicate state-dependent reactions. Related concepts include the Behavioral Activation System (BAS) and anhedonia (reduced reward sensitivity)."
+  },
+  "pubmedCount": 1476,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 91
+    },
+    {
+      "year": 2018,
+      "count": 91
+    },
+    {
+      "year": 2019,
+      "count": 99
+    },
+    {
+      "year": 2020,
+      "count": 117
+    },
+    {
+      "year": 2021,
+      "count": 111
+    },
+    {
+      "year": 2022,
+      "count": 117
+    },
+    {
+      "year": 2023,
+      "count": 125
+    },
+    {
+      "year": 2024,
+      "count": 128
+    },
+    {
+      "year": 2025,
+      "count": 161
+    },
+    {
+      "year": 2026,
+      "count": 177
+    }
+  ],
+  "searchQuery": "\"reward sensitivity\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42763058",
+      "title": "Comparing neural signatures of risky decision-making and guaranteed reward processing using a modified Balloon Analogue Risk Task and multi-echo imaging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42951040",
+      "title": "Rest-activity rhythm robustness and prospective mood symptoms in adolescence: Moderating effects of chronotype, sleep timing, and reward sensitivity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42928962",
+      "title": "Juvenile psychopathy and its relation to immaturity: Maturational growth mediates associations between adolescent and adult psychopathy scores.",
+      "year": 2026
+    },
+    {
+      "pmid": "43056771",
+      "title": "Approach bias modification modulates control and reward circuits while strengthening emotion-action coupling in internet gaming disorder.",
+      "year": 2026
+    },
+    {
+      "pmid": "43003023",
+      "title": "Transdiagnostic symptom profiles in anxiety and depression: a person-centered approach to characterizing heterogeneity and exploring response to a positive valence intervention.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:27:51.920Z"
+}

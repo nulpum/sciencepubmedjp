@@ -1,0 +1,91 @@
+{
+  "slug": "anchoring-effect",
+  "ja": "アンカリング効果",
+  "yomi": "あんかりんぐこうか",
+  "en": "anchoring effect",
+  "category": "psychology",
+  "description": {
+    "ja": "最初に提示された情報(アンカー)が、その後の判断や意思決定に無意識のうちに影響を与える認知バイアスのことです。心理学実験では、数値や価格などの初期情報が後続の推定値を引き寄せる現象として観察されます。",
+    "en": "A cognitive bias where initial information (anchor) unconsciously influences subsequent judgments and decision-making. In psychological experiments, it is observed as a phenomenon where initial information such as numbers or prices pulls subsequent estimates toward it."
+  },
+  "usage": {
+    "ja": "意思決定研究や行動経済学の論文で頻繁に登場し、実験参加者に最初に高い値や低い値を提示した後、推定課題や選択課題での回答がどう変化するかを測定します。医療場面では診断や治療選択における医師の判断バイアスとしても研究されます。",
+    "en": "Frequently appears in decision-making research and behavioral economics papers, measuring how responses in estimation or choice tasks change after presenting high or low initial values to participants. In medical contexts, it is also studied as a judgment bias in physicians' diagnostic and treatment decisions."
+  },
+  "synonyms": {
+    "ja": "「アンカリング・バイアス」「係留効果」とも呼ばれます。類似概念として「調整ヒューリスティック(adjustment heuristic)」がありますが、これはアンカーから調整する過程を指し、調整不足によってアンカリング効果が生じるとされます。",
+    "en": "Also called 'anchoring bias' or 'anchoring and adjustment heuristic.' A related concept is 'adjustment heuristic,' which refers to the process of adjusting from an anchor, with insufficient adjustment leading to the anchoring effect."
+  },
+  "pubmedCount": 399,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 18
+    },
+    {
+      "year": 2018,
+      "count": 20
+    },
+    {
+      "year": 2019,
+      "count": 19
+    },
+    {
+      "year": 2020,
+      "count": 18
+    },
+    {
+      "year": 2021,
+      "count": 35
+    },
+    {
+      "year": 2022,
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "count": 33
+    },
+    {
+      "year": 2024,
+      "count": 53
+    },
+    {
+      "year": 2025,
+      "count": 58
+    },
+    {
+      "year": 2026,
+      "count": 47
+    }
+  ],
+  "searchQuery": "\"anchoring effect\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42810214",
+      "title": "Polyaniline-mediated interfacial electron modulation for durable and selective electroreduction of carbon dioxide to carbon monoxide over sulfur-doped zinc oxide.",
+      "year": 2027
+    },
+    {
+      "pmid": "42263591",
+      "title": "Achieving high-performance manganese oxide-based aqueous zinc-ion batteries via a heterostructure strategy.",
+      "year": 2026
+    },
+    {
+      "pmid": "42984827",
+      "title": "Gelatin-Mediated Interfacial Engineering of Cellulose-Based Phase Change Foams for Temperature-Adaptive Thermal Regulation.",
+      "year": 2026
+    },
+    {
+      "pmid": "42975364",
+      "title": "Defect-Induced Metal Anchoring on BiOBr for Efficient Photocatalytic H2O2 Synthesis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42906221",
+      "title": "Awareness of anchoring: Intentional processes contribute to anchoring effects.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:24:46.222Z"
+}

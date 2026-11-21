@@ -1,0 +1,93 @@
+{
+  "slug": "selective-attention",
+  "ja": "選択的注意",
+  "yomi": "せんたくてきちゅうい",
+  "en": "selective attention",
+  "category": "psychology",
+  "meshHeading": "Attention",
+  "meshUi": "68001288",
+  "description": {
+    "ja": "選択的注意とは、複数の情報や刺激が同時に存在する環境下で、特定の情報に意識を向けて処理し、他の情報を無視または抑制する認知機能です。カクテルパーティー効果(騒がしい場所でも特定の人の声を聞き取れる現象)がよく知られた例で、視覚・聴覚・触覚など様々な感覚モダリティで働きます。注意欠陥多動性障害(ADHD)や統合失調症などの研究で、この機能の障害が調べられています。",
+    "en": "Selective attention is a cognitive function that enables individuals to focus on specific information or stimuli while ignoring or suppressing irrelevant information in an environment with multiple concurrent inputs. The cocktail party effect (ability to focus on a single conversation in a noisy room) is a well-known example, and this function operates across various sensory modalities including visual, auditory, and tactile. Research examines impairments in this function in conditions such as ADHD and schizophrenia."
+  },
+  "usage": {
+    "ja": "論文では、Stroop課題(色名と文字色が異なる単語で反応時間を測定)、visual search task(多数の刺激から標的を探す課題)、dichotic listening task(左右の耳に異なる音声を提示し片方に注意を向ける課題)などの実験パラダイムを用いて測定されます。脳画像研究では前頭前野や頭頂葉の活動、事象関連電位(ERP)のP300成分などが指標として使われます。",
+    "en": "In research papers, selective attention is measured using experimental paradigms such as the Stroop task (measuring reaction time to words where color names and ink colors conflict), visual search tasks (finding targets among distractors), and dichotic listening tasks (presenting different auditory inputs to each ear). Neuroimaging studies examine activation in the prefrontal cortex and parietal lobes, as well as event-related potential (ERP) components like P300."
+  },
+  "synonyms": {
+    "ja": "focused attentionやdirected attentionと類義的に使われますが、selective attentionは特に「無関連情報の抑制」という側面を強調します。sustained attention(持続的注意)やdivided attention(分割的注意)とは異なる注意の下位概念として区別されます。cognitive controlやexecutive functionの一部として論じられることもあります。",
+    "en": "While used synonymously with focused attention or directed attention, selective attention specifically emphasizes the suppression of irrelevant information. It is distinguished from other attention subtypes such as sustained attention and divided attention. The concept is sometimes discussed as a component of cognitive control or executive function."
+  },
+  "pubmedCount": 98254,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4122
+    },
+    {
+      "year": 2018,
+      "count": 4264
+    },
+    {
+      "year": 2019,
+      "count": 4218
+    },
+    {
+      "year": 2020,
+      "count": 3766
+    },
+    {
+      "year": 2021,
+      "count": 3107
+    },
+    {
+      "year": 2022,
+      "count": 2604
+    },
+    {
+      "year": 2023,
+      "count": 2263
+    },
+    {
+      "year": 2024,
+      "count": 3019
+    },
+    {
+      "year": 2025,
+      "count": 3490
+    },
+    {
+      "year": 2026,
+      "count": 2860
+    }
+  ],
+  "searchQuery": "(\"Attention\"[MeSH Terms]) OR (\"selective attention\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42805306",
+      "title": "Effect of walking slope on cognitive performance. Electrophysiological evidence of dual-task interference.",
+      "year": 2027
+    },
+    {
+      "pmid": "42993997",
+      "title": "Age-related differences in multiple object tracking under normal and altered viewing conditions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913171",
+      "title": "Lightweight audiovisual attention cross-perception network for video saliency prediction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913170",
+      "title": "DCDA-Net: A depthwise convolution dilated attention network with temporal weighted loss for seizure prediction.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896470",
+      "title": "A spatio-temporal attention convolutional network with topology-preserving channel embedding and transformer for EEG decoding.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:09:11.646Z"
+}

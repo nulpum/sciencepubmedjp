@@ -1,0 +1,97 @@
+{
+  "slug": "glp1",
+  "ja": "GLP-1",
+  "yomi": "じーえるぴーわん",
+  "en": "glucagon-like peptide-1",
+  "abbr": "GLP-1",
+  "category": "biology",
+  "aliases": [
+    "グルカゴン様ペプチド1"
+  ],
+  "meshHeading": "Glucagon-Like Peptide 1",
+  "meshUi": "68052216",
+  "description": {
+    "ja": "GLP-1(glucagon-like peptide-1、グルカゴン様ペプチド1)は、小腸から分泌されるホルモンの一種で、食事摂取に応答してインスリン分泌を促進する働きがあります。腸管ホルモンの中でも「インクレチン」と呼ばれるグループに属し、血糖調節や食欲制御に関わることから、糖尿病や肥満の研究で広く注目されています。",
+    "en": "GLP-1 (glucagon-like peptide-1) is a hormone secreted from the small intestine that stimulates insulin secretion in response to food intake. It belongs to a group of gut hormones called incretins and plays a role in blood glucose regulation and appetite control, making it a focus of diabetes and obesity research."
+  },
+  "usage": {
+    "ja": "論文では、血中GLP-1濃度の測定や、GLP-1受容体作動薬を用いた介入研究が多く見られます。ELISAやRIA(ラジオイムノアッセイ)などで血漿中の活性型GLP-1を定量し、食後の分泌動態や糖代謝への影響を評価する文脈で用いられます。",
+    "en": "In research papers, GLP-1 is commonly measured in blood plasma using ELISA or RIA to quantify active GLP-1 levels. Studies often examine postprandial GLP-1 secretion dynamics and its effects on glucose metabolism, or investigate interventions using GLP-1 receptor agonists."
+  },
+  "synonyms": {
+    "ja": "「インクレチン」はGLP-1とGIP(glucose-dependent insulinotropic polypeptide)を含む上位概念です。GLP-1受容体作動薬は「GLP-1アナログ」とも呼ばれ、論文では「GLP-1RA」と略記されることもあります。活性型と不活性型の区別が重要で、DPP-4という酵素による分解を受けやすい点に注意が必要です。",
+    "en": "The term 'incretin' is a broader category that includes both GLP-1 and GIP (glucose-dependent insulinotropic polypeptide). GLP-1 receptor agonists may be referred to as 'GLP-1 analogs' or abbreviated as 'GLP-1RA' in papers. It is important to distinguish between active and inactive forms, as GLP-1 is rapidly degraded by the enzyme DPP-4."
+  },
+  "pubmedCount": 30628,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1391
+    },
+    {
+      "year": 2018,
+      "count": 1428
+    },
+    {
+      "year": 2019,
+      "count": 1511
+    },
+    {
+      "year": 2020,
+      "count": 1575
+    },
+    {
+      "year": 2021,
+      "count": 1774
+    },
+    {
+      "year": 2022,
+      "count": 1821
+    },
+    {
+      "year": 2023,
+      "count": 1895
+    },
+    {
+      "year": 2024,
+      "count": 2817
+    },
+    {
+      "year": 2025,
+      "count": 4286
+    },
+    {
+      "year": 2026,
+      "count": 4997
+    }
+  ],
+  "searchQuery": "(\"Glucagon-Like Peptide 1\"[MeSH Terms]) OR (\"glucagon-like peptide-1\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892933",
+      "title": "Future Treatments for Tobacco Dependence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42722239",
+      "title": "Plumieride ameliorates type 2 diabetes and colitis by regulating intestinal functions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946204",
+      "title": "The GLP-1 receptor agonist semaglutide reduces alcohol consumption and anxiety-like behaviors during withdrawal in Marchigian Sardinian alcohol-preferring rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869735",
+      "title": "Thyroid Disease in the Era of Obesity and Glucagon-Like-Peptide-1 Agonists.",
+      "year": 2027
+    },
+    {
+      "pmid": "42532732",
+      "title": "Effects of Body Weight on Middle Ear Disease.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:51:42.185Z"
+}

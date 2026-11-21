@@ -1,0 +1,93 @@
+{
+  "slug": "dementia",
+  "ja": "認知症",
+  "yomi": "にんちしょう",
+  "en": "dementia",
+  "category": "nursing-pharma",
+  "meshHeading": "Dementia",
+  "meshUi": "68003704",
+  "description": {
+    "ja": "認知機能（記憶、思考、判断など）が持続的に低下し、日常生活に支障をきたす症候群の総称です。アルツハイマー型、血管性、レビー小体型など複数の原因疾患が含まれます。高齢化に伴い世界的に増加しており、看護・薬学分野では予防、早期発見、ケアの質向上が重要な研究テーマとなっています。",
+    "en": "Dementia is a syndrome characterized by progressive decline in cognitive functions (memory, thinking, judgment) that interferes with daily activities. It encompasses multiple underlying conditions including Alzheimer's type, vascular dementia, and Lewy body dementia. Research in nursing and pharmaceutical fields focuses on prevention, early detection, and improving quality of care amid global aging populations."
+  },
+  "usage": {
+    "ja": "論文では「dementia patients」「risk factors for dementia」として疫学調査や介入研究で用いられます。Mini-Mental State Examination (MMSE) やClinical Dementia Rating (CDR) などの標準化されたスケールで評価され、発症率、有病率、進行速度などが測定されます。",
+    "en": "Papers commonly refer to 'dementia patients' or 'risk factors for dementia' in epidemiological and intervention studies. Assessment uses standardized scales such as Mini-Mental State Examination (MMSE) and Clinical Dementia Rating (CDR), measuring incidence, prevalence, and progression rates."
+  },
+  "synonyms": {
+    "ja": "「認知症」は包括的な用語で、specific typeとして「Alzheimer's disease (AD)」「vascular dementia (VaD)」などに細分されます。古い文献では「senile dementia（老人性認知症）」という表現も見られますが、現在は年齢を特定しない「dementia」が標準です。検索時は「cognitive impairment」も関連用語として有用です。",
+    "en": "Dementia is an umbrella term with specific subtypes including Alzheimer's disease (AD) and vascular dementia (VaD). Older literature may use 'senile dementia,' but current standard terminology is age-neutral 'dementia.' Related search terms include 'cognitive impairment' and 'neurocognitive disorder.'"
+  },
+  "pubmedCount": 320225,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 13072
+    },
+    {
+      "year": 2018,
+      "count": 13683
+    },
+    {
+      "year": 2019,
+      "count": 14744
+    },
+    {
+      "year": 2020,
+      "count": 16621
+    },
+    {
+      "year": 2021,
+      "count": 18059
+    },
+    {
+      "year": 2022,
+      "count": 18644
+    },
+    {
+      "year": 2023,
+      "count": 18662
+    },
+    {
+      "year": 2024,
+      "count": 19741
+    },
+    {
+      "year": 2025,
+      "count": 21565
+    },
+    {
+      "year": 2026,
+      "count": 18880
+    }
+  ],
+  "searchQuery": "(\"Dementia\"[MeSH Terms]) OR (\"dementia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42973038",
+      "title": "Animal protein supply, cognitive ageing and female-male dementia disparities: a global ecological analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43002819",
+      "title": "A ratiometric dual-modal photoacoustic and near-infrared fluorescence probe for in vivo spatiotemporal mapping of butyrylcholinesterase in Alzheimer's disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987521",
+      "title": "A versatile multi-dimensional ratiometric sensor exploiting material-interface properties for t-Tau protein detection in human serum.",
+      "year": 2027
+    },
+    {
+      "pmid": "42971085",
+      "title": "A background-suppressed CRISPR/Cas13a-HRCA biosensor for ultrasensitive miR-137 detection toward differential screening of Alzheimer's disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887235",
+      "title": "A tunable brain-targeted PEGylated ginsenoside Rg1 derivative disrupts the ROS-mediated inflammasome-pyroptosis cascade to ameliorate Alzheimer's cognitive deficits.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:44:27.251Z"
+}

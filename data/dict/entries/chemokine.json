@@ -1,0 +1,93 @@
+{
+  "slug": "chemokine",
+  "ja": "ケモカイン",
+  "yomi": "けもかいん",
+  "en": "chemokine",
+  "category": "biology",
+  "meshHeading": "Chemokines",
+  "meshUi": "68018925",
+  "description": {
+    "ja": "ケモカイン (chemokine) は、細胞の移動を誘導する低分子量のタンパク質 (サイトカインの一種) です。免疫細胞を炎症部位や感染部位に呼び寄せる「化学誘引物質」として働き、体内での細胞の位置決めや免疫応答の調節に重要な役割を果たします。構造の違いによりCXCL、CCL、CX3CL、XCLなどのファミリーに分類されます。",
+    "en": "Chemokines are small signaling proteins (a type of cytokine) that induce cell migration. They function as 'chemoattractants' that recruit immune cells to sites of inflammation or infection, playing crucial roles in cellular positioning and immune response regulation. Based on structural differences, they are classified into families such as CXCL, CCL, CX3CL, and XCL."
+  },
+  "usage": {
+    "ja": "免疫学・炎症研究の論文では、特定のケモカイン (例: CXCL8/IL-8、CCL2/MCP-1) の発現量をELISAやqPCRで測定し、細胞遊走アッセイで機能を評価します。がん研究では腫瘍微小環境への免疫細胞浸潤、感染症研究では病原体に対する免疫応答の指標として調べられます。",
+    "en": "In immunology and inflammation research papers, expression levels of specific chemokines (e.g., CXCL8/IL-8, CCL2/MCP-1) are measured by ELISA or qPCR, and their functions are evaluated through cell migration assays. They are studied as indicators of immune cell infiltration into tumor microenvironments in cancer research and immune responses to pathogens in infectious disease studies."
+  },
+  "synonyms": {
+    "ja": "「chemotactic cytokine (化学走性サイトカイン)」とも呼ばれます。個々のケモカインは体系的命名 (CXCL1など) と歴史的な別名 (GROαなど) の両方で表記されることがあり、論文検索時は両方の名称を確認する必要があります。受容体はCXCR、CCRなどと表記されます。",
+    "en": "Also called 'chemotactic cytokines.' Individual chemokines may be referred to by both systematic nomenclature (e.g., CXCL1) and historical aliases (e.g., GROα), requiring searches with both names in literature reviews. Their receptors are designated as CXCR, CCR, etc."
+  },
+  "pubmedCount": 127651,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5581
+    },
+    {
+      "year": 2018,
+      "count": 5428
+    },
+    {
+      "year": 2019,
+      "count": 5418
+    },
+    {
+      "year": 2020,
+      "count": 5691
+    },
+    {
+      "year": 2021,
+      "count": 5745
+    },
+    {
+      "year": 2022,
+      "count": 5338
+    },
+    {
+      "year": 2023,
+      "count": 4633
+    },
+    {
+      "year": 2024,
+      "count": 5018
+    },
+    {
+      "year": 2025,
+      "count": 5203
+    },
+    {
+      "year": 2026,
+      "count": 5015
+    }
+  ],
+  "searchQuery": "(\"Chemokines\"[MeSH Terms]) OR (\"chemokine\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42753574",
+      "title": "Self-assembled, carrier-free cyclic chemerin 9/tannic acid coating for enhanced vascular healing following stent deployment.",
+      "year": 2027
+    },
+    {
+      "pmid": "42981748",
+      "title": "ZeXieYin formula attenuates trimethylamine N-oxide- induced atherosclerosis and cognitive impairment by regulating microglial-neuronal signaling and autophagy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901455",
+      "title": "Carum carvi L. alleviates skin depigmentation by suppressing STAT1-mediated inflammatory responses.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838299",
+      "title": "Alpinia oxyphylla Miq. promotes angiogenesis and preserves neurons in subacute ischemic stroke in rats: possible involvement of the HIF-1α/Nrf2/VEGF-A-mediated signaling pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "42815593",
+      "title": "Material basis, herbal contribution, and potential quality markers of Kanggan Granules against influenza revealed by UPLC-HRMS, network pharmacology, and experimental validation.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:00:42.779Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "pain-assessment",
+  "ja": "疼痛評価",
+  "yomi": "とうつうひょうか",
+  "en": "pain assessment",
+  "category": "nursing-pharma",
+  "meshHeading": "Pain Measurement",
+  "meshUi": "68010147",
+  "description": {
+    "ja": "疼痛評価とは、患者が感じている痛みの強さ、性質、部位、持続時間などを客観的・主観的に測定し記録する過程です。看護や薬物療法の効果判定において重要な指標となります。",
+    "en": "Pain assessment is the process of objectively and subjectively measuring and recording the intensity, quality, location, and duration of pain experienced by a patient. It serves as a crucial indicator for evaluating nursing care and pharmacological therapy effectiveness."
+  },
+  "usage": {
+    "ja": "論文では、Visual Analogue Scale (VAS)、Numerical Rating Scale (NRS)、McGill Pain Questionnaireなどのスケールを用いた測定結果として報告されます。介入前後の疼痛スコアの変化が治療効果の主要評価項目となることが多いです。",
+    "en": "In research papers, pain assessment is reported using scales such as Visual Analogue Scale (VAS), Numerical Rating Scale (NRS), and McGill Pain Questionnaire. Changes in pain scores before and after intervention often serve as primary outcome measures for treatment efficacy."
+  },
+  "synonyms": {
+    "ja": "「痛みの評価」「疼痛測定」「pain evaluation」とも呼ばれます。acute pain assessment(急性疼痛評価)、chronic pain assessment(慢性疼痛評価)など、痛みの種類によって評価方法が異なる場合があります。",
+    "en": "Also referred to as \"pain evaluation\" or \"pain measurement.\" Different assessment methods may be used depending on pain type, such as acute pain assessment or chronic pain assessment."
+  },
+  "pubmedCount": 113874,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5515
+    },
+    {
+      "year": 2018,
+      "count": 5252
+    },
+    {
+      "year": 2019,
+      "count": 4900
+    },
+    {
+      "year": 2020,
+      "count": 4492
+    },
+    {
+      "year": 2021,
+      "count": 3562
+    },
+    {
+      "year": 2022,
+      "count": 2373
+    },
+    {
+      "year": 2023,
+      "count": 1814
+    },
+    {
+      "year": 2024,
+      "count": 5018
+    },
+    {
+      "year": 2025,
+      "count": 6723
+    },
+    {
+      "year": 2026,
+      "count": 5679
+    }
+  ],
+  "searchQuery": "(\"Pain Measurement\"[MeSH Terms]) OR (\"pain assessment\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42790555",
+      "title": "Phytochemical characterization, safety assessment and antinociceptive activity of Psidium guineense sw. leaf extract.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892150",
+      "title": "Effects of treadmill exercise with and without vertical traction on gait, pain, disability, trunk proprioception, and depression in patients with chronic mechanical low back pain: A randomized controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039884",
+      "title": "Physiotherapy Exercise Protocol Improves Pain, Quality of Life and Functional Capacity in Elderly Patients With Cancer Undergoing Palliative Care.",
+      "year": 2027
+    },
+    {
+      "pmid": "43026175",
+      "title": "Methodological and Clinical Considerations in a Trial of One Nostril Inspiration for Pain Management Following Thoracic Trauma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42998057",
+      "title": "The Effect of Exercise Training on Individuals With Osteoporotic Vertebral Fracture: A Randomized Controlled Trial.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:43:08.231Z"
+}

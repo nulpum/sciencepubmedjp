@@ -1,0 +1,94 @@
+{
+  "slug": "i-squared",
+  "ja": "I二乗統計量",
+  "yomi": "あいじじょうとうけいりょう",
+  "en": "I² statistic",
+  "category": "research",
+  "aliases": [
+    "I2"
+  ],
+  "description": {
+    "ja": "メタアナリシスにおいて、複数の研究結果のばらつき(異質性)がどの程度存在するかを0～100%で示す統計指標です。値が大きいほど研究間の結果のばらつきが大きく、25%で低、50%で中等度、75%以上で高い異質性と判断されます。",
+    "en": "A statistical measure used in meta-analysis to quantify the degree of heterogeneity (variability) among study results, expressed as a percentage from 0 to 100%. Higher values indicate greater inconsistency across studies, with 25% considered low, 50% moderate, and 75% or above high heterogeneity."
+  },
+  "usage": {
+    "ja": "システマティックレビューやメタアナリシスの論文で、統合した研究間の結果の一貫性を評価する際に報告されます。I²が高い場合、サブグループ解析やランダム効果モデルの使用が検討されます。",
+    "en": "Reported in systematic reviews and meta-analyses to assess consistency of results across pooled studies. When I² is high, subgroup analyses or random-effects models are typically considered to explore sources of heterogeneity."
+  },
+  "synonyms": {
+    "ja": "I-squared、I2統計量とも表記されます。Cochran's Q検定と併用されることが多く、Qが異質性の有無を検定するのに対し、I²はその程度を定量化する指標です。",
+    "en": "Also written as I-squared or I2. Often used alongside Cochran's Q test; while Q tests for the presence of heterogeneity, I² quantifies its magnitude and is less dependent on the number of studies included."
+  },
+  "pubmedCount": 1830,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 39
+    },
+    {
+      "year": 2018,
+      "count": 49
+    },
+    {
+      "year": 2019,
+      "count": 46
+    },
+    {
+      "year": 2020,
+      "count": 75
+    },
+    {
+      "year": 2021,
+      "count": 105
+    },
+    {
+      "year": 2022,
+      "count": 105
+    },
+    {
+      "year": 2023,
+      "count": 97
+    },
+    {
+      "year": 2024,
+      "count": 144
+    },
+    {
+      "year": 2025,
+      "count": 465
+    },
+    {
+      "year": 2026,
+      "count": 608
+    }
+  ],
+  "searchQuery": "\"I² statistic\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43032093",
+      "title": "Recurrence rates in Dupuytren's contracture: a systematic review and meta-analysis comparing percutaneous and open surgical management.",
+      "year": 2027
+    },
+    {
+      "pmid": "43031815",
+      "title": "Effect of Fatigue and Item Order On Students' Performance in Multiple-choice Based Examinations: A Progress Test-Based Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42896714",
+      "title": "Short-term efficacy of massage and related treatments for ankylosing spondylitis: A systematic review and meta analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42667100",
+      "title": "The effects of nicotine on Parkinson's disease: A systematic review and meta-analysis of experimental evidence.",
+      "year": 2026
+    },
+    {
+      "pmid": "42611193",
+      "title": "Imaging-based prevalence of the peroneus quartus muscle and its association with peroneal tendon pathology: a systematic review and meta-analysis.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:41:54.131Z"
+}

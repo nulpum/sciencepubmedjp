@@ -1,0 +1,91 @@
+{
+  "slug": "placebo-analgesia",
+  "ja": "プラセボ鎮痛",
+  "yomi": "ぷらせぼちんつう",
+  "en": "placebo analgesia",
+  "category": "psychology",
+  "description": {
+    "ja": "プラセボ鎮痛とは、薬理作用のない偽薬(プラセボ)を投与されたにもかかわらず、患者が痛みの軽減を感じる現象です。期待や条件づけなどの心理的メカニズムによって、実際に脳内の鎮痛システムが活性化され、主観的な痛みの強度が低下することが神経科学研究で示されています。臨床試験では新薬の真の効果を評価するために、プラセボ群との比較が不可欠とされます。",
+    "en": "Placebo analgesia refers to pain relief experienced by patients after receiving an inert substance (placebo) with no pharmacological analgesic properties. This phenomenon involves activation of endogenous pain modulation systems in the brain through psychological mechanisms such as expectation and conditioning. It is a critical consideration in clinical trials where new analgesics must demonstrate efficacy beyond placebo effects."
+  },
+  "usage": {
+    "ja": "疼痛研究や臨床試験で、視覚的アナログ尺度(VAS)や数値評価スケール(NRS)を用いて痛みの主観的評価を測定します。fMRIやPETスキャンで前帯状皮質や前頭前野などの脳活動を観察し、内因性オピオイドやドーパミンの放出を調べる神経画像研究も行われています。",
+    "en": "In pain research and clinical trials, subjective pain is measured using Visual Analog Scale (VAS) or Numerical Rating Scale (NRS). Neuroimaging studies employ fMRI or PET scans to observe brain activity in regions such as the anterior cingulate cortex and prefrontal cortex, examining endogenous opioid and dopamine release associated with placebo responses."
+  },
+  "synonyms": {
+    "ja": "プラセボ効果における鎮痛、偽薬鎮痛などとも呼ばれます。広義の「プラセボ効果」には痛み以外の症状改善も含まれますが、プラセボ鎮痛は特に疼痛に焦点を当てた用語です。ノセボ効果(nocebo effect)は逆に、偽薬によって痛みや副作用が増強される現象を指します。",
+    "en": "Also referred to as placebo-induced analgesia or placebo pain relief. While the broader term 'placebo effect' encompasses improvement in various symptoms, placebo analgesia specifically focuses on pain reduction. The opposite phenomenon, where inert substances increase pain or adverse effects, is called the nocebo effect."
+  },
+  "pubmedCount": 516,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 26
+    },
+    {
+      "year": 2018,
+      "count": 34
+    },
+    {
+      "year": 2019,
+      "count": 28
+    },
+    {
+      "year": 2020,
+      "count": 29
+    },
+    {
+      "year": 2021,
+      "count": 38
+    },
+    {
+      "year": 2022,
+      "count": 23
+    },
+    {
+      "year": 2023,
+      "count": 20
+    },
+    {
+      "year": 2024,
+      "count": 21
+    },
+    {
+      "year": 2025,
+      "count": 29
+    },
+    {
+      "year": 2026,
+      "count": 26
+    }
+  ],
+  "searchQuery": "\"placebo analgesia\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42982290",
+      "title": "The role of treatment choice in open-label placebo analgesia: A randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42825607",
+      "title": "Pain as a predictive process in the brain: how the Bayesian brain generates, amplifies, and relieves pain.",
+      "year": 2026
+    },
+    {
+      "pmid": "42862831",
+      "title": "Sweet Relief: Behaviorally conditioned analgesia in rats with inflammatory pain.",
+      "year": 2026
+    },
+    {
+      "pmid": "42862822",
+      "title": "Peripheral CCK and ß-Endorphin as Potential Neuroendocrine Markers of Nocebo Effects: Evidence from a Multiple-Threat Pain Paradigm.",
+      "year": 2026
+    },
+    {
+      "pmid": "42821491",
+      "title": "Treatment Expectations across Open-Label Placebo and Pharmacological Contexts: A Randomized Clinical Trial in Chronic Low Back Pain.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:26:38.116Z"
+}

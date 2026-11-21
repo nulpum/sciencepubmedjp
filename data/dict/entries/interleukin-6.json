@@ -1,0 +1,94 @@
+{
+  "slug": "interleukin-6",
+  "ja": "インターロイキン6",
+  "yomi": "いんたーろいきんろく",
+  "en": "interleukin-6",
+  "abbr": "IL-6",
+  "category": "biology",
+  "meshHeading": "Interleukin-6",
+  "meshUi": "68015850",
+  "description": {
+    "ja": "インターロイキン6 (IL-6) は、免疫細胞や血管内皮細胞などから分泌されるサイトカインの一種で、炎症反応や免疫応答の調節に関与するタンパク質です。急性期反応の誘導、B細胞の抗体産生促進、T細胞の分化など多様な生理機能を持ち、感染・外傷・ストレスなどで血中濃度が上昇します。慢性的な高値は炎症性疾患や代謝異常との関連が研究されています。",
+    "en": "Interleukin-6 (IL-6) is a cytokine secreted by immune cells, vascular endothelial cells, and other cell types, playing a key role in regulating inflammatory responses and immune reactions. It has diverse physiological functions including inducing acute phase responses, promoting antibody production by B cells, and directing T cell differentiation. Serum IL-6 levels increase during infection, injury, or stress, and chronically elevated levels are studied in relation to inflammatory diseases and metabolic disorders."
+  },
+  "usage": {
+    "ja": "論文では炎症マーカーとして血清や血漿中のIL-6濃度をELISA法などで測定し、疾患の重症度評価や治療効果判定の指標として用いられます。遺伝子発現解析ではmRNAレベルでの測定も行われ、炎症性サイトカインのネットワーク研究で頻繁に登場します。",
+    "en": "In research papers, IL-6 concentration in serum or plasma is measured by methods such as ELISA and used as an inflammatory marker for assessing disease severity and treatment response. Gene expression analyses also measure IL-6 at the mRNA level, and it frequently appears in studies of inflammatory cytokine networks."
+  },
+  "synonyms": {
+    "ja": "IL-6以外の表記として「interleukin 6」「interleukin-6」があり、文脈によっては「IL6」とハイフンなしで書かれることもあります。機能的にはCRP (C反応性タンパク) などの急性期タンパク質の誘導因子として、またTNF-αやIL-1βなどと並ぶ主要な炎症性サイトカインとして分類されます。",
+    "en": "Alternative notations include \"interleukin 6\" and \"interleukin-6,\" and sometimes written as \"IL6\" without a hyphen depending on the source. Functionally, it is classified as an inducer of acute phase proteins such as CRP (C-reactive protein) and as a major pro-inflammatory cytokine alongside TNF-α and IL-1β."
+  },
+  "pubmedCount": 127588,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5721
+    },
+    {
+      "year": 2018,
+      "count": 5628
+    },
+    {
+      "year": 2019,
+      "count": 5727
+    },
+    {
+      "year": 2020,
+      "count": 6734
+    },
+    {
+      "year": 2021,
+      "count": 6805
+    },
+    {
+      "year": 2022,
+      "count": 8062
+    },
+    {
+      "year": 2023,
+      "count": 6976
+    },
+    {
+      "year": 2024,
+      "count": 6333
+    },
+    {
+      "year": 2025,
+      "count": 6612
+    },
+    {
+      "year": 2026,
+      "count": 6109
+    }
+  ],
+  "searchQuery": "(\"Interleukin-6\"[MeSH Terms]) OR (\"interleukin-6\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42771909",
+      "title": "Confined ZrO(2) possessing triple catalytic functionality boosts luminol-dissolved oxygen electrochemiluminescence for immunoassay.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849217",
+      "title": "A living hydrogel platform for wireless light-controlled microbial therapy in the stomach.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869398",
+      "title": "Tibetan medicine Anzhi Jinghua San alleviates chronic atrophic gastritis: attenuation of LysoPC-induced Bcl-2 suppression and inhibition of pyroptosis and apoptosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42805352",
+      "title": "Shenghui decoction improves sleep-deprivation-induced cognitive impairment in mice by modulating neuroinflammation, NRG1/ErbB4 signaling, and purine metabolism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772618",
+      "title": "Huanglian Wendan Decoction ameliorates insomnia-like phenotypes in a composite mouse model with phlegm-heat-related features: Insights from the brain-gut axis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:59:46.024Z"
+}

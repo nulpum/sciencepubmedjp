@@ -1,0 +1,94 @@
+{
+  "slug": "regulatory-t-cell",
+  "ja": "制御性T細胞",
+  "yomi": "せいぎょせいてぃーさいぼう",
+  "en": "regulatory T cell",
+  "abbr": "Treg",
+  "category": "biology",
+  "meshHeading": "T-Lymphocytes, Regulatory",
+  "meshUi": "68050378",
+  "description": {
+    "ja": "制御性T細胞(Treg)は、免疫系の過剰な反応を抑制する役割を持つT細胞の一種です。自己免疫疾患やアレルギーの発症を防ぐために重要で、体内の免疫バランスを維持しています。表面マーカーとしてCD4、CD25、転写因子Foxp3を発現することが特徴です。",
+    "en": "Regulatory T cells (Tregs) are a subset of T cells that suppress excessive immune responses. They play a crucial role in preventing autoimmune diseases and allergies by maintaining immune homeostasis. Tregs are characterized by expression of surface markers CD4, CD25, and the transcription factor Foxp3."
+  },
+  "usage": {
+    "ja": "免疫学研究では、フローサイトメトリーでCD4+CD25+Foxp3+細胞として測定されます。腫瘍免疫、移植免疫、自己免疫疾患の研究で、Tregの割合や機能を評価する指標として用いられ、炎症性サイトカインの抑制能や増殖抑制アッセイで機能が調べられます。",
+    "en": "In immunology research, Tregs are measured as CD4+CD25+Foxp3+ cells by flow cytometry. They are studied as indicators in tumor immunology, transplantation immunity, and autoimmune disease research, with functional assays evaluating suppression of inflammatory cytokines and proliferation inhibition."
+  },
+  "synonyms": {
+    "ja": "抑制性T細胞、サプレッサーT細胞とも呼ばれます。CD4+CD25+T細胞と表記される場合もありますが、厳密にはFoxp3陽性を確認する必要があります。誘導性Treg(iTreg)と自然発生Treg(nTreg)という機能的サブセットも区別されます。",
+    "en": "Also called suppressor T cells or CD4+CD25+ T cells, though Foxp3 expression should be confirmed for precise identification. Functional subsets include induced Tregs (iTregs) and natural Tregs (nTregs), which are distinguished by their origin and development."
+  },
+  "pubmedCount": 46734,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2050
+    },
+    {
+      "year": 2018,
+      "count": 2119
+    },
+    {
+      "year": 2019,
+      "count": 2198
+    },
+    {
+      "year": 2020,
+      "count": 2173
+    },
+    {
+      "year": 2021,
+      "count": 2147
+    },
+    {
+      "year": 2022,
+      "count": 1727
+    },
+    {
+      "year": 2023,
+      "count": 1562
+    },
+    {
+      "year": 2024,
+      "count": 1843
+    },
+    {
+      "year": 2025,
+      "count": 2104
+    },
+    {
+      "year": 2026,
+      "count": 2242
+    }
+  ],
+  "searchQuery": "(\"T-Lymphocytes, Regulatory\"[MeSH Terms]) OR (\"regulatory T cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42696846",
+      "title": "Transforming adoptive macrophages into living immune amplifiers with intracellular nanobatteries to potentiate tumor immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869393",
+      "title": "ShenqiYichang decoction enhances colorectal cancer immune efficacy via IDO1 mediated reduction of Treg infiltration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42956966",
+      "title": "Melatonin ameliorates anxiety-like behavior and intestinal barrier dysfunction induced by high-fat diet in BTBR mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833561",
+      "title": "All-trans retinoic acid-driven immune remodeling in esophageal squamous cell carcinoma revealed by single-cell transcriptomics.",
+      "year": 2027
+    },
+    {
+      "pmid": "42918350",
+      "title": "Circulating immune cells phenotypes discriminate bipolar disorder from major depressive disorder during a depressive episode: A machine learning elastic-net approach.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:02:12.690Z"
+}

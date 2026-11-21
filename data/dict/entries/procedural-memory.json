@@ -1,0 +1,91 @@
+{
+  "slug": "procedural-memory",
+  "ja": "手続き記憶",
+  "yomi": "てつづききおく",
+  "en": "procedural memory",
+  "category": "psychology",
+  "description": {
+    "ja": "手続き記憶とは、自転車の乗り方やピアノの弾き方など、身体的な技能や手順を無意識的に覚えている記憶の一種です。言葉で説明しにくいが身体が覚えているような記憶で、繰り返し練習することで自動的に実行できるようになります。陳述記憶(言葉で説明できる記憶)とは対照的に、意識的な想起を必要としない長期記憶として分類されます。",
+    "en": "Procedural memory refers to a type of long-term memory that involves unconscious recall of motor skills and procedures, such as riding a bicycle or playing the piano. This form of memory enables us to perform learned tasks automatically without conscious awareness or verbal description. It contrasts with declarative memory and is acquired through repeated practice and experience."
+  },
+  "usage": {
+    "ja": "心理学や神経科学の論文では、運動学習課題(例:鏡映描写課題、系列反応時間課題)や認知技能の獲得を測定する実験で評価されます。健忘症患者でも手続き記憶は保たれることが多く、記憶システムの解離を示す重要な証拠として研究されています。",
+    "en": "In psychology and neuroscience research, procedural memory is typically assessed using motor learning tasks such as mirror tracing, serial reaction time tasks, or cognitive skill acquisition paradigms. Studies often examine how this memory system remains intact in amnesic patients, demonstrating dissociation between memory systems."
+  },
+  "synonyms": {
+    "ja": "「非陳述記憶」「潜在記憶」「スキル記憶」などと呼ばれることもあります。広義には習慣形成やプライミングも含まれますが、狭義では主に運動技能や認知技能の記憶を指します。implicit memoryの一部として分類されることが一般的です。",
+    "en": "Also referred to as \"non-declarative memory,\" \"implicit memory,\" or \"skill memory.\" While broadly encompassing habit formation and priming, it specifically refers to motor and cognitive skill memory in narrow definitions. It is typically classified as a subset of implicit memory systems."
+  },
+  "pubmedCount": 871,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 42
+    },
+    {
+      "year": 2018,
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "count": 44
+    },
+    {
+      "year": 2020,
+      "count": 49
+    },
+    {
+      "year": 2021,
+      "count": 49
+    },
+    {
+      "year": 2022,
+      "count": 38
+    },
+    {
+      "year": 2023,
+      "count": 47
+    },
+    {
+      "year": 2024,
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "count": 36
+    },
+    {
+      "year": 2026,
+      "count": 29
+    }
+  ],
+  "searchQuery": "\"procedural memory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42988363",
+      "title": "Using occupation to support dementia and delirium care in hospital: An observational pilot study of a Task Box intervention.",
+      "year": 2026
+    },
+    {
+      "pmid": "42784988",
+      "title": "ProMem-agent: Procedural memory-augmented large language model agents for clinical trajectory reasoning.",
+      "year": 2026
+    },
+    {
+      "pmid": "42881120",
+      "title": "Slow Frontal Spindle Activity and Declarative Memory Retention During Daytime Naps.",
+      "year": 2026
+    },
+    {
+      "pmid": "42852881",
+      "title": "Rethinking Behavioral and Psychological Symptoms of Dementia in Severe Alzheimer's Disease: From Intentional Explanation to an Ecological, Body-Environment Framework.",
+      "year": 2026
+    },
+    {
+      "pmid": "42837523",
+      "title": "Remote Longitudinal Tracking of Sleep, Depression, and Cognition Across Early Adolescence: Protocol for a Longitudinal Observational Study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:07:30.730Z"
+}

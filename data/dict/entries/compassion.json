@@ -1,0 +1,96 @@
+{
+  "slug": "compassion",
+  "ja": "思いやり",
+  "yomi": "おもいやり",
+  "en": "compassion",
+  "category": "psychology",
+  "aliases": [
+    "コンパッション"
+  ],
+  "meshHeading": "Empathy",
+  "meshUi": "68004645",
+  "description": {
+    "ja": "他者の苦しみや困難に気づき、それを軽減しようとする感情や態度のこと。単なる同情や共感とは異なり、相手を助けようとする行動的な動機づけを伴う心理状態を指します。心理学では向社会的行動やウェルビーイングの重要な要素として研究されています。",
+    "en": "An emotional response involving awareness of others' suffering and a motivation to alleviate it. Unlike simple sympathy or empathy, compassion includes an action-oriented drive to help. It is studied in psychology as a key element of prosocial behavior and well-being."
+  },
+  "usage": {
+    "ja": "心理学研究では、思いやりは質問紙(Compassion Scale等)や行動観察、脳画像研究で測定されます。医療従事者のバーンアウト予防、マインドフルネス介入の効果指標、対人関係の質の評価などで用いられます。",
+    "en": "In psychological research, compassion is measured through questionnaires (e.g., Compassion Scale), behavioral observations, and neuroimaging studies. It is examined in contexts such as healthcare worker burnout prevention, mindfulness intervention outcomes, and interpersonal relationship quality."
+  },
+  "synonyms": {
+    "ja": "共感(empathy)は相手の感情を理解・共有することを指し、思いやり(compassion)は苦しみへの気づきと援助動機を含む点で区別されます。慈悲、同情心なども関連語ですが、研究では「compassion」として統一的に扱われることが多いです。",
+    "en": "Empathy refers to understanding and sharing others' emotions, while compassion specifically involves recognizing suffering and motivation to help. Related terms include kindness and sympathy, though research literature typically uses 'compassion' as a distinct construct with behavioral components."
+  },
+  "pubmedCount": 36673,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1625
+    },
+    {
+      "year": 2018,
+      "count": 1712
+    },
+    {
+      "year": 2019,
+      "count": 1827
+    },
+    {
+      "year": 2020,
+      "count": 2192
+    },
+    {
+      "year": 2021,
+      "count": 2303
+    },
+    {
+      "year": 2022,
+      "count": 2330
+    },
+    {
+      "year": 2023,
+      "count": 2170
+    },
+    {
+      "year": 2024,
+      "count": 2472
+    },
+    {
+      "year": 2025,
+      "count": 2970
+    },
+    {
+      "year": 2026,
+      "count": 2844
+    }
+  ],
+  "searchQuery": "(\"Empathy\"[MeSH Terms]) OR (\"compassion\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42855957",
+      "title": "Salivary oxytocin and testosterone in empathic stress responding: a pilot study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42975003",
+      "title": "Enhancing Empathic Functioning in Married Individuals Experiencing Marital Conflict Through Mentalization-Based Therapy in Iran.",
+      "year": 2027
+    },
+    {
+      "pmid": "42766991",
+      "title": "Supporting empathic understanding through AI-generated backstories in nursing simulation: A mixed-methods study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42753406",
+      "title": "Nursing students' care behavior toward sexual and gender diverse populations: An analysis based on temporal self-regulation theory.",
+      "year": 2027
+    },
+    {
+      "pmid": "42753405",
+      "title": "Effects of an embodied micro-film intervention on ethical sensitivity, compassion, and ethical decision-making in nursing students: A mixed-methods study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:18:54.236Z"
+}

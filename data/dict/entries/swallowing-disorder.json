@@ -1,0 +1,93 @@
+{
+  "slug": "swallowing-disorder",
+  "ja": "嚥下障害",
+  "yomi": "えんげしょうがい",
+  "en": "dysphagia",
+  "category": "nursing-pharma",
+  "meshHeading": "Deglutition Disorders",
+  "meshUi": "68003680",
+  "description": {
+    "ja": "嚥下障害(えんげしょうがい)は、食べ物や飲み物を口から胃へ送り込む過程に問題が生じる状態です。口腔、咽頭、食道のいずれかの段階で飲み込みがうまくできなくなり、誤嚥(食物が気管に入ること)のリスクが高まります。高齢者や脳卒中後の患者、神経筋疾患のある患者でよく見られる臨床的問題です。",
+    "en": "Dysphagia refers to difficulty in swallowing, where the process of moving food or liquid from the mouth to the stomach is impaired. It can occur at any stage including the oral, pharyngeal, or esophageal phase, and increases the risk of aspiration (food entering the airway). This condition is commonly observed in elderly patients, post-stroke individuals, and those with neuromuscular disorders."
+  },
+  "usage": {
+    "ja": "看護・薬学研究では、嚥下機能評価スケール(FOIS, MASA等)や嚥下造影検査(VF)、嚥下内視鏡検査(VE)を用いて評価されます。薬剤の剤形選択(錠剤、散剤、ゼリー剤など)や服薬指導、栄養管理、誤嚥性肺炎予防の研究で頻繁に扱われる指標です。",
+    "en": "In nursing and pharmaceutical research, dysphagia is assessed using scales such as FOIS and MASA, or through videofluoroscopy (VF) and videoendoscopy (VE). It is frequently studied in relation to medication formulation selection (tablets, powders, jellies), medication adherence, nutritional management, and aspiration pneumonia prevention."
+  },
+  "synonyms": {
+    "ja": "「嚥下困難」「飲み込み障害」とも呼ばれます。「誤嚥」は嚥下障害の結果生じる現象であり同義ではありません。口腔期、咽頭期、食道期の障害部位によって分類され、原因疾患(脳卒中、パーキンソン病、認知症など)と併記されることが多いです。",
+    "en": "Also referred to as swallowing difficulty or impaired swallowing. Aspiration is a consequence of dysphagia, not a synonym. Dysphagia is classified by the affected phase (oral, pharyngeal, or esophageal) and often described alongside underlying conditions such as stroke, Parkinson's disease, or dementia."
+  },
+  "pubmedCount": 90268,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3173
+    },
+    {
+      "year": 2018,
+      "count": 3156
+    },
+    {
+      "year": 2019,
+      "count": 3349
+    },
+    {
+      "year": 2020,
+      "count": 4039
+    },
+    {
+      "year": 2021,
+      "count": 4075
+    },
+    {
+      "year": 2022,
+      "count": 4014
+    },
+    {
+      "year": 2023,
+      "count": 3941
+    },
+    {
+      "year": 2024,
+      "count": 4098
+    },
+    {
+      "year": 2025,
+      "count": 4478
+    },
+    {
+      "year": 2026,
+      "count": 4210
+    }
+  ],
+  "searchQuery": "(\"Deglutition Disorders\"[MeSH Terms]) OR (\"dysphagia\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42985707",
+      "title": "Improved Visualization of the Internal Branch of the Superior Laryngeal Nerve during Pharyngeal Endoscopic Subepithelial Dissection with Use of Red Dichromatic Imaging.",
+      "year": 2027
+    },
+    {
+      "pmid": "42677194",
+      "title": "Clinical Utility of Anti-reflux Mucosal Intervention for Refractory Gastroesophageal Reflux Disease in Patients With a Hiatal Hernia.",
+      "year": 2027
+    },
+    {
+      "pmid": "42465714",
+      "title": "Lymphocytic Esophagitis Mimicking Eosinophilic Esophagitis and Esophageal Candidiasis: A Case Report.",
+      "year": 2027
+    },
+    {
+      "pmid": "42416861",
+      "title": "Ulcerative Esophagitis With Marked Eosinophilic Infiltration and Fluorodeoxyglucose-Positron Emission Tomography Positivity Requiring Differentiation From Esophagogastric Junction Carcinoma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987678",
+      "title": "A multi-omics study with in vitro and in vivo interventions targeting the leptin-mediated Hypoxia-Inducible Factor-1 Alpha metabolic-inflammatory axis in gastroesophageal reflux disease.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:47:49.511Z"
+}

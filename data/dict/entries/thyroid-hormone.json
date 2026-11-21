@@ -1,0 +1,93 @@
+{
+  "slug": "thyroid-hormone",
+  "ja": "甲状腺ホルモン",
+  "yomi": "こうじょうせんほるもん",
+  "en": "thyroid hormone",
+  "category": "biology",
+  "meshHeading": "Thyroid Hormones",
+  "meshUi": "68013963",
+  "description": {
+    "ja": "甲状腺から分泌されるホルモンで、主にT4(サイロキシン)とT3(トリヨードサイロニン)の2種類があります。全身の細胞の代謝速度を調節し、成長や発達、エネルギー消費に関与する重要な内分泌物質です。血中濃度の測定は内分泌疾患の診断に広く用いられています。",
+    "en": "Thyroid hormone refers to hormones secreted by the thyroid gland, primarily T4 (thyroxine) and T3 (triiodothyronine). These hormones regulate metabolic rate in cells throughout the body and play crucial roles in growth, development, and energy expenditure. Measurement of blood levels is widely used in diagnosing endocrine disorders."
+  },
+  "usage": {
+    "ja": "論文では血清T3・T4濃度、甲状腺刺激ホルモン(TSH)との関連が調べられます。免疫測定法(ELISA、化学発光法など)で測定され、代謝研究や内分泌異常のマーカーとして用いられます。",
+    "en": "In research papers, serum T3/T4 concentrations and their relationship with thyroid-stimulating hormone (TSH) are commonly examined. Measured by immunoassays (ELISA, chemiluminescence), they serve as markers in metabolic studies and endocrine function assessments."
+  },
+  "synonyms": {
+    "ja": "「甲状腺ホルモン」は総称で、T4(チロキシン)、T3(トリヨードサイロニン)を指します。「TH」と略されることもあります。遊離型(free T4/T3)と結合型を区別する必要があり、臨床的には遊離型が重要です。",
+    "en": "Thyroid hormone is a collective term for T4 (thyroxine) and T3 (triiodothyronine), sometimes abbreviated as TH. It is important to distinguish between free (unbound) and bound forms, with free T4/T3 being clinically more relevant for assessing thyroid function."
+  },
+  "pubmedCount": 101755,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2158
+    },
+    {
+      "year": 2018,
+      "count": 1938
+    },
+    {
+      "year": 2019,
+      "count": 1957
+    },
+    {
+      "year": 2020,
+      "count": 2069
+    },
+    {
+      "year": 2021,
+      "count": 2144
+    },
+    {
+      "year": 2022,
+      "count": 1987
+    },
+    {
+      "year": 2023,
+      "count": 1743
+    },
+    {
+      "year": 2024,
+      "count": 1866
+    },
+    {
+      "year": 2025,
+      "count": 2168
+    },
+    {
+      "year": 2026,
+      "count": 1891
+    }
+  ],
+  "searchQuery": "(\"Thyroid Hormones\"[MeSH Terms]) OR (\"thyroid hormone\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42822614",
+      "title": "Prunella vulgaris L. ameliorates goiter in Wistar rats is associated with changes in Rap1GAP/CREB3L1/PI3K-AKT signaling pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045238",
+      "title": "Thyroid Disorders in Older Adults: Diagnostic and Management Considerations.",
+      "year": 2027
+    },
+    {
+      "pmid": "43005807",
+      "title": "Re-evaluating the Concept of Peripheral Hypothyroidism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42785477",
+      "title": "YBX3 promotes ischemia-reperfusion injury by enhancing microglial glycolysis via PKM2 stabilization and mTOR-HIF-1α pathway activation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42790002",
+      "title": "Thyroid hormone synthesis and AITD-related inflammatory factors are modulated during early pregnancy in ewes.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:52:56.917Z"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "oligodendrocyte",
+  "ja": "オリゴデンドロサイト",
+  "yomi": "おりごでんどろさいと",
+  "en": "oligodendrocyte",
+  "category": "biology",
+  "aliases": [
+    "希突起膠細胞"
+  ],
+  "meshHeading": "Oligodendroglia",
+  "meshUi": "68009836",
+  "description": {
+    "ja": "中枢神経系(脳・脊髄)に存在するグリア細胞の一種で、神経線維を髄鞘(ミエリン鞘)で包んで電気信号の伝達を高速化する役割を持ちます。1つのオリゴデンドロサイトが複数の神経軸索を支持できる点が特徴です。",
+    "en": "A type of glial cell in the central nervous system (brain and spinal cord) that wraps nerve fibers with myelin sheaths to accelerate electrical signal transmission. One oligodendrocyte can support multiple nerve axons."
+  },
+  "usage": {
+    "ja": "神経変性疾患や脱髄疾患の研究で、オリゴデンドロサイトの数や機能、髄鞘形成能が免疫染色やマーカー(MBP、PLP、Olig2など)を用いて評価されます。再生医療では分化誘導の標的細胞としても注目されています。",
+    "en": "In studies of neurodegenerative and demyelinating diseases, oligodendrocyte number, function, and myelination capacity are evaluated using immunostaining and markers (MBP, PLP, Olig2, etc.). They are also targeted in regenerative medicine for differentiation induction."
+  },
+  "synonyms": {
+    "ja": "希突起膠細胞とも呼ばれます。末梢神経系で同様の役割を担うシュワン細胞とは区別され、中枢神経系特有の細胞です。OLやOPC(オリゴデンドロサイト前駆細胞)と略記されることもあります。",
+    "en": "Also called oligodendroglial cells. Distinct from Schwann cells which perform similar roles in the peripheral nervous system; oligodendrocytes are specific to the central nervous system. May be abbreviated as OL or OPC (oligodendrocyte precursor cells)."
+  },
+  "pubmedCount": 40287,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1313
+    },
+    {
+      "year": 2018,
+      "count": 1359
+    },
+    {
+      "year": 2019,
+      "count": 1526
+    },
+    {
+      "year": 2020,
+      "count": 1664
+    },
+    {
+      "year": 2021,
+      "count": 1638
+    },
+    {
+      "year": 2022,
+      "count": 1493
+    },
+    {
+      "year": 2023,
+      "count": 1481
+    },
+    {
+      "year": 2024,
+      "count": 1596
+    },
+    {
+      "year": 2025,
+      "count": 1750
+    },
+    {
+      "year": 2026,
+      "count": 1804
+    }
+  ],
+  "searchQuery": "(\"Oligodendroglia\"[MeSH Terms]) OR (\"oligodendrocyte\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43014980",
+      "title": "Central Nervous System Inflammatory and Infectious Disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42401247",
+      "title": "Panax quinquefolius saponins promote remyelination via orchestrating HMGCS1-NPC1-MAL-mediated lipid metabolism and rebalancing JAK-STAT signaling in a cuprizone-induced demyelination model.",
+      "year": 2027
+    },
+    {
+      "pmid": "43050152",
+      "title": "Preparation of Oligodendrocyte Culture on Decellularized Brain Tissue.",
+      "year": 2027
+    },
+    {
+      "pmid": "43050146",
+      "title": "Analysis of α-Synuclein in Cell-Type-Specific Extracellular Vesicles.",
+      "year": 2027
+    },
+    {
+      "pmid": "43038502",
+      "title": "Familial Ovarian Teratoma With Neural Tissue Expression and Anti-NMDAR Encephalitis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:01:54.641Z"
+}

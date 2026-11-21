@@ -1,0 +1,93 @@
+{
+  "slug": "metacognition",
+  "ja": "メタ認知",
+  "yomi": "めたにんち",
+  "en": "metacognition",
+  "category": "psychology",
+  "meshHeading": "Metacognition",
+  "meshUi": "2009719",
+  "description": {
+    "ja": "メタ認知とは、自分自身の認知プロセス（思考、記憶、理解など）を客観的に認識し、モニタリング・制御する能力のことです。「認知についての認知」とも呼ばれ、自分が何を知っていて何を知らないかを把握したり、学習戦略を調整したりする高次の心理機能を指します。心理学や教育学、神経科学の研究で重視される概念です。",
+    "en": "Metacognition refers to the ability to recognize, monitor, and control one's own cognitive processes such as thinking, memory, and understanding. Often described as 'cognition about cognition,' it involves awareness of what one knows and does not know, and the ability to adjust learning strategies accordingly. This higher-order psychological function is a key concept in psychology, education, and neuroscience research."
+  },
+  "usage": {
+    "ja": "心理学研究では、質問紙（Metacognitive Awareness Inventory等）や判断課題（confidence rating、feeling-of-knowing判断など）を用いてメタ認知能力を測定します。教育場面での学習効果、精神疾患における自己モニタリング障害、加齢に伴うメタ記憶の変化などが調べられています。",
+    "en": "In psychological research, metacognition is measured using questionnaires (e.g., Metacognitive Awareness Inventory) and judgment tasks (e.g., confidence ratings, feeling-of-knowing judgments). Studies examine learning outcomes in educational settings, self-monitoring deficits in mental disorders, and age-related changes in metamemory."
+  },
+  "synonyms": {
+    "ja": "「メタ認知的知識」は自分の認知特性についての知識、「メタ認知的制御」は認知活動の調整を指し、両者を合わせてメタ認知と呼びます。関連用語に「メタ記憶（metamemory）」「自己モニタリング（self-monitoring）」があり、文脈により使い分けられます。",
+    "en": "The term encompasses 'metacognitive knowledge' (awareness of one's cognitive characteristics) and 'metacognitive control' (regulation of cognitive activities). Related terms include 'metamemory' (metacognition about memory) and 'self-monitoring,' which are used in specific contexts depending on the focus of research."
+  },
+  "pubmedCount": 5970,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 399
+    },
+    {
+      "year": 2018,
+      "count": 462
+    },
+    {
+      "year": 2019,
+      "count": 485
+    },
+    {
+      "year": 2020,
+      "count": 542
+    },
+    {
+      "year": 2021,
+      "count": 546
+    },
+    {
+      "year": 2022,
+      "count": 582
+    },
+    {
+      "year": 2023,
+      "count": 583
+    },
+    {
+      "year": 2024,
+      "count": 572
+    },
+    {
+      "year": 2025,
+      "count": 681
+    },
+    {
+      "year": 2026,
+      "count": 716
+    }
+  ],
+  "searchQuery": "(\"Metacognition\"[MeSH Terms]) OR (\"metacognition\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42896496",
+      "title": "Metacognitive monitoring in Kenyan, Chinese, and U.S. children.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858506",
+      "title": "Children successfully use external cues as a cognitive strategy in an unsolvable memory task but demonstrate limitation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42826591",
+      "title": "Feedback helps children seek information to fill knowledge gaps.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863397",
+      "title": "Dissociating accuracy and metacognition in nutritional judgements.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800086",
+      "title": "Semantic generation masks value directed remembering in memory but not metamemory: Evidence from truth-telling and lie fabrication.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:05:58.252Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "adjustment-disorder",
+  "ja": "適応障害",
+  "yomi": "てきおうしょうがい",
+  "en": "adjustment disorder",
+  "category": "psychology",
+  "meshHeading": "Adjustment Disorders",
+  "meshUi": "68000275",
+  "description": {
+    "ja": "適応障害とは、明確なストレス要因(転職、離婚、災害など)に対して不安や抑うつ、行動上の問題が現れ、日常生活に支障をきたす状態を指す心理学・精神医学の診断名です。ストレス要因から3か月以内に症状が出現し、ストレスが解消されれば通常6か月以内に改善する点が特徴とされます。うつ病などの他の精神疾患の診断基準を満たさない場合に用いられる診断カテゴリーです。",
+    "en": "Adjustment disorder is a psychological and psychiatric diagnosis characterized by emotional or behavioral symptoms (such as anxiety, depression, or conduct problems) that develop within three months of an identifiable stressor (e.g., job change, divorce, disaster) and cause significant impairment in daily functioning. The condition typically resolves within six months after the stressor or its consequences have ended. It is diagnosed when the symptoms do not meet criteria for other specific mental disorders such as major depressive disorder."
+  },
+  "usage": {
+    "ja": "論文では、DSM-5やICD-11などの診断基準に基づいて診断され、構造化面接や質問紙(例:Brief Symptom Inventory)を用いて評価されます。職場ストレス、災害後、慢性疾患の診断後など、特定のストレス状況における心理的反応の研究で頻繁に取り上げられ、治療介入(心理療法、ストレス管理)の効果検証にも用いられます。",
+    "en": "In research, adjustment disorder is diagnosed according to DSM-5 or ICD-11 criteria and assessed using structured interviews or questionnaires such as the Brief Symptom Inventory. It is frequently studied in contexts involving specific stressors such as workplace stress, post-disaster situations, or following chronic illness diagnosis, and is used to evaluate the effectiveness of therapeutic interventions including psychotherapy and stress management."
+  },
+  "synonyms": {
+    "ja": "状況反応性障害、ストレス反応症候群などと呼ばれることもありますが、急性ストレス障害(acute stress disorder)や心的外傷後ストレス障害(PTSD)とは異なり、外傷的出来事でなくても発症し得る点で区別されます。診断基準や重症度によって他の気分障害や不安障害と鑑別する必要があります。",
+    "en": "Also referred to as situational reaction or stress response syndrome, but differs from acute stress disorder and post-traumatic stress disorder (PTSD) in that it can occur following non-traumatic stressors. It must be differentiated from other mood and anxiety disorders based on diagnostic criteria and symptom severity."
+  },
+  "pubmedCount": 5492,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 92
+    },
+    {
+      "year": 2018,
+      "count": 99
+    },
+    {
+      "year": 2019,
+      "count": 98
+    },
+    {
+      "year": 2020,
+      "count": 122
+    },
+    {
+      "year": 2021,
+      "count": 115
+    },
+    {
+      "year": 2022,
+      "count": 103
+    },
+    {
+      "year": 2023,
+      "count": 101
+    },
+    {
+      "year": 2024,
+      "count": 79
+    },
+    {
+      "year": 2025,
+      "count": 122
+    },
+    {
+      "year": 2026,
+      "count": 95
+    }
+  ],
+  "searchQuery": "(\"Adjustment Disorders\"[MeSH Terms]) OR (\"adjustment disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42749161",
+      "title": "Maternal depressive symptom trajectories in the first 12 postpartum months and the associated risk correlates.",
+      "year": 2027
+    },
+    {
+      "pmid": "42740361",
+      "title": "Adjustment Disorder in Patients with Serious Illness #539.",
+      "year": 2026
+    },
+    {
+      "pmid": "42715860",
+      "title": "Diagnostic concordance in consultation-liaison psychiatry: A retrospective analysis of 4,556 referrals in a tertiary hospital.",
+      "year": 2026
+    },
+    {
+      "pmid": "41746141",
+      "title": "A qualitative contextualisation of childhood adversity, stressors and symptoms of diagnosed adjustment disorder among UK military personnel.",
+      "year": 2026
+    },
+    {
+      "pmid": "42641612",
+      "title": "[Triggers of ICD-11 adjustment disorder: differences in symptom progression and socio-medical prognosis].",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:15:16.829Z"
+}

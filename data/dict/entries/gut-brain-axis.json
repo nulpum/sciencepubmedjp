@@ -1,0 +1,93 @@
+{
+  "slug": "gut-brain-axis",
+  "ja": "腸脳相関",
+  "yomi": "ちょうのうそうかん",
+  "en": "gut-brain axis",
+  "category": "biology",
+  "meshHeading": "Brain-Gut Axis",
+  "meshUi": "2101037",
+  "description": {
+    "ja": "腸と脳が神経系・内分泌系・免疫系を介して相互に影響し合う双方向の情報伝達システムを指します。腸内細菌叢が産生する代謝物質や神経伝達物質が迷走神経などを通じて脳機能に作用し、逆に脳からのシグナルが腸の運動や分泌、微生物環境に影響を与えることが知られています。",
+    "en": "The gut-brain axis refers to the bidirectional communication system between the gastrointestinal tract and the central nervous system, mediated through neural, endocrine, and immune pathways. Metabolites and neurotransmitters produced by gut microbiota can influence brain function via routes such as the vagus nerve, while brain signals affect intestinal motility, secretion, and microbial composition."
+  },
+  "usage": {
+    "ja": "論文では腸内細菌叢の組成変化と精神状態や神経疾患との関連を調べる研究で頻出します。糞便移植実験や特定菌株の投与による行動変化の測定、血中サイトカインや短鎖脂肪酸などの代謝物質の定量が典型的な手法です。",
+    "en": "This term frequently appears in studies examining associations between gut microbiota composition and mental states or neurological conditions. Typical methods include fecal transplantation experiments, behavioral assessments following administration of specific bacterial strains, and quantification of metabolites such as cytokines and short-chain fatty acids in blood."
+  },
+  "synonyms": {
+    "ja": "microbiota-gut-brain axis(微生物叢-腸-脳軸)、brain-gut axis(脳腸軸)とも呼ばれます。近年は腸内細菌の役割を強調してmicrobiota-gut-brain axisの表記が増えていますが、神経系の双方向性を示す場合はbrain-gut axisも使われます。",
+    "en": "Also referred to as the microbiota-gut-brain axis or brain-gut axis. The term microbiota-gut-brain axis has become more common in recent years to emphasize the role of intestinal microbiota, while brain-gut axis is used when focusing on bidirectional neural communication."
+  },
+  "pubmedCount": 11360,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 221
+    },
+    {
+      "year": 2018,
+      "count": 321
+    },
+    {
+      "year": 2019,
+      "count": 455
+    },
+    {
+      "year": 2020,
+      "count": 654
+    },
+    {
+      "year": 2021,
+      "count": 992
+    },
+    {
+      "year": 2022,
+      "count": 1142
+    },
+    {
+      "year": 2023,
+      "count": 1303
+    },
+    {
+      "year": 2024,
+      "count": 1619
+    },
+    {
+      "year": 2025,
+      "count": 2439
+    },
+    {
+      "year": 2026,
+      "count": 2917
+    }
+  ],
+  "searchQuery": "(\"Brain-Gut Axis\"[MeSH Terms]) OR (\"gut-brain axis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43032397",
+      "title": "Effects of bile acids and gut microbiota interactions on neurological and psychiatric disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933739",
+      "title": "Mechanisms of traditional Chinese medicine-derived active components in the treatment of Alzheimer's disease: A comprehensive review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869395",
+      "title": "hnRNPU regulates the sorting of exo-miR-125a-5p in colon epithelial cells and its role in realgar-induced central nervous system toxicity.",
+      "year": 2027
+    },
+    {
+      "pmid": "42822612",
+      "title": "Icaritin ameliorates diabetes-associated cognitive dysfunction by attenuating ferroptosis through PPARα/CPT1A-associated fatty acid oxidative regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772618",
+      "title": "Huanglian Wendan Decoction ameliorates insomnia-like phenotypes in a composite mouse model with phlegm-heat-related features: Insights from the brain-gut axis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:03:53.927Z"
+}

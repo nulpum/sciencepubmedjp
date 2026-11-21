@@ -1,0 +1,93 @@
+{
+  "slug": "insulin-resistance",
+  "ja": "インスリン抵抗性",
+  "yomi": "いんすりんていこうせい",
+  "en": "insulin resistance",
+  "category": "nursing-pharma",
+  "meshHeading": "Insulin Resistance",
+  "meshUi": "68007333",
+  "description": {
+    "ja": "インスリン抵抗性とは、体内でインスリンが分泌されているにもかかわらず、筋肉や肝臓などの組織が十分に反応せず、血糖を効率的に取り込めない状態を指します。2型糖尿病やメタボリックシンドロームの病態理解において中心的な概念です。肥満や運動不足、遺伝的要因などが関与すると考えられています。",
+    "en": "Insulin resistance refers to a condition in which tissues such as muscle and liver do not respond adequately to insulin, resulting in impaired glucose uptake despite normal or elevated insulin levels. It is a central concept in understanding the pathophysiology of type 2 diabetes and metabolic syndrome, with factors such as obesity, physical inactivity, and genetic predisposition thought to contribute."
+  },
+  "usage": {
+    "ja": "論文では「insulin resistance」として検索され、HOMA-IR指数やクランプ法などの測定法を用いた評価が報告されます。介入研究では運動や食事、薬剤投与による改善効果が検討対象となることが多く、糖代謝や心血管リスクとの関連が調べられています。",
+    "en": "In research papers, it is searched as 'insulin resistance' and evaluated using methods such as HOMA-IR index or clamp techniques. Intervention studies often examine improvement through exercise, diet, or pharmacological agents, investigating associations with glucose metabolism and cardiovascular risk."
+  },
+  "synonyms": {
+    "ja": "「IR」と略されることもあり、耐糖能異常や高インスリン血症と関連しますが、厳密には異なる概念です。インスリン感受性は逆の意味で、高いほどインスリンが効きやすい状態を指します。検索時は「insulin sensitivity」との使い分けに注意が必要です。",
+    "en": "Often abbreviated as 'IR', it is related to but distinct from impaired glucose tolerance and hyperinsulinemia. Insulin sensitivity represents the opposite concept, with higher sensitivity indicating better insulin responsiveness. When searching, careful distinction from 'insulin sensitivity' is important."
+  },
+  "pubmedCount": 173191,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8288
+    },
+    {
+      "year": 2018,
+      "count": 8526
+    },
+    {
+      "year": 2019,
+      "count": 8386
+    },
+    {
+      "year": 2020,
+      "count": 8929
+    },
+    {
+      "year": 2021,
+      "count": 9205
+    },
+    {
+      "year": 2022,
+      "count": 8868
+    },
+    {
+      "year": 2023,
+      "count": 8161
+    },
+    {
+      "year": 2024,
+      "count": 8548
+    },
+    {
+      "year": 2025,
+      "count": 10059
+    },
+    {
+      "year": 2026,
+      "count": 9553
+    }
+  ],
+  "searchQuery": "(\"Insulin Resistance\"[MeSH Terms]) OR (\"insulin resistance\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42462872",
+      "title": "Association of the triglyceride-glucose index with tumor burden in newly diagnosed multiple myeloma: A retrospective cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874694",
+      "title": "Agriophyllum squarrosum oligosaccharides ameliorate inflammation and lipid accumulation in T2DM-induced MASLD via miR-155-regulated PPARγ signaling pathways.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843668",
+      "title": "Finger citron fruit ameliorates ovariectomy-induced postmenopausal metabolic syndrome through regulation of lipogenesis and ferroptosis-related alterations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800689",
+      "title": "Dendrobium polysaccharides as anti-diabetic agents: Hypoglycemic mechanisms, and structure-activity relationships.",
+      "year": 2027
+    },
+    {
+      "pmid": "42785535",
+      "title": "Geraniin alleviates pathological visceral adipose tissue expansion through modulation of β-adrenergic receptor-associated cAMP-LKB1-AMPK signaling in high-fat diet-fed mice.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:46:11.626Z"
+}

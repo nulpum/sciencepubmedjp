@@ -1,0 +1,91 @@
+{
+  "slug": "prior-probability",
+  "ja": "事前確率",
+  "yomi": "じぜんかくりつ",
+  "en": "prior probability",
+  "category": "research",
+  "description": {
+    "ja": "ベイズ統計学において、新しいデータを観察する前に設定される確率のことです。研究者の事前知識や過去の研究結果に基づいて設定され、新たなデータ（尤度）と組み合わせることで事後確率を導き出します。臨床研究では疾患の有病率や検査前確率として用いられることもあります。",
+    "en": "In Bayesian statistics, the probability assigned before observing new data. It is set based on prior knowledge or previous research findings, and combined with new data (likelihood) to derive the posterior probability. In clinical research, it may represent disease prevalence or pre-test probability."
+  },
+  "usage": {
+    "ja": "ベイズ解析を用いた論文では「事前分布」として表現され、メタアナリシスや診断研究で過去の知見を定量的に取り込む際に設定されます。informative prior（情報的事前分布）やnon-informative prior（無情報事前分布）など、事前知識の強さによって使い分けられます。",
+    "en": "In papers using Bayesian analysis, it appears as 'prior distribution' and is specified when quantitatively incorporating previous knowledge in meta-analyses or diagnostic studies. Researchers distinguish between informative priors and non-informative priors depending on the strength of prior knowledge."
+  },
+  "synonyms": {
+    "ja": "「事前分布」「prior distribution」とほぼ同義ですが、事前確率は単一の値、事前分布は確率密度関数全体を指すことが多いです。検査前確率（pre-test probability）は診断文脈での事前確率の一種です。頻度論統計では用いられない概念のため、解析手法の違いに注意が必要です。",
+    "en": "Nearly synonymous with 'prior distribution,' though prior probability often refers to a single value while prior distribution indicates the entire probability density function. Pre-test probability is a type of prior probability in diagnostic contexts. This concept is not used in frequentist statistics, so attention to analytical approach differences is necessary."
+  },
+  "pubmedCount": 1087,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 55
+    },
+    {
+      "year": 2018,
+      "count": 49
+    },
+    {
+      "year": 2019,
+      "count": 43
+    },
+    {
+      "year": 2020,
+      "count": 50
+    },
+    {
+      "year": 2021,
+      "count": 62
+    },
+    {
+      "year": 2022,
+      "count": 39
+    },
+    {
+      "year": 2023,
+      "count": 43
+    },
+    {
+      "year": 2024,
+      "count": 50
+    },
+    {
+      "year": 2025,
+      "count": 37
+    },
+    {
+      "year": 2026,
+      "count": 39
+    }
+  ],
+  "searchQuery": "\"prior probability\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42896891",
+      "title": "Late Integration of Prior Expectations during Precision-Weighted Perceptual Decisions.",
+      "year": 2026
+    },
+    {
+      "pmid": "42646907",
+      "title": "Potential for Genomics to Help Guide Preventive Strategies in Psychiatry.",
+      "year": 2026
+    },
+    {
+      "pmid": "42580367",
+      "title": "The erosion of proof in paradigm transitions: the rise of narrative rationality in health technology assessment.",
+      "year": 2026
+    },
+    {
+      "pmid": "43021836",
+      "title": "Resolving the apparent paradox of multisensory expertise: coupling priors, common-cause priors, and how to distinguish among them.",
+      "year": 2026
+    },
+    {
+      "pmid": "42921778",
+      "title": "Association of Family with Sequence Similarity 13 Member A Polymorphisms and Chronic Obstructive Pulmonary Disease Risk.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:46:33.811Z"
+}

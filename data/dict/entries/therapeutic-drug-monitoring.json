@@ -1,0 +1,94 @@
+{
+  "slug": "therapeutic-drug-monitoring",
+  "ja": "薬物血中濃度モニタリング",
+  "yomi": "やくぶつけっちゅうのうどもにたりんぐ",
+  "en": "therapeutic drug monitoring",
+  "abbr": "TDM",
+  "category": "nursing-pharma",
+  "meshHeading": "Drug Monitoring",
+  "meshUi": "68016903",
+  "description": {
+    "ja": "薬物血中濃度モニタリング(TDM)とは、患者の血液中に含まれる薬物の濃度を測定し、適切な投与量や投与間隔を調整するための検査手法です。薬物の有効性と安全性を両立させるために、治療域が狭い薬剤や個人差が大きい薬剤で実施されます。",
+    "en": "Therapeutic drug monitoring (TDM) is a clinical practice that measures drug concentrations in a patient's blood to optimize dosing regimens for efficacy and safety. It is commonly applied to drugs with narrow therapeutic windows or high inter-individual variability in pharmacokinetics."
+  },
+  "usage": {
+    "ja": "論文では抗菌薬、免疫抑制薬、抗てんかん薬などで血中濃度を測定し、目標濃度範囲内に保つための用量調整研究で用いられます。高速液体クロマトグラフィー(HPLC)や免疫学的測定法などの分析手法が記載されることが多いです。",
+    "en": "In research papers, TDM is used in dosing adjustment studies for antibiotics, immunosuppressants, and antiepileptic drugs to maintain concentrations within target ranges. Analytical methods such as high-performance liquid chromatography (HPLC) or immunoassays are frequently described."
+  },
+  "synonyms": {
+    "ja": "「血中濃度測定」「薬物モニタリング」とも呼ばれますが、TDMは単なる測定ではなく投与設計への活用まで含む概念です。「治療的薬物モニタリング」と訳されることもあります。",
+    "en": "Also referred to as 'drug level monitoring' or 'serum drug concentration measurement,' though TDM specifically emphasizes the clinical application for dose optimization. The term 'pharmacokinetic monitoring' is sometimes used interchangeably."
+  },
+  "pubmedCount": 41834,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2364
+    },
+    {
+      "year": 2018,
+      "count": 2342
+    },
+    {
+      "year": 2019,
+      "count": 2560
+    },
+    {
+      "year": 2020,
+      "count": 2387
+    },
+    {
+      "year": 2021,
+      "count": 1913
+    },
+    {
+      "year": 2022,
+      "count": 1201
+    },
+    {
+      "year": 2023,
+      "count": 1280
+    },
+    {
+      "year": 2024,
+      "count": 2097
+    },
+    {
+      "year": 2025,
+      "count": 1644
+    },
+    {
+      "year": 2026,
+      "count": 2354
+    }
+  ],
+  "searchQuery": "(\"Drug Monitoring\"[MeSH Terms]) OR (\"therapeutic drug monitoring\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42832956",
+      "title": "Terbium-modified poly(diphenylamine orange) sensor enabling sustainable monitoring of imatinib: Voltammetric and DFT insights.",
+      "year": 2027
+    },
+    {
+      "pmid": "42976609",
+      "title": "Frequency-resolved near-infrared photothermal lens spectrometry for simultaneous determination of some antidepressant drugs in human saliva using charge-transfer complexation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42833083",
+      "title": "∙OH-responsive antioxidant carbon dots simultaneously act as scavenger and fluorescent probe for rapid detection of edaravone.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045422",
+      "title": "Using Electronic Medication Monitoring to Address the Why Behind Poor Adherence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42673787",
+      "title": "Bivalent aptamer-assisted CRISPR-Cas12a sensor for precise vancomycin therapeutic drug monitoring.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:35:10.178Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "glucagon",
+  "ja": "グルカゴン",
+  "yomi": "ぐるかごん",
+  "en": "glucagon",
+  "category": "biology",
+  "meshHeading": "Glucagon",
+  "meshUi": "68005934",
+  "description": {
+    "ja": "グルカゴンは膵臓のα細胞から分泌されるペプチドホルモンで、血糖値を上昇させる主要な働きを持ちます。インスリンとは逆に、肝臓でのグリコーゲン分解や糖新生を促進することで血液中のグルコース濃度を高めます。",
+    "en": "Glucagon is a peptide hormone secreted by pancreatic alpha cells that primarily functions to increase blood glucose levels. It acts oppositely to insulin by promoting glycogen breakdown and gluconeogenesis in the liver to raise blood glucose concentrations."
+  },
+  "usage": {
+    "ja": "糖代謝研究において血中グルカゴン濃度は ELISA や RIA で測定され、空腹時・食後の変動や糖尿病患者での分泌異常が調べられます。グルカゴン負荷試験では外因性グルカゴン投与後の血糖・インスリン応答を評価することもあります。",
+    "en": "In glucose metabolism research, plasma glucagon concentrations are measured by ELISA or RIA to examine fasting/postprandial fluctuations and secretion abnormalities in diabetic patients. Glucagon stimulation tests evaluate blood glucose and insulin responses following exogenous glucagon administration."
+  },
+  "synonyms": {
+    "ja": "グルカゴンは「GCG」と略記されることがあり、その受容体は「GCGR (glucagon receptor)」と呼ばれます。類似ペプチドとして GLP-1 や GIP などのインクレチンホルモンがあり、これらは同じプログルカゴン遺伝子に由来しますが生理作用は異なります。",
+    "en": "Glucagon may be abbreviated as 'GCG,' and its receptor is termed 'GCGR (glucagon receptor).' Related peptides include incretin hormones such as GLP-1 and GIP, which are derived from the same proglucagon gene but have distinct physiological actions."
+  },
+  "pubmedCount": 63773,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1757
+    },
+    {
+      "year": 2018,
+      "count": 1879
+    },
+    {
+      "year": 2019,
+      "count": 1915
+    },
+    {
+      "year": 2020,
+      "count": 2054
+    },
+    {
+      "year": 2021,
+      "count": 2247
+    },
+    {
+      "year": 2022,
+      "count": 2228
+    },
+    {
+      "year": 2023,
+      "count": 2306
+    },
+    {
+      "year": 2024,
+      "count": 3196
+    },
+    {
+      "year": 2025,
+      "count": 4477
+    },
+    {
+      "year": 2026,
+      "count": 5428
+    }
+  ],
+  "searchQuery": "(\"Glucagon\"[MeSH Terms]) OR (\"glucagon\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42892933",
+      "title": "Future Treatments for Tobacco Dependence.",
+      "year": 2027
+    },
+    {
+      "pmid": "42722239",
+      "title": "Plumieride ameliorates type 2 diabetes and colitis by regulating intestinal functions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42946204",
+      "title": "The GLP-1 receptor agonist semaglutide reduces alcohol consumption and anxiety-like behaviors during withdrawal in Marchigian Sardinian alcohol-preferring rats.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869735",
+      "title": "Thyroid Disease in the Era of Obesity and Glucagon-Like-Peptide-1 Agonists.",
+      "year": 2027
+    },
+    {
+      "pmid": "42532732",
+      "title": "Effects of Body Weight on Middle Ear Disease.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:51:23.233Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "allostatic-load",
+  "ja": "アロスタシス負荷",
+  "yomi": "あろすたしすふか",
+  "en": "allostatic load",
+  "category": "psychology",
+  "meshHeading": "Allostasis",
+  "meshUi": "68052636",
+  "description": {
+    "ja": "アロスタシス負荷とは、慢性的なストレスや生活環境の変化に対応するため、体内の複数の生理システム(神経内分泌系、免疫系、代謝系など)が長期間にわたって活性化され続けた結果、身体に蓄積される「摩耗」や負担を指す概念です。ストレスホルモンや炎症マーカー、血圧、代謝指標など複数のバイオマーカーを統合して評価されます。",
+    "en": "Allostatic load refers to the cumulative physiological wear and tear on the body that results from chronic stress and repeated adaptation to challenging life circumstances. It reflects the long-term activation of multiple biological systems (neuroendocrine, immune, metabolic) and is typically assessed by combining multiple biomarkers including stress hormones, inflammatory markers, blood pressure, and metabolic indicators."
+  },
+  "usage": {
+    "ja": "心理学や疫学の研究では、コルチゾール、エピネフリン、CRP、HbA1c、血圧、コレステロール値など複数の生理指標を組み合わせてアロスタシス負荷スコアを算出し、慢性ストレス曝露と健康アウトカムの関連を調べる際に用いられます。社会経済的困難、差別体験、介護負担などの長期的影響を定量化する指標として活用されています。",
+    "en": "In psychological and epidemiological research, allostatic load is measured by combining multiple physiological indicators such as cortisol, epinephrine, CRP, HbA1c, blood pressure, and cholesterol levels into a composite score. It is used to examine the relationship between chronic stress exposure (such as socioeconomic adversity, discrimination, or caregiving burden) and health outcomes."
+  },
+  "synonyms": {
+    "ja": "類似概念として「アロスタティック負荷」という表記もあります。関連用語に「アロスタシス(恒常性維持のための適応プロセス)」「累積的生理学的負担」があり、単なるストレス反応ではなく長期的な生理システムの消耗を強調する点が特徴です。",
+    "en": "Also referred to as 'allostatic burden' in some literature. Related terms include 'allostasis' (the adaptive process of maintaining stability) and 'cumulative physiological burden.' It emphasizes long-term wear on biological systems rather than acute stress responses."
+  },
+  "pubmedCount": 2619,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 132
+    },
+    {
+      "year": 2018,
+      "count": 152
+    },
+    {
+      "year": 2019,
+      "count": 186
+    },
+    {
+      "year": 2020,
+      "count": 170
+    },
+    {
+      "year": 2021,
+      "count": 204
+    },
+    {
+      "year": 2022,
+      "count": 196
+    },
+    {
+      "year": 2023,
+      "count": 197
+    },
+    {
+      "year": 2024,
+      "count": 240
+    },
+    {
+      "year": 2025,
+      "count": 275
+    },
+    {
+      "year": 2026,
+      "count": 325
+    }
+  ],
+  "searchQuery": "(\"Allostasis\"[MeSH Terms]) OR (\"allostatic load\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880599",
+      "title": "Neuroendocrine and circuit remodeling under chronic social stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036764",
+      "title": "Association of allostatic load with preoperative shoulder symptoms in patients undergoing rotator cuff repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "42966221",
+      "title": "Timing matters: Maternal stress and mental health symptoms from pregnancy to postpartum in shaping infant development.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892261",
+      "title": "Allostatic load-intrinsic capacity phenotypes and adverse ageing outcomes in middle-aged and older Chinese adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "42992856",
+      "title": "Associations between allostatic load and osteoarthritis: a cross-sectional study from NHANES 1999-2020.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:16:40.183Z"
+}

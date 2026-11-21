@@ -1,0 +1,93 @@
+{
+  "slug": "prevalence",
+  "ja": "有病率",
+  "yomi": "ゆうびょうりつ",
+  "en": "prevalence",
+  "category": "research",
+  "meshHeading": "epidemiology",
+  "meshUi": "81000453",
+  "description": {
+    "ja": "ある特定の時点で、集団の中に病気や健康状態を持つ人がどれくらいいるかを示す割合です。例えば「日本の糖尿病有病率は10%」は、ある時点で日本人の10人に1人が糖尿病を持っていることを意味します。発生率(incidence)が「新たに病気になる人の割合」を示すのに対し、有病率は「既に持っている人を含めた全体の割合」を表します。",
+    "en": "Prevalence is the proportion of a population that has a disease or condition at a specific point in time. For example, if the prevalence of diabetes in Japan is 10%, it means 1 in 10 Japanese people have diabetes at that time. While incidence measures new cases, prevalence measures all existing cases including both new and old ones."
+  },
+  "usage": {
+    "ja": "疫学研究で集団の疾病負担を評価する際に用いられます。横断研究(cross-sectional study)で測定されることが多く、「point prevalence(時点有病率)」や「period prevalence(期間有病率)」として報告されます。計算式は(ある時点の患者数÷その時点の全人口)×100で表されます。",
+    "en": "Prevalence is used in epidemiological studies to assess disease burden in populations. It is typically measured in cross-sectional studies and reported as point prevalence or period prevalence. The formula is (number of existing cases at a time point ÷ total population at that time) × 100."
+  },
+  "synonyms": {
+    "ja": "「有病割合」とも呼ばれます。発生率(incidence)とは異なる概念で、慢性疾患では有病率が高くなりやすい傾向があります。罹患率という用語は文脈により発生率を指す場合と有病率を指す場合があるため、英語表記での確認が推奨されます。",
+    "en": "Also referred to as prevalence rate or prevalence proportion. It differs from incidence, which measures new cases. Chronic diseases tend to have higher prevalence rates. The term 'morbidity rate' can be ambiguous and may refer to either prevalence or incidence depending on context."
+  },
+  "pubmedCount": 1036162,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 44038
+    },
+    {
+      "year": 2018,
+      "count": 46378
+    },
+    {
+      "year": 2019,
+      "count": 49777
+    },
+    {
+      "year": 2020,
+      "count": 58587
+    },
+    {
+      "year": 2021,
+      "count": 66899
+    },
+    {
+      "year": 2022,
+      "count": 66007
+    },
+    {
+      "year": 2023,
+      "count": 62881
+    },
+    {
+      "year": 2024,
+      "count": 69265
+    },
+    {
+      "year": 2025,
+      "count": 77894
+    },
+    {
+      "year": 2026,
+      "count": 66485
+    }
+  ],
+  "searchQuery": "(\"epidemiology\"[MeSH Terms]) OR (\"prevalence\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42867073",
+      "title": "From prevalence to prognosis: the clinical relevance of depression and anxiety in COPD.",
+      "year": 2027
+    },
+    {
+      "pmid": "42834659",
+      "title": "Gut microbiota and metabolic characteristics in PWHIV with metabolic dysfunction-associated steatotic liver disease (MASLD).",
+      "year": 2027
+    },
+    {
+      "pmid": "42971231",
+      "title": "Prevalence of neural tube defects and major external structural abnormalities by antiretroviral treatment regimen in Botswana in 2014-22: a birth outcomes surveillance study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42948259",
+      "title": "Prevalence and Clinical Significance of Gastric-Type Mucosal Lesions in Non-Ampullary Duodenal Epithelial Tumors Based on Mucin Phenotype.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:48:23.553Z"
+}

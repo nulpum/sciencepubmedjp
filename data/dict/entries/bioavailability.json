@@ -1,0 +1,96 @@
+{
+  "slug": "bioavailability",
+  "ja": "生物学的利用能",
+  "yomi": "せいぶつがくてきりようのう",
+  "en": "bioavailability",
+  "category": "nursing-pharma",
+  "aliases": [
+    "バイオアベイラビリティ"
+  ],
+  "meshHeading": "Biological Availability",
+  "meshUi": "68001682",
+  "description": {
+    "ja": "経口投与などで体内に取り込まれた薬物や栄養素のうち、実際に血液中に到達して全身を循環する割合を示す指標です。静脈内投与を100%として、経口投与や皮膚投与などの吸収率を相対的に評価します。消化管での分解や肝臓での初回通過効果により、経口薬は一般に静脈投与より生物学的利用能が低くなります。",
+    "en": "An indicator showing the proportion of an administered drug or nutrient that actually reaches systemic circulation and becomes available for biological activity. With intravenous administration set as 100%, it relatively evaluates absorption rates from oral, dermal, or other routes. Oral medications generally have lower bioavailability than intravenous due to gastrointestinal degradation and first-pass hepatic metabolism."
+  },
+  "usage": {
+    "ja": "薬物動態研究では血中濃度-時間曲線下面積(AUC)を測定して算出され、製剤設計や投与経路の選択において重要な指標となります。栄養学研究では食品中の栄養素が体内でどの程度利用可能かを評価する際に用いられ、食品の組み合わせや調理法による違いが検討されます。",
+    "en": "In pharmacokinetic studies, it is calculated by measuring the area under the plasma concentration-time curve (AUC) and serves as a critical parameter in formulation design and route selection. In nutritional research, it is used to evaluate how effectively nutrients from foods can be utilized in the body, examining differences due to food combinations and cooking methods."
+  },
+  "synonyms": {
+    "ja": "バイオアベイラビリティ、生体利用率とも呼ばれます。絶対的生物学的利用能(静脈投与との比較)と相対的生物学的利用能(異なる製剤間の比較)を区別して使用することがあり、論文では「absolute bioavailability」「relative bioavailability」と明記されます。",
+    "en": "Also referred to as bioaccessibility (though this sometimes specifically means release from food matrix). Distinctions are made between absolute bioavailability (compared to intravenous) and relative bioavailability (between different formulations), explicitly stated as 'absolute bioavailability' or 'relative bioavailability' in research papers."
+  },
+  "pubmedCount": 129552,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 5130
+    },
+    {
+      "year": 2018,
+      "count": 5456
+    },
+    {
+      "year": 2019,
+      "count": 5660
+    },
+    {
+      "year": 2020,
+      "count": 6497
+    },
+    {
+      "year": 2021,
+      "count": 7049
+    },
+    {
+      "year": 2022,
+      "count": 7163
+    },
+    {
+      "year": 2023,
+      "count": 6937
+    },
+    {
+      "year": 2024,
+      "count": 7786
+    },
+    {
+      "year": 2025,
+      "count": 10339
+    },
+    {
+      "year": 2026,
+      "count": 10509
+    }
+  ],
+  "searchQuery": "(\"Biological Availability\"[MeSH Terms]) OR (\"bioavailability\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42976426",
+      "title": "Arsenic speciation from extraction to structural identification: a critical narrative review of methodological advances and evidence quality.",
+      "year": 2027
+    },
+    {
+      "pmid": "43061998",
+      "title": "Bioactive gas-eluting biomaterial platforms: gaseous medicine strategy for peripheral nerve injury.",
+      "year": 2027
+    },
+    {
+      "pmid": "43061996",
+      "title": "Kidney effects of inhaled nitric oxide in critically ill patients: from pathophysiological considerations to clinical implications.",
+      "year": 2027
+    },
+    {
+      "pmid": "42909374",
+      "title": "Biomimetic sequential targeted nanoplatform for synergistic thrombolysis in ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "42831169",
+      "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:34:20.293Z"
+}

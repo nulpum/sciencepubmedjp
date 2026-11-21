@@ -1,0 +1,94 @@
+{
+  "slug": "visual-analog-scale",
+  "ja": "視覚的アナログスケール",
+  "yomi": "しかくてきあなろぐすけーる",
+  "en": "visual analog scale",
+  "abbr": "VAS",
+  "category": "nursing-pharma",
+  "meshHeading": "Visual Analog Scale",
+  "meshUi": "68064232",
+  "description": {
+    "ja": "視覚的アナログスケール(VAS)は、痛みや不安などの主観的な感覚を数値化するための測定ツールです。通常10cmの直線上に患者が印をつけ、その位置を測定することで0-100mmのスコアとして記録されます。簡便で繰り返し測定が可能なため、臨床試験や看護実践で広く使用されています。",
+    "en": "Visual analog scale (VAS) is a measurement tool used to quantify subjective sensations such as pain or anxiety. Patients mark a point on a typically 10-cm line, which is then measured and recorded as a 0-100mm score. It is widely used in clinical trials and nursing practice due to its simplicity and repeatability."
+  },
+  "usage": {
+    "ja": "疼痛評価では「痛みなし」から「想像できる最悪の痛み」までの直線上に印をつけてもらい、左端からの距離をmmで測定します。介入前後の変化量や、臨床的に意味のある最小変化量(MCID)との比較に用いられます。",
+    "en": "In pain assessment, patients mark a point on a line ranging from 'no pain' to 'worst imaginable pain,' and the distance from the left end is measured in millimeters. It is used to evaluate changes before and after interventions and to compare with the minimal clinically important difference (MCID)."
+  },
+  "synonyms": {
+    "ja": "類似の尺度として数値評価スケール(NRS)やフェイススケールがあります。VASは連続変数として扱えますが、NRSは0-10の離散値を用います。論文検索では「VAS score」「pain VAS」などのキーワードが有効です。",
+    "en": "Similar scales include the numerical rating scale (NRS) and face scale. VAS can be treated as a continuous variable, while NRS uses discrete values from 0-10. For literature searches, keywords such as 'VAS score' and 'pain VAS' are effective."
+  },
+  "pubmedCount": 53475,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3021
+    },
+    {
+      "year": 2018,
+      "count": 3169
+    },
+    {
+      "year": 2019,
+      "count": 3379
+    },
+    {
+      "year": 2020,
+      "count": 3834
+    },
+    {
+      "year": 2021,
+      "count": 4126
+    },
+    {
+      "year": 2022,
+      "count": 4243
+    },
+    {
+      "year": 2023,
+      "count": 3998
+    },
+    {
+      "year": 2024,
+      "count": 4518
+    },
+    {
+      "year": 2025,
+      "count": 5701
+    },
+    {
+      "year": 2026,
+      "count": 5483
+    }
+  ],
+  "searchQuery": "(\"Visual Analog Scale\"[MeSH Terms]) OR (\"visual analog scale\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42559051",
+      "title": "Lidocaine Spray Versus Viscous Lidocaine Solution Plus Lidocaine Spray in Patients Undergoing Non-Sedated Esophagogastroduodenoscopy: A Randomized Controlled Trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42926853",
+      "title": "Comparing outcomes of onlay humeral stem designs in reverse total shoulder arthroplasty: a systematic review.",
+      "year": 2027
+    },
+    {
+      "pmid": "42372807",
+      "title": "Chinese herbal medicine Xiangsu Hewei Granules in treating non-erosive gastroesophageal reflux disease with liver stomach stagnation heat syndrome: A multicentre, randomized, double-blind, placebo-controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041316",
+      "title": "Biceps-augmented partial rotator cuff repair versus tensor fascia lata superior capsular reconstruction for irreparable massive rotator cuff tears in young adults: a randomized controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039884",
+      "title": "Physiotherapy Exercise Protocol Improves Pain, Quality of Life and Functional Capacity in Elderly Patients With Cancer Undergoing Palliative Care.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:43:43.924Z"
+}

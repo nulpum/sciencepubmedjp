@@ -1,0 +1,93 @@
+{
+  "slug": "episodic-memory",
+  "ja": "エピソード記憶",
+  "yomi": "えぴそーどきおく",
+  "en": "episodic memory",
+  "category": "psychology",
+  "meshHeading": "Memory, Episodic",
+  "meshUi": "68061212",
+  "description": {
+    "ja": "エピソード記憶とは、個人が経験した出来事を「いつ・どこで・何が起きたか」という文脈とともに思い出す記憶のことです。例えば「昨日の夕食で何を食べたか」や「初めて自転車に乗った時の情景」などが該当します。認知心理学や神経科学の研究では、加齢や神経疾患による記憶機能の変化を調べる際の重要な指標となります。",
+    "en": "Episodic memory refers to the ability to recall personal experiences with contextual details such as when, where, and what happened. Examples include remembering what you ate for dinner yesterday or the scene of your first bicycle ride. In cognitive psychology and neuroscience research, it serves as a key indicator for examining memory function changes associated with aging or neurological disorders."
+  },
+  "usage": {
+    "ja": "論文では、物語の再生課題や自伝的記憶インタビュー、画像を用いた遅延再認テストなどで測定されます。fMRIや脳波を用いて海馬や前頭葉の活動パターンを調べる神経画像研究も多く行われています。",
+    "en": "In research papers, episodic memory is measured through story recall tasks, autobiographical memory interviews, or delayed recognition tests using images. Neuroimaging studies using fMRI or EEG to examine activation patterns in the hippocampus and prefrontal cortex are also common."
+  },
+  "synonyms": {
+    "ja": "意味記憶(semantic memory)と対比される概念で、両者を合わせて「宣言的記憶(declarative memory)」と呼びます。自伝的記憶(autobiographical memory)はエピソード記憶の一種ですが、より個人の人生史に焦点を当てた用語です。",
+    "en": "Episodic memory is contrasted with semantic memory, and together they form declarative memory. Autobiographical memory is a type of episodic memory but specifically focuses on personal life history events."
+  },
+  "pubmedCount": 18138,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1223
+    },
+    {
+      "year": 2018,
+      "count": 1306
+    },
+    {
+      "year": 2019,
+      "count": 1284
+    },
+    {
+      "year": 2020,
+      "count": 1258
+    },
+    {
+      "year": 2021,
+      "count": 1338
+    },
+    {
+      "year": 2022,
+      "count": 1213
+    },
+    {
+      "year": 2023,
+      "count": 1244
+    },
+    {
+      "year": 2024,
+      "count": 1277
+    },
+    {
+      "year": 2025,
+      "count": 1318
+    },
+    {
+      "year": 2026,
+      "count": 1288
+    }
+  ],
+  "searchQuery": "(\"Memory, Episodic\"[MeSH Terms]) OR (\"episodic memory\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43044296",
+      "title": "Effects of temporal and parietal cortex non-invasive brain stimulation on memory in healthy older adults, mild cognitive impairment, and Alzheimer's disease: A systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43013934",
+      "title": "Healthy aging, processing speed, and mnemonic brain state engagement.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854332",
+      "title": "Aversive learning retroactively modulates neutral episodic memories structured by prior knowledge of predictive sequences.",
+      "year": 2027
+    },
+    {
+      "pmid": "42766942",
+      "title": "Bilingualism modulates baseline brain-cognition relationships in aging: Evidence from the HABS-HD cohort.",
+      "year": 2027
+    },
+    {
+      "pmid": "42764038",
+      "title": "Sex differences in the effects of deep brain stimulation on traumatic brain injury-induced cognitive deficits in rats.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:06:52.222Z"
+}

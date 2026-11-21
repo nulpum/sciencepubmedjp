@@ -1,0 +1,91 @@
+{
+  "slug": "semantic-memory",
+  "ja": "意味記憶",
+  "yomi": "いみきおく",
+  "en": "semantic memory",
+  "category": "psychology",
+  "description": {
+    "ja": "意味記憶とは、言葉の意味や一般的な知識、概念など、個人的な体験と結びつかない記憶のことを指します。例えば「りんごは果物である」「富士山は日本一高い山である」といった事実的知識が含まれます。エピソード記憶(個人的な出来事の記憶)と対比される長期記憶の一種です。",
+    "en": "Semantic memory refers to memory for meanings, general knowledge, and concepts that are not tied to personal experiences. It includes factual knowledge such as \"an apple is a fruit\" or \"Mount Fuji is the highest mountain in Japan.\" It is a type of long-term memory contrasted with episodic memory (memory for personal events)."
+  },
+  "usage": {
+    "ja": "心理学や神経科学の論文では、言語理解や概念形成の研究で用いられ、fMRIやPETスキャンで脳活動を測定したり、単語の分類課題や意味判断課題を通じて評価されます。認知症やアルツハイマー病における意味記憶の障害についても研究されています。",
+    "en": "In psychology and neuroscience papers, semantic memory is studied in research on language comprehension and concept formation, measured through fMRI or PET scans, and assessed using word categorization tasks or semantic judgment tasks. Research also examines semantic memory impairment in dementia and Alzheimer's disease."
+  },
+  "synonyms": {
+    "ja": "「概念記憶」とも呼ばれることがあります。対義語は「エピソード記憶」で、意味記憶が一般知識を扱うのに対し、エピソード記憶は時間と場所が特定される個人的体験を扱います。宣言的記憶の下位分類として位置づけられます。",
+    "en": "Also referred to as \"conceptual memory.\" The contrasting term is \"episodic memory,\" where semantic memory deals with general knowledge while episodic memory handles personal experiences with specific time and place. It is classified as a subtype of declarative memory."
+  },
+  "pubmedCount": 3851,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 174
+    },
+    {
+      "year": 2018,
+      "count": 160
+    },
+    {
+      "year": 2019,
+      "count": 182
+    },
+    {
+      "year": 2020,
+      "count": 177
+    },
+    {
+      "year": 2021,
+      "count": 206
+    },
+    {
+      "year": 2022,
+      "count": 170
+    },
+    {
+      "year": 2023,
+      "count": 174
+    },
+    {
+      "year": 2024,
+      "count": 204
+    },
+    {
+      "year": 2025,
+      "count": 169
+    },
+    {
+      "year": 2026,
+      "count": 156
+    }
+  ],
+  "searchQuery": "\"semantic memory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42872401",
+      "title": "Functional Connectivity Among Prefrontal, Hippocampal, and Temporal Systems Supporting Conceptual Change in Science Learning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800086",
+      "title": "Semantic generation masks value directed remembering in memory but not metamemory: Evidence from truth-telling and lie fabrication.",
+      "year": 2027
+    },
+    {
+      "pmid": "42964667",
+      "title": "Alterations in default mode network functional connectivity in semantic dementia.",
+      "year": 2026
+    },
+    {
+      "pmid": "42914487",
+      "title": "Formal Thought Disorders.",
+      "year": 2026
+    },
+    {
+      "pmid": "43055760",
+      "title": "Odor identification versus verbal and facial semantic memory in Parkinson's disease: diagnostic performance and item-specific analysis.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:07:09.916Z"
+}

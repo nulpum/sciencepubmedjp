@@ -1,0 +1,91 @@
+{
+  "slug": "hedonic-adaptation",
+  "ja": "快楽適応",
+  "yomi": "かいらくてきおう",
+  "en": "hedonic adaptation",
+  "category": "psychology",
+  "description": {
+    "ja": "快楽適応とは、人が良い出来事や悪い出来事を経験した後、時間とともに元の幸福度に戻っていく心理的現象を指します。昇進や宝くじ当選などのポジティブな変化も、事故や病気などのネガティブな変化も、長期的には幸福感への影響が薄れていくことが研究で示されています。",
+    "en": "Hedonic adaptation refers to the psychological phenomenon where individuals return to a baseline level of happiness over time after experiencing positive or negative life events. Research demonstrates that both positive changes like promotions or lottery wins and negative changes such as accidents or illness tend to have diminishing effects on long-term happiness."
+  },
+  "usage": {
+    "ja": "心理学や幸福研究の論文では、縦断的調査によって生活満足度や主観的幸福感を繰り返し測定し、大きなライフイベント前後での変化パターンを追跡することで検証されます。結婚、収入増加、身体障害などの出来事が長期的な幸福度に与える影響を評価する際に用いられる概念です。",
+    "en": "In psychology and happiness research papers, this concept is examined through longitudinal surveys that repeatedly measure life satisfaction and subjective well-being, tracking changes before and after major life events. It is used when evaluating the long-term impact of events such as marriage, income increases, or physical disabilities on happiness levels."
+  },
+  "synonyms": {
+    "ja": "ヘドニック適応、快楽のトレッドミル効果、幸福適応などと呼ばれることがあります。セットポイント理論と関連が深く、人には遺伝的に決まった幸福度の基準点があるとする考え方と併せて論じられることが多いです。",
+    "en": "Also referred to as the hedonic treadmill effect or happiness adaptation. It is closely related to set-point theory, which posits that individuals have a genetically determined baseline level of happiness, and these concepts are often discussed together in research."
+  },
+  "pubmedCount": 35,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "count": 4
+    },
+    {
+      "year": 2019,
+      "count": 7
+    },
+    {
+      "year": 2020,
+      "count": 4
+    },
+    {
+      "year": 2021,
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "count": 2
+    },
+    {
+      "year": 2023,
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "count": 2
+    },
+    {
+      "year": 2025,
+      "count": 3
+    },
+    {
+      "year": 2026,
+      "count": 3
+    }
+  ],
+  "searchQuery": "\"hedonic adaptation\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42914355",
+      "title": "Gradual versus abrupt sodium reduction in vegetable soup: A longitudinal sensory exposure study of hedonic response.",
+      "year": 2026
+    },
+    {
+      "pmid": "42314415",
+      "title": "Do people get used to working long hours?",
+      "year": 2026
+    },
+    {
+      "pmid": "42798323",
+      "title": "Social comparison and segregation reveal well-being traps.",
+      "year": 2026
+    },
+    {
+      "pmid": "41463089",
+      "title": "Added Value to GLP-1 Receptor Agonist: Intermittent Fasting and Lifestyle Modification to Improve Therapeutic Effects and Outcomes.",
+      "year": 2025
+    },
+    {
+      "pmid": "40902509",
+      "title": "Temporal satisfaction patterns in body image after aesthetic surgery: A systematic review and meta-analysis.",
+      "year": 2025
+    }
+  ],
+  "generatedAt": "2026-11-21T06:19:51.922Z"
+}

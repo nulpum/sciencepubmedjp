@@ -1,0 +1,93 @@
+{
+  "slug": "gene-expression",
+  "ja": "遺伝子発現",
+  "yomi": "いでんしはつげん",
+  "en": "gene expression",
+  "category": "biology",
+  "meshHeading": "Gene Expression",
+  "meshUi": "68015870",
+  "description": {
+    "ja": "遺伝子発現とは、DNA上の遺伝情報がRNAを経てタンパク質として実際に作られる一連のプロセスを指します。転写(DNAからRNAへ)と翻訳(RNAからタンパク質へ)の2段階から成り、細胞の機能や特性を決定する基本的な生命現象です。",
+    "en": "Gene expression refers to the process by which genetic information encoded in DNA is converted into functional products, primarily proteins, through transcription (DNA to RNA) and translation (RNA to protein). This fundamental biological process determines cellular functions and characteristics."
+  },
+  "usage": {
+    "ja": "論文では「遺伝子発現レベル」「発現パターン」「発現量」などの形で用いられ、RT-PCR、マイクロアレイ、RNA-seqなどの手法で測定されます。特定の条件下でどの遺伝子がどれだけ発現しているかを比較解析する研究が多く見られます。",
+    "en": "In research papers, terms like 'gene expression levels,' 'expression patterns,' and 'expression profiles' are commonly used, measured by techniques such as RT-PCR, microarrays, and RNA-seq. Studies frequently compare which genes are expressed and to what extent under specific conditions."
+  },
+  "synonyms": {
+    "ja": "「発現」と略されることが多く、mRNAレベルでの発現を「転写レベル」、タンパク質レベルでの発現を「翻訳レベル」と区別する場合があります。upregulation(発現上昇)、downregulation(発現低下)なども関連用語です。",
+    "en": "Often abbreviated as 'expression.' Distinctions are made between 'transcriptional level' (mRNA) and 'translational level' (protein) expression. Related terms include upregulation (increased expression) and downregulation (decreased expression)."
+  },
+  "pubmedCount": 1022817,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 41303
+    },
+    {
+      "year": 2018,
+      "count": 40328
+    },
+    {
+      "year": 2019,
+      "count": 42095
+    },
+    {
+      "year": 2020,
+      "count": 45180
+    },
+    {
+      "year": 2021,
+      "count": 47413
+    },
+    {
+      "year": 2022,
+      "count": 40649
+    },
+    {
+      "year": 2023,
+      "count": 38675
+    },
+    {
+      "year": 2024,
+      "count": 44042
+    },
+    {
+      "year": 2025,
+      "count": 50793
+    },
+    {
+      "year": 2026,
+      "count": 42566
+    }
+  ],
+  "searchQuery": "(\"Gene Expression\"[MeSH Terms]) OR (\"gene expression\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42926929",
+      "title": "Plug-and-Play or Plug-and-Pray? Impact of random versus targeted integration on the linearity and orthogonality of synthetic gene circuits in CHO cells.",
+      "year": 2027
+    },
+    {
+      "pmid": "42967393",
+      "title": "Transcription factor-regulated rolling circle transcription cascaded with Cas12a for sensitive determination of tetracycline.",
+      "year": 2027
+    },
+    {
+      "pmid": "42775084",
+      "title": "Artificial gene clusters designed for simultaneous multi-gene expression enable reconstruction of metabolite biosynthesis pathways in Trichoderma reesei.",
+      "year": 2027
+    },
+    {
+      "pmid": "43062005",
+      "title": "One-carbon metabolism-derived prognostic signature orchestrates reactive oxygen species redox homeostasis in head and neck squamous cell carcinoma: integrative bulk and single-cell transcriptomic profiling.",
+      "year": 2027
+    },
+    {
+      "pmid": "43001319",
+      "title": "Circular RNAs as promising biomarkers for human diseases: An update for 2018-2025.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:03:10.378Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "heterogeneity",
+  "ja": "異質性",
+  "yomi": "いしつせい",
+  "en": "heterogeneity",
+  "category": "research",
+  "aliases": [
+    "ヘテロジェナイティ"
+  ],
+  "description": {
+    "ja": "研究対象や結果のばらつき・多様性を指す用語です。メタアナリシスでは複数研究の結果が一致しない程度、疫学では集団内の特性の違い、基礎研究では細胞や組織の性質の不均一性などを表します。",
+    "en": "Refers to variability or diversity in research subjects or results. In meta-analysis, it indicates the degree of inconsistency among study results; in epidemiology, it represents differences in population characteristics; in basic research, it describes non-uniformity in cell or tissue properties."
+  },
+  "usage": {
+    "ja": "メタアナリシスでは「I²統計量」や「Q検定」で異質性を数値化し、高い場合はランダム効果モデルを用いたり、サブグループ解析で原因を探ります。臨床研究では患者背景の異質性、腫瘍研究では腫瘍内異質性(tumor heterogeneity)として扱われます。",
+    "en": "In meta-analysis, heterogeneity is quantified using I² statistics or Q-tests; high heterogeneity may require random-effects models or subgroup analyses. In clinical research, it refers to patient background diversity; in oncology, it describes intratumoral heterogeneity."
+  },
+  "synonyms": {
+    "ja": "「variability(ばらつき)」「diversity(多様性)」とほぼ同義ですが、heterogeneityは統計的な不均一性を強調する文脈で使われます。対義語は「homogeneity(同質性)」です。",
+    "en": "Synonymous with 'variability' and 'diversity', but heterogeneity emphasizes statistical non-uniformity in research contexts. The opposite term is 'homogeneity'."
+  },
+  "pubmedCount": 390651,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 14728
+    },
+    {
+      "year": 2018,
+      "count": 15996
+    },
+    {
+      "year": 2019,
+      "count": 17779
+    },
+    {
+      "year": 2020,
+      "count": 21168
+    },
+    {
+      "year": 2021,
+      "count": 25413
+    },
+    {
+      "year": 2022,
+      "count": 27276
+    },
+    {
+      "year": 2023,
+      "count": 27469
+    },
+    {
+      "year": 2024,
+      "count": 30811
+    },
+    {
+      "year": 2025,
+      "count": 43430
+    },
+    {
+      "year": 2026,
+      "count": 62333
+    }
+  ],
+  "searchQuery": "\"heterogeneity\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "43000015",
+      "title": "New potential reference materials for in-situ microscale Ag isotope analysis by fsLA-MC-ICP-MS.",
+      "year": 2027
+    },
+    {
+      "pmid": "42662560",
+      "title": "Strategies and applications for alleviating carbon catabolite repression.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032719",
+      "title": "Molecular insights into fatty acid metabolism reprogramming: Targeting metabolic vulnerabilities in hematological malignancies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42959458",
+      "title": "Spatial organization of magnetic nanoparticles in chitosan-gelatin hydrogels enables enhanced magnetic actuation and cell response under dynamic stimulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42935674",
+      "title": "Spatiotemporal dynamics and risk factors of pulmonary tuberculosis in a high-altitude Tibetan region of China from 2018 to 2022: A Bayesian modeling analysis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:41:37.679Z"
+}

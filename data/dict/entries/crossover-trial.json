@@ -1,0 +1,96 @@
+{
+  "slug": "crossover-trial",
+  "ja": "クロスオーバー試験",
+  "yomi": "くろすおーばーしけん",
+  "en": "crossover trial",
+  "category": "research",
+  "aliases": [
+    "交差試験"
+  ],
+  "meshHeading": "Cross-Over Studies",
+  "meshUi": "68018592",
+  "description": {
+    "ja": "同じ参加者が異なる介入を順番に受ける臨床試験デザインです。各参加者が自分自身の対照群となるため、個人差の影響を減らせる利点があります。介入間にはウォッシュアウト期間(休薬期間)を設けて前の介入の影響を消します。",
+    "en": "A clinical trial design where the same participants receive different interventions in sequence. Each participant serves as their own control, reducing the impact of individual variability. A washout period is typically included between interventions to eliminate carryover effects."
+  },
+  "usage": {
+    "ja": "論文では「crossover design」「2×2 crossover trial」などと表記され、介入の順序効果を評価するため無作為割付が行われます。慢性疾患の短期的な症状改善を調べる研究や、栄養介入の研究でよく用いられます。",
+    "en": "Papers often describe this as 'crossover design' or '2×2 crossover trial' with randomization to control for order effects. Commonly used in studies examining short-term symptom improvement in chronic conditions or nutritional intervention research."
+  },
+  "synonyms": {
+    "ja": "交差試験、クロスオーバーデザインとも呼ばれます。対照群を別に設ける並行群間試験(parallel trial)と対比されます。キャリーオーバー効果(前の介入の影響が残ること)に注意が必要です。",
+    "en": "Also called crossover design or crossover study. Contrasted with parallel-group trials where different participants receive different interventions. Careful consideration of carryover effects (residual effects from previous intervention) is essential."
+  },
+  "pubmedCount": 67033,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3105
+    },
+    {
+      "year": 2018,
+      "count": 3139
+    },
+    {
+      "year": 2019,
+      "count": 3091
+    },
+    {
+      "year": 2020,
+      "count": 3053
+    },
+    {
+      "year": 2021,
+      "count": 2728
+    },
+    {
+      "year": 2022,
+      "count": 2206
+    },
+    {
+      "year": 2023,
+      "count": 2086
+    },
+    {
+      "year": 2024,
+      "count": 2747
+    },
+    {
+      "year": 2025,
+      "count": 3157
+    },
+    {
+      "year": 2026,
+      "count": 2829
+    }
+  ],
+  "searchQuery": "(\"Cross-Over Studies\"[MeSH Terms]) OR (\"crossover trial\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43005189",
+      "title": "Acute effects of weight-bearing high-intensity interval training before dinner on postprandial glucose concentrations in patients with type 2 diabetes: an exploratory crossover trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913142",
+      "title": "The role of the HPA axis in tailoring cognitive remediation therapy in patients with early psychosis: An exploratory randomized clinical trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42893227",
+      "title": "Pro-inflammatory cytokines moderated by visceral adiposity from a pragmatic randomized crossover trial of portable HEPA air purifiers.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800402",
+      "title": "Short-term macronutrient-specific diets induce distinct metabolic changes detectable in blood and saliva.",
+      "year": 2027
+    },
+    {
+      "pmid": "42692370",
+      "title": "The effect of AI-based linguistically tailored health messages on plant-based lunch choices of adolescents: A randomised controlled trial.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:49:54.202Z"
+}

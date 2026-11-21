@@ -1,0 +1,91 @@
+{
+  "slug": "forest-plot",
+  "ja": "フォレストプロット",
+  "yomi": "ふぉれすとぷろっと",
+  "en": "forest plot",
+  "category": "research",
+  "description": {
+    "ja": "複数の研究結果を視覚的にまとめたグラフで、メタアナリシスやシステマティックレビューで広く使われます。各研究の効果量を四角や菱形で、その信頼区間を横線で表示し、全体の統合結果も示されます。森のように縦に並んだ線が特徴的なため「フォレスト」と呼ばれます。",
+    "en": "A graphical display that summarizes results from multiple studies, widely used in meta-analyses and systematic reviews. Each study's effect size is shown as a square or diamond, with its confidence interval represented by a horizontal line, and the overall pooled result is also displayed. The name comes from the forest-like appearance of vertical lines."
+  },
+  "usage": {
+    "ja": "論文では「Figure shows a forest plot of risk ratios」のように記載され、各研究が横軸上にプロットされ、効果の方向性や統合推定値を一目で把握できます。異質性(heterogeneity)の評価やサブグループ解析の結果表示にも用いられます。",
+    "en": "Papers typically state 'Figure shows a forest plot of risk ratios,' with each study plotted on a horizontal axis to visualize effect direction and pooled estimates at a glance. Also used to display heterogeneity assessment and subgroup analysis results."
+  },
+  "synonyms": {
+    "ja": "「メタアナリシスプロット」と呼ばれることもありますが、フォレストプロットが標準的な用語です。類似の図として「ブロブログラム(blobbogram)」という呼称もありますが、現在はほとんど使われません。",
+    "en": "Sometimes called 'meta-analysis plot,' but forest plot is the standard term. An older synonym 'blobbogram' exists but is rarely used today."
+  },
+  "pubmedCount": 1877,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 78
+    },
+    {
+      "year": 2018,
+      "count": 96
+    },
+    {
+      "year": 2019,
+      "count": 122
+    },
+    {
+      "year": 2020,
+      "count": 173
+    },
+    {
+      "year": 2021,
+      "count": 205
+    },
+    {
+      "year": 2022,
+      "count": 218
+    },
+    {
+      "year": 2023,
+      "count": 238
+    },
+    {
+      "year": 2024,
+      "count": 276
+    },
+    {
+      "year": 2025,
+      "count": 244
+    },
+    {
+      "year": 2026,
+      "count": 142
+    }
+  ],
+  "searchQuery": "\"forest plot\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42990132",
+      "title": "Efficacy of Manual Physiotherapy Techniques for Improving Cervical Range of Motion in Infants With Congenital Muscular Torticollis: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42605815",
+      "title": "Volume-outcome analysis of in-hospital complications after cardiac implantable electronic device implantation: a 250 000-case study‡.",
+      "year": 2026
+    },
+    {
+      "pmid": "43043322",
+      "title": "The interpretation of heterogeneity in meta-analysis: A tutorial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42974890",
+      "title": "A little-known perspective on the I-squared statistic.",
+      "year": 2026
+    },
+    {
+      "pmid": "42971498",
+      "title": "Correlation of initial treatment with time to resolution of HLA-B27-associated acute anterior uveitis.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:40:58.306Z"
+}

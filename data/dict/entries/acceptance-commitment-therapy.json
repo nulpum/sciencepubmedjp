@@ -1,0 +1,94 @@
+{
+  "slug": "acceptance-commitment-therapy",
+  "ja": "アクセプタンス&コミットメントセラピー",
+  "yomi": "あくせぷたんすあんどこみっとめんとせらぴー",
+  "en": "acceptance and commitment therapy",
+  "abbr": "ACT",
+  "category": "psychology",
+  "meshHeading": "Acceptance and Commitment Therapy",
+  "meshUi": "68064869",
+  "description": {
+    "ja": "心理的柔軟性を高めることを目指す認知行動療法の一種で、不快な思考や感情を無理に変えようとせず受け入れ(アクセプタンス)ながら、自分の価値観に沿った行動にコミットすることを促す心理療法です。マインドフルネスや価値の明確化などの技法を用いて、症状の軽減よりも生活の質の向上を重視します。",
+    "en": "A form of cognitive behavioral therapy that aims to increase psychological flexibility by encouraging individuals to accept unwanted thoughts and feelings rather than fighting them (acceptance), while committing to actions aligned with personal values (commitment). It emphasizes improving quality of life over symptom reduction through techniques like mindfulness and values clarification."
+  },
+  "usage": {
+    "ja": "うつ病、不安症、慢性疼痛、薬物依存などの研究で介入方法として用いられ、通常は対照群(待機リスト、通常治療など)と比較して心理的柔軟性尺度やQOL尺度の変化を評価します。セッション数や実施形式(個人・集団・オンライン)を明記して報告されます。",
+    "en": "Used as an intervention in studies of depression, anxiety disorders, chronic pain, and substance abuse, typically compared with control conditions (waitlist, treatment as usual) by measuring changes in psychological flexibility scales and quality of life measures. Studies report the number of sessions and delivery format (individual, group, or online)."
+  },
+  "synonyms": {
+    "ja": "略称ACTで広く知られ、第三世代認知行動療法または文脈的認知行動療法と分類されることもあります。伝統的CBT(認知再構成を重視)とは異なり、認知の変容ではなく認知との関係性の変化を重視する点に注意が必要です。",
+    "en": "Widely known by the acronym ACT and sometimes classified as third-wave or contextual cognitive behavioral therapy. Unlike traditional CBT that emphasizes cognitive restructuring, ACT focuses on changing one's relationship with cognition rather than changing the content of thoughts."
+  },
+  "pubmedCount": 3016,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 130
+    },
+    {
+      "year": 2018,
+      "count": 165
+    },
+    {
+      "year": 2019,
+      "count": 184
+    },
+    {
+      "year": 2020,
+      "count": 259
+    },
+    {
+      "year": 2021,
+      "count": 298
+    },
+    {
+      "year": 2022,
+      "count": 339
+    },
+    {
+      "year": 2023,
+      "count": 342
+    },
+    {
+      "year": 2024,
+      "count": 346
+    },
+    {
+      "year": 2025,
+      "count": 475
+    },
+    {
+      "year": 2026,
+      "count": 425
+    }
+  ],
+  "searchQuery": "(\"Acceptance and Commitment Therapy\"[MeSH Terms]) OR (\"acceptance and commitment therapy\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42227754",
+      "title": "Understanding the Influence of Experiential Psychotherapy Among Men Who Have Offended: A Systematic Review.",
+      "year": 2027
+    },
+    {
+      "pmid": "43036772",
+      "title": "Internet-delivered acceptance-based CBT for frequent migraine in routine care as add-on to medical treatment 12-month results: A randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42908336",
+      "title": "The potential of psychological intervention to decrease the risk of anxiety and depression in pulmonary fibrosis.",
+      "year": 2026
+    },
+    {
+      "pmid": "42867195",
+      "title": "The Effect of ACT-Based Psychoeducation on Hope, Resilience and Stress Levels in Individuals Experiencing Earthquake: A Randomized Controlled Trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42671762",
+      "title": "Study of Acceptance and Commitment Therapy for Parents in the NICU.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:22:37.026Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "catastrophizing",
+  "ja": "破局的思考",
+  "yomi": "はきょくてきしこう",
+  "en": "catastrophizing",
+  "category": "psychology",
+  "meshHeading": "Catastrophization",
+  "meshUi": "68058443",
+  "description": {
+    "ja": "破局的思考とは、物事を最悪の結末に結びつけて考える認知パターンです。痛みや不安に関する研究で、ネガティブな結果を過大評価し「この痛みは永遠に続く」「何もかもうまくいかない」などと極端に悲観的に解釈する傾向を指します。",
+    "en": "Catastrophizing is a cognitive pattern of interpreting situations in terms of worst-case scenarios. In pain and anxiety research, it refers to the tendency to magnify negative outcomes and interpret experiences with extreme pessimism, such as believing pain will never end or that everything will go wrong."
+  },
+  "usage": {
+    "ja": "疼痛研究や不安障害の論文で頻出し、Pain Catastrophizing Scale (PCS) などの質問票で測定されます。慢性疼痛患者の予後予測因子や認知行動療法の介入ターゲットとして評価されることが多いです。",
+    "en": "Commonly assessed in pain research and anxiety disorder studies using questionnaires such as the Pain Catastrophizing Scale (PCS). It is frequently evaluated as a prognostic factor in chronic pain patients and as a target for cognitive-behavioral therapy interventions."
+  },
+  "synonyms": {
+    "ja": "catastrophic thinking とも表記されます。関連概念として rumination (反すう思考) や negative cognitive bias (ネガティブ認知バイアス) があり、特に pain catastrophizing は疼痛特異的な破局的思考を指します。",
+    "en": "Also referred to as catastrophic thinking. Related concepts include rumination and negative cognitive bias. Pain catastrophizing specifically denotes catastrophic thinking related to pain experiences."
+  },
+  "pubmedCount": 7466,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 375
+    },
+    {
+      "year": 2018,
+      "count": 420
+    },
+    {
+      "year": 2019,
+      "count": 431
+    },
+    {
+      "year": 2020,
+      "count": 540
+    },
+    {
+      "year": 2021,
+      "count": 607
+    },
+    {
+      "year": 2022,
+      "count": 627
+    },
+    {
+      "year": 2023,
+      "count": 651
+    },
+    {
+      "year": 2024,
+      "count": 737
+    },
+    {
+      "year": 2025,
+      "count": 878
+    },
+    {
+      "year": 2026,
+      "count": 927
+    }
+  ],
+  "searchQuery": "(\"Catastrophization\"[MeSH Terms]) OR (\"catastrophizing\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42946138",
+      "title": "Unpredictable human screams elicit anticipatory and phasic cortical responses that affect subsequent interpersonal space regulation.",
+      "year": 2027
+    },
+    {
+      "pmid": "42998057",
+      "title": "The Effect of Exercise Training on Individuals With Osteoporotic Vertebral Fracture: A Randomized Controlled Trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "43022349",
+      "title": "Therapist-supported versus self-guided digital CBT for chronic pain with neurodevelopmental traits: A pilot feasibility randomized controlled trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "43008900",
+      "title": "Comparative effectiveness of non-pharmacological interventions on postoperative kinesiophobia in total knee arthroplasty: A systematic review and network meta-analysis of randomized controlled trials.",
+      "year": 2026
+    },
+    {
+      "pmid": "42969609",
+      "title": "Mechanisms of behavioral activation, cognitive therapy, and mindfulness meditation for chronic pain: a test of specific vs shared mechanism models in a randomized clinical trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:11:39.977Z"
+}

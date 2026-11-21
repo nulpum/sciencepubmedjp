@@ -1,0 +1,91 @@
+{
+  "slug": "extrinsic-motivation",
+  "ja": "外発的動機づけ",
+  "yomi": "がいはつてきどうきづけ",
+  "en": "extrinsic motivation",
+  "category": "psychology",
+  "description": {
+    "ja": "外発的動機づけとは、報酬や評価、罰といった外部からの刺激によって行動が引き起こされる心理状態を指します。活動そのものへの興味ではなく、外的な結果を得るために行動する動機づけです。内発的動機づけと対比される概念として心理学研究で広く用いられます。",
+    "en": "Extrinsic motivation refers to a psychological state where behavior is driven by external stimuli such as rewards, evaluations, or punishments. It represents motivation to act in order to obtain external outcomes rather than interest in the activity itself, and is widely used in psychological research as a concept contrasted with intrinsic motivation."
+  },
+  "usage": {
+    "ja": "教育心理学や組織心理学の研究で、学習成果や仕事のパフォーマンスに対する動機づけの影響を調べる際に測定されます。質問紙法による自己報告や行動観察により、金銭的報酬や成績評価などの外的要因が行動に与える効果を評価します。",
+    "en": "Measured in educational and organizational psychology research when examining the impact of motivation on learning outcomes or work performance. Effects of external factors such as monetary rewards or grade evaluations on behavior are assessed through self-report questionnaires and behavioral observations."
+  },
+  "synonyms": {
+    "ja": "「外的動機づけ」とも呼ばれ、自己決定理論では「統制された動機づけ」として分類されることもあります。内発的動機づけ (intrinsic motivation) との対比で用いられ、両者のバランスが行動の持続性や心理的健康に影響すると考えられています。",
+    "en": "Also called 'external motivation' and sometimes classified as 'controlled motivation' in self-determination theory. Used in contrast with intrinsic motivation, and the balance between the two is considered to affect behavioral persistence and psychological well-being."
+  },
+  "pubmedCount": 760,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 34
+    },
+    {
+      "year": 2018,
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "count": 38
+    },
+    {
+      "year": 2020,
+      "count": 51
+    },
+    {
+      "year": 2021,
+      "count": 72
+    },
+    {
+      "year": 2022,
+      "count": 71
+    },
+    {
+      "year": 2023,
+      "count": 72
+    },
+    {
+      "year": 2024,
+      "count": 74
+    },
+    {
+      "year": 2025,
+      "count": 87
+    },
+    {
+      "year": 2026,
+      "count": 86
+    }
+  ],
+  "searchQuery": "\"extrinsic motivation\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42834934",
+      "title": "From withdrawal to motivation: The feasibility, acceptability and early clinical benefits of adapted physical activity during inpatient alcohol withdrawal.",
+      "year": 2026
+    },
+    {
+      "pmid": "42661559",
+      "title": "Revealing the link between critical thinking disposition and learning approaches: a cross-sectional study among Chinese medical students.",
+      "year": 2026
+    },
+    {
+      "pmid": "41527397",
+      "title": "Assessing changes in academic motivation across medical training stages: a longitudinal study in Malaysia.",
+      "year": 2026
+    },
+    {
+      "pmid": "43041353",
+      "title": "Professional choice motivation and flow experience in specialized skill courses: a three-way interaction analysis among undergraduate physical education majors.",
+      "year": 2026
+    },
+    {
+      "pmid": "42881081",
+      "title": "Why did residents choose neurology? Motivational profile and influence of demographic and career factors.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:20:25.962Z"
+}

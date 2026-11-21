@@ -1,0 +1,96 @@
+{
+  "slug": "specificity",
+  "ja": "特異度",
+  "yomi": "とくいど",
+  "en": "specificity",
+  "category": "research",
+  "aliases": [
+    "真陰性率"
+  ],
+  "meshHeading": "Sensitivity and Specificity",
+  "meshUi": "68012680",
+  "description": {
+    "ja": "特異度とは、実際に疾患や条件を持たない対象を正しく「陰性」と判定できる割合を示す統計指標です。診断検査や分類モデルの性能評価で用いられ、偽陽性(間違って陽性と判定)をどれだけ抑えられるかを表します。感度とセットで評価されることが一般的です。",
+    "en": "Specificity is a statistical measure indicating the proportion of truly negative cases that are correctly identified as negative by a test or model. It is used to evaluate diagnostic tests and classification models, representing the ability to minimize false positives. Specificity is typically assessed together with sensitivity."
+  },
+  "usage": {
+    "ja": "診断検査の精度評価では「真陰性数÷(真陰性数+偽陽性数)」で算出され、パーセントまたは0-1の値で報告されます。ROC曲線分析や混同行列の文脈で、感度・陽性的中率などと併せて論じられることが多いです。",
+    "en": "In diagnostic test accuracy studies, specificity is calculated as true negatives divided by the sum of true negatives and false positives, reported as a percentage or value between 0 and 1. It is commonly discussed alongside sensitivity, positive predictive value, and in the context of ROC curve analysis and confusion matrices."
+  },
+  "synonyms": {
+    "ja": "真陰性率とも呼ばれます。感度(真陽性率、sensitivity)とは対の概念で、両者を組み合わせて検査の総合的な性能を評価します。陽性的中率や陰性的中率とは異なる指標なので注意が必要です。",
+    "en": "Also referred to as the true negative rate. It is a complementary concept to sensitivity (true positive rate), and both are used together to comprehensively evaluate test performance. It should be distinguished from positive predictive value and negative predictive value, which are different metrics."
+  },
+  "pubmedCount": 1237504,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 49791
+    },
+    {
+      "year": 2018,
+      "count": 49606
+    },
+    {
+      "year": 2019,
+      "count": 51007
+    },
+    {
+      "year": 2020,
+      "count": 52590
+    },
+    {
+      "year": 2021,
+      "count": 53289
+    },
+    {
+      "year": 2022,
+      "count": 45400
+    },
+    {
+      "year": 2023,
+      "count": 41390
+    },
+    {
+      "year": 2024,
+      "count": 54039
+    },
+    {
+      "year": 2025,
+      "count": 67688
+    },
+    {
+      "year": 2026,
+      "count": 62236
+    }
+  ],
+  "searchQuery": "(\"Sensitivity and Specificity\"[MeSH Terms]) OR (\"specificity\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42848027",
+      "title": "Clinical Outcomes following invasive coronary angiography for patients with acute coronary syndromes pretreated with P2Y(12) inhibitors and considered for urgent coronary artery bypass graft surgery.",
+      "year": 2027
+    },
+    {
+      "pmid": "43032428",
+      "title": "Short-chain alcohols fueled orthogonal conversion of pyruvate via a non-natural cofactor.",
+      "year": 2027
+    },
+    {
+      "pmid": "42904109",
+      "title": "A base-editing and auxotrophic selection platform for linking epigenetic regulators to silent biosynthetic gene clusters in Aspergillus nidulans.",
+      "year": 2027
+    },
+    {
+      "pmid": "42866665",
+      "title": "Diverse oxidosqualene cyclases for triterpenoid biosynthesis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:38:24.979Z"
+}

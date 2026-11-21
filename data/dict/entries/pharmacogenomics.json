@@ -1,0 +1,96 @@
+{
+  "slug": "pharmacogenomics",
+  "ja": "ファーマコゲノミクス",
+  "yomi": "ふぁーまこげのみくす",
+  "en": "pharmacogenomics",
+  "category": "nursing-pharma",
+  "aliases": [
+    "薬理ゲノム学"
+  ],
+  "meshHeading": "Pharmacogenetics",
+  "meshUi": "68010597",
+  "description": {
+    "ja": "個人のゲノム(遺伝情報)の違いが薬の効き方や副作用にどう影響するかを研究する学問分野です。同じ薬でも人によって効果や安全性が異なる理由を遺伝子レベルで解明し、個別化医療の実現を目指します。薬物代謝酵素や薬物受容体の遺伝子多型が主な研究対象となります。",
+    "en": "Pharmacogenomics is the study of how an individual's genetic makeup affects their response to drugs, including efficacy and adverse effects. It seeks to explain why the same medication works differently in different people by examining genetic variations in drug-metabolizing enzymes, transporters, and receptors, ultimately aiming to enable personalized medicine."
+  },
+  "usage": {
+    "ja": "論文では薬物代謝酵素遺伝子(CYP2D6、CYP2C19など)の多型解析や、特定の遺伝子型を持つ患者群での薬剤反応性の比較研究で用いられます。遺伝子検査に基づく投与量調整や薬剤選択の有効性を評価する臨床試験でも頻出します。",
+    "en": "In research papers, this term appears in studies analyzing polymorphisms of drug-metabolizing enzyme genes (such as CYP2D6, CYP2C19) and comparing drug responses among patient groups with specific genotypes. It is commonly used in clinical trials evaluating the effectiveness of gene-test-guided dosing adjustments or drug selection."
+  },
+  "synonyms": {
+    "ja": "薬理ゲノム学とも呼ばれ、ファーマコジェネティクス(薬理遺伝学)と類似しますが、ファーマコゲノミクスはゲノム全体を対象とするより包括的な概念です。個別化医療、precision medicine、テーラーメイド医療といった文脈でも関連して使われます。",
+    "en": "Also called pharmacogenetics, though pharmacogenomics is broader, encompassing genome-wide approaches while pharmacogenetics traditionally focuses on single genes. Related terms include personalized medicine, precision medicine, and individualized therapy, all emphasizing tailored treatment based on genetic information."
+  },
+  "pubmedCount": 19882,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 925
+    },
+    {
+      "year": 2018,
+      "count": 892
+    },
+    {
+      "year": 2019,
+      "count": 811
+    },
+    {
+      "year": 2020,
+      "count": 910
+    },
+    {
+      "year": 2021,
+      "count": 934
+    },
+    {
+      "year": 2022,
+      "count": 791
+    },
+    {
+      "year": 2023,
+      "count": 750
+    },
+    {
+      "year": 2024,
+      "count": 749
+    },
+    {
+      "year": 2025,
+      "count": 881
+    },
+    {
+      "year": 2026,
+      "count": 1004
+    }
+  ],
+  "searchQuery": "(\"Pharmacogenetics\"[MeSH Terms]) OR (\"pharmacogenomics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42665171",
+      "title": "ABCB1 rs2032582 as a potential biomarker for predicting Scutellaria baicalensis Georgi-drug induced liver injury in humans.",
+      "year": 2027
+    },
+    {
+      "pmid": "43052661",
+      "title": "AI-Driven Approaches in Pharmacogenomics for Precision Medicine.",
+      "year": 2027
+    },
+    {
+      "pmid": "43041795",
+      "title": "Implementation of a preemptive pharmacogenetic passport: Acceptance, attitudes and preferences of the general population.",
+      "year": 2026
+    },
+    {
+      "pmid": "42992985",
+      "title": "Obstetric pharmacometabolomics.",
+      "year": 2026
+    },
+    {
+      "pmid": "42952325",
+      "title": "Genetic and genomic medicine across the lung transplant continuum: inherited disease, pharmacogenomics, and molecular surveillance.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:35:31.299Z"
+}

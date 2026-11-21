@@ -1,0 +1,93 @@
+{
+  "slug": "tau-protein",
+  "ja": "タウタンパク",
+  "yomi": "たうたんぱく",
+  "en": "tau protein",
+  "category": "biology",
+  "meshHeading": "tau Proteins",
+  "meshUi": "68016875",
+  "description": {
+    "ja": "タウタンパク(tau protein)は、主に神経細胞内で微小管(細胞骨格)の安定化を担うタンパク質です。正常時は微小管と結合して細胞の形態維持や物質輸送を助けますが、異常にリン酸化されると凝集して神経原線維変化を形成し、アルツハイマー病などの神経変性疾患に関連すると研究されています。脳脊髄液や血液中のタウ濃度は、神経変性の進行を評価するバイオマーカーとして調べられています。",
+    "en": "Tau protein is a microtubule-associated protein primarily found in neurons, where it stabilizes microtubules (cytoskeletal structures) and supports cellular shape and transport. Under normal conditions, tau binds to microtubules, but when abnormally phosphorylated (hyperphosphorylated), it aggregates into neurofibrillary tangles, which are studied in relation to Alzheimer's disease and other neurodegenerative disorders. Tau levels in cerebrospinal fluid and blood are investigated as biomarkers for assessing neurodegeneration progression."
+  },
+  "usage": {
+    "ja": "論文では、脳組織の免疫組織化学染色でタウ蓄積の分布や程度を評価したり、ELISA法で脳脊髄液や血漿中の総タウ濃度・リン酸化タウ(p-tau)濃度を測定したりする文脈で使われます。PETイメージングによるタウ蓄積の可視化や、遺伝子変異(MAPT遺伝子)との関連を調べる研究もあります。",
+    "en": "In research papers, tau is studied through immunohistochemical staining of brain tissue to assess distribution and extent of tau accumulation, or measured in cerebrospinal fluid and plasma using ELISA to quantify total tau and phosphorylated tau (p-tau) levels. PET imaging studies visualize tau deposition in vivo, and genetic studies investigate associations with MAPT gene mutations."
+  },
+  "synonyms": {
+    "ja": "「微小管結合タンパク質タウ(microtubule-associated protein tau)」とも呼ばれ、リン酸化の状態に応じて「p-tau(phosphorylated tau)」「hyperphosphorylated tau」などと区別されます。神経原線維変化(neurofibrillary tangles, NFTs)はタウの異常凝集体を指し、タウオパチー(tauopathy)は異常タウ蓄積を特徴とする疾患群の総称です。",
+    "en": "Also called microtubule-associated protein tau (MAPT), and distinguished by phosphorylation state as p-tau (phosphorylated tau) or hyperphosphorylated tau. Neurofibrillary tangles (NFTs) refer to aggregates of abnormal tau, and tauopathies denote a group of disorders characterized by pathological tau accumulation."
+  },
+  "pubmedCount": 29130,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1341
+    },
+    {
+      "year": 2018,
+      "count": 1478
+    },
+    {
+      "year": 2019,
+      "count": 1553
+    },
+    {
+      "year": 2020,
+      "count": 1749
+    },
+    {
+      "year": 2021,
+      "count": 1824
+    },
+    {
+      "year": 2022,
+      "count": 1823
+    },
+    {
+      "year": 2023,
+      "count": 1908
+    },
+    {
+      "year": 2024,
+      "count": 2276
+    },
+    {
+      "year": 2025,
+      "count": 2745
+    },
+    {
+      "year": 2026,
+      "count": 2281
+    }
+  ],
+  "searchQuery": "(\"tau Proteins\"[MeSH Terms]) OR (\"tau protein\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42987521",
+      "title": "A versatile multi-dimensional ratiometric sensor exploiting material-interface properties for t-Tau protein detection in human serum.",
+      "year": 2027
+    },
+    {
+      "pmid": "42556454",
+      "title": "An accessible digital single-molecule sensing platform for plasma P-tau217 quantification in Alzheimer's disease screening.",
+      "year": 2027
+    },
+    {
+      "pmid": "42710608",
+      "title": "Du-Shu-Wan alleviates Tau protein phosphorylation in Alzheimer's disease by regulating MAPK/JNK signaling pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014985",
+      "title": "Molecular Neuroimaging in Alzheimer's Disease.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772054",
+      "title": "Next-generation optical biosensors for ultra-early detection of Alzheimer's and Parkinson's diseases: Recent advances, challenges, and future perspectives.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:09:36.665Z"
+}

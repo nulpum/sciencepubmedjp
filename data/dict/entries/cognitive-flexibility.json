@@ -1,0 +1,93 @@
+{
+  "slug": "cognitive-flexibility",
+  "ja": "認知的柔軟性",
+  "yomi": "にんちてきじゅうなんせい",
+  "en": "cognitive flexibility",
+  "category": "psychology",
+  "meshHeading": "Cognitive Flexibility",
+  "meshUi": "2108057",
+  "description": {
+    "ja": "認知的柔軟性とは、状況の変化に応じて思考や行動のパターンを切り替える能力のことです。新しい情報や予期しない出来事に直面したとき、固定的な考え方から抜け出して別の視点や戦略を採用できる心の柔らかさを指します。実行機能の重要な要素の一つとされ、問題解決や適応行動に不可欠な能力です。",
+    "en": "Cognitive flexibility refers to the ability to switch between different thinking patterns or behavioral strategies in response to changing situations. It represents the mental capacity to shift perspectives and adapt approaches when facing new information or unexpected events, moving away from fixed mindsets. This ability is considered a key component of executive function and is essential for problem-solving and adaptive behavior."
+  },
+  "usage": {
+    "ja": "心理学研究では、ウィスコンシンカード分類課題(WCST)やトレイルメイキングテスト、課題切り替えパラダイムなどを用いて測定されます。神経発達障害、加齢、ストレス、前頭葉機能などとの関連を調べる研究で頻繁に用いられる指標です。",
+    "en": "In psychological research, cognitive flexibility is typically measured using tasks such as the Wisconsin Card Sorting Test (WCST), Trail Making Test, or task-switching paradigms. It is frequently used as an outcome measure in studies examining relationships with neurodevelopmental disorders, aging, stress, and frontal lobe function."
+  },
+  "synonyms": {
+    "ja": "「mental flexibility(精神的柔軟性)」「set-shifting(セットシフティング)」「attentional flexibility(注意の柔軟性)」とも呼ばれます。類似概念として「認知的制御」や「実行機能」がありますが、認知的柔軟性は特に切り替え能力に焦点を当てた用語です。",
+    "en": "Also referred to as 'mental flexibility,' 'set-shifting,' or 'attentional flexibility.' Related concepts include 'cognitive control' and 'executive function,' though cognitive flexibility specifically emphasizes the switching ability among these broader constructs."
+  },
+  "pubmedCount": 7403,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 399
+    },
+    {
+      "year": 2018,
+      "count": 418
+    },
+    {
+      "year": 2019,
+      "count": 466
+    },
+    {
+      "year": 2020,
+      "count": 508
+    },
+    {
+      "year": 2021,
+      "count": 614
+    },
+    {
+      "year": 2022,
+      "count": 611
+    },
+    {
+      "year": 2023,
+      "count": 603
+    },
+    {
+      "year": 2024,
+      "count": 719
+    },
+    {
+      "year": 2025,
+      "count": 996
+    },
+    {
+      "year": 2026,
+      "count": 1167
+    }
+  ],
+  "searchQuery": "(\"Cognitive Flexibility\"[MeSH Terms]) OR (\"cognitive flexibility\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43008422",
+      "title": "Do parental questions and gestures support executive functions in toddlers born preterm and full-term?",
+      "year": 2027
+    },
+    {
+      "pmid": "42800538",
+      "title": "Differential frontostriatal ΔFosB dynamics and behavioral flexibility in autism like VPA-exposed mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42722131",
+      "title": "Altered intertemporal decision-making in individuals with high autistic traits.",
+      "year": 2027
+    },
+    {
+      "pmid": "42669349",
+      "title": "Ferulic acid eicosyl ester enhances cognitive flexibility and modulates arousal-related neural circuits in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42978180",
+      "title": "Development of Elective Flexibility and Related Cognitive Functions Across Three Cultures.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:10:07.911Z"
+}

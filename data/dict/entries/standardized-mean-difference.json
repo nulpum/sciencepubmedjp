@@ -1,0 +1,92 @@
+{
+  "slug": "standardized-mean-difference",
+  "ja": "標準化平均差",
+  "yomi": "ひょうじゅんかへいきんさ",
+  "en": "standardized mean difference",
+  "abbr": "SMD",
+  "category": "research",
+  "description": {
+    "ja": "2つのグループ間の平均値の差を、データのばらつき(標準偏差)で割って標準化した統計指標です。単位が異なる研究結果を統合したり、効果の大きさを比較したりする際に用いられます。メタアナリシスでよく使われる効果量の一種で、Cohen's dやHedges' gなどの計算方法があります。",
+    "en": "A statistical measure that divides the difference between two group means by the standard deviation to standardize the effect size. It is used to combine results from studies with different units or to compare effect magnitudes. SMD is a commonly used effect size in meta-analyses, with calculation methods including Cohen's d and Hedges' g."
+  },
+  "usage": {
+    "ja": "メタアナリシスで複数の研究を統合する際、測定尺度が異なる介入効果を比較するために用いられます。一般に、SMDの絶対値が0.2で小さい効果、0.5で中程度、0.8以上で大きい効果とされますが、分野によって解釈は異なります。",
+    "en": "Used in meta-analyses to combine multiple studies and compare intervention effects measured on different scales. Generally, an absolute SMD of 0.2 indicates a small effect, 0.5 a medium effect, and 0.8 or above a large effect, though interpretation varies by field."
+  },
+  "synonyms": {
+    "ja": "効果量、標準化効果量とも呼ばれます。Cohen's d、Hedges' g、Glass's Δは計算方法が異なるSMDの種類です。平均差(mean difference)は標準化していない生の差を指すため区別が必要です。",
+    "en": "Also called effect size or standardized effect size. Cohen's d, Hedges' g, and Glass's Δ are different types of SMD with varying calculation methods. Mean difference refers to the raw unstandardized difference and should be distinguished from SMD."
+  },
+  "pubmedCount": 12514,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 558
+    },
+    {
+      "year": 2018,
+      "count": 672
+    },
+    {
+      "year": 2019,
+      "count": 774
+    },
+    {
+      "year": 2020,
+      "count": 1031
+    },
+    {
+      "year": 2021,
+      "count": 1229
+    },
+    {
+      "year": 2022,
+      "count": 1528
+    },
+    {
+      "year": 2023,
+      "count": 1475
+    },
+    {
+      "year": 2024,
+      "count": 1732
+    },
+    {
+      "year": 2025,
+      "count": 1810
+    },
+    {
+      "year": 2026,
+      "count": 1599
+    }
+  ],
+  "searchQuery": "\"standardized mean difference\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42974622",
+      "title": "The Efficacy and Safety of Dalfampridine on Cognition and Fatigue in People With Multiple Sclerosis: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863801",
+      "title": "Efficacy of adjunctive mitochondrial modulators for bipolar depression: A comprehensive systematic review and network meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42759891",
+      "title": "Therapeutic potential of mesenchymal stem cell-derived extracellular vesicles as a cell-free approach in autism spectrum disorder: A systematic review and meta-analysis of preclinical studies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42800121",
+      "title": "Joint word recall and functional limitation among selected SHARE participants with prior survey-identified stroke versus a stroke-free reference group.",
+      "year": 2027
+    },
+    {
+      "pmid": "41070970",
+      "title": "Effects of Exercise Interventions on Chemotherapy-Induced Peripheral Neuropathy-Related Pain in Patients With Cancer: A Systematic Review and Network Meta-analysis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:47:25.507Z"
+}

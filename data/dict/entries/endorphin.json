@@ -1,0 +1,93 @@
+{
+  "slug": "endorphin",
+  "ja": "エンドルフィン",
+  "yomi": "えんどるふぃん",
+  "en": "endorphin",
+  "category": "biology",
+  "meshHeading": "Endorphins",
+  "meshUi": "68004723",
+  "description": {
+    "ja": "エンドルフィンは、脳や脊髄などの中枢神経系で産生される内因性オピオイドペプチドの総称です。痛みの制御や快感・多幸感の調節に関与するとされ、βエンドルフィンなど複数のサブタイプが存在します。運動や特定の刺激によって分泌が変動することが多くの研究で報告されています。",
+    "en": "Endorphins are endogenous opioid peptides produced in the central nervous system, including the brain and spinal cord. They are involved in pain modulation and regulation of pleasure or euphoria, with several subtypes such as β-endorphin. Many studies report that their secretion fluctuates in response to exercise and specific stimuli."
+  },
+  "usage": {
+    "ja": "論文では血中や脳脊髄液中のβエンドルフィン濃度を免疫測定法(ELISA、RIA等)で測定し、運動負荷・ストレス・鎮痛実験などの前後で変化を比較する研究が多くみられます。痛覚閾値やムードスケールとの相関を検討する心理生理学的研究でも用いられます。",
+    "en": "In research papers, β-endorphin concentrations in blood or cerebrospinal fluid are commonly measured by immunoassay methods (ELISA, RIA, etc.), comparing changes before and after exercise load, stress, or analgesic experiments. It is also used in psychophysiological studies examining correlations with pain thresholds and mood scales."
+  },
+  "synonyms": {
+    "ja": "内因性オピオイド、エンドルフィン類、β-エンドルフィン(最もよく研究されるサブタイプ)などと呼ばれます。エンケファリンやダイノルフィンも内因性オピオイドですが受容体選択性や産生部位が異なるため、論文では使い分けに注意が必要です。",
+    "en": "Also referred to as endogenous opioids, endorphins, or β-endorphin (the most studied subtype). Enkephalins and dynorphins are also endogenous opioids, but differ in receptor selectivity and production sites, requiring careful distinction in research papers."
+  },
+  "pubmedCount": 16985,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 118
+    },
+    {
+      "year": 2018,
+      "count": 103
+    },
+    {
+      "year": 2019,
+      "count": 111
+    },
+    {
+      "year": 2020,
+      "count": 117
+    },
+    {
+      "year": 2021,
+      "count": 120
+    },
+    {
+      "year": 2022,
+      "count": 86
+    },
+    {
+      "year": 2023,
+      "count": 89
+    },
+    {
+      "year": 2024,
+      "count": 96
+    },
+    {
+      "year": 2025,
+      "count": 119
+    },
+    {
+      "year": 2026,
+      "count": 104
+    }
+  ],
+  "searchQuery": "(\"Endorphins\"[MeSH Terms]) OR (\"endorphin\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42815587",
+      "title": "Sex differences in alcohol and amphetamine-like compound consumption and their relationship with mu opioid receptor density in the pallidal-mesolimbic system.",
+      "year": 2026
+    },
+    {
+      "pmid": "43049037",
+      "title": "Maternal gestational crate confinement is associated with post-weaning behavioral differences and altered hippocampal molecular profiles in piglets.",
+      "year": 2026
+    },
+    {
+      "pmid": "43019722",
+      "title": "Decoding the greasy perception: salivary emulsion instability and the key biomarkers at supra-threshold fat/oil concentrations.",
+      "year": 2026
+    },
+    {
+      "pmid": "43055504",
+      "title": "Nociceptive thresholds and beta-endorphin concentrations in horses with pituitary pars intermedia dysfunction: a cross-sectional comparative study.",
+      "year": 2026
+    },
+    {
+      "pmid": "31855381",
+      "title": "Mu Receptors.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:59:08.313Z"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "bulimia-nervosa",
+  "ja": "神経性過食症",
+  "yomi": "しんけいせいかしょくしょう",
+  "en": "bulimia nervosa",
+  "category": "psychology",
+  "aliases": [
+    "過食症"
+  ],
+  "meshHeading": "Bulimia Nervosa",
+  "meshUi": "68052018",
+  "description": {
+    "ja": "摂食障害の一種で、繰り返し過食エピソードが起こり、その後に体重増加を防ぐための代償行為(自己誘発性嘔吐、下剤乱用、過度の運動など)を伴う精神疾患です。自己評価が体型や体重に過度に影響される特徴があります。",
+    "en": "A type of eating disorder characterized by recurrent episodes of binge eating followed by compensatory behaviors (such as self-induced vomiting, laxative misuse, or excessive exercise) to prevent weight gain. Self-evaluation is unduly influenced by body shape and weight."
+  },
+  "usage": {
+    "ja": "心理学・精神医学の論文では、DSM-5やICD-11の診断基準に基づいて診断され、過食エピソードの頻度、代償行為の種類、併存する抑うつや不安症状などが評価されます。治療研究では認知行動療法や薬物療法の効果が検討されます。",
+    "en": "In psychology and psychiatry papers, it is diagnosed based on DSM-5 or ICD-11 criteria, with assessment of binge episode frequency, types of compensatory behaviors, and comorbid depression or anxiety. Treatment studies examine efficacy of cognitive behavioral therapy and pharmacotherapy."
+  },
+  "synonyms": {
+    "ja": "単に「過食症」とも呼ばれますが、神経性やせ症(anorexia nervosa)との区別が重要です。過食性障害(binge eating disorder)は代償行為を伴わない別の診断分類です。論文検索では「bulimia」「BN」などの略語も使われます。",
+    "en": "Also called simply 'bulimia,' but distinct from anorexia nervosa. Binge eating disorder (BED) is a separate diagnosis without compensatory behaviors. In literature searches, abbreviations like 'BN' are commonly used."
+  },
+  "pubmedCount": 8181,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 311
+    },
+    {
+      "year": 2018,
+      "count": 296
+    },
+    {
+      "year": 2019,
+      "count": 303
+    },
+    {
+      "year": 2020,
+      "count": 337
+    },
+    {
+      "year": 2021,
+      "count": 409
+    },
+    {
+      "year": 2022,
+      "count": 358
+    },
+    {
+      "year": 2023,
+      "count": 347
+    },
+    {
+      "year": 2024,
+      "count": 345
+    },
+    {
+      "year": 2025,
+      "count": 379
+    },
+    {
+      "year": 2026,
+      "count": 305
+    }
+  ],
+  "searchQuery": "(\"Bulimia Nervosa\"[MeSH Terms]) OR (\"bulimia nervosa\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43051736",
+      "title": "Antipsychotic Use in Eating Disorders.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838416",
+      "title": "Effects of metabotropic 2/3-glutamate receptor agonism and antagonism on activity-based anorexia model in mice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42767512",
+      "title": "Neuroanatomical subtypes of bulimia nervosa show divergent gray matter patterns and distinct clinical profiles.",
+      "year": 2027
+    },
+    {
+      "pmid": "41906418",
+      "title": "Dysregulated eating behaviour and microbiota-based interventions targeting eating disorders and food addiction.",
+      "year": 2026
+    },
+    {
+      "pmid": "42972666",
+      "title": "Attitudes toward eating disorders among primary care physicians.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:14:55.912Z"
+}

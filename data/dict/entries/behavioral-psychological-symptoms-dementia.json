@@ -1,0 +1,92 @@
+{
+  "slug": "behavioral-psychological-symptoms-dementia",
+  "ja": "認知症の行動心理症状",
+  "yomi": "にんちしょうのこうどうしんりしょうじょう",
+  "en": "behavioral and psychological symptoms of dementia",
+  "abbr": "BPSD",
+  "category": "nursing-pharma",
+  "description": {
+    "ja": "認知症の行動心理症状(BPSD)とは、認知症患者に見られる行動面・心理面の変化を指す総称です。徘徊、興奮、攻撃性、幻覚、妄想、うつ、不安、睡眠障害などが含まれ、認知機能障害とは区別される症状群として扱われます。これらの症状は患者の生活の質や介護負担に大きく影響するため、看護・介護の場面で重要な評価対象となります。",
+    "en": "Behavioral and psychological symptoms of dementia (BPSD) refers to a collective term for behavioral and psychological changes observed in dementia patients. It includes wandering, agitation, aggression, hallucinations, delusions, depression, anxiety, and sleep disturbances, treated as a symptom cluster distinct from cognitive impairment. These symptoms significantly impact patient quality of life and caregiver burden, making them important assessment targets in nursing and care settings."
+  },
+  "usage": {
+    "ja": "論文では、BPSDの発生率、重症度、介護負担との関連、非薬物的介入や薬物療法の効果などが検討されます。評価にはNeuropsychiatric Inventory(NPI)やCohen-Mansfield Agitation Inventory(CMAI)などの標準化された尺度が用いられることが多く、介護者からの聞き取りや観察に基づいて評価されます。",
+    "en": "In research, studies examine BPSD incidence, severity, association with caregiver burden, and effects of non-pharmacological interventions or pharmacological treatments. Assessment commonly uses standardized scales such as the Neuropsychiatric Inventory (NPI) or Cohen-Mansfield Agitation Inventory (CMAI), typically evaluated through caregiver interviews and observations."
+  },
+  "synonyms": {
+    "ja": "かつては「問題行動」や「周辺症状」と呼ばれていましたが、現在はBPSDという中立的な用語が推奨されています。「neuropsychiatric symptoms」と表現されることもあり、中核症状(記憶障害など)とは区別して扱われます。",
+    "en": "Previously referred to as 'problem behaviors' or 'peripheral symptoms,' the neutral term BPSD is now preferred. It may also be expressed as 'neuropsychiatric symptoms' and is distinguished from core symptoms such as memory impairment."
+  },
+  "pubmedCount": 1699,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 108
+    },
+    {
+      "year": 2018,
+      "count": 122
+    },
+    {
+      "year": 2019,
+      "count": 121
+    },
+    {
+      "year": 2020,
+      "count": 126
+    },
+    {
+      "year": 2021,
+      "count": 135
+    },
+    {
+      "year": 2022,
+      "count": 125
+    },
+    {
+      "year": 2023,
+      "count": 125
+    },
+    {
+      "year": 2024,
+      "count": 135
+    },
+    {
+      "year": 2025,
+      "count": 128
+    },
+    {
+      "year": 2026,
+      "count": 166
+    }
+  ],
+  "searchQuery": "\"behavioral and psychological symptoms of dementia\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "41896046",
+      "title": "Clinical Associations and Possible Risk Factors for Affective Neuropsychiatric Symptoms in Older Adults With and Without Cognitive Impairment.",
+      "year": 2026
+    },
+    {
+      "pmid": "41526594",
+      "title": "Higher burden of neuropsychiatric symptom-like behaviors associated with canine cognitive dysfunction compared to normal aging in the Dog Aging Project.",
+      "year": 2026
+    },
+    {
+      "pmid": "43058262",
+      "title": "Real world evidence of second-generation antipsychotics for the management of behavioral and psychological symptoms of dementia: a systematic review and meta-analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43044107",
+      "title": "Feasibility and Preliminary Outcomes of Gardening-Based Immersive Virtual Reality Cognitive Training in Older Adults With Dementia: Single-Group Pretest-Posttest Analysis.",
+      "year": 2026
+    },
+    {
+      "pmid": "43041191",
+      "title": "[The Montessori method for seniors in hospital settings - an innovative approach to the care of geriatric patients with cognitive impairment: a literature review and the authors' clinical experience].",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:45:00.665Z"
+}

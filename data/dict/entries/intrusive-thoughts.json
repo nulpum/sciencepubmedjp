@@ -1,0 +1,91 @@
+{
+  "slug": "intrusive-thoughts",
+  "ja": "侵入思考",
+  "yomi": "しんにゅうしこう",
+  "en": "intrusive thoughts",
+  "category": "psychology",
+  "description": {
+    "ja": "侵入思考とは、本人の意図に反して突然意識に侵入してくる、不快または望ましくない思考やイメージのことです。心的外傷後ストレス障害(PTSD)、強迫性障害(OCD)、うつ病などの研究で重要な指標とされています。健康な人でも一時的に経験することがありますが、頻度や苦痛の程度が臨床的に評価されます。",
+    "en": "Intrusive thoughts are unwanted or distressing thoughts and images that involuntarily enter one's consciousness against their will. They are a key symptom studied in post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), and depression research. While healthy individuals may experience them occasionally, their frequency and associated distress are clinically assessed."
+  },
+  "usage": {
+    "ja": "論文では質問紙法(Impact of Event Scale-Revised、Obsessive-Compulsive Inventory等)や臨床面接で評価され、思考の頻度、内容、それに伴う苦痛や回避行動が測定されます。トラウマ関連研究ではフラッシュバックとの関連、強迫性障害研究では強迫観念としての側面が調べられます。",
+    "en": "In research, intrusive thoughts are assessed through questionnaires (Impact of Event Scale-Revised, Obsessive-Compulsive Inventory, etc.) and clinical interviews, measuring their frequency, content, associated distress, and avoidance behaviors. Trauma studies examine their relation to flashbacks, while OCD research investigates them as obsessions."
+  },
+  "synonyms": {
+    "ja": "強迫観念(obsessions)、侵入的記憶(intrusive memories)、反芻思考(rumination)などと関連しますが、侵入思考は意図しない突発性が特徴です。unwanted thoughtsやintrusive cognitionsとも表現され、フラッシュバック(flashbacks)は視覚的・感覚的な再体験を指すためやや異なります。",
+    "en": "Related terms include obsessions, intrusive memories, and rumination, but intrusive thoughts are characterized by their sudden, unwanted nature. Also expressed as unwanted thoughts or intrusive cognitions. Flashbacks refer more specifically to vivid sensory re-experiencing and are somewhat distinct."
+  },
+  "pubmedCount": 1412,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 75
+    },
+    {
+      "year": 2018,
+      "count": 74
+    },
+    {
+      "year": 2019,
+      "count": 59
+    },
+    {
+      "year": 2020,
+      "count": 84
+    },
+    {
+      "year": 2021,
+      "count": 89
+    },
+    {
+      "year": 2022,
+      "count": 87
+    },
+    {
+      "year": 2023,
+      "count": 83
+    },
+    {
+      "year": 2024,
+      "count": 95
+    },
+    {
+      "year": 2025,
+      "count": 107
+    },
+    {
+      "year": 2026,
+      "count": 109
+    }
+  ],
+  "searchQuery": "\"intrusive thoughts\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42815579",
+      "title": "Effects of HF-rTMS over left and right DLPFC on worry and parasympathetic cardiac control.",
+      "year": 2026
+    },
+    {
+      "pmid": "43050936",
+      "title": "Ayurvedic management of mixed-type obsessive-compulsive disorder along with comorbid depression (Atatvabhinivesha): A case report.",
+      "year": 2026
+    },
+    {
+      "pmid": "43049766",
+      "title": "Early Neural Responses to Negative Emotional Processing and Longitudinal Grief Trajectories in Later Life.",
+      "year": 2026
+    },
+    {
+      "pmid": "42998778",
+      "title": "When defense becomes compulsion: An evolutionary and circuit framework for obsessive-compulsive disorder.",
+      "year": 2026
+    },
+    {
+      "pmid": "42979767",
+      "title": "Does a moral injury framework enhance our understanding of OCD?",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:11:22.904Z"
+}

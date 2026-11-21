@@ -1,0 +1,91 @@
+{
+  "slug": "stereotype-threat",
+  "ja": "ステレオタイプ脅威",
+  "yomi": "すてれおたいぷきょうい",
+  "en": "stereotype threat",
+  "category": "psychology",
+  "description": {
+    "ja": "自分が属する集団に対する否定的なステレオタイプを意識することで、実際にパフォーマンスが低下してしまう心理現象です。例えば「女性は数学が苦手」というステレオタイプを意識した女性が、数学テストで本来の能力を発揮できなくなることなどが該当します。社会心理学や教育心理学の重要な研究テーマとされています。",
+    "en": "A psychological phenomenon where awareness of negative stereotypes about one's group leads to decreased performance. For example, when women are reminded of the stereotype that 'women are bad at math,' they may underperform on math tests relative to their actual abilities. This is a major research topic in social and educational psychology."
+  },
+  "usage": {
+    "ja": "論文では認知テスト、学力試験、運動パフォーマンスなどの実験場面で測定されます。典型的には、ステレオタイプを喚起する条件と統制条件でパフォーマンスを比較し、集団間の成績差がステレオタイプの活性化によって変化するかを検証します。",
+    "en": "In research papers, it is measured through cognitive tests, academic exams, or athletic performance experiments. Typically, studies compare performance between conditions that activate stereotypes versus control conditions, examining whether group differences in scores change with stereotype activation."
+  },
+  "synonyms": {
+    "ja": "「ステレオタイプの脅威」とも表記されます。関連概念として「スティグマ意識(stigma consciousness)」「社会的アイデンティティ脅威(social identity threat)」があり、後者はより広範な集団アイデンティティへの脅威を指します。",
+    "en": "Also referred to as 'threat of stereotype.' Related concepts include 'stigma consciousness' and 'social identity threat,' with the latter referring more broadly to threats to group identity beyond specific stereotypes."
+  },
+  "pubmedCount": 577,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 41
+    },
+    {
+      "year": 2018,
+      "count": 44
+    },
+    {
+      "year": 2019,
+      "count": 48
+    },
+    {
+      "year": 2020,
+      "count": 42
+    },
+    {
+      "year": 2021,
+      "count": 50
+    },
+    {
+      "year": 2022,
+      "count": 50
+    },
+    {
+      "year": 2023,
+      "count": 45
+    },
+    {
+      "year": 2024,
+      "count": 46
+    },
+    {
+      "year": 2025,
+      "count": 45
+    },
+    {
+      "year": 2026,
+      "count": 30
+    }
+  ],
+  "searchQuery": "\"stereotype threat\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42138253",
+      "title": "Shared Decision-Making Preferences of Black Men With Hypertension in the United States Mid-South: A Qualitative Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42682106",
+      "title": "Unacknowledged Burdens and Clinical Assets of BIPOC Genetic Counseling Students: Qualitative Evidence to Inform Supervision.",
+      "year": 2026
+    },
+    {
+      "pmid": "42570383",
+      "title": "Effects of everyday discrimination on sexual minority people's experiences of health care stereotype threat.",
+      "year": 2026
+    },
+    {
+      "pmid": "42218743",
+      "title": "Mental Health Stereotypes and Aging: Effects on Mood and Decision Making.",
+      "year": 2026
+    },
+    {
+      "pmid": "42554651",
+      "title": "The impact of stereotype threat on episodic memory and metamemory in older adults: when study time matters.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:23:49.905Z"
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "activities-of-daily-living",
+  "ja": "日常生活動作",
+  "yomi": "にちじょうせいかつどうさ",
+  "en": "activities of daily living",
+  "abbr": "ADL",
+  "category": "nursing-pharma",
+  "meshHeading": "Activities of Daily Living",
+  "meshUi": "68000203",
+  "description": {
+    "ja": "日常生活動作(ADL)とは、食事、排泄、入浴、着替え、移動など、日常生活を送るうえで必要な基本的な動作のことです。医療・看護・介護の分野では、患者や高齢者の自立度や介護の必要性を評価する重要な指標として用いられます。ADLの評価により、疾患や加齢による機能低下の程度、リハビリテーションや介護サービスの効果を客観的に測定できます。",
+    "en": "Activities of daily living (ADL) refers to fundamental tasks essential for independent living, such as eating, toileting, bathing, dressing, and mobility. In healthcare, nursing, and caregiving settings, ADL serves as a critical indicator for assessing patients' or elderly individuals' level of independence and care needs. ADL evaluation allows objective measurement of functional decline due to disease or aging, and the effectiveness of rehabilitation or care interventions."
+  },
+  "usage": {
+    "ja": "論文では、Barthel Index、Katz Index、FIM(機能的自立度評価表)などの標準化されたスケールを用いてADLを数値化し、治療介入前後の比較や患者群間の機能レベルの違いを分析します。看護・薬学研究では、薬剤の副作用や疾患の進行がADLに与える影響、また介護負担との関連性を調べる際に頻繁に使用されます。",
+    "en": "In research papers, ADL is quantified using standardized scales such as the Barthel Index, Katz Index, or FIM (Functional Independence Measure) to compare pre- and post-intervention outcomes or functional differences between patient groups. In nursing and pharmaceutical studies, ADL is frequently used to examine the impact of medication side effects or disease progression on daily functioning, as well as its relationship with caregiver burden."
+  },
+  "synonyms": {
+    "ja": "基本的ADL(BADL)は食事や排泄など最も基本的な動作を指し、手段的ADL(IADL)は買い物や金銭管理などより複雑な活動を含みます。論文検索では「functional status」「self-care ability」「disability assessment」なども関連語として有用です。",
+    "en": "Basic ADL (BADL) refers to the most fundamental tasks like eating and toileting, while Instrumental ADL (IADL) includes more complex activities such as shopping and financial management. For literature searches, related terms include 'functional status,' 'self-care ability,' and 'disability assessment.'"
+  },
+  "pubmedCount": 157869,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 6959
+    },
+    {
+      "year": 2018,
+      "count": 6989
+    },
+    {
+      "year": 2019,
+      "count": 7331
+    },
+    {
+      "year": 2020,
+      "count": 7925
+    },
+    {
+      "year": 2021,
+      "count": 7601
+    },
+    {
+      "year": 2022,
+      "count": 6769
+    },
+    {
+      "year": 2023,
+      "count": 6084
+    },
+    {
+      "year": 2024,
+      "count": 7398
+    },
+    {
+      "year": 2025,
+      "count": 8332
+    },
+    {
+      "year": 2026,
+      "count": 7172
+    }
+  ],
+  "searchQuery": "(\"Activities of Daily Living\"[MeSH Terms]) OR (\"activities of daily living\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42854788",
+      "title": "Sleep quality and its associated factors among community-dwelling patients with severe mental disorders in Minhang District, Shanghai: A cross-sectional study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43039884",
+      "title": "Physiotherapy Exercise Protocol Improves Pain, Quality of Life and Functional Capacity in Elderly Patients With Cancer Undergoing Palliative Care.",
+      "year": 2027
+    },
+    {
+      "pmid": "43000656",
+      "title": "A Community Engaged Feasibility Study of High-Risk Human Papillomavirus Self-Sampling for Cervical Cancer Screening in Sexual and Gender Minority People.",
+      "year": 2027
+    },
+    {
+      "pmid": "43000632",
+      "title": "Physical Activity Among Bangladeshi Immigrant Families Living in the United States: A Qualitative Study of Multi-Family Member Interviews.",
+      "year": 2027
+    },
+    {
+      "pmid": "42892261",
+      "title": "Allostatic load-intrinsic capacity phenotypes and adverse ageing outcomes in middle-aged and older Chinese adults.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:41:30.592Z"
+}

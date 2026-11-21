@@ -1,0 +1,93 @@
+{
+  "slug": "mortality",
+  "ja": "死亡率",
+  "yomi": "しぼうりつ",
+  "en": "mortality",
+  "category": "research",
+  "meshHeading": "mortality",
+  "meshUi": "81000401",
+  "description": {
+    "ja": "特定の集団において一定期間内に死亡した人の割合を示す指標です。疫学研究や臨床試験で治療効果や疾患の重症度を評価する際に広く用いられます。通常は1,000人あたりや10万人あたりの死亡者数、またはパーセンテージで表現されます。",
+    "en": "An indicator showing the proportion of deaths in a specific population over a defined period. It is widely used in epidemiological studies and clinical trials to evaluate treatment effects and disease severity. Typically expressed as deaths per 1,000 or 100,000 people, or as a percentage."
+  },
+  "usage": {
+    "ja": "論文では「overall mortality (全死亡率)」「disease-specific mortality (疾患特異的死亡率)」「30-day mortality (30日死亡率)」などの形で使われます。研究では死亡診断書や医療記録から確認し、Kaplan-Meier曲線やCox比例ハザードモデルで解析されることが多いです。",
+    "en": "In papers, it appears as 'overall mortality,' 'disease-specific mortality,' or '30-day mortality.' Deaths are confirmed through death certificates or medical records, and analyzed using Kaplan-Meier curves or Cox proportional hazards models."
+  },
+  "synonyms": {
+    "ja": "「death rate (死亡率)」とほぼ同義ですが、mortalityは医学論文で標準的に使われます。「fatality (致死、致命)」は事故や急性疾患の文脈で用いられることが多く、「survival (生存率)」は死亡率の補数として対比されます。",
+    "en": "Nearly synonymous with 'death rate,' but mortality is the standard term in medical literature. 'Fatality' is often used in contexts of accidents or acute diseases, while 'survival' is presented as the complement of mortality."
+  },
+  "pubmedCount": 1535194,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 62896
+    },
+    {
+      "year": 2018,
+      "count": 66194
+    },
+    {
+      "year": 2019,
+      "count": 71403
+    },
+    {
+      "year": 2020,
+      "count": 86212
+    },
+    {
+      "year": 2021,
+      "count": 95396
+    },
+    {
+      "year": 2022,
+      "count": 88854
+    },
+    {
+      "year": 2023,
+      "count": 82481
+    },
+    {
+      "year": 2024,
+      "count": 89004
+    },
+    {
+      "year": 2025,
+      "count": 103328
+    },
+    {
+      "year": 2026,
+      "count": 95494
+    }
+  ],
+  "searchQuery": "(\"mortality\"[MeSH Terms]) OR (\"mortality\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43018112",
+      "title": "Association of retinal abnormalities and adverse cardiac events in patients with coronary artery disease and type 2 diabetes.",
+      "year": 2027
+    },
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42841288",
+      "title": "Circulatory arrest versus aortic cross-clamping in proximal thoracic aortic aneurysm repair.",
+      "year": 2027
+    },
+    {
+      "pmid": "43044620",
+      "title": "The changing burden of disease in Türkiye, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:48:39.513Z"
+}

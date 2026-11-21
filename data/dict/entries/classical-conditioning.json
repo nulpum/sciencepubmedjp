@@ -1,0 +1,96 @@
+{
+  "slug": "classical-conditioning",
+  "ja": "古典的条件づけ",
+  "yomi": "こてんてきじょうけんづけ",
+  "en": "classical conditioning",
+  "category": "psychology",
+  "aliases": [
+    "パヴロフ型条件づけ"
+  ],
+  "meshHeading": "Conditioning, Classical",
+  "meshUi": "68003214",
+  "description": {
+    "ja": "もともと中性的な刺激(ベルの音など)と無条件刺激(食べ物など)を繰り返し組み合わせることで、中性刺激だけで条件反応(唾液分泌など)が引き起こされるようになる学習プロセスです。パヴロフの犬の実験で有名で、恐怖や嗜好の獲得メカニズムを説明する基礎理論として広く用いられます。",
+    "en": "Classical conditioning is a learning process in which a neutral stimulus (such as a bell) is repeatedly paired with an unconditioned stimulus (such as food), eventually causing the neutral stimulus alone to elicit a conditioned response (such as salivation). Famous from Pavlov's dog experiments, it serves as a foundational theory explaining mechanisms of fear and preference acquisition."
+  },
+  "usage": {
+    "ja": "心理学・神経科学の論文では、恐怖条件づけ(fear conditioning)や嫌悪条件づけ(aversive conditioning)などの実験パラダイムで頻繁に登場します。条件刺激(CS)、無条件刺激(US)、条件反応(CR)といった略語とともに記述され、学習・記憶・情動の神経基盤を調べる研究で測定されます。",
+    "en": "In psychology and neuroscience papers, it frequently appears in experimental paradigms such as fear conditioning and aversive conditioning. It is described alongside abbreviations like CS (conditioned stimulus), US (unconditioned stimulus), and CR (conditioned response), and is measured in studies investigating neural substrates of learning, memory, and emotion."
+  },
+  "synonyms": {
+    "ja": "パヴロフ型条件づけ、レスポンデント条件づけとも呼ばれます。オペラント条件づけ(報酬や罰による学習)とは異なり、刺激間の連合学習を指す点に注意が必要です。",
+    "en": "Also called Pavlovian conditioning or respondent conditioning. It differs from operant conditioning (learning through rewards or punishments) in that it specifically refers to associative learning between stimuli."
+  },
+  "pubmedCount": 24889,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 627
+    },
+    {
+      "year": 2018,
+      "count": 652
+    },
+    {
+      "year": 2019,
+      "count": 681
+    },
+    {
+      "year": 2020,
+      "count": 658
+    },
+    {
+      "year": 2021,
+      "count": 559
+    },
+    {
+      "year": 2022,
+      "count": 388
+    },
+    {
+      "year": 2023,
+      "count": 309
+    },
+    {
+      "year": 2024,
+      "count": 384
+    },
+    {
+      "year": 2025,
+      "count": 419
+    },
+    {
+      "year": 2026,
+      "count": 342
+    }
+  ],
+  "searchQuery": "(\"Conditioning, Classical\"[MeSH Terms]) OR (\"classical conditioning\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42880600",
+      "title": "Behavioural avoidance to imagined conditioned stimuli in differential fear conditioning.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858928",
+      "title": "Infralimbic-hippocampal activity pattern associated with Pavlovian extinction of cocaine-context associations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854332",
+      "title": "Aversive learning retroactively modulates neutral episodic memories structured by prior knowledge of predictive sequences.",
+      "year": 2027
+    },
+    {
+      "pmid": "42424799",
+      "title": "Modeling multiple classical conditioning mechanisms in a Memristor-Based learning circuit.",
+      "year": 2027
+    },
+    {
+      "pmid": "43050589",
+      "title": "Stress enhanced fear learning (SEFL) is independent of lateral periaqueductal gray, dissociating the circuits driving SEFL from those involved in associative fear learning.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:21:24.666Z"
+}

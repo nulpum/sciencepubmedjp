@@ -1,0 +1,94 @@
+{
+  "slug": "antimicrobial-resistance",
+  "ja": "抗菌薬耐性",
+  "yomi": "こうきんやくたいせい",
+  "en": "antimicrobial resistance",
+  "abbr": "AMR",
+  "category": "nursing-pharma",
+  "meshHeading": "Drug Resistance, Microbial",
+  "meshUi": "68004352",
+  "description": {
+    "ja": "抗菌薬耐性（AMR）とは、細菌などの微生物が抗菌薬（抗生物質など）に対して抵抗性を獲得し、薬が効きにくくなる現象です。遺伝子変異や耐性遺伝子の伝播により発生し、感染症治療の困難化や入院期間の長期化につながる世界的な公衆衛生上の課題となっています。",
+    "en": "Antimicrobial resistance (AMR) refers to the ability of microorganisms such as bacteria to resist the effects of antimicrobial drugs, making treatments less effective. It occurs through genetic mutations or acquisition of resistance genes, and represents a major global public health challenge leading to treatment failures and prolonged hospital stays."
+  },
+  "usage": {
+    "ja": "疫学研究では耐性菌の検出率や分離頻度、最小発育阻止濃度（MIC）測定による耐性判定が行われます。臨床研究では抗菌薬使用量とAMR発生率の関連、感染対策介入の効果評価、耐性遺伝子の分子疫学的解析などが報告されています。",
+    "en": "Epidemiological studies measure detection rates of resistant organisms, isolation frequencies, and resistance determination through minimum inhibitory concentration (MIC) testing. Clinical research examines associations between antimicrobial usage and AMR rates, evaluates infection control interventions, and conducts molecular epidemiological analyses of resistance genes."
+  },
+  "synonyms": {
+    "ja": "薬剤耐性、抗生物質耐性とも呼ばれますが、AMRは抗生物質だけでなく抗ウイルス薬や抗真菌薬への耐性も含む包括的な用語です。多剤耐性（multidrug resistance, MDR）は複数の薬剤に同時に耐性を示す状態を指します。",
+    "en": "Also called drug resistance or antibiotic resistance, though AMR is a broader term encompassing resistance to antivirals and antifungals as well. Multidrug resistance (MDR) specifically refers to resistance to multiple antimicrobial agents simultaneously."
+  },
+  "pubmedCount": 246171,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8374
+    },
+    {
+      "year": 2018,
+      "count": 9078
+    },
+    {
+      "year": 2019,
+      "count": 9846
+    },
+    {
+      "year": 2020,
+      "count": 10236
+    },
+    {
+      "year": 2021,
+      "count": 10079
+    },
+    {
+      "year": 2022,
+      "count": 9065
+    },
+    {
+      "year": 2023,
+      "count": 8665
+    },
+    {
+      "year": 2024,
+      "count": 11686
+    },
+    {
+      "year": 2025,
+      "count": 15223
+    },
+    {
+      "year": 2026,
+      "count": 15846
+    }
+  ],
+  "searchQuery": "(\"Drug Resistance, Microbial\"[MeSH Terms]) OR (\"antimicrobial resistance\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42901652",
+      "title": "Functional genomic insights into aac(6')-I-associated kanamycin resistance in Leuconostoc citreum DMLC16.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901063",
+      "title": "Microfluidic integrated nucleic acid test (MINT) enabled by coupling FEN1-aided RPA with wax-purification and bead-carrier.",
+      "year": 2027
+    },
+    {
+      "pmid": "42887139",
+      "title": "Decoding bacterial identity and resistance through D-amino acid metabolic fingerprinting with a cascade colorimetric sensor array.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854271",
+      "title": "In situ anchoring of biocompatible ergothioneine-gold nanoantibiotic on Spirulina for oral therapy of bacterial enteritis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42759131",
+      "title": "Multifunctional injectable photothermal hydrogel with RuCo(3)O(4)-Au nanoarchitectures for combating drug-resistant infection and enhancing diabetic wound healing.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:40:09.823Z"
+}

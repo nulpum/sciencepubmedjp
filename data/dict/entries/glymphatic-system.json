@@ -1,0 +1,96 @@
+{
+  "slug": "glymphatic-system",
+  "ja": "グリンパティック系",
+  "yomi": "ぐりんぱてぃっくけい",
+  "en": "glymphatic system",
+  "category": "biology",
+  "aliases": [
+    "脳リンパ系"
+  ],
+  "meshHeading": "Glymphatic System",
+  "meshUi": "2028052",
+  "description": {
+    "ja": "脳内の老廃物を排出する仕組みで、血管周囲腔を通じて脳脊髄液が脳組織内を循環し、アミロイドβなどの代謝産物を除去するシステムです。グリア細胞(特にアストロサイト)とリンパ系の機能を組み合わせた造語で、主に睡眠中に活性化されることが知られています。",
+    "en": "A waste clearance system in the brain where cerebrospinal fluid circulates through perivascular spaces to remove metabolic byproducts such as amyloid-beta. The term combines 'glial' and 'lymphatic', reflecting the role of glial cells (especially astrocytes) in this drainage pathway that is primarily active during sleep."
+  },
+  "usage": {
+    "ja": "アルツハイマー病などの神経変性疾患研究で、脳内のアミロイドβやタウタンパク質の蓄積メカニズムを調べる際に用いられます。MRIや蛍光トレーサーを使った画像解析により、睡眠の質や体位(仰向け・横向き)がグリンパティック系の機能に与える影響を評価する研究が行われています。",
+    "en": "Used in neurodegenerative disease research, particularly Alzheimer's disease, to investigate accumulation mechanisms of amyloid-beta and tau proteins. Studies employ MRI and fluorescent tracers to assess how sleep quality and body posture (supine vs. lateral) affect glymphatic system function."
+  },
+  "synonyms": {
+    "ja": "「脳リンパ系」「グリンパ系」とも呼ばれますが、厳密には末梢のリンパ系とは異なる独自の排出経路です。「perivascular clearance(血管周囲クリアランス)」「paravascular pathway(傍血管経路)」など、構造的特徴を示す用語も関連研究で使われます。",
+    "en": "Also called 'brain lymphatic system' or 'glymph system', though it differs structurally from peripheral lymphatics. Related terms include 'perivascular clearance' and 'paravascular pathway', which emphasize the anatomical route along blood vessels."
+  },
+  "pubmedCount": 2946,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 56
+    },
+    {
+      "year": 2018,
+      "count": 112
+    },
+    {
+      "year": 2019,
+      "count": 151
+    },
+    {
+      "year": 2020,
+      "count": 211
+    },
+    {
+      "year": 2021,
+      "count": 243
+    },
+    {
+      "year": 2022,
+      "count": 224
+    },
+    {
+      "year": 2023,
+      "count": 319
+    },
+    {
+      "year": 2024,
+      "count": 452
+    },
+    {
+      "year": 2025,
+      "count": 699
+    },
+    {
+      "year": 2026,
+      "count": 798
+    }
+  ],
+  "searchQuery": "(\"Glymphatic System\"[MeSH Terms]) OR (\"glymphatic system\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42603428",
+      "title": "A unified magnetic nanoprobe enables multi-sequence MRI mapping of post-stroke cerebrovascular and glymphatic injuries.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849605",
+      "title": "Mast cell degranulation damages glymphatic system via PKC/p38MAPK/AQP4 to exacerbate hydrocephalus post intraventricular hemorrhage.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849180",
+      "title": "Reduced medial periventricular diffusion markers are associated with depressive symptoms and social deficits in ASD.",
+      "year": 2027
+    },
+    {
+      "pmid": "42838379",
+      "title": "Non-invasive brain stimulation and glymphatic function: an aquaporin-4 perspective.",
+      "year": 2027
+    },
+    {
+      "pmid": "42778031",
+      "title": "Glymphatic dysfunction and myelin disruption in subthreshold depression.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:56:53.858Z"
+}

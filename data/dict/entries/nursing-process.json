@@ -1,0 +1,93 @@
+{
+  "slug": "nursing-process",
+  "ja": "看護過程",
+  "yomi": "かんごかてい",
+  "en": "nursing process",
+  "category": "nursing-pharma",
+  "meshHeading": "Nursing Process",
+  "meshUi": "68009736",
+  "description": {
+    "ja": "看護過程とは、患者の健康問題を系統的に把握し、看護を計画・実施・評価する一連の思考プロセスです。一般的にアセスメント（情報収集と分析）、診断、計画立案、実施、評価の5段階で構成され、科学的根拠に基づいた看護実践の基盤となります。",
+    "en": "The nursing process is a systematic approach to identify, plan, implement, and evaluate patient care. It typically consists of five steps: assessment, diagnosis, planning, implementation, and evaluation, serving as the foundation for evidence-based nursing practice."
+  },
+  "usage": {
+    "ja": "看護研究では、看護過程の各段階における介入効果や、臨床判断の質、患者アウトカムへの影響などが調査されます。教育研究では看護学生の臨床推論能力の発達過程や、シミュレーション教育における看護過程の習得度評価が行われます。",
+    "en": "In nursing research, studies examine the effectiveness of interventions at each stage of the nursing process, quality of clinical judgment, and impact on patient outcomes. Educational research investigates the development of clinical reasoning skills in nursing students and the acquisition of nursing process competencies through simulation-based education."
+  },
+  "synonyms": {
+    "ja": "「看護プロセス」とも呼ばれます。各段階の呼称は文献により若干異なり、診断を「看護診断（nursing diagnosis）」、計画を「ケアプランニング（care planning）」と表記することもあります。NANDA-I分類などの標準化された看護診断システムと関連付けて論じられることが多いです。",
+    "en": "Also referred to as the \"nursing care process.\" Stage terminology may vary slightly across literature, with diagnosis sometimes specified as \"nursing diagnosis\" and planning as \"care planning.\" Often discussed in relation to standardized nursing diagnosis systems such as NANDA-I classification."
+  },
+  "pubmedCount": 90094,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1430
+    },
+    {
+      "year": 2018,
+      "count": 1348
+    },
+    {
+      "year": 2019,
+      "count": 1288
+    },
+    {
+      "year": 2020,
+      "count": 1044
+    },
+    {
+      "year": 2021,
+      "count": 853
+    },
+    {
+      "year": 2022,
+      "count": 665
+    },
+    {
+      "year": 2023,
+      "count": 661
+    },
+    {
+      "year": 2024,
+      "count": 991
+    },
+    {
+      "year": 2025,
+      "count": 902
+    },
+    {
+      "year": 2026,
+      "count": 764
+    }
+  ],
+  "searchQuery": "(\"Nursing Process\"[MeSH Terms]) OR (\"nursing process\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43035009",
+      "title": "A Contemporary Geographical Perspective on Embodied Non-Belonging: Migrant Health and Implications for Nursing Research.",
+      "year": 2027
+    },
+    {
+      "pmid": "42804970",
+      "title": "Curiosity and scientific research attitudes as predictors of evidence-based nursing attitudes among nursing students.",
+      "year": 2027
+    },
+    {
+      "pmid": "42766992",
+      "title": "Nurses' research competence learning during the higher educational pathway: A qualitative descriptive study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42748524",
+      "title": "Designing demonstration for learning: Experimental evidence on demonstration format and camera perspective in psychomotor nursing skills education.",
+      "year": 2027
+    },
+    {
+      "pmid": "42700660",
+      "title": "Research competence and its multidimensional correlates among nursing undergraduates: A network analysis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:37:57.008Z"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "tnf-alpha",
+  "ja": "TNF-α",
+  "yomi": "てぃーえぬえふあるふぁ",
+  "en": "tumor necrosis factor alpha",
+  "abbr": "TNF-α",
+  "category": "biology",
+  "aliases": [
+    "腫瘍壊死因子α"
+  ],
+  "meshHeading": "Tumor Necrosis Factor-alpha",
+  "meshUi": "68014409",
+  "description": {
+    "ja": "TNF-α(腫瘍壊死因子α)は、主にマクロファージなどの免疫細胞が産生する炎症性サイトカインです。感染や組織損傷に応答して放出され、炎症反応や免疫応答の調節に関わります。慢性炎症性疾患や自己免疫疾患の研究で重要なマーカーとして測定されます。",
+    "en": "TNF-α (tumor necrosis factor alpha) is an inflammatory cytokine primarily produced by immune cells such as macrophages. It is released in response to infection or tissue injury and plays a key role in regulating inflammation and immune responses. TNF-α is measured as an important marker in research on chronic inflammatory and autoimmune diseases."
+  },
+  "usage": {
+    "ja": "論文では炎症状態の評価指標として血清や組織中の濃度が測定されます。ELISA法やフローサイトメトリーで定量され、炎症性疾患の病態解明や治療効果の判定に用いられます。",
+    "en": "In research papers, TNF-α levels are measured in serum or tissue samples as an indicator of inflammatory status. It is quantified using methods such as ELISA or flow cytometry, and used to elucidate disease mechanisms and evaluate therapeutic responses in inflammatory conditions."
+  },
+  "synonyms": {
+    "ja": "TNFα、TNF-alpha、腫瘍壊死因子αとも表記されます。TNF-βは別の分子(リンホトキシンα)を指すため区別が必要です。TNFファミリーに属する他のサイトカインとは機能が異なります。",
+    "en": "Also written as TNFα, TNF-alpha, or tumour necrosis factor alpha. TNF-β refers to a different molecule (lymphotoxin-alpha) and should be distinguished. TNF-α belongs to the TNF superfamily but has distinct functions from other members."
+  },
+  "pubmedCount": 207256,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8594
+    },
+    {
+      "year": 2018,
+      "count": 8538
+    },
+    {
+      "year": 2019,
+      "count": 8355
+    },
+    {
+      "year": 2020,
+      "count": 8629
+    },
+    {
+      "year": 2021,
+      "count": 8052
+    },
+    {
+      "year": 2022,
+      "count": 9161
+    },
+    {
+      "year": 2023,
+      "count": 7803
+    },
+    {
+      "year": 2024,
+      "count": 7231
+    },
+    {
+      "year": 2025,
+      "count": 7250
+    },
+    {
+      "year": 2026,
+      "count": 6355
+    }
+  ],
+  "searchQuery": "(\"Tumor Necrosis Factor-alpha\"[MeSH Terms]) OR (\"tumor necrosis factor alpha\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42910091",
+      "title": "Janus-structured piezoelectric membrane couples barrier protection with pathological microenvironment-responsive bioactivity for periodontal bone regeneration.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869398",
+      "title": "Tibetan medicine Anzhi Jinghua San alleviates chronic atrophic gastritis: attenuation of LysoPC-induced Bcl-2 suppression and inhibition of pyroptosis and apoptosis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42869394",
+      "title": "Anti-inflammatory and early osteogenic potential of a 96% ethanol extract of Drynaria bonii.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863727",
+      "title": "Safflower yellow alleviates sciatic nerve crush injury in rats: associated with TRPV1-pERK signaling pathway.",
+      "year": 2027
+    },
+    {
+      "pmid": "42815594",
+      "title": "Material basis and MRGPRB3-associated mechanisms of dictamni cortex against pseudo-allergic reactions.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:00:02.632Z"
+}

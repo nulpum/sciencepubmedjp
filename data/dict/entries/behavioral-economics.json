@@ -1,0 +1,93 @@
+{
+  "slug": "behavioral-economics",
+  "ja": "行動経済学",
+  "yomi": "こうどうけいざいがく",
+  "en": "behavioral economics",
+  "category": "psychology",
+  "meshHeading": "Economics, Behavioral",
+  "meshUi": "68060909",
+  "description": {
+    "ja": "心理学と経済学を統合した学問分野で、人間の実際の意思決定が必ずしも合理的ではなく、感情・認知バイアス・社会的要因などに影響されることを研究します。医療分野では患者の治療選択や健康行動、医師の診断判断などを分析する際に用いられます。",
+    "en": "An interdisciplinary field combining psychology and economics that studies how human decision-making is influenced by emotions, cognitive biases, and social factors rather than pure rationality. In medical research, it is applied to analyze patient treatment choices, health behaviors, and clinician diagnostic decisions."
+  },
+  "usage": {
+    "ja": "論文では服薬アドヒアランス、予防接種の受容、リスク認知、医療費支払い意思などの研究で用いられます。フレーミング効果・現在バイアス・損失回避といった概念を用いて、患者や医療者の行動パターンを説明・予測します。",
+    "en": "Used in studies examining medication adherence, vaccination uptake, risk perception, and willingness to pay for healthcare. Concepts such as framing effects, present bias, and loss aversion are applied to explain and predict behavior patterns of patients and healthcare providers."
+  },
+  "synonyms": {
+    "ja": "「行動科学」は類似しますが、行動経済学は特に経済的意思決定に焦点を当てます。「nudge理論」「バイアス研究」などの関連用語も頻出します。検索時は「behavioral economics health」「decision-making bias」などが有効です。",
+    "en": "Related to 'behavioral science,' but behavioral economics specifically focuses on economic decision-making. Associated terms include 'nudge theory' and 'bias research.' Useful search terms are 'behavioral economics health' and 'decision-making bias.'"
+  },
+  "pubmedCount": 2449,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 189
+    },
+    {
+      "year": 2018,
+      "count": 187
+    },
+    {
+      "year": 2019,
+      "count": 218
+    },
+    {
+      "year": 2020,
+      "count": 233
+    },
+    {
+      "year": 2021,
+      "count": 247
+    },
+    {
+      "year": 2022,
+      "count": 228
+    },
+    {
+      "year": 2023,
+      "count": 184
+    },
+    {
+      "year": 2024,
+      "count": 200
+    },
+    {
+      "year": 2025,
+      "count": 175
+    },
+    {
+      "year": 2026,
+      "count": 189
+    }
+  ],
+  "searchQuery": "(\"Economics, Behavioral\"[MeSH Terms]) OR (\"behavioral economics\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43003547",
+      "title": "Culture and the Intensive Care Unit Team: Factors Driving Teamwork, Safety, Quality, and Well-Being.",
+      "year": 2027
+    },
+    {
+      "pmid": "43000226",
+      "title": "Relative reinforcer efficacy and persistence in extinction are significantly correlated but not clinically actionable.",
+      "year": 2027
+    },
+    {
+      "pmid": "43048569",
+      "title": "Effects of 5-HT(2A) Receptor Activation on Oxycodone Demand after Short and Long Access Self-Administration in Male and Female Rats.",
+      "year": 2026
+    },
+    {
+      "pmid": "42342471",
+      "title": "Non-interruptive decision support to increase appropriate screening for primary hyperparathyroidism.",
+      "year": 2026
+    },
+    {
+      "pmid": "42284200",
+      "title": "What Amazon Knows That Medicine Does Not: Behavioral Economics and Patient Adherence.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:28:10.629Z"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "methylation",
+  "ja": "メチル化",
+  "yomi": "めちるか",
+  "en": "methylation",
+  "category": "biology",
+  "aliases": [
+    "DNAメチル化"
+  ],
+  "meshHeading": "Methylation",
+  "meshUi": "68008745",
+  "description": {
+    "ja": "メチル化とは、分子にメチル基(-CH3)が付加される化学反応のことです。生物学では特にDNAメチル化が重要で、遺伝子のオン・オフを切り替えるエピジェネティックな調節機構として働きます。メチル化パターンは細胞の種類や発生段階、環境要因によって変化し、がんや老化などの研究で注目されています。",
+    "en": "Methylation is a chemical reaction in which a methyl group (-CH3) is added to a molecule. In biology, DNA methylation is particularly important as an epigenetic regulatory mechanism that controls gene expression without changing the DNA sequence. Methylation patterns vary by cell type, developmental stage, and environmental factors, and are studied in research on cancer, aging, and other conditions."
+  },
+  "usage": {
+    "ja": "論文では「promoter methylation (プロモーターのメチル化)」「global DNA methylation (全体的なDNAメチル化)」「methylation status (メチル化状態)」などの表現で登場します。バイサルファイト処理やメチル化特異的PCR、次世代シーケンサーを用いた全ゲノムメチル化解析などで測定されます。",
+    "en": "In research papers, terms like 'promoter methylation,' 'global DNA methylation,' and 'methylation status' are commonly used. Methylation is measured through bisulfite treatment, methylation-specific PCR, or whole-genome methylation analysis using next-generation sequencing technologies."
+  },
+  "synonyms": {
+    "ja": "「DNAメチル化」は最も一般的な表記で、タンパク質のメチル化と区別するために使われます。「CpGメチル化」はシトシン-グアニン配列の特定部位のメチル化を指し、「ヒストンメチル化」はDNAではなくヒストンタンパク質への修飾を意味するため区別が必要です。",
+    "en": "The term 'DNA methylation' is most commonly used to distinguish it from protein methylation. 'CpG methylation' refers specifically to methylation at cytosine-guanine sites, while 'histone methylation' refers to modification of histone proteins rather than DNA and should be distinguished accordingly."
+  },
+  "pubmedCount": 181628,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8312
+    },
+    {
+      "year": 2018,
+      "count": 8604
+    },
+    {
+      "year": 2019,
+      "count": 9126
+    },
+    {
+      "year": 2020,
+      "count": 9947
+    },
+    {
+      "year": 2021,
+      "count": 10795
+    },
+    {
+      "year": 2022,
+      "count": 10726
+    },
+    {
+      "year": 2023,
+      "count": 10023
+    },
+    {
+      "year": 2024,
+      "count": 10461
+    },
+    {
+      "year": 2025,
+      "count": 11673
+    },
+    {
+      "year": 2026,
+      "count": 11170
+    }
+  ],
+  "searchQuery": "(\"Methylation\"[MeSH Terms]) OR (\"methylation\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42750794",
+      "title": "Biosynthesis of vanillin glucoside in Escherichia coli.",
+      "year": 2027
+    },
+    {
+      "pmid": "42826484",
+      "title": "Click chemistry ligation-initiated bisulfite-free assay on nanobeads for highly sensitive detection of site-specific 5 mC.",
+      "year": 2027
+    },
+    {
+      "pmid": "42925694",
+      "title": "Infrared vibrational fingerprinting for the detection of nucleic acid methylation with structural validation by circular dichroism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42624191",
+      "title": "Digital droplet PCR and liquid biopsy in acute myeloid Leukemia: bridging translational research and clinical practice.",
+      "year": 2027
+    },
+    {
+      "pmid": "42392486",
+      "title": "Multiplex methylation marker analysis for ctDNA detection in liquid biopsies from anal cancer patients: an HPV-independent approach.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:06:23.109Z"
+}

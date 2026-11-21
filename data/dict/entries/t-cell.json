@@ -1,0 +1,96 @@
+{
+  "slug": "t-cell",
+  "ja": "T細胞",
+  "yomi": "てぃーさいぼう",
+  "en": "T cell",
+  "category": "biology",
+  "aliases": [
+    "Tリンパ球"
+  ],
+  "meshHeading": "T-Lymphocytes",
+  "meshUi": "68013601",
+  "description": {
+    "ja": "胸腺(Thymus)で成熟する免疫細胞の一種で、ウイルス感染細胞やがん細胞を直接攻撃したり、他の免疫細胞の働きを調節したりする役割を担います。表面にT細胞受容体(TCR)という特徴的な分子を持ち、細胞性免疫の中心的な存在です。ヘルパーT細胞、キラーT細胞、制御性T細胞など複数のサブタイプが知られています。",
+    "en": "T cells are a type of immune cell that matures in the thymus and plays a central role in cell-mediated immunity by directly attacking virus-infected or cancerous cells and regulating other immune cells. They are characterized by T cell receptors (TCR) on their surface and include several subtypes such as helper T cells, cytotoxic T cells, and regulatory T cells."
+  },
+  "usage": {
+    "ja": "免疫学研究では、フローサイトメトリーでCD3、CD4、CD8などの表面マーカーを測定してT細胞のサブセットを同定します。腫瘍免疫や自己免疫疾患、感染症の論文で頻繁に登場し、「CD4+ T cells」「CD8+ T cells」のように表記されることが一般的です。",
+    "en": "In immunology research, T cell subsets are identified by measuring surface markers such as CD3, CD4, and CD8 using flow cytometry. They frequently appear in papers on tumor immunology, autoimmune diseases, and infectious diseases, typically denoted as 'CD4+ T cells' or 'CD8+ T cells'."
+  },
+  "synonyms": {
+    "ja": "Tリンパ球とも呼ばれます。B細胞(Bリンパ球)は抗体を産生する別タイプのリンパ球であり、T細胞とは機能が異なります。論文検索では「T lymphocyte」「T-cell」などの表記ゆれにも注意が必要です。",
+    "en": "Also called T lymphocytes. B cells (B lymphocytes) are a different type of lymphocyte that produces antibodies and have distinct functions from T cells. When searching papers, note variant spellings such as 'T lymphocyte' and 'T-cell'."
+  },
+  "pubmedCount": 578488,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 17502
+    },
+    {
+      "year": 2018,
+      "count": 18103
+    },
+    {
+      "year": 2019,
+      "count": 18875
+    },
+    {
+      "year": 2020,
+      "count": 21406
+    },
+    {
+      "year": 2021,
+      "count": 23501
+    },
+    {
+      "year": 2022,
+      "count": 21716
+    },
+    {
+      "year": 2023,
+      "count": 20916
+    },
+    {
+      "year": 2024,
+      "count": 22249
+    },
+    {
+      "year": 2025,
+      "count": 25457
+    },
+    {
+      "year": 2026,
+      "count": 26420
+    }
+  ],
+  "searchQuery": "(\"T-Lymphocytes\"[MeSH Terms]) OR (\"T cell\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43023045",
+      "title": "A fluorinated poly(amino acid) nanovaccine with spatiotemporally encoded innate priming and antigen cross-presentation for tumor immunotherapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42311609",
+      "title": "Endoscopic Visualization of a Jejuno-Colonic Fistula in a Case of Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42164476",
+      "title": "Case Report of a Rapidly Progressive Indolent T-Cell Lymphoma of the Gastrointestinal Tract.",
+      "year": 2027
+    },
+    {
+      "pmid": "42991010",
+      "title": "Disrupting the cholesterol-mechanics axis enables ferroptosis and deep drug delivery in hepatocellular carcinoma.",
+      "year": 2027
+    },
+    {
+      "pmid": "42914653",
+      "title": "Hybrid nanovesicle artificial antigen-presenting cells integrate endogenous tumor antigen display with senescence-mimetic erythrocyte membrane-directed splenic T-cell priming.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:01:19.017Z"
+}

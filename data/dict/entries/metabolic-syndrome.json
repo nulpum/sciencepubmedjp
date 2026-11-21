@@ -1,0 +1,96 @@
+{
+  "slug": "metabolic-syndrome",
+  "ja": "メタボリックシンドローム",
+  "yomi": "めたぼりっくしんどろーむ",
+  "en": "metabolic syndrome",
+  "category": "nursing-pharma",
+  "aliases": [
+    "内臓脂肪症候群"
+  ],
+  "meshHeading": "Metabolic Syndrome",
+  "meshUi": "68024821",
+  "description": {
+    "ja": "内臓脂肪の蓄積に加えて、高血糖、高血圧、脂質異常のうち2つ以上が合併している状態を指す症候群です。心血管疾患や糖尿病のリスク増加と関連することが多くの研究で報告されています。診断基準は国や地域によって若干異なり、腹囲測定値などに違いがあります。",
+    "en": "A cluster of conditions characterized by central obesity combined with two or more of the following: elevated blood glucose, high blood pressure, and lipid abnormalities. Research has shown its association with increased risk of cardiovascular disease and diabetes. Diagnostic criteria vary slightly between countries and regions, particularly regarding waist circumference thresholds."
+  },
+  "usage": {
+    "ja": "疫学研究では、腹囲・血圧・空腹時血糖・中性脂肪・HDLコレステロールの5項目を測定し、基準値を満たすかどうかで判定します。介入研究では生活習慣改善プログラムの効果を評価する指標として、各構成要素の変化を追跡することが一般的です。",
+    "en": "Epidemiological studies measure five components: waist circumference, blood pressure, fasting glucose, triglycerides, and HDL cholesterol, with diagnosis based on meeting threshold criteria. Intervention studies commonly track changes in these components to evaluate the effectiveness of lifestyle modification programs."
+  },
+  "synonyms": {
+    "ja": "内臓脂肪症候群、代謝症候群、MetSと略されることもあります。類似概念にインスリン抵抗性症候群がありますが、メタボリックシンドロームは診断基準が明確に定義された臨床概念である点で区別されます。",
+    "en": "Also called metabolic syndrome X or abbreviated as MetS. Related to insulin resistance syndrome, but metabolic syndrome is distinguished as a clinical concept with clearly defined diagnostic criteria established by various international organizations."
+  },
+  "pubmedCount": 85985,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4463
+    },
+    {
+      "year": 2018,
+      "count": 4634
+    },
+    {
+      "year": 2019,
+      "count": 4653
+    },
+    {
+      "year": 2020,
+      "count": 5032
+    },
+    {
+      "year": 2021,
+      "count": 5336
+    },
+    {
+      "year": 2022,
+      "count": 4973
+    },
+    {
+      "year": 2023,
+      "count": 4602
+    },
+    {
+      "year": 2024,
+      "count": 4677
+    },
+    {
+      "year": 2025,
+      "count": 5441
+    },
+    {
+      "year": 2026,
+      "count": 5079
+    }
+  ],
+  "searchQuery": "(\"Metabolic Syndrome\"[MeSH Terms]) OR (\"metabolic syndrome\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42843668",
+      "title": "Finger citron fruit ameliorates ovariectomy-induced postmenopausal metabolic syndrome through regulation of lipogenesis and ferroptosis-related alterations.",
+      "year": 2027
+    },
+    {
+      "pmid": "42498088",
+      "title": "Impact of lamiaceae plants on anthropometric indices in patients with metabolic syndrome: A systematic review and meta-analysis of randomized clinical trials.",
+      "year": 2027
+    },
+    {
+      "pmid": "42906386",
+      "title": "Discovery of novel Lac-Phe derivatives with improved oral exposure for the treatment of metabolic syndrome.",
+      "year": 2027
+    },
+    {
+      "pmid": "42673755",
+      "title": "Qualitative and quantitative detection of glucose, uric acid, and cholesterol in rat skin interstitial fluid by a porous microneedle.",
+      "year": 2027
+    },
+    {
+      "pmid": "43023262",
+      "title": "Metabolic syndrome and Alzheimer's disease: Mechanistic links and precision prevention (Review).",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:45:54.099Z"
+}

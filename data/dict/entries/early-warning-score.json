@@ -1,0 +1,94 @@
+{
+  "slug": "early-warning-score",
+  "ja": "早期警告スコア",
+  "yomi": "そうきけいこくすこあ",
+  "en": "early warning score",
+  "abbr": "EWS",
+  "category": "nursing-pharma",
+  "meshHeading": "Early Warning Score",
+  "meshUi": "2030923",
+  "description": {
+    "ja": "患者の vital signs (バイタルサイン: 血圧、脈拍、呼吸数、体温、意識レベルなど) を数値化して点数化し、急変リスクを早期に察知するための評価ツールです。点数が高いほど状態悪化の可能性が高く、医療チームへの早期介入を促すために用いられます。",
+    "en": "A scoring system that quantifies patients' vital signs (blood pressure, pulse, respiratory rate, temperature, consciousness level, etc.) to detect deterioration risk at an early stage. Higher scores indicate greater likelihood of clinical worsening and prompt early intervention by the healthcare team."
+  },
+  "usage": {
+    "ja": "看護研究や救急医療の論文で、「EWSを用いた患者モニタリング」「スコア上昇と入院期間の関連」などが報告されます。NEWS (National Early Warning Score) やMEWS (Modified Early Warning Score) など複数のバージョンが存在し、病院や研究によって採用する指標が異なります。",
+    "en": "Studies in nursing and emergency medicine report on 'patient monitoring using EWS' or 'association between score elevation and length of stay'. Multiple versions exist such as NEWS (National Early Warning Score) and MEWS (Modified Early Warning Score), with different indicators adopted depending on the hospital or study."
+  },
+  "synonyms": {
+    "ja": "NEWS、MEWS、PEWS (小児用)、qSOFA (感染症特化型) など多様な派生スコアがあります。論文では単に 'EWS' と略されることもあれば、具体的なスコア名で記載されることもあるため、Methods欄で使用した評価尺度を確認する必要があります。",
+    "en": "Various derivatives include NEWS, MEWS, PEWS (pediatric), and qSOFA (sepsis-specific). Papers may use the abbreviation 'EWS' generically or cite specific score names, so checking the Methods section for the actual scale used is essential."
+  },
+  "pubmedCount": 2471,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 96
+    },
+    {
+      "year": 2018,
+      "count": 132
+    },
+    {
+      "year": 2019,
+      "count": 209
+    },
+    {
+      "year": 2020,
+      "count": 252
+    },
+    {
+      "year": 2021,
+      "count": 323
+    },
+    {
+      "year": 2022,
+      "count": 274
+    },
+    {
+      "year": 2023,
+      "count": 250
+    },
+    {
+      "year": 2024,
+      "count": 269
+    },
+    {
+      "year": 2025,
+      "count": 315
+    },
+    {
+      "year": 2026,
+      "count": 296
+    }
+  ],
+  "searchQuery": "(\"Early Warning Score\"[MeSH Terms]) OR (\"early warning score\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42761253",
+      "title": "Mortality risk ranking after medical emergency team review: External validation and redevelopment of predictive models.",
+      "year": 2026
+    },
+    {
+      "pmid": "42751431",
+      "title": "Performance of Pediatric Early Warning Score and physician gestalt in predicting adverse events among critically ill patients in an Emergency Department in Tanzania.",
+      "year": 2026
+    },
+    {
+      "pmid": "42727384",
+      "title": "Development of an early warning model for sepsis-associated encephalopathy using LASSO-Boruta-Logistic regression.",
+      "year": 2026
+    },
+    {
+      "pmid": "42612444",
+      "title": "Automaticity and habit in recognition and responses to clinical deterioration among ward nursing staff: An international cross-sectional study.",
+      "year": 2026
+    },
+    {
+      "pmid": "42541428",
+      "title": "Exploring Ward Registered Nurses' Emotional Responses When Caring for Clinically Deteriorating Patients: An Interview Study Informed by Affective Events Theory.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:37:20.851Z"
+}

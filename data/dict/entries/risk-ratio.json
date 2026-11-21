@@ -1,0 +1,93 @@
+{
+  "slug": "risk-ratio",
+  "ja": "リスク比",
+  "yomi": "りすくひ",
+  "en": "risk ratio",
+  "category": "research",
+  "meshHeading": "Odds Ratio",
+  "meshUi": "68016017",
+  "description": {
+    "ja": "リスク比は、2つのグループ間でアウトカム（イベント）が発生する確率の比を示す統計指標です。例えば、治療群と対照群でイベント発生率を比較し、治療群のリスクが対照群の何倍かを表します。RR=1は両群で同等、RR>1は治療群でリスクが高い、RR<1は治療群でリスクが低いことを意味します。",
+    "en": "Risk ratio is a statistical measure comparing the probability of an outcome occurring between two groups. For example, it compares event rates between a treatment group and a control group, expressing how many times higher or lower the risk is in the treatment group. RR=1 indicates equal risk, RR>1 indicates higher risk in the treatment group, and RR<1 indicates lower risk."
+  },
+  "usage": {
+    "ja": "コホート研究やランダム化比較試験で頻繁に用いられ、「RR=0.75 (95% CI: 0.60-0.95)」のように信頼区間とともに報告されます。前向き研究で曝露とアウトカムの関連を評価する際の標準的な指標です。",
+    "en": "Commonly used in cohort studies and randomized controlled trials, reported with confidence intervals such as 'RR=0.75 (95% CI: 0.60-0.95)'. It is a standard measure for assessing the association between exposure and outcome in prospective studies."
+  },
+  "synonyms": {
+    "ja": "相対リスク（relative risk）とほぼ同義で使われます。オッズ比（odds ratio）と混同されやすいですが、リスク比は発生率の比、オッズ比は発生オッズの比という違いがあり、稀なイベントでは近似しますが頻度が高いと値が乖離します。",
+    "en": "Often used interchangeably with 'relative risk'. It is frequently confused with odds ratio, but risk ratio is the ratio of incidence rates while odds ratio is the ratio of odds. They approximate each other for rare events but diverge when event frequency is high."
+  },
+  "pubmedCount": 135776,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 8872
+    },
+    {
+      "year": 2018,
+      "count": 7012
+    },
+    {
+      "year": 2019,
+      "count": 6548
+    },
+    {
+      "year": 2020,
+      "count": 6123
+    },
+    {
+      "year": 2021,
+      "count": 5806
+    },
+    {
+      "year": 2022,
+      "count": 4559
+    },
+    {
+      "year": 2023,
+      "count": 3575
+    },
+    {
+      "year": 2024,
+      "count": 3811
+    },
+    {
+      "year": 2025,
+      "count": 3951
+    },
+    {
+      "year": 2026,
+      "count": 4104
+    }
+  ],
+  "searchQuery": "(\"Odds Ratio\"[MeSH Terms]) OR (\"risk ratio\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42974622",
+      "title": "The Efficacy and Safety of Dalfampridine on Cognition and Fatigue in People With Multiple Sclerosis: A Systematic Review and Meta-Analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014336",
+      "title": "Interventions to reduce paediatric cancer treatment abandonment in low-income and middle-income countries: a systematic review and meta-analysis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42551299",
+      "title": "Innovative Zr-MOF-driven ECL-RET system: highly specific rituximab detection with epitope mimetic peptide CN-14.",
+      "year": 2027
+    },
+    {
+      "pmid": "42987770",
+      "title": "Effect of pneumatic leg compression on post-induction hypotension in adult patients with isolated traumatic brain injury undergoing decompressive craniotomy: a randomised, double-blind, controlled trial.",
+      "year": 2027
+    },
+    {
+      "pmid": "42933092",
+      "title": "Odds of culpability associated with the presence of drugs in injured drivers.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:47:44.448Z"
+}

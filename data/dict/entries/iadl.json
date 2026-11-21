@@ -1,0 +1,92 @@
+{
+  "slug": "iadl",
+  "ja": "手段的日常生活動作",
+  "yomi": "しゅだんてきにちじょうせいかつどうさ",
+  "en": "instrumental activities of daily living",
+  "abbr": "IADL",
+  "category": "nursing-pharma",
+  "description": {
+    "ja": "買い物、調理、洗濯、金銭管理、服薬管理、交通機関の利用など、日常生活を送る上で必要な複雑な動作のこと。基本的日常生活動作(ADL)よりも高度な認知機能や判断力を要する活動を指し、高齢者や障害者の自立度を評価する際の重要な指標となる。",
+    "en": "Complex activities required for independent living in the community, such as shopping, cooking, housekeeping, financial management, medication management, and using transportation. These activities require higher cognitive functions and judgment compared to basic activities of daily living (ADL), and serve as important indicators for assessing independence in elderly and disabled populations."
+  },
+  "usage": {
+    "ja": "高齢者の認知機能低下や介護度の評価、リハビリテーション効果の測定などに用いられる。Lawton-Brody尺度やFAI(Frenchay Activities Index)などの標準化されたスケールで評価され、論文では「IADL score」「IADL impairment」などの表現で登場する。",
+    "en": "Used to evaluate cognitive decline in elderly, care dependency levels, and rehabilitation outcomes. Assessed through standardized scales such as Lawton-Brody scale or Frenchay Activities Index (FAI), and appears in papers as 'IADL score' or 'IADL impairment'."
+  },
+  "synonyms": {
+    "ja": "基本的ADL(食事、排泄、入浴など)と対比される概念で、「手段的ADL」「IADL能力」とも表記される。日本語では「生活関連動作」と呼ばれることもあるが、英語圏ではIADLが標準的な用語として定着している。",
+    "en": "Contrasted with basic ADL (eating, toileting, bathing). Also referred to as 'IADL capacity' or 'IADL function'. While sometimes called 'life-related activities' in Japanese contexts, IADL is the standard term in English literature."
+  },
+  "pubmedCount": 6652,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 334
+    },
+    {
+      "year": 2018,
+      "count": 363
+    },
+    {
+      "year": 2019,
+      "count": 405
+    },
+    {
+      "year": 2020,
+      "count": 445
+    },
+    {
+      "year": 2021,
+      "count": 484
+    },
+    {
+      "year": 2022,
+      "count": 499
+    },
+    {
+      "year": 2023,
+      "count": 438
+    },
+    {
+      "year": 2024,
+      "count": 455
+    },
+    {
+      "year": 2025,
+      "count": 526
+    },
+    {
+      "year": 2026,
+      "count": 501
+    }
+  ],
+  "searchQuery": "\"instrumental activities of daily living\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42892261",
+      "title": "Allostatic load-intrinsic capacity phenotypes and adverse ageing outcomes in middle-aged and older Chinese adults.",
+      "year": 2027
+    },
+    {
+      "pmid": "42810001",
+      "title": "Self-rated near- and distance-vision patterns, vision change, and loss of functional independence in older adults: a longitudinal ELSA study.",
+      "year": 2027
+    },
+    {
+      "pmid": "43008247",
+      "title": "Personality Correlates of Functional Status in Patients With Early-Stage Behavioral Variant Frontotemporal Dementia.",
+      "year": 2026
+    },
+    {
+      "pmid": "42331198",
+      "title": "Role of an Ayurvedic formulation 'Kalyanaka Ghrita' in mild cognitive impairment: A single-patient, quasi-randomized, controlled, open-label N-of-1 trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "43046576",
+      "title": "When minimal assistance is not enough: A transitional approach for critical errors of older adults during instrumental activities of daily living: A mixed-methods study.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:41:49.135Z"
+}

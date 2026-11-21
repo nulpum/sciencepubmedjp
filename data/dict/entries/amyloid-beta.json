@@ -1,0 +1,94 @@
+{
+  "slug": "amyloid-beta",
+  "ja": "アミロイドβ",
+  "yomi": "あみろいどべーた",
+  "en": "amyloid beta",
+  "abbr": "Aβ",
+  "category": "biology",
+  "meshHeading": "Amyloid beta-Peptides",
+  "meshUi": "68016229",
+  "description": {
+    "ja": "アミロイドβ（Aβ）は、アミロイド前駆体タンパク質（APP）が酵素で切断されて生じる39～43個のアミノ酸からなるペプチドです。脳内で凝集して老人斑を形成することがアルツハイマー病の特徴的な病理所見とされ、神経細胞への毒性や炎症との関連が研究されています。特にAβ40とAβ42が主要な形態として知られます。",
+    "en": "Amyloid beta (Aβ) is a peptide consisting of 39-43 amino acids produced by enzymatic cleavage of amyloid precursor protein (APP). Its aggregation in the brain forms senile plaques, a hallmark pathology of Alzheimer's disease, and research investigates its associations with neurotoxicity and inflammation. Aβ40 and Aβ42 are the predominant forms."
+  },
+  "usage": {
+    "ja": "論文では脳脊髄液や血漿中のAβ濃度測定（ELISA法、質量分析法）、脳内のアミロイド沈着を評価するPETイメージング、培養細胞へのAβ投与実験などで使われます。Aβ42/Aβ40比やオリゴマー形態の測定も認知機能低下との関連を調べる指標として用いられます。",
+    "en": "In research papers, it appears in measurements of Aβ concentrations in cerebrospinal fluid or plasma (ELISA, mass spectrometry), PET imaging to assess amyloid deposition in the brain, and in vitro experiments with Aβ administration to cultured cells. Aβ42/Aβ40 ratios and oligomeric forms are also examined as indicators related to cognitive decline."
+  },
+  "synonyms": {
+    "ja": "「β-アミロイド」「Aβペプチド」「アミロイドベータペプチド」とも呼ばれます。「アミロイド」は線維状に凝集したタンパク質の総称ですが、アルツハイマー病研究では特にAβを指すことが多いです。APP由来ペプチドと記載される場合もあります。",
+    "en": "Also referred to as 'beta-amyloid', 'Aβ peptide', or 'amyloid-beta peptide'. While 'amyloid' generally denotes fibrillar protein aggregates, in Alzheimer's research it often specifically indicates Aβ. It may also be described as an APP-derived peptide."
+  },
+  "pubmedCount": 68098,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 3162
+    },
+    {
+      "year": 2018,
+      "count": 3402
+    },
+    {
+      "year": 2019,
+      "count": 3588
+    },
+    {
+      "year": 2020,
+      "count": 4092
+    },
+    {
+      "year": 2021,
+      "count": 4125
+    },
+    {
+      "year": 2022,
+      "count": 4215
+    },
+    {
+      "year": 2023,
+      "count": 4411
+    },
+    {
+      "year": 2024,
+      "count": 4646
+    },
+    {
+      "year": 2025,
+      "count": 5321
+    },
+    {
+      "year": 2026,
+      "count": 4877
+    }
+  ],
+  "searchQuery": "(\"Amyloid beta-Peptides\"[MeSH Terms]) OR (\"amyloid beta\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42837779",
+      "title": "Portable microcontroller-based impedance analyzer equipped with molecularly imprinted polymer for sensitive and specific detection of amyloid beta.",
+      "year": 2027
+    },
+    {
+      "pmid": "42804945",
+      "title": "Highly sensitive and specific high-throughput detection of Aβ42 in clinical specimens using a G-quadruplex-structured fluorescent aptamer analysis platform.",
+      "year": 2027
+    },
+    {
+      "pmid": "42777542",
+      "title": "Revealing Aβ peptide isoforms, including post-translationally modified species, through Cu(II)-mediated electrochemical profiling using a dual-electrode set-up.",
+      "year": 2027
+    },
+    {
+      "pmid": "42874468",
+      "title": "Nanoparticle size-dependent structural observability revealed by surface-enhanced Raman scattering in Alzheimer's disease rat hippocampal tissue.",
+      "year": 2027
+    },
+    {
+      "pmid": "42668129",
+      "title": "Analytical validation and clinical performance of a chemiluminescence immunoassay panel for plasma biomarkers in Alzheimer's disease: a preliminary study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:09:14.033Z"
+}

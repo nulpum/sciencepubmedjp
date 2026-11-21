@@ -1,0 +1,93 @@
+{
+  "slug": "morbidity",
+  "ja": "罹病率",
+  "yomi": "りびょうりつ",
+  "en": "morbidity",
+  "category": "research",
+  "meshHeading": "epidemiology",
+  "meshUi": "81000453",
+  "description": {
+    "ja": "罹病率とは、ある集団において特定の疾患にかかる人の割合を示す疫学指標です。一定期間内に新たに発症した症例数（発生率）や、ある時点での有病者数（有病率）を含む広い概念として用いられます。公衆衛生や臨床研究で疾病の負担を評価する際の基本的な測定値です。",
+    "en": "Morbidity refers to the rate or proportion of individuals in a population who are affected by a specific disease or health condition. It encompasses both incidence (new cases over time) and prevalence (existing cases at a point in time), serving as a fundamental epidemiological measure to assess disease burden in public health and clinical research."
+  },
+  "usage": {
+    "ja": "疫学研究では「10年間の心血管疾患罹病率」や「糖尿病の年齢調整罹病率」のように、特定疾患の発生頻度や既存患者の割合を報告する際に使用されます。介入研究では治療前後の罹病率変化を評価指標とすることもあります。",
+    "en": "In epidemiological studies, morbidity is used to report disease frequency, such as '10-year cardiovascular morbidity' or 'age-adjusted diabetes morbidity.' Intervention studies may use changes in morbidity rates as outcome measures to assess the impact of treatments or public health programs."
+  },
+  "synonyms": {
+    "ja": "発生率（incidence）は新規発症を、有病率（prevalence）は既存症例を指し、罹病率はこれら両方を包含する上位概念です。日本語では「罹患率」とも表記されますが、同義として扱われます。死亡率（mortality）と対比して用いられることが多く、疾病による死亡以外の健康影響を評価します。",
+    "en": "Incidence refers to new cases, while prevalence indicates existing cases; morbidity encompasses both concepts. The term is often contrasted with mortality (death rate) to capture non-fatal health impacts. In some contexts, 'morbidity rate' and 'disease burden' may be used interchangeably, though burden can include quality-of-life impacts beyond simple case counts."
+  },
+  "pubmedCount": 581686,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 23773
+    },
+    {
+      "year": 2018,
+      "count": 24924
+    },
+    {
+      "year": 2019,
+      "count": 26135
+    },
+    {
+      "year": 2020,
+      "count": 30540
+    },
+    {
+      "year": 2021,
+      "count": 33235
+    },
+    {
+      "year": 2022,
+      "count": 32109
+    },
+    {
+      "year": 2023,
+      "count": 29922
+    },
+    {
+      "year": 2024,
+      "count": 29663
+    },
+    {
+      "year": 2025,
+      "count": 34047
+    },
+    {
+      "year": 2026,
+      "count": 34269
+    }
+  ],
+  "searchQuery": "(\"epidemiology\"[MeSH Terms]) OR (\"morbidity\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43020745",
+      "title": "ClinicalAge, a framework for modelling ageing trajectories from longitudinal electronic health records in the UK: a model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42953720",
+      "title": "Modelling the effect of interventions to prevent MRSA transmission within hospitals in Edmonton, Canada.",
+      "year": 2027
+    },
+    {
+      "pmid": "42866579",
+      "title": "Data-based modeling analysis of transfusion-transmitted malaria.",
+      "year": 2027
+    },
+    {
+      "pmid": "42594981",
+      "title": "Comprehensive review of chronic kidney disease molecular biomarkers: Clinical significance, human health impact, and emerging diagnostic strategies.",
+      "year": 2027
+    },
+    {
+      "pmid": "42829069",
+      "title": "Flower aqueous extract of Hylocereus undatus (Haw.) Britton & Rose attenuates influenza infection: involvement of the TLR4/MyD88/NF-κB signaling axis.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:49:01.462Z"
+}

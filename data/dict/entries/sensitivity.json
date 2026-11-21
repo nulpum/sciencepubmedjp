@@ -1,0 +1,96 @@
+{
+  "slug": "sensitivity",
+  "ja": "感度",
+  "yomi": "かんど",
+  "en": "sensitivity",
+  "category": "research",
+  "aliases": [
+    "真陽性率"
+  ],
+  "meshHeading": "Sensitivity and Specificity",
+  "meshUi": "68012680",
+  "description": {
+    "ja": "診断検査や統計モデルにおいて、実際に陽性である対象を正しく陽性と判定できる割合を示す指標です。真陽性数を真陽性数と偽陰性数の合計で割った値で、0から1(または0%から100%)の範囲を取ります。感度が高いほど見逃しが少なく、スクリーニング検査では特に重視されます。",
+    "en": "Sensitivity is a measure of a diagnostic test's or statistical model's ability to correctly identify truly positive cases. It is calculated as the number of true positives divided by the sum of true positives and false negatives, ranging from 0 to 1 (or 0% to 100%). Higher sensitivity means fewer missed cases, making it particularly important for screening tests."
+  },
+  "usage": {
+    "ja": "診断精度の評価では特異度とセットで報告され、ROC曲線分析では縦軸に感度を取ります。疫学研究では疾患の早期発見能力を評価する際に用いられ、機械学習モデルの性能評価では再現率(recall)と同義として扱われます。",
+    "en": "Sensitivity is typically reported alongside specificity when evaluating diagnostic accuracy, and serves as the y-axis in ROC curve analysis. In epidemiological studies, it assesses early disease detection capability, while in machine learning model evaluation it is treated synonymously with recall."
+  },
+  "synonyms": {
+    "ja": "真陽性率、検出率とも呼ばれます。機械学習分野では再現率(recall)と同じ概念です。特異度(specificity)は陰性を正しく判定する指標で対になる概念ですが、混同しないよう注意が必要です。",
+    "en": "Also called true positive rate or detection rate. In machine learning, it is equivalent to recall. Specificity, which measures the correct identification of negatives, is a complementary concept but should not be confused with sensitivity."
+  },
+  "pubmedCount": 1749047,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 70787
+    },
+    {
+      "year": 2018,
+      "count": 71957
+    },
+    {
+      "year": 2019,
+      "count": 74521
+    },
+    {
+      "year": 2020,
+      "count": 79906
+    },
+    {
+      "year": 2021,
+      "count": 84217
+    },
+    {
+      "year": 2022,
+      "count": 78908
+    },
+    {
+      "year": 2023,
+      "count": 74621
+    },
+    {
+      "year": 2024,
+      "count": 90889
+    },
+    {
+      "year": 2025,
+      "count": 111721
+    },
+    {
+      "year": 2026,
+      "count": 115309
+    }
+  ],
+  "searchQuery": "(\"Sensitivity and Specificity\"[MeSH Terms]) OR (\"sensitivity\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42860039",
+      "title": "Postoperative infections after cardiac surgery with cardiopulmonary bypass - incidence, performance of diagnostic procedures, and predictive factors.",
+      "year": 2027
+    },
+    {
+      "pmid": "42848027",
+      "title": "Clinical Outcomes following invasive coronary angiography for patients with acute coronary syndromes pretreated with P2Y(12) inhibitors and considered for urgent coronary artery bypass graft surgery.",
+      "year": 2027
+    },
+    {
+      "pmid": "42881014",
+      "title": "A prognostic model for use at labour onset to estimate the risk of severe fetal compromise at birth: a retrospective, model development and validation study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42855827",
+      "title": "A Dual-Loop Task-Orthogonal Framework for Sequential Multitask Learning in Echo State Networks.",
+      "year": 2027
+    },
+    {
+      "pmid": "43019776",
+      "title": "Micro-flow LC- drift tube IMS-MS with high-resolution demultiplexing for enhanced lipidome coverage of volume-limited biological samples.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T14:38:05.827Z"
+}

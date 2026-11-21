@@ -1,0 +1,93 @@
+{
+  "slug": "alpha-synuclein",
+  "ja": "αシヌクレイン",
+  "yomi": "あるふぁしぬくれいん",
+  "en": "alpha-synuclein",
+  "category": "biology",
+  "meshHeading": "alpha-Synuclein",
+  "meshUi": "68051844",
+  "description": {
+    "ja": "αシヌクレインは神経細胞に多く存在するタンパク質で、シナプス機能に関わると考えられています。このタンパク質が異常に凝集すると、神経細胞内にレビー小体と呼ばれる構造物を形成することが知られており、パーキンソン病などの神経変性疾患の研究で重要な指標となっています。",
+    "en": "Alpha-synuclein is a protein abundantly found in neurons and is thought to be involved in synaptic function. When this protein aggregates abnormally, it forms structures called Lewy bodies within nerve cells, making it an important marker in research on neurodegenerative diseases such as Parkinson's disease."
+  },
+  "usage": {
+    "ja": "論文では、脳組織や脳脊髄液中のαシヌクレイン濃度測定、凝集体の免疫組織化学的検出、遺伝子変異の解析などが行われます。ELISA法やウエスタンブロット法を用いた定量、RT-PCRによる遺伝子発現解析が一般的です。",
+    "en": "In research papers, alpha-synuclein is measured in brain tissue or cerebrospinal fluid, aggregates are detected by immunohistochemistry, and genetic mutations are analyzed. Common methods include quantification by ELISA or Western blot, and gene expression analysis by RT-PCR."
+  },
+  "synonyms": {
+    "ja": "SNCA(遺伝子名)、α-syn(略称)と表記されることもあります。β-シヌクレイン、γ-シヌクレインという類縁タンパク質も存在しますが、神経変性疾患研究で最も注目されるのはαシヌクレインです。",
+    "en": "Also referred to as SNCA (gene name) or α-syn (abbreviation). Related proteins include beta-synuclein and gamma-synuclein, but alpha-synuclein receives the most attention in neurodegenerative disease research."
+  },
+  "pubmedCount": 22704,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 1156
+    },
+    {
+      "year": 2018,
+      "count": 1276
+    },
+    {
+      "year": 2019,
+      "count": 1370
+    },
+    {
+      "year": 2020,
+      "count": 1522
+    },
+    {
+      "year": 2021,
+      "count": 1626
+    },
+    {
+      "year": 2022,
+      "count": 1737
+    },
+    {
+      "year": 2023,
+      "count": 1624
+    },
+    {
+      "year": 2024,
+      "count": 1796
+    },
+    {
+      "year": 2025,
+      "count": 2244
+    },
+    {
+      "year": 2026,
+      "count": 2143
+    }
+  ],
+  "searchQuery": "(\"alpha-Synuclein\"[MeSH Terms]) OR (\"alpha-synuclein\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42918462",
+      "title": "Serratol, a cembrane diterpene from Boswellia serrata attenuates α-synuclein and fibrillar amyloid-β aggregation in Caenorhabditis elegans.",
+      "year": 2027
+    },
+    {
+      "pmid": "43045430",
+      "title": "Updates in Rapid Eye Movement Sleep Behavior Disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "43014984",
+      "title": "Radiopharmaceuticals in Molecular Neuroimaging: Radiotracers in Development.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772054",
+      "title": "Next-generation optical biosensors for ultra-early detection of Alzheimer's and Parkinson's diseases: Recent advances, challenges, and future perspectives.",
+      "year": 2027
+    },
+    {
+      "pmid": "42735448",
+      "title": "Parkinson's disease diagnosis using machine learning and multimodal biomarkers: A systematic review.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:09:53.351Z"
+}

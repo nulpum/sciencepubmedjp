@@ -1,0 +1,93 @@
+{
+  "slug": "theory-of-mind",
+  "ja": "心の理論",
+  "yomi": "こころのりろん",
+  "en": "theory of mind",
+  "category": "psychology",
+  "meshHeading": "Theory of Mind",
+  "meshUi": "68056345",
+  "description": {
+    "ja": "他者が自分とは異なる信念、欲求、意図、知識を持つことを理解し、その心の状態を推測する認知能力を指します。発達心理学や認知神経科学で広く研究され、通常4-5歳頃に獲得されるとされています。自閉スペクトラム症における社会的認知の特性を調べる際にも重要な指標となります。",
+    "en": "Theory of mind refers to the cognitive ability to understand that others have beliefs, desires, intentions, and knowledge different from one's own, and to infer their mental states. It is widely studied in developmental psychology and cognitive neuroscience, typically acquired around age 4-5. It serves as an important indicator when examining social cognitive characteristics in autism spectrum conditions."
+  },
+  "usage": {
+    "ja": "論文では誤信念課題 (false-belief task) や視線追跡、fMRI研究などで測定されます。Sally-Anne課題のような実験パラダイムを用い、被験者が他者の誤った信念を理解できるかを評価します。発達研究、自閉症研究、社会的認知の神経基盤の解明などで頻繁に用いられる概念です。",
+    "en": "In research papers, it is measured through false-belief tasks, eye-tracking, and fMRI studies. Experimental paradigms like the Sally-Anne task are used to assess whether participants can understand others' false beliefs. This concept is frequently employed in developmental research, autism studies, and investigations of the neural basis of social cognition."
+  },
+  "synonyms": {
+    "ja": "心的状態の理解、メンタライジング (mentalizing)、心の読み取りなどとも呼ばれます。類似概念として共感 (empathy) がありますが、心の理論は認知的側面、共感は情動的側面に重点を置く点で区別されます。ToMと略されることもあります。",
+    "en": "Also referred to as mentalizing, mindreading, or understanding mental states. A related concept is empathy, but theory of mind emphasizes the cognitive aspect while empathy focuses on the emotional aspect. It is sometimes abbreviated as ToM."
+  },
+  "pubmedCount": 8809,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 651
+    },
+    {
+      "year": 2018,
+      "count": 616
+    },
+    {
+      "year": 2019,
+      "count": 579
+    },
+    {
+      "year": 2020,
+      "count": 601
+    },
+    {
+      "year": 2021,
+      "count": 640
+    },
+    {
+      "year": 2022,
+      "count": 571
+    },
+    {
+      "year": 2023,
+      "count": 491
+    },
+    {
+      "year": 2024,
+      "count": 522
+    },
+    {
+      "year": 2025,
+      "count": 617
+    },
+    {
+      "year": 2026,
+      "count": 542
+    }
+  ],
+  "searchQuery": "(\"Theory of Mind\"[MeSH Terms]) OR (\"theory of mind\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42732759",
+      "title": "Training emotion regulation in Preschoolers: Preliminary evaluation of a Researcher-Teacher co-constructed program aligned with usual classroom practices.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863398",
+      "title": "Near-random behavior in strategic games.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828799",
+      "title": "Young children can infer what speakers know based on their causal influence over listeners.",
+      "year": 2027
+    },
+    {
+      "pmid": "42753977",
+      "title": "Region-function specificity of structural brain alterations associated with non-suicidal self-injury in young people.",
+      "year": 2027
+    },
+    {
+      "pmid": "42731476",
+      "title": "What primates know about other minds and how often they use it: A computational approach to comparative theory of mind.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:05:40.321Z"
+}

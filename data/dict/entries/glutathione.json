@@ -1,0 +1,93 @@
+{
+  "slug": "glutathione",
+  "ja": "グルタチオン",
+  "yomi": "ぐるたちおん",
+  "en": "glutathione",
+  "category": "biology",
+  "meshHeading": "Glutathione",
+  "meshUi": "68005978",
+  "description": {
+    "ja": "グルタチオンは、グルタミン酸、システイン、グリシンの3つのアミノ酸から構成される小さなペプチド分子で、細胞内で最も豊富な抗酸化物質の一つです。活性酸素種による細胞損傷から保護し、解毒作用や酸化還元調節に重要な役割を果たします。GSHと略記され、還元型と酸化型(GSSG)の間で可逆的に変化することで細胞の酸化ストレス状態を調節しています。",
+    "en": "Glutathione is a small peptide molecule composed of three amino acids: glutamic acid, cysteine, and glycine, and is one of the most abundant antioxidants within cells. It plays a crucial role in protecting cells from damage by reactive oxygen species, detoxification processes, and redox regulation. Abbreviated as GSH, it reversibly converts between reduced and oxidized forms (GSSG) to regulate cellular oxidative stress status."
+  },
+  "usage": {
+    "ja": "論文では酸化ストレスマーカーとして、GSH/GSSG比の測定や細胞内グルタチオン濃度の定量が行われます。高速液体クロマトグラフィー(HPLC)や比色アッセイキットを用いた測定が一般的で、肝臓疾患、神経変性疾患、老化、炎症などの研究で酸化還元状態の指標として広く使用されています。",
+    "en": "In research papers, glutathione is measured as an oxidative stress marker through GSH/GSSG ratio determination and intracellular glutathione concentration quantification. Common methods include high-performance liquid chromatography (HPLC) and colorimetric assay kits, widely used as a redox status indicator in studies of liver diseases, neurodegenerative diseases, aging, and inflammation."
+  },
+  "synonyms": {
+    "ja": "GSH(還元型グルタチオン)、GSSG(酸化型グルタチオン)、γ-グルタミルシステイニルグリシンとも呼ばれます。グルタチオンペルオキシダーゼ(GPx)やグルタチオン還元酵素(GR)などの関連酵素とセットで測定されることが多く、総グルタチオン量とGSH/GSSG比を区別して評価することが重要です。",
+    "en": "Also referred to as GSH (reduced glutathione), GSSG (oxidized glutathione), or γ-glutamylcysteinylglycine. Often measured alongside related enzymes such as glutathione peroxidase (GPx) and glutathione reductase (GR), with distinction between total glutathione content and GSH/GSSG ratio being important for proper evaluation."
+  },
+  "pubmedCount": 195547,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 6930
+    },
+    {
+      "year": 2018,
+      "count": 7377
+    },
+    {
+      "year": 2019,
+      "count": 7721
+    },
+    {
+      "year": 2020,
+      "count": 8601
+    },
+    {
+      "year": 2021,
+      "count": 8873
+    },
+    {
+      "year": 2022,
+      "count": 9148
+    },
+    {
+      "year": 2023,
+      "count": 8619
+    },
+    {
+      "year": 2024,
+      "count": 9314
+    },
+    {
+      "year": 2025,
+      "count": 10566
+    },
+    {
+      "year": 2026,
+      "count": 10168
+    }
+  ],
+  "searchQuery": "(\"Glutathione\"[MeSH Terms]) OR (\"glutathione\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42950636",
+      "title": "A redox-responsive Schiff-base Fe(III) complex for MRI-readable magnetic relaxation detection of glutathione and cysteine.",
+      "year": 2027
+    },
+    {
+      "pmid": "42901061",
+      "title": "Fe-porphyrin MOF nanozyme-based colorimetric sensor assisted by machine learning for detecting antioxidants in fruit juices.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896420",
+      "title": "Self-assembly prodrugs for controlled singlet oxygen release and resistance modulation in deep-tumor photodynamic therapy.",
+      "year": 2027
+    },
+    {
+      "pmid": "42863171",
+      "title": "A fluorescent/colorimetric/electrochemical tri-modal sensing platform for cross-validated dynamic monitoring of endogenous glutathione in plants under stress.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854367",
+      "title": "Target-responsive \"signal-down\" electrochemical biosensor based on an anti-biofouling hydrogel for glutathione detection.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:04:46.264Z"
+}

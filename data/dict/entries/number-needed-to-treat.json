@@ -1,0 +1,92 @@
+{
+  "slug": "number-needed-to-treat",
+  "ja": "治療必要数",
+  "yomi": "ちりょうひつようすう",
+  "en": "number needed to treat",
+  "abbr": "NNT",
+  "category": "research",
+  "description": {
+    "ja": "治療必要数(NNT)とは、ある治療によって1人の患者に望ましい効果(症状改善や有害事象の回避など)を得るために、何人の患者を治療する必要があるかを示す指標です。例えばNNT=5なら、5人治療して1人に効果が現れる計算になり、数値が小さいほど治療効果が高いことを意味します。臨床試験の結果を実臨床での意思決定に活用しやすい形で示す重要な統計量です。",
+    "en": "Number needed to treat (NNT) is an indicator showing how many patients need to be treated to achieve one favorable outcome (such as symptom improvement or prevention of adverse events) with a particular intervention. For example, an NNT of 5 means that 5 patients must be treated for 1 patient to benefit. A lower NNT indicates higher treatment effectiveness, making it a crucial statistic for translating clinical trial results into practical clinical decision-making."
+  },
+  "usage": {
+    "ja": "ランダム化比較試験やメタアナリシスで治療効果を評価する際に算出されます。計算式はNNT=1/ARR(絶対リスク減少)で、対照群との効果の差から導かれます。論文では「NNT=10 (95%CI: 7-15)」のように信頼区間とともに報告され、薬物療法・手術・予防介入などの効果比較に用いられます。",
+    "en": "NNT is calculated in randomized controlled trials and meta-analyses to evaluate treatment efficacy. The formula is NNT=1/ARR (absolute risk reduction), derived from the difference in outcomes between treatment and control groups. In papers, it is typically reported with confidence intervals such as 'NNT=10 (95%CI: 7-15)' and used to compare the effectiveness of pharmacological therapies, surgical procedures, and preventive interventions."
+  },
+  "synonyms": {
+    "ja": "対となる指標として「害必要数(NNH: number needed to harm)」があり、有害事象が1件発生するまでに何人への投与が必要かを示します。NNTは「治療に必要な患者数」とも訳され、効果の大きさを直感的に理解できる利点がある一方、ベースラインリスクや観察期間によって値が変動する点に注意が必要です。",
+    "en": "A related concept is 'number needed to harm (NNH)', which indicates how many patients must be exposed to a treatment before one experiences an adverse event. NNT is sometimes translated as 'the number of patients needed to treat' and offers the advantage of intuitive understanding of effect size, though it is important to note that NNT values can vary depending on baseline risk and observation period."
+  },
+  "pubmedCount": 7029,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 387
+    },
+    {
+      "year": 2018,
+      "count": 334
+    },
+    {
+      "year": 2019,
+      "count": 341
+    },
+    {
+      "year": 2020,
+      "count": 373
+    },
+    {
+      "year": 2021,
+      "count": 385
+    },
+    {
+      "year": 2022,
+      "count": 414
+    },
+    {
+      "year": 2023,
+      "count": 375
+    },
+    {
+      "year": 2024,
+      "count": 316
+    },
+    {
+      "year": 2025,
+      "count": 370
+    },
+    {
+      "year": 2026,
+      "count": 560
+    }
+  ],
+  "searchQuery": "\"number needed to treat\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42881021",
+      "title": "Corrigendum to \"Aripiprazole once-monthly for patients diagnosed with bipolar I disorder: number needed to treat, number needed to harm, and likelihood to be helped or harmed\" [J. Affect. Disord. 413 (2026): 122190].",
+      "year": 2027
+    },
+    {
+      "pmid": "42849797",
+      "title": "Intravascular imaging guidance in complex PCI: a meta-analysis of randomized trials across complex lesion subsets.",
+      "year": 2026
+    },
+    {
+      "pmid": "43046346",
+      "title": "Individualised Versus Conventional Balloon Dilation for TIPS: Hepatic Encephalopathy in a Propensity-Matched Before-After Study.",
+      "year": 2026
+    },
+    {
+      "pmid": "43023026",
+      "title": "Effectiveness of three nasoenteral tube securement technologies in critically ill adults: A pragmatic cluster-randomized crossover trial.",
+      "year": 2026
+    },
+    {
+      "pmid": "42992479",
+      "title": "Therapeutic plasma exchange improves survival in alcohol-related acute-on-chronic liver failure: a randomized controlled trial.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-20T14:37:49.045Z"
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "meta-analysis-psychology",
+  "ja": "社会認知",
+  "yomi": "しゃかいにんち",
+  "en": "social cognition",
+  "category": "psychology",
+  "meshHeading": "Social Cognition",
+  "meshUi": "2052024",
+  "description": {
+    "ja": "社会認知とは、他者の感情・意図・信念などを理解し、社会的な状況を解釈する認知機能の総称です。表情認識、心の理論(他者の心的状態を推測する能力)、社会的文脈の理解などが含まれます。自閉スペクトラム症や統合失調症などの精神神経疾患で障害されることが知られており、心理学・神経科学の重要な研究テーマとなっています。",
+    "en": "Social cognition refers to cognitive processes involved in understanding others' emotions, intentions, and beliefs, and interpreting social situations. It includes facial emotion recognition, theory of mind (ability to infer others' mental states), and understanding social contexts. Impairments in social cognition are observed in psychiatric and neurological conditions such as autism spectrum disorder and schizophrenia, making it a key research topic in psychology and neuroscience."
+  },
+  "usage": {
+    "ja": "論文では「社会認知課題」として表情認識テスト、誤信念課題、社会的シナリオ理解テストなどが用いられます。機能的MRIで内側前頭前野や側頭頭頂接合部の活動を測定したり、質問紙や行動観察で社会的相互作用の質を評価したりします。",
+    "en": "In research, social cognition is assessed using facial emotion recognition tests, false belief tasks, and social scenario comprehension tests. Studies employ functional MRI to measure activity in the medial prefrontal cortex and temporoparietal junction, or use questionnaires and behavioral observations to evaluate the quality of social interactions."
+  },
+  "synonyms": {
+    "ja": "「社会的認知」とも呼ばれます。関連概念として「心の理論(theory of mind)」「共感(empathy)」「感情認識(emotion recognition)」があり、それぞれ社会認知の下位機能として扱われることもあれば、独立した構成概念として研究されることもあります。",
+    "en": "Also referred to as 'social cognitive processing.' Related concepts include 'theory of mind,' 'empathy,' and 'emotion recognition,' which may be treated as subfunctions of social cognition or studied as independent constructs depending on the research context."
+  },
+  "pubmedCount": 13158,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 897
+    },
+    {
+      "year": 2018,
+      "count": 886
+    },
+    {
+      "year": 2019,
+      "count": 894
+    },
+    {
+      "year": 2020,
+      "count": 1071
+    },
+    {
+      "year": 2021,
+      "count": 1105
+    },
+    {
+      "year": 2022,
+      "count": 1106
+    },
+    {
+      "year": 2023,
+      "count": 978
+    },
+    {
+      "year": 2024,
+      "count": 1006
+    },
+    {
+      "year": 2025,
+      "count": 1172
+    },
+    {
+      "year": 2026,
+      "count": 1381
+    }
+  ],
+  "searchQuery": "(\"Social Cognition\"[MeSH Terms]) OR (\"social cognition\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42863395",
+      "title": "Diversity in how people use racial categories to generalize.",
+      "year": 2027
+    },
+    {
+      "pmid": "42828799",
+      "title": "Young children can infer what speakers know based on their causal influence over listeners.",
+      "year": 2027
+    },
+    {
+      "pmid": "42767514",
+      "title": "Changes in neural activation and in functional connectivity during affective memory recall after six months of psychotherapy: An fMRI study of individuals with depression.",
+      "year": 2027
+    },
+    {
+      "pmid": "42748515",
+      "title": "Social feedback informs generalisation of control beliefs.",
+      "year": 2027
+    },
+    {
+      "pmid": "42731476",
+      "title": "What primates know about other minds and how often they use it: A computational approach to comparative theory of mind.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:23:30.676Z"
+}

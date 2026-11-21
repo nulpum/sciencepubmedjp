@@ -1,0 +1,97 @@
+{
+  "slug": "copd",
+  "ja": "COPD",
+  "yomi": "しーおーぴーでぃー",
+  "en": "chronic obstructive pulmonary disease",
+  "abbr": "COPD",
+  "category": "nursing-pharma",
+  "aliases": [
+    "慢性閉塞性肺疾患"
+  ],
+  "meshHeading": "Pulmonary Disease, Chronic Obstructive",
+  "meshUi": "68029424",
+  "description": {
+    "ja": "気道の慢性的な炎症により空気の流れが制限される肺疾患で、主に長期の喫煙などが原因とされます。息切れや慢性的な咳が特徴的な症状として知られています。疫学研究や臨床試験で頻繁に取り上げられる呼吸器疾患の一つです。",
+    "en": "A lung disease characterized by chronic airflow limitation due to persistent inflammation of the airways, primarily caused by long-term smoking exposure. Shortness of breath and chronic cough are typical symptoms. It is one of the most frequently studied respiratory diseases in epidemiological and clinical research."
+  },
+  "usage": {
+    "ja": "論文では「COPD患者を対象とした」「COPDの有病率」「スパイロメトリーによるCOPD診断」などの表現で用いられます。肺機能検査(FEV1/FVC比)や症状スコア、増悪頻度などが評価指標として測定されます。",
+    "en": "In papers, it appears in phrases like 'patients with COPD,' 'prevalence of COPD,' or 'spirometry-based COPD diagnosis.' Lung function tests (FEV1/FVC ratio), symptom scores, and exacerbation frequency are commonly measured as outcome indicators."
+  },
+  "synonyms": {
+    "ja": "日本語では「慢性閉塞性肺疾患」と表記されます。以前は「肺気腫」や「慢性気管支炎」が個別に使われていましたが、現在はこれらを含む包括的な疾患概念としてCOPDが用いられます。検索時は「COPD」「chronic obstructive pulmonary disease」の両方を試すと網羅的です。",
+    "en": "Previously, 'emphysema' and 'chronic bronchitis' were used as separate terms, but COPD now serves as an umbrella term encompassing these conditions. For comprehensive literature searches, use both 'COPD' and the full term 'chronic obstructive pulmonary disease' as MeSH terms or keywords."
+  },
+  "pubmedCount": 112215,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 4912
+    },
+    {
+      "year": 2018,
+      "count": 5352
+    },
+    {
+      "year": 2019,
+      "count": 5225
+    },
+    {
+      "year": 2020,
+      "count": 5859
+    },
+    {
+      "year": 2021,
+      "count": 6094
+    },
+    {
+      "year": 2022,
+      "count": 5633
+    },
+    {
+      "year": 2023,
+      "count": 5283
+    },
+    {
+      "year": 2024,
+      "count": 5481
+    },
+    {
+      "year": 2025,
+      "count": 6160
+    },
+    {
+      "year": 2026,
+      "count": 5639
+    }
+  ],
+  "searchQuery": "(\"Pulmonary Disease, Chronic Obstructive\"[MeSH Terms]) OR (\"chronic obstructive pulmonary disease\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42894311",
+      "title": "Comorbid asthma - occurrence and associations with patient-related outcomes in COPD: a cohort study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42871153",
+      "title": "Evaluating a Modified American Society of Anesthesiologists Physical Status-Based Sedation Management System for Pancreatobiliary Endoscopy: A Prospective Feasibility Study.",
+      "year": 2027
+    },
+    {
+      "pmid": "42913963",
+      "title": "Platycodon Decoction alleviates chronic obstructive pulmonary disease associated inflammation with potential dual-layer regulation of PI3K/AKT/NLRP3 signaling and ADGRE5-mediated intercellular interactions.",
+      "year": 2027
+    },
+    {
+      "pmid": "42896794",
+      "title": "Tongsai Granules ameliorate airway mucus hypersecretion in AECOPD by remodeling LIPA-driven ceramide metabolism.",
+      "year": 2027
+    },
+    {
+      "pmid": "42849827",
+      "title": "Bufei Yishen formula ameliorates chronic obstructive pulmonary disease by restoring alveolar macrophage efferocytosis through Nrf2 activation.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:45:37.535Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "implicit-memory",
+  "ja": "潜在記憶",
+  "yomi": "せんざいきおく",
+  "en": "implicit memory",
+  "category": "psychology",
+  "description": {
+    "ja": "潜在記憶とは、意識的な想起を伴わずに過去の経験が行動やパフォーマンスに影響を与える記憶のことです。例えば、自転車の乗り方や楽器の演奏など、意識せずに体が覚えている技能や、以前見た単語を無意識に速く認識できる現象などが含まれます。顕在記憶(意識的に思い出せる記憶)とは対照的な記憶システムとして研究されています。",
+    "en": "Implicit memory refers to memory that influences behavior and performance without conscious recollection of past experiences. Examples include motor skills like riding a bicycle or playing an instrument that the body remembers without conscious effort, and the phenomenon of recognizing previously seen words faster without awareness. It is studied as a memory system that contrasts with explicit memory (consciously retrievable memory)."
+  },
+  "usage": {
+    "ja": "心理学研究では、プライミング課題(先に提示された刺激が後の課題成績に影響する現象)、手続き記憶テスト(運動技能の習得)、単純接触効果の測定などで評価されます。健忘症患者でも潜在記憶は保たれることが多く、記憶の神経基盤を調べる際の重要な指標となります。",
+    "en": "In psychological research, it is assessed through priming tasks (where previously presented stimuli influence later task performance), procedural memory tests (motor skill acquisition), and measurements of the mere exposure effect. Implicit memory is often preserved in amnesic patients, making it an important indicator for investigating the neural basis of memory."
+  },
+  "synonyms": {
+    "ja": "「非宣言的記憶(nondeclarative memory)」とほぼ同義で使われますが、潜在記憶はより広い概念です。手続き記憶(procedural memory)は潜在記憶の一種であり、運動技能や認知技能の習得を指します。対義語は顕在記憶(explicit memory)または宣言的記憶(declarative memory)です。",
+    "en": "It is nearly synonymous with 'nondeclarative memory,' though implicit memory is a broader concept. Procedural memory is a subtype of implicit memory, referring to the acquisition of motor and cognitive skills. The antonym is explicit memory or declarative memory."
+  },
+  "pubmedCount": 1576,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 52
+    },
+    {
+      "year": 2018,
+      "count": 54
+    },
+    {
+      "year": 2019,
+      "count": 41
+    },
+    {
+      "year": 2020,
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "count": 42
+    },
+    {
+      "year": 2022,
+      "count": 37
+    },
+    {
+      "year": 2023,
+      "count": 33
+    },
+    {
+      "year": 2024,
+      "count": 32
+    },
+    {
+      "year": 2025,
+      "count": 25
+    },
+    {
+      "year": 2026,
+      "count": 32
+    }
+  ],
+  "searchQuery": "\"implicit memory\"[tiab]",
+  "recentArticles": [
+    {
+      "pmid": "42557525",
+      "title": "When attention matters: Domain-specific disruption of explicit but not implicit memory in statistical learning.",
+      "year": 2026
+    },
+    {
+      "pmid": "42186405",
+      "title": "Autobiographical Processing Primes Semantic Memory Production on the Category Exemplar Generation Task: The Role of Self-Referential Processing.",
+      "year": 2026
+    },
+    {
+      "pmid": "42921722",
+      "title": "Implicit Self-Death Associations and Symptoms of Depression and Anxiety: A Single-Case Experimental Design.",
+      "year": 2026
+    },
+    {
+      "pmid": "42726382",
+      "title": "Implicit memory reveals implicit bias in humans and machines.",
+      "year": 2026
+    },
+    {
+      "pmid": "42645763",
+      "title": "Larry Jacoby: An appreciation of his early research.",
+      "year": 2026
+    }
+  ],
+  "generatedAt": "2026-11-21T06:08:10.281Z"
+}

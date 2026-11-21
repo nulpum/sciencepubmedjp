@@ -1,0 +1,93 @@
+{
+  "slug": "neurogenesis",
+  "ja": "神経新生",
+  "yomi": "しんけいしんせい",
+  "en": "neurogenesis",
+  "category": "biology",
+  "meshHeading": "Neurogenesis",
+  "meshUi": "68055495",
+  "description": {
+    "ja": "神経新生とは、脳内で新しい神経細胞(ニューロン)が生まれるプロセスを指します。成体の脳でも海馬や嗅球などの特定領域で神経新生が起こることが知られており、学習・記憶や気分調節との関連が研究されています。加齢やストレス、運動、栄養などの要因が神経新生の頻度に影響を与える可能性が調べられています。",
+    "en": "Neurogenesis refers to the process by which new neurons (nerve cells) are generated in the brain. It is known to occur in specific regions such as the hippocampus and olfactory bulb even in the adult brain, and its relationship with learning, memory, and mood regulation has been studied. Factors such as aging, stress, exercise, and nutrition are being investigated for their potential effects on the rate of neurogenesis."
+  },
+  "usage": {
+    "ja": "論文では「hippocampal neurogenesis(海馬神経新生)」「adult neurogenesis(成体神経新生)」などの表現で登場し、BrdUやKi-67などのマーカーを用いた免疫組織化学的手法で新生細胞を検出・定量します。動物モデルにおける運動負荷や環境エンリッチメントの効果、あるいは神経幹細胞の増殖・分化の分子メカニズムを調べる研究で頻出します。",
+    "en": "In papers, it appears in expressions such as 'hippocampal neurogenesis' or 'adult neurogenesis,' and newly generated cells are detected and quantified using immunohistochemical methods with markers like BrdU or Ki-67. It frequently appears in studies examining the effects of exercise or environmental enrichment in animal models, or investigating molecular mechanisms of neural stem cell proliferation and differentiation."
+  },
+  "synonyms": {
+    "ja": "「neural generation」や「formation of new neurons」と表現されることもあります。「neuronal proliferation(神経細胞増殖)」は幹細胞の分裂段階を指すことが多く、神経新生全体のプロセスとは区別される場合があります。発生期の神経形成と成体脳での神経新生は文脈によって使い分けられます。",
+    "en": "It may also be expressed as 'neural generation' or 'formation of new neurons.' 'Neuronal proliferation' often refers specifically to the division stage of stem cells and may be distinguished from the overall process of neurogenesis. Neurogenesis during development and adult neurogenesis in the mature brain are used in different contexts."
+  },
+  "pubmedCount": 43954,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 2764
+    },
+    {
+      "year": 2018,
+      "count": 2862
+    },
+    {
+      "year": 2019,
+      "count": 2778
+    },
+    {
+      "year": 2020,
+      "count": 2876
+    },
+    {
+      "year": 2021,
+      "count": 2802
+    },
+    {
+      "year": 2022,
+      "count": 2288
+    },
+    {
+      "year": 2023,
+      "count": 2059
+    },
+    {
+      "year": 2024,
+      "count": 2100
+    },
+    {
+      "year": 2025,
+      "count": 2380
+    },
+    {
+      "year": 2026,
+      "count": 2019
+    }
+  ],
+  "searchQuery": "(\"Neurogenesis\"[MeSH Terms]) OR (\"neurogenesis\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "42999541",
+      "title": "Sustained delivery of 3D-bioprinted stem cell-derived small extracellular vesicles promotes neural regeneration following traumatic brain injury via the CREB1/PGC-1α/FNDC5 axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42898573",
+      "title": "Reprogramming pathological secretory phenotype of chondrocytes inhibits neurovascular invasion for osteoarthritis treatment.",
+      "year": 2027
+    },
+    {
+      "pmid": "42456845",
+      "title": "Plasma nerve growth factor level is associated with functional outcome after ischemic stroke.",
+      "year": 2027
+    },
+    {
+      "pmid": "42843672",
+      "title": "Neuroprotective effects of Bauhinia variegata flower extract against D-galactose-induced age-related cognitive impairment: Modulation of the oxidative stress-endoplasmic reticulum axis.",
+      "year": 2027
+    },
+    {
+      "pmid": "42772615",
+      "title": "Buyang Huanwu decoction enhances SVZ-lineage neurogenic responses associated with β-catenin signaling after ischemic stroke.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-20T15:10:13.793Z"
+}

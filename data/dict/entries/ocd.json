@@ -1,0 +1,94 @@
+{
+  "slug": "ocd",
+  "ja": "強迫性障害",
+  "yomi": "きょうはくせいしょうがい",
+  "en": "obsessive-compulsive disorder",
+  "abbr": "OCD",
+  "category": "psychology",
+  "meshHeading": "Obsessive-Compulsive Disorder",
+  "meshUi": "68009771",
+  "description": {
+    "ja": "強迫性障害 (OCD) は、本人の意思に反して繰り返し浮かぶ不安な考え (強迫観念) と、その不安を打ち消すために繰り返す行為 (強迫行為) を特徴とする精神疾患です。研究では不安障害や神経精神疾患のひとつとして扱われます。診断にはDSM-5やICD-11などの基準が用いられ、症状の重症度はY-BOCS (Yale-Brown Obsessive Compulsive Scale) などで評価されます。",
+    "en": "Obsessive-compulsive disorder (OCD) is a mental health condition characterized by intrusive, unwanted thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce anxiety. It is studied as an anxiety-related or neuropsychiatric disorder. Diagnosis follows DSM-5 or ICD-11 criteria, and symptom severity is commonly assessed using scales such as the Y-BOCS (Yale-Brown Obsessive Compulsive Scale)."
+  },
+  "usage": {
+    "ja": "論文では「OCD patients」「obsessive-compulsive symptoms」として登場し、脳画像研究、遺伝学研究、心理療法や薬理学的介入の効果検証などで取り上げられます。重症度スケール (Y-BOCS) のスコア変化や、機能的MRIによる前頭葉-線条体回路の活動パターンが測定指標としてよく用いられます。",
+    "en": "In research literature, terms like 'OCD patients' and 'obsessive-compulsive symptoms' appear in neuroimaging studies, genetic research, and trials evaluating psychotherapy or pharmacological interventions. Outcome measures often include changes in Y-BOCS scores and functional MRI patterns in the frontal-striatal circuits."
+  },
+  "synonyms": {
+    "ja": "かつては「強迫神経症」と呼ばれましたが、現在はOCDが標準的な表記です。関連用語として「intrusive thoughts (侵入思考)」「compulsive rituals (強迫的儀式)」があります。OCDスペクトラム障害には身体醜形障害やためこみ症なども含まれる場合があります。",
+    "en": "Previously termed 'obsessive-compulsive neurosis,' the current standard is OCD. Related terms include 'intrusive thoughts' and 'compulsive rituals.' The OCD spectrum may encompass body dysmorphic disorder and hoarding disorder in some classification systems."
+  },
+  "pubmedCount": 26613,
+  "yearlyCount": [
+    {
+      "year": 2017,
+      "count": 996
+    },
+    {
+      "year": 2018,
+      "count": 1024
+    },
+    {
+      "year": 2019,
+      "count": 1074
+    },
+    {
+      "year": 2020,
+      "count": 1234
+    },
+    {
+      "year": 2021,
+      "count": 1351
+    },
+    {
+      "year": 2022,
+      "count": 1305
+    },
+    {
+      "year": 2023,
+      "count": 1182
+    },
+    {
+      "year": 2024,
+      "count": 1177
+    },
+    {
+      "year": 2025,
+      "count": 1350
+    },
+    {
+      "year": 2026,
+      "count": 1262
+    }
+  ],
+  "searchQuery": "(\"Obsessive-Compulsive Disorder\"[MeSH Terms]) OR (\"obsessive-compulsive disorder\"[tiab])",
+  "recentArticles": [
+    {
+      "pmid": "43051727",
+      "title": "Antipsychotics in Anxiety Disorders and Obsessive-compulsive Disorder in Children and Adolescents.",
+      "year": 2027
+    },
+    {
+      "pmid": "42966067",
+      "title": "The treatment efficacy of mindfulness-based cognitive therapy combined with medication on obsessive-compulsive disorder: evidence from effective connectivity of the triple network.",
+      "year": 2027
+    },
+    {
+      "pmid": "42858655",
+      "title": "Radiosurgical capsulotomy for treatment-resistant obsessive-compulsive disorder through a network neuroscience lens.",
+      "year": 2027
+    },
+    {
+      "pmid": "42854305",
+      "title": "Dynamic functional abnormalities of cerebellar networks in adolescents with obsessive-compulsive disorder.",
+      "year": 2027
+    },
+    {
+      "pmid": "42822272",
+      "title": "Altered spontaneous brain activity associated with intolerance of uncertainty and not-just-right experiences in obsessive-compulsive disorder: a resting-state fMRI study.",
+      "year": 2027
+    }
+  ],
+  "generatedAt": "2026-11-21T06:12:42.035Z"
+}
