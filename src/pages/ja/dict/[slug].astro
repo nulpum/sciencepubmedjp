@@ -2,6 +2,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import RakuyokoBanner from '../../../components/RakuyokoBanner.astro';
 import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
@@ -124,6 +125,8 @@ const jsonLd = {
       <a href={labUrl} class="lab-button">PubMed Labで「{entry.ja}」を検索 →</a>
       <p class="hint">当サイトの検索機能で、この用語の最新論文を日本語要約付きで読めます (無料)。</p>
     </section>
+
+    <RakuyokoBanner slug={entry.slug} category={entry.category} />
 
     {entry.recentArticles.length > 0 && (
       <section class="recent">
