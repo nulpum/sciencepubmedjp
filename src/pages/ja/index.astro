@@ -5,12 +5,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const psy = await getCollection('ja_psychology');
 const bio = await getCollection('ja_biology');
 const all = [...psy, ...bio];
-// 2026-11-17: AdSense 対策、 可視 本数 (noindex 除外)
+// 2026-11-17: AdSense 対策、可視本数 (noindex 除外)
 const visiblePsy = psy.filter((p) => !p.data.noindex);
 const visibleBio = bio.filter((p) => !p.data.noindex);
 const totalCount = visiblePsy.length + visibleBio.length;
 
-// Featured deep-dive slugs (最重要記事、手動 キュレーション)
+// Featured deep-dive slugs (最重要記事、手動キュレーション)
 const featuredSlugs = [
   '20260921-adult-adhd-evidence',
   '20260921-gut-microbiome-mental-health',
@@ -25,7 +25,7 @@ const featured = featuredSlugs
   .map((slug) => all.find((p) => p.id === slug))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
-// 最新 20 記事 (深掘り記事 除外して、単一論文 記事のみ)
+// 最新 20 記事 (深掘り記事除外して、単一論文記事のみ)
 const recent = all
   .filter((p) => !featuredSlugs.includes(p.id) && !p.data.noindex)
   .sort((a, b) => Date.parse(b.data.generated_at) - Date.parse(a.data.generated_at))
@@ -39,22 +39,22 @@ const catLabelJa: Record<string, string> = {
 export const prerender = true;
 ---
 <BaseLayout
-  title="PubMed Trivia ｜ 医学論文 を 日本語で 読む 科学メディア — ADHD・腸活・睡眠・GLP-1 の 系統的レビュー 要約"
-  description="NIH の PubMed 掲載 系統的レビュー・メタ解析 を 日本語で わかりやすく 解説。 ADHD・腸内フローラ・プロバイオティクス・睡眠・GLP-1・ミトコンドリア など 深掘り記事 + AI 論文検索 Lab。 全て 無料、 PMID 明記。"
+  title="PubMed Trivia ｜ 医学論文を日本語で読む科学メディア — ADHD・腸活・睡眠・GLP-1 の系統的レビュー要約"
+  description="NIH の PubMed 掲載系統的レビュー・メタ解析を日本語でわかりやすく解説。 ADHD・腸内フローラ・プロバイオティクス・睡眠・GLP-1・ミトコンドリアなど深掘り記事 + AI 論文検索 Lab。全て無料、 PMID 明記。"
   lang="ja"
 >
   {/* Hero */}
   <section class="hero">
     <p class="hero__eyebrow">Science For Life</p>
-    <h1>PubMed の 論文を 日本語で。</h1>
+    <h1>PubMed の論文を日本語で。</h1>
     <p class="hero__body">
-      NIH 公式 論文 DB「PubMed」の 系統的レビュー・メタ解析 を 日本語で わかりやすく 解説。
-      <strong>全 {totalCount} 本 の 記事</strong> は 無料、出典 論文の PMID を 全て 明記しています。
+      NIH 公式論文 DB「PubMed」の系統的レビュー・メタ解析を日本語でわかりやすく解説。
+      <strong>全 {totalCount} 本の記事</strong> は無料、出典論文の PMID を全て明記しています。
     </p>
     <div class="hero__ctas">
-      <a href="/ja/lab/" class="btn btn--primary">🔬 PubMed Lab を 試す</a>
-      <a href="/ja/hub/" class="btn btn--outline">📚 テーマ別 ハブ</a>
-      <a href="/ja/search/" class="btn btn--outline">🔍 記事を 検索</a>
+      <a href="/ja/lab/" class="btn btn--primary">🔬 PubMed Lab を試す</a>
+      <a href="/ja/hub/" class="btn btn--outline">📚 テーマ別ハブ</a>
+      <a href="/ja/search/" class="btn btn--outline">🔍 記事を検索</a>
     </div>
   </section>
 
@@ -62,7 +62,7 @@ export const prerender = true;
   <section class="section">
     <div class="section__head">
       <h2>🌟 深掘りレビュー</h2>
-      <p>10 本前後の 系統的レビュー・メタ解析を 統合した エビデンス総合記事。月 数本 追加。</p>
+      <p>10 本前後の系統的レビュー・メタ解析を統合したエビデンス総合記事。月数本追加。</p>
     </div>
     <ul class="feature-grid">
       {featured.map((p) => (
@@ -80,8 +80,8 @@ export const prerender = true;
   {/* Topic Hubs */}
   <section class="section">
     <div class="section__head">
-      <h2>📚 テーマ別 ハブ</h2>
-      <p>関心の 高い テーマごとに、主要記事と 編集的解説を まとめました。</p>
+      <h2>📚 テーマ別ハブ</h2>
+      <p>関心の高いテーマごとに、主要記事と編集的解説をまとめました。</p>
     </div>
     <ul class="hub-tile-grid">
       <li><a href="/ja/hub/adhd/" class="hub-tile"><span class="hub-tile__emoji">🧠</span><span class="hub-tile__label">ADHD</span></a></li>
@@ -96,7 +96,7 @@ export const prerender = true;
   {/* Categories */}
   <section class="section">
     <div class="section__head">
-      <h2>🗂 カテゴリで 見る</h2>
+      <h2>🗂 カテゴリで見る</h2>
     </div>
     <div class="cat-grid">
       <a href="/ja/psychology/" class="cat-card cat-card--psy">
@@ -113,8 +113,8 @@ export const prerender = true;
   {/* Recent articles */}
   <section class="section">
     <div class="section__head">
-      <h2>🆕 新着 記事</h2>
-      <p>直近 20 本 の 個別論文由来 記事。</p>
+      <h2>🆕 新着記事</h2>
+      <p>直近 20 本の個別論文由来記事。</p>
     </div>
     <ul class="card-grid">
       {recent.map((post) => (
@@ -128,7 +128,7 @@ export const prerender = true;
         </li>
       ))}
     </ul>
-    <p class="section__more"><a href="/ja/archive/">📅 全記事 (年別アーカイブ) を 見る →</a></p>
+    <p class="section__more"><a href="/ja/archive/">📅 全記事 (年別アーカイブ) を見る →</a></p>
   </section>
 
   {/* Editorial */}
@@ -137,14 +137,14 @@ export const prerender = true;
       <h2>📝 このサイトについて</h2>
     </div>
     <p>
-      本サイトは、PubMed の 査読付き論文 (特に 系統的レビュー・メタ解析) を 題材に、
-      日本語話者にも 科学的な 一次情報を 届けることを 目的とした メディアです。
-      Claude AI で 翻案し、薬機法 NG 表現 の 自動フィルタを 通して 公開。
-      詳細は <a href="/ja/editorial-policy/">編集方針</a> を ご覧ください。
+      本サイトは、PubMed の査読付き論文 (特に系統的レビュー・メタ解析) を題材に、
+      日本語話者にも科学的な一次情報を届けることを目的としたメディアです。
+      Claude AI で翻案し、薬機法 NG 表現の自動フィルタを通して公開。
+      詳細は <a href="/ja/editorial-policy/">編集方針</a> をご覧ください。
     </p>
     <ul class="editorial-links">
       <li><a href="/ja/editorial-policy/">📝 編集方針</a></li>
-      <li><a href="/ja/guide/how-to-read-research/">📖 論文の 読み方</a></li>
+      <li><a href="/ja/guide/how-to-read-research/">📖 論文の読み方</a></li>
       <li><a href="/ja/guide/paper-critique/">✔️ 論文批判的読み方</a></li>
       <li><a href="/ja/guide/effect-size-guide/">📊 効果量</a></li>
       <li><a href="/ja/guide/meta-analysis-guide/">📊 メタ解析</a></li>

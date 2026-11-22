@@ -1,5 +1,5 @@
 ---
-// PubMed Lab: 自分の AI 用 プロンプト配布ページ
+// PubMed Lab: 自分の AI 用プロンプト配布ページ
 //
 // ユーザーの ChatGPT / Claude / Gemini に貼れば、PubMed 論文専用の
 // 研究アシスタントに変身するプロンプトを配布。
@@ -13,7 +13,7 @@ import { LAB_CONFIG, isWaitlistEnabled } from '../../../config/lab';
 export const prerender = false;
 
 // プロンプト本体 (これがそのままコピーボタンでコピーされる)
-const MASTER_PROMPT = `# PubMed 論文 壁打ち AI (v1.0)
+const MASTER_PROMPT = `# PubMed 論文壁打ち AI (v1.0)
 
 ## 概要
 あなたは日本の大学生・大学院生のリサーチアシスタントです。
@@ -99,7 +99,7 @@ PubMed の論文 abstract を根拠として、日本語で対話しながら
 const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
 
 const pageTitle = '自分の AI で PubMed 論文と壁打ち ｜ PubMed Lab';
-const pageDesc = 'ChatGPT / Claude / Gemini に貼るだけで、PubMed 論文専用の研究アシスタントになるプロンプトを無料配布。 自分の AI 課金内で無制限に使えます。';
+const pageDesc = 'ChatGPT / Claude / Gemini に貼るだけで、PubMed 論文専用の研究アシスタントになるプロンプトを無料配布。自分の AI 課金内で無制限に使えます。';
 ---
 <BaseLayout title={pageTitle} description={pageDesc} lang="ja">
   <article class="toolkit">
@@ -194,9 +194,9 @@ Abstract: A randomized controlled trial of 120 undergraduate students...
           <p><strong>AI の応答例 (このプロンプトを設定した AI から):</strong></p>
           <p>この研究の要点を 3 つに整理します:</p>
           <ul>
-            <li>大学生 120 名を対象とした RCT で、カフェイン 200mg 摂取群と プラセボ群を比較</li>
+            <li>大学生 120 名を対象とした RCT で、カフェイン 200mg 摂取群とプラセボ群を比較</li>
             <li>摂取から 30 分後、注意課題 (Stroop テスト) の反応速度が有意に向上 (p&lt;0.01)</li>
-            <li>ただし複雑な意思決定課題では 群間差なし → 効果は 単純注意 に限定的</li>
+            <li>ただし複雑な意思決定課題では群間差なし → 効果は単純注意に限定的</li>
           </ul>
           <p>他に何を知りたいですか? (統計手法、限界、卒論テーマ案など)</p>
         </div>
@@ -212,15 +212,15 @@ Abstract: A randomized controlled trial of 120 undergraduate students...
           <ol>
             <li>
               <strong>日本人大学生 100 名の質問紙 + フィールド RCT</strong><br>
-              → 米国データが中心の元論文を、日本人大学生 (試験前カフェイン摂取行動が異なる可能性) で再現。 実施しやすさ ◎
+              → 米国データが中心の元論文を、日本人大学生 (試験前カフェイン摂取行動が異なる可能性) で再現。実施しやすさ ◎
             </li>
             <li>
               <strong>試験前カフェイン摂取と GPA の相関 (横断調査)</strong><br>
-              → RCT ではなく、実際の学業成績 (GPA) との相関を大規模質問紙で。 データ入手ハードル低い
+              → RCT ではなく、実際の学業成績 (GPA) との相関を大規模質問紙で。データ入手ハードル低い
             </li>
             <li>
               <strong>カフェイン × 睡眠時間 × 認知の 3 変数モデル (媒介変数追加)</strong><br>
-              → 元論文はカフェイン単変数。 睡眠不足者に効果が強まる仮説を検証
+              → 元論文はカフェイン単変数。睡眠不足者に効果が強まる仮説を検証
             </li>
           </ol>
           <p>指導教官と要相談ですが、1 番が最も実施しやすく卒論規模に fit します。</p>
@@ -233,7 +233,7 @@ Abstract: A randomized controlled trial of 120 undergraduate students...
           <p><strong>あなたの入力:</strong></p>
           <pre>これに反対の結論を出した研究はある?</pre>
           <p><strong>AI の応答例 (誠実な失敗):</strong></p>
-          <p>私は今、貼っていただいた 1 本の abstract 情報のみを持っています。 他の研究についての情報は持たないため、反対結論の研究の存在を確答できません。</p>
+          <p>私は今、貼っていただいた 1 本の abstract 情報のみを持っています。他の研究についての情報は持たないため、反対結論の研究の存在を確答できません。</p>
           <p>調べる方法:</p>
           <ul>
             <li>PubMed で "caffeine cognitive performance university" などのキーワードで再検索</li>
@@ -260,26 +260,26 @@ Abstract: A randomized controlled trial of 120 undergraduate students...
 
       <details class="toolkit__faq-item">
         <summary>Q: どの AI がおすすめ?</summary>
-        <p>A: 精度重視なら Claude Sonnet か GPT-4o、速さ重視なら Claude Haiku か GPT-4o mini。 abstract を精読するタスクなら、体感差は小さいです。 むしろ「自分がすでに課金している方」を使うのが正解。</p>
+        <p>A: 精度重視なら Claude Sonnet か GPT-4o、速さ重視なら Claude Haiku か GPT-4o mini。 abstract を精読するタスクなら、体感差は小さいです。むしろ「自分がすでに課金している方」を使うのが正解。</p>
       </details>
 
       <details class="toolkit__faq-item">
         <summary>Q: プロンプトをアップデートしたい</summary>
-        <p>A: このページのプロンプトは今後改良していきます。 「新バージョン v1.1」等の掲載時は、貼り直せば良いだけです。 自分で改造して友達にシェアするのも自由です。</p>
+        <p>A: このページのプロンプトは今後改良していきます。「新バージョン v1.1」等の掲載時は、貼り直せば良いだけです。自分で改造して友達にシェアするのも自由です。</p>
       </details>
 
       <details class="toolkit__faq-item">
         <summary>Q: PubMed Lab のサイト内チャット (💬) との使い分けは?</summary>
         <p>A: 用途で使い分けを:</p>
         <ul>
-          <li><strong>PubMed Lab の 💬 壁打ちチャット (無料 3/日)</strong>: 論文カードから直接ボタンで、その論文 abstract が自動注入される。 手軽・気軽・履歴なし。</li>
-          <li><strong>自分の AI (このページのプロンプト、無制限)</strong>: abstract を自分でコピペするひと手間があるが、無制限で履歴も残る。 卒論の下読みなど本気の精読に。</li>
+          <li><strong>PubMed Lab の 💬 壁打ちチャット (無料 3/日)</strong>: 論文カードから直接ボタンで、その論文 abstract が自動注入される。手軽・気軽・履歴なし。</li>
+          <li><strong>自分の AI (このページのプロンプト、無制限)</strong>: abstract を自分でコピペするひと手間があるが、無制限で履歴も残る。卒論の下読みなど本気の精読に。</li>
         </ul>
       </details>
 
       <details class="toolkit__faq-item">
         <summary>Q: プロンプトが期待通りに動かない</summary>
-        <p>A: AI によっては、貼った直後だけ「システム扱い」してくれず単なるメモとして扱う場合があります。 その場合は「今からこのシステムプロンプトの役割で振る舞ってください」と一言添えると効きやすいです。 Claude Projects / ChatGPT マイ GPT のように永続化する仕組みだと、より確実に効きます。</p>
+        <p>A: AI によっては、貼った直後だけ「システム扱い」してくれず単なるメモとして扱う場合があります。その場合は「今からこのシステムプロンプトの役割で振る舞ってください」と一言添えると効きやすいです。 Claude Projects / ChatGPT マイ GPT のように永続化する仕組みだと、より確実に効きます。</p>
       </details>
     </section>
 
@@ -297,7 +297,7 @@ Abstract: A randomized controlled trial of 120 undergraduate students...
           <li>⏰ 卒論シーズン (11-12月) リリース目標</li>
         </ul>
         <a href={waitlistUrl} target="_blank" rel="noopener" class="toolkit__waitlist-btn" data-ga-event="toolkit_waitlist_click">
-          📧 アプリ リリース通知を受け取る (1 分・メールのみ) →
+          📧 アプリリリース通知を受け取る (1 分・メールのみ) →
         </a>
       </section>
     )}

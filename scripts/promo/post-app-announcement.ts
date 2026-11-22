@@ -14,7 +14,7 @@ import { postToThreads, dryRunThreads } from '../threads/post.js';
 import { postToFacebook, dryRunFacebook } from '../facebook/post.js';
 import { postToInstagram, dryRunInstagram } from '../instagram/post.js';
 
-const LAB_URL = 'https://sciencepubmed.net/ja/lab/';
+const LAB_URL = 'https://sciencepubmed.net/ja/lab/?utm_source=sns_promo&utm_medium=social&utm_campaign=app_announcement';
 const WAITLIST_URL = 'https://forms.gle/FEZ2EQ2VG2ie3zEQA';
 const PROMO_IMAGE_URL = 'https://sciencepubmed.net/promo/lab-promo.png';
 

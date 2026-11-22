@@ -19,8 +19,8 @@ import { notifyXPost } from '../x/notify-post.js';
 import { postToX, dryRunX } from '../x/post.js';
 import { postToBluesky, dryRunBluesky } from '../bluesky/post.js';
 
-const TOOLKIT_URL = 'https://sciencepubmed.net/en/lab/toolkit/';
-const LAB_URL = 'https://sciencepubmed.net/en/lab/';
+const TOOLKIT_URL = 'https://sciencepubmed.net/en/lab/toolkit/?utm_source=sns_promo&utm_medium=social&utm_campaign=toolkit';
+const LAB_URL = 'https://sciencepubmed.net/en/lab/?utm_source=sns_promo&utm_medium=social&utm_campaign=toolkit';
 const PROMO_IMAGE_URL = 'https://sciencepubmed.net/promo/lab-promo-en.png';
 
 // ============================================================================

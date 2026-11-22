@@ -4,7 +4,7 @@
 // クエリなしの場合は検索窓 + サンプルクエリ表示
 //
 // 2026-09 更新:
-// - 論文カードに ⭐ 保存 + 💬 壁打ちチャット を追加 (β)
+// - 論文カードに ⭐ 保存 + 💬 壁打ちチャットを追加 (β)
 // - 保存は localStorage、壁打ちは Claude API 経由で /api/chat を叩く
 // - GA4 に lab_search / lab_save_paper / lab_chat_open / lab_chat_message などを送信
 
@@ -123,7 +123,7 @@ const sampleQueries = [
   'HSP (Highly Sensitive Person) の科学的根拠',
   'マインドフルネスと不安症のシステマティックレビュー',
   '運動習慣と認知機能低下の予防',
-  '発達心理学 最近のホット領域',
+  '発達心理学最近のホット領域',
   '大学院進学のメリットと課題',
 ];
 
@@ -207,9 +207,9 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
         {waitlistUrl && (
           <section class="lab__waitlist-cta">
             <div class="lab__waitlist-cta-body">
-              <h2 class="lab__waitlist-cta-title">📱 iOS / Android アプリ 準備中!</h2>
+              <h2 class="lab__waitlist-cta-title">📱 iOS / Android アプリ準備中!</h2>
               <p class="lab__waitlist-cta-desc">
-                PubMed Lab を <strong>スマホアプリ</strong> でもリリース予定です。 卒論シーズンに向けて、リリース時にメールでお知らせします (メールのみ 1 分)。
+                PubMed Lab を <strong>スマホアプリ</strong> でもリリース予定です。卒論シーズンに向けて、リリース時にメールでお知らせします (メールのみ 1 分)。
               </p>
               <ul class="lab__waitlist-cta-benefits">
                 <li>📱 iOS / Android 両対応 (完全無料版・広告付き)</li>
@@ -409,7 +409,7 @@ const waitlistUrl = isWaitlistEnabled() ? LAB_CONFIG.waitlistUrl : '';
             <div class="lab__waitlist-cta-body">
               <h2 class="lab__waitlist-cta-title">📱 スマホアプリ準備中</h2>
               <p class="lab__waitlist-cta-desc">
-                iOS / Android アプリ (無料版・広告付き) を卒論シーズンに向けてリリース予定。 メールで通知受け取りませんか?
+                iOS / Android アプリ (無料版・広告付き) を卒論シーズンに向けてリリース予定。メールで通知受け取りませんか?
               </p>
             </div>
             <a
