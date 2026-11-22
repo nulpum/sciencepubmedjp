@@ -17,8 +17,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=HSP%20%E3%83%8F%E3%82%A4%E3%83%AA%E3%83%BC%20%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%83%96&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「HSP ハイリー センシティブ」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3DHSP%2B%25E3%2583%258F%25E3%2582%25A4%25E3%2583%25AA%25E3%2583%25BC%2B%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2596%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

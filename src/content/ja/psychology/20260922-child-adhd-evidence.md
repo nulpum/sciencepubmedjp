@@ -17,8 +17,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E5%AD%90%E3%81%A9%20ADHD%20%E6%9C%80%E6%96%B0%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「子ど ADHD 最新エビデンス」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E5%25AD%2590%25E3%2581%25A9%2BADHD%2B%25E6%259C%2580%25E6%2596%25B0%25E3%2582%25A8%25E3%2583%2593%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

@@ -17,8 +17,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%AB%E3%83%84%E3%83%8F%E3%82%A4%E3%83%9E%E3%83%BC%E4%BA%88%E9%98%B2%20%E5%8A%B9%E3%81%8F%E7%94%9F%E6%B4%BB%E7%BF%92%E6%85%A3%20%E9%A3%9F%E4%BA%8B&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「アルツハイマー予防 効く生活習慣 食事」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2582%25A2%25E3%2583%25AB%25E3%2583%2584%25E3%2583%258F%25E3%2582%25A4%25E3%2583%259E%25E3%2583%25BC%25E4%25BA%2588%25E9%2598%25B2%2B%25E5%258A%25B9%25E3%2581%258F%25E7%2594%259F%25E6%25B4%25BB%25E7%25BF%2592%25E6%2585%25A3%2B%25E9%25A3%259F%25E4%25BA%258B%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

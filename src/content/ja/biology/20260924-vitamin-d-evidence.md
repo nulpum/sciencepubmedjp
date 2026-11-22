@@ -17,8 +17,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%83%93%E3%82%BF%E3%83%9F%E3%83%B3D%20%E5%85%8D%E7%96%AB%20%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9%E5%8A%B9%E6%9E%9C&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「ビタミンD 免疫 メンタルヘルス効果」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2583%2593%25E3%2582%25BF%25E3%2583%259F%25E3%2583%25B3D%2B%25E5%2585%258D%25E7%2596%25AB%2B%25E3%2583%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%25E3%2583%2598%25E3%2583%25AB%25E3%2582%25B9%25E5%258A%25B9%25E6%259E%259C%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

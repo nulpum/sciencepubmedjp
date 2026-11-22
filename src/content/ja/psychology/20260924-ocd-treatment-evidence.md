@@ -15,8 +15,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E5%BC%B7%E8%BF%AB%E7%97%87%20OCD%20%E6%B2%BB%E7%99%82&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「強迫症 OCD 治療」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E5%25BC%25B7%25E8%25BF%25AB%25E7%2597%2587%2BOCD%2B%25E6%25B2%25BB%25E7%2599%2582%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

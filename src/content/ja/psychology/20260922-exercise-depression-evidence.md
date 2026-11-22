@@ -17,8 +17,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%81%86%E3%81%A4%E7%97%85%20%E9%81%8B%E5%8B%95%E7%99%82%E6%B3%95%20%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%83%A1%E3%82%BF%E8%A7%A3%E6%9E%90&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「うつ病 運動療法 大規模メタ解析」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2581%2586%25E3%2581%25A4%25E7%2597%2585%2B%25E9%2581%258B%25E5%258B%2595%25E7%2599%2582%25E6%25B3%2595%2B%25E5%25A4%25A7%25E8%25A6%258F%25E6%25A8%25A1%25E3%2583%25A1%25E3%2582%25BF%25E8%25A7%25A3%25E6%259E%2590%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---

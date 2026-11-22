@@ -14,8 +14,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E9%81%8E%E6%95%8F%E6%80%A7%E8%85%B8%E7%97%87%E5%80%99%E7%BE%A4%20IBS%20%E6%B2%BB%E7%99%82%E6%9C%80%E5%89%8D%E7%B7%9A%EF%BC%9A%E4%BD%8EFODMAP%E9%A3%9F&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「過敏性腸症候群 IBS 治療最前線：低FODMAP食」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E9%2581%258E%25E6%2595%258F%25E6%2580%25A7%25E8%2585%25B8%25E7%2597%2587%25E5%2580%2599%25E7%25BE%25A4%2BIBS%2B%25E6%25B2%25BB%25E7%2599%2582%25E6%259C%2580%25E5%2589%258D%25E7%25B7%259A%25EF%25BC%259A%25E4%25BD%258EFODMAP%25E9%25A3%259F%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 tags:

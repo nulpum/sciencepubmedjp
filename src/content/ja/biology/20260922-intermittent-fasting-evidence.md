@@ -16,8 +16,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%83%E3%83%86%E3%83%B3%E3%83%88%E6%96%AD%E9%A3%9F%20%E6%9C%AC%E5%BD%93%20%E5%8A%B9%E3%81%8F&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "「インターミッテント断食 本当 効く」で 楽天ブックス 検索"
-    url: "https://af.moshimo.com/af/c/click?a_id=5775073&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBOOKS%2F%3Fp%3D%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%259F%25E3%2583%2583%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2588%25E6%2596%25AD%25E9%25A3%259F%2B%25E6%259C%25AC%25E5%25BD%2593%2B%25E5%258A%25B9%25E3%2581%258F%26f%3D1"
+  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
+    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
   - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
