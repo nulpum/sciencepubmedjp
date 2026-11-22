@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 const { entry, allEntries } = Astro.props as { entry: DictEntry; allEntries: DictEntry[] };
-const indexable = import.meta.env.DICT_INDEXABLE === 'true';
+const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
   research: '研究・統計',
