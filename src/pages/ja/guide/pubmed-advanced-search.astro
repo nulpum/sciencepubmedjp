@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+---
+<BaseLayout
+  title="PubMed 高度検索 — 演算子・フィールドタグ完全攻略 ｜ PubMed Trivia"
+  description="PubMed の検索ノイズを減らすためのフィールドタグ ([title]/[abstract]/[dp]/[mesh])、Boolean 演算子の優先順位、括弧の組み立て、Advanced Search Builder、Clinical Queries、検索履歴の活用までを実例つきで解説。"
+  lang="ja"
+>
+  <article class="guide">
+    <p class="guide__breadcrumb"><a href="/ja/">ホーム</a> › <a href="/ja/guide/">ガイド</a> › PubMed 高度検索</p>
+    <h1>PubMed 高度検索 — 演算子・フィールドタグ完全攻略</h1>
+    <p class="guide__lede">
+      基本検索で「ヒット数が多すぎてレビューしきれない」「関係ない論文が混ざる」と感じたら、
+      <strong>フィールドタグと Boolean 演算子</strong> を身につけるだけで検索精度が一段上がります。
+      このガイドは <a href="/ja/guide/pubmed-search-guide/">PubMed 検索ガイド (基本編)</a> の次に読む発展編です。
+    </p>
+
+    <nav class="guide__toc" aria-label="目次">
+      <p class="guide__toc-title">目次</p>
+      <ol>
+        <li><a href="#fields">フィールドタグ一覧 (必修 10 個)</a></li>
+        <li><a href="#operators">Boolean 演算子の優先順位と括弧</a></li>
+        <li><a href="#phrase">フレーズ検索と自動語幹展開</a></li>
+        <li><a href="#builder">Advanced Search Builder の使い方</a></li>
+        <li><a href="#history">検索履歴の活用 (#1 AND #3)</a></li>
+        <li><a href="#clinical">Clinical Queries で臨床質問を絞る</a></li>
+        <li><a href="#similar">Similar Articles と Cited By</a></li>
+        <li><a href="#pitfalls">よくある失敗パターン</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="fields">1. フィールドタグ一覧 (必修 10 個)</h2>
+    <p>検索語の後に <code>[tag]</code> を付けると、その項目のみを検索します。これだけでノイズが大幅に減ります。</p>
+    <table class="guide__table">
+      <thead>
+        <tr><th>タグ</th><th>意味</th><th>使用例</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>[title]</code> / <code>[ti]</code></td><td>タイトル内のみ</td><td><code>mindfulness[ti]</code></td></tr>
+        <tr><td><code>[tiab]</code></td><td>タイトル + abstract</td><td><code>meditation[tiab]</code></td></tr>
+        <tr><td><code>[mesh]</code> / <code>[mh]</code></td><td>MeSH ターム</td><td><code>Depression[mesh]</code></td></tr>
+        <tr><td><code>[au]</code></td><td>著者名</td><td><code>Kahneman D[au]</code></td></tr>
+        <tr><td><code>[dp]</code></td><td>発表年月日</td><td><code>2023:2025[dp]</code></td></tr>
+        <tr><td><code>[ta]</code></td><td>雑誌略号</td><td><code>Nature[ta]</code></td></tr>
+        <tr><td><code>[pt]</code></td><td>Publication Type</td><td><code>Meta-Analysis[pt]</code></td></tr>
+        <tr><td><code>[la]</code></td><td>論文の言語</td><td><code>English[la]</code></td></tr>
+        <tr><td><code>[sb]</code></td><td>サブセット</td><td><code>systematic[sb]</code></td></tr>
+        <tr><td><code>[pmid]</code></td><td>PMID 直接指定</td><td><code>12345678[pmid]</code></td></tr>
+      </tbody>
+    </table>
+    <p class="guide__callout">
+      💡 <strong>実戦テクニック</strong>: <code>[tiab]</code> は最もよく使う。タイトル + abstract に絞るだけで
+      「関連だけど主題でない」論文を半分以下に減らせます。
+    </p>
+
+    <h2 id="operators">2. Boolean 演算子の優先順位と括弧</h2>
+    <p>PubMed の Boolean 演算子は <code>AND</code> / <code>OR</code> / <code>NOT</code> の 3 つで、<strong>大文字必須</strong>です。</p>
+    <ul>
+      <li><strong>優先順位</strong>: PubMed は <em>左から右へ順に評価</em>します (他のデータベースと違う点)</li>
+      <li>意図した組み立てには <strong>必ず括弧</strong> を使いましょう</li>
+    </ul>
+    <p>例: うつ病 または 不安症 に対する認知行動療法の論文を探したい場合</p>
+    <ul>
+      <li>❌ 誤: <code>depression OR anxiety AND cognitive behavioral therapy</code> (左から → <code>(depression OR anxiety) AND CBT</code> になるが PubMed の仕様に依存して予期しない結果に)</li>
+      <li>✅ 正: <code>(depression[tiab] OR anxiety[tiab]) AND "cognitive behavioral therapy"[tiab]</code></li>
+    </ul>
+
+    <h2 id="phrase">3. フレーズ検索と自動語幹展開</h2>
+    <p>PubMed は入力語を自動で MeSH / 同義語展開します (Automatic Term Mapping)。これを止めたい時はダブルクォートで囲みます。</p>
+    <ul>
+      <li><code>"cognitive behavioral therapy"</code> — 完全フレーズ一致 (自動展開オフ)</li>
+      <li><code>child*</code> — アスタリスクで前方一致 (child, children, childhood, ... 全て)</li>
+      <li><strong>注意</strong>: アスタリスクを使うとその語の MeSH 展開は無効化されます。多用しすぎない。</li>
+    </ul>
+    <p class="guide__callout">
+      ⚠️ <strong>落とし穴</strong>: <code>"heart attack"</code> と検索すると、PubMed が自動で <code>Myocardial Infarction[mesh]</code> に展開する機能が働かず、
+      口語表現でしか書かれていない論文に限定されてしまいます。<strong>フレーズ検索 + MeSH 併用</strong> がベスト:
+      <code>("heart attack"[tiab] OR Myocardial Infarction[mesh])</code>
+    </p>
+
+    <h2 id="builder">4. Advanced Search Builder の使い方</h2>
+    <p>
+      PubMed 画面上部の <strong>Advanced</strong> リンクから「Advanced Search Builder」に入れます。
+      ここでは、フィールドを選んで語を入れていくだけで検索式が自動組み立てされます。
+    </p>
+    <ol>
+      <li>Field: <code>Title/Abstract</code> を選び、語を入力 → Add</li>
+      <li>次の語に <code>AND</code> / <code>OR</code> を選択 → Field と語 → Add</li>
+      <li>画面下部の Query box で検索式を確認・編集</li>
+      <li>Search ボタンで実行</li>
+    </ol>
+    <p>慣れないうちは、Builder で検索式を作ってから自分でタイピング練習するのが近道です。</p>
+
+    <h2 id="history">5. 検索履歴の活用 (#1 AND #3)</h2>
+    <p>
+      1 回のセッション中に複数回検索すると、Advanced ページの下部に <strong>History</strong> が蓄積されます。
+      各検索に <code>#1</code>, <code>#2</code>, ... と番号が振られ、これを組み合わせられます。
+    </p>
+    <ul>
+      <li><code>#1</code>: <code>diabetes[tiab]</code> (120,000 件)</li>
+      <li><code>#2</code>: <code>exercise[tiab]</code> (350,000 件)</li>
+      <li><code>#3</code>: <code>#1 AND #2</code> (5,400 件)</li>
+      <li><code>#4</code>: <code>#3 AND Meta-Analysis[pt]</code> (180 件) ← 絞り込み完了</li>
+    </ul>
+    <p>長い検索式を直接書くより、段階的に絞り込む方がミスを発見しやすく、再現性も担保できます。</p>
+
+    <h2 id="clinical">6. Clinical Queries で臨床質問を絞る</h2>
+    <p>
+      PubMed ホームの「Clinical Queries」ツールは、臨床研究に特化したフィルタを自動適用します。
+      Therapy (治療), Diagnosis (診断), Etiology (病因), Prognosis (予後), Clinical Prediction Guides の 5 カテゴリに対応。
+    </p>
+    <p>Broad / Narrow を選べ、Narrow では高精度 (ノイズ小・漏れ有) の検索式が内部で使われます。</p>
+
+    <h2 id="similar">7. Similar Articles と Cited By</h2>
+    <p>良い 1 本を見つけたら、芋づる式に関連論文を探せます:</p>
+    <ul>
+      <li><strong>Similar Articles</strong>: 論文ページ右サイドに表示、abstract の語彙類似度で機械的に関連論文を推薦</li>
+      <li><strong>Cited By</strong>: PubMed Central (PMC) 内でその論文を引用している論文の一覧</li>
+      <li><strong>References</strong>: その論文が参照している文献 (PMID リンクで遡れる)</li>
+    </ul>
+
+    <h2 id="pitfalls">8. よくある失敗パターン</h2>
+    <p class="guide__callout">
+      ❌ <strong>よくある失敗</strong> → ✅ <strong>対処</strong>
+    </p>
+    <ul>
+      <li>❌ <code>and</code> / <code>or</code> を小文字で書く → ✅ 検索語として扱われてしまうので必ず大文字</li>
+      <li>❌ 括弧を省略 → ✅ 3 語以上の組み合わせは必ず括弧</li>
+      <li>❌ <code>[ti]</code> だけで検索 → ✅ タイトルだけだと関連論文を取り逃がす、<code>[tiab]</code> か <code>[mesh]</code> を併用</li>
+      <li>❌ 大量ヒットで諦める → ✅ <code>Meta-Analysis[pt]</code> や <code>systematic[sb]</code> で質重視に絞る</li>
+      <li>❌ 自動展開を信用しすぎる → ✅ Details ボタンで実際に展開された検索式を必ず確認</li>
+    </ul>
+
+    <p>
+      組み立てた検索式を <a href="/ja/lab/">🔬 PubMed Lab</a> に日本語で貼ると、
+      AI が自動で上記のパターンを使った英語クエリを組み立ててくれます。手元で検証するのにも便利です。
+    </p>
+
+    <p class="guide__updated">最終更新: 2026-11-22</p>
+  </article>
+
+  <style>
+    .guide { max-width: 820px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide__breadcrumb a { color: var(--muted); }
+    .guide h1 { font-size: 1.9rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide__lede { line-height: 1.85; background: var(--fact-bg); padding: 14px 18px; border-radius: 8px; }
+    .guide__toc { background: #f7f9fc; border-left: 4px solid var(--navy); padding: 14px 18px 14px 22px; margin: 28px 0; border-radius: 4px; }
+    .guide__toc-title { font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+    .guide__toc ol { margin: 0; padding-left: 20px; line-height: 1.9; }
+    .guide__toc a { color: var(--link); }
+    .guide h2 { font-size: 1.3rem; color: var(--navy); margin: 36px 0 14px; padding-left: 12px; border-left: 5px solid var(--navy); scroll-margin-top: 16px; }
+    .guide p, .guide ul, .guide ol { line-height: 1.85; }
+    .guide code { background: #f0f4fa; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .guide__callout { background: #fff8e1; border-left: 4px solid #f0b429; padding: 12px 16px; border-radius: 6px; margin: 20px 0; }
+    .guide__table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .guide__table th, .guide__table td { border: 1px solid #d5dceb; padding: 8px 12px; text-align: left; }
+    .guide__table th { background: #f0f4fa; color: var(--navy); }
+    .guide__updated { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 36px; }
+  </style>
+</BaseLayout>

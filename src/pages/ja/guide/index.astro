@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+interface GuideCard {
+  href: string;
+  title: string;
+  description: string;
+  tag: string;
+}
+
+const CARDS: GuideCard[] = [
+  {
+    href: '/ja/guide/pubmed-search-guide/',
+    title: 'PubMed を日本語で使いこなす — 実践ガイド',
+    description: '基本検索、日本語キーワードの扱い、フィルター、MeSH、演算子まで。はじめての PubMed 利用者向け。',
+    tag: '基本',
+  },
+  {
+    href: '/ja/guide/pubmed-advanced-search/',
+    title: 'PubMed 高度検索 — 演算子・フィールドタグ完全攻略',
+    description: '[title]/[abstract]/[dp]/[mesh] などのフィールドタグ、Boolean 演算子の優先順位、検索履歴の活用。ノイズを極限まで減らす。',
+    tag: '発展',
+  },
+  {
+    href: '/ja/guide/meta-analysis-guide/',
+    title: 'メタ解析と系統的レビューの選び分け',
+    description: '一次研究 / レビュー / メタ解析の違いを整理し、エビデンスの強さに応じた読み分け方を解説。',
+    tag: '読解',
+  },
+  {
+    href: '/ja/guide/paper-critique/',
+    title: '論文を批判的に読むチェックリスト',
+    description: 'サンプルサイズ、統計手法、バイアス、COI などを順に確認するテンプレ。卒論指導でよく指摘される観点をカバー。',
+    tag: '読解',
+  },
+  {
+    href: '/ja/guide/effect-size-guide/',
+    title: '効果量 (effect size) の読み方',
+    description: 'Cohen\'s d、r、η² などの典型値と「小・中・大」の目安。p 値だけでなく効果の大きさを評価する習慣を。',
+    tag: '統計',
+  },
+  {
+    href: '/ja/guide/effect-size-calculator/',
+    title: '効果量 計算ツール',
+    description: '平均値 / 標準偏差 / N から Cohen\'s d を計算するミニ電卓。卒論・修論の記述統計サポート。',
+    tag: 'ツール',
+  },
+  {
+    href: '/ja/guide/how-to-read-research/',
+    title: '論文の読み方入門',
+    description: 'abstract → results → methods の順に読む時短テク、何回も読み直す章と1回で済ませる章の分け方。',
+    tag: '読解',
+  },
+  {
+    href: '/ja/guide/glossary/',
+    title: '研究用語集',
+    description: 'RCT / コホート / 交絡 / 有意差 など卒論に出てくる基本語を日本語でコンパクトに整理。',
+    tag: '用語',
+  },
+  {
+    href: '/ja/dict/',
+    title: 'PubMed 専門用語 日英辞典',
+    description: '303語の医学研究用語について、日本語解説、英語定義、PubMed 検索数、関連論文をまとめた辞書。',
+    tag: '辞書',
+  },
+  {
+    href: '/ja/guide/faq/',
+    title: 'よくある質問 (FAQ)',
+    description: '「PubMed と Google Scholar どちら?」「PMID って何?」「レビューの新しさの判断は?」など。',
+    tag: 'FAQ',
+  },
+];
+---
+<BaseLayout
+  title="PubMed と論文読解のガイド集 ｜ PubMed Trivia"
+  description="日本語話者が PubMed を使いこなし、英語論文を効率よく読むための実践ガイド集。基本検索、高度検索、効果量、批判的読み方、用語集などを収録。"
+  lang="ja"
+>
+  <section class="guide-index">
+    <p class="guide-index__breadcrumb"><a href="/ja/">ホーム</a> › ガイド</p>
+    <h1>PubMed と論文読解のガイド</h1>
+    <p class="guide-index__lede">
+      日本語話者が PubMed で英語論文を効率よく探し、読み解くための実践ノウハウを集めました。
+      大学生・大学院生の卒論や修論作成、研究者の文献調査にそのまま使える内容を目指しています。
+    </p>
+
+    <div class="guide-index__grid">
+      {CARDS.map(card => (
+        <a class="guide-card" href={card.href}>
+          <span class={`guide-card__tag guide-card__tag--${card.tag}`}>{card.tag}</span>
+          <h2 class="guide-card__title">{card.title}</h2>
+          <p class="guide-card__desc">{card.description}</p>
+          <span class="guide-card__arrow" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
+
+    <aside class="guide-index__tip">
+      <h2>どこから読めばいい?</h2>
+      <ul>
+        <li><strong>はじめて PubMed を使う</strong> → <a href="/ja/guide/pubmed-search-guide/">PubMed を日本語で使いこなす</a> から</li>
+        <li><strong>検索ノイズが多くて困っている</strong> → <a href="/ja/guide/pubmed-advanced-search/">PubMed 高度検索</a> で演算子を習得</li>
+        <li><strong>卒論で論文を批判的に読みたい</strong> → <a href="/ja/guide/paper-critique/">批判的読解チェックリスト</a></li>
+        <li><strong>専門用語を辞書で確認したい</strong> → <a href="/ja/dict/">日英専門用語辞典</a></li>
+      </ul>
+    </aside>
+
+    <p class="guide-index__updated">最終更新: 2026-11-22</p>
+  </section>
+
+  <style>
+    .guide-index { max-width: 960px; margin: 0 auto; padding: 24px 20px 48px; }
+    .guide-index__breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .guide-index__breadcrumb a { color: var(--muted); }
+    .guide-index h1 { font-size: 2rem; color: var(--navy); margin: 8px 0 16px; }
+    .guide-index__lede {
+      line-height: 1.85;
+      background: var(--fact-bg);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin-bottom: 28px;
+    }
+    .guide-index__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .guide-card {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 20px;
+      background: #fff;
+      border: 1px solid #e0e6f0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      transition: border-color 0.15s, transform 0.1s;
+    }
+    .guide-card:hover {
+      border-color: var(--navy);
+      transform: translateY(-1px);
+    }
+    .guide-card__tag {
+      display: inline-block;
+      padding: 2px 9px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 3px;
+      background: #eaf1fb;
+      color: var(--navy);
+      align-self: flex-start;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+    .guide-card__tag--発展 { background: #ffeadf; color: #a0410e; }
+    .guide-card__tag--統計 { background: #e8f5e9; color: #1b5e20; }
+    .guide-card__tag--ツール { background: #ede7f6; color: #4527a0; }
+    .guide-card__tag--辞書 { background: #fffde7; color: #827717; }
+    .guide-card__tag--FAQ { background: #e0f7fa; color: #006064; }
+    .guide-card__title {
+      font-size: 1.05rem;
+      line-height: 1.4;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+    .guide-card__desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #444;
+      margin: 0 0 8px;
+      flex-grow: 1;
+    }
+    .guide-card__arrow {
+      align-self: flex-end;
+      color: var(--navy);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .guide-index__tip {
+      margin-top: 36px;
+      padding: 18px 22px;
+      background: #f7f9fc;
+      border-left: 4px solid var(--navy);
+      border-radius: 4px;
+    }
+    .guide-index__tip h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+    .guide-index__tip ul {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.9;
+    }
+    .guide-index__updated {
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 36px;
+    }
+  </style>
+</BaseLayout>
