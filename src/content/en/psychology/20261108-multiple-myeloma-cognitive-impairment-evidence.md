@@ -2,7 +2,7 @@
 pmid: "40684516"
 category: psychology
 lang: en
-title: "Multiple Myeloma and Cognitive Impairment: Treatment Effects, Chemo-Fog & Clinical Findings — Evidence Review"
+title: "Multiple Myeloma and Cognitive Impairment: Chemo-Fog Evidence Review"
 fact: "Up to 30% of multiple myeloma patients report cognitive decline during the first six months of treatment, though objective evidence remains limited."
 source_url: "https://pubmed.ncbi.nlm.nih.gov/40684516/"
 journal: "Journal of geriatric oncology"
