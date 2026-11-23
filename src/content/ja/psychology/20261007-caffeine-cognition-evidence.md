@@ -14,8 +14,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%95%E3%82%A7%E3%82%A4%E3%83%B3%20%E8%AA%8D%E7%9F%A5%E6%A9%9F%E8%83%BD%20%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%83%A1%E3%82%BF%E8%A7%A3%E6%9E%90&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "心理学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
-    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
+  - title: "Amazon Prime Student: 学生限定6ヶ月無料"
+    url: "https://www.amazon.co.jp/amazonprime/student?tag=sciencepubm06-22"
   - title: "Kindle Unlimited: 心理学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E5%BF%83%E7%90%86%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 tags:

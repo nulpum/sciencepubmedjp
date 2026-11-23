@@ -16,8 +16,8 @@ affiliate_links:
     url: "https://www.amazon.co.jp/s?k=%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%83%E3%83%86%E3%83%B3%E3%83%88%E6%96%AD%E9%A3%9F%20%E6%9C%AC%E5%BD%93%20%E5%8A%B9%E3%81%8F&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
   - title: "生物学カテゴリの Amazon 検索"
     url: "https://www.amazon.co.jp/s?k=%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=stripbooks&s=review-rank"
-  - title: "楽天ラクヨコ: プチプラ雑貨・ファッション (大学生向け)"
-    url: "https://hb.afl.rakuten.co.jp/hgc/578b922e.072821fb.578b922f.080feb17/?pc=https%3A%2F%2Frakuyoko.rakuten.co.jp%2Fshop%2F1p-ss%2Fitem%2F676150327911&link_type=hybrid_url&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6Imh5YnJpZF91cmwiLCJjb2wiOjF9"
+  - title: "Amazon Prime Student: 学生限定6ヶ月無料"
+    url: "https://www.amazon.co.jp/amazonprime/student?tag=sciencepubm06-22"
   - title: "Kindle Unlimited: 生物学 の 専門書 読み放題"
     url: "https://www.amazon.co.jp/s?k=kindle%20unlimited%20%E7%94%9F%E7%89%A9%E5%AD%A6&tag=sciencepubm06-22&i=digital-text&s=review-rank"
 ---
