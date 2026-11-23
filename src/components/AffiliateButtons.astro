@@ -1,17 +1,19 @@
 ---
-// アフィリエイトリンクを Amazon/楽天 ボタンで表示する共通コンポーネント
+// アフィリエイトリンクを ボタンで表示する共通コンポーネント
+//
+// 2026-11-23 改修: 旧実装は amazonLinks[0] を primary にして「Amazon検索」(keyword)
+//   を全 variant で表示、Prime Student / Kindle Unlimited は bottom の chip 落ち
+//   だった。GA4 で amazon_link_click が 28日 0件、Moshimo の 361 clicks も bot 扱い
+//   と判明したため、CV に直結する Amazon 無料体験 2種 を top/mid の primary 2列に
+//   昇格し、記事冒頭から読者に露出する構成に変更。
 //
 // 使い方 (article slug ページから):
 //   <AffiliateButtons links={post.data.affiliate_links} variant="top" lang="ja" />
 //
 // variant:
-//   top    - 記事冒頭 (優しめのトーン、簡潔な CTA)
-//   mid    - 記事中盤 (本文と原典の間、"読んでみたら次はこの本" 位置)
-//   bottom - 記事末尾 (フル開示付き、最も豊かな UI)
-//
-// links の Amazon/楽天 判別は URL ホストから自動:
-//   - amazon.co.jp → Amazon
-//   - af.moshimo.com → 楽天 (もしも経由)
+//   top    - 記事冒頭 (無料体験 2つ の primary CTA)
+//   mid    - 記事中盤 (本文と原典の間)
+//   bottom - 記事末尾 (フル開示 + 補助リンク chip)
 
 interface Props {
   links: { title: string; url: string }[];
@@ -21,87 +23,139 @@ interface Props {
 
 const { links, variant, lang = 'ja' } = Astro.props as Props;
 
-// Amazon / 楽天 でグルーピング (topic 用の最初の一本ずつを primary CTA として採用)
-const amazonLinks = links.filter((l) => l.url.includes('amazon.co.jp'));
-const rakutenLinks = links.filter((l) => l.url.includes('af.moshimo.com') || l.url.includes('rakuten.co.jp'));
-const primaryAmazon = amazonLinks[0];
-const primaryRakuten = rakutenLinks[0];
+// URL パターンマッチで 用途別に分類
+function isPrimeStudent(l: { url: string }) { return l.url.includes('amazonprime/student'); }
+function isKindleUnlimited(l: { url: string }) {
+  return l.url.includes('kindle') || (l.url.includes('amazon') && l.url.includes('digital-text'));
+}
+function isRakuten(l: { url: string }) {
+  return l.url.includes('af.moshimo.com') || l.url.includes('rakuten.co.jp');
+}
+function isAmazonSearch(l: { url: string }) {
+  return l.url.includes('amazon.co.jp/s') && !isKindleUnlimited(l);
+}
 
-// 2 個目以降 = 補助リンク (broad category 検索 / 読書の相棒 商品)。
-// bottom variant のみで chip 表示 → top/mid の focused CTA は 汚さない。
-// 従来 これらは AffiliateButtons が [0] しか採用しなかったため 表示ゼロだった。
-const extraAmazon = amazonLinks.slice(1);
-const extraRakuten = rakutenLinks.slice(1);
-const extras = [...extraAmazon, ...extraRakuten];
+const primeStudent = links.find(isPrimeStudent);
+const kindleUnlimited = links.find(isKindleUnlimited);
+const amazonSearches = links.filter(isAmazonSearch);
+const rakutens = links.filter(isRakuten);
 
-// バリアントごとの見出し・トーン
+// Primary 2 枠: Prime Student + Kindle Unlimited を 最優先、それらが欠けている
+// 記事 (9本の例外) では従来通り Amazon検索 + 楽天 で埋める
+const primaries: { title: string; url: string; label: string; kind: 'amazon' | 'rakuten' }[] = [];
+if (primeStudent) {
+  primaries.push({
+    title: primeStudent.title,
+    url: primeStudent.url,
+    label: lang === 'ja' ? '🎓 Prime Student 6ヶ月無料' : '🎓 Prime Student 6-Month Free Trial',
+    kind: 'amazon',
+  });
+}
+if (kindleUnlimited) {
+  primaries.push({
+    title: kindleUnlimited.title,
+    url: kindleUnlimited.url,
+    label: lang === 'ja' ? '📚 Kindle Unlimited 読み放題' : '📚 Kindle Unlimited',
+    kind: 'amazon',
+  });
+}
+// Prime Student が無い記事はフォールバック: Amazon検索 + 楽天
+if (primaries.length === 0) {
+  if (amazonSearches[0]) {
+    primaries.push({
+      title: amazonSearches[0].title,
+      url: amazonSearches[0].url,
+      label: lang === 'ja' ? '🛒 Amazon で探す' : '🛒 Search on Amazon',
+      kind: 'amazon',
+    });
+  }
+  if (rakutens[0]) {
+    primaries.push({
+      title: rakutens[0].title,
+      url: rakutens[0].url,
+      label: lang === 'ja' ? '📕 楽天で探す' : '📕 Search on Rakuten',
+      kind: 'rakuten',
+    });
+  }
+}
+// Kindle Unlimited しか無く Prime Student 無しの場合、2枠目を Amazon検索で埋める
+if (primaries.length === 1 && primeStudent === undefined && amazonSearches[0]) {
+  primaries.push({
+    title: amazonSearches[0].title,
+    url: amazonSearches[0].url,
+    label: lang === 'ja' ? '🛒 Amazon で探す' : '🛒 Search on Amazon',
+    kind: 'amazon',
+  });
+}
+if (primaries.length === 1 && kindleUnlimited === undefined && amazonSearches[0]) {
+  primaries.push({
+    title: amazonSearches[0].title,
+    url: amazonSearches[0].url,
+    label: lang === 'ja' ? '🛒 Amazon で探す' : '🛒 Search on Amazon',
+    kind: 'amazon',
+  });
+}
+
+// bottom variant の chip: primary 以外の全リンク (重複除外)
+const primaryUrls = new Set(primaries.map((p) => p.url));
+const extras = links.filter((l) => !primaryUrls.has(l.url));
+
+// variant 別の見出し
 const labels = {
   ja: {
-    top: { emoji: '📖', title: 'このテーマを本で深掘り', sub: '書籍で体系的に学ぶなら:' },
-    mid: { emoji: '📚', title: '関連書籍で深掘りする', sub: 'ここまで読んで気になったら:' },
-    bottom: { emoji: '🔍', title: 'この研究を掘り下げる', sub: 'より深く学びたい方向けに、関連分野の書籍をご紹介します:' },
+    top: { emoji: '🎁', title: '学生限定 無料体験が使えます', sub: '読書で論文理解を深めるなら:' },
+    mid: { emoji: '📖', title: '読み方を広げる無料体験', sub: 'ここまで読んで気になったら:' },
+    bottom: { emoji: '🔍', title: 'この研究を掘り下げる', sub: 'Amazon の学生向け無料体験と関連書籍で深く学べます:' },
   },
   en: {
-    top: { emoji: '📖', title: 'Dive deeper with a book', sub: 'For systematic study:' },
-    mid: { emoji: '📚', title: 'Explore related books', sub: 'If this interests you:' },
-    bottom: { emoji: '🔍', title: 'Explore this topic further', sub: 'Related books for deeper reading:' },
+    top: { emoji: '🎁', title: 'Free trials for students', sub: 'Extend your reading with:' },
+    mid: { emoji: '📖', title: 'Broaden with a free trial', sub: 'If this interests you:' },
+    bottom: { emoji: '🔍', title: 'Explore this topic further', sub: 'Amazon student trials and related books:' },
   },
 };
 const t = labels[lang][variant];
-const amazonBtn = lang === 'ja' ? '🛒 Amazon で探す' : '🛒 Search on Amazon';
-const rakutenBtn = lang === 'ja' ? '📕 楽天で探す' : '📕 Search on Rakuten';
 const disclosureShort = lang === 'ja' ? '#PR / アフィリエイトリンク' : '#PR / affiliate links';
 const disclosureFull = lang === 'ja'
-  ? '#PR / 本サイトは Amazon アソシエイトおよび もしもアフィリエイト経由の楽天ブックスに参加しており、リンク経由の購入で紹介料を受け取ることがあります (ユーザーの購入金額は変わりません)'
-  : '#PR / This site participates in Amazon Associates and Rakuten Books (via Moshimo Affiliate). Purchases via these links may earn us a small commission at no extra cost to you.';
+  ? '#PR / 本サイトは Amazon アソシエイトおよび もしもアフィリエイト経由の楽天ブックスに参加しており、リンク経由の購入または無料体験登録で紹介料を受け取ることがあります (ユーザーの支払いは変わりません)'
+  : '#PR / This site participates in Amazon Associates and Rakuten Books (via Moshimo Affiliate). Purchases or free-trial signups via these links may earn us a small commission at no extra cost to you.';
 ---
-{(primaryAmazon || primaryRakuten) && (
+{primaries.length > 0 && (
   <aside class={`aff-cta aff-cta--${variant}`}>
     <p class="aff-cta__label">{t.emoji} {t.title}</p>
     <p class="aff-cta__sub">{t.sub}</p>
     <div class="aff-cta__buttons">
-      {primaryAmazon && (
+      {primaries.map((p) => (
         <a
-          href={primaryAmazon.url}
+          href={p.url}
           rel="sponsored noopener"
           target="_blank"
-          class="aff-cta__btn aff-cta__btn--amazon"
-          data-affiliate="amazon"
+          class={`aff-cta__btn aff-cta__btn--${p.kind}`}
+          data-affiliate={p.kind}
           data-variant={variant}
         >
-          <span class="aff-cta__btn-text">{amazonBtn}</span>
+          <span class="aff-cta__btn-text">{p.label}</span>
           <span class="aff-cta__btn-arrow">→</span>
         </a>
-      )}
-      {primaryRakuten && (
-        <a
-          href={primaryRakuten.url}
-          rel="sponsored noopener"
-          target="_blank"
-          class="aff-cta__btn aff-cta__btn--rakuten"
-          data-affiliate="rakuten"
-          data-variant={variant}
-        >
-          <span class="aff-cta__btn-text">{rakutenBtn}</span>
-          <span class="aff-cta__btn-arrow">→</span>
-        </a>
-      )}
+      ))}
     </div>
     {variant === 'bottom' && extras.length > 0 && (
       <div class="aff-cta__extras">
         <p class="aff-cta__extras-label">{lang === 'ja' ? '↓ 他のおすすめリンク:' : '↓ Other related links:'}</p>
         <div class="aff-cta__chips">
-          {extras.map((link) => (
-            <a
-              href={link.url}
-              rel="sponsored noopener"
-              target="_blank"
-              class={`aff-cta__chip ${link.url.includes('amazon.co.jp') ? 'aff-cta__chip--amazon' : 'aff-cta__chip--rakuten'}`}
-              data-affiliate={link.url.includes('amazon.co.jp') ? 'amazon-extra' : 'rakuten-extra'}
-            >
-              {link.title}
-            </a>
-          ))}
+          {extras.map((link) => {
+            const isAmz = link.url.includes('amazon');
+            return (
+              <a
+                href={link.url}
+                rel="sponsored noopener"
+                target="_blank"
+                class={`aff-cta__chip ${isAmz ? 'aff-cta__chip--amazon' : 'aff-cta__chip--rakuten'}`}
+                data-affiliate={isAmz ? 'amazon-extra' : 'rakuten-extra'}
+              >
+                {link.title}
+              </a>
+            );
+          })}
         </div>
       </div>
     )}
@@ -189,7 +243,6 @@ const disclosureFull = lang === 'ja'
   }
   .aff-cta--mid .aff-cta__note { color: #6d8060; }
 
-  /* 補助リンク (bottom variant のみ) */
   .aff-cta__extras {
     margin: 14px 0 4px;
     padding-top: 12px;
