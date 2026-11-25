@@ -11279,6 +11279,30 @@
       "category": "psychology",
       "postedAt": "2026-11-25T05:04:33.741Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n34f3ofdqg2e"
+    },
+    {
+      "platform": "threads",
+      "slug": "20261125-39433151",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-11-25T21:48:57.611Z",
+      "postId": "17937753960142677"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261125-42148821",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-25T21:49:05.435Z",
+      "postId": "1103479166185406_122118897423321286"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261125-sleep-insulin-resistance-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-25T21:49:11.029Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n365a3ccg525"
     }
   ]
 }
