@@ -12,7 +12,7 @@
 //   - リクナビ 薬剤師 / ファル・メイト: 薬剤師 (¥10,000-20,000/件)
 //   - リクルートエージェント: ジェネラル 大学生 (¥3,000-10,000/件)
 
-export type CareerVariant = 'nurse' | 'doctor' | 'pharmacist' | 'researcher' | 'general';
+export type CareerVariant = 'nurse' | 'doctor' | 'pharmacist' | 'researcher' | 'general' | 'english_learning';
 
 export interface CareerCTA {
   id: string;
@@ -113,11 +113,38 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
     disclosureShort: '#PR / アフィリエイトリンク',
     placeholder: false,
   },
+  english_learning: {
+    id: 'english-learning-v1',
+    variant: 'english_learning',
+    title: '📘 英語論文を読む力を鍛える',
+    description:
+      'PubMed論文の英語がスラスラ読めるようになりたい方へ。スタディサプリENGLISHビジネス英語コースなら、科学論文・ビジネスメール両対応の実践英語を短期間で習得。',
+    bullets: [
+      '7日間無料体験 (期間内キャンセル無料)',
+      'スマホ1日5分から継続可',
+      'TOEIC スコア 平均 +100点 の 実績',
+    ],
+    ctaLabel: '7日間無料で試してみる →',
+    url: '#placeholder-asp-url',
+    provider: 'スタディサプリENGLISH ビジネス英語 (A8.net 経由)',
+    disclosureShort: '#PR / アフィリエイトリンク',
+    placeholder: true,
+  },
 };
+
+function hashSlug(s?: string): number {
+  if (!s) return 0;
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
 
 /**
  * 記事 slug / カテゴリ / タグ から 最適 な variant を 選ぶ。
- * 現状 は tag ベース ヒューリスティック。 ASP 導入後 に a/b test で 調整。
+ * - 特定 マッチ (nurse/doctor/pharmacist) が live な ら 最優先
+ * - english_learning が live な ら 約 30% の 記事 で ローテ 挿入
+ * - 残り は 研究系 → researcher、 その他 → general で fallback
+ * - placeholder 状態 の variant は 選ば ない (本番 非表示 を 回避)
  */
 export function pickCareerVariant(opts: {
   category?: string;
@@ -125,23 +152,29 @@ export function pickCareerVariant(opts: {
   slug?: string;
   lang?: 'ja' | 'en';
 }): CareerVariant | null {
-  // EN 記事 は 当面 対象 外 (日本 ASP ばかり)
   if (opts.lang === 'en') return null;
 
   const haystack = [
     opts.slug || '',
     ...(opts.tags || []),
   ].join(' ').toLowerCase();
+  const isLive = (v: CareerVariant) => !CAREER_CTAS[v].placeholder;
+  const slugHash = hashSlug(opts.slug);
 
-  // 高単価 順 で マッチング
-  if (/\b(doctor|physician|医師|医療従事者|clinical)\b/i.test(haystack)) return 'doctor';
-  if (/\b(nurse|nursing|看護)\b/i.test(haystack)) return 'nurse';
-  if (/\b(pharmac|薬剤|drug|medication)\b/i.test(haystack)) return 'pharmacist';
-  if (/\b(research|phd|postdoc|biology|biotechn|genomics|研究)\b/i.test(haystack)) return 'researcher';
+  // 1. 特定 マッチ (live な ら 優先)
+  if (/(doctor|physician|医師|clinical)/i.test(haystack) && isLive('doctor')) return 'doctor';
+  if (/(nurse|nursing|看護)/i.test(haystack) && isLive('nurse')) return 'nurse';
+  if (/(pharmac|薬剤|drug|medication)/i.test(haystack) && isLive('pharmacist')) return 'pharmacist';
 
-  // カテゴリ fallback
-  if (opts.category === 'biology') return 'researcher';
-  if (opts.category === 'psychology') return 'general';
+  // 2. English learning rotation (ja 全体 の 約 30%)
+  if (isLive('english_learning') && slugHash % 10 < 3) return 'english_learning';
 
-  return 'general';
+  // 3. 研究系 → researcher (live な ら)
+  if (/(research|phd|postdoc|biology|biotechn|genomics|研究)/i.test(haystack) && isLive('researcher')) return 'researcher';
+  if (opts.category === 'biology' && isLive('researcher')) return 'researcher';
+
+  // 4. fallback
+  if (isLive('general')) return 'general';
+  if (isLive('english_learning')) return 'english_learning';
+  return null;
 }
