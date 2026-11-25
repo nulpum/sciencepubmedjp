@@ -3,7 +3,7 @@
 // ASP 審査通過 前 は placeholder として disabled 表示 し、 click を飛ばさない。
 // URL 入手 後 config/career-ctas.ts の url と placeholder: false に 差し替え 。
 
-import { CAREER_CTAS, pickCareerVariant } from '../config/career-ctas';
+import { CAREER_CTAS, pickCareerVariant, hashSlug } from '../config/career-ctas';
 import type { CareerVariant } from '../config/career-ctas';
 
 export interface Props {
@@ -16,7 +16,17 @@ export interface Props {
 
 const { category, tags, slug, lang = 'ja', forceVariant } = Astro.props;
 const variant = forceVariant || pickCareerVariant({ category, tags, slug, lang });
-const cta = variant ? CAREER_CTAS[variant] : null;
+const baseCta = variant ? CAREER_CTAS[variant] : null;
+
+// 代替 ASP が ある 場合、 slug hash で ローテーション 配信 (節操 なく 全部 使う)
+function resolveCta(base: typeof baseCta, s?: string) {
+  if (!base) return null;
+  const alts = base.alternatives ?? [];
+  if (alts.length === 0) return base;
+  const pool = [base, ...alts.map(a => ({ ...base, ...a }))];
+  return pool[hashSlug(s) % pool.length];
+}
+const cta = resolveCta(baseCta, slug);
 
 // placeholder (ASP 審査中 で URL 未入手) の 間 は 本番 非表示。
 // ローカル確認用 に CAREER_CTA_PREVIEW=true で 強制 表示 可能。

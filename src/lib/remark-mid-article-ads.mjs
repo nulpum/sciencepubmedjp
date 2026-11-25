@@ -48,6 +48,16 @@ const ADS = {
 </a>
 </aside>`,
   },
+  yumecareer_tenshoku: {
+    label: 'ユメキャリ 転職 (バリューコマース)',
+    html: `<aside class="inline-ad inline-ad--yumecareer" aria-label="ユメキャリ 20代 転職エージェント">
+<p class="inline-ad__label">#PR / バリューコマース 経由</p>
+<div class="inline-ad__body">
+<script src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3789847&amp;pid=892757783"></script>
+<noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&amp;pid=892757783" rel="sponsored nofollow noopener"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3789847&amp;pid=892757783" border="0" alt="ユメキャリ 20代 転職" /></a></noscript>
+</div>
+</aside>`,
+  },
   kindle_unlimited: {
     label: 'Kindle Unlimited JP',
     html: `<aside class="inline-ad inline-ad--ku" aria-label="Kindle Unlimited JP">
@@ -74,11 +84,13 @@ function pickOrder(slug) {
   const h = hashStr(slug);
   const orders = [
     ['yahoo', 'prime_student', 'kindle_unlimited'],
-    ['prime_student', 'kindle_unlimited', 'yahoo'],
-    ['kindle_unlimited', 'yahoo', 'prime_student'],
-    ['yahoo', 'kindle_unlimited', 'prime_student'],
+    ['prime_student', 'kindle_unlimited', 'yumecareer_tenshoku'],
+    ['kindle_unlimited', 'yahoo', 'yumecareer_tenshoku'],
+    ['yumecareer_tenshoku', 'kindle_unlimited', 'prime_student'],
+    ['yahoo', 'yumecareer_tenshoku', 'prime_student'],
     ['prime_student', 'yahoo', 'kindle_unlimited'],
-    ['kindle_unlimited', 'prime_student', 'yahoo'],
+    ['yumecareer_tenshoku', 'yahoo', 'kindle_unlimited'],
+    ['kindle_unlimited', 'yumecareer_tenshoku', 'prime_student'],
   ];
   return orders[h % orders.length];
 }

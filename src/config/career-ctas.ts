@@ -25,6 +25,14 @@ export interface CareerCTA {
   provider: string;
   disclosureShort: string;
   placeholder: boolean;
+  alternatives?: Array<{
+    url: string;
+    provider: string;
+    title?: string;
+    description?: string;
+    bullets?: string[];
+    ctaLabel?: string;
+  }>;
 }
 
 export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
@@ -44,6 +52,16 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
     provider: 'MCナースネット (バリューコマース経由)',
     disclosureShort: '#PR / アフィリエイトリンク',
     placeholder: false,
+    alternatives: [
+      {
+        url: 'https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&pid=892757782',
+        provider: 'スーパーナース 長期派遣 (バリューコマース経由)',
+        title: '🏥 看護師の長期派遣・転職をサポート',
+        description:
+          '在学中の実習や卒後のキャリア形成を見据えて。スーパーナースの長期派遣なら、希望条件で働きたい病院を選びながら実務経験を積める。',
+        ctaLabel: '無料で派遣求人を見てみる →',
+      },
+    ],
   },
   doctor: {
     id: 'doctor-v1',
@@ -112,6 +130,21 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
     provider: 'type転職エージェント (もしもアフィリエイト経由)',
     disclosureShort: '#PR / アフィリエイトリンク',
     placeholder: false,
+    alternatives: [
+      {
+        url: 'https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&pid=892757784',
+        provider: 'ユメキャリ 就職エージェント (バリューコマース経由)',
+        title: '🎓 28卒 新卒・院卒 向け 就活エージェント',
+        description:
+          '28卒 (大学4年・修士2年) のあなたへ。年内内定を目指す新卒特化の無料エージェント。研究室と就活の両立をプロがサポート。',
+        bullets: [
+          '登録無料・完全無料利用',
+          '28卒向けの選考ルート多数',
+          'ES・面接対策を個別サポート',
+        ],
+        ctaLabel: '28卒向け内定相談を始める →',
+      },
+    ],
   },
   english_learning: {
     id: 'english-learning-v1',
@@ -132,7 +165,7 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
   },
 };
 
-function hashSlug(s?: string): number {
+export function hashSlug(s?: string): number {
   if (!s) return 0;
   let h = 0;
   for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
