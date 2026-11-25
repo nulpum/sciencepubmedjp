@@ -31,19 +31,19 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
   nurse: {
     id: 'nurse-v1',
     variant: 'nurse',
-    title: '🏥 看護師の転職を無料でサポート',
+    title: '🏥 看護師の求人・転職をサポート',
     description:
-      '看護系の論文解説を読んでいる あなたへ。マイナビ看護師 / ナース人材バンクなら、非公開求人多数・専任キャリアアドバイザーが無料でサポート。',
+      '看護系の論文解説を読んでいるあなたへ。MCナースネットなら登録無料で、常勤・派遣・単発バイトまで幅広い看護師求人をプロが紹介。在学中の情報収集にも。',
     bullets: [
       '登録・利用すべて無料',
-      '夜勤なし / 日勤のみ 等 の 条件別検索',
-      'LINE で 気軽に相談 OK',
+      '常勤 / 派遣 / 単発バイト を 一括検索',
+      '在学中の 情報収集 OK',
     ],
-    ctaLabel: '無料で求人を見てみる →',
-    url: '#placeholder-asp-url', // TODO: ASP 審査通過後に実URL差し替え
-    provider: 'マイナビ看護師 等 (審査中)',
+    ctaLabel: '無料で看護師求人を見てみる →',
+    url: 'https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&pid=892757780',
+    provider: 'MCナースネット (バリューコマース経由)',
     disclosureShort: '#PR / アフィリエイトリンク',
-    placeholder: true,
+    placeholder: false,
   },
   doctor: {
     id: 'doctor-v1',

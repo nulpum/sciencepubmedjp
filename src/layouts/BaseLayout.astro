@@ -732,6 +732,75 @@ const siteName = lang === 'ja' ? 'PubMed Trivia' : 'PubMed Trivia';
     </style>
   
     <style is:global>
+  /* 記事 中間 挿入 広告 (remark-mid-article-ads 生成) */
+  .inline-ad {
+    margin: 2rem 0;
+    padding: 0.8rem 1rem;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-left: 3px solid #999;
+    border-radius: 4px;
+  }
+  .inline-ad__label {
+    font-size: 0.68rem;
+    color: #888;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+  }
+  .inline-ad__body { text-align: center; }
+  .inline-ad__body img { max-width: 100%; height: auto; }
+  .inline-ad__card {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.35rem;
+    padding: 0.8rem 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.15s, transform 0.12s;
+  }
+  .inline-ad__card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  .inline-ad__card-badge {
+    display: inline-block;
+    width: fit-content;
+    font-size: 0.72rem;
+    background: #333;
+    color: white;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+  }
+  .inline-ad--prime .inline-ad__card-badge { background: #ff9900; color: #111; }
+  .inline-ad--ku .inline-ad__card-badge { background: #146eb4; }
+  .inline-ad__card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a3550;
+  }
+  .inline-ad__card-desc {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .inline-ad__card-cta {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d04040;
+    margin-top: 0.2rem;
+  }
+  @media (max-width: 600px) {
+    .inline-ad { padding: 0.7rem 0.8rem; }
+    .inline-ad__card { padding: 0.7rem 0.8rem; }
+    .inline-ad__card-title { font-size: 0.95rem; }
+    .inline-ad__card-desc { font-size: 0.82rem; }
+  }
+
       .reading-progress-bar {
         position: fixed;
         top: 0;

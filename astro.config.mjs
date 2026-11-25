@@ -4,6 +4,7 @@ import cloudflare from '@astrojs/cloudflare';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { remarkDictLinks } from './src/lib/remark-dict-links.mjs';
+import { remarkMidArticleAds } from './src/lib/remark-mid-article-ads.mjs';
 
 // Build a Set of noindex URL paths at config load time so sitemap can exclude them.
 // Astro sitemap integration doesn't know about frontmatter — it only sees URLs.
@@ -56,7 +57,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkDictLinks],
+    remarkPlugins: [remarkDictLinks, remarkMidArticleAds],
   },
   integrations: [
     sitemap({
