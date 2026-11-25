@@ -115,13 +115,14 @@ STRUCTURE (H2 sections):
 
 The "Studies referenced" section MUST list each cited PMID with a 1-2 sentence description and a full PubMed link like: "- [PMID XXXXX](https://pubmed.ncbi.nlm.nih.gov/XXXXX/) — ..."
 
-OUTPUT FORMAT: strict JSON with exactly these keys:
-{
-  "title": "SEO-friendly title <= 70 chars, includes core keyword",
-  "fact": "1-sentence hook <= 200 chars for OGP/meta-description",
-  "body": "The full Markdown body starting with the first ## section"
-}
-No prose outside the JSON. No code fences.`;
+OUTPUT FORMAT: Three XML-style tags, nothing outside them.
+<title>SEO-friendly title <= 70 chars, includes core keyword</title>
+<fact>1-sentence hook <= 200 chars for OGP/meta-description</fact>
+<body>
+The full Markdown body starting with the first ## section.
+Write markdown freely here -- quotes, newlines, special chars are all fine.
+</body>
+No prose outside these three tags. No code fences.`;
   }
   return `あなたは 科学サイエンス系トリビアサイトの シニアライターです。PubMed の複数のアブストラクトを 統合し、一般読者向けの 深堀り "エビデンスレビュー" 記事を 1 本 生成します。
 
@@ -146,13 +147,14 @@ No prose outside the JSON. No code fences.`;
 「引用した研究」セクションでは 各 PMID を 1-2 文の説明とともに:
 "- [PMID XXXXX](https://pubmed.ncbi.nlm.nih.gov/XXXXX/) — ..." 形式でリスト。
 
-出力形式: 厳密な JSON、以下のキーのみ:
-{
-  "title": "SEO を意識したタイトル、70字以内、コアキーワード含む",
-  "fact": "OGP/meta description 用の 200 字以内 の フック 1 文",
-  "body": "完全な Markdown 本文、最初の ## セクションから始まる"
-}
-JSON の外に散文を書かない。コードフェンスも付けない。`;
+出力形式: 3 つの XML 風 タグ だけ、 外側 に 何も 書かない。
+<title>SEO を意識したタイトル、70字以内、コアキーワード含む</title>
+<fact>OGP/meta description 用 の 200 字以内 の フック 1 文</fact>
+<body>
+完全な Markdown 本文、 最初 の ## セクション から 始まる。
+引用符 や 改行 や 特殊文字 は そのまま 書いて OK。
+</body>
+タグ の 外 に 散文 を 書かない。 コードフェンス も 付けない。`;
 }
 
 function buildUserPrompt(articles: PubmedArticle[], titleHint: string, query: string): string {
@@ -191,11 +193,19 @@ async function generate(articles: PubmedArticle[], lang: 'ja' | 'en', titleHint:
   });
   const block = res.content.find((b) => b.type === 'text');
   if (!block || block.type !== 'text') throw new Error('text block なし');
-  const cleaned = block.text
-    .replace(/^```(?:json)?\s*/i, '')
-    .replace(/\s*```$/, '')
-    .trim();
-  const obj = JSON.parse(cleaned) as Generated;
+  const raw = block.text.trim();
+  // XML タグ 抽出 (JSON parse の " escape 脆弱性 を 回避)
+  const extract = (tag: string): string => {
+    const re = new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`, 'i');
+    const m = raw.match(re);
+    if (!m) throw new Error(`<${tag}> タグ が 見つからない`);
+    return m[1].trim();
+  };
+  const obj: Generated = {
+    title: extract('title'),
+    fact: extract('fact'),
+    body: extract('body'),
+  };
   if (!obj.title || !obj.fact || !obj.body) throw new Error('title/fact/body 揃わず');
   Logger.info(`  ✓ 生成成功: title="${obj.title.slice(0, 60)}..." body ${obj.body.length} chars`);
   return obj;
