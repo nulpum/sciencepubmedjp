@@ -158,10 +158,10 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
       'TOEIC スコア 平均 +100点 の 実績',
     ],
     ctaLabel: '7日間無料で試してみる →',
-    url: '#placeholder-asp-url',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4BGTLQ+16V8C2+3AQG+TRVYQ',
     provider: 'スタディサプリENGLISH ビジネス英語 (A8.net 経由)',
     disclosureShort: '#PR / アフィリエイトリンク',
-    placeholder: true,
+    placeholder: false,
   },
 };
 
