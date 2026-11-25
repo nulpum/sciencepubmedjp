@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleHubLink from '../../../components/ArticleHubLink.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
+import CareerAffiliateCTA from '../../../components/CareerAffiliateCTA.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
 import ShareX from '../../../components/ShareX.astro';
@@ -234,6 +235,13 @@ export const prerender = true;
     {post.data.affiliate_links && post.data.affiliate_links.length > 0 && (
       <AffiliateButtons links={post.data.affiliate_links} variant="mid" lang="ja" />
     )}
+
+    <CareerAffiliateCTA
+      category={post.data.category}
+      tags={post.data.tags}
+      slug={post.id}
+      lang="ja"
+    />
 
     <hr />
 
