@@ -7,6 +7,8 @@ import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
 
+type RelatedArticle = { slug: string; category: 'biology' | 'psychology'; title: string };
+
 export async function getStaticPaths() {
   const dir = join(process.cwd(), 'data', 'dict', 'entries');
   let files: string[] = [];
@@ -19,10 +21,46 @@ export async function getStaticPaths() {
       entries.push(json);
     } catch {}
   }
-  return entries.map(e => ({ params: { slug: e.slug }, props: { entry: e, allEntries: entries } }));
+  // 記事を一度だけ読み込み、各辞書 entry との マッチを O(entries × articles) で 計算
+  const articles: Array<{ slug: string; category: 'biology' | 'psychology'; title: string; body: string }> = [];
+  for (const cat of ['biology', 'psychology'] as const) {
+    const adir = join(process.cwd(), 'src', 'content', 'ja', cat);
+    let afiles: string[] = [];
+    try { afiles = await readdir(adir); } catch { continue; }
+    for (const f of afiles) {
+      if (!f.endsWith('.md')) continue;
+      try {
+        const raw = await readFile(join(adir, f), 'utf-8');
+        const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+        const noindex = /^noindex:\s*true/m.test(fm?.[1] ?? '');
+        if (noindex) continue;
+        const titleMatch = (fm?.[1] ?? '').match(/^title:\s*"([^"]+)"/m);
+        const title = titleMatch?.[1] ?? '';
+        if (!title) continue;
+        articles.push({ slug: f.replace(/\.md$/, ''), category: cat, title, body: raw });
+      } catch {}
+    }
+  }
+  return entries.map(e => {
+    const needles = [e.ja, e.en.toLowerCase()].filter(Boolean);
+    const abbr = e.abbr?.toLowerCase();
+    const matched = articles
+      .filter(a => {
+        const bodyLower = a.body.toLowerCase();
+        return needles.some(n => a.body.includes(n) || bodyLower.includes(n.toLowerCase())) ||
+               (abbr && bodyLower.includes(abbr));
+      })
+      .slice(0, 4)
+      .map(a => ({ slug: a.slug, category: a.category, title: a.title }));
+    return { params: { slug: e.slug }, props: { entry: e, allEntries: entries, relatedArticles: matched } };
+  });
 }
 
-const { entry, allEntries } = Astro.props as { entry: DictEntry; allEntries: DictEntry[] };
+const { entry, allEntries, relatedArticles } = Astro.props as {
+  entry: DictEntry;
+  allEntries: DictEntry[];
+  relatedArticles: RelatedArticle[];
+};
 const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
@@ -45,21 +83,48 @@ const related = allEntries
   .slice(0, 5);
 
 const labUrl = `/ja/lab/?q=${encodeURIComponent(entry.ja)}`;
-const title = `${entry.ja} (${entry.en})${entry.abbr ? ' / ' + entry.abbr : ''} ｜ PubMed 日英辞書`;
-const description = entry.description.ja.slice(0, 150);
+const pubmedStr = entry.pubmedCount.toLocaleString();
+const title = `${entry.ja}とは? 意味・使い方・PubMed論文${pubmedStr}件 | ${entry.en} 日英辞書`;
+const description = `${entry.ja} (${entry.en}) の意味と使い方をPubMed論文${pubmedStr}件から解説。類義語・年次推移・最新論文リスト付き。無料の日英対訳リファレンス。`;
+const pageUrl = `https://sciencepubmed.net/ja/dict/${entry.slug}/`;
 
 // JSON-LD (DefinedTerm)
-const jsonLd = {
+const definedTermLd = {
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
   name: entry.ja,
   alternateName: [entry.en, entry.abbr, ...(entry.aliases || [])].filter(Boolean),
   description: entry.description.ja,
+  url: pageUrl,
+  inLanguage: 'ja',
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     name: 'PubMed 日英辞書',
     url: 'https://sciencepubmed.net/ja/dict/',
   },
+};
+
+// FAQPage schema (featured snippet 狙い)
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: `${entry.ja}とは何ですか?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.description.ja },
+    },
+    {
+      '@type': 'Question',
+      name: `${entry.ja}は論文でどう使われますか?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.usage.ja },
+    },
+    {
+      '@type': 'Question',
+      name: `${entry.ja}の類義語・関連語は?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.synonyms.ja },
+    },
+  ],
 };
 ---
 <BaseLayout title={title} description={description} lang="ja" noindex={!indexable} ogImage={`/og/dict/${entry.slug}.png`} ogType="article">
@@ -70,7 +135,7 @@ const jsonLd = {
 
     <header>
       <div class="cat-badge">{CATEGORY_LABELS[entry.category]}</div>
-      <h1>{entry.ja}</h1>
+      <h1>{entry.ja}とは?</h1>
       <p class="en-term"><strong>{entry.en}</strong>{entry.abbr && <span class="abbr"> ({entry.abbr})</span>}</p>
       {entry.aliases && entry.aliases.length > 0 && (
         <p class="aliases">別表記: {entry.aliases.join(' / ')}</p>
@@ -94,6 +159,23 @@ const jsonLd = {
       <h2>類義語・注意点</h2>
       <p>{entry.synonyms.ja}</p>
     </section>
+
+    {relatedArticles.length > 0 && (
+      <section class="related-articles">
+        <h2>📚「{entry.ja}」を扱った研究記事</h2>
+        <p class="hint">本サイトのPubMed論文解説から、この用語が登場する記事:</p>
+        <ul class="article-list">
+          {relatedArticles.map(a => (
+            <li>
+              <a href={`/ja/${a.category}/${a.slug}/`} class="article-link">
+                <span class="article-cat">{a.category === 'biology' ? '生物学' : '心理学'}</span>
+                <span class="article-title">{a.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <section class="pubmed-stats">
       <h2>PubMed掲載論文数</h2>
@@ -160,7 +242,8 @@ const jsonLd = {
     </footer>
   </article>
 
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(definedTermLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 </BaseLayout>
 
 <style>
@@ -187,4 +270,12 @@ const jsonLd = {
   .recent ul { padding-left: 1.2rem; }
   .recent .year { color: #888; font-size: 0.85rem; }
   .foot-nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.9rem; }
+
+  .related-articles { padding: 1rem 1.2rem; background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; }
+  .related-articles .hint { font-size: 0.85rem; color: #7a5a1e; margin: 0 0 0.6rem; }
+  .article-list { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .article-link { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.7rem 0.9rem; background: white; border: 1px solid #f0d78a; border-radius: 6px; text-decoration: none; color: #333; transition: transform 0.12s, box-shadow 0.12s; }
+  .article-link:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(122, 90, 30, 0.15); }
+  .article-cat { flex-shrink: 0; font-size: 0.72rem; padding: 0.15rem 0.5rem; background: #e8f0fe; color: #1a73e8; border-radius: 3px; font-weight: 600; }
+  .article-title { font-size: 0.92rem; line-height: 1.4; }
 </style>

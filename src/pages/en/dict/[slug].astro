@@ -6,6 +6,8 @@ import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
 
+type RelatedArticle = { slug: string; category: 'biology' | 'psychology'; title: string };
+
 export async function getStaticPaths() {
   const dir = join(process.cwd(), 'data', 'dict', 'entries');
   let files: string[] = [];
@@ -15,10 +17,42 @@ export async function getStaticPaths() {
     if (!f.endsWith('.json')) continue;
     try { entries.push(JSON.parse(await readFile(join(dir, f), 'utf-8'))); } catch {}
   }
-  return entries.map(e => ({ params: { slug: e.slug }, props: { entry: e, allEntries: entries } }));
+  // 記事を一度だけ読み込み、各辞書 entry との マッチを O(entries × articles) で 計算
+  const articles: Array<{ slug: string; category: 'biology' | 'psychology'; title: string; body: string }> = [];
+  for (const cat of ['biology', 'psychology'] as const) {
+    const adir = join(process.cwd(), 'src', 'content', 'en', cat);
+    let afiles: string[] = [];
+    try { afiles = await readdir(adir); } catch { continue; }
+    for (const f of afiles) {
+      if (!f.endsWith('.md')) continue;
+      try {
+        const raw = await readFile(join(adir, f), 'utf-8');
+        const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+        const noindex = /^noindex:\s*true/m.test(fm?.[1] ?? '');
+        if (noindex) continue;
+        const titleMatch = (fm?.[1] ?? '').match(/^title:\s*"([^"]+)"/m);
+        const title = titleMatch?.[1] ?? '';
+        if (!title) continue;
+        articles.push({ slug: f.replace(/\.md$/, ''), category: cat, title, body: raw.toLowerCase() });
+      } catch {}
+    }
+  }
+  return entries.map(e => {
+    const needle = e.en.toLowerCase();
+    const abbr = e.abbr?.toLowerCase();
+    const matched = articles
+      .filter(a => a.body.includes(needle) || (abbr && a.body.includes(abbr)))
+      .slice(0, 4)
+      .map(a => ({ slug: a.slug, category: a.category, title: a.title }));
+    return { params: { slug: e.slug }, props: { entry: e, allEntries: entries, relatedArticles: matched } };
+  });
 }
 
-const { entry, allEntries } = Astro.props as { entry: DictEntry; allEntries: DictEntry[] };
+const { entry, allEntries, relatedArticles } = Astro.props as {
+  entry: DictEntry;
+  allEntries: DictEntry[];
+  relatedArticles: RelatedArticle[];
+};
 const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
@@ -39,20 +73,46 @@ const related = allEntries
   .slice(0, 5);
 
 const labUrl = `/en/lab/?q=${encodeURIComponent(entry.en)}`;
-const title = `${entry.en}${entry.abbr ? ' (' + entry.abbr + ')' : ''} | PubMed EN-JP Dictionary`;
-const description = entry.description.en.slice(0, 150);
+const pubmedStr = entry.pubmedCount.toLocaleString();
+const title = `What is ${entry.en}? Definition, Usage & ${pubmedStr} PubMed Studies | ${entry.ja} 日英辞書`;
+const description = `${entry.en} (${entry.ja}) explained — plain-English definition, how researchers use it in PubMed papers, synonyms, and yearly trends from ${pubmedStr} studies. Free bilingual reference.`;
+const pageUrl = `https://sciencepubmed.net/en/dict/${entry.slug}/`;
 
-const jsonLd = {
+const definedTermLd = {
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
   name: entry.en,
   alternateName: [entry.ja, entry.abbr].filter(Boolean),
   description: entry.description.en,
+  url: pageUrl,
+  inLanguage: 'en',
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     name: 'PubMed EN-JP Dictionary',
     url: 'https://sciencepubmed.net/en/dict/',
   },
+};
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: `What is ${entry.en}?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.description.en },
+    },
+    {
+      '@type': 'Question',
+      name: `How is ${entry.en} used in research papers?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.usage.en },
+    },
+    {
+      '@type': 'Question',
+      name: `What are synonyms or related terms for ${entry.en}?`,
+      acceptedAnswer: { '@type': 'Answer', text: entry.synonyms.en },
+    },
+  ],
 };
 ---
 <BaseLayout title={title} description={description} lang="en" noindex={!indexable} ogImage={`/og/dict/${entry.slug}.png`} ogType="article">
@@ -63,7 +123,7 @@ const jsonLd = {
 
     <header>
       <div class="cat-badge">{CATEGORY_LABELS[entry.category]}</div>
-      <h1>{entry.en}</h1>
+      <h1>What is {entry.en}?</h1>
       <p class="ja-term">Japanese: <strong>{entry.ja}</strong>{entry.abbr && <span class="abbr"> ({entry.abbr})</span>}</p>
       {entry.meshHeading && (
         <p class="mesh">MeSH: <code>{entry.meshHeading}</code>{entry.meshUi && <span> ({entry.meshUi})</span>}</p>
@@ -73,6 +133,23 @@ const jsonLd = {
     <section class="desc"><h2>Meaning</h2><p>{entry.description.en}</p></section>
     <section class="usage"><h2>Usage in papers</h2><p>{entry.usage.en}</p></section>
     <section class="synonyms"><h2>Synonyms & Notes</h2><p>{entry.synonyms.en}</p></section>
+
+    {relatedArticles.length > 0 && (
+      <section class="related-articles">
+        <h2>📚 Read {entry.en} in our research reviews</h2>
+        <p class="hint">Full plain-English article summaries from PubMed where {entry.en} is discussed:</p>
+        <ul class="article-list">
+          {relatedArticles.map(a => (
+            <li>
+              <a href={`/en/${a.category}/${a.slug}/`} class="article-link">
+                <span class="article-cat">{a.category === 'biology' ? 'Biology' : 'Psychology'}</span>
+                <span class="article-title">{a.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <section class="pubmed-stats">
       <h2>PubMed article count</h2>
@@ -133,7 +210,8 @@ const jsonLd = {
     </footer>
   </article>
 
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(definedTermLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 </BaseLayout>
 
 <style>
@@ -155,4 +233,12 @@ const jsonLd = {
   .related-list li a { display: block; padding: 0.4rem 0.8rem; background: #f4f4f4; border-radius: 4px; text-decoration: none; color: #333; }
   .recent .year { color: #888; font-size: 0.85rem; }
   .foot-nav { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.9rem; }
+
+  .related-articles { padding: 1rem 1.2rem; background: linear-gradient(180deg, #fff8ea 0%, #fef4d8 100%); border: 1px solid #f0d78a; border-radius: 10px; }
+  .related-articles .hint { font-size: 0.85rem; color: #7a5a1e; margin: 0 0 0.6rem; }
+  .article-list { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .article-link { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.7rem 0.9rem; background: white; border: 1px solid #f0d78a; border-radius: 6px; text-decoration: none; color: #333; transition: transform 0.12s, box-shadow 0.12s; }
+  .article-link:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(122, 90, 30, 0.15); }
+  .article-cat { flex-shrink: 0; font-size: 0.72rem; padding: 0.15rem 0.5rem; background: #e8f0fe; color: #1a73e8; border-radius: 3px; font-weight: 600; }
+  .article-title { font-size: 0.92rem; line-height: 1.4; }
 </style>
