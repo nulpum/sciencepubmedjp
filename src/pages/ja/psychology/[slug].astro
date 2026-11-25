@@ -4,6 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleHubLink from '../../../components/ArticleHubLink.astro';
 import AffiliateButtons from '../../../components/AffiliateButtons.astro';
 import CareerAffiliateCTA from '../../../components/CareerAffiliateCTA.astro';
+import YahooShoppingBanner from '../../../components/YahooShoppingBanner.astro';
 import StickyMobileCta from '../../../components/StickyMobileCta.astro';
 import AdUnit from '../../../components/AdUnit.astro';
 import ShareX from '../../../components/ShareX.astro';
@@ -253,6 +254,8 @@ export const prerender = true;
       slug={post.id}
       lang="ja"
     />
+
+    <YahooShoppingBanner />
 
     <hr />
 

@@ -1,0 +1,41 @@
+---
+// バリューコマース 経由 の Yahoo!ショッピング バナー (通常 jsbanner、 overlay ではない)
+// JA 記事 下部 に 配置、 PayPay ポイント キャンペーン を 訴求
+// sid=3789847 (sciencepubmed.net の バリューコマース サイトID)
+// pid=892757749 (Yahoo!ショッピング プロモーション)
+---
+<aside class="vc-yahoo-banner" aria-label="Yahoo!ショッピング プロモーション">
+  <p class="vc-yahoo-banner__label">#PR / バリューコマース 経由</p>
+  <div class="vc-yahoo-banner__inner">
+    <script is:inline src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3789847&pid=892757749"></script>
+    <noscript>
+      <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&pid=892757749" rel="sponsored nofollow noopener">
+        <img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3789847&pid=892757749" border="0" alt="Yahoo!ショッピング" />
+      </a>
+    </noscript>
+  </div>
+</aside>
+
+<style>
+  .vc-yahoo-banner {
+    margin: 1.5rem auto 2rem;
+    padding: 0.6rem 0;
+    text-align: center;
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+  }
+  .vc-yahoo-banner__label {
+    font-size: 0.7rem;
+    color: #888;
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.02em;
+  }
+  .vc-yahoo-banner__inner {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .vc-yahoo-banner__inner :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
