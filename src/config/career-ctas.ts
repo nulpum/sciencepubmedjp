@@ -346,11 +346,11 @@ export function hashSlug(s?: string): number {
 }
 
 /**
- * 記事 slug / カテゴリ / タグ から 最適 な variant を 選ぶ。
- * - 特定 マッチ (nurse/doctor/pharmacist) が live な ら 最優先
- * - english_learning が live な ら 約 30% の 記事 で ローテ 挿入
- * - 残り は 研究系 → researcher、 その他 → general で fallback
- * - placeholder 状態 の variant は 選ば ない (本番 非表示 を 回避)
+ * 記事 slug / カテゴリ / タグ から variant を 選ぶ。 slug hash で 決定論的 ローテ。
+ * - 特定 マッチ (doctor/nurse/pharmacist) が live な ら 最優先
+ * - それ 以外 は 全 live variant を weighted pool で 分散 配信 (節操 なく)
+ * - 研究系 / biology は researcher 寄り、 psychology / その他 は general 寄り
+ * - placeholder 状態 の variant は 絶対 選ばない (本番 非表示 回避)
  */
 export function pickCareerVariant(opts: {
   category?: string;
@@ -367,20 +367,26 @@ export function pickCareerVariant(opts: {
   const isLive = (v: CareerVariant) => !CAREER_CTAS[v].placeholder;
   const slugHash = hashSlug(opts.slug);
 
-  // 1. 特定 マッチ (live な ら 優先)
+  // 1. 特定 マッチ (live な ら 最優先)
   if (/(doctor|physician|医師|clinical)/i.test(haystack) && isLive('doctor')) return 'doctor';
   if (/(nurse|nursing|看護)/i.test(haystack) && isLive('nurse')) return 'nurse';
   if (/(pharmac|薬剤|drug|medication)/i.test(haystack) && isLive('pharmacist')) return 'pharmacist';
 
-  // 2. English learning rotation (ja 全体 の 約 30%)
-  if (isLive('english_learning') && slugHash % 10 < 3) return 'english_learning';
+  // 2. 全 live variant を weighted pool で ローテ 分散
+  const isResearch = /(research|phd|postdoc|biology|biotechn|genomics|研究)/i.test(haystack) || opts.category === 'biology';
+  const isPsych = /(psycholog|心理|mental|depression|anxiety|cognit)/i.test(haystack) || opts.category === 'psychology';
 
-  // 3. 研究系 → researcher (live な ら)
-  if (/(research|phd|postdoc|biology|biotechn|genomics|研究)/i.test(haystack) && isLive('researcher')) return 'researcher';
-  if (opts.category === 'biology' && isLive('researcher')) return 'researcher';
-
-  // 4. fallback
-  if (isLive('general')) return 'general';
-  if (isLive('english_learning')) return 'english_learning';
-  return null;
+  const ALL: CareerVariant[] = ['researcher', 'general', 'nurse', 'doctor', 'pharmacist', 'english_learning'];
+  const pool: CareerVariant[] = [];
+  for (const v of ALL) {
+    if (!isLive(v)) continue;
+    // 文脈 に 応じて 重み 調整
+    let weight = 1;
+    if (v === 'researcher' && isResearch) weight = 3;
+    else if (v === 'general' && isPsych) weight = 3;
+    else if (v === 'english_learning') weight = 2; // 英語 は どの 読者 にも 刺さる
+    for (let i = 0; i < weight; i++) pool.push(v);
+  }
+  if (pool.length === 0) return null;
+  return pool[slugHash % pool.length];
 }
