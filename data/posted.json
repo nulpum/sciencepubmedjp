@@ -11303,6 +11303,30 @@
       "category": "biology",
       "postedAt": "2026-11-25T21:49:11.029Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n365a3ccg525"
+    },
+    {
+      "platform": "threads",
+      "slug": "20261125-glp1-brain-cognition-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-25T23:25:00.064Z",
+      "postId": "18110011517527812"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261125-psychedelic-assisted-ptsd-evidence",
+      "lang": "ja",
+      "category": "psychology",
+      "postedAt": "2026-11-25T23:25:07.954Z",
+      "postId": "1103479166185406_122118902343321286"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20261125-crispr-clinical-trials-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-25T23:25:14.149Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n36cltg4qe2j"
     }
   ]
 }
