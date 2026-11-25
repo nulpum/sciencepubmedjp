@@ -4,28 +4,44 @@ import { pickRakuyokoBanner } from '../config/rakuyoko-banners';
 export interface Props {
   slug: string;
   category?: string;
+  lang?: 'ja' | 'en';
 }
 
-const { slug, category } = Astro.props;
+const { slug, category, lang = 'ja' } = Astro.props;
 const banner = pickRakuyokoBanner(slug, category);
+
+// EN 向けは 英語書籍 中心 の Kindle Unlimited JP に 差し替え
+// (JP 在住 の 英語論文 読み 学生 / 研究者 を 想定、 Amazon JP tag が 使える)
+const EN_BANNER = {
+  id: 'ku-en',
+  title: 'Kindle Unlimited',
+  description: 'Unlimited access to thousands of English academic books & journals (Amazon Japan)',
+  url: 'https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=sciencepubm06-22&language=en_US',
+};
+
+const b = lang === 'en' ? EN_BANNER : banner;
+const cta = lang === 'en' ? 'Try Kindle Unlimited →' : 'Prime Student を試す →';
+const hint = lang === 'en'
+  ? 'Free 30-day trial · Available via Amazon Japan'
+  : '大学生・院生・専門学生なら 6ヶ月無料';
 ---
-{banner && (
-  <div class="rakuyoko-banner" data-banner-id={banner.id}>
+{b && (
+  <div class="rakuyoko-banner" data-banner-id={b.id}>
     <div class="rb-header">
-      <span class="rb-badge">PR</span>
-      <strong class="rb-title">{banner.title}</strong>
+      <span class="rb-badge">{lang === 'en' ? 'Sponsored' : 'PR'}</span>
+      <strong class="rb-title">{b.title}</strong>
     </div>
-    {banner.description && <p class="rb-desc">{banner.description}</p>}
+    {b.description && <p class="rb-desc">{b.description}</p>}
     <a
-      href={banner.url}
+      href={b.url}
       class="rb-cta"
       target="_blank"
       rel="nofollow sponsored noopener"
-      data-affiliate="rakuyoko"
+      data-affiliate={lang === 'en' ? 'kindle-unlimited' : 'rakuyoko'}
     >
-      Prime Student を試す →
+      {cta}
     </a>
-    <p class="rb-hint">大学生・院生・専門学生なら 6ヶ月無料</p>
+    <p class="rb-hint">{hint}</p>
   </div>
 )}
 

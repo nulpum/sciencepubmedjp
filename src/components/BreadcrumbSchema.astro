@@ -1,0 +1,21 @@
+---
+export interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+export interface Props {
+  items: BreadcrumbItem[];
+}
+const { items } = Astro.props;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((it, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: it.name,
+    item: it.url,
+  })),
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

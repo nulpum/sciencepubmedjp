@@ -2,6 +2,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema.astro';
 import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
@@ -31,10 +32,25 @@ for (const e of entries) (byCategory[e.category] ||= []).push(e);
 for (const key of Object.keys(byCategory)) {
   byCategory[key].sort((a, b) => a.en.localeCompare(b.en));
 }
+
+// A-Z + # (非英字) nav
+const lettersInUse = new Set<string>();
+for (const e of entries) {
+  const c = e.en[0]?.toUpperCase();
+  if (c && /[A-Z]/.test(c)) lettersInUse.add(c);
+  else lettersInUse.add('#');
+}
+const LETTERS = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','#'];
+
+// entry.en の 先頭文字 (A-Z or #) を data attribute 用に 計算
+function initialOf(en: string): string {
+  const c = en[0]?.toUpperCase();
+  return c && /[A-Z]/.test(c) ? c : '#';
+}
 ---
 <BaseLayout
-  title="PubMed EN-JP Dictionary | PubMed Trivia"
-  description="English-Japanese dictionary of PubMed terminology. MeSH-verified, article counts, copyable queries."
+  title="PubMed EN-JP Dictionary — 303 Terms with MeSH & Article Counts | PubMed Trivia"
+  description={`Browse ${entries.length} English-Japanese PubMed terminology terms across ${Object.keys(byCategory).length} categories. Each entry has MeSH verification, PubMed article counts, copyable queries, and recent papers.`}
   lang="en"
   noindex={!indexable}
 >
@@ -42,28 +58,63 @@ for (const key of Object.keys(byCategory)) {
     <header>
       <h1>PubMed EN-JP Dictionary</h1>
       <p class="lede">
-        Search English and Japanese terms used in PubMed. Each entry includes MeSH verification,
-        article counts, a copyable search query, and recent papers.
+        {entries.length} English-Japanese terms used in PubMed research papers.
+        Every entry: MeSH verification · article counts · copyable search query · recent papers.
+      </p>
+      <p class="stats">
+        {Object.entries(byCategory).map(([k, v], i) => (
+          <>
+            {i > 0 && <span class="dot">·</span>}
+            <span>{CATEGORY_LABELS[k as DictCategory]} <strong>{v.length}</strong></span>
+          </>
+        ))}
       </p>
     </header>
 
+    <nav class="cat-tabs" aria-label="Category filter">
+      <button type="button" class="cat-tab is-active" data-cat="all">All ({entries.length})</button>
+      {CATEGORY_ORDER.map(cat => byCategory[cat] && (
+        <button type="button" class="cat-tab" data-cat={cat}>
+          {CATEGORY_LABELS[cat]} ({byCategory[cat].length})
+        </button>
+      ))}
+    </nav>
+
     <div class="search-box">
-      <input type="search" id="dict-search" placeholder="Search (English / Japanese / abbreviation)" autocomplete="off" />
+      <input type="search" id="dict-search" placeholder="🔍 Search English / Japanese / abbreviation" autocomplete="off" />
     </div>
+
+    <nav class="letter-nav" aria-label="Jump to letter">
+      {LETTERS.map(l => (
+        <a
+          href={`#letter-${l}`}
+          class={`letter-link ${lettersInUse.has(l) ? '' : 'is-empty'}`}
+          aria-disabled={!lettersInUse.has(l)}
+        >{l}</a>
+      ))}
+    </nav>
 
     {CATEGORY_ORDER.map(cat => byCategory[cat] && byCategory[cat].length > 0 && (
       <section class="cat-block" data-category={cat}>
         <h2>{CATEGORY_LABELS[cat]} <span class="count">({byCategory[cat].length})</span></h2>
         <ul class="term-list">
-          {byCategory[cat].map(e => (
-            <li class="term-item" data-search={`${e.ja} ${e.en} ${e.abbr || ''}`.toLowerCase()}>
-              <a href={`/en/dict/${e.slug}/`}>
-                <span class="en">{e.en}</span>
-                {e.abbr && <span class="abbr">{e.abbr}</span>}
-                <span class="ja">{e.ja}</span>
-              </a>
-            </li>
-          ))}
+          {byCategory[cat].map(e => {
+            const initial = initialOf(e.en);
+            return (
+              <li
+                class="term-item"
+                data-search={`${e.ja} ${e.en} ${e.abbr || ''}`.toLowerCase()}
+                data-initial={initial}
+                id={`letter-${initial}`}
+              >
+                <a href={`/en/dict/${e.slug}/`}>
+                  <span class="en">{e.en}</span>
+                  {e.abbr && <span class="abbr">{e.abbr}</span>}
+                  <span class="ja">{e.ja}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </section>
     ))}
@@ -76,31 +127,69 @@ for (const key of Object.keys(byCategory)) {
   <script is:inline>
     (() => {
       const box = document.getElementById('dict-search');
-      if (!box) return;
-      box.addEventListener('input', () => {
-        const q = box.value.trim().toLowerCase();
-        document.querySelectorAll('.term-item').forEach(li => {
-          const hay = li.getAttribute('data-search') || '';
-          li.style.display = !q || hay.includes(q) ? '' : 'none';
-        });
+      const tabs = document.querySelectorAll('.cat-tab');
+      let activeCat = 'all';
+
+      function apply() {
+        const q = (box?.value || '').trim().toLowerCase();
         document.querySelectorAll('.cat-block').forEach(sec => {
-          const visible = sec.querySelectorAll('.term-item:not([style*="display: none"])').length;
-          sec.style.display = visible === 0 && q ? 'none' : '';
+          const cat = sec.getAttribute('data-category');
+          const catVisible = activeCat === 'all' || activeCat === cat;
+          let anyVisible = false;
+          sec.querySelectorAll('.term-item').forEach(li => {
+            const hay = li.getAttribute('data-search') || '';
+            const matchQ = !q || hay.includes(q);
+            const show = catVisible && matchQ;
+            li.style.display = show ? '' : 'none';
+            if (show) anyVisible = true;
+          });
+          sec.style.display = catVisible && anyVisible ? '' : 'none';
+        });
+      }
+
+      if (box) box.addEventListener('input', apply);
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('is-active'));
+          tab.classList.add('is-active');
+          activeCat = tab.getAttribute('data-cat') || 'all';
+          apply();
         });
       });
     })();
   </script>
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: 'https://sciencepubmed.net/en/' },
+    { name: 'Dictionary', url: 'https://sciencepubmed.net/en/dict/' },
+  ]} />
 </BaseLayout>
 
 <style>
-  .dict-index { max-width: 760px; margin: 0 auto; padding: 1rem; }
+  .dict-index { max-width: 860px; margin: 0 auto; padding: 1rem; }
   .lede { color: #555; }
-  .search-box { margin: 1rem 0 1.5rem; }
+  .stats { font-size: 0.9rem; color: #666; margin: 0.4rem 0 0; }
+  .stats .dot { margin: 0 0.5rem; color: #ccc; }
+  .stats strong { color: #1a73e8; }
+
+  .cat-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1.2rem 0 0.8rem; }
+  .cat-tab { padding: 0.45rem 0.9rem; background: #f4f4f4; border: 1px solid #ddd; border-radius: 999px; font-size: 0.85rem; cursor: pointer; color: #555; }
+  .cat-tab:hover { background: #e9e9e9; }
+  .cat-tab.is-active { background: #1a73e8; border-color: #1a73e8; color: white; font-weight: 600; }
+
+  .search-box { margin: 0.8rem 0 1rem; }
   #dict-search { width: 100%; padding: 0.7rem 1rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 6px; }
-  .cat-block { margin: 2rem 0; }
+
+  .letter-nav { display: flex; flex-wrap: wrap; gap: 0.2rem; padding: 0.5rem; background: #fafafa; border: 1px solid #eee; border-radius: 6px; margin-bottom: 1.5rem; }
+  .letter-link { flex: 1; min-width: 28px; text-align: center; padding: 0.3rem 0; font-size: 0.85rem; font-weight: 600; color: #1a73e8; text-decoration: none; border-radius: 3px; }
+  .letter-link:hover { background: #e8f0fe; }
+  .letter-link.is-empty { color: #ccc; pointer-events: none; }
+
+  .cat-block { margin: 2rem 0; scroll-margin-top: 80px; }
   .cat-block h2 { border-left: 4px solid #4a90e2; padding-left: 0.5rem; }
   .count { color: #888; font-size: 0.85rem; font-weight: normal; }
   .term-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem; }
+  .term-item { scroll-margin-top: 80px; }
   .term-item a { display: block; padding: 0.6rem 0.8rem; background: #fff; border: 1px solid #e4e4e4; border-radius: 4px; text-decoration: none; color: #333; }
   .term-item a:hover { background: #f0f7ff; border-color: #4a90e2; }
   .en { font-weight: bold; }

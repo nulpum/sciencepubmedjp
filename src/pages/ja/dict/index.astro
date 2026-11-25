@@ -2,6 +2,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema.astro';
 import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
@@ -34,10 +35,34 @@ for (const e of entries) {
 for (const key of Object.keys(byCategory)) {
   byCategory[key].sort((a, b) => a.yomi.localeCompare(b.yomi, 'ja'));
 }
+
+// 50音 行 nav (あ/か/さ/た/な/は/ま/や/ら/わ/#)
+const GYOU = [
+  { label: 'あ', chars: 'あいうえおぁぃぅぇぉ' },
+  { label: 'か', chars: 'かきくけこがぎぐげご' },
+  { label: 'さ', chars: 'さしすせそざじずぜぞ' },
+  { label: 'た', chars: 'たちつてとだぢづでどっ' },
+  { label: 'な', chars: 'なにぬねの' },
+  { label: 'は', chars: 'はひふへほばびぶべぼぱぴぷぺぽ' },
+  { label: 'ま', chars: 'まみむめも' },
+  { label: 'や', chars: 'やゆよゃゅょ' },
+  { label: 'ら', chars: 'らりるれろ' },
+  { label: 'わ', chars: 'わをん' },
+];
+
+function gyouOf(yomi: string): string {
+  const c = yomi[0];
+  if (!c) return '#';
+  for (const g of GYOU) if (g.chars.includes(c)) return g.label;
+  return '#';
+}
+
+const gyouInUse = new Set<string>();
+for (const e of entries) gyouInUse.add(gyouOf(e.yomi));
 ---
 <BaseLayout
-  title="PubMed 日英辞書 ｜ PubMed Trivia"
-  description="研究・統計、生物学、心理学、看護・薬学の専門用語を日本語と英語で引ける辞書。MeSH確認済み、PubMed検索クエリ付き。"
+  title="PubMed 日英辞書 — 303用語 ｜ MeSH確認済み・論文数付き ｜ PubMed Trivia"
+  description={`研究・統計、生物学、心理学、看護・薬学 の 日英 専門用語 ${entries.length}語 を 50音順 ・ カテゴリ別 に 掲載。MeSH確認・PubMed掲載論文数・コピペ用検索クエリ・最新論文付き。`}
   lang="ja"
   noindex={!indexable}
 >
@@ -45,31 +70,66 @@ for (const key of Object.keys(byCategory)) {
     <header>
       <h1>PubMed 日英辞書</h1>
       <p class="lede">
-        PubMedで論文を探すときに必要な専門用語を、日本語⇔英語で引ける辞書です。
-        用語ごとにMeSH確認・掲載論文数・コピペ用検索クエリ・最新論文を掲載しています。
+        PubMedで論文を探すときに必要な専門用語 {entries.length}語 を 日本語⇔英語 で引ける辞書。
+        用語ごとに MeSH確認 ・ 掲載論文数 ・ コピペ用検索クエリ ・ 最新論文 を掲載。
+      </p>
+      <p class="stats">
+        {Object.entries(byCategory).map(([k, v], i) => (
+          <>
+            {i > 0 && <span class="dot">·</span>}
+            <span>{CATEGORY_LABELS[k as DictCategory]} <strong>{v.length}語</strong></span>
+          </>
+        ))}
       </p>
       <nav class="quick">
         <a href="/ja/jiten/">日英対訳シンプル一覧 →</a>
       </nav>
     </header>
 
+    <nav class="cat-tabs" aria-label="カテゴリ切替">
+      <button type="button" class="cat-tab is-active" data-cat="all">すべて ({entries.length})</button>
+      {CATEGORY_ORDER.map(cat => byCategory[cat] && (
+        <button type="button" class="cat-tab" data-cat={cat}>
+          {CATEGORY_LABELS[cat]} ({byCategory[cat].length})
+        </button>
+      ))}
+    </nav>
+
     <div class="search-box">
-      <input type="search" id="dict-search" placeholder="用語を検索 (日本語/英語/略語)" autocomplete="off" />
+      <input type="search" id="dict-search" placeholder="🔍 用語を検索 (日本語/英語/略語)" autocomplete="off" />
     </div>
+
+    <nav class="letter-nav" aria-label="50音ジャンプ">
+      {GYOU.map(g => (
+        <a
+          href={`#gyou-${g.label}`}
+          class={`letter-link ${gyouInUse.has(g.label) ? '' : 'is-empty'}`}
+          aria-disabled={!gyouInUse.has(g.label)}
+        >{g.label}</a>
+      ))}
+    </nav>
 
     {CATEGORY_ORDER.map(cat => byCategory[cat] && byCategory[cat].length > 0 && (
       <section class="cat-block" data-category={cat}>
         <h2>{CATEGORY_LABELS[cat]} <span class="count">({byCategory[cat].length})</span></h2>
         <ul class="term-list">
-          {byCategory[cat].map(e => (
-            <li class="term-item" data-search={`${e.ja} ${e.en} ${e.abbr || ''} ${(e.aliases||[]).join(' ')}`.toLowerCase()}>
-              <a href={`/ja/dict/${e.slug}/`}>
-                <span class="ja">{e.ja}</span>
-                {e.abbr && <span class="abbr">{e.abbr}</span>}
-                <span class="en">{e.en}</span>
-              </a>
-            </li>
-          ))}
+          {byCategory[cat].map(e => {
+            const gyou = gyouOf(e.yomi);
+            return (
+              <li
+                class="term-item"
+                data-search={`${e.ja} ${e.en} ${e.abbr || ''} ${(e.aliases||[]).join(' ')}`.toLowerCase()}
+                data-gyou={gyou}
+                id={`gyou-${gyou}`}
+              >
+                <a href={`/ja/dict/${e.slug}/`}>
+                  <span class="ja">{e.ja}</span>
+                  {e.abbr && <span class="abbr">{e.abbr}</span>}
+                  <span class="en">{e.en}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </section>
     ))}
@@ -82,32 +142,71 @@ for (const key of Object.keys(byCategory)) {
   <script is:inline>
     (() => {
       const box = document.getElementById('dict-search');
-      if (!box) return;
-      box.addEventListener('input', () => {
-        const q = box.value.trim().toLowerCase();
-        document.querySelectorAll('.term-item').forEach(li => {
-          const hay = li.getAttribute('data-search') || '';
-          li.style.display = !q || hay.includes(q) ? '' : 'none';
-        });
+      const tabs = document.querySelectorAll('.cat-tab');
+      let activeCat = 'all';
+
+      function apply() {
+        const q = (box?.value || '').trim().toLowerCase();
         document.querySelectorAll('.cat-block').forEach(sec => {
-          const visible = sec.querySelectorAll('.term-item:not([style*="display: none"])').length;
-          sec.style.display = visible === 0 && q ? 'none' : '';
+          const cat = sec.getAttribute('data-category');
+          const catVisible = activeCat === 'all' || activeCat === cat;
+          let anyVisible = false;
+          sec.querySelectorAll('.term-item').forEach(li => {
+            const hay = li.getAttribute('data-search') || '';
+            const matchQ = !q || hay.includes(q);
+            const show = catVisible && matchQ;
+            li.style.display = show ? '' : 'none';
+            if (show) anyVisible = true;
+          });
+          sec.style.display = catVisible && anyVisible ? '' : 'none';
+        });
+      }
+
+      if (box) box.addEventListener('input', apply);
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('is-active'));
+          tab.classList.add('is-active');
+          activeCat = tab.getAttribute('data-cat') || 'all';
+          apply();
         });
       });
     })();
   </script>
+
+  <BreadcrumbSchema items={[
+    { name: 'ホーム', url: 'https://sciencepubmed.net/ja/' },
+    { name: '日英辞書', url: 'https://sciencepubmed.net/ja/dict/' },
+  ]} />
 </BaseLayout>
 
 <style>
-  .dict-index { max-width: 760px; margin: 0 auto; padding: 1rem; }
+  .dict-index { max-width: 860px; margin: 0 auto; padding: 1rem; }
   .lede { color: #555; }
+  .stats { font-size: 0.9rem; color: #666; margin: 0.4rem 0 0; }
+  .stats .dot { margin: 0 0.5rem; color: #ccc; }
+  .stats strong { color: #1a73e8; }
+  .quick { margin-top: 0.4rem; }
   .quick a { color: #1a73e8; font-size: 0.9rem; }
-  .search-box { margin: 1rem 0 1.5rem; }
+
+  .cat-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1.2rem 0 0.8rem; }
+  .cat-tab { padding: 0.45rem 0.9rem; background: #f4f4f4; border: 1px solid #ddd; border-radius: 999px; font-size: 0.85rem; cursor: pointer; color: #555; }
+  .cat-tab:hover { background: #e9e9e9; }
+  .cat-tab.is-active { background: #1a73e8; border-color: #1a73e8; color: white; font-weight: 600; }
+
+  .search-box { margin: 0.8rem 0 1rem; }
   #dict-search { width: 100%; padding: 0.7rem 1rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 6px; }
-  .cat-block { margin: 2rem 0; }
+
+  .letter-nav { display: flex; flex-wrap: wrap; gap: 0.2rem; padding: 0.5rem; background: #fafafa; border: 1px solid #eee; border-radius: 6px; margin-bottom: 1.5rem; }
+  .letter-link { flex: 1; min-width: 36px; text-align: center; padding: 0.4rem 0; font-size: 1rem; font-weight: 600; color: #1a73e8; text-decoration: none; border-radius: 3px; }
+  .letter-link:hover { background: #e8f0fe; }
+  .letter-link.is-empty { color: #ccc; pointer-events: none; }
+
+  .cat-block { margin: 2rem 0; scroll-margin-top: 80px; }
   .cat-block h2 { border-left: 4px solid #4a90e2; padding-left: 0.5rem; }
   .count { color: #888; font-size: 0.85rem; font-weight: normal; }
   .term-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.5rem; }
+  .term-item { scroll-margin-top: 80px; }
   .term-item a { display: block; padding: 0.6rem 0.8rem; background: #fff; border: 1px solid #e4e4e4; border-radius: 4px; text-decoration: none; color: #333; }
   .term-item a:hover { background: #f0f7ff; border-color: #4a90e2; }
   .ja { font-weight: bold; }

@@ -3,6 +3,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import RakuyokoBanner from '../../../components/RakuyokoBanner.astro';
+import BreadcrumbSchema from '../../../components/BreadcrumbSchema.astro';
 import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
 export const prerender = true;
@@ -244,6 +245,11 @@ const faqLd = {
 
   <script type="application/ld+json" set:html={JSON.stringify(definedTermLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <BreadcrumbSchema items={[
+    { name: 'ホーム', url: 'https://sciencepubmed.net/ja/' },
+    { name: '日英辞書', url: 'https://sciencepubmed.net/ja/dict/' },
+    { name: entry.ja, url: pageUrl },
+  ]} />
 </BaseLayout>
 
 <style>
