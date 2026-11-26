@@ -11327,6 +11327,30 @@
       "category": "biology",
       "postedAt": "2026-11-25T23:25:14.149Z",
       "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n36cltg4qe2j"
+    },
+    {
+      "platform": "threads",
+      "slug": "20261125-senolytics-clinical-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-26T04:15:01.521Z",
+      "postId": "18117912077335315"
+    },
+    {
+      "platform": "facebook",
+      "slug": "20261125-glp1-brain-cognition-evidence",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-26T04:15:08.618Z",
+      "postId": "1103479166185406_122118912135321286"
+    },
+    {
+      "platform": "bluesky",
+      "slug": "20260830-41310653",
+      "lang": "ja",
+      "category": "biology",
+      "postedAt": "2026-11-26T04:15:12.149Z",
+      "postId": "at://did:plc:fxfdorejxtqlwenkmfxkuqww/app.bsky.feed.post/3n36ssdhh3w2z"
     }
   ]
 }
