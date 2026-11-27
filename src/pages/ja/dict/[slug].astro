@@ -62,7 +62,8 @@ const { entry, allEntries, relatedArticles } = Astro.props as {
   allEntries: DictEntry[];
   relatedArticles: RelatedArticle[];
 };
-const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
+import { DICT_ALLOWLIST_SET } from '../../../config/dict-allowlist.mjs';
+const indexable = process.env.DICT_INDEXABLE !== 'false' || DICT_ALLOWLIST_SET.has(entry.slug);
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
   research: '研究・統計',

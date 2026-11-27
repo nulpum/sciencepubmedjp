@@ -5,6 +5,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { remarkDictLinks } from './src/lib/remark-dict-links.mjs';
 import { remarkMidArticleAds } from './src/lib/remark-mid-article-ads.mjs';
+import { DICT_ALLOWLIST_SET } from './src/config/dict-allowlist.mjs';
 
 // Build a Set of noindex URL paths at config load time so sitemap can exclude them.
 // Astro sitemap integration doesn't know about frontmatter — it only sees URLs.
@@ -74,7 +75,12 @@ export default defineConfig({
           // tag + archive 一覧 (本体 は noindex 設定 + sitemap 除外)
           if (/^\/(ja|en)\/(tag|archive)(\/|$)/.test(path)) return false;
           // 辞書 / 日英対訳: DICT_INDEXABLE=true の時だけ sitemap に載せる (AdSense 審査保護)
-          if (/^\/(ja|en)\/(dict|jiten)(\/|$)/.test(path) && process.env.DICT_INDEXABLE === 'false') return false;
+          // ただし DICT_ALLOWLIST_SET に 含まれる slug は 個別 公開 (GSC 高 impr 先行解除)
+          if (/^\/(ja|en)\/(dict|jiten)(\/|$)/.test(path) && process.env.DICT_INDEXABLE === 'false') {
+            const m = path.match(/^\/(?:ja|en)\/dict\/([^/]+)/);
+            if (m && DICT_ALLOWLIST_SET.has(m[1])) return true;
+            return false;
+          }
           return true;
         } catch { return true; }
       },

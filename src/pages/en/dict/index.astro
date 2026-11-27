@@ -17,7 +17,7 @@ try {
   }
 } catch {}
 
-const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
+const indexable = process.env.DICT_INDEXABLE !== 'false';
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
   research: 'Research & Statistics',

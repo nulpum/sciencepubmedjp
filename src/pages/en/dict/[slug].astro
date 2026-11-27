@@ -3,6 +3,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import RakuyokoBanner from '../../../components/RakuyokoBanner.astro';
+import { DICT_ALLOWLIST_SET } from '../../../config/dict-allowlist.mjs';
 import BreadcrumbSchema from '../../../components/BreadcrumbSchema.astro';
 import type { DictEntry, DictCategory } from '../../../../scripts/types';
 
@@ -55,7 +56,7 @@ const { entry, allEntries, relatedArticles } = Astro.props as {
   allEntries: DictEntry[];
   relatedArticles: RelatedArticle[];
 };
-const indexable = import.meta.env.DICT_INDEXABLE !== 'false';
+const indexable = process.env.DICT_INDEXABLE !== 'false' || DICT_ALLOWLIST_SET.has(entry.slug);
 
 const CATEGORY_LABELS: Record<DictCategory, string> = {
   research: 'Research & Statistics',
