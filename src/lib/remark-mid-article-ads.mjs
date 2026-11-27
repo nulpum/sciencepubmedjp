@@ -31,8 +31,8 @@ const ADS = {
     html: `<aside class="inline-ad inline-ad--yahoo" aria-label="Yahoo!ショッピング">
 <p class="inline-ad__label">#PR / バリューコマース 経由</p>
 <div class="inline-ad__body">
-<script src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3789847&amp;pid=892757749"></script>
-<noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&amp;pid=892757749" rel="sponsored nofollow noopener"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3789847&amp;pid=892757749" border="0" alt="Yahoo!ショッピング" /></a></noscript>
+<script src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3789847&amp;pid=892759652"></script>
+<noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&amp;pid=892759652" rel="sponsored nofollow noopener"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3789847&amp;pid=892759652" border="0" alt="Yahoo!ショッピング" /></a></noscript>
 </div>
 </aside>`,
   },
@@ -56,6 +56,19 @@ const ADS = {
 <script src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3789847&amp;pid=892757783"></script>
 <noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3789847&amp;pid=892757783" rel="sponsored nofollow noopener"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3789847&amp;pid=892757783" border="0" alt="ユメキャリ 20代 転職" /></a></noscript>
 </div>
+</aside>`,
+  },
+  dmm_fx: {
+    label: 'DMM FX (A8)',
+    html: `<aside class="inline-ad inline-ad--dmmfx" aria-label="DMM FX 口座開設">
+<p class="inline-ad__label">#PR / A8.net 経由</p>
+<a class="inline-ad__card" href="https://px.a8.net/svt/ejp?a8mat=4BGTLQ+N7XDE+1WP2+69WPU" rel="sponsored nofollow noopener" target="_blank">
+<span class="inline-ad__card-badge">💹 副業 投資</span>
+<span class="inline-ad__card-title">DMM FX 口座開設数 国内 TOP クラス</span>
+<span class="inline-ad__card-desc">大学院生・ 研究者 も 副業 で 始める ユーザー 多数。 時間 を 選ばず スマホ で 取引 可。 口座開設 手数料・ 維持手数料 無料。</span>
+<span class="inline-ad__card-cta">口座開設 を 詳しく 見る →</span>
+</a>
+<img src="https://www15.a8.net/0.gif?a8mat=4BGTLQ+N7XDE+1WP2+69WPU" width="1" height="1" alt="" aria-hidden="true" style="position:absolute;width:1px;height:1px;border:0;" />
 </aside>`,
   },
   kindle_unlimited: {
@@ -85,12 +98,14 @@ function pickOrder(slug) {
   const orders = [
     ['yahoo', 'prime_student', 'kindle_unlimited'],
     ['prime_student', 'kindle_unlimited', 'yumecareer_tenshoku'],
-    ['kindle_unlimited', 'yahoo', 'yumecareer_tenshoku'],
+    ['kindle_unlimited', 'yahoo', 'dmm_fx'],
     ['yumecareer_tenshoku', 'kindle_unlimited', 'prime_student'],
-    ['yahoo', 'yumecareer_tenshoku', 'prime_student'],
+    ['yahoo', 'dmm_fx', 'prime_student'],
     ['prime_student', 'yahoo', 'kindle_unlimited'],
-    ['yumecareer_tenshoku', 'yahoo', 'kindle_unlimited'],
-    ['kindle_unlimited', 'yumecareer_tenshoku', 'prime_student'],
+    ['yumecareer_tenshoku', 'dmm_fx', 'kindle_unlimited'],
+    ['kindle_unlimited', 'yumecareer_tenshoku', 'dmm_fx'],
+    ['dmm_fx', 'yahoo', 'yumecareer_tenshoku'],
+    ['dmm_fx', 'kindle_unlimited', 'prime_student'],
   ];
   return orders[h % orders.length];
 }
