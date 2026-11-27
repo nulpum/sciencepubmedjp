@@ -25,6 +25,8 @@ export interface CareerCTA {
   provider: string;
   disclosureShort: string;
   placeholder: boolean;
+  /** A8 など の 1x1 impression tracking pixel URL (任意) */
+  impressionPixel?: string;
   alternatives?: Array<{
     url: string;
     provider: string;
@@ -32,6 +34,7 @@ export interface CareerCTA {
     description?: string;
     bullets?: string[];
     ctaLabel?: string;
+    impressionPixel?: string;
   }>;
 }
 
@@ -92,19 +95,20 @@ export const CAREER_CTAS: Record<CareerVariant, CareerCTA> = {
   doctor: {
     id: 'doctor-v1',
     variant: 'doctor',
-    title: '🩺 医師の転職・キャリア相談',
+    title: '🩺 医師専門のキャリア相談・転職支援',
     description:
-      '若手医師・レジデント・医学部高学年の あなたへ。医師専門のキャリア相談サービス。病院別の生の年収データ・当直回数など非公開情報も。',
+      '若手医師・レジデント・医学部高学年の あなたへ。医師転職ドットコム は 医師専門 の キャリア 相談サービス。病院別 の 生の 年収データ、 当直回数、 非公開求人 まで。',
     bullets: [
       '完全無料・秘密厳守',
-      '専門医取得後のキャリアパス相談',
-      '留学・研究職への切替相談',
+      '専門医取得後 の キャリアパス相談',
+      '留学・研究職・産業医 への 切替相談',
     ],
-    ctaLabel: '医師専門のキャリア相談 →',
-    url: '#placeholder-asp-url',
-    provider: '医師転職ドットコム 等 (審査中)',
+    ctaLabel: '医師専門 キャリア相談を無料で始める →',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4BGTLR+BW2OQA+24CC+644DU',
+    provider: '医師転職ドットコム (A8 経由)',
     disclosureShort: '#PR / アフィリエイトリンク',
-    placeholder: true,
+    placeholder: false,
+    impressionPixel: 'https://www19.a8.net/0.gif?a8mat=4BGTLR+BW2OQA+24CC+644DU',
   },
   pharmacist: {
     id: 'pharmacist-v1',

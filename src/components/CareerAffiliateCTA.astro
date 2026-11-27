@@ -66,6 +66,9 @@ const shouldRender = cta && (!cta.placeholder || previewMode);
     <p class="career-cta__note">
       {cta.disclosureShort} · 提供: {cta.provider}
     </p>
+    {cta.impressionPixel && (
+      <img src={cta.impressionPixel} width="1" height="1" alt="" aria-hidden="true" style="position:absolute;width:1px;height:1px;border:0;" />
+    )}
   </aside>
 )}
 
