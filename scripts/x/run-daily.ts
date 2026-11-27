@@ -156,9 +156,15 @@ async function main(): Promise<void> {
     return;
   }
 
-  // oldest を選定 (generatedAt 昇順)
-  candidates.sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
-  const article = candidates[0];
+  // 深掘り (slug に `-evidence` 含む) を 優先 配信 (外部露出 初動 ブースト)。
+  // 深掘り が 全部 送信済み に なったら 通常 記事 (oldest) に フォールバック。
+  const deepdive = candidates.filter((a) => a.slug.includes('-evidence'));
+  const pool = deepdive.length > 0 ? deepdive : candidates;
+  pool.sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
+  const article = pool[0];
+  if (deepdive.length > 0) {
+    Logger.info(`深掘り 優先モード: 未送信 深掘り ${deepdive.length} 件`);
+  }
 
   Logger.info(`今日の X テンプレ対象: ${article.slug} (ja/${article.category}) "${article.title.slice(0, 40)}"`);
 
