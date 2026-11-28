@@ -7,6 +7,10 @@ import { remarkDictLinks } from './src/lib/remark-dict-links.mjs';
 import { remarkMidArticleAds } from './src/lib/remark-mid-article-ads.mjs';
 import { DICT_ALLOWLIST_SET } from './src/config/dict-allowlist.mjs';
 
+// Cache-buster: bump this when you want Astro to re-render ALL content pages
+// (e.g. after changing a remark plugin that injects shared HTML into every article).
+const CACHE_BUSTER_VERSION = 'v2-2026-11-28';
+
 // Build a Set of noindex URL paths at config load time so sitemap can exclude them.
 // Astro sitemap integration doesn't know about frontmatter — it only sees URLs.
 function buildNoindexSet() {

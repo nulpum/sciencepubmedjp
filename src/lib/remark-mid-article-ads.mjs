@@ -1,4 +1,5 @@
 // build 時 に 記事 の H2 見出し の 間 に 広告 を 差し込む remark plugin。
+// Cache-buster: v2 (2026-11-28) — Yahoo pid 更新 を 全 記事 に 反映 させる ため content-config-digest を 変化 させる。
 //
 // 挿入 ルール:
 //   - 記事 の H2 が N 本 あるとき、 2本目 / 4本目 / 6本目 の H2 の 直前 に 広告 を 挿入
